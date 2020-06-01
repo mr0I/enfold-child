@@ -25,6 +25,7 @@ get_header();
 					</li>
 				</ul>
 				<div class="tab-content" id="myTabContent">
+
 					<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 						<p>
 							<span>دفترچه راهنمای ردیاب خودرو ماهواره ای رادشید X5+</span>
@@ -62,48 +63,13 @@ get_header();
 						</p>
 						<hr>
 						<p>
-							<span> دفترچه معرفی سنسور دما و رطوبت</span>
+							<span> دفترچه راهنمای معرفی سنسور دما و رطوبت</span>
 							<a class="btn btn-info" href="https://radshid.com/wp-content/uploads/2017/10/Sensirion_Humidity_SHT1x_Datasheet_V5.pdf" role="button" target="_blank">دریافت
 								<i class="fa fa-download"></i>
 							</a>
 						</p>
-						<hr>
-						<p>
-							<span>کتاب الکترونیکی استانداردهای DSRC </span>
-							<a class="btn btn-info" href="https://radshid.com/wp-content/uploads/2017/10/WAVE-DSRC-802.11p.pdf" role="button" target="_blank">دریافت
-								<i class="fa fa-download"></i>
-							</a>
-						</p>
-						<hr>
-						<p>
-							<span>کتاب الکترونیکی V2V و درباره V2I </span>
-							<a class="btn btn-info" href="https://radshid.com/wp-content/uploads/2017/10/V2V-and-V2I-Communication.pdf" role="button" target="_blank">دریافت
-								<i class="fa fa-download"></i>
-							</a>
-						</p>
-						<hr>
-						<p>
-							<span> کتاب الکترونیکی  مروری بر فناوری DSRC </span>
-							<a class="btn btn-info" href="https://radshid.com/wp-content/uploads/2017/10/JD-CVT-DSRC.pdf" role="button" target="_blank">دریافت
-								<i class="fa fa-download"></i>
-							</a>
-						</p>
-						<hr>
-						<p>
-							<span> دفترچه راهنمای ردیاب خودرو X1</span>
-							<a class="btn btn-info" href="https://radshid.com/wp-content/uploads/2017/09/X1-Manual.pdf" role="button" target="_blank">دریافت
-								<i class="fa fa-download"></i>
-							</a>
-						</p>
-						<hr>
-						<p>
-							<span> دفترچه راهنمای ردیاب خودرو X6</span>
-							<a class="btn btn-info" href="https://radshid.com/wp-content/uploads/2017/09/X6-Manual.pdf" role="button" target="_blank">دریافت
-								<i class="fa fa-download"></i>
-							</a>
-						</p>
-						<hr>
 					</div>
+
 					<div class="tab-pane fade show" id="second" role="tabpanel" aria-labelledby="second-tab">
 						<p>
 							<span> آموزش استفاده از ربات تلگرام رادشید</span>
@@ -150,6 +116,26 @@ get_header();
 							</a>
 						</p>
 						<hr>
+                        <p>
+                            <span>کتاب الکترونیکی استانداردهای DSRC </span>
+                            <a class="btn btn-info" href="https://radshid.com/wp-content/uploads/2017/10/WAVE-DSRC-802.11p.pdf" role="button" target="_blank">دریافت
+                                <i class="fa fa-download"></i>
+                            </a>
+                        </p>
+                        <hr>
+                        <p>
+                            <span>کتاب الکترونیکی V2V و درباره V2I </span>
+                            <a class="btn btn-info" href="https://radshid.com/wp-content/uploads/2017/10/V2V-and-V2I-Communication.pdf" role="button" target="_blank">دریافت
+                                <i class="fa fa-download"></i>
+                            </a>
+                        </p>
+                        <hr>
+                        <p>
+                            <span> کتاب الکترونیکی  مروری بر فناوری DSRC </span>
+                            <a class="btn btn-info" href="https://radshid.com/wp-content/uploads/2017/10/JD-CVT-DSRC.pdf" role="button" target="_blank">دریافت
+                                <i class="fa fa-download"></i>
+                            </a>
+                        </p>
 					</div>
 				</div>
 			</div>

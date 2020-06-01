@@ -46,7 +46,7 @@
     width: 0;
     white-space: nowrap;
     font-weight: 600;
-    font-size: 14px;
+    font-size: 13px;
     margin-left: 10px;
     text-align: right;
     color: #777 !important;
@@ -60,17 +60,17 @@
 
 .floated_icons-r1 a:hover span{
     padding: 20px;
-    width: 150px;
+    width: 200px;
     visibility: visible;
 }
 .floated_icons-r2 a:hover span{
     padding: 20px;
-    width: 150px;
+    width: 200px;
     visibility: visible;
 }
 .floated_icons-r3 a:hover span{
     padding: 20px;
-    width: 150px;
+    width: 200px;
     visibility: visible;
 }
 
@@ -251,7 +251,42 @@ div#footer{
     color: #444;
 }
 
-
+.floated_icons_footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    background: #e0e0e0;
+    width: 100%;
+    display: none;
+}
+.fif-container{
+    padding:2px 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+.fif-container a{
+    display: flex;
+    flex-flow: column ;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-decoration: none !important;
+}
+.fif-container a img{
+    width: 30px;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+.fif-container a span{
+    color: #666;
+    font-family: vazir;
+    font-size: 10px;
+}
 
 
 /* Responsive */
@@ -309,9 +344,10 @@ div#footer{
 
 @media screen and (max-width: 767px) {
     .floated-shop {
-        width: 54px !important;
-        height: 54px !important;
-        line-height: 54px;
+        /*width: 54px !important;*/
+        /*height: 54px !important;*/
+        /*line-height: 54px;*/
+        display: none;
     }
     .floated-shop i{
         line-height: 54px;
@@ -416,6 +452,18 @@ div#footer{
         margin: 15px auto;
         font-size: 15px;
     }
+    #socket{
+        bottom: 50px;
+    }
+    .floated_icons_footer{
+        display: block;
+    }
+    .floated_icons-r1 , .floated_icons-r2 , .floated_icons-r3  {
+        display: none;
+    }
+    .floated-shop{
+        bottom: 80px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -465,6 +513,31 @@ div#footer{
         margin: 10px auto;
         font-size: 14px;
     }
+}
+
+@media screen and (max-width: 500px) {
+    .fif-container a img{
+        width: 24px;
+    }
+    .fif-container a span{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .fif-container a span{
+        display: none;
+    }
+    .fif-container{
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .fif-container a img{
+        width: 20px;
+    }
+
 }
 /* Responsive */
 
