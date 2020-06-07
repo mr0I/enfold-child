@@ -155,96 +155,96 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
 
 
-<!--     custom footer -->
-<!--    <div id="custom-footer">-->
-<!--        <div class="first-row">-->
-<!--            <div class="container-fluid">-->
-<!--                <div class="row">-->
-<!--                    <div class="fr-element col-md-3 col-sm-3">-->
-<!--                        <figure>-->
-<!--                            <img src="--><?php //echo get_stylesheet_directory_uri(). '/images/express.png' ; ?><!--" alt="تحویل اکسپرس">-->
-<!--                            <p><span>تحویل اکسپرس</span></p>-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!--                    <div class="fr-element col-md-3 col-sm-3">-->
-<!--                        <figure>-->
-<!--                            <img src="--><?php //echo get_stylesheet_directory_uri(). '/images/backup.png' ; ?><!--" alt="پشتیبانی 24 ساعته">-->
-<!--                            <p><span>پشتیبانی 24 ساعته</span></p>-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!--                    <div class="fr-element col-md-3 col-sm-3">-->
-<!--                        <figure>-->
-<!--                            <img src="--><?php //echo get_stylesheet_directory_uri(). '/images/cash-in-place.png' ; ?><!--" alt="پرداخت در محل"-->
-<!--                            >-->
-<!--                            <p><span>پرداخت در محل</span></p>-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!--                    <div class="fr-element col-md-3 col-sm-3">-->
-<!--                        <figure>-->
-<!--                            <img src="--><?php //echo get_stylesheet_directory_uri(). '/images/guarantee.png' ; ?><!--"-->
-<!--                                 alt="1 سال گارانتی - 5 سال خدمات پس از فروش " >-->
-<!--                            <p><span>1 سال گارانتی - 5 سال خدمات پس از فروش </span></p>-->
-<!--                        </figure>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="second-row">-->
-<!--            <div class="container-fluid">-->
-<!--                <div class="row">-->
-<!--                    <div class="sr-element col-md-4 col-sm-12">-->
-<!--                        <h6>راهنمای خرید از رادشید</h6>-->
-<!--                        <p><a href="#">نحوه ثبت سفارش</a></p>-->
-<!--                        <p><a href="#">رویه ثبت سفارش</a></p>-->
-<!--                        <p><a href="#">شیوه های پرداخت</a></p>-->
-<!--                        <p><a href="#">پاسخ به پرسش های متداول</a></p>-->
-<!--                        <p><a href="#">خدمات پس از فروش</a></p>-->
-<!--                    </div>-->
-<!--                    <div class="sr-element col-md-4 col-sm-12">-->
-<!--                        <h6>با رادشید</h6>-->
-<!--                        <p><a href="https://radshid.com/?p=3809">اخبار رادشید</a></p>-->
-<!--                        <p><a href="#">دریافت نمایندگی</a></p>-->
-<!--                        <p><a href="#">استخدام در رادشید</a></p>-->
-<!--                        <p><a href="#">درباره ما</a></p>-->
-<!--                        <p><a href="#">تماس ما</a></p>-->
-<!--                    </div>-->
-<!--                    <div class="sr-element col-md-4 col-sm-12">-->
-<!--                        <h6 style="text-align: center;">ما را در شبکه های اجتماعی دنبال کنید</h6>-->
-<!--                        <div class="footer-social">-->
-<!--                            <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" title="اینستاگرام">-->
-<!--                                <i class="fa fa-instagram"></i>-->
-<!--                            </a>-->
-<!--                            <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" title="تلگرام">-->
-<!--                                <i class="fa fa-telegram"></i>-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="third-row">-->
-<!--            <div class="container-fluid">-->
-<!--                <div class="row">-->
-<!--                    <div class="tr-element col-md-6 col-sm-12">-->
-<!--                        <h6>آدرس دفتر مرکزی:</h6>-->
-<!--                        <p>-->
-<!--                                <span>-->
-<!--                                    اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33       ساعات کار:       8:30 الی 17-->
-<!--                                </span>-->
-<!--                            <br>-->
-<!--                            <span> کد پستی: <span>8183877113</span></span>-->
-<!--                        </p>-->
-<!--                        <h6>واحد بازرگانی: <span>03132362894 - 03132362947</span></h6>-->
-<!--                        <h6> واحد پشتیبانی: <span >03195016151 - 03132363078</span></h6>-->
-<!--                        <h6> فکس: <span >02143856360</span></h6>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!---->
-<!--    </div>-->
+    <!--     custom footer -->
+    <div id="custom-footer">
+        <div class="first-row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="fr-element col-md-3 col-sm-3">
+                        <figure>
+                            <img src="<?php echo get_stylesheet_directory_uri(). '/images/express.png' ; ?>" alt="تحویل اکسپرس">
+                            <p><span>تحویل اکسپرس</span></p>
+                        </figure>
+                    </div>
+                    <div class="fr-element col-md-3 col-sm-3">
+                        <figure>
+                            <img src="<?php echo get_stylesheet_directory_uri(). '/images/backup.png' ; ?>" alt="پشتیبانی 24 ساعته">
+                            <p><span>پشتیبانی 24 ساعته</span></p>
+                        </figure>
+                    </div>
+                    <div class="fr-element col-md-3 col-sm-3">
+                        <figure>
+                            <img src="<?php echo get_stylesheet_directory_uri(). '/images/cash-in-place.png' ; ?>" alt="پرداخت در محل"
+                            >
+                            <p><span>پرداخت در محل</span></p>
+                        </figure>
+                    </div>
+                    <div class="fr-element col-md-3 col-sm-3">
+                        <figure>
+                            <img src="<?php echo get_stylesheet_directory_uri(). '/images/guarantee.png' ; ?>"
+                                 alt="1 سال گارانتی - 5 سال خدمات پس از فروش " >
+                            <p><span>1 سال گارانتی - 5 سال خدمات پس از فروش </span></p>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second-row">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="sr-element col-md-4 col-sm-12">
+                        <h6>راهنمای خرید از رادشید</h6>
+                        <p><a>نحوه ثبت سفارش</a></p>
+                        <p><a>شیوه های پرداخت</a></p>
+                        <p><a>شیوه های ارسال</a></p>
+                        <p><a href="https://radshid.com/?p=11127">پاسخ به پرسش های متداول</a></p>
+                        <p><a>خدمات پس از فروش</a></p>
+                    </div>
+                    <div class="sr-element col-md-4 col-sm-12">
+                        <h6>با رادشید</h6>
+                        <p><a href="https://radshid.com/?p=3809">اخبار رادشید</a></p>
+                        <p><a href="https://radshid.com/?p=5791">دریافت نمایندگی</a></p>
+                        <p><a href="https://radshid.com/?p=6148">استخدام در رادشید</a></p>
+                        <p><a href="https://radshid.com/about-us/">درباره ما</a></p>
+                        <p><a href="https://radshid.com/?p=5400">تماس ما</a></p>
+                    </div>
+                    <div class="sr-element col-md-4 col-sm-12">
+                        <h6 style="text-align: center;">ما را در شبکه های اجتماعی دنبال کنید</h6>
+                        <div class="footer-social">
+                            <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" title="اینستاگرام">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" title="تلگرام">
+                                <i class="fa fa-telegram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="third-row mb-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="tr-element col-md-6 col-sm-12">
+                        <h6>آدرس دفتر مرکزی:</h6>
+                        <p>
+                                <span>
+                                    اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33       ساعات کار:       8:30 الی 17
+                                </span>
+                            <br>
+                            <span> کد پستی: <span>8183877113</span></span>
+                        </p>
+                        <h6>واحد بازرگانی: <span>03132362894 - 03132362947</span></h6>
+                        <h6> واحد پشتیبانی: <span >03195016151 - 03132363078</span></h6>
+                        <h6> فکس: <span >02143856360</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
     <!-- custom footer -->
 
 
@@ -390,7 +390,7 @@ if(isset($avia_config['fullscreen_image']))
     <a rel="nofollow" title="دریافت از اناردونی"
        href="https://anardoni.com/ios/app/Y61iN7Xry" target="_blank">
         <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" alt="دریافت نسخه ios از اناردونی">
-       <span >برنامه ردیابی رادشید (آی او اس)</span>
+        <span >برنامه ردیابی رادشید (آی او اس)</span>
     </a>
 </div>
 
@@ -409,10 +409,10 @@ if(isset($avia_config['fullscreen_image']))
             <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" alt="دریافت نسخه ios از اناردونی">
             <span>برنامه ردیابی رادشید نسخه ios</span>
         </a>
-        <a href="https://radshid.com/?p=10008" target="_blank" title="ورود به فروشگاه">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/shop.png' ; ?>" alt="ورود به فروشگاه">
-            <span> ورود به فروشگاه</span>
-        </a>
+        <!--        <a href="https://radshid.com/?p=10008" target="_blank" title="ورود به فروشگاه">-->
+        <!--            <img src="--><?php //echo get_stylesheet_directory_uri().'/images/shop.png' ; ?><!--" alt="ورود به فروشگاه">-->
+        <!--            <span> ورود به فروشگاه</span>-->
+        <!--        </a>-->
     </div>
 
 </div>
