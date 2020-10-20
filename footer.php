@@ -160,30 +160,31 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
         <div class="first-row">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="fr-element col-md-3 col-sm-3">
+                    <div class="fr-element col-3 ">
                         <figure>
                             <img src="<?php echo get_stylesheet_directory_uri(). '/images/express.png' ; ?>" alt="تحویل اکسپرس">
                             <p><span>تحویل اکسپرس</span></p>
                         </figure>
                     </div>
-                    <div class="fr-element col-md-3 col-sm-3">
+                    <div class="fr-element col-3">
                         <figure>
                             <img src="<?php echo get_stylesheet_directory_uri(). '/images/backup.png' ; ?>" alt="پشتیبانی 24 ساعته">
-                            <p><span>پشتیبانی 24 ساعته</span></p>
+                            <p><span>پشتیبانی و مشاوره رایگان</span></p>
                         </figure>
                     </div>
-                    <div class="fr-element col-md-3 col-sm-3">
+                    <div class="fr-element col-3">
                         <figure>
                             <img src="<?php echo get_stylesheet_directory_uri(). '/images/cash-in-place.png' ; ?>" alt="پرداخت در محل"
                             >
                             <p><span>پرداخت در محل</span></p>
                         </figure>
                     </div>
-                    <div class="fr-element col-md-3 col-sm-3">
+                    <div class="fr-element col-3">
                         <figure>
                             <img src="<?php echo get_stylesheet_directory_uri(). '/images/guarantee.png' ; ?>"
                                  alt="1 سال گارانتی - 5 سال خدمات پس از فروش " >
-                            <p><span>1 سال گارانتی - 5 سال خدمات پس از فروش </span></p>
+                            <p><span>1 سال گارانتی</span></p>
+                            <p><span> 5 سال خدمات پس از فروش </span></p>
                         </figure>
                     </div>
                 </div>
@@ -195,19 +196,19 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                 <div class="row">
                     <div class="sr-element col-md-4 col-sm-12">
                         <h6>راهنمای خرید از رادشید</h6>
-                        <p><a>نحوه ثبت سفارش</a></p>
-                        <p><a>شیوه های پرداخت</a></p>
-                        <p><a>شیوه های ارسال</a></p>
-                        <p><a href="https://radshid.com/?p=11127">پاسخ به پرسش های متداول</a></p>
-                        <p><a>خدمات پس از فروش</a></p>
+                        <p><a href="https://radshid.com/%d9%86%d8%ad%d9%88%d9%87-%d8%ab%d8%a8%d8%aa-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4/">نحوه ثبت سفارش</a></p>
+                        <p><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d9%be%d8%b1%d8%af%d8%a7%d8%ae%d8%aa/">شیوه های پرداخت</a></p>
+                        <p><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d8%a7%d8%b1%d8%b3%d8%a7%d9%84/">شیوه های ارسال</a></p>
+                        <p><a href="https://radshid.com/%d8%b3%d9%88%d8%a7%d9%84%e2%80%8c%d9%87%d8%a7%db%8c-%d9%85%d8%aa%d8%af%d8%a7%d9%88%d9%84-faq/">پاسخ به پرسش های متداول</a></p>
+                        <p><a href="https://radshid.com/%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%be%d8%b3-%d8%a7%d8%b2-%d9%81%d8%b1%d9%88%d8%b4/">خدمات پس از فروش</a></p>
                     </div>
                     <div class="sr-element col-md-4 col-sm-12">
                         <h6>با رادشید</h6>
-                        <p><a href="https://radshid.com/?p=3809">اخبار رادشید</a></p>
-                        <p><a href="https://radshid.com/?p=5791">دریافت نمایندگی</a></p>
-                        <p><a href="https://radshid.com/?p=6148">استخدام در رادشید</a></p>
-                        <p><a href="https://radshid.com/about-us/">درباره ما</a></p>
-                        <p><a href="https://radshid.com/?p=5400">تماس ما</a></p>
+                        <p><a href="https://radshid.com/%d8%a7%d8%ae%d8%a8%d8%a7%d8%b1-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">اخبار رادشید</a></p>
+                        <p><a href="https://radshid.com/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/">دریافت نمایندگی</a></p>
+                        <p><a href="https://radshid.com/%d9%87%d9%85%da%a9%d8%a7%d8%b1%db%8c-%d8%a8%d8%a7-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">استخدام در رادشید</a></p>
+                        <p><a href="https://radshid.com/%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7/">درباره ما</a></p>
+                        <p><a href="https://radshid.com/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/">تماس ما</a></p>
                     </div>
                     <div class="sr-element col-md-4 col-sm-12">
                         <h6 style="text-align: center;">ما را در شبکه های اجتماعی دنبال کنید</h6>
@@ -219,6 +220,11 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                 <i class="fa fa-telegram"></i>
                             </a>
                         </div>
+<!--                        <form class="tnp-form" action="--><?php //echo get_site_url()."?na=s"; ?><!--" method="post" onsubmit="return newsletter_check(this)">-->
+<!--                            <input type="hidden" name="nr" value="widget-minimal">-->
+<!--                            <input class="tnp-email" type="email" required="" name="ne" value="" placeholder="Email">-->
+<!--                            <input class="tnp-submit" type="submit" value="Subscribe">-->
+<!--                        </form>-->
                     </div>
                 </div>
             </div>
@@ -236,18 +242,30 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                             <br>
                             <span> کد پستی: <span>8183877113</span></span>
                         </p>
-                        <h6>واحد بازرگانی: <span>03132362894 - 03132362947</span></h6>
-                        <h6> واحد پشتیبانی: <span >03195016151 - 03132363078</span></h6>
-                        <h6> فکس: <span >02143856360</span></h6>
+                        <h6>واحد بازرگانی: <span>03132362894 - 03132362947 - 09124735787 - 09124839402</span></h6>
+                        <h6> واحد پشتیبانی: <span >03195016151 - 03132363078 - 09018377198 - 09018377021 - 09018377021 - 09901883981</span></h6>
+                        <h6> فکس: <span >03132362788 (داخلی 23)</span></h6>
+                        <h6 class="mt-4">آدرس کارخانه:</h6>
+                        <p>
+                             <span>
+                                    نجف آباد – شهرک صنعتی شماره 2 – خیابان ابوریحان – شرکت رادشید
+                             </span>
+                            <br>
+                        </p>
+                    </div>
+                    <div class="tr-element col-md-6 col-sm-12" id="gateway">
+                        <a href="https://www.zarinpal.com/trustPage/radshid.com" rel="nofollow" target="_blank">
+                            <figure>
+                                <img src="<?php echo get_stylesheet_directory_uri().'/images/zarinpal-badge.png' ; ?>" alt="">
+                            </figure>
+                        </a>
+                        <img id="xlapbrgwlbrhdrftrgvl" style="cursor: pointer" onclick="window.open(&quot;https://trustseal.enamad.ir/Verify.aspx?id=36715&amp;p=fuixhwmbqgwlnbpdyncr&quot;, &quot;Popup&quot;,&quot;toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30&quot;)" alt="" src="https://trustseal.enamad.ir/logo.aspx?id=36715&amp;p=vjymkzoepeuklznbfujy">
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
     <!-- custom footer -->
-
-
 
 
 
@@ -366,11 +384,18 @@ if(isset($avia_config['fullscreen_image']))
 
 
 
-
 <!-- custom code -->
-
-
-
+<div data-toggle="tooltip" data-placement="top" title="ورود به فروشگاه">
+    <a class="floated-shop" href="https://radshid.com/shop-%d9%81%d8%b1%d9%88%d8%b4%da%af%d8%a7%d9%87-%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d8%ae%d9%88%d8%af%d8%b1%d9%88-%d9%88-%d8%b4%d8%ae%d8%b5%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/"  target="_blank">
+<!--        <i class="material-icons align-middle">shopping_cart</i>-->
+        <svg id="i-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" />
+        </svg>
+    </a>
+    <a class="dial-btn" href="tel:03132362894" title="تماس با واحد بازرگانی">
+        <i class="phone fa fa-phone"></i>
+    </a>
+</div>
 
 <!-- floated icons -->
 <div class="floated_icons-r1">
@@ -396,29 +421,39 @@ if(isset($avia_config['fullscreen_image']))
 
 <div class="floated_icons_footer">
     <div class="fif-container">
-        <a rel="nofollow" href="https://cafebazaar.ir/app/com.radshid.radshidavl/?l=fa" target="_blank" title="برنامه ردیابی رادشید نسخه اندروید">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" alt="دریافت از بازار" width="0">
-            <span>برنامه ردیابی رادشید نسخه اندروید</span>
+        <a href="https://t.me/Radshid_co" rel="nofollow" title="تلگرام رادشید">
+            <img src="<?php echo get_stylesheet_directory_uri().'/images/telegram.png' ; ?>" alt="تلگرام">
+            <span>تلگرام</span>
         </a>
-        <a rel="nofollow" title="برنامه ردیابی رادشید نسخه ios"
-           href="https://sibapp.com/applications/%D8%B1%D8%AF%DB%8C%D8%A7%D8%A8-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D8%B1%D8%A7%D8%AF%D8%B4%DB%8C%D8%AF" target="_blank">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/sibapp.png' ; ?>" alt="دریافت نسخه ios از سیب اپ">
-            <span>برنامه ردیابی رادشید نسخه ios</span>
+        <a href="https://www.instagram.com/radshid_com/" title="اینستاگرام رادشید" rel="nofollow">
+            <img src="<?php echo get_stylesheet_directory_uri().'/images/insta.png' ; ?>" alt="اینستاگرام">
+            <span>اینستاگرام</span>
         </a>
-        <a rel="nofollow" href="https://anardoni.com/ios/app/Y61iN7Xry" target="_blank" title="برنامه ردیابی رادشید نسخه ios">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" alt="دریافت نسخه ios از اناردونی">
-            <span>برنامه ردیابی رادشید نسخه ios</span>
+        <a href="https://radshid.com/?p=10008" target="_blank" title="ورود به فروشگاه">
+            <img src="<?php echo get_stylesheet_directory_uri().'/images/shop.png' ; ?>" alt="ورود به فروشگاه">
+            <span>فروشگاه</span>
         </a>
-        <!--        <a href="https://radshid.com/?p=10008" target="_blank" title="ورود به فروشگاه">-->
-        <!--            <img src="--><?php //echo get_stylesheet_directory_uri().'/images/shop.png' ; ?><!--" alt="ورود به فروشگاه">-->
-        <!--            <span> ورود به فروشگاه</span>-->
-        <!--        </a>-->
-    </div>
 
+
+        <a href="https://sibapp.com/applications/%D8%B1%D8%AF%DB%8C%D8%A7%D8%A8-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D8%B1%D8%A7%D8%AF%D8%B4%DB%8C%D8%AF" title="برنامه ردیابی رادشید نسخه ios"
+           rel="nofollow" target="_blank">
+            <img src="<?php echo get_stylesheet_directory_uri().'/images/sibapp.png' ; ?>" alt="دریافت نسخه ios از سیب اپ">
+            <span>سیب اپ</span>
+        </a>
+        <a href="https://anardoni.com/ios/app/Y61iN7Xry" rel="nofollow" target="_blank" title="برنامه ردیابی رادشید نسخه ios">
+            <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" alt="دریافت نسخه ios از اناردونی">
+            <span>اناردونی</span>
+        </a>
+        <a href="https://cafebazaar.ir/app/com.radshid.radshidavl/?l=fa" target="_blank" rel="nofollow" title="برنامه ردیابی رادشید نسخه اندروید">
+            <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" alt="دریافت از بازار">
+            <span>کافه بازار</span>
+        </a>
+    </div>
 </div>
 <!-- floated icons -->
-
 <!-- custom code -->
+
+
 
 <?php
 

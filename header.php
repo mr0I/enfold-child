@@ -48,6 +48,7 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="<?php echo "html_{$style} ".$responsive." ".$preloader." ".$av_lightbox." ".$filterable_classes." ".$av_classes_manually ?> ">
 <head>
+    <meta name="keywords" content="ردیاب خودرو,ردیاب آهنربایی,ردیاب شخصی">
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<?php
 	/*
@@ -91,15 +92,6 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
 <div class="progress" id="scroll-bar">
     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
-
-<div data-toggle="tooltip" data-placement="top" title="ورود به فروشگاه">
-    <a class="floated-shop" href="https://radshid.com/?p=10008"  target="_blank">
-        <i class="fa fa-shopping-cart"></i>
-    </a>
-</div>
-
-
-
 <!-- Custom Code -->
 
 
