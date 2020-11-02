@@ -211,6 +211,12 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                         <p><a href="https://radshid.com/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/">تماس ما</a></p>
                     </div>
                     <div class="sr-element col-md-4 col-sm-12">
+                        <h6 style="text-align: center;">درباره ما</h6>
+                        <div class="footer-aboutUs">
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                            </p>
+                        </div>
                         <h6 style="text-align: center;">ما را در شبکه های اجتماعی دنبال کنید</h6>
                         <div class="footer-social">
                             <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" title="اینستاگرام">
@@ -256,10 +262,12 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                     <div class="tr-element col-md-6 col-sm-12" id="gateway">
                         <a href="https://www.zarinpal.com/trustPage/radshid.com" rel="nofollow" target="_blank">
                             <figure>
-                                <img src="<?php echo get_stylesheet_directory_uri().'/images/zarinpal-badge.png' ; ?>" alt="">
+                                <img src="<?php echo get_stylesheet_directory_uri().'/images/zarinpal-badge.png' ; ?>" alt="زرین پال" id="zarin_img">
                             </figure>
                         </a>
-                        <img id="xlapbrgwlbrhdrftrgvl" style="cursor: pointer" onclick="window.open(&quot;https://trustseal.enamad.ir/Verify.aspx?id=36715&amp;p=fuixhwmbqgwlnbpdyncr&quot;, &quot;Popup&quot;,&quot;toolbar=no, location=no, statusbar=no, menubar=no, scrollbars=1, resizable=0, width=580, height=600, top=30&quot;)" alt="" src="https://trustseal.enamad.ir/logo.aspx?id=36715&amp;p=vjymkzoepeuklznbfujy">
+                        <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=179501&amp;Code=FhjbxasmXXMZd5Y5vKZc">
+                            <img referrerpolicy="origin" src="<?php echo get_stylesheet_directory_uri().'/images/star1.png' ; ?>" alt="" style="cursor:pointer" id="FhjbxasmXXMZd5Y5vKZc">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -387,14 +395,40 @@ if(isset($avia_config['fullscreen_image']))
 <!-- custom code -->
 <div data-toggle="tooltip" data-placement="top" title="ورود به فروشگاه">
     <a class="floated-shop" href="https://radshid.com/shop-%d9%81%d8%b1%d9%88%d8%b4%da%af%d8%a7%d9%87-%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d8%ae%d9%88%d8%af%d8%b1%d9%88-%d9%88-%d8%b4%d8%ae%d8%b5%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/"  target="_blank">
-<!--        <i class="material-icons align-middle">shopping_cart</i>-->
         <svg id="i-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
             <path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" />
         </svg>
     </a>
-    <a class="dial-btn" href="tel:03132362894" title="تماس با واحد بازرگانی">
-        <i class="phone fa fa-phone"></i>
-    </a>
+<!--    <a class="dial-btn" href="tel:03132362894" title="تماس با واحد بازرگانی">-->
+<!--        <i class="phone fa fa-phone"></i>-->
+<!--    </a>-->
+
+<!--    <div class="fab-container">-->
+<!--        <div class="fab fab-icon-holder">-->
+<!--            <i class="phone fa fa-phone"></i>-->
+<!--        </div>-->
+<!--        <ul class="fab-options">-->
+<!--            <li>-->
+<!--                <div class="fab-icon-holder" title="تماس با واحد بازرگانی">-->
+<!--                    <a href="tel:03132362894" >-->
+<!--                        <svg id="i-telephone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">-->
+<!--                            <path d="M3 12 C3 5 10 5 16 5 22 5 29 5 29 12 29 20 22 11 22 11 L10 11 C10 11 3 20 3 12 Z M11 14 C11 14 6 19 6 28 L26 28 C26 19 21 14 21 14 L11 14 Z" />-->
+<!--                            <circle cx="16" cy="21" r="4" />-->
+<!--                        </svg>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </li>-->
+<!--            <li>-->
+<!--                <div class="fab-icon-holder">-->
+<!--                    <a href="#">-->
+<!--                        <svg id="i-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">-->
+<!--                            <path d="M21 2 L11 2 C10 2 9 3 9 4 L9 28 C9 29 10 30 11 30 L21 30 C22 30 23 29 23 28 L23 4 C23 3 22 2 21 2 Z M9 5 L23 5 M9 27 L23 27" />-->
+<!--                        </svg>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </li>-->
+<!--        </ul>-->
+<!--    </div>-->
 </div>
 
 <!-- floated icons -->

@@ -16,6 +16,10 @@ function load_scripts_styles() {
 	wp_enqueue_style( 'custom-styles' , get_stylesheet_directory_uri() . '/css/custom-styles.css');
 	// Scripts
 	wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/js/custom-scripts.js', array('jquery'), $vn , true );
+	wp_localize_script( 'custom-scripts', 'SpaAjax', array(
+		'ajaxurl' => admin_url( 'admin-ajax.php' ),
+		'security' => wp_create_nonce( '(H+MbPeShVmYq3t6' )
+	));
 }
 add_action( 'wp_enqueue_scripts', 'load_scripts_styles');
 
@@ -144,4 +148,62 @@ function wc_remove_product_schema_product_archive() {
 	remove_action( 'woocommerce_shop_loop', array( WC()->structured_data, 'generate_product_data' ), 10, 0 );
 }
 add_action( 'woocommerce_init', 'wc_remove_product_schema_product_archive' );
+
+
+// Redirect wp-login.php
+//function redirect_to_nonexistent_page(){
+//	$new_login=  'my-account';
+//	if(strpos($_SERVER['REQUEST_URI'], $new_login) === false){
+//		wp_safe_redirect( home_url(  ) );
+//		exit();
+//	}
+//}
+//add_action( 'login_head', 'redirect_to_nonexistent_page');
+//function redirect_to_actual_login(){
+//	$new_login =  'radcustomsignin';
+//	if(parse_url($_SERVER['REQUEST_URI'],PHP_URL_QUERY) == $new_login&& ($_GET['redirect'] !== false)){
+//		wp_safe_redirect(home_url("wp-login.php?$new_login&redirect=false"));
+//		exit();
+//	}
+//}
+//add_action( 'init', 'redirect_to_actual_login');
+// Redirect wp-login.php
+
+
+
+////add text note to product description page for all downloadable products
+//function append_download_note() {
+//		echo '<p><a href="https://eeeico.com/contact-us/">جهت سفارش لطفا با ما تماس بگیرید</a></p>';
+//}
+//add_action( 'woocommerce_before_add_to_cart_button', 'append_download_note', 10, 0 );
+
+
+add_shortcode('show_spa_form', 'spa_form');
+function spa_form(){
+	return '<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We\'ll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="button" class="btn btn-primary" id="spa_login_btn">Submit</button>
+</form>';
+}
+
+
+add_action('wp_logout','auto_redirect_external_after_logout');
+function auto_redirect_external_after_logout(){
+	wp_redirect( 'https://radshid.com/' );
+exit();
+}
+
+
 

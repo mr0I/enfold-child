@@ -48,9 +48,11 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="<?php echo "html_{$style} ".$responsive." ".$preloader." ".$av_lightbox." ".$filterable_classes." ".$av_classes_manually ?> ">
 <head>
-    <meta name="keywords" content="ردیاب خودرو,ردیاب آهنربایی,ردیاب شخصی">
+    <meta name="keywords" content="ردیاب خودرو, ردیاب شخصی , ردیاب موتور سیکلت, ردیاب آهنربایی ,ردیاب کودکان, ردیاب سالمندان,ردیاب پاوربانک, دستگاه شنود,سامانه ردیابی, ردیاب رادشید, خرید اینترنتی ردیاب, فروش اینترنتی ردیاب,خرید تبلت صنعتی, سیپاد">
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<?php
+    <meta name="enamad" content="419561"/>
+
+    <?php
 	/*
 	 * outputs a rel=follow or nofollow tag to circumvent google duplicate content for archives
 	 * located in framework/php/function-set-avia-frontend.php
@@ -63,7 +65,7 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
     <!-- mobile setting -->
 	<?php
 
-	if( strpos($responsive, 'responsive') !== false ) { echo '<meta name="viewport" content="width=device-width, initial-scale=1">';  }
+	if( strpos($responsive, 'responsive') !== false ) { echo '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">';  }
 	?>
 
 
@@ -92,9 +94,37 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
 <div class="progress" id="scroll-bar">
     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
 </div>
+<div class="custom-header">
+    <div class="custom-header-container">
+        <ul>
+            <li>
+                <svg id="i-telephone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M3 12 C3 5 10 5 16 5 22 5 29 5 29 12 29 20 22 11 22 11 L10 11 C10 11 3 20 3 12 Z M11 14 C11 14 6 19 6 28 L26 28 C26 19 21 14 21 14 L11 14 Z" />
+                    <circle cx="16" cy="21" r="4" />
+                </svg>
+                <span>   واحد بازرگانی:  <span style="font-family: 'vazir';">03132362894</span> </span>
+            </li>
+            <li>
+                <svg id="i-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M21 2 L11 2 C10 2 9 3 9 4 L9 28 C9 29 10 30 11 30 L21 30 C22 30 23 29 23 28 L23 4 C23 3 22 2 21 2 Z M9 5 L23 5 M9 27 L23 27" />
+                </svg>
+                <span>   واحد پشتیبانی:  <span style="font-family: 'vazir';">03195016151</span> </span>
+            </li>
+            <li id="social_icons">
+                <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" title="اینستاگرام"
+                   data-toggle="tooltip" data-placement="bottom">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" title="تلگرام"
+                   data-toggle="tooltip" data-placement="bottom">
+                    <i class="fa fa-telegram"></i>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+</div>
 <!-- Custom Code -->
-
-
 
 
 <?php

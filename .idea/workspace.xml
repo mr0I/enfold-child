@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46a4c9ad-46f7-42c6-855f-a1c5041e3352" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/insta.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/telegram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom-styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/anaar.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/anaar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bazaar.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/bazaar.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/shop.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/shop.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/sibapp.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/sibapp.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/zarinpal-badge.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/zarinpal-badge.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/custom-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/custom-scripts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,46 +21,49 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="121" selection-start-line="121" selection-end-line="121" />
+            <state relative-caret-position="648">
+              <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
               <folding>
                 <element signature="e#7#183#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#center#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
+            <state relative-caret-position="1272">
+              <caret line="53" selection-start-line="53" selection-end-line="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="390" column="8" selection-start-line="390" selection-start-column="8" selection-end-line="392" selection-end-column="14" />
+            <state relative-caret-position="-1141">
+              <caret line="356" lean-forward="true" selection-start-line="356" selection-end-line="356" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom-styles.css">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="412">
+              <caret line="564" column="11" lean-forward="true" selection-start-line="564" selection-start-column="11" selection-end-line="564" selection-end-column="12" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="9" selection-start-line="9" selection-end-line="10" />
+            <state relative-caret-position="672">
+              <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
               <folding>
-                <element signature="n#!!block;n#getVerticalScrollPercentage#0" />
+                <element signature="n#style#0;n#svg#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,19 +81,8 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>floated_icons</find>
-      <find>.floated-shop</find>
-      <find>35%</find>
-      <find>40%</find>
-      <find>anar</find>
-      <find>floated_icons-r3</find>
-      <find>getAllProductsImages</find>
-      <find>0901837687</find>
-      <find>shop</find>
-      <find>.floated-shop i</find>
       <find>add_to_basket_btn</find>
       <find>.fif-container a span</find>
-      <find>font-family</find>
       <find>fif-container a span</find>
       <find>floated_icons_footer</find>
       <find>fif-container</find>
@@ -109,9 +97,20 @@
       <find>micons</find>
       <find>micon</find>
       <find>floated-shop</find>
-      <find>shopping_cart</find>
       <find>svg</find>
+      <find>shopping_cart</find>
       <find>single_add_to_cart_button</find>
+      <find>font-family</find>
+      <find>custom-footer</find>
+      <find>#custom-footer .sr-element h6</find>
+      <find>#custom-footer .sr-element p a</find>
+      <find>gateway</find>
+      <find>custom-header</find>
+      <find>dial-btn</find>
+      <find>fab-con</find>
+      <find>mico</find>
+      <find>cluster</find>
+      <find>init</find>
     </findStrings>
     <replaceStrings>
       <replace>images/</replace>
@@ -154,11 +153,11 @@
         <option value="$PROJECT_DIR$/css/site-styles.css" />
         <option value="$PROJECT_DIR$/css/wpforms-styles.css" />
         <option value="$PROJECT_DIR$/woo-features.php" />
-        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/footer.php" />
-        <option value="$PROJECT_DIR$/js/custom-scripts.js" />
-        <option value="$PROJECT_DIR$/css/custom-styles.css" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/css/custom-styles.css" />
+        <option value="$PROJECT_DIR$/js/custom-scripts.js" />
       </list>
     </option>
   </component>
@@ -186,21 +185,6 @@
               <item name="enfold-child" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="enfold-child" type="b2602c69:ProjectViewProjectNode" />
-              <item name="enfold-child" type="462c0819:PsiDirectoryNode" />
-              <item name="fonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="enfold-child" type="b2602c69:ProjectViewProjectNode" />
-              <item name="enfold-child" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="enfold-child" type="b2602c69:ProjectViewProjectNode" />
-              <item name="enfold-child" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -219,8 +203,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\fonts" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\images" />
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\fonts" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\css" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\js" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child" />
@@ -313,7 +297,21 @@
       <workItem from="1602998279147" duration="537000" />
       <workItem from="1603084877442" duration="427000" />
       <workItem from="1603171445886" duration="1500000" />
-      <workItem from="1603196043962" duration="4111000" />
+      <workItem from="1603196043962" duration="4360000" />
+      <workItem from="1603201370291" duration="26000" />
+      <workItem from="1603257484806" duration="626000" />
+      <workItem from="1603281495993" duration="615000" />
+      <workItem from="1603283505418" duration="915000" />
+      <workItem from="1603530509805" duration="4309000" />
+      <workItem from="1603689108168" duration="12357000" />
+      <workItem from="1603715040222" duration="534000" />
+      <workItem from="1603776101963" duration="7718000" />
+      <workItem from="1603795593775" duration="4258000" />
+      <workItem from="1603862580702" duration="1041000" />
+      <workItem from="1603879536414" duration="10794000" />
+      <workItem from="1604121009311" duration="6193000" />
+      <workItem from="1604211232138" duration="250000" />
+      <workItem from="1604317878474" duration="2983000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1590862220655</created>
@@ -340,13 +338,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155852000" />
+    <option name="totallyTimeSpent" value="208720000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20575693" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1609808" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -358,7 +355,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -454,9 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/images/zarinpal-badge.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/anaar.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -469,41 +463,50 @@
     <entry file="file://$PROJECT_DIR$/images/shop.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/images/zarinpal-badge.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/enamad.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        <state relative-caret-position="648">
+          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
           <folding>
             <element signature="e#7#183#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#center#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1272">
+          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="412">
+          <caret line="564" column="11" lean-forward="true" selection-start-line="564" selection-start-column="11" selection-end-line="564" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="28" column="36" lean-forward="true" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
-          <caret line="390" column="8" selection-start-line="390" selection-start-column="8" selection-end-line="392" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" selection-start-line="9" selection-end-line="10" />
-          <folding>
-            <element signature="n#!!block;n#getVerticalScrollPercentage#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom-styles.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="-1141">
+          <caret line="356" lean-forward="true" selection-start-line="356" selection-end-line="356" />
         </state>
       </provider>
     </entry>
