@@ -206,4 +206,12 @@ exit();
 }
 
 
+function add_cron_recurrence_interval( $schedules ) {
+	$schedules['every_ten_minutes'] = array(
+		'interval'  => 600,
+		'display'   => __( 'هر 10 دقیقه', 'uap' )
+	);
+	return $schedules;
+}
+add_filter( 'cron_schedules', 'add_cron_recurrence_interval' );
 

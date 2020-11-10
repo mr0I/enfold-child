@@ -260,6 +260,11 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                         </p>
                     </div>
                     <div class="tr-element col-md-6 col-sm-12" id="gateway">
+                        <a>
+                            <figure>
+                                <img src="<?php echo get_stylesheet_directory_uri().'/images/mellat_gateway.png' ; ?>" alt="درگاه پرداخت ملت" id="mellat_img">
+                            </figure>
+                        </a>
                         <a href="https://www.zarinpal.com/trustPage/radshid.com" rel="nofollow" target="_blank">
                             <figure>
                                 <img src="<?php echo get_stylesheet_directory_uri().'/images/zarinpal-badge.png' ; ?>" alt="زرین پال" id="zarin_img">
