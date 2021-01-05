@@ -51,7 +51,7 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
     <meta name="keywords" content="ردیاب خودرو, ردیاب شخصی , ردیاب موتور سیکلت, ردیاب آهنربایی ,ردیاب کودکان, ردیاب سالمندان,ردیاب پاوربانک, دستگاه شنود,سامانه ردیابی, ردیاب رادشید, خرید اینترنتی ردیاب, فروش اینترنتی ردیاب,خرید تبلت صنعتی, سیپاد">
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="enamad" content="419561"/>
-
+<!--    <script>if (top!= self) top.location=self.document.location;</script>-->
     <?php
 	/*
 	 * outputs a rel=follow or nofollow tag to circumvent google duplicate content for archives
@@ -87,7 +87,6 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
 
 
 <body id="top" <?php body_class( $custom_body_classes . ' ' . $rtl_support . $style." ".$avia_config['font_stack']." ".$blank." ".$sidebar_styling); avia_markup_helper(array('context' => 'body')); ?>>
-
 
 
 <!-- Custom Code -->

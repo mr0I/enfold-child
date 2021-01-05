@@ -178,26 +178,6 @@ add_action( 'woocommerce_init', 'wc_remove_product_schema_product_archive' );
 //add_action( 'woocommerce_before_add_to_cart_button', 'append_download_note', 10, 0 );
 
 
-add_shortcode('show_spa_form', 'spa_form');
-function spa_form(){
-	return '<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We\'ll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="button" class="btn btn-primary" id="spa_login_btn">Submit</button>
-</form>';
-}
-
 
 add_action('wp_logout','auto_redirect_external_after_logout');
 function auto_redirect_external_after_logout(){
@@ -206,12 +186,17 @@ exit();
 }
 
 
-function add_cron_recurrence_interval( $schedules ) {
-	$schedules['every_ten_minutes'] = array(
-		'interval'  => 600,
-		'display'   => __( 'هر 10 دقیقه', 'uap' )
-	);
-	return $schedules;
-}
-add_filter( 'cron_schedules', 'add_cron_recurrence_interval' );
+//function add_cron_recurrence_interval( $schedules ) {
+//	$schedules['every_ten_minutes'] = array(
+//		'interval'  => 60,
+//		'display'   => __( 'هر 10 دقیقه', 'uap' )
+//	);
+//	return $schedules;
+//}
+//add_filter( 'cron_schedules', 'add_cron_recurrence_interval' );
 
+
+
+/* Pro Ranks Schedule */
+//wp_schedule_event( time(), '', 'uapDoRanksReset');//modify time
+//wp_schedule_event( time(), 'every_ten_minutes', 'uap_cron_job');//modify time

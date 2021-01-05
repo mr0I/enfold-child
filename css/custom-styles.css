@@ -1,3 +1,5 @@
+/* Version 1.0.2 */
+
 .floated_icons-r1 , .floated_icons-r2 , .floated_icons-r3{
     direction: ltr;
     float: left;
@@ -29,7 +31,7 @@
     min-width: 40px;
     width: auto;
     height: 40px;
-    color: red;
+    color: #B71C1C;
     padding: 24px 0;
     background-color: #E0E0E0;
     text-decoration: none !important;
@@ -90,7 +92,7 @@
     position: fixed;
     left: 8px;
     bottom: 20px;
-    background: #e61d0f;
+    background: #D50000;
     width: 60px;
     height: 60px;
     border-radius: 50px !important;
@@ -132,10 +134,10 @@ div#footer{
     font-family: vazir;
 }
 #custom-footer .first-row{
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid #E0E0E0;
 }
 #custom-footer .second-row{
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid #E0E0E0;
 }
 #custom-footer .fr-element{
     text-align: center;
@@ -157,7 +159,7 @@ div#footer{
 }
 #custom-footer .fr-element span{
     color: #666666;
-    font-size: 15px;
+    font-size: 13px;
     user-select: none;
 }
 #custom-footer .sr-element h6{
@@ -246,7 +248,7 @@ div#footer{
     align-items: center;
 }
 #custom-footer #gateway a{
-   margin: 0 24px;
+    margin: 0 24px;
 }
 
 #custom-footer #gateway img#zarin_img {
@@ -256,6 +258,30 @@ div#footer{
 #custom-footer #gateway img#FhjbxasmXXMZd5Y5vKZc , #custom-footer #gateway img#mellat_img {
     width: 100px;
     height: auto;
+}
+
+#socket .sub_menu_socket li{
+    border-right-color: #e0e0e0 !important;
+}
+
+footer .footer-social-btns{
+    border-top: 1px solid #e0e0e0 !important;
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding: 15px;
+}
+footer .footer-social-btns a{
+    font-size: 2.5em;
+    color: #bdbdbd;
+    margin: 0 10px;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+}
+footer .footer-social-btns a:hover{
+    color: rgb(249, 157, 120);
 }
 /* Footer */
 
@@ -336,57 +362,156 @@ div#footer{
     font-size: 10px;
 }
 
+
+/* Ringing Phone */
 .dial-btn{
     display: none;
     position: fixed;
     left: 8px;
-    bottom: 20px;
+    bottom: 60px;
     width: 54px;
     height: 54px;
     line-height: 54px;
-    font-size: 24px;
     text-align: center;
     background-color: forestgreen;
     border-radius: 50%;
     z-index: 1000;
 }
 .dial-btn i{
-    color: #eeeeee;
-    font-size: 30px;
-    line-height: 54px;
+    font-size: 54px;
 }
 
-.ringing{
-    animation: ring 0.4s infinite;
-    transform-origin: 0;
+.Phone {
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 1em;
+    height: 1em;
+    font-size: 25vmin;
+    background-color: forestgreen;
+    border-radius: 0.5em;
+    box-shadow:
+            0 0 0 0em rgba(#3498db, 0),
+            0em 0.05em 0.1em rgba(#000000, 0.2);
+    transform: translate3d(0, 0, 0) scale(1);
 }
 
-@keyframes ring {
+.Phone::before,
+.Phone::after {
+    position: absolute;
+    content: "";
+}
+
+.Phone::before {
+    top: 0;
+    left: 0;
+    width: 1em;
+    height: 1em;
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 100%;
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(0);
+}
+
+.Phone::after {
+    top: 0.25em;
+    left: 0.25em;
+    width: 0.5em;
+    height: 0.5em;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTYuNiAxMC44YzEuNCAyLjggMy44IDUuMSA2LjYgNi42bDIuMi0yLjJjLjMtLjMuNy0uNCAxLS4yIDEuMS40IDIuMy42IDMuNi42LjUgMCAxIC40IDEgMVYyMGMwIC41LS41IDEtMSAxLTkuNCAwLTE3LTcuNi0xNy0xNyAwLS42LjQtMSAxLTFoMy41Yy41IDAgMSAuNCAxIDEgMCAxLjIuMiAyLjUuNiAzLjYuMS40IDAgLjctLjIgMWwtMi4zIDIuMnoiIGZpbGw9IiNmZmZmZmYiLz48L3N2Zz4=);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate3d(0, 0, 0);
+}
+
+.Phone.is-animating {
+    animation: phone-outer 3000ms infinite;
+}
+
+.Phone.is-animating::before{
+    animation: phone-inner 3000ms infinite;
+}
+.Phone.is-animating::after{
+    animation: phone-icon 3000ms infinite;
+}
+
+@keyframes phone-outer {
+    0% {
+        transform: translate3d(0, 0, 0) scale(1);
+        box-shadow:
+                0 0 0 0em rgba(#3498db, 0),
+                0em 0.05em 0.1em rgba(#000000, 0.2);
+    }
+    33.3333% {
+        transform: translate3d(0, 0, 0) scale(1.1);
+        box-shadow:
+                0 0 0 0em rgba(#3498db, 0.1),
+                0em 0.05em 0.1em rgba(#000000, 0.5);
+    }
+    66.6666% {
+        transform: translate3d(0, 0, 0) scale(1);
+        box-shadow:
+                0 0 0 0.5em rgba(#3498db, 0),
+                0em 0.05em 0.1em rgba(#000000, 0.2);
+    }
+    100% {
+        transform: translate3d(0, 0, 0) scale(1);
+        box-shadow:
+                0 0 0 0em rgba(#3498db, 0),
+                0em 0.05em 0.1em rgba(#000000, 0.2);
+    }
+}
+
+@keyframes phone-inner {
+    0% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(0);
+    }
+    33.3333% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0) scale(0.9);
+    }
+    66.6666% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0) scale(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0) scale(0);
+    }
+}
+
+@keyframes phone-icon {
     0% { transform: translate3d(0em, 0, 0); }
-    2% { transform: translate3d(0.02em, 0, 0); }
-    4% { transform: translate3d(-0.02em, 0, 0); }
-    6% { transform: translate3d(0.02em, 0, 0); }
-    8% { transform: translate3d(-0.02em, 0, 0); }
-    10% { transform: translate3d(0.02em, 0, 0); }
-    12% { transform: translate3d(-0.02em, 0, 0); }
-    14% { transform: translate3d(0.02em, 0, 0); }
-    16% { transform: translate3d(-0.02em, 0, 0); }
-    18% { transform: translate3d(0.02em, 0, 0); }
-    20% { transform: translate3d(-0.02em, 0, 0); }
-    22% { transform: translate3d(0.02em, 0, 0); }
-    24% { transform: translate3d(-0.02em, 0, 0); }
-    26% { transform: translate3d(0.02em, 0, 0); }
-    28% { transform: translate3d(-0.02em, 0, 0); }
-    30% { transform: translate3d(0.02em, 0, 0); }
-    32% { transform: translate3d(-0.02em, 0, 0); }
-    34% { transform: translate3d(0.02em, 0, 0); }
-    36% { transform: translate3d(-0.02em, 0, 0); }
-    38% { transform: translate3d(0.02em, 0, 0); }
-    40% { transform: translate3d(-0.02em, 0, 0); }
-    42% { transform: translate3d(0.02em, 0, 0); }
-    44% { transform: translate3d(-0.02em, 0, 0); }
+    2% { transform: translate3d(0.01em, 0, 0); }
+    4% { transform: translate3d(-0.01em, 0, 0); }
+    6% { transform: translate3d(0.01em, 0, 0); }
+    8% { transform: translate3d(-0.01em, 0, 0); }
+    10% { transform: translate3d(0.01em, 0, 0); }
+    12% { transform: translate3d(-0.01em, 0, 0); }
+    14% { transform: translate3d(0.01em, 0, 0); }
+    16% { transform: translate3d(-0.01em, 0, 0); }
+    18% { transform: translate3d(0.01em, 0, 0); }
+    20% { transform: translate3d(-0.01em, 0, 0); }
+    22% { transform: translate3d(0.01em, 0, 0); }
+    24% { transform: translate3d(-0.01em, 0, 0); }
+    26% { transform: translate3d(0.01em, 0, 0); }
+    28% { transform: translate3d(-0.01em, 0, 0); }
+    30% { transform: translate3d(0.01em, 0, 0); }
+    32% { transform: translate3d(-0.01em, 0, 0); }
+    34% { transform: translate3d(0.01em, 0, 0); }
+    36% { transform: translate3d(-0.01em, 0, 0); }
+    38% { transform: translate3d(0.01em, 0, 0); }
+    40% { transform: translate3d(-0.01em, 0, 0); }
+    42% { transform: translate3d(0.01em, 0, 0); }
+    44% { transform: translate3d(-0.01em, 0, 0); }
     46% { transform: translate3d(0em, 0, 0); }
 }
+/* Ringing Phone */
+
+
+
 
 
 
@@ -399,7 +524,7 @@ div#footer{
     border: 0;
     outline: 0;
     color: white;
-    background-color: #E61D0F;
+    background-color: #D50000;
     border-radius: 0;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3 );
     position: relative;
@@ -426,7 +551,7 @@ div#footer{
     top: 0;
     width: 155px;
     height: 100px;
-    background: #fc1f10;
+    background: #B71C1C;
     transform: skew(-10deg);
     transition: all .3s;
     z-index: 0;
@@ -672,7 +797,7 @@ div#footer{
         width: 70px;
     }
     #custom-footer .fr-element span{
-        font-size: 13px;
+        font-size: 12px;
     }
     #custom-footer .sr-element h6{
         margin: 8px auto;
@@ -745,15 +870,8 @@ div#footer{
 
     .dial-btn{
         display: block;
-        bottom: 70px;
-        width: 50px;
-        height: 50px;
-        line-height: 50px;
     }
-    .dial-btn i{
-        font-size: 24px;
-        line-height: 50px;
-    }
+
 
     .tab-content p{
         padding: 8px;
@@ -818,7 +936,7 @@ div#footer{
         width: 60px;
     }
     #custom-footer .fr-element span{
-        font-size: 15px;
+        font-size: 13px;
     }
     #custom-footer .sr-element h6{
         margin: 10px auto;
@@ -888,7 +1006,7 @@ div#footer{
         width: 55px;
     }
     #custom-footer .fr-element span{
-        font-size: 14px;
+        font-size: 13px;
     }
     #custom-footer .sr-element h6{
         margin: 6px auto;
@@ -939,6 +1057,7 @@ div#footer{
 
 @media screen and (max-width: 400px) {
 
+
     #custom-footer .fr-element span{
         font-size: 8px;
     }
@@ -963,7 +1082,9 @@ div#footer{
         width: 35px;
     }
 
-
+    footer .footer-social-btns a{
+        margin: 0;
+    }
 
 }
 /* Responsive */

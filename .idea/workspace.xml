@@ -20,11 +20,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="3312">
+              <caret line="141" selection-start-line="141" selection-end-line="141" />
               <folding>
                 <element signature="e#7#183#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#iframe#0;n#center#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -33,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
+            <state relative-caret-position="1296">
+              <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -42,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="262" column="24" selection-start-line="262" selection-start-column="24" selection-end-line="266" selection-end-column="28" />
+            <state relative-caret-position="186">
+              <caret line="354" column="42" selection-start-line="354" selection-start-column="24" selection-end-line="354" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -51,8 +50,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/custom-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="563" column="1" lean-forward="true" selection-start-line="563" selection-start-column="1" selection-end-line="563" selection-end-column="1" />
+            <state>
+              <caret column="16" selection-start-column="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -60,11 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
-              <folding>
-                <element signature="n#style#0;n#svg#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="24">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -81,16 +77,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>fif-container a img</find>
-      <find>ringing</find>
-      <find>3px</find>
-      <find>1deg</find>
-      <find>0.5px</find>
-      <find>.floated_icons_footer</find>
-      <find>tr-element</find>
-      <find>Material</find>
-      <find>micons</find>
-      <find>micon</find>
       <find>floated-shop</find>
       <find>svg</find>
       <find>shopping_cart</find>
@@ -111,6 +97,16 @@
       <find>mico</find>
       <find>.woo-docs-tab p</find>
       <find>fontello</find>
+      <find>material-icons</find>
+      <find>Material</find>
+      <find>phone</find>
+      <find>#custom-footer .fr-element span</find>
+      <find>red</find>
+      <find>container_wrap socket_color</find>
+      <find>#custom-footer .first-row</find>
+      <find>اجتماعی</find>
+      <find>.footer-social</find>
+      <find>footer-social-btns</find>
     </findStrings>
     <replaceStrings>
       <replace>images/</replace>
@@ -136,6 +132,7 @@
       <replace>0.5px</replace>
       <replace>0.5deg</replace>
       <replace>1px</replace>
+      <replace>#B71C1C</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child</dir>
@@ -153,10 +150,10 @@
         <option value="$PROJECT_DIR$/css/site-styles.css" />
         <option value="$PROJECT_DIR$/css/wpforms-styles.css" />
         <option value="$PROJECT_DIR$/woo-features.php" />
-        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/js/custom-scripts.js" />
-        <option value="$PROJECT_DIR$/footer.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/header.php" />
+        <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/css/custom-styles.css" />
       </list>
     </option>
@@ -185,16 +182,6 @@
               <item name="enfold-child" type="b2602c69:ProjectViewProjectNode" />
               <item name="enfold-child" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="enfold-child" type="b2602c69:ProjectViewProjectNode" />
-              <item name="enfold-child" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="enfold-child" type="b2602c69:ProjectViewProjectNode" />
-              <item name="enfold-child" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -327,6 +314,22 @@
       <workItem from="1604752766162" duration="671000" />
       <workItem from="1604815340378" duration="1070000" />
       <workItem from="1604816501119" duration="5543000" />
+      <workItem from="1605014128338" duration="79000" />
+      <workItem from="1605506112148" duration="91000" />
+      <workItem from="1605522216800" duration="4284000" />
+      <workItem from="1605589666890" duration="3020000" />
+      <workItem from="1605685292141" duration="2619000" />
+      <workItem from="1606540090604" duration="1291000" />
+      <workItem from="1606554743763" duration="282000" />
+      <workItem from="1606555052212" duration="1338000" />
+      <workItem from="1606646093662" duration="3885000" />
+      <workItem from="1606718001505" duration="3298000" />
+      <workItem from="1606885885024" duration="570000" />
+      <workItem from="1608990580913" duration="502000" />
+      <workItem from="1609399441203" duration="497000" />
+      <workItem from="1609569277854" duration="696000" />
+      <workItem from="1609593756167" duration="102000" />
+      <workItem from="1609834917381" duration="3018000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1590862220655</created>
@@ -353,13 +356,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="216845000" />
+    <option name="totallyTimeSpent" value="242417000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16257995" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13486141" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -372,7 +375,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30877572" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -485,45 +488,41 @@
     <entry file="file://$PROJECT_DIR$/images/enamad.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="116" column="23" selection-start-line="116" selection-start-column="23" selection-end-line="116" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="262" column="24" selection-start-line="262" selection-start-column="24" selection-end-line="266" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="3312">
+          <caret line="141" selection-start-line="141" selection-end-line="141" />
           <folding>
             <element signature="e#7#183#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#center#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="54" column="9" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="n#style#0;n#svg#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="24">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="354" column="42" selection-start-line="354" selection-start-column="24" selection-end-line="354" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/custom-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="563" column="1" lean-forward="true" selection-start-line="563" selection-start-column="1" selection-end-line="563" selection-end-column="1" />
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
         </state>
       </provider>
     </entry>

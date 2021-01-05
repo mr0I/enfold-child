@@ -351,6 +351,19 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
             </div>
 
+            <!--  SOCIAL BUTTONS  -->
+            <div class="footer-social-btns">
+                <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" title="اینستاگرام">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" title="تلگرام">
+                    <i class="fa fa-telegram"></i>
+                </a>
+            </div>
+            <!--  SOCIAL BUTTONS  -->
+
+
+
             <!-- ####### END SOCKET CONTAINER ####### -->
         </footer>
 
@@ -404,9 +417,9 @@ if(isset($avia_config['fullscreen_image']))
             <path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" />
         </svg>
     </a>
-<!--    <a class="dial-btn" href="tel:03132362894" title="تماس با واحد بازرگانی">-->
-<!--        <i class="phone fa fa-phone"></i>-->
-<!--    </a>-->
+    <a class="dial-btn" href="tel:03132362894" title="تماس با واحد بازرگانی">
+        <i class="Phone"></i>
+    </a>
 
 <!--    <div class="fab-container">-->
 <!--        <div class="fab fab-icon-holder">-->
