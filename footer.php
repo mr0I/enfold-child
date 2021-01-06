@@ -240,7 +240,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
             <div class="container-fluid">
                 <div class="row">
                     <div class="tr-element col-md-6 col-sm-12">
-                        <h6>آدرس دفتر مرکزی:</h6>
+                        <h6>آدرس دفتر مرکزی</h6>
                         <p>
                                 <span>
                                     اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33       ساعات کار:       8:30 الی 17
@@ -248,10 +248,10 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                             <br>
                             <span> کد پستی: <span>8183877113</span></span>
                         </p>
-                        <h6>واحد بازرگانی: <span>03132362894 - 03132362947 - 09124735787 - 09124839402</span></h6>
-                        <h6> واحد پشتیبانی: <span >03195016151 - 03132363078 - 09018377198 - 09018377021 - 09018377021 - 09901883981</span></h6>
-                        <h6> فکس: <span >03132362788 (داخلی 23)</span></h6>
-                        <h6 class="mt-4">آدرس کارخانه:</h6>
+                        <h6>واحد بازرگانی <p>03132362894 - 03132362947 - 09124735787 - 09124839402</p></h6>
+                        <h6> واحد پشتیبانی <p >03195016151 - 03132363078 - 09018377198 - 09018377021 - 09018377021 - 09901883981</p></h6>
+                        <h6> فکس <p >03132362788 (داخلی 23)</p></h6>
+                        <h6 class="mt-4">آدرس کارخانه</h6>
                         <p>
                              <span>
                                     نجف آباد – شهرک صنعتی شماره 2 – خیابان ابوریحان – شرکت رادشید
@@ -421,32 +421,6 @@ if(isset($avia_config['fullscreen_image']))
         <i class="Phone"></i>
     </a>
 
-<!--    <div class="fab-container">-->
-<!--        <div class="fab fab-icon-holder">-->
-<!--            <i class="phone fa fa-phone"></i>-->
-<!--        </div>-->
-<!--        <ul class="fab-options">-->
-<!--            <li>-->
-<!--                <div class="fab-icon-holder" title="تماس با واحد بازرگانی">-->
-<!--                    <a href="tel:03132362894" >-->
-<!--                        <svg id="i-telephone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">-->
-<!--                            <path d="M3 12 C3 5 10 5 16 5 22 5 29 5 29 12 29 20 22 11 22 11 L10 11 C10 11 3 20 3 12 Z M11 14 C11 14 6 19 6 28 L26 28 C26 19 21 14 21 14 L11 14 Z" />-->
-<!--                            <circle cx="16" cy="21" r="4" />-->
-<!--                        </svg>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--            <li>-->
-<!--                <div class="fab-icon-holder">-->
-<!--                    <a href="#">-->
-<!--                        <svg id="i-mobile" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">-->
-<!--                            <path d="M21 2 L11 2 C10 2 9 3 9 4 L9 28 C9 29 10 30 11 30 L21 30 C22 30 23 29 23 28 L23 4 C23 3 22 2 21 2 Z M9 5 L23 5 M9 27 L23 27" />-->
-<!--                        </svg>-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </li>-->
-<!--        </ul>-->
-<!--    </div>-->
 </div>
 
 <!-- floated icons -->
@@ -516,5 +490,7 @@ if(isset($avia_config['fullscreen_image']))
 
 wp_footer();
 ?>
+
+<!--<script src="//code.tidio.co/jxpvjp4fhnmhuhyyzdvwqf9ojduba4fz.js" async></script>-->
 </body>
 </html>

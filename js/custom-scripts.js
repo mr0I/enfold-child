@@ -1,3 +1,5 @@
+/* Version 1.0.2 */
+
 jQuery(document).ready(function ($) {
 
     setInterval(function() {
@@ -16,11 +18,11 @@ jQuery(document).ready(function ($) {
 
 
 document.onscroll = function(){
-    var pos = getVerticalScrollPercentage(document.body);
+    let pos = getVerticalScrollPercentage(document.body);
     document.getElementById("scroll-bar").style.width = pos+'%';
 };
 function getVerticalScrollPercentage( elm ){
-    var p = elm.parentNode,
+    let p = elm.parentNode,
         pos = (elm.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
     return pos;
 }

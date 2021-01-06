@@ -1,5 +1,4 @@
-/* Version 1.0.2 */
-
+/* Version 1.0.5 */
 .floated_icons-r1 , .floated_icons-r2 , .floated_icons-r3{
     direction: ltr;
     float: left;
@@ -52,7 +51,7 @@
     margin-left: 10px;
     text-align: right;
     color: #777 !important;
-    font-family: vazir;
+    font-family: "Samim";
     direction: rtl;
     -webkit-transition: 0.1s ease-in-out;
     -moz-transition: 0.1s ease-in-out;
@@ -92,7 +91,7 @@
     position: fixed;
     left: 8px;
     bottom: 20px;
-    background: #D50000;
+    background: #B71C1C;
     width: 60px;
     height: 60px;
     border-radius: 50px !important;
@@ -131,7 +130,7 @@ div#footer{
 #custom-footer{
     background-color: #eeeeee;
     padding: 2px;
-    font-family: vazir;
+    font-family: "Samim";
 }
 #custom-footer .first-row{
     border-bottom: 1px solid #E0E0E0;
@@ -223,23 +222,22 @@ div#footer{
     margin-top: 10px;
 }
 #custom-footer .tr-element h6{
-    margin: 15px auto;
     font-size: 15px;
     color: #555;
     font-family: iranyekan;
     line-height: 2;
 }
-#custom-footer .tr-element h6 span{
+#custom-footer .tr-element h6 p{
     font-weight: normal;
     font-size: 15px;
-    font-family: vazir;
+    font-family: "Samim";
 }
 #custom-footer .tr-element p {
     margin: auto;
     color: #666666;
     font-size: 15px;
     line-height: 2;
-    font-family: vazir !important;
+    font-family: "Samim" !important;
 }
 #custom-footer #gateway {
     display: flex;
@@ -302,7 +300,7 @@ footer .footer-social-btns a:hover{
     align-content: center;
     width: 100%;
     padding: 15px;
-    font-family: vazir;
+    font-family: "Samim";
 }
 .tab-content p span{
     margin: auto 15px;
@@ -631,12 +629,15 @@ footer .footer-social-btns a:hover{
     width: 100%;
 }
 .custom-header-container ul li{
-    font-family: 'vazir';
+    font-family: '"Samim"';
     user-select: none;
 }
 .custom-header-container ul li span{
     font-family: 'iranyekan';
     font-size: 13px;
+}
+.custom-header-container ul li span span.phoneNumber{
+    font-family: 'Samim';
 }
 .custom-header-container ul li svg{
     vertical-align: sub;
@@ -646,7 +647,7 @@ footer .footer-social-btns a:hover{
     -o-transition: 0.3s ease-in-out;
 }
 .custom-header-container ul li:hover>svg{
-    color: #17a2b8;
+    color: #D50000;
 }
 #social_icons{
     display: flex;
@@ -781,6 +782,17 @@ footer .footer-social-btns a:hover{
 }
 /* New */
 
+#scroll-bar{
+    z-index: 1500;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 0;
+    background: #B71C1C;
+    height: 3px;
+    border-radius: 0;
+}
+
 /* Responsive */
 @media screen and (max-width: 1000px) {
 
@@ -838,7 +850,7 @@ footer .footer-social-btns a:hover{
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .html_header_top.html_header_sticky #header {
         top: 0;
     }
@@ -980,6 +992,13 @@ footer .footer-social-btns a:hover{
     }
     .floated_icons-r1 , .floated_icons-r2 , .floated_icons-r3  {
         display: none;
+    }
+
+    #socket .sub_menu_socket li{
+        border-right-color: transparent !important;
+        width: 100%;
+        text-align: center;
+        margin: 5px auto;
     }
 
 }
