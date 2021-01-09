@@ -5,8 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom-styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/custom-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/custom-scripts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2112">
-              <caret line="92" column="27" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="27" />
+            <state relative-caret-position="1608">
+              <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -40,11 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="241" selection-start-line="241" selection-end-line="261" />
-              <folding>
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#!!top" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="410" lean-forward="true" selection-start-line="410" selection-end-line="410" />
             </state>
           </provider>
         </entry>
@@ -52,8 +47,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="223" column="30" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="30" />
+            <state relative-caret-position="330">
+              <caret line="95" column="17" lean-forward="true" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+              <folding>
+                <element signature="e#8311#8730#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -63,9 +61,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret column="16" selection-start-column="16" selection-end-column="16" />
-              <folding>
-                <element signature="n#style#0;n#svg#0;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -82,11 +77,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>init</find>
-      <find>social_icons</find>
-      <find>gateway</find>
-      <find>FhjbxasmXXMZd5Y5vKZc</find>
-      <find>#custom-footer .tr-element p</find>
       <find>mico</find>
       <find>.woo-docs-tab p</find>
       <find>fontello</find>
@@ -106,12 +96,17 @@
       <find>scroll-bar</find>
       <find>custom-header-container</find>
       <find>vazir</find>
-      <find>.floated-shop</find>
       <find>768</find>
       <find>#socket .sub_menu_socket li</find>
       <find>#custom-footer .tr-element h6 span</find>
       <find>بازرگانی</find>
       <find>#custom-footer .tr-element h6</find>
+      <find>35%</find>
+      <find>top</find>
+      <find>floated-shop</find>
+      <find>floated_icons-r1</find>
+      <find>.floated_icons-r1</find>
+      <find>.floated-shop</find>
     </findStrings>
     <replaceStrings>
       <replace>images/</replace>
@@ -140,6 +135,7 @@
       <replace>#B71C1C</replace>
       <replace>let</replace>
       <replace>&quot;Samim&quot;</replace>
+      <replace>50%</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child</dir>
@@ -160,8 +156,8 @@
         <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/js/custom-scripts.js" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/css/custom-styles.css" />
+        <option value="$PROJECT_DIR$/footer.php" />
       </list>
     </option>
   </component>
@@ -340,7 +336,10 @@
       <workItem from="1609838807655" duration="5631000" />
       <workItem from="1609923311439" duration="615000" />
       <workItem from="1609925109210" duration="797000" />
-      <workItem from="1609931573831" duration="3281000" />
+      <workItem from="1609931573831" duration="4032000" />
+      <workItem from="1610003857904" duration="204000" />
+      <workItem from="1610171107174" duration="820000" />
+      <workItem from="1610172991313" duration="4830000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1590862220655</created>
@@ -367,13 +366,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="253256000" />
+    <option name="totallyTimeSpent" value="259861000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1401919" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14498934" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -386,7 +385,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30877572" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30877572" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -511,8 +510,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2112">
-          <caret line="92" column="27" selection-start-line="92" selection-start-column="27" selection-end-line="92" selection-end-column="27" />
+        <state relative-caret-position="1608">
+          <caret line="67" column="36" selection-start-line="67" selection-start-column="36" selection-end-line="67" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -520,26 +519,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="16" selection-start-column="16" selection-end-column="16" />
-          <folding>
-            <element signature="n#style#0;n#svg#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/custom-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="223" column="30" selection-start-line="223" selection-start-column="30" selection-end-line="223" selection-end-column="30" />
+        <state relative-caret-position="330">
+          <caret line="95" column="17" lean-forward="true" selection-start-line="95" selection-start-column="17" selection-end-line="95" selection-end-column="17" />
+          <folding>
+            <element signature="e#8311#8730#2" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="241" selection-start-line="241" selection-end-line="261" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#2;n#div#1;n#!!top" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="410" lean-forward="true" selection-start-line="410" selection-end-line="410" />
         </state>
       </provider>
     </entry>

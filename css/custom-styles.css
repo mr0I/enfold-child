@@ -12,13 +12,13 @@
     white-space: nowrap;
 }
 .floated_icons-r1 {
-    top: 35%;
+    top: 50%;
 }
 .floated_icons-r2 {
-    top: calc(35% + 49px);
+    top: calc(50% + 49px);
 }
 .floated_icons-r3 {
-    top: calc(35% + 98px);
+    top: calc(50% + 98px);
 }
 
 .floated_icons-r1 a , .floated_icons-r2 a , .floated_icons-r3 a  {
@@ -89,13 +89,13 @@
 
 .floated-shop {
     position: fixed;
-    left: 8px;
-    bottom: 20px;
+    left: 20px;
+    bottom: 15px;
     background: #B71C1C;
-    width: 60px;
-    height: 60px;
-    border-radius: 50px !important;
-    line-height: 60px;
+    width: 50px;
+    height: 50px;
+    border-radius: 0 !important;
+    line-height: 50px;
     text-align: center;
     font-size: 24px;
     z-index: 1000;
@@ -1001,6 +1001,14 @@ footer .footer-social-btns a:hover{
         margin: 5px auto;
     }
 
+    footer .footer-social-btns{
+        display: none;
+    }
+    #socket .copyright{
+        font-size: 1.5em !important;
+    }
+
+
 }
 
 @media screen and (max-width: 600px) {
@@ -1107,10 +1115,5 @@ footer .footer-social-btns a:hover{
 
 }
 /* Responsive */
-
-
-
-
-
 
 
