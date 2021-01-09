@@ -1,4 +1,4 @@
-/* Version 1.0.2 */
+/* Version 1.0.6 */
 
 jQuery(document).ready(function ($) {
 
@@ -13,7 +13,6 @@ jQuery(document).ready(function ($) {
 
     $('.cart_dropdown_link').find('span:first-child').html('<svg id="i-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="25" height="25" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="margin: 10px auto;"><path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" /></svg>');
 
-
 });
 
 
@@ -25,21 +24,4 @@ function getVerticalScrollPercentage( elm ){
     let p = elm.parentNode,
         pos = (elm.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
     return pos;
-}
-
-
-/* Ripple Button */
-var buttons = document.getElementsByClassName("single_add_to_cart_button");
-Array.prototype.forEach.call(buttons, function(b){
-    b.addEventListener('mouseover', createRipple);
-});
-function createRipple(e)
-{
-    var circle = document.createElement('div');
-    this.appendChild(circle);
-    var d = Math.max(this.clientWidth, this.clientHeight);
-    circle.style.width = circle.style.height = d + 'px';
-    circle.style.left = e.clientX - this.offsetLeft - d / 2 + 'px';
-    circle.style.top = e.clientY - this.offsetTop - d / 2 + 'px';
-    circle.classList.add('ripple');
 }
