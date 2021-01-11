@@ -353,10 +353,10 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
             <!--  SOCIAL BUTTONS  -->
             <div class="footer-social-btns">
-                <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" title="اینستاگرام">
+                <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="اینستاگرام">
                     <i class="fa fa-instagram"></i>
                 </a>
-                <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" title="تلگرام">
+                <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="تلگرام" >
                     <i class="fa fa-telegram"></i>
                 </a>
             </div>
@@ -413,14 +413,13 @@ if(isset($avia_config['fullscreen_image']))
 <!-- custom code -->
 <div data-toggle="tooltip" data-placement="top" title="ورود به فروشگاه">
     <a class="floated-shop" href="https://radshid.com/shop/"  target="_blank">
-        <svg id="i-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <svg id="i-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
             <path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" />
         </svg>
     </a>
     <a class="dial-btn" href="tel:03132362894" title="تماس با واحد بازرگانی">
         <i class="Phone"></i>
     </a>
-
 </div>
 
 <!-- floated icons -->

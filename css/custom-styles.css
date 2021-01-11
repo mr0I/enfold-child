@@ -12,13 +12,13 @@
     white-space: nowrap;
 }
 .floated_icons-r1 {
-    top: 50%;
+    top: 45%;
 }
 .floated_icons-r2 {
-    top: calc(50% + 49px);
+    top: calc(45% + 49px);
 }
 .floated_icons-r3 {
-    top: calc(50% + 98px);
+    top: calc(45% + 98px);
 }
 
 .floated_icons-r1 a , .floated_icons-r2 a , .floated_icons-r3 a  {
@@ -89,12 +89,12 @@
 
 .floated-shop {
     position: fixed;
-    left: 20px;
+    left: 30px;
     bottom: 15px;
     background: #B71C1C;
     width: 50px;
     height: 50px;
-    border-radius: 0 !important;
+    border-radius: 50px !important;
     line-height: 50px;
     text-align: center;
     font-size: 24px;
@@ -231,6 +231,7 @@ div#footer{
     font-weight: normal;
     font-size: 15px;
     font-family: Samim,Sans-serif !important;
+    direction: ltr;
 }
 #custom-footer .tr-element p {
     margin: auto;
@@ -757,6 +758,7 @@ footer .footer-social-btns a:hover{
     background: #B71C1C;
     height: 3px;
     border-radius: 0;
+    display: none;
 }
 
 /* Responsive */
