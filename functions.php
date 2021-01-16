@@ -200,3 +200,17 @@ exit();
 /* Pro Ranks Schedule */
 //wp_schedule_event( time(), '', 'uapDoRanksReset');//modify time
 //wp_schedule_event( time(), 'every_ten_minutes', 'uap_cron_job');//modify time
+
+
+
+/*
+* Rich Snippet Data
+* Add missing data not handled by WooCommerce yet - Webjame.Com
+*/
+function custom_woocommerce_structured_data_product ($data) {
+	global $product;
+	$data['brand'] = $product->get_attribute('brand') ? $product->get_attribute('brand') : null;
+	$data['mpn'] = $product->get_sku() ? $product->get_sku() : null;
+	return $data;
+}
+add_filter( 'woocommerce_structured_data_product', 'custom_woocommerce_structured_data_product' );
