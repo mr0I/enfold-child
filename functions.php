@@ -11,9 +11,10 @@ defined("ABSPATH") || exit();
 function load_scripts_styles() {
 	$vn = wp_get_theme()->get( 'Version' );
 	// Styles
-	wp_enqueue_style( 'font-awesome',     get_template_directory_uri()."/config-layerslider/LayerSlider/static/font-awesome/css/font-awesome.min.css", $vn, 'all' );
-	wp_enqueue_style( 'bootstrap' , get_stylesheet_directory_uri() . '/css/bootstrap.min.css');
+	wp_enqueue_style( 'maticons' , get_stylesheet_directory_uri() . '/css/maticons.css' );
+	wp_enqueue_style( 'wpforms' , get_stylesheet_directory_uri() . '/css/wpforms.css');
 	wp_enqueue_style( 'custom-styles' , get_stylesheet_directory_uri() . '/css/custom-styles.css');
+//	wp_enqueue_style( 'front-styles' , get_stylesheet_directory_uri() . '/css/front-styles.css');
 	// Scripts
 	wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/js/custom-scripts.js', array('jquery'), $vn , true );
 	wp_localize_script( 'custom-scripts', 'SpaAjax', array(
@@ -62,49 +63,49 @@ function product_tags($attr , $content){
 /**
  * Add extra fields to register form.
  */
-function wooc_extra_register_fields() {?>
-	<p class="form-row form-row-first">
-		<label for="reg_billing_first_name"><?php _e( 'First name', 'woocommerce' ); ?></label>
-		<input type="text" class="input-text" name="billing_first_name" id="reg_billing_first_name"
-		       value="<?php if ( ! empty( $_POST['billing_first_name'] ) ) esc_attr_e( $_POST['billing_first_name'] ); ?>" />
-	</p>
-	<p class="form-row form-row-last">
-		<label for="reg_billing_last_name"><?php _e( 'Last name', 'woocommerce' ); ?></label>
-		<input type="text" class="input-text" name="billing_last_name" id="reg_billing_last_name"
-		       value="<?php if ( ! empty( $_POST['billing_last_name'] ) ) esc_attr_e( $_POST['billing_last_name'] ); ?>" />
-	</p>
-	<p class="form-row form-row-wide">
-		<label for="reg_billing_phone"><?php _e( 'Phone Number', 'woocommerce' ); ?></label>
-		<input type="text" class="input-text" name="billing_phone" id="reg_billing_phone"
-		       value="<?php if ( ! empty( $_POST['billing_phone'] ) ) esc_attr_e( $_POST['billing_phone'] ); ?>" maxlength="11"
-		       onkeyup="this.value = this.value.replace(/[^\d\.]+/g, '');"/>
-	</p>
-	<div class="clear"></div>
-	<?php
-}
-add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
+//function wooc_extra_register_fields() {?>
+<!--	<p class="form-row form-row-first">-->
+<!--		<label for="reg_billing_first_name">--><?php //_e( 'First name', 'woocommerce' ); ?><!--</label>-->
+<!--		<input type="text" class="input-text" name="billing_first_name" id="reg_billing_first_name"-->
+<!--		       value="--><?php //if ( ! empty( $_POST['billing_first_name'] ) ) esc_attr_e( $_POST['billing_first_name'] ); ?><!--" />-->
+<!--	</p>-->
+<!--	<p class="form-row form-row-last">-->
+<!--		<label for="reg_billing_last_name">--><?php //_e( 'Last name', 'woocommerce' ); ?><!--</label>-->
+<!--		<input type="text" class="input-text" name="billing_last_name" id="reg_billing_last_name"-->
+<!--		       value="--><?php //if ( ! empty( $_POST['billing_last_name'] ) ) esc_attr_e( $_POST['billing_last_name'] ); ?><!--" />-->
+<!--	</p>-->
+<!--	<p class="form-row form-row-wide">-->
+<!--		<label for="reg_billing_phone">--><?php //_e( 'Phone Number', 'woocommerce' ); ?><!--</label>-->
+<!--		<input type="text" class="input-text" name="billing_phone" id="reg_billing_phone"-->
+<!--		       value="--><?php //if ( ! empty( $_POST['billing_phone'] ) ) esc_attr_e( $_POST['billing_phone'] ); ?><!--" maxlength="11"-->
+<!--		       onkeyup="this.value = this.value.replace(/[^\d\.]+/g, '');"/>-->
+<!--	</p>-->
+<!--	<div class="clear"></div>-->
+<!--	--><?php
+//}
+//add_action( 'woocommerce_register_form_start', 'wooc_extra_register_fields' );
 /**
  * Below code save extra fields.
  */
-function wooc_save_extra_register_fields( $customer_id ) {
-	if ( isset( $_POST['billing_phone'] ) ) {
-		// Phone input filed which is used in WooCommerce
-		update_user_meta( $customer_id, 'billing_phone', sanitize_text_field( $_POST['billing_phone'] ) );
-	}
-	if ( isset( $_POST['billing_first_name'] ) ) {
-		//First name field which is by default
-		update_user_meta( $customer_id, 'first_name', sanitize_text_field( $_POST['billing_first_name'] ) );
-		// First name field which is used in WooCommerce
-		update_user_meta( $customer_id, 'billing_first_name', sanitize_text_field( $_POST['billing_first_name'] ) );
-	}
-	if ( isset( $_POST['billing_last_name'] ) ) {
-		// Last name field which is by default
-		update_user_meta( $customer_id, 'last_name', sanitize_text_field( $_POST['billing_last_name'] ) );
-		// Last name field which is used in WooCommerce
-		update_user_meta( $customer_id, 'billing_last_name', sanitize_text_field( $_POST['billing_last_name'] ) );
-	}
-}
-add_action( 'woocommerce_created_customer', 'wooc_save_extra_register_fields' );
+//function wooc_save_extra_register_fields( $customer_id ) {
+//	if ( isset( $_POST['billing_phone'] ) ) {
+//		// Phone input filed which is used in WooCommerce
+//		update_user_meta( $customer_id, 'billing_phone', sanitize_text_field( $_POST['billing_phone'] ) );
+//	}
+//	if ( isset( $_POST['billing_first_name'] ) ) {
+//		//First name field which is by default
+//		update_user_meta( $customer_id, 'first_name', sanitize_text_field( $_POST['billing_first_name'] ) );
+//		// First name field which is used in WooCommerce
+//		update_user_meta( $customer_id, 'billing_first_name', sanitize_text_field( $_POST['billing_first_name'] ) );
+//	}
+//	if ( isset( $_POST['billing_last_name'] ) ) {
+//		// Last name field which is by default
+//		update_user_meta( $customer_id, 'last_name', sanitize_text_field( $_POST['billing_last_name'] ) );
+//		// Last name field which is used in WooCommerce
+//		update_user_meta( $customer_id, 'billing_last_name', sanitize_text_field( $_POST['billing_last_name'] ) );
+//	}
+//}
+//add_action( 'woocommerce_created_customer', 'wooc_save_extra_register_fields' );
 
 
 

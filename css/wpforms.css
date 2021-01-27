@@ -1,0 +1,53 @@
+/* Add your CSS code here. */
+
+.entry-content table.wp-list-table{
+    background-color: #fff !important;
+}
+.entry-content tr{
+    background-color: #fff !important;
+}
+
+label.wpforms-field-label {
+    font-size: 15px !important;
+    padding: 10px 4px !important;
+    color: #212121;
+}
+
+div.wpforms-container-full .wpforms-form ul li {
+    padding: 5px !important;
+    color: #363636;
+    font-size: 15px;
+}
+
+span.wpforms-required-label {
+    color: red !important;
+}
+
+textarea.wpforms-field-medium {
+    background: #fff!important;
+    border-radius: 0 !important;
+    border: 1px solid #bdbdbd !important;
+}
+
+div.wpforms-container-full .wpforms-form button[type=submit] {
+    width:100%;
+    font: inherit;
+}
+
+.wpforms-field-text input{
+    background-color: #ffffff !important;
+    border-radius: 0 !important;
+}
+
+div.notrequired >label::after{
+    content: "(اختیاری)";
+    position: absolute;
+    color: grey;
+    vertical-align: middle;
+    margin: 2px 4px;
+    font-size: 12px;
+}
+
+
+
+

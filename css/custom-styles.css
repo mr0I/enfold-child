@@ -30,7 +30,7 @@
     min-width: 40px;
     width: auto;
     height: 40px;
-    color: #B71C1C;
+    color: #cb2027;
     padding: 24px 0;
     background-color: #E0E0E0;
     text-decoration: none !important;
@@ -58,7 +58,6 @@
     -o-transition: 0.1s ease-in-out;
     transition: 0.1s ease-in-out;
 }
-
 .floated_icons-r1 a:hover span{
     padding: 20px;
     width: 200px;
@@ -89,9 +88,9 @@
 
 .floated-shop {
     position: fixed;
-    left: 30px;
+    left: 20px;
     bottom: 45px;
-    background: #B71C1C;
+    background: #cb2027;
     width: 60px;
     height: 60px;
     border-radius: 50px !important;
@@ -167,6 +166,7 @@ div#footer{
     font-size: 18px;
     color: #555555;
     text-align: right;
+    font-weight: bold;
 }
 #custom-footer .fr-element p {
     margin: 10px auto;
@@ -226,6 +226,7 @@ div#footer{
     color: #555;
     font-family: iranyekan,Samim,Sans-serif;
     line-height: 2;
+    font-weight: bold;
 }
 #custom-footer .tr-element h6 p{
     font-weight: normal;
@@ -755,7 +756,7 @@ footer .footer-social-btns a:hover{
     top: 0;
     right: 0;
     width: 0;
-    background: #B71C1C;
+    background: #cb2027;
     height: 3px;
     border-radius: 0;
     display: none;
@@ -911,9 +912,7 @@ footer .footer-social-btns a:hover{
         padding-right: 0;
         text-align: center;
     }
-    #custom-footer .sr-element h6{
-        text-align: center;
-    }
+
     #custom-footer .tr-element{
         padding-right: 0;
     }
@@ -924,6 +923,7 @@ footer .footer-social-btns a:hover{
         font-size: 13px;
     }
     #custom-footer .sr-element h6{
+        text-align: center;
         margin: 10px auto;
         padding-top: 10px;
         font-size: 16px;
@@ -1056,7 +1056,6 @@ footer .footer-social-btns a:hover{
 }
 
 @media screen and (max-width: 400px) {
-
 
     #custom-footer .fr-element span{
         font-size: 8px;

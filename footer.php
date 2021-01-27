@@ -490,6 +490,7 @@ if(isset($avia_config['fullscreen_image']))
 wp_footer();
 ?>
 
-<!--<script src="//code.tidio.co/jxpvjp4fhnmhuhyyzdvwqf9ojduba4fz.js" async></script>-->
+
+<script src="//code.tidio.co/jxpvjp4fhnmhuhyyzdvwqf9ojduba4fz.js" async defer></script>
 </body>
 </html>

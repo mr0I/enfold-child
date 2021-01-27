@@ -51,7 +51,9 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
     <meta name="keywords" content="ردیاب خودرو, ردیاب شخصی , ردیاب موتور سیکلت, ردیاب آهنربایی ,ردیاب کودکان, ردیاب سالمندان,ردیاب پاوربانک, دستگاه شنود,سامانه ردیابی, ردیاب رادشید, خرید اینترنتی ردیاب, فروش اینترنتی ردیاب,خرید تبلت صنعتی, سیپاد">
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="enamad" content="419561"/>
-<!--    <script>if (top!= self) top.location=self.document.location;</script>-->
+    <link rel="preload" href="<?php echo get_stylesheet_directory_uri(). '/fonts/micons.woff2' ?>  " as="font" type="font/woff2" crossorigin="anonymous">
+
+
     <?php
 	/*
 	 * outputs a rel=follow or nofollow tag to circumvent google duplicate content for archives

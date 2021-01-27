@@ -20,12 +20,12 @@ jQuery(document).ready(function ($) {
 });
 
 
-document.onscroll = function(){
-    let pos = getVerticalScrollPercentage(document.body);
-    document.getElementById("scroll-bar").style.width = pos+'%';
-};
-function getVerticalScrollPercentage( elm ){
-    let p = elm.parentNode,
-        pos = (elm.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
-    return pos;
-}
+// document.onscroll = function(){
+//     let pos = getVerticalScrollPercentage(document.body);
+//     document.getElementById("scroll-bar").style.width = pos+'%';
+// };
+// function getVerticalScrollPercentage( elm ){
+//     let p = elm.parentNode,
+//         pos = (elm.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
+//     return pos;
+// }
