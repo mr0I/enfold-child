@@ -53,7 +53,6 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
     <meta name="enamad" content="419561"/>
     <link rel="preload" href="<?php echo get_stylesheet_directory_uri(). '/fonts/micons.woff2' ?>  " as="font" type="font/woff2" crossorigin="anonymous">
 
-
     <?php
 	/*
 	 * outputs a rel=follow or nofollow tag to circumvent google duplicate content for archives
@@ -108,16 +107,16 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
                 </svg>
                 <span>   واحد پشتیبانی:  <span class="phoneNumber">03195016151</span> </span>
             </li>
-            <li id="social_icons">
-                <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" title="اینستاگرام"
-                   data-toggle="tooltip" data-placement="bottom">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" title="تلگرام"
-                   data-toggle="tooltip" data-placement="bottom">
-                    <i class="fa fa-telegram"></i>
-                </a>
-            </li>
+<!--            <li id="social_icons">-->
+<!--                <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" title="اینستاگرام"-->
+<!--                   data-toggle="tooltip" data-placement="bottom">-->
+<!--                    <i class="fa fa-instagram"></i>-->
+<!--                </a>-->
+<!--                <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" title="تلگرام"-->
+<!--                   data-toggle="tooltip" data-placement="bottom">-->
+<!--                    <i class="fa fa-telegram"></i>-->
+<!--                </a>-->
+<!--            </li>-->
         </ul>
 
     </div>

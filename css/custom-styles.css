@@ -283,6 +283,10 @@ footer .footer-social-btns a{
 footer .footer-social-btns a:hover{
     color: rgb(249, 157, 120);
 }
+footer .footer-social-btns i{
+    -webkit-text-stroke: 0.5px #eee;
+    -webkit-text-fill-color: transparent;
+}
 /* Footer */
 
 

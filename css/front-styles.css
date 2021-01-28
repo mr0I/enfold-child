@@ -137,6 +137,11 @@ main.template-shop.content.av-content-small.alpha.units {
 nav.main_menu ul li a {
     font-size: 12px;
 }
+nav.main_menu ul li a i{
+    -webkit-text-stroke: 1px #1c272b;
+    -webkit-text-fill-color: transparent;
+    padding: 0 3px;
+}
 #top .woocommerce-tabs h2 {
     font-size: 24px;
 }
@@ -1537,6 +1542,10 @@ span.news-time {
     display: none !important;
 }
 
+.woocommerce-EditAccountForm span.password-input {
+    width: 100%;
+}
+
 
 
 /* Uap Default CSS */
@@ -1559,8 +1568,6 @@ span.news-time {
 }
 
 
-
-/*** Style for theme 3  ***/
 .uap-ap-theme-3 .uap-ap-menu{
     border-radius: 0 !important;
 }
@@ -1772,21 +1779,6 @@ span.news-time {
     border: none;
 }
 
-/* Responsive */
-@media screen and (max-width: 400px) {
-    .uap-login-form-wrap form{
-        width: 80%;
-    }
-}
-@media screen and (max-width: 300px) {
-    .uap-login-form-wrap form{
-        width: 60%;
-    }
-    #uap_login_form{
-        min-width: 100%;
-    }
-}
-/* Responsive */
 /* Uap Custom Login CSS */
 
 
@@ -1854,10 +1846,19 @@ span.news-time {
     .uap-register-form form{
         width: 80%;
     }
+    .uap-login-form-wrap form{
+        width: 80%;
+    }
 }
 @media screen and (max-width: 300px) {
     .uap-register-form form{
         width: 60%;
+    }
+    .uap-login-form-wrap form{
+        width: 60%;
+    }
+    #uap_login_form{
+        min-width: 100%;
     }
 }
 /* Responsive */
@@ -1893,9 +1894,6 @@ table.affilate_levels tr th, tr td {
     vertical-align: middle;
 }
 /* Affilate Levels Table */
-
-
-
 /* Uap Custom Dashboard CSS */
 
 
@@ -1904,6 +1902,12 @@ table.affilate_levels tr th, tr td {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+    .woocommerce-MyAccount-navigation{
+        width: 100% !important;
+    }
+    .woocommerce-MyAccount-content{
+        width: 100% !important;
+    }
 
     .psfw-inner-wrap{
         border:none !important;
