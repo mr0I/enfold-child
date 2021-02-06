@@ -1,4 +1,4 @@
-/* Add your CSS code here. */
+/* Version 1.0.8 */
 body{
     text-align: right;
 }
@@ -20,6 +20,10 @@ body{
 ul#avia-menu li.current-menu-item > a{
     color: #cb2026 !important;
     font-weight: bold !important;
+}
+
+ul#avia-menu li.current-menu-item>a i{
+    -webkit-text-stroke: 1px #cb2026;
 }
 
 .avia-menu-text i{
@@ -317,15 +321,27 @@ span.pagination-meta {
 .u-columns form a {
     text-decoration: none;
 }
-.u-column1 {
-    width: 100% !important;
-    min-width: 100%;
+
+#customer_login{
+    width: 100%;
+    margin: 50px auto;
+}
+#customer_login h2{
+    text-align: center;
+    color: #1c272b;
+}
+#customer_login .u-column1 {
     margin-bottom: 25px;
 }
-.u-column2 {
-    width: 100% !important;
-    min-width: 100%;
+#customer_login .u-column2 {
+    margin-top: -205px;
 }
+
+#form_actions{
+    display: flex;
+    justify-content: center;
+}
+
 .register p label {
     text-align: right;
     padding: 4px 10px;
@@ -599,13 +615,12 @@ span.copyright{
 #scroll-top-link{
     width: 50px;
     height: 50px;
-    bottom: 175px;
+    bottom: 20px;
     right: unset;
-    left:calc(50% - 25px);
+    left:15px;
     background-color: #1c272b;
     border: 1px solid #EEEEEE;
     border-radius: 50px;
-    display: none;
 }
 
 #scroll-top-link:before {
@@ -876,10 +891,9 @@ ul.sub-menu li.menu-item-has-children >a::after{
     background-color: #cb2026 !important;
     color: #eee !important;
 }
-
-
-
-
+.html_av-overlay-side #top #wrap_all div .av-burger-overlay-scroll #av-burger-menu-ul a:hover i {
+    -webkit-text-stroke: 1px #EEEEEE;
+}
 
 label#recaptcha-anchor-label {
     font-family: iranyekan,Samim,Sans-serif !important;
@@ -1506,14 +1520,6 @@ input.woocommerce-Button.button.otp_reg_dig_wc{
     margin: -5px auto;
 }
 
-#customer_login{
-    width: 60%;
-    margin: auto;
-}
-#customer_login h2{
-    text-align: center;
-}
-
 .woocommerce-mini-cart__buttons a{
     border-radius: 0 !important;
     background-color: #1c272b !important;
@@ -1545,6 +1551,11 @@ span.news-time {
 .woocommerce-EditAccountForm span.password-input {
     width: 100%;
 }
+
+.widget_shopping_cart_content{
+    min-width: 450px;
+}
+
 
 
 
@@ -1902,6 +1913,15 @@ table.affilate_levels tr th, tr td {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
+    .widget_shopping_cart_content{
+        min-width: auto;
+    }
+    #customer_login .u-column2 {
+        margin-top: 0;
+    }
+    .responsive #top .logo {
+        margin-right: 20px;
+    }
     .woocommerce-MyAccount-navigation{
         width: 100% !important;
     }
@@ -1914,13 +1934,12 @@ table.affilate_levels tr th, tr td {
     }
 
     #top .title_container .container {
-        padding-top: 80px !important;
+        padding-top: 150px !important;
     }
 
     .responsive #top #wrap_all #header{
         position: fixed !important;
     }
-
 
     #customer_login{
         width: 100%;

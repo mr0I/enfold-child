@@ -1,4 +1,4 @@
-/* Version 1.0.6 */
+/* Version 1.0.8 */
 .floated_icons-r1 , .floated_icons-r2 , .floated_icons-r3{
     direction: ltr;
     float: left;
@@ -98,6 +98,7 @@
     text-align: center;
     font-size: 24px;
     z-index: 1000;
+    display: none;
 }
 .floated-shop i{
     color: #ffffff;
@@ -132,10 +133,10 @@ div#footer{
     font-family: Samim,Sans-serif !important;
 }
 #custom-footer .first-row{
-    border-bottom: 1px solid #E0E0E0;
+    border-bottom: 2px groove #ffffff;
 }
 #custom-footer .second-row{
-    border-bottom: 1px solid #E0E0E0;
+    border-bottom: 2px groove #ffffff;
 }
 #custom-footer .fr-element{
     text-align: center;
@@ -188,10 +189,9 @@ div#footer{
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: 24px auto;
 }
 #custom-footer .sr-element .footer-social a{
-    padding: 15px;
+    margin: 0 15px;
     font-size: 40px;
 }
 #custom-footer .sr-element .footer-social a i{
@@ -200,7 +200,7 @@ div#footer{
     -o-transition: 0.4s ease;
     transition: 0.4s ease;
     color: #777777;
-    font-size: 36px;
+    font-size: 0.75em;
 }
 #custom-footer .sr-element .footer-social a i.fa-instagram:hover{
     color: #db2975;
@@ -573,7 +573,7 @@ footer .footer-social-btns i{
 .footer-aboutUs p{
     width: 80%;
     text-align: justify;
-    line-height: 1.5;
+    line-height: 2;
     font-size: 12px;
     font-family: iranyekan,Samim,Sans-serif;
 }
@@ -584,7 +584,7 @@ footer .footer-social-btns i{
     top: 0;
     left: 0;
     width: 100%;
-    background: #f8f8f8;
+    background: #1c272b;
     height: 40px;
     line-height: 40px;
     z-index: 1000;
@@ -595,7 +595,7 @@ footer .footer-social-btns i{
 .custom-header-container ul{
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     align-content: center;
     width: 100%;
@@ -606,12 +606,14 @@ footer .footer-social-btns i{
 }
 .custom-header-container ul li span{
     font-family: iranyekan,Samim,Sans-serif ;
-    font-size: 13px;
+    font-size: 15px;
+    color: #EEEEEE;
 }
 .custom-header-container ul li span span.phoneNumber{
-    font-family: Samim,Sans-serif ;
+    font-family: Samim,Sans-serif;
 }
 .custom-header-container ul li svg{
+    color: #EEEEEE;
     vertical-align: sub;
     transition: 0.3s ease-in-out;
     -webkit-transition: 0.3s ease-in-out;

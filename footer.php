@@ -211,18 +211,20 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                         <p><a href="https://radshid.com/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/">تماس ما</a></p>
                     </div>
                     <div class="sr-element col-md-4 col-sm-12">
-                        <h6 style="text-align: center;">درباره ما</h6>
+                        <h6 style="text-align: center;">درباره رادشید</h6>
                         <div class="footer-aboutUs">
                             <p>
-                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
+                                شرکت ایده پردازان پارسی فردا با نام تجاری رادشید  با هدف برطرف نمودن نیاز شرکت های صنعتی در رابطه با استفاده از سیستم های نوین و مدیریت هوشمندسازی ناوگان حمل و نقل آغاز گردید.  اما پس از آن با توجه به دانش بنیان بودن ساختار شرکت و با تکیه به توانمندی نیروهای مجرب پا را فراتر نهاده و با توجه به تقاضاهای مطرح شده  از طرف مشتریان در صنعت های مختلف قابلیت های دستگاه های تولیدی خود را کم کم افزایش داده که این مهم با استفاده از  تکنولوژِی های روز دنیا و ایده های نو به حقیقت پیوست.
                             </p>
                         </div>
                         <h6 style="text-align: center;">ما را در شبکه های اجتماعی دنبال کنید</h6>
                         <div class="footer-social">
-                            <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" title="اینستاگرام">
+                            <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow"
+                               data-toggle="tooltip" data-placement="top" title="اینستاگرام">
                                 <i class="fa fa-instagram"></i>
                             </a>
-                            <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" title="تلگرام">
+                            <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow"
+                               data-toggle="tooltip" data-placement="top" title="تلگرام">
                                 <i class="fa fa-telegram"></i>
                             </a>
                         </div>
@@ -352,14 +354,14 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
             </div>
 
             <!--  SOCIAL BUTTONS  -->
-            <div class="footer-social-btns">
-                <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="اینستاگرام">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="تلگرام" >
-                    <i class="fa fa-telegram"></i>
-                </a>
-            </div>
+<!--            <div class="footer-social-btns">-->
+<!--                <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="اینستاگرام">-->
+<!--                    <i class="fa fa-instagram"></i>-->
+<!--                </a>-->
+<!--                <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="تلگرام" >-->
+<!--                    <i class="fa fa-telegram"></i>-->
+<!--                </a>-->
+<!--            </div>-->
             <!--  SOCIAL BUTTONS  -->
 
 
@@ -424,7 +426,7 @@ if(isset($avia_config['fullscreen_image']))
 
 <!-- floated icons -->
 <div class="floated_icons-r1">
-    <a rel="nofollow" href="https://cafebazaar.ir/app/com.radshid.radshidavl/?l=fa" target="_blank" title="دریافت از کافه بازار">
+    <a rel="nofollow" href="https://cafebazaar.ir/app/com.radshid.radassistant" target="_blank" title="دریافت از کافه بازار">
         <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" alt="دریافت از کافه بازار" width="0">
         <span>برنامه ردیابی رادشید (اندروید)</span>
     </a>
@@ -469,7 +471,7 @@ if(isset($avia_config['fullscreen_image']))
             <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" alt="دریافت نسخه ios از اناردونی">
             <span>اناردونی</span>
         </a>
-        <a href="https://cafebazaar.ir/app/com.radshid.radshidavl/?l=fa" target="_blank" rel="nofollow" title="برنامه ردیابی رادشید نسخه اندروید">
+        <a href="https://cafebazaar.ir/app/com.radshid.radassistant" target="_blank" rel="nofollow" title="برنامه ردیابی رادشید نسخه اندروید">
             <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" alt="دریافت از بازار">
             <span>کافه بازار</span>
         </a>
@@ -491,6 +493,5 @@ wp_footer();
 ?>
 
 
-<script src="//code.tidio.co/jxpvjp4fhnmhuhyyzdvwqf9ojduba4fz.js" async defer></script>
 </body>
 </html>
