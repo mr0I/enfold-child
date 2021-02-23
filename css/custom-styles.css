@@ -191,7 +191,7 @@ div#footer{
     align-content: center;
 }
 #custom-footer .sr-element .footer-social a{
-    margin: 0 15px;
+    margin: 0 10px;
     font-size: 40px;
 }
 #custom-footer .sr-element .footer-social a i{
@@ -571,11 +571,12 @@ footer .footer-social-btns i{
 }
 
 .footer-aboutUs p{
-    width: 80%;
+    width: 70%;
     text-align: justify;
     line-height: 2;
     font-size: 12px;
     font-family: iranyekan,Samim,Sans-serif;
+    color: #666666;
 }
 
 /* Custom Header */
@@ -620,9 +621,9 @@ footer .footer-social-btns i{
     -moz-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
 }
-.custom-header-container ul li:hover>svg{
-    color: #D50000;
-}
+/*.custom-header-container ul li:hover>svg{*/
+    /*color: #D50000;*/
+/*}*/
 #social_icons{
     display: flex;
     flex-flow: row nowrap;
@@ -809,11 +810,8 @@ footer .footer-social-btns i{
         margin: 20px auto;
     }
     #custom-footer .sr-element .footer-social a{
-        padding: 10px;
+        padding: 0;
         font-size: 36px;
-    }
-    #custom-footer .sr-element .footer-social a i{
-        font-size: 32px;
     }
     #custom-footer .tr-element h6{
         margin: 8px auto;
@@ -831,6 +829,9 @@ footer .footer-social-btns i{
 }
 
 @media screen and (max-width: 768px) {
+    .footer-aboutUs p{
+        width: 95%;
+    }
     .html_header_top.html_header_sticky #header {
         top: 0;
     }
@@ -858,13 +859,9 @@ footer .footer-social-btns i{
         line-height: 50px;
         font-size: 24px;
     }
-
-
     .dial-btn{
         display: block;
     }
-
-
     .tab-content p{
         padding: 8px;
     }
@@ -950,7 +947,7 @@ footer .footer-social-btns i{
         padding: 10px;
     }
     #custom-footer .sr-element .footer-social a i{
-        font-size: 32px;
+        font-size: 24px;
     }
     #custom-footer .tr-element {
         text-align: center;
@@ -986,8 +983,6 @@ footer .footer-social-btns i{
     #socket .copyright{
         font-size: 1.5em !important;
     }
-
-
 }
 
 @media screen and (max-width: 600px) {
@@ -1034,9 +1029,6 @@ footer .footer-social-btns i{
     }
     #custom-footer .sr-element .footer-social a{
         padding: 8px;
-    }
-    #custom-footer .sr-element .footer-social a i{
-        font-size: 30px;
     }
     #custom-footer .tr-element h6{
         margin: 6px auto;

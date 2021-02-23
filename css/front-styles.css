@@ -334,7 +334,7 @@ span.pagination-meta {
     margin-bottom: 25px;
 }
 #customer_login .u-column2 {
-    margin-top: -205px;
+    margin-top: -245px;
 }
 
 #form_actions{
@@ -507,7 +507,8 @@ li.av-share-link a {
     font-size: 1.1em;
     text-align: justify;
     line-height: 2;
-    color: #212121;
+    color: #424242;
+    font-weight: bold;
 }
 .blog-tags.minor-meta {
     width: 100% !important;
@@ -620,7 +621,7 @@ span.copyright{
     left:15px;
     background-color: #1c272b;
     border: 1px solid #EEEEEE;
-    border-radius: 50px;
+    border-radius: 0;
 }
 
 #scroll-top-link:before {
@@ -716,16 +717,6 @@ h3.slide-entry-title a{
     border-radius: 0;
 }
 
-.slick-prev.slick-arrow {
-    color: #bdbdbd !important;
-    border-radius: 0;
-    border: 1px solid #bdbdbd !important;
-}
-.slick-next.slick-arrow {
-    color: #bdbdbd !important;
-    border-radius: 0;
-    border: 1px solid #bdbdbd !important;
-}
 .sp-wps-product-details {
     background: #000 !important;
     opacity: 0.8 !important;

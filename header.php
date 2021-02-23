@@ -107,17 +107,21 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
                 </svg>
                 <span>   واحد پشتیبانی  <span class="phoneNumber">03195016151</span> </span>
             </li>
-<!--            <li id="social_icons">-->
-<!--                <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" title="اینستاگرام"-->
-<!--                   data-toggle="tooltip" data-placement="bottom">-->
-<!--                    <i class="fa fa-instagram"></i>-->
-<!--                </a>-->
-<!--                <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" title="تلگرام"-->
-<!--                   data-toggle="tooltip" data-placement="bottom">-->
-<!--                    <i class="fa fa-telegram"></i>-->
-<!--                </a>-->
-<!--            </li>-->
         </ul>
+
+<!--        <span class="">الان هستیم</span>-->
+<!--        <span class="">2الان هستیم</span>-->
+<!--        <div class="custom-header-numbers">-->
+<!--            <span>-->
+<!--                <p>021-63404</p>-->
+<!--                <p>031-63404</p>-->
+<!--                <p>434242-63404</p>-->
+<!--            </span>-->
+<!--        </div>-->
+<!--        <i class="material-icons">phone</i>-->
+
+
+
 
     </div>
 </div><div class="progress" id="scroll-bar">

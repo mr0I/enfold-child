@@ -8,11 +8,12 @@
 defined("ABSPATH") || exit();
 
 
+
+
 function load_scripts_styles() {
 	$vn = wp_get_theme()->get( 'Version' );
 	// Styles
 	wp_enqueue_style( 'maticons' , get_stylesheet_directory_uri() . '/css/maticons.css' );
-	wp_enqueue_style( 'fontawesome' , get_stylesheet_directory_uri() . '/fonts/font-awesome/css/font-awesome.min.css' );
 	wp_enqueue_style( 'wpforms' , get_stylesheet_directory_uri() . '/css/wpforms.css');
 	wp_enqueue_style( 'custom-styles' , get_stylesheet_directory_uri() . '/css/custom-styles.css');
 	wp_enqueue_style( 'front-styles' , get_stylesheet_directory_uri() . '/css/front-styles.css');
@@ -146,10 +147,10 @@ add_shortcode('avs_posts_tag', 'avs_posts_tag_cb');
 /**
  * Remove the generated product schema markup from Product Category and Shop pages.
  */
-function wc_remove_product_schema_product_archive() {
-	remove_action( 'woocommerce_shop_loop', array( WC()->structured_data, 'generate_product_data' ), 10, 0 );
-}
-add_action( 'woocommerce_init', 'wc_remove_product_schema_product_archive' );
+//function wc_remove_product_schema_product_archive() {
+//	remove_action( 'woocommerce_shop_loop', array( WC()->structured_data, 'generate_product_data' ), 10, 0 );
+//}
+//add_action( 'woocommerce_init', 'wc_remove_product_schema_product_archive' );
 
 
 // Redirect wp-login.php
@@ -216,3 +217,8 @@ function custom_woocommerce_structured_data_product ($data) {
 	return $data;
 }
 add_filter( 'woocommerce_structured_data_product', 'custom_woocommerce_structured_data_product' );
+
+
+
+/* Deactivate LayerSlider Plugin */
+add_theme_support('deactivate_layerslider');
