@@ -17,6 +17,7 @@ body{
     color: #cb2027 !important;
 }
 
+
 ul#avia-menu li.current-menu-item > a{
     color: #cb2026 !important;
     font-weight: bold !important;
@@ -508,7 +509,6 @@ li.av-share-link a {
     text-align: justify;
     line-height: 2;
     color: #424242;
-    font-weight: bold;
 }
 .blog-tags.minor-meta {
     width: 100% !important;
@@ -684,11 +684,11 @@ h3.slide-entry-title a{
     vertical-align: middle;
 }
 .avia-table td{
-    background-color: #1c272b;
+    background-color: #1c272b !important;
     border-radius: 0 !important;
     vertical-align: middle;
+    color: #eee !important;
 }
-
 .mfp-arrow-left {
     left: 50px;
 }
@@ -1004,19 +1004,19 @@ img.full-width-img{
 }
 
 .woo-tabs .wc-tabs li a{
-    padding: 15px 30px !important;
+    padding: 15px 20px !important;
     border-radius: 0;
-    font-size: 15px !important;
-    color: #666 !important;
+    font-size: 13px !important;
+    color: #757575 !important;
     border-bottom: 1px solid #f5f5f5 !important;
 }
 .woo-tabs .wc-tabs li.active{
     background-color: #ffffff !important;
 }
 .woo-tabs .wc-tabs li.active a{
-    color: #2494a2 !important;
-    font-size: 16px !important;
-    border-bottom: 3px solid #2494a2 !important;
+    color: #1c272b !important;
+    font-size: 13px !important;
+    border-bottom: 3px solid #1c272b !important;
 }
 
 .woo-related .related ul.products{
@@ -1026,6 +1026,12 @@ img.full-width-img{
 
 .woocommerce-product-details__short-description p{
     text-align: justify;
+}
+.woocommerce-product-details__short-description ul li{
+    list-style-type: initial !important;
+}
+.tab-editor-container ul li{
+    list-style-type: initial !important;
 }
 
 .woocommerce-Tabs-panel{
@@ -1548,6 +1554,20 @@ span.news-time {
 }
 
 
+.breadcrumb-trail {
+    font-size: 12px;
+    line-height: 2;
+}
+.breadcrumb .sep {
+    width: auto;
+}
+.breadcrumb .sep i{
+    font-size: 18px;
+    vertical-align: middle;
+    color: #757575;
+}
+
+
 
 
 /* Uap Default CSS */
@@ -1865,10 +1885,6 @@ span.news-time {
 }
 /* Responsive */
 /* Uap Custom Register CSS */
-
-
-
-
 
 
 /* Affilate Levels Table */

@@ -588,7 +588,7 @@ footer .footer-social-btns i{
     background: #1c272b;
     height: 40px;
     line-height: 40px;
-    z-index: 1000;
+    z-index: 2000;
 }
 .custom-header-container {
     padding: 0 24px;

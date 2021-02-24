@@ -5,9 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom-styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/front-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/front-styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bazaar.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/bazaar.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/custom-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/custom-scripts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,11 +18,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4296">
+            <state relative-caret-position="579">
               <caret line="223" column="44" selection-start-line="223" selection-start-column="44" selection-end-line="223" selection-end-column="44" />
               <folding>
                 <element signature="e#7#183#0#PHP" expanded="true" />
                 <element signature="n#myaparat#0;n#!!top" />
+                <element signature="n#style#0;n#iframe#0;n#center#0;n#!!top" expanded="true" />
                 <element signature="n#product_tags#0;n#!!top" />
                 <element signature="n#load_custom_plugin_translation_file#0;n#!!top" />
                 <element signature="n#avs_posts_tag_cb#0;n#!!top" />
@@ -37,7 +35,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8448">
+            <state relative-caret-position="545">
               <caret line="352" selection-start-line="352" selection-end-line="352" />
             </state>
           </provider>
@@ -46,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/custom-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="273" column="29" lean-forward="true" selection-start-line="273" selection-start-column="29" selection-end-line="273" selection-end-column="29" />
+            <state relative-caret-position="139">
+              <caret line="580" lean-forward="true" selection-start-line="580" selection-end-line="580" />
             </state>
           </provider>
         </entry>
@@ -55,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/front-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-245">
-              <caret line="722" column="1" lean-forward="true" selection-start-line="722" selection-start-column="1" selection-end-line="722" selection-end-column="1" />
+            <state relative-caret-position="235">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
@@ -64,10 +62,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="28" selection-end-column="16" />
+            <state relative-caret-position="-120">
+              <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="12" selection-end-column="7" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
+                <element signature="n#style#0;n#svg#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -85,14 +84,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>top</find>
-      <find>#top .title_container .container {</find>
-      <find>ul#avia-menu li.current-menu-item&gt;a</find>
-      <find>ul#avia-menu li.current-menu-item</find>
-      <find>768</find>
-      <find>scroll-top-link</find>
-      <find>#customer_login</find>
-      <find>digcon input#reg_email</find>
       <find>.u-column1</find>
       <find>floated-shop</find>
       <find>u-column2</find>
@@ -115,6 +106,14 @@
       <find>container_wrap socket_color</find>
       <find>font-family</find>
       <find>#scroll-top-link</find>
+      <find>.custom-header</find>
+      <find>font-weight: bold;</find>
+      <find>tab-editor-container</find>
+      <find>breadcrumb</find>
+      <find>woocommerce-tabs</find>
+      <find>.woo-tabs .wc-tabs li.active a</find>
+      <find>iransans</find>
+      <find>cb2027</find>
     </findStrings>
     <replaceStrings>
       <replace>images/</replace>
@@ -167,11 +166,11 @@
         <option value="$PROJECT_DIR$/js/ionicons.js" />
         <option value="$PROJECT_DIR$/css/toniicons.css" />
         <option value="$PROJECT_DIR$/temp.php" />
-        <option value="$PROJECT_DIR$/js/custom-scripts.js" />
         <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/functions.php" />
-        <option value="$PROJECT_DIR$/css/custom-styles.css" />
         <option value="$PROJECT_DIR$/footer.php" />
+        <option value="$PROJECT_DIR$/css/custom-styles.css" />
+        <option value="$PROJECT_DIR$/js/custom-scripts.js" />
         <option value="$PROJECT_DIR$/css/front-styles.css" />
       </list>
     </option>
@@ -188,6 +187,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -209,7 +209,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -404,7 +403,8 @@
       <workItem from="1613824407249" duration="1019000" />
       <workItem from="1613981148305" duration="575000" />
       <workItem from="1613996978944" duration="3622000" />
-      <workItem from="1614069780339" duration="4313000" />
+      <workItem from="1614069780339" duration="4939000" />
+      <workItem from="1614145220908" duration="9326000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1590862220655</created>
@@ -431,12 +431,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="345477000" />
+    <option name="totallyTimeSpent" value="355429000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1748401" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17643923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -449,7 +450,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30552545" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30552545" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -593,11 +594,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4296">
+        <state relative-caret-position="579">
           <caret line="223" column="44" selection-start-line="223" selection-start-column="44" selection-end-line="223" selection-end-column="44" />
           <folding>
             <element signature="e#7#183#0#PHP" expanded="true" />
             <element signature="n#myaparat#0;n#!!top" />
+            <element signature="n#style#0;n#iframe#0;n#center#0;n#!!top" expanded="true" />
             <element signature="n#product_tags#0;n#!!top" />
             <element signature="n#load_custom_plugin_translation_file#0;n#!!top" />
             <element signature="n#avs_posts_tag_cb#0;n#!!top" />
@@ -607,32 +609,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8448">
+        <state relative-caret-position="545">
           <caret line="352" selection-start-line="352" selection-end-line="352" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="28" selection-end-column="16" />
+        <state relative-caret-position="-120">
+          <caret line="10" column="2" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="12" selection-end-column="7" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
+            <element signature="n#style#0;n#svg#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/custom-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="273" column="29" lean-forward="true" selection-start-line="273" selection-start-column="29" selection-end-line="273" selection-end-column="29" />
+        <state relative-caret-position="139">
+          <caret line="580" lean-forward="true" selection-start-line="580" selection-end-line="580" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/front-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-245">
-          <caret line="722" column="1" lean-forward="true" selection-start-line="722" selection-start-column="1" selection-end-line="722" selection-end-column="1" />
+        <state relative-caret-position="235">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
