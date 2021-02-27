@@ -586,8 +586,8 @@ footer .footer-social-btns i{
     left: 0;
     width: 100%;
     background: #1c272b;
-    height: 40px;
-    line-height: 40px;
+    height: 36px;
+    line-height: 36px;
     z-index: 2000;
 }
 .custom-header-container {
@@ -621,9 +621,29 @@ footer .footer-social-btns i{
     -moz-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
 }
-/*.custom-header-container ul li:hover>svg{*/
-    /*color: #D50000;*/
+
+
+/* Custom Header phones */
+/*.chc {*/
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    /*padding: 0 15px;*/
+    /*color: #686868;*/
+    /*user-select: none;*/
 /*}*/
+/*.chc span{*/
+    /*font-family: Samim,iranyekan,Sans-serif;*/
+    /*margin: 0 5px;*/
+/*}*/
+/*.chc i{*/
+    /*font-size: 20px;*/
+    /*vertical-align: sub;*/
+/*}*/
+/* Custom Header phones */
+
+
+
 #social_icons{
     display: flex;
     flex-flow: row nowrap;
@@ -655,7 +675,7 @@ footer .footer-social-btns i{
     margin-top: 40px;
 }
 .html_header_top.html_header_sticky #header {
-    top: 40px;
+    top: 36px;
 }
 /* Custom Header */
 

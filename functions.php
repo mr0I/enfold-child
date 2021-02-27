@@ -222,3 +222,11 @@ add_filter( 'woocommerce_structured_data_product', 'custom_woocommerce_structure
 
 /* Deactivate LayerSlider Plugin */
 add_theme_support('deactivate_layerslider');
+
+
+//* mariushosting remove Font Awesome from WordPress theme
+add_action( 'wp_print_styles', 'tn_dequeue_font_awesome_style' );
+function tn_dequeue_font_awesome_style() {
+	wp_dequeue_style( 'fontawesome' );
+	wp_deregister_style( 'fontawesome' );
+}
