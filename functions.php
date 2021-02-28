@@ -224,9 +224,10 @@ add_filter( 'woocommerce_structured_data_product', 'custom_woocommerce_structure
 add_theme_support('deactivate_layerslider');
 
 
-//* mariushosting remove Font Awesome from WordPress theme
-add_action( 'wp_print_styles', 'tn_dequeue_font_awesome_style' );
-function tn_dequeue_font_awesome_style() {
-	wp_dequeue_style( 'fontawesome' );
-	wp_deregister_style( 'fontawesome' );
+//disable zxcvbn.min.js in wordpress
+add_action('wp_print_scripts', 'remove_password_strength_meter');
+function remove_password_strength_meter() {
+	// Deregister script about password strenght meter
+	wp_dequeue_script('zxcvbn-async');
+	wp_deregister_script('zxcvbn-async');
 }

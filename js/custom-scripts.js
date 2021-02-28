@@ -21,15 +21,7 @@ jQuery(document).ready(function ($) {
 
 
     // Change breadcrumb trails
-    $('.breadcrumb-trail').find('span.sep').html('<i class="material-icons">arrow_back</i>');
-
-
-    // setInterval(function () {
-    //     $('.custom-header-number').slideUp();
-    //     setTimeout(function () {
-    //         $('.custom-header-number').slideDown().html('03135135897');
-    //     },1000)
-    // } , 3000)
+    $('.breadcrumb-trail').find('span.sep').html('<i class="material-icons">chevron_left</i>');
 
 });
 

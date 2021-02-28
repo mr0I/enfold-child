@@ -684,12 +684,6 @@ footer .footer-social-btns i{
     display: none !important;
 }
 
-
-.html_visible_cart .cart_dropdown {
-    right: 8px !important;
-}
-
-
 /* New */
 .fab-container {
     position: fixed;
