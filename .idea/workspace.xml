@@ -5,7 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/custom-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/custom-styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/front-styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/front-styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/custom-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/custom-scripts.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +21,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="220" selection-start-line="220" selection-end-line="220" />
+            <state relative-caret-position="264">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#7#183#0#PHP" expanded="true" />
                 <element signature="n#myaparat#0;n#!!top" />
+                <element signature="n#style#0;n#iframe#0;n#center#0;n#!!top" expanded="true" />
                 <element signature="n#product_tags#0;n#!!top" />
                 <element signature="n#load_custom_plugin_translation_file#0;n#!!top" />
                 <element signature="n#avs_posts_tag_cb#0;n#!!top" />
@@ -35,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="8784">
-              <caret line="366" selection-start-line="366" selection-end-line="366" />
+            <state relative-caret-position="1145">
+              <caret line="220" column="96" selection-start-line="220" selection-start-column="60" selection-end-line="220" selection-end-column="96" />
             </state>
           </provider>
         </entry>
@@ -44,30 +47,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2160">
-              <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="110" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/custom-styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3458">
-              <caret line="679" column="19" lean-forward="true" selection-start-line="679" selection-start-column="19" selection-end-line="679" selection-end-column="19" />
+            <state relative-caret-position="388">
+              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+              <folding>
+                <element signature="e#3936#5123#0#HTML" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/custom-styles.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-79">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/front-styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="651">
-              <caret line="2073" column="26" lean-forward="true" selection-start-line="2073" selection-start-column="26" selection-end-line="2073" selection-end-column="26" />
+            <state relative-caret-position="329">
+              <caret line="2005" column="5" lean-forward="true" selection-start-line="2005" selection-start-column="5" selection-end-line="2005" selection-end-column="5" />
               <folding>
-                <element signature="e#45281#45495#0" />
-                <element signature="e#45496#46300#0" />
-                <element signature="e#46301#46403#0" />
+                <element signature="e#46076#46290#0" />
+                <element signature="e#46291#47095#0" />
               </folding>
             </state>
           </provider>
@@ -76,8 +81,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="305">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -97,36 +102,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>container_wrap socket_color</find>
-      <find>font-family</find>
-      <find>#scroll-top-link</find>
-      <find>.custom-header</find>
-      <find>font-weight: bold;</find>
-      <find>tab-editor-container</find>
-      <find>breadcrumb</find>
-      <find>woocommerce-tabs</find>
-      <find>.woo-tabs .wc-tabs li.active a</find>
-      <find>iransans</find>
-      <find>cb2027</find>
-      <find>header_main</find>
-      <find>757575</find>
-      <find>Samim</find>
-      <find>.html_header_top.html_header_sticky #header</find>
-      <find>#top .main_menu .menu li</find>
-      <find>chc</find>
-      <find>custom-header</find>
-      <find>.logo img</find>
       <find>cart</find>
       <find>.html_header_top #top .av_logo_right .logo</find>
       <find>ul#avia-menu</find>
-      <find>ul.menu-item.cart_dropdown</find>
       <find>.cart_dropdown</find>
       <find>#top .main_menu .menu li.av-menu-button-colored</find>
-      <find>cart_dropdown</find>
       <find>.html_visible_cart .cart_dropdown</find>
       <find>header</find>
-      <find>768</find>
       <find>.html_visible_cart</find>
+      <find>.responsive #top .cart_dropdown</find>
+      <find>material-icons</find>
+      <find>.single_add_to_cart_button i</find>
+      <find>fa-instagram</find>
+      <find>ic-</find>
+      <find>social-icons</find>
+      <find>tooltip</find>
+      <find>telegram</find>
+      <find>cart_dropdown</find>
+      <find>.responsive #top #wrap_all .menu-item-search-dropdown &gt; a</find>
+      <find>av-burger-menu-main</find>
+      <find>menu-item-search</find>
+      <find>768</find>
+      <find>cart_dropdown_link</find>
+      <find>responsive #top #header_main &gt; .container .main_menu .av-main-nav &gt; li &gt; a</find>
+      <find>widget_shopping_cart_content</find>
+      <find>font-fa</find>
+      <find>.html_header_top .av_bottom_nav_header #header_main_alternate .main_menu ul:first-child &gt; li &gt; a</find>
+      <find>material</find>
+      <find>.post-entry p</find>
+      <find>ul.menu-item.cart_dropdown</find>
+      <find>.avia-search-tooltip.avia-tt</find>
     </findStrings>
     <replaceStrings>
       <replace>images/</replace>
@@ -162,6 +167,7 @@
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child</dir>
+      <dir>C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\fonts</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -181,15 +187,15 @@
         <option value="$PROJECT_DIR$/css/toniicons.css" />
         <option value="$PROJECT_DIR$/temp.php" />
         <option value="$PROJECT_DIR$/footer.php" />
-        <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/js/custom-scripts.js" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/js/custom-scripts.js" />
+        <option value="$PROJECT_DIR$/header.php" />
         <option value="$PROJECT_DIR$/css/custom-styles.css" />
         <option value="$PROJECT_DIR$/css/front-styles.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -207,6 +213,16 @@
             <path>
               <item name="enfold-child" type="b2602c69:ProjectViewProjectNode" />
               <item name="enfold-child" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enfold-child" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enfold-child" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enfold-child" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enfold-child" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -410,7 +426,9 @@
       <workItem from="1614069780339" duration="4939000" />
       <workItem from="1614145220908" duration="10020000" />
       <workItem from="1614404064440" duration="18683000" />
-      <workItem from="1614491136273" duration="8143000" />
+      <workItem from="1614491136273" duration="10409000" />
+      <workItem from="1614598019153" duration="7341000" />
+      <workItem from="1614665436919" duration="13636000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1590862220655</created>
@@ -437,13 +455,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="382949000" />
+    <option name="totallyTimeSpent" value="406192000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1716418" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17643923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -456,13 +474,34 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30552545" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.30552545" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17324094" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30552545" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -572,13 +611,6 @@
     <entry file="file://$PROJECT_DIR$/css/maticons.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/wpforms.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/ionicons.js" />
     <entry file="file://$PROJECT_DIR$/fonts/font-awesome/css/font-awesome.min.css">
       <provider selected="true" editor-type-id="text-editor" />
@@ -591,13 +623,41 @@
     <entry file="file://$PROJECT_DIR$/images/bazaar.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/wpforms.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
+          <folding>
+            <element signature="e#3936#5123#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="220" selection-start-line="220" selection-end-line="220" />
+        <state relative-caret-position="264">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#7#183#0#PHP" expanded="true" />
             <element signature="n#myaparat#0;n#!!top" />
+            <element signature="n#style#0;n#iframe#0;n#center#0;n#!!top" expanded="true" />
             <element signature="n#product_tags#0;n#!!top" />
             <element signature="n#load_custom_plugin_translation_file#0;n#!!top" />
             <element signature="n#avs_posts_tag_cb#0;n#!!top" />
@@ -607,44 +667,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8784">
-          <caret line="366" selection-start-line="366" selection-end-line="366" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2160">
-          <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="110" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/front-styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="651">
-          <caret line="2073" column="26" lean-forward="true" selection-start-line="2073" selection-start-column="26" selection-end-line="2073" selection-end-column="26" />
-          <folding>
-            <element signature="e#45281#45495#0" />
-            <element signature="e#45496#46300#0" />
-            <element signature="e#46301#46403#0" />
-          </folding>
+        <state relative-caret-position="1145">
+          <caret line="220" column="96" selection-start-line="220" selection-start-column="60" selection-end-line="220" selection-end-column="96" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/custom-styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3458">
-          <caret line="679" column="19" lean-forward="true" selection-start-line="679" selection-start-column="19" selection-end-line="679" selection-end-column="19" />
+        <state relative-caret-position="-79">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/front-styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="2005" column="5" lean-forward="true" selection-start-line="2005" selection-start-column="5" selection-end-line="2005" selection-end-column="5" />
+          <folding>
+            <element signature="e#46076#46290#0" />
+            <element signature="e#46291#47095#0" />
+          </folding>
         </state>
       </provider>
     </entry>

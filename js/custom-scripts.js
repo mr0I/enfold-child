@@ -12,8 +12,11 @@ jQuery(document).ready(function ($) {
         delay: {"show": 300, "hide": 100}
     });
 
-    $('.single_add_to_cart_button').html(' <svg id="i-cart" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="24" height="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"> <path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" /> <circle cx="25" cy="27" r="2" /> <circle cx="12" cy="27" r="2" /> </svg>افزودن به سبد خرید');
-    $('.cart_dropdown_link').find('span:first-child').html('<svg id="i-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="25" height="25" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="margin: 10px auto;"><path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" /></svg>');
+
+    // Add Material icons
+    $('.single_add_to_cart_button').html('<i class="ic-basket my-2"></i>  افزودن به سبد خرید');
+    $('.cart_dropdown_link').find('span:first-child').html('<i class="ic-cart my-2"></i>');
+
 
 
     $('.u-column1').addClass('col-lg-6 col-md-6 col-sm-12').removeClass('col-1');
@@ -21,7 +24,37 @@ jQuery(document).ready(function ($) {
 
 
     // Change breadcrumb trails
-    $('.breadcrumb-trail').find('span.sep').html('<i class="material-icons">chevron_left</i>');
+    $('.breadcrumb-trail').find('span.sep').html('<i class="ic-chevron-left"></i>');
+
+
+    const sic = $('.social-icons');
+    sic.find('a').hover(function () {
+        let idd = $(this).attr('id');
+        sic.find('a').css({
+            'filter': 'blur(1px)',
+            'color': '#757575'
+        });
+        if (idd === 'telegram') {
+            sic.find('a#' + idd).css({
+                'filter': 'initial',
+                'color': '#2da5d9'
+            })
+        }else {
+            sic.find('a#' + idd).css({
+                'filter': 'initial',
+                'color': '#db2975'
+            })
+        }
+    }, function () {
+        sic.find('a#telegram').css({
+            'filter': 'initial',
+            'color': '#2da5d9'
+        });
+        sic.find('a#insta').css({
+            'filter': 'initial',
+            'color': '#db2975'
+        });
+    })
 
 });
 

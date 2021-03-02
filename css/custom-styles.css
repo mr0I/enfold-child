@@ -539,8 +539,9 @@ footer .footer-social-btns i{
 
 .single_add_to_cart_button i{
     position: absolute;
-    right:5px;
-    top: 15px;
+    right:15px;
+    top: 5px;
+    font-size: 1.75em;
 }
 .single_add_to_cart_button svg{
     position: absolute;
@@ -553,7 +554,7 @@ footer .footer-social-btns i{
     position: absolute;
     right: 0;
     top: 0;
-    width: 60px;
+    width: 54px;
     height: 100%;
     background: #ffffff;
     transition: all .3s;
@@ -677,11 +678,38 @@ footer .footer-social-btns i{
 .html_header_top.html_header_sticky #header {
     top: 36px;
 }
+.social-icons {
+    position: absolute;
+    top: 55px;
+    left: 20px;
+}
+.social-icons a#insta {
+    color: #db2975;
+}
+
+.social-icons a#telegram {
+    color: #2da5d9;
+}
+.social-icons a {
+    margin: auto 8px;
+}
+.social-icons a i{
+    font-size: 2em;
+}
+/*.social-icons a#insta:hover .social-icons a#telegram {*/
+    /*color: #000000;*/
+/*}*/
+
 /* Custom Header */
 
-
-.cart_dropdown_link [data-av_iconfont='entypo-fontello']:before {
+.cart_dropdown_link [data-av_iconfont='entypo-fontello']:before  {
     display: none !important;
+}
+#menu-item-search [data-av_iconfont='entypo-fontello']:before {
+    content: "\e904";
+    font-family: "mycon";
+    margin-left: 10px;
+    font-size: 22px;
 }
 
 /* New */
@@ -785,7 +813,7 @@ footer .footer-social-btns i{
 
 .tooltip {
     font-family: Samim,iranyekan,Sans-serif ;
-    font-size: 13px;
+    font-size: 11px;
 }
 
 /* Responsive */

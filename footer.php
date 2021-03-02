@@ -217,17 +217,20 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                 شرکت ایده پردازان پارسی فردا با نام تجاری رادشید  با هدف برطرف نمودن نیاز شرکت های صنعتی در رابطه با استفاده از سیستم های نوین و مدیریت هوشمندسازی ناوگان حمل و نقل آغاز گردید.  اما پس از آن با توجه به دانش بنیان بودن ساختار شرکت و با تکیه به توانمندی نیروهای مجرب پا را فراتر نهاده و با توجه به تقاضاهای مطرح شده  از طرف مشتریان در صنعت های مختلف قابلیت های دستگاه های تولیدی خود را کم کم افزایش داده که این مهم با استفاده از  تکنولوژِی های روز دنیا و ایده های نو به حقیقت پیوست.
                             </p>
                         </div>
-                        <h6 style="text-align: center;">ما را در شبکه های اجتماعی دنبال کنید</h6>
-                        <div class="footer-social">
-                            <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow"
-                               data-toggle="tooltip" data-placement="top" title="اینستاگرام">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                            <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow"
-                               data-toggle="tooltip" data-placement="top" title="تلگرام">
-                                <i class="fa fa-telegram"></i>
-                            </a>
-                        </div>
+
+<!--                        <h6 style="text-align: center;">ما را در شبکه های اجتماعی دنبال کنید</h6>-->
+<!--                        <div class="footer-social">-->
+<!--                            <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow"-->
+<!--                               data-toggle="tooltip" data-placement="top" title="اینستاگرام">-->
+<!--                                <i class="ic-instagram"></i>-->
+<!--                            </a>-->
+<!--                            <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow"-->
+<!--                               data-toggle="tooltip" data-placement="top" title="تلگرام">-->
+<!--                                <i class="ic-telegram"></i>-->
+<!--                            </a>-->
+<!--                        </div>-->
+
+
 <!--                        <form class="tnp-form" action="--><?php //echo get_site_url()."?na=s"; ?><!--" method="post" onsubmit="return newsletter_check(this)">-->
 <!--                            <input type="hidden" name="nr" value="widget-minimal">-->
 <!--                            <input class="tnp-email" type="email" required="" name="ne" value="" placeholder="Email">-->
@@ -352,18 +355,6 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 				?>
 
             </div>
-
-            <!--  SOCIAL BUTTONS  -->
-<!--            <div class="footer-social-btns">-->
-<!--                <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="اینستاگرام">-->
-<!--                    <i class="fa fa-instagram"></i>-->
-<!--                </a>-->
-<!--                <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="تلگرام" >-->
-<!--                    <i class="fa fa-telegram"></i>-->
-<!--                </a>-->
-<!--            </div>-->
-            <!--  SOCIAL BUTTONS  -->
-
 
 
             <!-- ####### END SOCKET CONTAINER ####### -->
