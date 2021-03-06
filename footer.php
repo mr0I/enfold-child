@@ -484,5 +484,16 @@ wp_footer();
 ?>
 
 
+<!-- Crisp Init -->
+<script type="text/javascript" defer async>
+    window.$crisp=[];
+    CRISP_RUNTIME_CONFIG = {
+        locale : 'fa'
+    };
+    window.CRISP_WEBSITE_ID="68e9f005-17da-481c-b8f2-ba184b388aa3";(function(){
+        d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();$crisp.push(["set", "session:data", [[["country", "IR"],["shipping_country", "IR"]]]]);
+</script>
+<!-- Crisp Init -->
+
 </body>
 </html>

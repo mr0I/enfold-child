@@ -8,8 +8,8 @@ a:hover, a:focus, a:visited {
 }
 
 @font-face {
-  font-family: "Samim";
-  src: url("../fonts/Samim-FD.ttf") format("truetype"), url("../fonts/Samim-FD.eot") format("eot"), url("../fonts/Samim-FD.woff") format("woff");
+  font-family: "IranSans";
+  src: url("../fonts/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSansWeb.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -368,10 +368,11 @@ ul.menu-item.cart_dropdown {
 
 ul.menu-item.cart_dropdown .cart_dropdown_link {
   font-size: 24px !important;
+  color: #686868;
 }
 
 #top .av-cart-counter {
-  font-family: Samim, iranyekan, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
   border-radius: 0 6px 6px 6px;
 }
 
@@ -966,11 +967,11 @@ li.av-share-link a {
   text-align: justify;
   line-height: 2.25;
   color: #424242;
-  font-family: Samim, iranyekan, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
 }
 
 .avia_textblock p span {
-  font-family: Samim, iranyekan, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
 }
 
 .blog-tags.minor-meta {
@@ -1388,7 +1389,7 @@ ul.sub-menu li.menu-item-has-children > a::after {
 }
 
 label#recaptcha-anchor-label {
-  font-family: iranyekan, Samim, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
 }
 
 img.full-width-img {
@@ -1697,7 +1698,7 @@ form.cart button[type=submit] {
 .vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_title div {
   font-size: 13px !important;
   font-weight: bold !important;
-  font-family: iranyekan, Samim, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
   margin: 15px auto;
 }
 
@@ -1879,7 +1880,7 @@ p.stock.in-stock {
 }
 
 span.woocommerce-Price-amount.amount {
-  font-family: Samim, iranyekan, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
 }
 
 .button .wc-forward {
@@ -2024,7 +2025,7 @@ button.wpforms-submit {
 }
 
 .sidebar-content span {
-  font-family: iranyekan, Samim, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
 }
 
 #top div.product .woocommerce-tabs {
@@ -2160,7 +2161,7 @@ span.news-time {
   margin-left: 10px;
   text-align: right;
   color: #616161 !important;
-  font-family: Samim, iranyekan, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
   direction: rtl;
   transition: 0.1s ease-in-out !important;
   -webkit-transition: 0.1s ease-in-out !important;
@@ -2247,7 +2248,7 @@ div#footer {
 #custom-footer {
   background-color: #eeeeee;
   padding: 2px;
-  font-family: Samim, iranyekan, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
 }
 
 #custom-footer .first-row {
@@ -2272,7 +2273,7 @@ div#footer {
 #custom-footer .tr-element {
   text-align: right;
   padding-right: 80px;
-  font-family: iranyekan, Samim, Sans-serif;
+  font-family: IranSans, Sans-serif, Arial;
 }
 
 #custom-footer .fr-element img {
@@ -2297,7 +2298,7 @@ div#footer {
 
 #custom-footer .fr-element p {
   margin: 10px auto;
-  font-family: iranyekan, Samim, Sans-serif;
+  font-family: IranSans, Sans-serif, Arial;
 }
 
 #custom-footer .sr-element p {
@@ -2363,7 +2364,7 @@ div#footer {
 #custom-footer .tr-element h6 {
   font-size: 15px;
   color: #616161;
-  font-family: iranyekan, Samim, Sans-serif;
+  font-family: IranSans, Sans-serif, Arial;
   line-height: 2;
   font-weight: bold;
 }
@@ -2371,7 +2372,7 @@ div#footer {
 #custom-footer .tr-element h6 p {
   font-weight: normal;
   font-size: 13px;
-  font-family: Samim, iranyekan, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
   direction: ltr;
 }
 
@@ -2380,7 +2381,7 @@ div#footer {
   color: #616161;
   font-size: 15px;
   line-height: 2;
-  font-family: Samim, iranyekan, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
 }
 
 #custom-footer #gateway {
@@ -2438,7 +2439,7 @@ footer .footer-social-btns i {
 
 /* Footer */
 .docs h1 {
-  font-family: iranyekan, Samim, Sans-serif;
+  font-family: IranSans, Sans-serif, Arial;
 }
 
 .nav-tabs {
@@ -2456,7 +2457,7 @@ footer .footer-social-btns i {
   align-content: center;
   width: 100%;
   padding: 15px;
-  font-family: Samim, iranyekan, Sans-serif;
+  font-family: IranSans, Sans-serif, Arial;
 }
 
 .tab-content p span {
@@ -2519,7 +2520,7 @@ footer .footer-social-btns i {
 
 .fif-container a span {
   color: #424242;
-  font-family: iranyekan, Samim, Sans-serif;
+  font-family: IranSans, Sans-serif, Arial;
   font-size: 10px;
 }
 
@@ -2709,7 +2710,7 @@ footer .footer-social-btns i {
 /* Ringing Phone */
 /*Ripple new*/
 .single_add_to_cart_button {
-  font-family: iranyekan, Samim, Sans-serif;
+  font-family: IranSans, Sans-serif, Arial;
   height: 50px;
   font-size: 24px;
   padding: 0 70px !important;
@@ -2767,7 +2768,7 @@ footer .footer-social-btns i {
   text-align: justify;
   line-height: 2;
   font-size: 12px;
-  font-family: iranyekan, Samim, Sans-serif;
+  font-family: IranSans, Sans-serif, Arial;
   color: #616161;
 }
 
@@ -2797,18 +2798,18 @@ footer .footer-social-btns i {
 }
 
 .custom-header-container ul li {
-  font-family: Samim, iranyekan, Sans-serif;
+  font-family: IranSans, Sans-serif, Arial;
   user-select: none;
 }
 
 .custom-header-container ul li span {
-  font-family: iranyekan, Samim, Sans-serif;
+  font-family: IranSans, Sans-serif, Arial;
   font-size: 15px;
   color: #EEEEEE;
 }
 
 .custom-header-container ul li span span.phoneNumber {
-  font-family: Samim, iranyekan, Sans-serif;
+  font-family: IranSans, Sans-serif, Arial;
 }
 
 .custom-header-container ul li svg {
@@ -2997,7 +2998,7 @@ footer .footer-social-btns i {
 }
 
 .tooltip {
-  font-family: Samim, iranyekan, Sans-serif;
+  font-family: IranSans, Sans-serif, Arial;
   font-size: 11px;
 }
 
@@ -3036,15 +3037,15 @@ footer .footer-social-btns i {
 }
 
 .uap-user-page-top-wrapper .uap-stats-label, .uap-user-page-top-wrapper .uap-stats-content, .uap-user-page-top-wrapper .uap-top-achievement .uap-stats-label {
-  font-family: iranyekan, Samim, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
 }
 
 .uap-special-label {
-  font-family: iranyekan, Samim, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
 }
 
 .uap-user-page-wrapper a, p, div, td, th, h1, h2, h3, h4, h5, h6, li, ul {
-  font-family: iranyekan, Samim, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
 }
 
 .uap-ap-theme-3 .uap-ap-menu {
@@ -3398,7 +3399,7 @@ footer .footer-social-btns i {
   background-color: #cb2027 !important;
   border-color: #cb2027 !important;
   text-align: center;
-  font-family: iranyekan, Samim, Sans-serif !important;
+  font-family: IranSans, Sans-serif, Arial !important;
 }
 
 /* Responsive */

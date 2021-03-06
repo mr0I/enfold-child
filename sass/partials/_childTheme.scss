@@ -143,7 +143,7 @@ div#footer{
 #custom-footer .tr-element{
   text-align: right;
   padding-right: 80px;
-  font-family: $titleFont ;
+  font-family: $textFont ;
 }
 #custom-footer .fr-element img{
   width: 75px;
@@ -164,7 +164,7 @@ div#footer{
 }
 #custom-footer .fr-element p {
   margin: 10px auto;
-  font-family: $titleFont;
+  font-family: $textFont;
 }
 #custom-footer .sr-element p {
   margin: 14px auto;
@@ -211,7 +211,7 @@ div#footer{
 #custom-footer .tr-element h6{
   font-size: 15px;
   color: $secondaryTextColor;
-  font-family: $titleFont;
+  font-family: $textFont;
   line-height: 2;
   font-weight: bold;
 }
@@ -274,7 +274,7 @@ footer .footer-social-btns i{
 /* Footer */
 
 .docs h1{
-  font-family: $titleFont;
+  font-family: $textFont;
 }
 .nav-tabs {
   margin: 26px auto;
@@ -345,7 +345,7 @@ footer .footer-social-btns i{
 }
 .fif-container a span{
   color: $primaryTextColor;
-  font-family: $titleFont ;
+  font-family: $textFont ;
   font-size: 10px;
 }
 
@@ -499,7 +499,7 @@ footer .footer-social-btns i{
 
 /*Ripple new*/
 .single_add_to_cart_button{
-  font-family: $titleFont ;
+  font-family: $textFont ;
   height: 50px;
   font-size: 24px;
   padding: 0 70px !important;
@@ -551,7 +551,7 @@ footer .footer-social-btns i{
   text-align: justify;
   line-height: 2;
   font-size: 12px;
-  font-family: $titleFont;
+  font-family: $textFont;
   color: $secondaryTextColor;
 }
 
@@ -582,7 +582,7 @@ footer .footer-social-btns i{
   user-select: none;
 }
 .custom-header-container ul li span{
-  font-family: $titleFont ;
+  font-family: $textFont ;
   font-size: 15px;
   color: #EEEEEE;
 }
