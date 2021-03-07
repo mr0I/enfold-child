@@ -440,18 +440,17 @@ if(isset($avia_config['fullscreen_image']))
 <div class="floated_icons_footer">
     <div class="fif-container">
         <a href="https://t.me/Radshid_co" rel="nofollow" title="تلگرام رادشید">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/telegram.png' ; ?>" alt="تلگرام">
+            <i class="ic-telegram"></i>
             <span>تلگرام</span>
         </a>
         <a href="https://www.instagram.com/radshid_com/" title="اینستاگرام رادشید" rel="nofollow">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/insta.png' ; ?>" alt="اینستاگرام">
+            <i class="ic-instagram"></i>
             <span>اینستاگرام</span>
         </a>
         <a href="https://radshid.com/?p=10008" title="ورود به فروشگاه">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/shop.png' ; ?>" alt="ورود به فروشگاه">
+            <i class="ic-shopping-cart"></i>
             <span>فروشگاه</span>
         </a>
-
 
         <a href="https://sibapp.com/applications/%D8%B1%D8%AF%DB%8C%D8%A7%D8%A8-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D8%B1%D8%A7%D8%AF%D8%B4%DB%8C%D8%AF" title="برنامه ردیابی رادشید نسخه ios"
            rel="nofollow" target="_blank">
@@ -484,7 +483,7 @@ wp_footer();
 ?>
 
 
-<!-- Crisp Init -->
+<!-- Start Crisp Init -->
 <script type="text/javascript" defer async>
     window.$crisp=[];
     CRISP_RUNTIME_CONFIG = {
@@ -493,7 +492,8 @@ wp_footer();
     window.CRISP_WEBSITE_ID="68e9f005-17da-481c-b8f2-ba184b388aa3";(function(){
         d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();$crisp.push(["set", "session:data", [[["country", "IR"],["shipping_country", "IR"]]]]);
 </script>
-<!-- Crisp Init -->
+<!-- End Crisp Init -->
+
 
 </body>
 </html>

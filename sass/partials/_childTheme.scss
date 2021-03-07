@@ -193,10 +193,10 @@ div#footer{
   font-size: 0.75em;
 }
 #custom-footer .sr-element .footer-social a i.fa-instagram:hover{
-  color: #db2975;
+  color: $instaColor;
 }
 #custom-footer .sr-element .footer-social a i.fa-telegram:hover{
-  color: #2da5d9;
+  color: $telegramColor;
 }
 
 #custom-footer .sr-element .footer-social a img{
@@ -307,15 +307,15 @@ footer .footer-social-btns i{
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 2000;
   background: #ffffff;
   width: 100%;
   height: 54px;
-  padding: 4px;
   overflow-x: scroll;
   overflow-y: hidden;
   display: none;
   box-shadow: 0 0 5px $hoverColor;
+  padding: 4px 0;
+  z-index: 2000;
 }
 .fif-container{
   padding:0;
@@ -347,6 +347,20 @@ footer .footer-social-btns i{
   color: $primaryTextColor;
   font-family: $textFont ;
   font-size: 10px;
+}
+.fif-container a i{
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px auto;
+}
+.fif-container a i.ic-instagram{
+  color: $instaColor;
+}
+.fif-container a i.ic-telegram{
+  color: $telegramColor;
+}
+.fif-container a i.ic-shopping-cart{
+  color: $primaryColor;
 }
 
 /* Ringing Phone */
@@ -614,11 +628,11 @@ footer .footer-social-btns i{
   margin: 0 4px;
 }
 #social_icons a i.fa-instagram:hover{
-  color: #db2975;
+  color: $instaColor;
 }
 
 #social_icons a i.fa-telegram:hover{
-  color: #2da5d9;
+  color: $telegramColor;
 }
 .alternate_color, .alternate_color .site-background, .alternate_color .first-quote, .alternate_color .related_image_wrap, .alternate_color .gravatar img .alternate_color .hr_content, .alternate_color .news-thumb, .alternate_color .post-format-icon, .alternate_color .ajax_controlls a, .alternate_color .tweet-text.avatar_no, .alternate_color .toggler, .alternate_color .toggler.activeTitle:hover, .alternate_color #js_sort_items, .alternate_color.inner-entry, .alternate_color .grid-entry-title, .alternate_color .related-format-icon, .grid-entry .alternate_color .avia-arrow, .alternate_color .avia-gallery-big, .alternate_color .avia-gallery-big, .alternate_color .avia-gallery img, .alternate_color .grid-content, .alternate_color .av-share-box ul, #top .alternate_color .av-related-style-full .related-format-icon, .alternate_color .related_posts.av-related-style-full a:hover, .alternate_color.avia-fullwidth-portfolio .pagination .current, .alternate_color.avia-fullwidth-portfolio .pagination a, .alternate_color .av-hotspot-fallback-tooltip-inner, .alternate_color .av-hotspot-fallback-tooltip-count {
   margin-top: 40px;
@@ -632,11 +646,11 @@ footer .footer-social-btns i{
   left: 20px;
 }
 .social-icons a#insta {
-  color: #db2975;
+  color: $instaColor;
 }
 
 .social-icons a#telegram {
-  color: #2da5d9;
+  color: $telegramColor;
 }
 .social-icons a {
   margin: auto 8px;

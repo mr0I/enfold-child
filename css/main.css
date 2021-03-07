@@ -374,6 +374,8 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 #top .av-cart-counter {
   font-family: IranSans, Sans-serif, Arial !important;
   border-radius: 0 6px 6px 6px;
+  width: 15px !important;
+  height: 15px !important;
 }
 
 .html_visible_cart .cart_dropdown {
@@ -1109,10 +1111,6 @@ span.copyright {
 
 form.woocommerce-cart-form td, form.woocommerce-cart-form th {
   border-radius: 0;
-}
-
-.shop_table td, .shop_table th {
-  border-radius: 0 !important;
 }
 
 .entry-content-header {
@@ -1982,10 +1980,6 @@ p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-rece
   width: 100%;
 }
 
-.shop_table.woocommerce-checkout-review-order-table td, .shop_table.woocommerce-checkout-review-order-table th {
-  border: 1px solid #bdbdbd !important;
-}
-
 .woocommerce-notices-wrapper {
   width: 60%;
   margin: auto;
@@ -2104,6 +2098,77 @@ span.news-time {
   font-size: 18px;
   vertical-align: middle;
   color: #616161;
+}
+
+table.shop_table th, table.shop_table td {
+  border: 1px solid #bdbdbd;
+}
+
+.shop_table td, .shop_table th {
+  border-radius: 0 !important;
+}
+
+.shop_table.woocommerce-checkout-review-order-table td, .shop_table.woocommerce-checkout-review-order-table th {
+  border: 1px solid #bdbdbd !important;
+}
+
+ul.order_details {
+  border-color: #bdbdbd;
+}
+
+.woocommerce-order-details table.order_details {
+  padding: 0 !important;
+}
+
+.woocommerce-customer-details address {
+  color: #616161 !important;
+}
+
+.woocommerce-customer-details address p {
+  text-align: right;
+  margin: 0;
+  color: #616161;
+}
+
+.woocommerce-MyAccount-content table tr th, .woocommerce-MyAccount-content table tr td {
+  border-color: #bdbdbd;
+  text-align: center;
+}
+
+.woocommerce-cart-form table tr th, .woocommerce-cart-form table tr td {
+  border-color: #bdbdbd;
+  text-align: center;
+}
+
+.woocommerce-cart-form table td.product-name {
+  text-align: center !important;
+}
+
+.woocommerce-cart-form table td.product-name a {
+  color: #424242;
+}
+
+.cart_totals table tr th, .cart_totals table tr td {
+  border-color: #bdbdbd;
+  text-align: center;
+}
+
+.cart-collaterals .cart_totals table tr:first-child th, .cart-collaterals .cart_totals table tr:first-child td {
+  border-top: 1px solid #bdbdbd !important;
+}
+
+.cart-collaterals .cart_totals a.button.alt {
+  float: left;
+}
+
+table.shop_table td[data-title=عملیات‌ها] {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+table.shop_table td[data-title=عملیات‌ها] a {
+  border-radius: 0 !important;
 }
 
 .floated_icons-r1, .floated_icons-r2, .floated_icons-r3 {
@@ -2338,11 +2403,11 @@ div#footer {
 }
 
 #custom-footer .sr-element .footer-social a i.fa-instagram:hover {
-  color: #db2975;
+  color: #8a3ab9;
 }
 
 #custom-footer .sr-element .footer-social a i.fa-telegram:hover {
-  color: #2da5d9;
+  color: #0088cc;
 }
 
 #custom-footer .sr-element .footer-social a img {
@@ -2478,15 +2543,15 @@ footer .footer-social-btns i {
   position: fixed;
   bottom: 0;
   left: 0;
-  z-index: 2000;
   background: #ffffff;
   width: 100%;
   height: 54px;
-  padding: 4px;
   overflow-x: scroll;
   overflow-y: hidden;
   display: none;
   box-shadow: 0 0 5px #bdbdbd;
+  padding: 4px 0;
+  z-index: 2000;
 }
 
 .fif-container {
@@ -2522,6 +2587,24 @@ footer .footer-social-btns i {
   color: #424242;
   font-family: IranSans, Sans-serif, Arial;
   font-size: 10px;
+}
+
+.fif-container a i {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 4px auto;
+}
+
+.fif-container a i.ic-instagram {
+  color: #8a3ab9;
+}
+
+.fif-container a i.ic-telegram {
+  color: #0088cc;
+}
+
+.fif-container a i.ic-shopping-cart {
+  color: #cb2027;
 }
 
 /* Ringing Phone */
@@ -2847,11 +2930,11 @@ footer .footer-social-btns i {
 }
 
 #social_icons a i.fa-instagram:hover {
-  color: #db2975;
+  color: #8a3ab9;
 }
 
 #social_icons a i.fa-telegram:hover {
-  color: #2da5d9;
+  color: #0088cc;
 }
 
 .alternate_color, .alternate_color .site-background, .alternate_color .first-quote, .alternate_color .related_image_wrap, .alternate_color .gravatar img .alternate_color .hr_content, .alternate_color .news-thumb, .alternate_color .post-format-icon, .alternate_color .ajax_controlls a, .alternate_color .tweet-text.avatar_no, .alternate_color .toggler, .alternate_color .toggler.activeTitle:hover, .alternate_color #js_sort_items, .alternate_color.inner-entry, .alternate_color .grid-entry-title, .alternate_color .related-format-icon, .grid-entry .alternate_color .avia-arrow, .alternate_color .avia-gallery-big, .alternate_color .avia-gallery-big, .alternate_color .avia-gallery img, .alternate_color .grid-content, .alternate_color .av-share-box ul, #top .alternate_color .av-related-style-full .related-format-icon, .alternate_color .related_posts.av-related-style-full a:hover, .alternate_color.avia-fullwidth-portfolio .pagination .current, .alternate_color.avia-fullwidth-portfolio .pagination a, .alternate_color .av-hotspot-fallback-tooltip-inner, .alternate_color .av-hotspot-fallback-tooltip-count {
@@ -2869,11 +2952,11 @@ footer .footer-social-btns i {
 }
 
 .social-icons a#insta {
-  color: #db2975;
+  color: #8a3ab9;
 }
 
 .social-icons a#telegram {
-  color: #2da5d9;
+  color: #0088cc;
 }
 
 .social-icons a {

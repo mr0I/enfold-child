@@ -94,8 +94,9 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 #top .av-cart-counter {
   font-family: $textFont !important;
   border-radius: 0 6px 6px 6px;
+  width: 15px !important;
+  height: 15px !important;
 }
-
 
 .html_visible_cart .cart_dropdown {
   right: 0 !important;
@@ -724,9 +725,6 @@ span.copyright{
 
 form.woocommerce-cart-form td , form.woocommerce-cart-form th{
   border-radius: 0;
-}
-.shop_table td , .shop_table th{
-  border-radius: 0 !important;
 }
 
 .entry-content-header {
@@ -1511,10 +1509,6 @@ p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-rece
 .woocommerce-terms-and-conditions-wrapper{
   width: 100%;
 }
-.shop_table.woocommerce-checkout-review-order-table td ,.shop_table.woocommerce-checkout-review-order-table th {
-  border: 1px solid $hoverColor !important;
-}
-
 .woocommerce-notices-wrapper{
   width: 60%;
   margin: auto;
@@ -1633,3 +1627,63 @@ span.news-time {
   vertical-align: middle;
   color: $secondaryTextColor;
 }
+
+
+
+// Start Customize woocommerce tables
+table.shop_table th ,table.shop_table td {
+  border: 1px solid $hoverColor;
+}
+.shop_table td , .shop_table th{
+  border-radius: 0 !important;
+}
+.shop_table.woocommerce-checkout-review-order-table td ,.shop_table.woocommerce-checkout-review-order-table th {
+  border: 1px solid $hoverColor !important;
+}
+ul.order_details {
+  border-color: $hoverColor;
+}
+.woocommerce-order-details table.order_details{
+  padding: 0 !important;
+}
+.woocommerce-customer-details address{
+  color: $secondaryTextColor !important;
+}
+.woocommerce-customer-details address p{
+  text-align: right;
+  margin: 0;
+  color: $secondaryTextColor;
+}
+
+.woocommerce-MyAccount-content table tr th , .woocommerce-MyAccount-content table tr td{
+  border-color: $hoverColor;
+  text-align: center;
+}
+.woocommerce-cart-form table tr th , .woocommerce-cart-form table tr td {
+  border-color: $hoverColor;
+  text-align: center;
+}
+.woocommerce-cart-form table td.product-name {
+  text-align: center !important;
+}
+.woocommerce-cart-form table td.product-name a{
+  color: $primaryTextColor;
+}
+.cart_totals table tr th , .cart_totals table tr td{
+  border-color: $hoverColor;
+  text-align: center;
+}
+.cart-collaterals .cart_totals table tr:first-child th, .cart-collaterals .cart_totals table tr:first-child td {
+  border-top: 1px solid $hoverColor !important;
+}
+.cart-collaterals .cart_totals a.button.alt {
+  float: left;
+}
+table.shop_table td[data-title="عملیات‌ها"]{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}table.shop_table td[data-title="عملیات‌ها"] a{
+   border-radius: 0 !important;
+ }
+// End Customize woocommerce tables
