@@ -82,7 +82,7 @@ ul.menu-item.cart_dropdown {
   top: 110px;
   float: left;
   right: unset !important;
-  left: 420px;
+  left: 435px;
   border: none;
 }
 
@@ -104,7 +104,7 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 
 li#menu-item-search {
   float: left !important;
-  left: 360px;
+  left: 380px;
 }
 ul#avia-menu{
   margin-right:0;
@@ -1687,3 +1687,28 @@ table.shop_table td[data-title="عملیات‌ها"]{
    border-radius: 0 !important;
  }
 // End Customize woocommerce tables
+
+
+/* Breadcrumbs style*/
+.title_container {
+  height:100px;
+}
+.title_container .main-title  a{
+  font-size:17px;
+  color: $titleColor !important;
+}
+
+.title_container .breadcrumb {
+  left: unset !important;
+  right: 4px !important;
+  top: 60px;
+  background-color: $AccentColor;
+  padding: 5px 15px;
+}
+.title_container .breadcrumb-trail * {
+  color: #eee !important;
+}
+.title_container .breadcrumb span{
+  font-size: 15px;
+}
+/* Breadcrumbs style*/

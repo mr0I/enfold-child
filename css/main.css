@@ -362,7 +362,7 @@ ul.menu-item.cart_dropdown {
   top: 110px;
   float: left;
   right: unset !important;
-  left: 420px;
+  left: 435px;
   border: none;
 }
 
@@ -384,7 +384,7 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 
 li#menu-item-search {
   float: left !important;
-  left: 360px;
+  left: 380px;
 }
 
 ul#avia-menu {
@@ -2171,6 +2171,33 @@ table.shop_table td[data-title=عملیات‌ها] a {
   border-radius: 0 !important;
 }
 
+/* Breadcrumbs style*/
+.title_container {
+  height: 100px;
+}
+
+.title_container .main-title a {
+  font-size: 17px;
+  color: #1c272b !important;
+}
+
+.title_container .breadcrumb {
+  left: unset !important;
+  right: 4px !important;
+  top: 60px;
+  background-color: #686868;
+  padding: 5px 15px;
+}
+
+.title_container .breadcrumb-trail * {
+  color: #eee !important;
+}
+
+.title_container .breadcrumb span {
+  font-size: 15px;
+}
+
+/* Breadcrumbs style*/
 .floated_icons-r1, .floated_icons-r2, .floated_icons-r3 {
   direction: ltr;
   float: left;
@@ -4116,6 +4143,10 @@ div.notrequired > label::after {
     height: 54px;
     bottom: 70px;
     left: 20px;
+  }
+
+  .title_container {
+    height: auto;
   }
 }
 @media screen and (max-width: 600px) {

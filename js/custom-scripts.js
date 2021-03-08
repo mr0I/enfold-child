@@ -18,11 +18,6 @@ jQuery(document).ready(function ($) {
     $('.cart_dropdown_link').find('span:first-child').html('<i class="ic-cart my-2"></i>');
 
 
-
-    $('.u-column1').addClass('col-lg-6 col-md-6 col-sm-12').removeClass('col-1');
-    $('.u-column2').addClass('col-lg-6 col-md-6 col-sm-12').removeClass('col-1');
-
-
     // Change breadcrumb trails
     $('.breadcrumb-trail').find('span.sep').html('<i class="ic-chevron-left"></i>');
 
@@ -37,24 +32,28 @@ jQuery(document).ready(function ($) {
         if (idd === 'telegram') {
             sic.find('a#' + idd).css({
                 'filter': 'initial',
-                'color': '#2da5d9'
+                'color': '#0088cc'
             })
         }else {
             sic.find('a#' + idd).css({
                 'filter': 'initial',
-                'color': '#db2975'
+                'color': '#8a3ab9'
             })
         }
     }, function () {
         sic.find('a#telegram').css({
             'filter': 'initial',
-            'color': '#2da5d9'
+            'color': '#0088cc'
         });
         sic.find('a#insta').css({
             'filter': 'initial',
-            'color': '#db2975'
+            'color': '#8a3ab9'
         });
-    })
+    });
+
+
+    // Full-Width shop page
+    $('ul.products').removeClass('columns-3').addClass('col-12');
 
 });
 
