@@ -11,6 +11,7 @@ $backgroundColor: #f5f5f5;
 $hoverColor: #bdbdbd;
 $telegramColor: #0088cc;
 $instaColor: #8a3ab9;
+$aparatColor: #e61358;
 $textFont : IranSans,Sans-serif,Arial;
 //$titleFont : IranSans,iranyekan,Samim,Sans-serif,Arial;
 /* Variables-End */
@@ -29,6 +30,10 @@ $textFont : IranSans,Sans-serif,Arial;
 
 a:hover, a:focus, a:visited {
 	text-decoration: none !important;
+}
+
+* {
+	font-display: swap;
 }
 
 

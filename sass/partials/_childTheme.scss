@@ -1,4 +1,4 @@
-.floated_icons-r1 , .floated_icons-r2 , .floated_icons-r3{
+.floated_icons-r1 , .floated_icons-r2 , .floated_icons-r3, .floated_icons-r4{
   direction: ltr;
   float: left;
   position: fixed;
@@ -11,16 +11,19 @@
   white-space: nowrap;
 }
 .floated_icons-r1 {
-  top: 45%;
+  top: 40%;
 }
 .floated_icons-r2 {
-  top: calc(45% + 49px);
+  top: calc(40% + 49px);
 }
 .floated_icons-r3 {
-  top: calc(45% + 98px);
+  top: calc(40% + 98px);
+}
+.floated_icons-r4 {
+  top: calc(40% + 147px);
 }
 
-.floated_icons-r1 a , .floated_icons-r2 a , .floated_icons-r3 a  {
+.floated_icons-r1 a , .floated_icons-r2 a , .floated_icons-r3 a, .floated_icons-r4 a  {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -35,17 +38,17 @@
   text-decoration: none !important;
 }
 
-.floated_icons-r1 a , .floated_icons-r2 a  {
+.floated_icons-r1 a , .floated_icons-r2 a, .floated_icons-r3 a  {
   border-bottom: 2px solid $hoverColor;
 }
 
-.floated_icons-r1 a span , .floated_icons-r2 a span , .floated_icons-r3 a span {
+.floated_icons-r1 a span , .floated_icons-r2 a span , .floated_icons-r3 a span, .floated_icons-r4 a span {
   visibility: hidden;
   overflow: hidden;
   padding: 0;
   width: 0;
   white-space: nowrap;
-  font-weight: 600;
+  font-weight: normal;
   font-size: 13px;
   margin-left: 10px;
   text-align: right;
@@ -54,23 +57,13 @@
   direction: rtl;
   @include myTransition(0.1s ease-in-out);
 }
-.floated_icons-r1 a:hover span{
-  padding: 20px;
-  width: 200px;
-  visibility: visible;
-}
-.floated_icons-r2 a:hover span{
-  padding: 20px;
-  width: 200px;
-  visibility: visible;
-}
-.floated_icons-r3 a:hover span{
+.floated_icons-r1 a:hover span ,.floated_icons-r2 a:hover span ,.floated_icons-r3 a:hover span ,.floated_icons-r4 a:hover span {
   padding: 20px;
   width: 200px;
   visibility: visible;
 }
 
-.floated_icons-r1 img , .floated_icons-r2 img, .floated_icons-r3 img  {
+.floated_icons-r1 img , .floated_icons-r2 img, .floated_icons-r3 img, .floated_icons-r4 img  {
   width: 35px;
   height: auto;
   padding: 4px;
@@ -124,12 +117,10 @@ div#footer{
   background-color: #eeeeee;
   padding: 2px;
   font-family: $textFont !important;
+  margin-top: 50px;
 }
-#custom-footer .first-row{
-  border-bottom: 2px groove #ffffff;
-}
-#custom-footer .second-row{
-  border-bottom: 2px groove #ffffff;
+#custom-footer .first-row,#custom-footer .second-row,#custom-footer .third-row {
+  border-bottom: 2px solid #e0e0e0;
 }
 #custom-footer .fr-element{
   text-align: center;
@@ -146,12 +137,12 @@ div#footer{
   font-family: $textFont ;
 }
 #custom-footer .fr-element img{
-  width: 75px;
+  width: 60px;
   height: auto;
 }
 #custom-footer .fr-element span{
   color: $secondaryTextColor;
-  font-size: 13px;
+  font-size: 15px;
   user-select: none;
 }
 #custom-footer .sr-element h6{
@@ -166,14 +157,15 @@ div#footer{
   margin: 10px auto;
   font-family: $textFont;
 }
-#custom-footer .sr-element p {
-  margin: 14px auto;
+#custom-footer .sr-element ul li {
+  margin: 6px auto;
+  padding: 0;
 }
-#custom-footer .sr-element p a{
+#custom-footer .sr-element ul li a{
   color: $secondaryTextColor;
   font-size: 14px;
 }
-#custom-footer .sr-element p a:hover{
+#custom-footer .sr-element ul li a:hover{
   text-decoration: underline;
 }
 #custom-footer .sr-element .footer-social{
@@ -215,18 +207,13 @@ div#footer{
   line-height: 2;
   font-weight: bold;
 }
-#custom-footer .tr-element h6 p{
+#custom-footer .tr-element ul li, #custom-footer .tr-element p span {
   font-weight: normal;
-  font-size: 13px;
+  font-size: 15px;
   font-family: $textFont !important;
   direction: ltr;
-}
-#custom-footer .tr-element p {
-  margin: auto;
+  padding: 4px 0;
   color: $secondaryTextColor;
-  font-size: 15px;
-  line-height: 2;
-  font-family: $textFont !important;
 }
 #custom-footer #gateway {
   display: flex;
@@ -235,7 +222,7 @@ div#footer{
   align-items: center;
 }
 #custom-footer #gateway a{
-  margin: 0 24px;
+  margin: 0 10px;
 }
 
 #custom-footer #gateway img#zarin_img {
@@ -243,7 +230,7 @@ div#footer{
   height: auto;
 }
 #custom-footer #gateway img#FhjbxasmXXMZd5Y5vKZc , #custom-footer #gateway img#mellat_img {
-  width: 100px;
+  width: 70px;
   height: auto;
 }
 
@@ -561,7 +548,7 @@ footer .footer-social-btns i{
 }
 
 .footer-aboutUs p{
-  width: 70%;
+  width: 90%;
   text-align: justify;
   line-height: 2;
   font-size: 12px;
@@ -572,12 +559,12 @@ footer .footer-social-btns i{
 /* Custom Header */
 .custom-header {
   position: fixed;
-  top: 0;
+  top: 20px;
   left: 0;
   width: 100%;
-  background: $titleColor;
-  height: 36px;
-  line-height: 36px;
+  background:transparent;
+  //height: 36px;
+  //line-height: 36px;
   z-index: 2000;
 }
 .custom-header-container {
@@ -596,8 +583,8 @@ footer .footer-social-btns i{
   user-select: none;
 }
 .custom-header-container ul li span{
-  font-family: $textFont ;
-  font-size: 15px;
+  font-family: $textFont;
+  font-size: 17px;
   color: #EEEEEE;
 }
 .custom-header-container ul li span span.phoneNumber{
@@ -637,26 +624,32 @@ footer .footer-social-btns i{
 .alternate_color, .alternate_color .site-background, .alternate_color .first-quote, .alternate_color .related_image_wrap, .alternate_color .gravatar img .alternate_color .hr_content, .alternate_color .news-thumb, .alternate_color .post-format-icon, .alternate_color .ajax_controlls a, .alternate_color .tweet-text.avatar_no, .alternate_color .toggler, .alternate_color .toggler.activeTitle:hover, .alternate_color #js_sort_items, .alternate_color.inner-entry, .alternate_color .grid-entry-title, .alternate_color .related-format-icon, .grid-entry .alternate_color .avia-arrow, .alternate_color .avia-gallery-big, .alternate_color .avia-gallery-big, .alternate_color .avia-gallery img, .alternate_color .grid-content, .alternate_color .av-share-box ul, #top .alternate_color .av-related-style-full .related-format-icon, .alternate_color .related_posts.av-related-style-full a:hover, .alternate_color.avia-fullwidth-portfolio .pagination .current, .alternate_color.avia-fullwidth-portfolio .pagination a, .alternate_color .av-hotspot-fallback-tooltip-inner, .alternate_color .av-hotspot-fallback-tooltip-count {
   margin-top: 40px;
 }
-.html_header_top.html_header_sticky #header {
-  top: 36px;
-}
-.social-icons {
-  position: absolute;
-  top: 55px;
-  left: 20px;
-}
+
 .social-icons a#insta {
   color: $instaColor;
 }
-
 .social-icons a#telegram {
   color: $telegramColor;
 }
+.social-icons a#aparat {
+  color: $aparatColor;
+}
 .social-icons a {
   margin: auto 8px;
+  filter: grayscale(1);
+  opacity: 0.5;
+  @include myTransition(0.25s ease);
+}
+.social-icons a:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+.social-icons a:hover i{
+  font-weight: normal;
 }
 .social-icons a i{
   font-size: 2em;
+  font-weight: bold;
 }
 /* Custom Header */
 

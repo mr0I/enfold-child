@@ -96,15 +96,6 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
             <li><span>   واحد پشتیبانی  <span class="phoneNumber">03195016151</span> </span></li>
         </ul>
     </div>
-
-    <div class="social-icons">
-        <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="bottom" title="تلگرام" >
-            <i class="ic-telegram"></i>
-        </a>
-        <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="bottom" title="اینستاگرام">
-            <i class="ic-instagram"></i>
-        </a>
-    </div>
 </div>
 <div class="progress" id="scroll-bar">
     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>

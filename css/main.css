@@ -7,6 +7,10 @@ a:hover, a:focus, a:visited {
   text-decoration: none !important;
 }
 
+* {
+  font-display: swap;
+}
+
 @font-face {
   font-family: "IranSans";
   src: url("../fonts/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSansWeb.woff2") format("woff2");
@@ -308,6 +312,18 @@ ul#avia-menu li.current-menu-item > a i {
 }
 
 /* Navbar */
+#header_main .container.av-logo-container {
+  width: 100% !important;
+}
+
+#header_main .container.av-logo-container .inner-container {
+  background-color: #1c272b;
+}
+
+#header_main span.logo {
+  right: 55px !important;
+}
+
 #header_main .container, .main_menu ul:first-child > li a {
   height: 65px;
   line-height: 65px;
@@ -327,7 +343,8 @@ ul#avia-menu li.current-menu-item > a i {
 
 #top .main_menu .menu li.av-menu-button-colored {
   position: absolute;
-  top: 0;
+  top: 2px;
+  bottom: 2px;
   background: #cb2027;
   border-radius: 0;
   float: left;
@@ -343,7 +360,7 @@ ul#avia-menu li.current-menu-item > a i {
 }
 
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-8 {
-  left: 12px;
+  left: 15px;
 }
 
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-7 {
@@ -362,7 +379,7 @@ ul.menu-item.cart_dropdown {
   top: 110px;
   float: left;
   right: unset !important;
-  left: 435px;
+  left: 430px;
   border: none;
 }
 
@@ -384,7 +401,7 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 
 li#menu-item-search {
   float: left !important;
-  left: 380px;
+  left: 375px;
 }
 
 ul#avia-menu {
@@ -401,6 +418,10 @@ ul#avia-menu {
 
 .html_header_top .av_bottom_nav_header #header_main_alternate .main_menu ul:first-child > li > a {
   line-height: 45px !important;
+}
+
+.html_header_top.html_header_sticky #header {
+  top: -1px;
 }
 
 /* Navbar */
@@ -2198,7 +2219,6 @@ table.shop_table td[data-title=عملیات‌ها] a {
 }
 
 /* Breadcrumbs style*/
-/* Crisp Avatar */
 .cc-7doi.cc-1ada {
   position: relative !important;
 }
@@ -2212,8 +2232,15 @@ table.shop_table td[data-title=عملیات‌ها] a {
   top: -5px !important;
 }
 
-/* Crisp Avatar */
-.floated_icons-r1, .floated_icons-r2, .floated_icons-r3 {
+.av-share-box {
+  display: none;
+}
+
+#top .thumbnail_container img {
+  padding: 65px;
+}
+
+.floated_icons-r1, .floated_icons-r2, .floated_icons-r3, .floated_icons-r4 {
   direction: ltr;
   float: left;
   position: fixed;
@@ -2227,18 +2254,22 @@ table.shop_table td[data-title=عملیات‌ها] a {
 }
 
 .floated_icons-r1 {
-  top: 45%;
+  top: 40%;
 }
 
 .floated_icons-r2 {
-  top: calc(45% + 49px);
+  top: calc(40% + 49px);
 }
 
 .floated_icons-r3 {
-  top: calc(45% + 98px);
+  top: calc(40% + 98px);
 }
 
-.floated_icons-r1 a, .floated_icons-r2 a, .floated_icons-r3 a {
+.floated_icons-r4 {
+  top: calc(40% + 147px);
+}
+
+.floated_icons-r1 a, .floated_icons-r2 a, .floated_icons-r3 a, .floated_icons-r4 a {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
@@ -2253,17 +2284,17 @@ table.shop_table td[data-title=عملیات‌ها] a {
   text-decoration: none !important;
 }
 
-.floated_icons-r1 a, .floated_icons-r2 a {
+.floated_icons-r1 a, .floated_icons-r2 a, .floated_icons-r3 a {
   border-bottom: 2px solid #bdbdbd;
 }
 
-.floated_icons-r1 a span, .floated_icons-r2 a span, .floated_icons-r3 a span {
+.floated_icons-r1 a span, .floated_icons-r2 a span, .floated_icons-r3 a span, .floated_icons-r4 a span {
   visibility: hidden;
   overflow: hidden;
   padding: 0;
   width: 0;
   white-space: nowrap;
-  font-weight: 600;
+  font-weight: normal;
   font-size: 13px;
   margin-left: 10px;
   text-align: right;
@@ -2277,25 +2308,13 @@ table.shop_table td[data-title=عملیات‌ها] a {
   -ms-transition: 0.1s ease-in-out !important;
 }
 
-.floated_icons-r1 a:hover span {
+.floated_icons-r1 a:hover span, .floated_icons-r2 a:hover span, .floated_icons-r3 a:hover span, .floated_icons-r4 a:hover span {
   padding: 20px;
   width: 200px;
   visibility: visible;
 }
 
-.floated_icons-r2 a:hover span {
-  padding: 20px;
-  width: 200px;
-  visibility: visible;
-}
-
-.floated_icons-r3 a:hover span {
-  padding: 20px;
-  width: 200px;
-  visibility: visible;
-}
-
-.floated_icons-r1 img, .floated_icons-r2 img, .floated_icons-r3 img {
+.floated_icons-r1 img, .floated_icons-r2 img, .floated_icons-r3 img, .floated_icons-r4 img {
   width: 35px;
   height: auto;
   padding: 4px;
@@ -2356,14 +2375,11 @@ div#footer {
   background-color: #eeeeee;
   padding: 2px;
   font-family: IranSans, Sans-serif, Arial !important;
+  margin-top: 50px;
 }
 
-#custom-footer .first-row {
-  border-bottom: 2px groove #ffffff;
-}
-
-#custom-footer .second-row {
-  border-bottom: 2px groove #ffffff;
+#custom-footer .first-row, #custom-footer .second-row, #custom-footer .third-row {
+  border-bottom: 2px solid #e0e0e0;
 }
 
 #custom-footer .fr-element {
@@ -2384,13 +2400,13 @@ div#footer {
 }
 
 #custom-footer .fr-element img {
-  width: 75px;
+  width: 60px;
   height: auto;
 }
 
 #custom-footer .fr-element span {
   color: #616161;
-  font-size: 13px;
+  font-size: 15px;
   user-select: none;
 }
 
@@ -2408,16 +2424,17 @@ div#footer {
   font-family: IranSans, Sans-serif, Arial;
 }
 
-#custom-footer .sr-element p {
-  margin: 14px auto;
+#custom-footer .sr-element ul li {
+  margin: 6px auto;
+  padding: 0;
 }
 
-#custom-footer .sr-element p a {
+#custom-footer .sr-element ul li a {
   color: #616161;
   font-size: 14px;
 }
 
-#custom-footer .sr-element p a:hover {
+#custom-footer .sr-element ul li a:hover {
   text-decoration: underline;
 }
 
@@ -2476,19 +2493,13 @@ div#footer {
   font-weight: bold;
 }
 
-#custom-footer .tr-element h6 p {
+#custom-footer .tr-element ul li, #custom-footer .tr-element p span {
   font-weight: normal;
-  font-size: 13px;
+  font-size: 15px;
   font-family: IranSans, Sans-serif, Arial !important;
   direction: ltr;
-}
-
-#custom-footer .tr-element p {
-  margin: auto;
+  padding: 4px 0;
   color: #616161;
-  font-size: 15px;
-  line-height: 2;
-  font-family: IranSans, Sans-serif, Arial !important;
 }
 
 #custom-footer #gateway {
@@ -2499,7 +2510,7 @@ div#footer {
 }
 
 #custom-footer #gateway a {
-  margin: 0 24px;
+  margin: 0 10px;
 }
 
 #custom-footer #gateway img#zarin_img {
@@ -2508,7 +2519,7 @@ div#footer {
 }
 
 #custom-footer #gateway img#FhjbxasmXXMZd5Y5vKZc, #custom-footer #gateway img#mellat_img {
-  width: 100px;
+  width: 70px;
   height: auto;
 }
 
@@ -2889,7 +2900,7 @@ footer .footer-social-btns i {
 }
 
 .footer-aboutUs p {
-  width: 70%;
+  width: 90%;
   text-align: justify;
   line-height: 2;
   font-size: 12px;
@@ -2900,12 +2911,10 @@ footer .footer-social-btns i {
 /* Custom Header */
 .custom-header {
   position: fixed;
-  top: 0;
+  top: 20px;
   left: 0;
   width: 100%;
-  background: #1c272b;
-  height: 36px;
-  line-height: 36px;
+  background: transparent;
   z-index: 2000;
 }
 
@@ -2929,7 +2938,7 @@ footer .footer-social-btns i {
 
 .custom-header-container ul li span {
   font-family: IranSans, Sans-serif, Arial;
-  font-size: 15px;
+  font-size: 17px;
   color: #EEEEEE;
 }
 
@@ -2983,16 +2992,6 @@ footer .footer-social-btns i {
   margin-top: 40px;
 }
 
-.html_header_top.html_header_sticky #header {
-  top: 36px;
-}
-
-.social-icons {
-  position: absolute;
-  top: 55px;
-  left: 20px;
-}
-
 .social-icons a#insta {
   color: #8a3ab9;
 }
@@ -3001,12 +3000,33 @@ footer .footer-social-btns i {
   color: #0088cc;
 }
 
+.social-icons a#aparat {
+  color: #e61358;
+}
+
 .social-icons a {
   margin: auto 8px;
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition: 0.25s ease !important;
+  -webkit-transition: 0.25s ease !important;
+  -moz-transition: 0.25s ease !important;
+  -o-transition: 0.25s ease !important;
+  -ms-transition: 0.25s ease !important;
+}
+
+.social-icons a:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.social-icons a:hover i {
+  font-weight: normal;
 }
 
 .social-icons a i {
   font-size: 2em;
+  font-weight: bold;
 }
 
 /* Custom Header */
@@ -3760,29 +3780,17 @@ div.notrequired > label::after {
     font-size: 11px;
   }
 
-  .floated_icons-r1 a, .floated_icons-r2 a, .floated_icons-r3 a {
+  .floated_icons-r1 a, .floated_icons-r2 a, .floated_icons-r3 a, .floated_icons-r4 a {
     border-radius: 0 50px 50px 0;
   }
 
-  .floated_icons-r1 a span, .floated_icons-r2 a span, .floated_icons-r3 a span {
+  .floated_icons-r1 a span, .floated_icons-r2 a span, .floated_icons-r3 a span, .floated_icons-r4 a span {
     font-weight: normal;
     font-size: 11px;
     margin-left: 8px;
   }
 
-  .floated_icons-r1 a:hover span {
-    padding: 0;
-    width: 0;
-    visibility: hidden;
-  }
-
-  .floated_icons-r2 a:hover span {
-    padding: 0;
-    width: 0;
-    visibility: hidden;
-  }
-
-  .floated_icons-r3 a:hover span {
+  .floated_icons-r1 a:hover span, .floated_icons-r2 a:hover span, .floated_icons-r3 a:hover span, .floated_icons-r4 a:hover span {
     padding: 0;
     width: 0;
     visibility: hidden;
@@ -3871,7 +3879,7 @@ div.notrequired > label::after {
     display: block;
   }
 
-  .floated_icons-r1, .floated_icons-r2, .floated_icons-r3 {
+  .floated_icons-r1, .floated_icons-r2, .floated_icons-r3, .floated_icons-r4 {
     display: none;
   }
 
@@ -4147,6 +4155,15 @@ div.notrequired > label::after {
   .responsive #top #wrap_all .main_menu {
     left: -75px !important;
   }
+
+  .title_container .breadcrumb {
+    right: -4px !important;
+    margin: 4px auto !important;
+  }
+
+  #custom-footer {
+    padding: 50px 15px;
+  }
 }
 @media screen and (max-width: 650px) {
   .woo-docs-tab p {
@@ -4175,10 +4192,6 @@ div.notrequired > label::after {
 
   #custom-footer #gateway img#FhjbxasmXXMZd5Y5vKZc, #custom-footer #gateway img#mellat_img {
     width: 85px;
-  }
-
-  #custom-footer {
-    padding: 15px;
   }
 
   #custom-footer .fr-element {

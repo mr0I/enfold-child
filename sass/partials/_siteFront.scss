@@ -37,6 +37,15 @@ ul#avia-menu li.current-menu-item>a i{
 
 
 /* Navbar */
+#header_main .container.av-logo-container {
+  width: 100% !important;
+}
+#header_main .container.av-logo-container .inner-container{
+  background-color: #1c272b;
+}
+#header_main span.logo{
+  right: 55px !important;
+}
 #header_main .container, .main_menu ul:first-child>li a {
   height: 65px;
   line-height: 65px;
@@ -52,7 +61,8 @@ ul#avia-menu li.current-menu-item>a i{
 }
 #top .main_menu .menu li.av-menu-button-colored{
   position: absolute;
-  top: 0;
+  top: 2px;
+  bottom: 2px;
   background: $primaryColor;
   border-radius: 0;
   float: left;
@@ -65,7 +75,7 @@ ul#avia-menu li.current-menu-item>a i{
   color: #EEEEEE !important;
 }
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-8{
-  left: 12px;
+  left: 15px;
 }
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-7{
   left: 135px;
@@ -82,7 +92,7 @@ ul.menu-item.cart_dropdown {
   top: 110px;
   float: left;
   right: unset !important;
-  left: 435px;
+  left: 430px;
   border: none;
 }
 
@@ -104,22 +114,22 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 
 li#menu-item-search {
   float: left !important;
-  left: 380px;
+  left: 375px;
 }
 ul#avia-menu{
   margin-right:0;
 }
-
 #top .main_menu .menu li.av-menu-button-colored:hover{
   position: absolute !important;
 }
-
 .avia-search-tooltip.avia-tt{
   left: -105px !important;
 }
-
 .html_header_top .av_bottom_nav_header #header_main_alternate .main_menu ul:first-child > li > a {
   line-height: 45px !important;
+}
+.html_header_top.html_header_sticky #header {
+  top: -1px;
 }
 /* Navbar */
 
@@ -1714,7 +1724,7 @@ table.shop_table td[data-title="عملیات‌ها"]{
 /* Breadcrumbs style*/
 
 
-/* Crisp Avatar */
+// Crisp Avatar
 .cc-7doi.cc-1ada{
   position: relative !important;
 }
@@ -1726,5 +1736,16 @@ table.shop_table td[data-title="عملیات‌ها"]{
   left: -5px !important;
   top: -5px !important;
 }
-/* Crisp Avatar */
+// Crisp Avatar
+
+
+// Hide theme share box
+.av-share-box {
+  display: none;
+}
+
+
+#top .thumbnail_container img {
+  padding: 65px;
+}
 

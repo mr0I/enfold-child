@@ -104,27 +104,17 @@
     font-size: 11px;
   }
 
-  .floated_icons-r1 a , .floated_icons-r2 a , .floated_icons-r3 a  {
+  .floated_icons-r1 a , .floated_icons-r2 a , .floated_icons-r3 a, .floated_icons-r4 a  {
     border-radius:  0 50px 50px 0;
   }
 
-  .floated_icons-r1 a span , .floated_icons-r2 a span , .floated_icons-r3 a span {
+  .floated_icons-r1 a span , .floated_icons-r2 a span , .floated_icons-r3 a span, .floated_icons-r4 a span {
     font-weight: normal;
     font-size: 11px;
     margin-left: 8px;
   }
 
-  .floated_icons-r1 a:hover span{
-    padding: 0;
-    width: 0;
-    visibility: hidden;
-  }
-  .floated_icons-r2 a:hover span{
-    padding: 0;
-    width: 0;
-    visibility: hidden;
-  }
-  .floated_icons-r3 a:hover span{
+  .floated_icons-r1 a:hover span,.floated_icons-r2 a:hover span,.floated_icons-r3 a:hover span,.floated_icons-r4 a:hover span {
     padding: 0;
     width: 0;
     visibility: hidden;
@@ -194,7 +184,7 @@
   .floated_icons_footer{
     display: block;
   }
-  .floated_icons-r1 , .floated_icons-r2 , .floated_icons-r3  {
+  .floated_icons-r1 , .floated_icons-r2 , .floated_icons-r3, .floated_icons-r4  {
     display: none;
   }
 
@@ -419,6 +409,13 @@
   .responsive #top #wrap_all .main_menu {
     left: -75px !important;
   }
+  .title_container .breadcrumb {
+    right: -4px !important;
+    margin: 4px auto !important;
+  }
+  #custom-footer{
+    padding: 50px 15px;
+  }
 }
 
 @media screen and (max-width: 650px){
@@ -446,10 +443,6 @@
   }
   #custom-footer #gateway img#FhjbxasmXXMZd5Y5vKZc ,#custom-footer #gateway img#mellat_img {
     width: 85px;
-  }
-
-  #custom-footer{
-    padding: 15px;
   }
   #custom-footer .fr-element{
     padding: 4px;
