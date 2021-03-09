@@ -12,15 +12,12 @@ jQuery(document).ready(function ($) {
         delay: {"show": 300, "hide": 100}
     });
 
-
     // Add Material icons
     $('.single_add_to_cart_button').html('<i class="ic-basket my-2"></i>  افزودن به سبد خرید');
     $('.cart_dropdown_link').find('span:first-child').html('<i class="ic-cart my-2"></i>');
 
-
     // Change breadcrumb trails
     $('.breadcrumb-trail').find('span.sep').html('<i class="ic-chevron-left"></i>');
-
 
     const sic = $('.social-icons');
     sic.find('a').hover(function () {
@@ -51,19 +48,13 @@ jQuery(document).ready(function ($) {
         });
     });
 
-
     // Full-Width shop page
     $('ul.products').removeClass('columns-3').addClass('col-12');
 
+    // Crisp Avatar
+    setTimeout(function () {
+        $('.cc-1iv2').find('.cc-15mo').remove();
+        $('.cc-7doi.cc-1ada').append('<img src="https://radshid.com/wp-content/uploads/2021/03/support_avatar.jpg" width="70" height="70" alt="">');
+    } , 2500)
+
 });
-
-
-// document.onscroll = function(){
-//     let pos = getVerticalScrollPercentage(document.body);
-//     document.getElementById("scroll-bar").style.width = pos+'%';
-// };
-// function getVerticalScrollPercentage( elm ){
-//     let p = elm.parentNode,
-//         pos = (elm.scrollTop || p.scrollTop) / (p.scrollHeight - p.clientHeight ) * 100;
-//     return pos;
-// }

@@ -2198,6 +2198,21 @@ table.shop_table td[data-title=عملیات‌ها] a {
 }
 
 /* Breadcrumbs style*/
+/* Crisp Avatar */
+.cc-7doi.cc-1ada {
+  position: relative !important;
+}
+
+.cc-7doi.cc-1ada img {
+  position: absolute !important;
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 50px !important;
+  left: -5px !important;
+  top: -5px !important;
+}
+
+/* Crisp Avatar */
 .floated_icons-r1, .floated_icons-r2, .floated_icons-r3 {
   direction: ltr;
   float: left;
@@ -4275,6 +4290,11 @@ div.notrequired > label::after {
   }
 }
 @media screen and (max-width: 400px) {
+  .cc-7doi.cc-1ada img {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
   #custom-footer .fr-element span {
     font-size: 8px;
   }
