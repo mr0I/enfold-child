@@ -39,7 +39,7 @@
 }
 
 .floated_icons-r1 a , .floated_icons-r2 a, .floated_icons-r3 a  {
-  border-bottom: 2px solid $hoverColor;
+  border-bottom: 1px solid $hoverColor;
 }
 
 .floated_icons-r1 a span , .floated_icons-r2 a span , .floated_icons-r3 a span, .floated_icons-r4 a span {
@@ -149,7 +149,7 @@ div#footer{
   margin: 12px auto;
   padding-top: 12px;
   font-size: 18px;
-  color: $secondaryTextColor;
+  color: $primaryTextColor;
   text-align: right;
   font-weight: bold;
 }
@@ -202,7 +202,7 @@ div#footer{
 }
 #custom-footer .tr-element h6{
   font-size: 15px;
-  color: $secondaryTextColor;
+  color: $primaryTextColor;
   font-family: $textFont;
   line-height: 2;
   font-weight: bold;

@@ -51,6 +51,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .entry-content-wrapper ul.avia-icon-list li {
+    width: auto;
+  }
   #header_main .added_to_cart_notification{
     right: unset !important;
     left:0 !important;
@@ -416,6 +419,9 @@
   #custom-footer{
     padding: 50px 15px;
   }
+  .tr-element ul#support_unit li{
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 650px){
@@ -484,6 +490,9 @@
   #custom-footer .tr-element p {
     margin: 10px auto;
     font-size: 14px;
+  }
+  .title_container .breadcrumb span {
+    font-size: 12px;
   }
 }
 

@@ -42,6 +42,7 @@ ul#avia-menu li.current-menu-item>a i{
 }
 #header_main .container.av-logo-container .inner-container{
   background-color: #1c272b;
+  z-index: 1000;
 }
 #header_main span.logo{
   right: 55px !important;
@@ -61,8 +62,8 @@ ul#avia-menu li.current-menu-item>a i{
 }
 #top .main_menu .menu li.av-menu-button-colored{
   position: absolute;
-  top: 2px;
-  bottom: 2px;
+  top: -2px;
+  bottom: -1px;
   background: $primaryColor;
   border-radius: 0;
   float: left;
@@ -99,6 +100,7 @@ ul.menu-item.cart_dropdown {
 ul.menu-item.cart_dropdown .cart_dropdown_link {
   font-size: 24px !important;
   color: $AccentColor;
+  background-color: transparent;
 }
 
 #top .av-cart-counter {
@@ -1171,12 +1173,20 @@ img.full-width-img{
 
 /* woocommerce product single page */
 .template-shop{
-  background-color: $backgroundColor !important;
+  background-color: #ffffff !important;
 }
-
-.product_meta .posted_in{
-
+.template-shop .inner_product{
+  box-shadow: 0 0 5px $hoverColor;
+  border-radius: 0;
 }
+.template-shop .inner_product .button{
+  font-size:15px !important;
+}
+.template-shop .inner_product .button i{
+   font-size:18px;
+   vertical-align:middle;
+   margin: 0 5px;
+ }
 .product_meta a{
   color: $primaryTextColor;
   font-weight: normal;
@@ -1745,7 +1755,46 @@ table.shop_table td[data-title="عملیات‌ها"]{
 }
 
 
-#top .thumbnail_container img {
-  padding: 65px;
+// shop images padding
+.template-shop .thumbnail_container img {
+   padding: 65px;
+ }
+.woo-related .related img {
+  padding: 24px !important;
 }
+
+
+// Customize avia icons list
+//.entry-content-wrapper ul.avia-icon-list {
+//  display: flex;
+//  flex-flow: row wrap;
+//  justify-content: center;
+//  align-items: center;
+//  align-content: center;
+//}
+//.entry-content-wrapper ul.avia-icon-list li {
+//  width: 30%;
+//}
+//.av-masonry-entry.av-masonry-item-loaded {
+//  padding: 150px;
+//}
+
+
+// Hide Comments text
+.comment_container .minitext{
+  display:none;
+}
+
+
+// products widget
+#top div ul.product_list_widget li a {
+  line-height: 5.5em !important;
+}#top div ul.product_list_widget li .star-rating ,#top div ul.product_list_widget li .woocommerce-Price-amount  {
+   display:none;
+ }
+#top div ul.product_list_widget li a img{
+  width: 65px !important;
+}
+
+
 
