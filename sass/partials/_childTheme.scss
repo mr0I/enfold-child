@@ -114,13 +114,13 @@ div#footer{
   height: 0;
 }
 #custom-footer{
-  background-color: #eeeeee;
+  background-color: $titleColor;
   padding: 2px;
   font-family: $textFont !important;
   margin-top: 50px;
 }
 #custom-footer .first-row,#custom-footer .second-row,#custom-footer .third-row {
-  border-bottom: 2px solid #e0e0e0;
+  //border-bottom: 2px solid #263238;
 }
 #custom-footer .fr-element{
   text-align: center;
@@ -129,32 +129,41 @@ div#footer{
 }
 #custom-footer .sr-element{
   text-align: right;
-  padding-right: 80px;
 }
 #custom-footer .tr-element{
   text-align: right;
-  padding-right: 80px;
-  font-family: $textFont ;
+  font-family: $textFont;
 }
 #custom-footer .fr-element img{
   width: 60px;
   height: auto;
+  border-radius: 5px;
+  margin:15px auto;
 }
 #custom-footer .fr-element span{
-  color: $secondaryTextColor;
+  color: #EEEEEE;
   font-size: 15px;
   user-select: none;
 }
 #custom-footer .sr-element h6{
-  margin: 12px auto;
-  padding-top: 12px;
-  font-size: 18px;
-  color: $primaryTextColor;
+  line-height: 2;
+  font-size: 15px;
+  color: #EEEEEE;
   text-align: right;
   font-weight: bold;
+  padding: 5px;
+  border-bottom: 1.5px solid #263238;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    border-bottom: 2px solid $primaryColor;
+    @include myTransition(0.3s ease-in-out);
+  }
 }
 #custom-footer .fr-element p {
-  margin: 10px auto;
+  margin: auto;
   font-family: $textFont;
 }
 #custom-footer .sr-element ul li {
@@ -162,11 +171,11 @@ div#footer{
   padding: 0;
 }
 #custom-footer .sr-element ul li a{
-  color: $secondaryTextColor;
+  color: $secondaryWhiteColor;
   font-size: 14px;
 }
 #custom-footer .sr-element ul li a:hover{
-  text-decoration: underline;
+  color: #EEEEEE;
 }
 #custom-footer .sr-element .footer-social{
   display: flex;
@@ -202,18 +211,52 @@ div#footer{
 }
 #custom-footer .tr-element h6{
   font-size: 15px;
-  color: $primaryTextColor;
+  color: #EEEEEE;
   font-family: $textFont;
   line-height: 2;
   font-weight: bold;
+  padding: 5px;
+  border-bottom: 1.5px solid #263238;
+  &::after{
+    content: "";
+    position: absolute;
+    top: 40px;
+    right: 15px;
+    border-bottom: 2px solid $primaryColor;
+    @include myTransition(0.3s ease-in-out);
+  }
 }
+#custom-footer .sr-element h6.oneWord ,#custom-footer .tr-element h6.oneWord{
+  &::after{
+    width: 50px;
+  }
+}
+#custom-footer .sr-element h6.twoWords ,#custom-footer .tr-element h6.twoWords{
+  &::after{
+    width: 90px;
+  }
+}
+#custom-footer .sr-element h6.threeWords ,#custom-footer .tr-element h6.threeWords{
+  &::after{
+    width: 115px;
+  }
+}
+#custom-footer .sr-element h6.fourWords ,#custom-footer .tr-element h6.fourWords{
+  &::after{
+    width: 145px;
+  }
+}
+
+
+
 #custom-footer .tr-element ul li, #custom-footer .tr-element p span {
   font-weight: normal;
   font-size: 15px;
   font-family: $textFont !important;
   direction: ltr;
   padding: 4px 0;
-  color: $secondaryTextColor;
+  line-height: 2;
+  color: $secondaryWhiteColor;
 }
 #custom-footer #gateway {
   display: flex;
@@ -232,6 +275,9 @@ div#footer{
 #custom-footer #gateway img#FhjbxasmXXMZd5Y5vKZc , #custom-footer #gateway img#mellat_img {
   width: 70px;
   height: auto;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #bdbdbd;
+  margin: 10px auto;
 }
 
 #socket .sub_menu_socket li{
@@ -553,7 +599,8 @@ footer .footer-social-btns i{
   line-height: 2;
   font-size: 12px;
   font-family: $textFont;
-  color: $secondaryTextColor;
+  color: $secondaryWhiteColor;
+  user-select: none;
 }
 
 /* Custom Header */
@@ -625,31 +672,19 @@ footer .footer-social-btns i{
   margin-top: 40px;
 }
 
-.social-icons a#insta {
-  color: $instaColor;
-}
-.social-icons a#telegram {
-  color: $telegramColor;
-}
-.social-icons a#aparat {
-  color: $aparatColor;
-}
 .social-icons a {
   margin: auto 8px;
-  filter: grayscale(1);
-  opacity: 0.5;
+  color: $secondaryWhiteColor;
   @include myTransition(0.25s ease);
 }
 .social-icons a:hover {
-  filter: grayscale(0);
-  opacity: 1;
+  color: #EEEEEE;
 }
 .social-icons a:hover i{
   font-weight: normal;
 }
 .social-icons a i{
-  font-size: 2em;
-  font-weight: bold;
+  font-size: 20px;
 }
 /* Custom Header */
 

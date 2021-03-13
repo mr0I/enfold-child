@@ -192,11 +192,11 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
         </div>
         <div class="third-row">
             <div class="container-fluid">
-                <div class="row m-0">
+                <div class="row" style="width: 94%;margin: 0 auto 30px auto;">
                     <div class="tr-element col-12 mt-3">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                <h6>آدرس دفتر مرکزی</h6>
+                                <h6 class="threeWords">آدرس دفتر مرکزی</h6>
                                 <p>
                                 <span>اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33       ساعات کار:       8:30 الی 17</span>
                                 <br>
@@ -204,13 +204,13 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                 </p>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                <h6>آدرس کارخانه</h6>
+                                <h6 class="twoWords">آدرس کارخانه</h6>
                                 <p><span>نجف آباد – شهرک صنعتی شماره 2 – خیابان ابوریحان – شرکت رادشید</span></p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-12">
-                                <h6>واحد بازرگانی</h6>
+                                <h6 class="twoWords">واحد بازرگانی</h6>
                                 <ul style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
                                     <li class="col-6">03132362894</li>
                                     <li class="col-6">03132362947</li>
@@ -219,7 +219,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                 </ul>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12">
-                                <h6>واحد پشتیبانی</h6>
+                                <h6 class="twoWords">واحد پشتیبانی</h6>
                                 <ul id="support_unit" style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
                                     <li class="col-lg-4 col-md-4 col-sm-6">03195016151</li>
                                     <li class="col-lg-4 col-md-4 col-sm-6">03132363078</li>
@@ -230,7 +230,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                 </ul>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12">
-                                <h6> فکس </p></h6>
+                                <h6 class="oneWord"> فکس </p></h6>
                                 <ul style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
                                     <li class="col-12">03132362788 (داخلی 23)</li>
                                 </ul>
@@ -242,9 +242,9 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
         </div>
         <div class="second-row">
             <div class="container-fluid">
-                <div class="row m-0">
+                <div class="row" style="width: 94%;margin: 0 auto 30px auto;">
                     <div class="sr-element col-md-4 col-sm-12">
-                        <h6>راهنمای خرید از رادشید</h6>
+                        <h6 class="fourWords">راهنمای خرید از رادشید</h6>
                         <ul style="display: flex;flex-flow: row wrap">
                             <li class="col-lg-6 col-md-6 col-sm-12"><a href="https://radshid.com/%d9%86%d8%ad%d9%88%d9%87-%d8%ab%d8%a8%d8%aa-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4/">نحوه ثبت سفارش</a></li>
                             <li class="col-lg-6 col-md-6 col-sm-12"><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d9%be%d8%b1%d8%af%d8%a7%d8%ae%d8%aa/">شیوه های پرداخت</a></li>
@@ -253,7 +253,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                         </ul>
                     </div>
                     <div class="sr-element col-md-4 col-sm-12">
-                        <h6>با رادشید</h6>
+                        <h6 class="twoWords">با رادشید</h6>
                         <ul style="display: flex;flex-flow: row wrap">
                             <li class="col-lg-6 col-md-6 col-sm-12"><a href="https://radshid.com/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/">تماس ما</a></li>
                             <li class="col-lg-6 col-md-6 col-sm-12"><a href="https://radshid.com/%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7/">درباره ما</a></li>
@@ -261,8 +261,8 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                             <li class="col-lg-6 col-md-6 col-sm-12"><a href="https://radshid.com/%d9%87%d9%85%da%a9%d8%a7%d8%b1%db%8c-%d8%a8%d8%a7-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">استخدام در رادشید</a></li>
                         </ul>
                     </div>
-                    <div class="sr-element col-md-4 col-sm-12" style="padding-right: 0;">
-                        <h6>درباره رادشید</h6>
+                    <div class="sr-element col-md-4 col-sm-12">
+                        <h6 class="twoWords">درباره رادشید</h6>
                         <div class="footer-aboutUs">
                             <p>
                                 شرکت ایده پردازان پارسی فردا با نام تجاری رادشید  با هدف برطرف نمودن نیاز شرکت های صنعتی در رابطه با استفاده از سیستم های نوین و مدیریت هوشمندسازی ناوگان حمل و نقل آغاز گردید.  اما پس از آن با توجه به دانش بنیان بودن ساختار شرکت و با تکیه به توانمندی نیروهای مجرب پا را فراتر نهاده و با توجه به تقاضاهای مطرح شده  از طرف مشتریان در صنعت های مختلف قابلیت های دستگاه های تولیدی خود را کم کم افزایش داده که این مهم با استفاده از  تکنولوژِی های روز دنیا و ایده های نو به حقیقت پیوست.
@@ -271,16 +271,18 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                         <div id="gateway">
                             <a>
                                 <figure>
-                                    <img src="<?php echo get_stylesheet_directory_uri().'/images/mellat_gateway.png' ; ?>" width="70" height="70" alt="درگاه پرداخت ملت" id="mellat_img">
+                                    <img src="<?php echo get_stylesheet_directory_uri().'/images/mellat_gateway.jpg' ; ?>" width="70" height="70" alt="درگاه پرداخت ملت" id="mellat_img">
                                 </figure>
                             </a>
                             <!--                        <a href="https://www.zarinpal.com/trustPage/radshid.com" rel="nofollow" target="_blank">-->
                             <!--                            <figure>-->
-                            <!--                                <img src="--><?php //echo get_stylesheet_directory_uri().'/images/zarinpal-badge.png' ; ?><!--" width="70" height="70" alt="زرین پال" id="zarin_img">-->
+                            <!--                                <img src="--><?php //echo get_stylesheet_directory_uri().'/images/zarinpal-badge.jpg' ; ?><!--" width="70" height="70" alt="زرین پال" id="zarin_img">-->
                             <!--                            </figure>-->
                             <!--                        </a>-->
                             <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=179501&amp;Code=FhjbxasmXXMZd5Y5vKZc">
-                                <img referrerpolicy="origin" src="<?php echo get_stylesheet_directory_uri().'/images/star1.png' ; ?>" width="70" height="70" alt="" style="cursor:pointer" id="FhjbxasmXXMZd5Y5vKZc">
+                                <figure>
+                                    <img referrerpolicy="origin" src="<?php echo get_stylesheet_directory_uri().'/images/star1.jpg' ; ?>" width="70" height="70" alt="" style="cursor:pointer" id="FhjbxasmXXMZd5Y5vKZc">
+                                </figure>
                             </a>
                         </div>
 
@@ -472,11 +474,11 @@ if(isset($avia_config['fullscreen_image']))
 
 <div class="floated_icons_footer">
     <div class="fif-container">
-        <a href="https://t.me/Radshid_co" rel="nofollow" title="تلگرام رادشید">
+        <a href="https://t.me/Radshid_co" rel="nofollow" title="تلگرام رادشید" target="_blank">
             <i class="ic-telegram"></i>
             <span>تلگرام</span>
         </a>
-        <a href="https://www.instagram.com/radshid_com/" title="اینستاگرام رادشید" rel="nofollow">
+        <a href="https://www.instagram.com/radshid_com/" title="اینستاگرام رادشید" rel="nofollow" target="_blank">
             <i class="ic-instagram"></i>
             <span>اینستاگرام</span>
         </a>

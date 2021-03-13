@@ -80,8 +80,8 @@
     padding: 10px;
   }
   #custom-footer #gateway img#FhjbxasmXXMZd5Y5vKZc ,#custom-footer #gateway img#mellat_img   {
-    width: 100px;
-    padding: 10px;
+    width: 65px;
+    margin: 8px;
   }
   .floated-shop {
     display: none;
@@ -209,10 +209,6 @@
   }
   .responsive #top #header_main > .container .main_menu .av-main-nav > li > a {
     padding: 0 0 0 15px !important;
-  }
-  .widget_shopping_cart_content{
-    min-width: auto;
-    display: none;
   }
   #customer_login .u-column2 {
     margin-top: 0;
@@ -415,12 +411,25 @@
   .title_container .breadcrumb {
     right: -4px !important;
     margin: 4px auto !important;
+    top: 90px;
   }
   #custom-footer{
     padding: 50px 15px;
   }
   .tr-element ul#support_unit li{
     width: 50%;
+  }
+  .widget_shopping_cart_content {
+    min-width: auto;
+    visibility:hidden;
+  }
+  .responsive #top .logo {
+    width: auto !important;
+  }
+  #custom-footer .sr-element h6 ,#custom-footer .tr-element h6 {
+    &::after{
+      display: none;
+    }
   }
 }
 
@@ -444,12 +453,6 @@
     margin: 0 5px;
   }
 
-  #custom-footer #gateway img#zarin_img {
-    width: 70px;
-  }
-  #custom-footer #gateway img#FhjbxasmXXMZd5Y5vKZc ,#custom-footer #gateway img#mellat_img {
-    width: 85px;
-  }
   #custom-footer .fr-element{
     padding: 4px;
   }
@@ -497,7 +500,12 @@
 }
 
 @media screen and (max-width: 500px) {
-
+  .template-shop .inner_product .button{
+    font-size:11px !important;
+  }
+  .template-shop .inner_product .button i{
+    font-size:16px;
+  }
   #custom-footer .fr-element span{
     font-size: 10px;
   }
