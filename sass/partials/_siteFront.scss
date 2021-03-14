@@ -1233,6 +1233,7 @@ img.full-width-img{
   padding: 40px 0;
 }
 
+// product single
 form.cart{
   display: flex;
   flex-flow: row nowrap;
@@ -1243,19 +1244,25 @@ form.cart{
 }
 form.cart .quantity{
   margin: 0 !important;
-  display: none;
 }
 form.cart button[type='submit']{
   border-radius: 0 !important;
   margin: auto 6px;
   padding: 12px 24px;
 }
-.quantity .minus{
-  border-radius: 0 50% 50% 0 !important;
+#top div .quantity input.plus, #top div .quantity input.minus {
+  line-height: 40px !important;
+  width: 35px !important;
+  height: 40px !important;
 }
-.quantity .plus{
-  border-radius: 50% 0 0 50% !important;
+#top div .quantity input.qty {
+  height: 40px !important;
+  width: 45px !important;
+  line-height: 45px !important;
 }
+// product single
+
+
 
 .slick-slide img{
   border: none !important;
@@ -1544,8 +1551,8 @@ p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-rece
 
 ul.woocommerce-error {
   background: transparent;
-  border: 1px solid #DD2C00;
-  color: #DD2C00;
+  border: 1px solid tomato;
+  color: tomato;
   border-radius: 0 !important;
   padding: 15px 30px;
 }
@@ -1554,7 +1561,7 @@ ul.woocommerce-error {
   list-style-type: none;
 }
 .woocommerce-error li strong{
-  color: #DD2C00 !important;
+  color: tomato !important;
 }
 
 
@@ -1811,3 +1818,13 @@ table.shop_table td[data-title="عملیات‌ها"]{
 .html_header_top.html_header_sticky.html_bottom_nav_header #main {
   padding-top: 75px !important;
 }
+
+
+// Customize checkout
+#order_review, #order_review_heading {
+  font-size: 20px;
+}
+.col2-set .col-1 h3, .col2-set .col-2 h3 {
+  font-size: 20px;
+}
+// Customize checkout

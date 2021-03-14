@@ -235,10 +235,6 @@
   #customer_login{
     width: 100%;
   }
-
-  .responsive .logo {
-    padding-right: 25px !important;
-  }
   .responsive #scroll-top-link {
     display: none;
   }
@@ -430,6 +426,67 @@
     &::after{
       display: none;
     }
+  }
+  .summary form.cart {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+  .summary form.cart div.quantity {
+    text-align: center;
+    margin: 12px auto !important;
+  }
+
+  // Customize Cart
+  .woocommerce table.shop_table_responsive {
+    width: 94%;
+    margin: auto !important;
+    background-color: transparent;
+    border-radius: 0;
+  }
+  .woocommerce table.shop_table_responsive thead{
+    display: none;
+  }
+  .woocommerce table.shop_table_responsive tr{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 5px;
+  }
+  .woocommerce table.shop_table_responsive td , .woocommerce table.shop_table_responsive th{
+    width: 100% !important;
+    padding: 10px 5px !important;
+  }
+  .woocommerce table.shop_table_responsive td a , .woocommerce table.shop_table_responsive td span, .woocommerce table.shop_table_responsive td .quantity{
+    float: left;
+  }
+  .woocommerce table.shop_table_responsive td.product-remove{
+    display: flex !important;
+    justify-content: center;
+  }
+  .woocommerce table.shop_table_responsive td.product-remove::before , .woocommerce table.shop_table_responsive td.actions::before{
+    display: none !important;
+  }
+  .woocommerce table.shop_table_responsive td.product-thumbnail{
+    display: block !important;
+  }
+  .woocommerce table.shop_table_responsive tr td::before, .woocommerce-page table.shop_table_responsive tr td::before {
+    content: attr(data-title) ": ";
+    font-weight: 700;
+    float: right;
+  }
+  table.cart img {
+    width: 50px !important;
+  }
+  // Customize Cart
+
+  .responsive table.shop_table {
+    background-color: transparent;
+    border-radius: 0;
   }
 }
 
