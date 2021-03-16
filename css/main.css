@@ -321,8 +321,12 @@ ul#avia-menu li.current-menu-item > a i {
 }
 
 #header_main .container.av-logo-container .inner-container {
-  background-color: #1c272b;
+  background-color: #ffffff;
   z-index: 1000;
+}
+
+#header_main_alternate {
+  border-top: none;
 }
 
 #header_main span.logo {
@@ -350,18 +354,32 @@ ul#avia-menu li.current-menu-item > a i {
   font-size: 13px;
 }
 
+#top #wrap_all #header .av-menu-button > a {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 #top .main_menu .menu li.av-menu-button-colored {
   position: absolute;
-  top: -2px;
-  bottom: -1px;
+  top: 3px;
+  bottom: 3px;
   background: #cb2027;
-  border-radius: 0;
+  border-radius: 5px;
   float: left;
+  padding: 0;
 }
 
 #top .main_menu .menu li.av-menu-button-colored a {
   line-height: 40px !important;
   color: #EEEEEE;
+}
+
+#top #wrap_all .header_color .av-menu-button-colored > a .avia-menu-text {
+  color: #EEEEEE;
+  border: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
 }
 
 #top #wrap_all .header_color .av-menu-button-colored > a:hover .avia-menu-text {
@@ -373,7 +391,7 @@ ul#avia-menu li.current-menu-item > a i {
 }
 
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-7 {
-  left: 135px;
+  left: 125px;
   margin-left: 40px;
 }
 
@@ -388,7 +406,7 @@ ul.menu-item.cart_dropdown {
   top: 110px;
   float: left;
   right: unset !important;
-  left: 430px;
+  left: 405px;
   border: none;
 }
 
@@ -411,7 +429,7 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 
 li#menu-item-search {
   float: left !important;
-  left: 375px;
+  left: 350px;
 }
 
 ul#avia-menu {
@@ -2326,6 +2344,10 @@ ul.payment_methods .payment_box p {
   font-size: 13px;
 }
 
+.related_posts {
+  display: none;
+}
+
 .floated_icons-r1, .floated_icons-r2, .floated_icons-r3, .floated_icons-r4 {
   direction: ltr;
   float: left;
@@ -2652,6 +2674,9 @@ div#footer {
   margin: 10px auto;
 }
 
+#socket .sub_menu_socket {
+  width: 100%;
+}
 #socket .sub_menu_socket li {
   border-right-color: #EEEEEE !important;
 }
@@ -3068,8 +3093,9 @@ footer .footer-social-btns i {
 
 .custom-header-container ul li span {
   font-family: IranSans, Sans-serif, Arial;
-  font-size: 17px;
-  color: #EEEEEE;
+  font-size: 16px;
+  color: #cb2027;
+  font-weight: bold;
 }
 
 .custom-header-container ul li span span.phoneNumber {

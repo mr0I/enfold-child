@@ -280,9 +280,12 @@ div#footer{
   margin: 10px auto;
 }
 
-#socket .sub_menu_socket li{
-  border-right-color: #EEEEEE !important;
-}
+#socket .sub_menu_socket {
+   width: 100%;
+  li{
+    border-right-color: #EEEEEE !important;
+  }
+ }
 
 footer .footer-social-btns{
   border-top: 1px solid #EEEEEE !important;
@@ -631,8 +634,9 @@ footer .footer-social-btns i{
 }
 .custom-header-container ul li span{
   font-family: $textFont;
-  font-size: 17px;
-  color: #EEEEEE;
+  font-size: 16px;
+  color: #cb2027;
+  font-weight: bold;
 }
 .custom-header-container ul li span span.phoneNumber{
   font-family: $textFont;
