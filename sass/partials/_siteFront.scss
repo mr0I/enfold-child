@@ -1502,16 +1502,6 @@ input.submit{
   left: 0 !important;
 }
 
-p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
-  background-color: transparent;
-  color: $successMsgColor;
-  padding: 15px 30px;
-  text-align: center;
-  border-radius: 0;
-  margin: 20px auto;
-  font-weight: bold;
-  border: 1px solid $successMsgColor;
-}
 
 .tab-download-container .button_download a{
   border-radius: 0;
@@ -1547,6 +1537,7 @@ p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-rece
 .woocommerce-notices-wrapper{
   width: 60%;
   margin: auto;
+  line-height: 2;
 }
 
 ul.woocommerce-error {
@@ -1565,12 +1556,24 @@ ul.woocommerce-error {
 }
 
 
-#top div.woocommerce-message {
-  background-color: transparent;
-  color: $titleColor;
+#top div.woocommerce-message , p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+  background-color: $successMsgColor;
+  color: #EEEEEE;
   text-align: center;
   padding: 15px 30px;
-  border: 1px solid $titleColor;
+  border: 1px solid $successMsgColor;
+  position: relative;
+  width: 60%;
+  margin:auto;
+}
+
+#top div.woocommerce-message .button.wc-forward{
+display: none;
+}
+#top div.woocommerce-message a.open_cart{
+  color: #eee !important;
+  font-weight: bold;
+  margin: 0 5px;
 }
 
 .avia_start_animation .iconlist_icon{
@@ -1578,8 +1581,9 @@ ul.woocommerce-error {
 }
 
 button.wpforms-submit{
-  background-color: $titleColor !important;
+  background-color: $primaryColor !important;
   color: #eee !important;
+  font-size: 15px !important;
 }
 
 .sidebar-content span{
@@ -1828,3 +1832,25 @@ table.shop_table td[data-title="عملیات‌ها"]{
   font-size: 20px;
 }
 // Customize checkout
+
+
+// Customize recipt form
+#top #payment ul.payment_methods li {
+  font-size: 15px;
+  input{
+    vertical-align: middle;
+  }
+}
+ul.payment_methods .payment_box{
+  width: 100% !important;
+  p{
+    font-size: 13px;
+  }
+}
+// Customize recipt form
+
+
+// Temporary remove related posts
+.related_posts {
+  display:none;
+}

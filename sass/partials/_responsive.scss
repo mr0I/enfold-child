@@ -410,7 +410,7 @@
     top: 90px;
   }
   #custom-footer{
-    padding: 50px 15px;
+    padding: 10px;
   }
   .tr-element ul#support_unit li{
     width: 50%;
@@ -487,6 +487,20 @@
   .responsive table.shop_table {
     background-color: transparent;
     border-radius: 0;
+  }
+  .woocommerce-notices-wrapper{
+    width: 100%;
+  }
+  p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+    width: auto;
+  }
+  #top #payment ul.payment_methods li {
+    font-size: 13px;
+  }
+  ul.payment_methods .payment_box{
+    p{
+      font-size: 11px;
+    }
   }
 }
 

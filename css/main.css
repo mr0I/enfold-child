@@ -1983,17 +1983,6 @@ input.submit {
   left: 0 !important;
 }
 
-p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
-  background-color: transparent;
-  color: #1DE9B6;
-  padding: 15px 30px;
-  text-align: center;
-  border-radius: 0;
-  margin: 20px auto;
-  font-weight: bold;
-  border: 1px solid #1DE9B6;
-}
-
 .tab-download-container .button_download a {
   border-radius: 0;
   transition: 0.3s ease !important;
@@ -2036,6 +2025,7 @@ p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-rece
 .woocommerce-notices-wrapper {
   width: 60%;
   margin: auto;
+  line-height: 2;
 }
 
 ul.woocommerce-error {
@@ -2054,12 +2044,25 @@ ul.woocommerce-error {
   color: tomato !important;
 }
 
-#top div.woocommerce-message {
-  background-color: transparent;
-  color: #1c272b;
+#top div.woocommerce-message, p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+  background-color: #00BFA5;
+  color: #EEEEEE;
   text-align: center;
   padding: 15px 30px;
-  border: 1px solid #1c272b;
+  border: 1px solid #00BFA5;
+  position: relative;
+  width: 60%;
+  margin: auto;
+}
+
+#top div.woocommerce-message .button.wc-forward {
+  display: none;
+}
+
+#top div.woocommerce-message a.open_cart {
+  color: #eee !important;
+  font-weight: bold;
+  margin: 0 5px;
 }
 
 .avia_start_animation .iconlist_icon {
@@ -2067,8 +2070,9 @@ ul.woocommerce-error {
 }
 
 button.wpforms-submit {
-  background-color: #1c272b !important;
+  background-color: #cb2027 !important;
   color: #eee !important;
+  font-size: 15px !important;
 }
 
 .sidebar-content span {
@@ -2306,6 +2310,20 @@ table.shop_table td[data-title=عملیات‌ها] a {
 
 .col2-set .col-1 h3, .col2-set .col-2 h3 {
   font-size: 20px;
+}
+
+#top #payment ul.payment_methods li {
+  font-size: 15px;
+}
+#top #payment ul.payment_methods li input {
+  vertical-align: middle;
+}
+
+ul.payment_methods .payment_box {
+  width: 100% !important;
+}
+ul.payment_methods .payment_box p {
+  font-size: 13px;
 }
 
 .floated_icons-r1, .floated_icons-r2, .floated_icons-r3, .floated_icons-r4 {
@@ -2630,7 +2648,7 @@ div#footer {
   width: 70px;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0 0 5px #bdbdbd;
+  box-shadow: 0 0 4px #757575;
   margin: 10px auto;
 }
 
@@ -3011,10 +3029,10 @@ footer .footer-social-btns i {
 }
 
 .footer-aboutUs p {
-  width: 90%;
+  width: 100%;
   text-align: justify;
   line-height: 2;
-  font-size: 12px;
+  font-size: 11px;
   font-family: IranSans, Sans-serif, Arial;
   color: #bdbdbd;
   user-select: none;
@@ -3151,7 +3169,7 @@ footer .footer-social-btns i {
   width: 40px;
   height: 40px;
   border-radius: 100%;
-  background: #1DE9B6;
+  background: #00BFA5;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -3476,7 +3494,7 @@ footer .footer-social-btns i {
 }
 
 .uap-reg-success-msg {
-  background-color: #1DE9B6;
+  background-color: #00BFA5;
   width: 100%;
   text-align: center;
   padding: 15px;
@@ -4255,7 +4273,7 @@ div.notrequired > label::after {
   }
 
   #custom-footer {
-    padding: 50px 15px;
+    padding: 10px;
   }
 
   .tr-element ul#support_unit li {
@@ -4343,6 +4361,22 @@ div.notrequired > label::after {
   .responsive table.shop_table {
     background-color: transparent;
     border-radius: 0;
+  }
+
+  .woocommerce-notices-wrapper {
+    width: 100%;
+  }
+
+  p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+    width: auto;
+  }
+
+  #top #payment ul.payment_methods li {
+    font-size: 13px;
+  }
+
+  ul.payment_methods .payment_box p {
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 650px) {

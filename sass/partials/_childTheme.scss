@@ -276,7 +276,7 @@ div#footer{
   width: 70px;
   height: auto;
   border-radius: 5px;
-  box-shadow: 0 0 5px #bdbdbd;
+  box-shadow: 0 0 4px #757575;
   margin: 10px auto;
 }
 
@@ -594,10 +594,10 @@ footer .footer-social-btns i{
 }
 
 .footer-aboutUs p{
-  width: 90%;
+  width: 100%;
   text-align: justify;
   line-height: 2;
-  font-size: 12px;
+  font-size: 11px;
   font-family: $textFont;
   color: $secondaryWhiteColor;
   user-select: none;
