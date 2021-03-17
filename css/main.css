@@ -2519,7 +2519,7 @@ div#footer {
   font-size: 15px;
   color: #EEEEEE;
   text-align: right;
-  font-weight: bold;
+  font-weight: normal;
   padding: 5px;
   border-bottom: 1.5px solid #263238;
 }
@@ -2607,7 +2607,7 @@ div#footer {
   color: #EEEEEE;
   font-family: IranSans, Sans-serif, Arial;
   line-height: 2;
-  font-weight: bold;
+  font-weight: normal;
   padding: 5px;
   border-bottom: 1.5px solid #263238;
 }

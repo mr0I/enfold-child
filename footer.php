@@ -154,7 +154,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
 
 
-    <!--     custom footer -->
+    <!-- custom footer -->
     <div id="custom-footer">
         <div class="first-row">
             <div class="container-fluid">
@@ -315,6 +315,109 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
     </div>
     <!-- custom footer -->
 
+    <!-- custom code -->
+    <div>
+        <a class="floated-shop" href="https://radshid.com/shop/" title="ورود به فروشگاه">
+            <svg id="i-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" />
+            </svg>
+        </a>
+        <a class="dial-btn" href="tel:03132362894" title="تماس با واحد بازرگانی">
+            <i class="Phone"></i>
+        </a>
+    </div>
+
+
+    <!-- Notification bar -->
+    <?php if(get_option('RADtools_setting_notifbanner_switch' , '') === '1'){
+        ?>
+    <div class="notif_banner_container">
+            <div class="rightSide">
+                <figure class="banner_logo">
+                    <img src="<?php echo RAD_ASSETS . '/images/notices_banner/radassistant.png' ; ?>" alt="">
+                </figure>
+            </div>
+            <div class="leftSide">
+                <div class="banner_title">
+                    <p><?php esc_attr_e(get_option('RADtools_setting_notifbanner_title' , '')); ?></p>
+                </div>
+                <div class="banner_desc">
+                    <p><?php esc_attr_e(get_option('RADtools_setting_notifbanner_desc' , '')) ?></p>
+                </div>
+                <div class="banner_buttons">
+                    <a href="#">دریافت از بازار</a>
+                    <a href="#">دریافت از بازار2</a>
+                </div>
+            </div>
+        <button class="notif_close"><i class="ic-close"></i></button>
+    </div>
+        <?php
+    }
+    ?>
+    <!--Notification bar -->
+
+
+    <!-- floated icons -->
+    <div class="floated_icons-r1">
+        <a href="https://radshid.com/shop" title="فروشگاه اینترنتی">
+            <img src="<?php echo get_stylesheet_directory_uri().'/images/shop.png' ; ?>" width="35" height="35" alt="فروشگاه اینترنتی">
+            <span>فروشگاه اینترنتی رادشید</span>
+        </a>
+    </div>
+    <div class="floated_icons-r2">
+        <a rel="nofollow" href="https://cafebazaar.ir/app/com.radshid.radassistant" target="_blank" title="دریافت از کافه بازار">
+            <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" width="35" height="35" alt="دریافت از کافه بازار">
+            <span>برنامه ردیابی رادشید (اندروید)</span>
+        </a>
+    </div>
+    <div class="floated_icons-r3">
+        <a rel="nofollow" title="دریافت از سیب اپ"
+           href="https://sibapp.com/applications/%D8%B1%D8%AF%DB%8C%D8%A7%D8%A8-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D8%B1%D8%A7%D8%AF%D8%B4%DB%8C%D8%AF" target="_blank">
+            <img src="<?php echo get_stylesheet_directory_uri().'/images/sibapp.png' ; ?>" width="35" height="35" alt="دریافت از سیب اپ">
+            <span>برنامه ردیابی رادشید (آی او اس)</span>
+        </a>
+    </div>
+    <div class="floated_icons-r4">
+        <a rel="nofollow" title="دریافت از اناردونی"
+           href="https://anardoni.com/ios/app/Y61iN7Xry" target="_blank">
+            <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" width="35" height="35" alt="دریافت نسخه ios از اناردونی">
+            <span >برنامه ردیابی رادشید (آی او اس)</span>
+        </a>
+    </div>
+    <div class="floated_icons_footer">
+        <div class="fif-container">
+            <a href="https://t.me/Radshid_co" rel="nofollow" title="تلگرام رادشید" target="_blank">
+                <i class="ic-telegram"></i>
+                <span>تلگرام</span>
+            </a>
+            <a href="https://www.instagram.com/radshid_com/" title="اینستاگرام رادشید" rel="nofollow" target="_blank">
+                <i class="ic-instagram"></i>
+                <span>اینستاگرام</span>
+            </a>
+            <a href="https://radshid.com/shop" title="ورود به فروشگاه">
+                <i class="ic-shopping-cart"></i>
+                <span>فروشگاه</span>
+            </a>
+
+            <a href="https://sibapp.com/applications/%D8%B1%D8%AF%DB%8C%D8%A7%D8%A8-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D8%B1%D8%A7%D8%AF%D8%B4%DB%8C%D8%AF" title="برنامه ردیابی رادشید نسخه ios"
+               rel="nofollow" target="_blank">
+                <img src="<?php echo get_stylesheet_directory_uri().'/images/sibapp.png' ; ?>" width="22" height="22" alt="دریافت نسخه ios از سیب اپ">
+                <span>سیب اپ</span>
+            </a>
+            <a href="https://anardoni.com/ios/app/Y61iN7Xry" rel="nofollow" target="_blank" title="برنامه ردیابی رادشید نسخه ios">
+                <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" width="22" height="22" alt="دریافت نسخه ios از اناردونی">
+                <span>اناردونی</span>
+            </a>
+            <a href="https://cafebazaar.ir/app/com.radshid.radassistant" target="_blank" rel="nofollow" title="برنامه ردیابی رادشید نسخه اندروید">
+                <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" width="22" height="22" alt="دریافت از بازار">
+                <span>کافه بازار</span>
+            </a>
+        </div>
+    </div>
+    <!-- floated icons -->
+    <!-- custom code -->
+
+
 
 	<?php
 
@@ -429,82 +532,6 @@ if(isset($avia_config['fullscreen_image']))
 <a href='#top' title='<?php _e('Scroll to top','avia_framework'); ?>' id='scroll-top-link' <?php echo av_icon_string( 'scrolltop' ); ?>><span class="avia_hidden_link_text"><?php _e('Scroll to top','avia_framework'); ?></span></a>
 
 <div id="fb-root"></div>
-
-
-
-<!-- custom code -->
-<div>
-    <a class="floated-shop" href="https://radshid.com/shop/" title="ورود به فروشگاه">
-        <svg id="i-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-            <path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" />
-        </svg>
-    </a>
-    <a class="dial-btn" href="tel:03132362894" title="تماس با واحد بازرگانی">
-        <i class="Phone"></i>
-    </a>
-</div>
-
-<!-- floated icons -->
-<div class="floated_icons-r1">
-    <a href="https://radshid.com/shop" title="فروشگاه اینترنتی">
-        <img src="<?php echo get_stylesheet_directory_uri().'/images/shop.png' ; ?>" width="35" height="35" alt="فروشگاه اینترنتی">
-        <span>فروشگاه اینترنتی رادشید</span>
-    </a>
-</div>
-<div class="floated_icons-r2">
-    <a rel="nofollow" href="https://cafebazaar.ir/app/com.radshid.radassistant" target="_blank" title="دریافت از کافه بازار">
-        <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" width="35" height="35" alt="دریافت از کافه بازار">
-        <span>برنامه ردیابی رادشید (اندروید)</span>
-    </a>
-</div>
-<div class="floated_icons-r3">
-    <a rel="nofollow" title="دریافت از سیب اپ"
-       href="https://sibapp.com/applications/%D8%B1%D8%AF%DB%8C%D8%A7%D8%A8-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D8%B1%D8%A7%D8%AF%D8%B4%DB%8C%D8%AF" target="_blank">
-        <img src="<?php echo get_stylesheet_directory_uri().'/images/sibapp.png' ; ?>" width="35" height="35" alt="دریافت از سیب اپ">
-        <span>برنامه ردیابی رادشید (آی او اس)</span>
-    </a>
-</div>
-<div class="floated_icons-r4">
-    <a rel="nofollow" title="دریافت از اناردونی"
-       href="https://anardoni.com/ios/app/Y61iN7Xry" target="_blank">
-        <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" width="35" height="35" alt="دریافت نسخه ios از اناردونی">
-        <span >برنامه ردیابی رادشید (آی او اس)</span>
-    </a>
-</div>
-
-<div class="floated_icons_footer">
-    <div class="fif-container">
-        <a href="https://t.me/Radshid_co" rel="nofollow" title="تلگرام رادشید" target="_blank">
-            <i class="ic-telegram"></i>
-            <span>تلگرام</span>
-        </a>
-        <a href="https://www.instagram.com/radshid_com/" title="اینستاگرام رادشید" rel="nofollow" target="_blank">
-            <i class="ic-instagram"></i>
-            <span>اینستاگرام</span>
-        </a>
-        <a href="https://radshid.com/shop" title="ورود به فروشگاه">
-            <i class="ic-shopping-cart"></i>
-            <span>فروشگاه</span>
-        </a>
-
-        <a href="https://sibapp.com/applications/%D8%B1%D8%AF%DB%8C%D8%A7%D8%A8-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D8%B1%D8%A7%D8%AF%D8%B4%DB%8C%D8%AF" title="برنامه ردیابی رادشید نسخه ios"
-           rel="nofollow" target="_blank">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/sibapp.png' ; ?>" width="22" height="22" alt="دریافت نسخه ios از سیب اپ">
-            <span>سیب اپ</span>
-        </a>
-        <a href="https://anardoni.com/ios/app/Y61iN7Xry" rel="nofollow" target="_blank" title="برنامه ردیابی رادشید نسخه ios">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" width="22" height="22" alt="دریافت نسخه ios از اناردونی">
-            <span>اناردونی</span>
-        </a>
-        <a href="https://cafebazaar.ir/app/com.radshid.radassistant" target="_blank" rel="nofollow" title="برنامه ردیابی رادشید نسخه اندروید">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" width="22" height="22" alt="دریافت از بازار">
-            <span>کافه بازار</span>
-        </a>
-    </div>
-</div>
-<!-- floated icons -->
-<!-- custom code -->
-
 
 
 <?php

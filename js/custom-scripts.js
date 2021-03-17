@@ -52,6 +52,8 @@ jQuery(document).ready(function ($) {
     $('.wpsp-cart-button').find('a.add_to_cart_button').html(' <i class="ic-chevron-left" style="vertical-align: middle;"></i> خرید');
 
 
+
+
     // Invoice Print
     $('#print_invoice').on('click' , function () {
         const orderId = $('.woocommerce-order-overview__order').find('strong').html();

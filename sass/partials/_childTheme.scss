@@ -150,7 +150,7 @@ div#footer{
   font-size: 15px;
   color: #EEEEEE;
   text-align: right;
-  font-weight: bold;
+  font-weight: normal;
   padding: 5px;
   border-bottom: 1.5px solid #263238;
   &::after{
@@ -214,7 +214,7 @@ div#footer{
   color: #EEEEEE;
   font-family: $textFont;
   line-height: 2;
-  font-weight: bold;
+  font-weight: normal;
   padding: 5px;
   border-bottom: 1.5px solid #263238;
   &::after{
