@@ -1406,8 +1406,8 @@ ul.sub-menu a {
 }
 
 ul.sub-menu li.menu-item-has-children > a::after {
-  content: "";
-  font-family: FontAwesome;
+  content: "";
+  font-family: mycon;
   position: absolute;
   left: 8px;
   top: 25%;
@@ -3854,6 +3854,10 @@ div.notrequired > label::after {
   }
 }
 @media screen and (max-width: 768px) {
+  .html_av-overlay-side #top #wrap_all .av-burger-overlay li a {
+    padding: 15px 50px !important;
+  }
+
   .entry-content-wrapper ul.avia-icon-list li {
     width: auto;
   }

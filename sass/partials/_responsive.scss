@@ -51,6 +51,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .html_av-overlay-side #top #wrap_all .av-burger-overlay li a {
+    padding: 15px 50px !important;
+  }
   .entry-content-wrapper ul.avia-icon-list li {
     width: auto;
   }

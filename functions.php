@@ -125,4 +125,24 @@ add_action('wp_print_scripts', 'remove_password_strength_meter');
 function remove_password_strength_meter() {
 	wp_dequeue_script('zxcvbn-async');
 	wp_deregister_script('zxcvbn-async');
-}
+}?>
+<?php
+
+
+
+
+ 
+
+
+
+?>
+<?php
+
+
+
+
+ 
+
+
+
+?>
