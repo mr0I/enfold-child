@@ -56,10 +56,10 @@ jQuery(document).ready(function ($) {
     if (! localStorage.getItem('notif_banner_closed')){
         setTimeout(function () {
             $('.notif_banner_container').animate({bottom: 0} , 'slow');
-        } , 2000);
+        } , 4000);
     }
     $('.notif_close').click(function () {
-        $('.notif_banner_container').delay(300).animate({bottom: '-150px'} , 'slow').delay(3000).fadeOut().end();
+        $('.notif_banner_container').delay(300).animate({bottom: '-150px'} , 'fast').delay(3000).fadeOut().end();
         localStorage.setItem('notif_banner_closed' , true);
     });
     /* Notif Banner */

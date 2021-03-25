@@ -2071,6 +2071,7 @@ ul.woocommerce-error {
   position: relative;
   width: 60%;
   margin: 15px auto;
+  line-height: 2;
 }
 
 #top div.woocommerce-message .button.wc-forward {
@@ -2426,7 +2427,7 @@ ul.payment_methods .payment_box p {
   width: 30px;
   height: auto;
   padding: 3px;
-  margin-left: 6px;
+  margin-left: 8px;
   transition: 0.1s ease !important;
   -webkit-transition: 0.1s ease !important;
   -moz-transition: 0.1s ease !important;
@@ -3953,6 +3954,11 @@ div.notrequired > label::after {
   }
 }
 @media screen and (max-width: 768px) {
+  #top div.woocommerce-message, p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+    padding: 8px 20px;
+    width: 100%;
+  }
+
   .notif_banner_container .rightSide {
     text-align: center;
   }

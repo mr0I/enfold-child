@@ -51,6 +51,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  #top div.woocommerce-message , p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
+    padding: 8px 20px;
+    width: 100%;
+  }
   .notif_banner_container{
     .rightSide{
       text-align: center;
