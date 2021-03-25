@@ -64,10 +64,10 @@
 }
 
 .floated_icons-r1 img , .floated_icons-r2 img, .floated_icons-r3 img, .floated_icons-r4 img  {
-  width: 35px;
+  width: 30px;
   height: auto;
-  padding: 4px;
-  margin-left: 8px;
+  padding: 3px;
+  margin-left: 6px;
   @include myTransition(0.1s ease);
 }
 
@@ -806,3 +806,100 @@ footer .footer-social-btns i{
   font-size: 11px;
 }
 
+
+// Start Notif Banner
+.notif_banner_container {
+  position: fixed;
+  bottom: -1000px;
+  left: 0;
+  width: 100%;
+  background: $backgroundColor;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  box-shadow: 0 0 3px #bdbddb;
+  z-index: 9999999;
+  .rightSide{
+    width: 25%;
+    text-align: left;
+    img{
+      padding: 0;
+      width: 95px;
+      height: auto;
+    }
+  }
+  .leftSide{
+    width: 75%;
+    .banner_title p{
+      width: 75%;
+      text-align: center;
+      color: $primaryTextColor;
+      font-weight: bold;
+      font-size: 20px;
+      user-select: none;
+    }
+    .banner_desc p{
+      width: 75%;
+      text-align: center;
+      color: $secondaryTextColor;
+      font-size: 15px;
+      user-select: none;
+    }
+    p{
+      padding: 3px;
+      margin: 0 0 10px 0;
+    }
+    .banner_buttons {
+      text-align: center;
+      width: 75%;
+      padding: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      a#banner_btn1{
+        background-color: transparent;
+        color: #0ea960;
+        border: 1px solid #0ea960;
+      }
+      a#banner_btn2{
+        background-color: transparent;
+        color: #0275d8;
+        border: 1px solid #0275d8;
+      }
+      a{
+        padding: 5px 15px;
+        margin: auto 13px;
+        img{
+          vertical-align: top;
+          width: 20px;
+          height: auto;
+        }
+      }
+    }
+  }
+  .notif_close{
+    position: absolute;
+    left: 12px;
+    top: 50px;
+    border: none;
+    color: $AccentColor;
+    border-radius: 50px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    @include myTransition(0.15s ease);
+    &:hover{
+      color: $primaryColor;
+      background-color: #eee;
+    }
+    i{
+      font-size: 15px;
+      vertical-align: middle;
+    }
+  }
+}
+// End Notif Banner

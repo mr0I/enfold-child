@@ -513,7 +513,7 @@ ul.sort-param li ul {
 }
 
 .sort-param ul li {
-  padding: 8px auto;
+  padding: 8px 0;
 }
 
 .sort-param ul li span.avia-bullet {
@@ -1030,7 +1030,7 @@ li.av-share-link a {
 }
 
 .blog-tags.minor-meta a[rel=tag] {
-  padding: auto 4px !important;
+  padding: 0 4px !important;
 }
 
 .avia-content-slider .slide-entry-excerpt {
@@ -2070,7 +2070,7 @@ ul.woocommerce-error {
   border: 1px solid #00BFA5;
   position: relative;
   width: 60%;
-  margin: auto;
+  margin: 15px auto;
 }
 
 #top div.woocommerce-message .button.wc-forward {
@@ -2423,10 +2423,10 @@ ul.payment_methods .payment_box p {
 }
 
 .floated_icons-r1 img, .floated_icons-r2 img, .floated_icons-r3 img, .floated_icons-r4 img {
-  width: 35px;
+  width: 30px;
   height: auto;
-  padding: 4px;
-  margin-left: 8px;
+  padding: 3px;
+  margin-left: 6px;
   transition: 0.1s ease !important;
   -webkit-transition: 0.1s ease !important;
   -moz-transition: 0.1s ease !important;
@@ -3288,6 +3288,105 @@ footer .footer-social-btns i {
   font-size: 11px;
 }
 
+.notif_banner_container {
+  position: fixed;
+  bottom: -1000px;
+  left: 0;
+  width: 100%;
+  background: #f5f5f5;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  box-shadow: 0 0 3px #bdbddb;
+  z-index: 9999999;
+}
+.notif_banner_container .rightSide {
+  width: 25%;
+  text-align: left;
+}
+.notif_banner_container .rightSide img {
+  padding: 0;
+  width: 95px;
+  height: auto;
+}
+.notif_banner_container .leftSide {
+  width: 75%;
+}
+.notif_banner_container .leftSide .banner_title p {
+  width: 75%;
+  text-align: center;
+  color: #424242;
+  font-weight: bold;
+  font-size: 20px;
+  user-select: none;
+}
+.notif_banner_container .leftSide .banner_desc p {
+  width: 75%;
+  text-align: center;
+  color: #616161;
+  font-size: 15px;
+  user-select: none;
+}
+.notif_banner_container .leftSide p {
+  padding: 3px;
+  margin: 0 0 10px 0;
+}
+.notif_banner_container .leftSide .banner_buttons {
+  text-align: center;
+  width: 75%;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.notif_banner_container .leftSide .banner_buttons a#banner_btn1 {
+  background-color: transparent;
+  color: #0ea960;
+  border: 1px solid #0ea960;
+}
+.notif_banner_container .leftSide .banner_buttons a#banner_btn2 {
+  background-color: transparent;
+  color: #0275d8;
+  border: 1px solid #0275d8;
+}
+.notif_banner_container .leftSide .banner_buttons a {
+  padding: 5px 15px;
+  margin: auto 13px;
+}
+.notif_banner_container .leftSide .banner_buttons a img {
+  vertical-align: top;
+  width: 20px;
+  height: auto;
+}
+.notif_banner_container .notif_close {
+  position: absolute;
+  left: 12px;
+  top: 50px;
+  border: none;
+  color: #686868;
+  border-radius: 50px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: 0.15s ease !important;
+  -webkit-transition: 0.15s ease !important;
+  -moz-transition: 0.15s ease !important;
+  -o-transition: 0.15s ease !important;
+  -ms-transition: 0.15s ease !important;
+}
+.notif_banner_container .notif_close:hover {
+  color: #cb2027;
+  background-color: #eee;
+}
+.notif_banner_container .notif_close i {
+  font-size: 15px;
+  vertical-align: middle;
+}
+
 /* Uap Default CSS */
 .uap-ap-theme-2 .uap-ap-menu ul {
   float: right;
@@ -3854,6 +3953,14 @@ div.notrequired > label::after {
   }
 }
 @media screen and (max-width: 768px) {
+  .notif_banner_container .rightSide {
+    text-align: center;
+  }
+  .notif_banner_container .notif_close {
+    top: 4px;
+    left: 4px;
+  }
+
   .html_av-overlay-side #top #wrap_all .av-burger-overlay li a {
     padding: 15px 50px !important;
   }
@@ -4426,6 +4533,46 @@ div.notrequired > label::after {
   }
 }
 @media screen and (max-width: 600px) {
+  .notif_banner_container {
+    padding: 5px;
+    box-shadow: 0 0 2px #bdbddb;
+  }
+  .notif_banner_container .rightSide {
+    width: 0;
+  }
+  .notif_banner_container .leftSide {
+    width: 100%;
+  }
+  .notif_banner_container .leftSide .banner_title p {
+    width: 100%;
+    font-size: 18px;
+  }
+  .notif_banner_container .leftSide .banner_desc p {
+    width: 100%;
+    font-size: 13px;
+  }
+  .notif_banner_container .leftSide p {
+    margin: 0 0 12px 0;
+  }
+  .notif_banner_container .leftSide .banner_buttons {
+    width: 100%;
+  }
+  .notif_banner_container .leftSide .banner_buttons a {
+    padding: 5px 12px;
+    margin: 13px;
+  }
+  .notif_banner_container .leftSide .banner_buttons a img {
+    vertical-align: top;
+    width: 18px;
+    height: auto;
+  }
+  .notif_banner_container .notif_close {
+    padding: 10px;
+  }
+  .notif_banner_container .notif_close i {
+    font-size: 13px;
+  }
+
   #custom-footer #gateway a {
     margin: 0 5px;
   }

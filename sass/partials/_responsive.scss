@@ -51,6 +51,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .notif_banner_container{
+    .rightSide{
+      text-align: center;
+    }
+    .notif_close{
+      top: 4px;
+      left: 4px;
+    }
+  }
   .html_av-overlay-side #top #wrap_all .av-burger-overlay li a {
     padding: 15px 50px !important;
   }
@@ -523,6 +532,46 @@
 }
 
 @media screen and (max-width: 600px) {
+  .notif_banner_container {
+    padding: 5px;
+    box-shadow: 0 0 2px #bdbddb;
+    .rightSide{
+      width: 0;
+    }
+    .leftSide{
+      width: 100%;
+      .banner_title p{
+        width: 100%;
+        font-size: 18px;
+      }
+      .banner_desc p{
+        width: 100%;
+        font-size: 13px;
+      }
+      p{
+        margin: 0 0 12px 0;
+      }
+      .banner_buttons {
+        width: 100%;
+        a{
+          padding: 5px 12px;
+          margin: 13px;
+          img{
+            vertical-align: top;
+            width: 18px;
+            height: auto;
+          }
+        }
+      }
+    }
+    .notif_close{
+      padding: 10px;
+      i{
+        font-size: 13px;
+      }
+    }
+  }
+
   #custom-footer #gateway a {
     margin: 0 5px;
   }
