@@ -75,7 +75,7 @@ ul#avia-menu li.current-menu-item>a i{
   top: 3px;
   bottom: 3px;
   background: $primaryColor;
-  border-radius: 5px;
+  border-radius: 0;
   float: left;
   padding: 0;
 }
@@ -712,6 +712,10 @@ span.copyright{
   font-size: 12px;
 }
 
+
+.inner_product_header{
+  border-radius: 0;
+}
 .inner_product_header .inner_product_header_cell h2{
   text-align: center;
   margin: 12px auto;
@@ -1096,6 +1100,8 @@ img.full-width-img{
   color: $primaryTextColor;
 }
 
+
+
 .woo-tabs .woocommerce-Tabs-panel{
   border: 2px solid #eee !important;
   border-radius: 0;
@@ -1133,13 +1139,28 @@ img.full-width-img{
   border-bottom: 3px solid $titleColor !important;
 }
 
+.woo-related {
+  background-color: #ffff;
+  padding: 40px;
+  border-radius: 0 !important;
+}
 .woo-related .related ul.products{
   display: flex;
   flex-flow: row nowrap;
+  border-radius: 0;
 }
 
 .woocommerce-product-details__short-description p{
   text-align: justify;
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  &::before{
+    content: "\e900";
+    font-family: mycon;
+    margin: 6px;
+    vertical-align: middle;
+  }
 }
 .woocommerce-product-details__short-description ul li{
   list-style-type: initial !important;
@@ -1191,10 +1212,10 @@ img.full-width-img{
 
 /* woocommerce product single page */
 .template-shop{
-  background-color: #ffffff !important;
+  background-color: $backgroundColor !important;
 }
 .template-shop .inner_product{
-  box-shadow: 0 0 5px $hoverColor;
+  box-shadow: 0 0 2px $hoverColor;
   border-radius: 0;
 }
 .template-shop .inner_product .button{
@@ -1222,13 +1243,48 @@ img.full-width-img{
 .woo-price {
   margin-bottom: 24px;
 }
-.woo-price .woocommerce-Price-amount{
-  font-size: 20px !important;
+
+.woo-price p.price{
+  span.woocommerce-Price-amount.amount{
+    font-size: 26px !important;
+    color: $titleColor;
+  }
+  span.woocommerce-Price-currencySymbol{
+    font-size: 16px !important;
+    color: $secondaryTextColor;
+  }
+  &::before{
+    content: "";
+    color: initial;
+  }
 }
-.woo-price p::before{
-  content: 'قیمت برای شما: ';
-  color: initial;
+
+.woo-top-section{
+  background-color: #fff;
+  padding-top: 20px;
+  border-radius: 0 !important;
+  .product_meta{
+    margin: 0;
+  }
+  .product_title{
+    font-size: 24px;
+  }
 }
+
+.woo-tags-section{
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 0 !important;
+}
+.woo-desktop{
+  border-radius: 0;
+}
+
+.woo-main-section .vc_single_image-wrapper {
+  width: 115px;
+  height: auto;
+}
+
 .av-masonry {
   padding-bottom: 40px !important;
   overflow: initial;
@@ -1262,16 +1318,17 @@ form.cart .quantity{
 }
 form.cart button[type='submit']{
   border-radius: 0 !important;
-  margin: auto 6px;
   padding: 12px 24px;
+  margin: auto 8px;
+  font-size: 13px !important;
 }
 #top div .quantity input.plus, #top div .quantity input.minus {
   line-height: 40px !important;
   width: 35px !important;
-  height: 40px !important;
+  height: 45px !important;
 }
 #top div .quantity input.qty {
-  height: 40px !important;
+  height: 45px !important;
   width: 45px !important;
   line-height: 45px !important;
 }
@@ -1798,22 +1855,6 @@ table.shop_table td[data-title="عملیات‌ها"]{
 }
 
 
-// Customize avia icons list
-//.entry-content-wrapper ul.avia-icon-list {
-//  display: flex;
-//  flex-flow: row wrap;
-//  justify-content: center;
-//  align-items: center;
-//  align-content: center;
-//}
-//.entry-content-wrapper ul.avia-icon-list li {
-//  width: 30%;
-//}
-//.av-masonry-entry.av-masonry-item-loaded {
-//  padding: 150px;
-//}
-
-
 // Hide Comments text
 .comment_container .minitext{
   display:none;
@@ -1868,4 +1909,9 @@ ul.payment_methods .payment_box{
 // Temporary remove related posts
 .related_posts {
   display:none;
+}
+
+
+#main, .avia-msie-8 .av_header_sticky_disabled#header {
+  background-color: #f5f5f5 !important;
 }

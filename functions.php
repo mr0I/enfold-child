@@ -54,10 +54,9 @@ function product_tags($attr , $content){
 		// Set the array in a coma separated string of product tags for example
 		$output = implode( ', ', $output );
 		// Display the coma separated string of the product tags
-		echo 'برچسب ها: ' . $output;
+		echo '<div class="woo-tags-section"> برچسب ها: ' . $output . '</div>';
 	}
 }
-
 
 /*
  * Replace 'textdomain' with your plugin's textdomain. e.g. 'woocommerce'.
