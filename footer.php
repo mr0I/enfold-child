@@ -329,12 +329,12 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
 
     <!-- Notification bar -->
-    <?php if(get_option('RADtools_setting_notifbanner_switch' , '') === '1'){
-        ?>
+    <?php if(get_option('RADtools_setting_notifbanner_switch' , '') === '1'){ ?>
     <div class="notif_banner_container">
             <div class="rightSide">
                 <figure class="banner_logo">
-                    <img src="<?php echo RAD_ASSETS . '/images/notices_banner/radassistant.png' ; ?>" alt="">
+                    <img src="<?php echo RAD_ASSETS . '/images/notices_banner/radassistant.png' ; ?>"
+                         width="80" height="80" alt="banner_logo">
                 </figure>
             </div>
             <div class="leftSide">
@@ -345,15 +345,19 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                     <p><?php esc_attr_e(get_option('RADtools_setting_notifbanner_desc' , '')) ?></p>
                 </div>
                 <div class="banner_buttons">
-                    <a href="#">دریافت از بازار</a>
-                    <a href="#">دریافت از بازار2</a>
+                    <a href="https://cafebazaar.ir/app/com.radshid.radassistant" id="banner_btn1" target="_blank" rel="nofollow">
+                        <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" alt="bazaar">
+                        دریافت از کافه بازار
+                    </a>
+                    <a href="https://myket.ir/app/com.radshid.radassistant" id="banner_btn2" target="_blank" rel="nofollow">
+                        <img src="<?php echo get_stylesheet_directory_uri().'/images/myket.png' ; ?>" alt="bazaar">
+                        دریافت از مایکت
+                    </a>
                 </div>
             </div>
         <button class="notif_close"><i class="ic-close"></i></button>
     </div>
-        <?php
-    }
-    ?>
+        <?php } ?>
     <!--Notification bar -->
 
 

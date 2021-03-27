@@ -52,6 +52,17 @@ jQuery(document).ready(function ($) {
     $('.wpsp-cart-button').find('a.add_to_cart_button').html(' <i class="ic-chevron-left" style="vertical-align: middle;"></i> خرید');
 
 
+    /* Notif Banner */
+    if (! localStorage.getItem('notif_banner_closed')){
+        setTimeout(function () {
+            $('.notif_banner_container').animate({bottom: 0} , 'slow');
+        } , 4000);
+    }
+    $('.notif_close').click(function () {
+        $('.notif_banner_container').delay(300).animate({bottom: '-150px'} , 'fast').delay(3000).fadeOut().end();
+        localStorage.setItem('notif_banner_closed' , true);
+    });
+    /* Notif Banner */
 
 
     // Invoice Print
@@ -369,8 +380,7 @@ table th, table td {
         a.document.write(elm_content);
         a.document.write('</body></html>');
         a.print();
-    })
-
+    });
 
 });
 

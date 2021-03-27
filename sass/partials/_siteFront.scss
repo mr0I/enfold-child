@@ -205,7 +205,7 @@ ul.sort-param li ul {
   font-size: 14px;
 }
 .sort-param ul li {
-  padding: 8px auto;
+  padding: 8px 0;
 }
 .sort-param ul li span.avia-bullet {
   border-color: $secondaryTextColor;
@@ -636,7 +636,7 @@ li.av-share-link a {
   width: 100% !important;
 }
 .blog-tags.minor-meta a[rel='tag'] {
-  padding: auto 4px !important;
+  padding: 0 4px !important;
 }
 .avia-content-slider .slide-entry-excerpt {
   overflow: unset;
@@ -982,8 +982,8 @@ ul.sub-menu a{
   font-size: 13px;
 }
 ul.sub-menu li.menu-item-has-children >a::after{
-  content: "\f104";
-  font-family: FontAwesome;
+  content: "\e935";
+  font-family: mycon;
   position: absolute;
   left: 8px;
   top: 25%;
@@ -1626,8 +1626,6 @@ ul.woocommerce-error {
 .woocommerce-error li strong{
   color: tomato !important;
 }
-
-
 #top div.woocommerce-message , p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
   background-color: $successMsgColor;
   color: #EEEEEE;
@@ -1636,7 +1634,8 @@ ul.woocommerce-error {
   border: 1px solid $successMsgColor;
   position: relative;
   width: 60%;
-  margin:auto;
+  margin:15px auto;
+  line-height: 2;
 }
 
 #top div.woocommerce-message .button.wc-forward{
