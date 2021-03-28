@@ -982,7 +982,7 @@ ul.sub-menu a{
   font-size: 13px;
 }
 ul.sub-menu li.menu-item-has-children >a::after{
-  content: "\e935";
+  content: "\e936";
   font-family: mycon;
   position: absolute;
   left: 8px;
@@ -1213,6 +1213,9 @@ img.full-width-img{
 /* woocommerce product single page */
 .template-shop{
   background-color: $backgroundColor !important;
+}
+.fullsize.template-shop , .fullsize.template-shop .template-shop  {
+  background-color: #fff !important;
 }
 .template-shop .inner_product{
   box-shadow: 0 0 2px $hoverColor;
@@ -1912,5 +1915,5 @@ ul.payment_methods .payment_box{
 
 
 #main, .avia-msie-8 .av_header_sticky_disabled#header {
-  background-color: #f5f5f5 !important;
+  //background-color: $titleColor !important;
 }
