@@ -51,6 +51,27 @@
 }
 
 @media screen and (max-width: 768px) {
+  .single_download_container .file_title h4{
+    font-size: 13px;
+  }
+  .single_download_container .button_download a{
+    font-size: 13px;
+  }
+  .woo-top-section{
+    padding: 20px 0;
+    .product_title {
+      text-align: center !important;
+    }
+    .product_meta{
+      text-align: center;
+    }
+    .woocommerce-product-rating{
+      padding: 0;
+    }
+  }
+  .woo-tabs .wc-tabs .reviews_tab a{
+    padding-right: 35px !important;
+  }
   #top div.woocommerce-message , p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
     padding: 8px 20px;
     width: 100%;
@@ -539,6 +560,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  // comment text width
+  .rtl div #reviews #comments ol.commentlist li .comment-text {
+    margin: 4px !important;
+  }
   .notif_banner_container {
     padding: 5px;
     box-shadow: 0 0 2px #bdbddb;
@@ -630,6 +655,12 @@
 }
 
 @media screen and (max-width: 500px) {
+  .woo-top-section{
+    .product_title {
+      text-align: center !important;
+      font-size: 18px;
+    }
+  }
   .template-shop .inner_product .button{
     font-size:11px !important;
   }

@@ -282,6 +282,9 @@ div#footer{
    width: 100%;
   li{
     border-right-color: #EEEEEE !important;
+    a:hover{
+      color: #EEEEEE !important;
+    }
   }
  }
 
@@ -700,7 +703,7 @@ form.cart div.quantity{
   display: none !important;
 }
 #menu-item-search [data-av_iconfont='entypo-fontello']:before {
-  content: "\e905";
+  content: "\e908";
   font-family: "mycon";
   margin-left: 10px;
   font-size: 22px;
