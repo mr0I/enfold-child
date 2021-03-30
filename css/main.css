@@ -363,7 +363,7 @@ ul#avia-menu li.current-menu-item > a i {
 }
 
 #top .main_menu .menu li {
-  margin: auto -4px;
+  margin: auto;
 }
 
 #top .main_menu .menu li a {
@@ -1430,10 +1430,6 @@ td.product-name {
   margin-top: 10px;
 }
 
-.button {
-  border-radius: 4px !important;
-}
-
 ul.sub-menu a {
   font-size: 13px;
 }
@@ -2477,6 +2473,30 @@ ul.payment_methods .payment_box p {
   display: none;
 }
 
+.pagesClass.mobile {
+  display: none;
+}
+
+.pagesClass strong {
+  color: #1c272b !important;
+}
+
+.pagesClass .mainTitle {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+  border-radius: 0;
+}
+
+.pagesClass p {
+  line-height: 2;
+  font-size: 15px;
+  margin: 0;
+}
+
+.pagesClass .wpb_gmaps_widget {
+  padding: 15px;
+}
+
 .floated_icons-r1, .floated_icons-r2, .floated_icons-r3, .floated_icons-r4 {
   direction: ltr;
   float: left;
@@ -3282,7 +3302,7 @@ form.cart div.quantity {
 }
 
 .alternate_color, .alternate_color .site-background, .alternate_color .first-quote, .alternate_color .related_image_wrap, .alternate_color .gravatar img .alternate_color .hr_content, .alternate_color .news-thumb, .alternate_color .post-format-icon, .alternate_color .ajax_controlls a, .alternate_color .tweet-text.avatar_no, .alternate_color .toggler, .alternate_color .toggler.activeTitle:hover, .alternate_color #js_sort_items, .alternate_color.inner-entry, .alternate_color .grid-entry-title, .alternate_color .related-format-icon, .grid-entry .alternate_color .avia-arrow, .alternate_color .avia-gallery-big, .alternate_color .avia-gallery-big, .alternate_color .avia-gallery img, .alternate_color .grid-content, .alternate_color .av-share-box ul, #top .alternate_color .av-related-style-full .related-format-icon, .alternate_color .related_posts.av-related-style-full a:hover, .alternate_color.avia-fullwidth-portfolio .pagination .current, .alternate_color.avia-fullwidth-portfolio .pagination a, .alternate_color .av-hotspot-fallback-tooltip-inner, .alternate_color .av-hotspot-fallback-tooltip-count {
-  margin-top: 40px;
+  margin-top: 8px;
 }
 
 .social-icons a {
@@ -4029,6 +4049,11 @@ div.notrequired > label::after {
   font-size: 12px;
 }
 
+div.wpforms-container-full .wpforms-form label.wpforms-error {
+  padding: 4px;
+  color: #f03434;
+}
+
 @media screen and (max-width: 1000px) {
   #custom-footer .fr-element {
     padding: 4px;
@@ -4092,6 +4117,18 @@ div.notrequired > label::after {
   }
 }
 @media screen and (max-width: 768px) {
+  .pagesClass.mobile {
+    display: block;
+  }
+
+  .pagesClass.desktop {
+    display: none;
+  }
+
+  .pagesClass .mainTitle {
+    text-align: center;
+  }
+
   .single_download_container .file_title h4 {
     font-size: 13px;
   }

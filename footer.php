@@ -315,6 +315,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
     </div>
     <!-- custom footer -->
 
+
     <!-- custom code -->
     <div>
         <a class="floated-shop" href="https://radshid.com/shop/" title="ورود به فروشگاه">

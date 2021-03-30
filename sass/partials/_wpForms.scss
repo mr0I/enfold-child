@@ -48,6 +48,10 @@ div.notrequired >label::after{
   font-size: 12px;
 }
 
+div.wpforms-container-full .wpforms-form label.wpforms-error {
+  padding: 4px;
+  color: $primaryColor;
+}
 
 
 

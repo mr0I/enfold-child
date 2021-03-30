@@ -58,7 +58,7 @@ ul#avia-menu li.current-menu-item>a i{
   display: none;
 }
 #top .main_menu .menu li {
-  margin: auto -4px;
+  margin: auto;
 }
 #top .main_menu .menu li a {
   font-size: 15px;
@@ -985,10 +985,6 @@ td.product-name {
 .tab-download-container .button_download {
   float: left;
   margin-top: 10px;
-}
-
-.button{
-  border-radius: 4px !important;
 }
 
 ul.sub-menu a{
@@ -1975,4 +1971,27 @@ ul.payment_methods .payment_box{
 
 #main, .avia-msie-8 .av_header_sticky_disabled#header {
   //background-color: $titleColor !important;
+}
+
+
+// Customize contact us page
+.pagesClass.mobile{
+  display:none;
+}
+.pagesClass strong{
+  color: #1c272b !important;
+}
+.pagesClass .mainTitle{
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+  border-radius: 0;
+}
+
+.pagesClass p{
+  line-height:2;
+  font-size:15px;
+  margin:0;
+}
+.pagesClass .wpb_gmaps_widget{
+  padding: 15px;
 }
