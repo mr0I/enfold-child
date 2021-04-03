@@ -2431,6 +2431,10 @@ table.shop_table td[data-title=عملیات‌ها] a {
   padding: 24px !important;
 }
 
+a.wc-backward {
+  border-radius: 0;
+}
+
 .comment_container .minitext {
   display: none;
 }
@@ -2489,24 +2493,35 @@ ul.payment_methods .payment_box p {
   display: none;
 }
 
-.pagesClass strong {
-  color: #1c272b !important;
-}
-
 .pagesClass .mainTitle {
   border-bottom: 1px solid #e0e0e0;
   padding: 10px 0;
   border-radius: 0;
 }
-
+.pagesClass strong {
+  color: #1c272b !important;
+}
 .pagesClass p {
   line-height: 2;
   font-size: 15px;
   margin: 0;
+  color: #616161;
 }
-
 .pagesClass .wpb_gmaps_widget {
   padding: 15px;
+}
+.pagesClass .phone_nums {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.pagesClass .phone_nums li {
+  margin: auto 4px;
+  list-style-type: none;
+  font-size: 15px;
+  color: #616161;
 }
 
 .floated_icons-r1, .floated_icons-r2, .floated_icons-r3, .floated_icons-r4 {

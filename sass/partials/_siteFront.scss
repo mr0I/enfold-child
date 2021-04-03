@@ -1249,10 +1249,10 @@ img.full-width-img{
   font-size:15px !important;
 }
 .template-shop .inner_product .button i{
-   font-size:18px;
-   vertical-align:middle;
-   margin: 0 5px;
- }
+  font-size:18px;
+  vertical-align:middle;
+  margin: 0 5px;
+}
 // for related products
 .template-shop .related .inner_product .button{
   font-size:11px !important;
@@ -1702,7 +1702,7 @@ ul.woocommerce-error {
 }
 
 #top div.woocommerce-message .button.wc-forward{
-display: none;
+  display: none;
 }
 #top div.woocommerce-message a.open_cart{
   color: #eee !important;
@@ -1911,10 +1911,14 @@ table.shop_table td[data-title="عملیات‌ها"]{
 
 // shop images padding
 .template-shop .thumbnail_container img {
-   padding: 65px;
- }
+  padding: 65px;
+}
 .woo-related .related img {
   padding: 24px !important;
+}
+
+a.wc-backward {
+  border-radius: 0;
 }
 
 
@@ -1984,20 +1988,37 @@ ul.payment_methods .payment_box{
 .pagesClass.mobile{
   display:none;
 }
-.pagesClass strong{
-  color: #1c272b !important;
-}
-.pagesClass .mainTitle{
-  border-bottom: 1px solid #e0e0e0;
-  padding: 10px 0;
-  border-radius: 0;
+.pagesClass {
+  .mainTitle{
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    border-radius: 0;
+  }
+  strong{
+    color: #1c272b !important;
+  }
+  p{
+    line-height:2;
+    font-size:15px;
+    margin:0;
+    color: $secondaryTextColor;
+  }
+  .wpb_gmaps_widget{
+    padding: 15px;
+  }
+  .phone_nums{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    li{
+      margin: auto 4px;
+      list-style-type: none;
+      font-size: 15px;
+      color: $secondaryTextColor;
+    }
+  }
 }
 
-.pagesClass p{
-  line-height:2;
-  font-size:15px;
-  margin:0;
-}
-.pagesClass .wpb_gmaps_widget{
-  padding: 15px;
-}
+

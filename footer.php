@@ -307,7 +307,6 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                         <a href="https://www.aparat.com/radshid" id="aparat" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="bottom" title="آپارات">
                             <i class="ic-aparat"></i>
                         </a>
-
                     </div>
                 </div>
             </div>
