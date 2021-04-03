@@ -1168,6 +1168,8 @@ img.full-width-img{
 
 
 .woocommerce-product-details__short-description{
+  border-right: 1px dotted $hoverColor !important;
+  border-radius: 0 !important;
   p{
     text-align: justify;
     margin: 0;
@@ -1301,8 +1303,12 @@ img.full-width-img{
 
 .woo-tags-section{
   background-color: #ffffff;
+  color: $secondaryTextColor;
   padding: 15px;
   border-radius: 0 !important;
+  a{
+    color: $secondaryTextColor;
+  }
 }
 .woo-desktop{
   border-radius: 0 !important;
@@ -1318,7 +1324,7 @@ img.full-width-img{
 }
 .woo-main-section .iconic-woothumbs-thumbnails-wrap.iconic-woothumbs-thumbnails-wrap--sliding.iconic-woothumbs-thumbnails-wrap--vertical{
   overflow: hidden;
-  max-height: 335px;
+  max-height: 330px;
 }
 // image gallery
 
@@ -1970,7 +1976,7 @@ ul.payment_methods .payment_box{
 
 
 #main, .avia-msie-8 .av_header_sticky_disabled#header {
-  //background-color: $titleColor !important;
+  background-color: $titleColor !important;
 }
 
 

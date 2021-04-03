@@ -1,5 +1,20 @@
-/* Version 1.0.8 */
-jQuery(document).ready(function ($) {
+/* Version 1.0.9 */
+(function($) {
+    $(window).on("load", function() {
+        /* Notif Banner */
+        if (! localStorage.getItem('notif_banner_closed')){
+            setTimeout(function () {
+                $('.notif_banner_container').animate({bottom: 0} , 'slow');
+            } , 3000);
+        }
+        $('.notif_close').click(function () {
+            $('.notif_banner_container').delay(300).animate({bottom: '-150px'} , 'fast').delay(3000).fadeOut().end();
+            localStorage.setItem('notif_banner_closed' , true);
+        });
+        /* Notif Banner */
+    });
+})(jQuery);
+jQuery(document).ready(function($){
 
     // Inits
     $('[data-toggle="tooltip"]').tooltip({
@@ -30,7 +45,7 @@ jQuery(document).ready(function ($) {
 
     // Crisp Avatar
     let check_crisp = setInterval(function () {
-    const crispElm =  document.getElementById('crisp-chatbox');
+        const crispElm =  document.getElementById('crisp-chatbox');
         if (typeof(crispElm) != 'undefined' && crispElm != null)
         {
             $('.cc-1iv2').find('.cc-15mo').remove();
@@ -52,19 +67,6 @@ jQuery(document).ready(function ($) {
 
     // Customize woocommerce product desc
     $('.woocommerce-product-details__short-description').before("<p style='font-size: 15px;font-weight: bold;padding: 4px 0;margin: 0;'><i style='font-size: 1.5em;' class='ic-dot-single align-middle font-weight-bold'></i> ویژگی ها</p>");
-
-
-    /* Notif Banner */
-    if (! localStorage.getItem('notif_banner_closed')){
-        setTimeout(function () {
-            $('.notif_banner_container').animate({bottom: 0} , 'slow');
-        } , 4000);
-    }
-    $('.notif_close').click(function () {
-        $('.notif_banner_container').delay(300).animate({bottom: '-150px'} , 'fast').delay(3000).fadeOut().end();
-        localStorage.setItem('notif_banner_closed' , true);
-    });
-    /* Notif Banner */
 
 });
 

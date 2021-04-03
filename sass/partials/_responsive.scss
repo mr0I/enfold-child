@@ -317,12 +317,16 @@
   }
   .woo-mobile{
     display: block;
+    border-radius: 0 !important;
   }
   .woo-mobile .product_meta{
     text-align: center;
   }
   .woo-desktop{
     display: none;
+  }
+  .iconic-woothumbs-zoom-enabled .iconic-woothumbs-images__image{
+    padding: 50px;
   }
   .vc_btn3.vc_btn3-size-md{
     font-size: 13px !important;
@@ -551,6 +555,9 @@
     p{
       font-size: 11px;
     }
+  }
+  .pagesClass .wpb_gmaps_widget{
+    padding: 0;
   }
 }
 

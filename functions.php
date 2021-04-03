@@ -52,9 +52,9 @@ function product_tags($attr , $content){
 			$output[] = '<a href="'.$term_link.'" class="product-tag">'.$term_name.'</a>';
 		}
 		// Set the array in a coma separated string of product tags for example
-		$output = implode( ', ', $output );
+		$output = implode( ' ، ', $output );
 		// Display the coma separated string of the product tags
-		echo '<div class="woo-tags-section"> برچسب ها: ' . $output . '</div>';
+		echo '<div class="woo-tags-section" style="line-height: 2;"> برچسب ها: ' . $output . '</div>';
 	}
 }
 
@@ -124,24 +124,4 @@ add_action('wp_print_scripts', 'remove_password_strength_meter');
 function remove_password_strength_meter() {
 	wp_dequeue_script('zxcvbn-async');
 	wp_deregister_script('zxcvbn-async');
-}?>
-<?php
-
-
-
-
- 
-
-
-
-?>
-<?php
-
-
-
-
- 
-
-
-
-?>
+}
