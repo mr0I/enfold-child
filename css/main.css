@@ -700,6 +700,36 @@ article.post-entry .big-preview.single-big a img {
   border-radius: 0;
 }
 
+.post-entry.post-entry-type-page img.avia_image {
+  border-radius: 0;
+}
+.post-entry.post-entry-type-page a.avia-button {
+  background-color: #1c272b !important;
+  border-color: #1c272b !important;
+  color: #eeeeee !important;
+  border-radius: 0 !important;
+  padding: 15px 30px !important;
+}
+.post-entry.post-entry-type-page h2, .post-entry.post-entry-type-page h3, .post-entry.post-entry-type-page h4 {
+  font-size: 20px;
+  padding: 10px 0;
+  font-weight: bold;
+}
+
+.post_tag {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+.post_tag a {
+  border: 1px solid;
+  padding: 0 8px;
+  margin-top: 8px;
+  margin-left: 2px;
+}
+
 .entry-content p {
   font-size: 15px;
   line-height: 2;
@@ -2034,7 +2064,7 @@ a.product-tag {
 }
 
 .av_textblock_section p strong, .av_textblock_section ul li strong {
-  color: #424242 !important;
+  color: #1c272b !important;
 }
 
 #top .widget_nav_menu ul ul li:before {

@@ -77,16 +77,16 @@ add_filter( 'get_shortlink', function( $shortlink ) {return $shortlink;} );
 function avs_posts_tag_cb() {
 	global $post;
 	$the_tags = get_the_tags( $post->ID );
-	$output = '';
+	$output = '<span class="post_tag">';
 	foreach($the_tags as $tag) {
 		$taglink = get_tag_link($tag->term_id);
 		if(!next($the_tags)) {
-			$output .= '<span class="post_tag"><a href='.$taglink.'>'.$tag->name.' </a></span>';
+			$output .= '<a href='.$taglink.'>'.$tag->name.' </a>';
 		}else{
-			$output .= '<span class="post_tag"><a href='.$taglink.'>'.$tag->name.' </a>،</span>';
+			$output .= '<a href='.$taglink.'>'.$tag->name.' </a>';
 		}
 	}
-	return 'برچسب ها: ' . $output;
+	return 'برچسب ها: ' . $output . '</span>';
 }
 add_shortcode('avs_posts_tag', 'avs_posts_tag_cb');
 

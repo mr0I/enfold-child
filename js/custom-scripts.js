@@ -68,6 +68,11 @@ jQuery(document).ready(function($){
     // Customize woocommerce product desc
     $('.woocommerce-product-details__short-description').before("<p style='font-size: 15px;font-weight: bold;padding: 4px 0;margin: 0;'><i style='font-size: 1.5em;' class='ic-dot-single align-middle font-weight-bold'></i> ویژگی ها</p>");
 
+
+
+    //$('#avia-menu').append('<li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-top-level menu-item-top-level-1"><a href="http://localhost/wordpress/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><i class="fa fa-home"></i> خانه</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>');
+
+
 });
 
 

@@ -540,6 +540,31 @@ if(isset($avia_config['fullscreen_image']))
 
 <?php
 
+
+if (is_user_logged_in()){
+	$user_id = get_current_user_id();
+	$user = get_userdata($user_id);
+	$user_roles = $user->roles;
+	if ($user_roles[0] == 'customer'){
+        // Append extra element after Agent login
+        ?>
+        <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#avia-menu').append('<li id="menu-item-999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-top-level menu-item-top-level-1"><a href="<?php echo get_option('RADtools_setting_agencies_orders_list_link'); ?>" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><i class="fa fa-home"></i><?php echo __('Bulk Orders', 'radshid_lan'); ?></span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>')
+        })
+        </script>
+        <?php
+    }
+} else {
+    ?>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('#avia-menu').remove('<li id="menu-item-999"</li>')
+        })
+    </script>
+<?php
+}
+
 /* Always have wp_footer() just before the closing </body>
  * tag of your theme, or you will break many plugins, which
  * generally use this hook to reference JavaScript files.
