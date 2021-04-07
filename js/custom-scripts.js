@@ -12,7 +12,17 @@
             localStorage.setItem('notif_banner_closed' , true);
         });
         /* Notif Banner */
-    });
+
+        const crispElm =  document.getElementById('crisp-chatbox');
+        if (typeof(crispElm) != 'undefined' && crispElm != null)
+        {
+            crispElm.addEventListener("click" , async (event) => {
+                $('.cc-1iv2').find('.cc-15mo').remove();
+                $('.cc-7doi.cc-1ada').append('<img src="https://radshid.com/wp-content/uploads/2021/03/support_avatar2.jpg" width="70" height="70" alt="" id="crisp_avatar">');
+            });
+        }
+
+    })
 })(jQuery);
 jQuery(document).ready(function($){
 
@@ -49,7 +59,7 @@ jQuery(document).ready(function($){
         if (typeof(crispElm) != 'undefined' && crispElm != null)
         {
             $('.cc-1iv2').find('.cc-15mo').remove();
-            $('.cc-7doi.cc-1ada').append('<img src="https://radshid.com/wp-content/uploads/2021/03/support_avatar2.jpg" onclick="load_again()" width="70" height="70" alt="">');
+            $('.cc-7doi.cc-1ada').append('<img src="https://radshid.com/wp-content/uploads/2021/03/support_avatar2.jpg" width="70" height="70" alt="" id="crisp_avatar">');
             clearInterval(check_crisp);
         }
     } , 300);
@@ -68,21 +78,8 @@ jQuery(document).ready(function($){
     // Customize woocommerce product desc
     $('.woocommerce-product-details__short-description').before("<p style='font-size: 15px;font-weight: bold;padding: 4px 0;margin: 0;'><i style='font-size: 1.5em;' class='ic-dot-single align-middle font-weight-bold'></i> ویژگی ها</p>");
 
-
-
-    //$('#avia-menu').append('<li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-top-level menu-item-top-level-1"><a href="http://localhost/wordpress/" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><i class="fa fa-home"></i> خانه</span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>');
-
-
 });
 
-
-function load_again() {
-    const crispElm =  document.getElementById('crisp-chatbox');
-    crispElm.click(function () {
-        $('.cc-1iv2').find('.cc-15mo').remove();
-        $('.cc-7doi.cc-1ada').append('<img src="https://radshid.com/wp-content/uploads/2021/03/support_avatar2.jpg" width="70" height="70" alt="">');
-    })
-}
 
 
 

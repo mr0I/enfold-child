@@ -778,9 +778,14 @@ span.copyright{
   background-color: $primaryColor !important;
 }
 
+
+// customize crsip icon
 .crisp-x94m06{
   background-color: $primaryLightColor !important;
 }
+
+
+
 #scroll-top-link{
   width: 50px;
   height: 50px;
@@ -1575,8 +1580,11 @@ a.product-tag {
   width:24% !important;
 }
 
-.av_textblock_section p strong , .av_textblock_section ul li strong  {
+.av_textblock_section p strong  {
   color: $titleColor !important;
+}
+.av_textblock_section ul li strong , .av_textblock_section ul li  {
+  color: $primaryTextColor !important;
 }
 
 #top .widget_nav_menu ul ul li:before {
@@ -1761,7 +1769,7 @@ button.wpforms-submit{
 }
 
 .iconic-woothumbs-zoom-enabled .iconic-woothumbs-images__image{
-  padding: 100px;
+  padding: 50px;
 }
 
 .wishlist_table th ,.wishlist_table th {

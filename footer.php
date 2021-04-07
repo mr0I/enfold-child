@@ -550,7 +550,7 @@ if (is_user_logged_in()){
         ?>
         <script type="text/javascript">
         jQuery(document).ready(function($) {
-            $('#avia-menu').append('<li id="menu-item-999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-top-level menu-item-top-level-1"><a href="<?php echo get_option('RADtools_setting_agencies_orders_list_link'); ?>" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><i class="fa fa-home"></i><?php echo __('Bulk Orders', 'radshid_lan'); ?></span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>')
+            $('#avia-menu').append('<li id="menu-item-999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-top-level menu-item-top-level-1"><a href="<?php echo get_option('RADtools_setting_agencies_orders_list_link'); ?>" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><i class="fa fa-home"></i><?php echo __('Bulk Orders', 'radshid_lan'); ?></span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>');
         })
         </script>
         <?php
@@ -559,7 +559,7 @@ if (is_user_logged_in()){
     ?>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
-            $('#avia-menu').remove('<li id="menu-item-999"</li>')
+            $('#avia-menu').remove('<li id="menu-item-999"</li>');
         })
     </script>
 <?php
@@ -585,6 +585,12 @@ wp_footer();
         d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();$crisp.push(["set", "session:data", [[["country", "IR"],["shipping_country", "IR"]]]]);
 </script>
 <!-- End Crisp Init -->
+<style type="text/css">
+    .crisp-client .cc-kv6t[data-full-view=true] .cc-1xry .cc-unoo {
+        bottom: 60px !important;
+        right: 20px !important;
+    }
+</style>
 
 
 </body>
