@@ -359,6 +359,7 @@ article.post-entry {
     font-size: 20px;
     padding: 10px 0;
     font-weight: bold;
+    line-height: 1.6;
   }
 }
 .post_tag{
@@ -665,7 +666,7 @@ li.av-share-link a {
 }
 .avia_textblock p {
   font-size: 17px;
-  text-align: justify;
+  text-align: justify !important;
   line-height: 2.25;
   color: $primaryTextColor;
   font-family: $textFont !important;

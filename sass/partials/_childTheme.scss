@@ -617,9 +617,7 @@ form.cart div.quantity{
   left: 0;
   width: 100%;
   background:transparent;
-  //height: 36px;
-  //line-height: 36px;
-  z-index: 2000;
+  z-index: 1000;
 }
 .custom-header-container {
   padding: 0 24px;
@@ -634,7 +632,7 @@ form.cart div.quantity{
 }
 .custom-header-container ul li{
   font-family: $textFont ;
-  user-select: none;
+  //user-select: none;
 }
 .custom-header-container ul li span{
   font-family: $textFont;

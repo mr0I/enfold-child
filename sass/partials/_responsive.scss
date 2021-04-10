@@ -51,6 +51,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .cc-7doi.cc-1ada img{
+    width: 60px !important;
+    height: 60px !important;
+  }
   .pagesClass.mobile{
     display:block;
   }
@@ -272,7 +276,7 @@
   }
 
   #top .title_container .container {
-    padding-top: 150px !important;
+    padding-top: 100px !important;
   }
 
   .responsive #top #wrap_all #header{
@@ -732,11 +736,6 @@
 }
 
 @media screen and (max-width: 400px) {
-  .cc-7doi.cc-1ada img{
-    width: 64px !important;
-    height: 64px !important;
-  }
-
   #custom-footer .fr-element span{
     font-size: 8px;
   }

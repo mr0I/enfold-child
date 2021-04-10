@@ -714,6 +714,7 @@ article.post-entry .big-preview.single-big a img {
   font-size: 20px;
   padding: 10px 0;
   font-weight: bold;
+  line-height: 1.6;
 }
 
 .post_tag {
@@ -1071,7 +1072,7 @@ li.av-share-link a {
 
 .avia_textblock p {
   font-size: 17px;
-  text-align: justify;
+  text-align: justify !important;
   line-height: 2.25;
   color: #424242;
   font-family: IranSans, Sans-serif, Arial !important;
@@ -3288,7 +3289,7 @@ form.cart div.quantity {
   left: 0;
   width: 100%;
   background: transparent;
-  z-index: 2000;
+  z-index: 1000;
 }
 
 .custom-header-container {
@@ -3306,7 +3307,6 @@ form.cart div.quantity {
 
 .custom-header-container ul li {
   font-family: IranSans, Sans-serif, Arial;
-  user-select: none;
 }
 
 .custom-header-container ul li span {
@@ -4178,6 +4178,11 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
   }
 }
 @media screen and (max-width: 768px) {
+  .cc-7doi.cc-1ada img {
+    width: 60px !important;
+    height: 60px !important;
+  }
+
   .pagesClass.mobile {
     display: block;
   }
@@ -4446,7 +4451,7 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
   }
 
   #top .title_container .container {
-    padding-top: 150px !important;
+    padding-top: 100px !important;
   }
 
   .responsive #top #wrap_all #header {
@@ -4987,11 +4992,6 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
   }
 }
 @media screen and (max-width: 400px) {
-  .cc-7doi.cc-1ada img {
-    width: 64px !important;
-    height: 64px !important;
-  }
-
   #custom-footer .fr-element span {
     font-size: 8px;
   }
