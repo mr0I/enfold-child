@@ -559,7 +559,10 @@ if (is_user_logged_in()){
     ?>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
-            $('#avia-menu').remove('<li id="menu-item-999"</li>');
+            const elm = $('#menu-item-999');
+            if(elm == null){
+                $('#avia-menu').remove('<li id="menu-item-999"</li>');
+            }
         })
     </script>
 <?php

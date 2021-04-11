@@ -51,6 +51,15 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
     <meta name="keywords" content="ردیاب خودرو, ردیاب شخصی , ردیاب موتور سیکلت, ردیاب آهنربایی ,ردیاب کودکان, ردیاب سالمندان,ردیاب پاوربانک, دستگاه شنود,سامانه ردیابی, ردیاب رادشید, خرید اینترنتی ردیاب, فروش اینترنتی ردیاب,خرید تبلت صنعتی, سیپاد">
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="enamad" content="419561"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59846784-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-59846784-2');
+    </script>
+
 
     <?php
 	/*
