@@ -349,7 +349,7 @@ footer .footer-social-btns i{
   display: none;
   box-shadow: 0 0 5px $hoverColor;
   padding: 4px 0;
-  z-index: 2000;
+  z-index: 1;
 }
 .fif-container{
   padding:0;
@@ -550,7 +550,7 @@ footer .footer-social-btns i{
   font-family: $textFont ;
   height: 45px;
   font-size: 24px;
-  padding: 0 70px !important;
+  padding: 0 60px 0 30px !important;
   border: 0;
   outline: 0;
   color: white;
@@ -565,9 +565,9 @@ footer .footer-social-btns i{
 
 .single_add_to_cart_button i{
   position: absolute;
-  right:15px;
-  top: 5px;
-  font-size: 1.75em;
+  right:12px;
+  top: 10px;
+  font-size: 20px;
 }
 .single_add_to_cart_button svg{
   position: absolute;
@@ -583,10 +583,10 @@ footer .footer-social-btns i{
   width: 75px;
   height: 200%;
   transform: rotateZ(10deg);
-  background: #ffffff;
+  background-color:tomato;
   @include myTransition(all 0.3s);
   border-radius: 0;
-  opacity: 0.1;
+  opacity: 0.2;
   z-index: -1;
 }
 .single_add_to_cart_button:hover::before{
@@ -594,9 +594,17 @@ footer .footer-social-btns i{
   height: 200%;
   transform: skew(-30deg);
 }
-
-form.cart div.quantity{
-  margin: auto 6px !important;
+.single_add_to_cart_button span {
+  position: absolute;
+  border-radius: 50%;
+  /* To make it round */
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100px;
+  height: 100px;
+  margin-top: -50px;
+  margin-left: -50px;
+  animation: ripple 1s;
+  opacity: 0;
 }
 
 
