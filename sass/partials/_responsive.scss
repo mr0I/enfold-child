@@ -51,6 +51,16 @@
 }
 
 @media screen and (max-width: 768px) {
+  #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-8{
+    i{
+      display: block;
+    }
+  }
+  #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-7{
+    i{
+      display: block;
+    }
+  }
   .single_add_to_cart_button{
     position: fixed;
     bottom: 0;
