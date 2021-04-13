@@ -545,7 +545,7 @@ if (is_user_logged_in()){
     ?>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
-            let my_account_elm = $('li.menu-item.menu-item-top-level-8');
+            let my_account_elm = $('ul.menu.av-main-nav').find('li.menu-item.menu-item-top-level-8');
             my_account_elm.find('span.avia-menu-text').html('<i class="ic-user1"></i>حساب کاربری');
         })
     </script>
@@ -553,7 +553,7 @@ if (is_user_logged_in()){
 	$user_id = get_current_user_id();
 	$user = get_userdata($user_id);
 	$user_roles = $user->roles;
-	if ($user_roles[0] == 'customer'){
+	if ($user_roles[0] == 'author'){
         // Append extra element after Agent login
         ?>
         <script type="text/javascript">
@@ -571,7 +571,7 @@ if (is_user_logged_in()){
             if(elm == null){
                 $('#avia-menu').remove('<li id="menu-item-999"</li>');
             }
-            let my_account_elm = $('li.menu-item.menu-item-top-level-8');
+            let my_account_elm = $('ul.menu.av-main-nav').find('li.menu-item.menu-item-top-level-8');
             my_account_elm.find('span.avia-menu-text').html('<i class="ic-user1"></i>ورود / ثبت نام');
         })
     </script>

@@ -99,11 +99,16 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
 
 <!-- Custom Code -->
 <div class="custom-header">
-    <div class="custom-header-container">
-        <ul>
-            <li><span>   واحد بازرگانی  <span class="phoneNumber">03132362894</span> </span></li>
-            <li><span>   واحد پشتیبانی  <span class="phoneNumber">03195016151</span> </span></li>
-        </ul>
+<!--    <div class="custom-header-container">-->
+<!--        <ul>-->
+<!--            <li><span>   واحد بازرگانی  <span class="phoneNumber">03132362894</span> </span></li>-->
+<!--            <li><span>   واحد پشتیبانی  <span class="phoneNumber">03195016151</span> </span></li>-->
+<!--        </ul>-->
+<!--    </div>-->
+
+    <div class="header_phones">
+        <a href="tel:03195016151"><span><i class="ic-headset_mic"></i></span><span class="phoneNumber">03195016151</span><span class="unit_title"> واحد پشتیبانی</span></a>
+        <a href="tel:03132362894"><span><i class="ic-old-phone"></i></span><span class="phoneNumber">03132362894</span><span class="unit_title"> واحد بازرگانی</span></a>
     </div>
 </div>
 

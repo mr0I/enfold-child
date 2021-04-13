@@ -79,10 +79,13 @@ a:hover, a:focus, a:visited {
 
 
 .ic-dot-single:before {
-	content: "\e900";
+	content: "\e901";
 }
 .ic-checkmark:before {
 	content: "\e93f";
+}
+.ic-old-phone:before {
+	content: "\e940";
 }
 .ic-line-left:before {
 	content: "\e904";
@@ -269,4 +272,10 @@ a:hover, a:focus, a:visited {
 }
 .ic-check-circle:before {
 	content: "\e903";
+}
+.ic-support_agent:before {
+	content: "\e900";
+}
+.ic-headset_mic:before {
+	content: "\e941";
 }

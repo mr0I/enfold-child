@@ -626,37 +626,70 @@ footer .footer-social-btns i{
   width: 100%;
   background:transparent;
   z-index: 1000;
-}
-.custom-header-container {
-  padding: 0 24px;
-}
-.custom-header-container ul{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-evenly;
-  align-items: center;
-  align-content: center;
-  width: 100%;
-}
-.custom-header-container ul li{
-  font-family: $textFont ;
-  //user-select: none;
-}
-.custom-header-container ul li span{
-  font-family: $textFont;
-  font-size: 16px;
-  color: $primaryColor;
-  font-weight: bold;
-}
-.custom-header-container ul li span span.phoneNumber{
-  font-family: $textFont;
-}
-.custom-header-container ul li svg{
-  color: #EEEEEE;
-  vertical-align: sub;
-  @include myTransition(0.3s ease-in-out);
-}
+  .custom-header-container {
+    padding: 0 24px;
+    ul{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+      li{
+        font-family: $textFont ;
+        span{
+          font-family: $textFont;
+          font-size: 16px;
+          color: $primaryColor;
+          font-weight: bold;
+          span.phoneNumber{
+            font-family: $textFont;
+          }
+        }
+        svg{
+          color: #EEEEEE;
+          vertical-align: sub;
+          @include myTransition(0.3s ease-in-out);
+        }
+      }
 
+    }
+  }
+  .header_phones{
+    position: fixed;
+    left: 24px;
+    top: 0;
+    padding: 5px;
+    a{
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+      direction: ltr;
+      font-size: 14px;
+      margin: 4px auto;
+      user-select: none;
+      color: $secondaryTextColor;
+      span{
+        padding: 0 4px;
+      }
+      i{
+        font-size: 18px;
+        color: $primaryColor;
+        vertical-align: sub;
+      }
+      .phoneNumber{
+        min-width: 90px;
+        text-align: left;
+      }
+      .unit_title{
+        min-width: 90px;
+        text-align: right;
+      }
+    }
+  }
+}
 
 #social_icons{
   display: flex;

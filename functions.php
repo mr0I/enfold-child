@@ -114,11 +114,6 @@ exit();
 //wp_schedule_event( time(), 'every_ten_minutes', 'uap_cron_job');//modify time
 
 
-
-/* Deactivate LayerSlider Plugin */
-add_theme_support('deactivate_layerslider');
-
-
 //disable zxcvbn.min.js in wordpress
 add_action('wp_print_scripts', 'remove_password_strength_meter');
 function remove_password_strength_meter() {
