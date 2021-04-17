@@ -7,7 +7,7 @@
   display: flex;
   flex-flow: column nowrap;
   overflow: hidden;
-  z-index: 1500;
+  z-index: 1;
   white-space: nowrap;
 }
 .floated_icons-r1 {
@@ -409,7 +409,7 @@ footer .footer-social-btns i{
   text-align: center;
   background-color: forestgreen;
   border-radius: 50%;
-  z-index: 1000;
+  z-index: 100;
 }
 .dial-btn i{
   font-size: 54px;

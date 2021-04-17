@@ -383,7 +383,7 @@ ul#avia-menu li.current-menu-item > a i {
 }
 
 #top .main_menu .menu li a {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 #top .main_menu .sub-menu li a {
@@ -392,34 +392,41 @@ ul#avia-menu li.current-menu-item > a i {
 
 #top #wrap_all #header .av-menu-button > a {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 5px 12px;
+  line-height: 30px !important;
 }
 
 #top .main_menu .menu li.av-menu-button-colored {
   position: absolute;
-  top: 3px;
-  bottom: 3px;
+  top: 5px;
+  bottom: unset;
   background: #f03434;
-  border-radius: 0;
+  border-radius: 5px;
   float: left;
   padding: 0;
+  height: 40px;
 }
 
 #top .main_menu .menu li.av-menu-button-colored a {
-  line-height: 40px !important;
   color: #EEEEEE;
+  background: #f03434;
+  height: 100% !important;
+  border-radius: 5px;
 }
 
 #top #wrap_all .header_color .av-menu-button-colored > a .avia-menu-text {
-  color: #EEEEEE;
+  color: #ffffff;
   border: none;
   padding: 0;
   margin: 0;
   line-height: 1;
+  background-color: transparent;
+  border-color: transparent;
 }
 
 #top #wrap_all .header_color .av-menu-button-colored > a:hover .avia-menu-text {
-  color: #EEEEEE !important;
+  color: #ffffff !important;
+  opacity: 1 !important;
 }
 
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-8 {
@@ -430,7 +437,7 @@ ul#avia-menu li.current-menu-item > a i {
 }
 
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-7 {
-  left: 125px;
+  left: 120px;
   margin-left: 40px;
 }
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-7 i {
@@ -448,7 +455,7 @@ ul.menu-item.cart_dropdown {
   top: 108px;
   float: left;
   right: unset !important;
-  left: 395px;
+  left: 390px;
   border: none;
 }
 
@@ -472,7 +479,7 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 
 li#menu-item-search {
   float: left !important;
-  left: 335px;
+  left: 325px;
 }
 
 ul#avia-menu {
@@ -2349,6 +2356,7 @@ span.news-time {
 
 .widget_shopping_cart_content {
   min-width: 425px;
+  z-index: 10;
 }
 
 .breadcrumb-trail {
@@ -2461,7 +2469,7 @@ table.shop_table td[data-title=عملیات‌ها] a {
 }
 
 .title_container .breadcrumb span {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 /* Breadcrumbs style*/
@@ -2592,6 +2600,16 @@ ul.payment_methods .payment_box p {
   font-size: 13px !important;
 }
 
+.yrm-btn-wrapper {
+  text-align: right !important;
+  padding: 5px;
+}
+
+.g-recaptcha {
+  width: 100% !important;
+  margin: 8px auto;
+}
+
 .floated_icons-r1, .floated_icons-r2, .floated_icons-r3, .floated_icons-r4 {
   direction: ltr;
   float: left;
@@ -2601,7 +2619,7 @@ ul.payment_methods .payment_box p {
   display: flex;
   flex-flow: column nowrap;
   overflow: hidden;
-  z-index: 1500;
+  z-index: 1;
   white-space: nowrap;
 }
 
@@ -3073,7 +3091,7 @@ footer .footer-social-btns i {
   text-align: center;
   background-color: forestgreen;
   border-radius: 50%;
-  z-index: 1000;
+  z-index: 100;
 }
 
 .dial-btn i {

@@ -78,23 +78,6 @@ jQuery(document).ready(function($){
     $('.woocommerce-product-details__short-description').before("<p style='font-size: 15px;font-weight: bold;padding: 4px 0;margin: 0;'>ویژگی ها</p>");
 
 
-
-    var phones_swiper = new Swiper('#phones_swiper_container', {
-        direction: 'vertical',
-        loop: false,
-        grabCursor: true,
-        mousewheel: true,
-        keyboard: {
-            enabled: true,
-        },
-        // autoplay: {
-        //     delay: 1000,
-        //     disableOnInteraction: true,
-        // }
-    });
-
-
-
 });
 
 

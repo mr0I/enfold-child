@@ -601,10 +601,12 @@ wp_footer();
 <style type="text/css">
     .crisp-client .cc-kv6t[data-full-view=true] .cc-1xry .cc-unoo {
         bottom: 60px !important;
-        right: 20px !important;
+        right: 10px !important;
+    }
+    .crisp-client .cc-kv6t{
+        z-index:100 !important;
     }
 </style>
-
 
 </body>
 </html>
