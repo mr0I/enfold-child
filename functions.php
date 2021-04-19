@@ -8,8 +8,6 @@
 defined("ABSPATH") || exit();
 
 
-
-
 function load_scripts_styles() {
 	$vn = wp_get_theme()->get( 'Version' );
 	// Styles
@@ -100,12 +98,32 @@ add_shortcode('avs_posts_tag', 'avs_posts_tag_cb');
 //add_action( 'woocommerce_init', 'wc_remove_product_schema_product_archive' );
 
 
-
-
 add_action('wp_logout','auto_redirect_external_after_logout');
 function auto_redirect_external_after_logout(){
-	wp_redirect( 'https://radshid.com/' );
-exit();
+	?>
+	<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<script type="text/javascript">
+        const BottomToast = Swal.mixin({
+            toast: true,
+            position: 'bottom-start',
+            showConfirmButton: false,
+            timer: 2000,
+            timerProgressBar: true,
+            didOpen: (toast) => {
+                toast.addEventListener('mouseenter', Swal.stopTimer);
+                toast.addEventListener('mouseleave', Swal.resumeTimer)
+            }
+        });
+        BottomToast.fire({
+            icon: 'error',
+            title: 'با موفقیت از سایت خارج شدید.'
+        });
+         window.location.replace('http://localhost/wordpress');
+        //window.location.replace(document.location.origin);
+	</script>
+	<?php
+	//wp_redirect( get_site_url() );
+	exit();
 }
 
 
@@ -120,3 +138,4 @@ function remove_password_strength_meter() {
 	wp_dequeue_script('zxcvbn-async');
 	wp_deregister_script('zxcvbn-async');
 }
+

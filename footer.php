@@ -604,9 +604,10 @@ wp_footer();
         right: 10px !important;
     }
     .crisp-client .cc-kv6t{
-        z-index:100 !important;
+        /*z-index:100 !important;*/
     }
 </style>
+
 
 </body>
 </html>

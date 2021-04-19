@@ -13,6 +13,7 @@
         });
         /* Notif Banner */
 
+
         const crispElm =  document.getElementById('crisp-chatbox');
         if (typeof(crispElm) != 'undefined' && crispElm != null)
         {
@@ -53,7 +54,7 @@ jQuery(document).ready(function($){
     // Full-Width shop page
     $('ul.products').removeClass('columns-3').addClass('col-12');
 
-    // Crisp Avatar
+    //Crisp Avatar
     let check_crisp = setInterval(function () {
         const crispElm =  document.getElementById('crisp-chatbox');
         if (typeof(crispElm) != 'undefined' && crispElm != null)
@@ -76,6 +77,15 @@ jQuery(document).ready(function($){
 
     // Customize woocommerce product desc
     $('.woocommerce-product-details__short-description').before("<p style='font-size: 15px;font-weight: bold;padding: 4px 0;margin: 0;'>ویژگی ها</p>");
+
+
+    // fadeout UAP REG SUCCESS MSG
+    const uap_reg_success_msg = $('.uap-reg-success-msg');
+    setTimeout(function () {
+        if (uap_reg_success_msg.length == '1'){
+            uap_reg_success_msg.fadeOut();
+        }
+    } , 4000);
 
 
 });

@@ -3927,6 +3927,9 @@ footer .footer-social-btns i {
 }
 
 .uap-reg-success-msg {
+  position: absolute;
+  top: 5px;
+  font-size: 16px;
   background-color: #03c9a9;
   width: 100%;
   text-align: center;
