@@ -308,7 +308,7 @@ nav.pagination > a {
   color: #eee !important;
 }
 nav.pagination > a:hover {
-  background-color: $primaryLightColor !important;
+  background-color: $primaryDarkColor !important;
 }
 nav.pagination > span {
   border-radius: 0 !important;
@@ -318,14 +318,14 @@ nav.pagination > span {
 }
 .pagination .current {
   color: #eee !important;
-  background-color: $primaryLightColor !important;
+  background-color: $primaryDarkColor !important;
 }
 .flex_column.column-top-margin {
   width: 100%;
 }
 
 .read-more-link a {
-  background-color: $primaryLightColor;
+  background-color: $primaryDarkColor;
   color: #eee;
   border-radius: 0 !important;
   padding: 8px 16px !important;
@@ -427,8 +427,8 @@ span.pagination-meta {
 }
 .tabcontainer a.avia-button {
   border-radius: 0;
-  border-color: $primaryLightColor !important;
-  background-color: $primaryLightColor !important;
+  border-color: $primaryDarkColor !important;
+  background-color: $primaryDarkColor !important;
 }
 .tabcontainer a.avia-button:hover {
   border-radius: 0;
@@ -682,7 +682,7 @@ li.av-share-link a {
   border-radius: 0;
 }
 .avia_textblock p {
-  font-size: 17px;
+  font-size: 16px;
   text-align: justify !important;
   line-height: 2.25;
   color: $primaryTextColor;
@@ -799,7 +799,7 @@ span.copyright{
 
 // customize crsip icon
 .crisp-x94m06{
-  background-color: $primaryLightColor !important;
+  background-color: $primaryDarkColor !important;
 }
 
 
@@ -1072,6 +1072,9 @@ ul.sub-menu li.menu-item-has-children >a::after{
 .html_av-overlay-side #top #wrap_all div .av-burger-overlay-scroll #av-burger-menu-ul a:hover i {
   -webkit-text-stroke: 1px #EEEEEE !important;
 }
+.av-burger-menu-main.av-small-burger-icon{
+  padding-right:0;
+}
 
 label#recaptcha-anchor-label {
   font-family: $textFont !important;
@@ -1233,6 +1236,15 @@ img.full-width-img{
     font-size: 13px;
     color: $primaryTextColor;
     line-height: 2;
+  }
+  ul li{
+    list-style-type: none;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    color: $primaryTextColor;
+    line-height: 2;
     &::before{
       content: "\e93f";
       font-family: mycon;
@@ -1240,9 +1252,6 @@ img.full-width-img{
       margin: 6px;
       vertical-align: middle;
     }
-  }
-  ul li{
-    list-style-type: initial !important;
   }
 }
 
@@ -1324,11 +1333,11 @@ img.full-width-img{
   p.price{
     span.woocommerce-Price-amount.amount{
       font-size: 24px !important;
-      color: $primaryLightColor;
+      color: $primaryDarkColor;
     }
     span.woocommerce-Price-currencySymbol{
       font-size: 20px !important;
-      color: $primaryLightColor;
+      color: $primaryDarkColor;
     }
     &::before{
       content: "";
@@ -1655,7 +1664,7 @@ p.stock.in-stock {
   }
 }
 p.stock.out-of-stock {
-  color: $primaryLightColor;
+  color: $primaryDarkColor;
   &:before{
     content: "\e902";
     font-family: mycon;
@@ -1872,6 +1881,7 @@ span.news-time {
   font-size: 18px;
   vertical-align: middle;
   color: $secondaryTextColor;
+  line-height: 1;
 }
 
 
@@ -2113,4 +2123,6 @@ ul.payment_methods .payment_box{
   margin: 8px auto;
 }
 
-
+#top .avia_cart_buttons .button{
+  line-height: 1.6 !important;
+}

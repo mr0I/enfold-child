@@ -1,6 +1,6 @@
 /* Variables-Start */
 $primaryColor: #f03434;
-$primaryLightColor: #d91e18;
+$primaryDarkColor: #d91e18;
 $primaryHoverColor: #E57373;
 $AccentColor: #686868;
 $titleColor: #1c272b;
@@ -71,21 +71,26 @@ a:hover, a:focus, a:visited {
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
-	line-height: 1;
+	line-height: 1.6;
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-
+.ic-spinner9:before {
+	content: "\e982";
+}
+.ic-support_agent:before {
+	content: "\e900";
+}
 .ic-dot-single:before {
 	content: "\e901";
 }
-.ic-checkmark:before {
-	content: "\e93f";
+.ic-alert-octagon:before {
+	content: "\e902";
 }
-.ic-old-phone:before {
-	content: "\e940";
+.ic-check-circle:before {
+	content: "\e903";
 }
 .ic-line-left:before {
 	content: "\e904";
@@ -264,18 +269,15 @@ a:hover, a:focus, a:visited {
 .ic-study:before {
 	content: "\e93e";
 }
-.ic-bin:before {
-	content: "\e9ac";
+.ic-checkmark:before {
+	content: "\e93f";
 }
-.ic-alert-octagon:before {
-	content: "\e902";
-}
-.ic-check-circle:before {
-	content: "\e903";
-}
-.ic-support_agent:before {
-	content: "\e900";
+.ic-old-phone:before {
+	content: "\e940";
 }
 .ic-headset_mic:before {
 	content: "\e941";
+}
+.ic-bin:before {
+	content: "\e9ac";
 }

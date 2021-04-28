@@ -115,7 +115,7 @@ function auto_redirect_external_after_logout(){
             }
         });
         BottomToast.fire({
-            icon: 'error',
+            icon: 'success',
             title: 'با موفقیت از سایت خارج شدید.'
         });
          window.location.replace('http://localhost/wordpress');

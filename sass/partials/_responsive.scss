@@ -51,6 +51,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .avia_textblock p {
+    font-size: 15px;
+  }
   #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-8{
     i{
       display: block;
@@ -498,7 +501,7 @@
     z-index: 1 !important;
   }
   li#menu-item-search {
-    left: 80px;
+    left: 85px;
   }
   .responsive #top #wrap_all .main_menu {
     left: -75px !important;
@@ -739,7 +742,7 @@
     width: 60px;
   }
   ul.menu-item.cart_dropdown {
-    left: 20%;
+    left: 25%;
   }
   .tracker_tut_list .iconlist_content_wrap h4{
     font-size: 15px;
@@ -786,9 +789,6 @@
   #custom-footer .fr-element img{
     width: 45px;
   }
-  ul.menu-item.cart_dropdown {
-    left: 22%;
-  }
   .woo-docs-tab p{
     font-size: 9px !important;
   }
@@ -813,8 +813,4 @@
   footer .footer-social-btns a{
     margin: 0;
   }
-  ul.menu-item.cart_dropdown {
-    left: 25%;
-  }
-
 }
