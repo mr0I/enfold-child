@@ -3714,6 +3714,61 @@ footer .footer-social-btns i {
 }
 
 /* Start Notif Banner */
+/* Start Post Attribs */
+.post_data {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.single_post_share_btns ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.single_post_share_btns ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: auto 5px;
+  border-radius: 50px;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+.single_post_share_btns ul li i {
+  color: #eee;
+  font-size: 16px;
+  line-height: 36px;
+}
+.single_post_share_btns ul li.tl {
+  background-color: blue;
+}
+.single_post_share_btns ul li.tw {
+  background-color: cyan;
+}
+.single_post_share_btns ul li.fb {
+  background-color: seagreen;
+}
+.single_post_share_btns ul li.wa {
+  background-color: green;
+}
+.single_post_share_btns ul li.ln {
+  background-color: darkblue;
+}
+.single_post_share_btns ul li.link {
+  background-color: gray;
+}
+
+/* Start Post Attribs */
 /* Uap Default CSS */
 .uap-ap-theme-2 .uap-ap-menu ul {
   float: right;
