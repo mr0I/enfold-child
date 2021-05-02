@@ -950,23 +950,45 @@ footer .footer-social-btns i{
 
 
 /* Start Post Attribs */
-.post_data {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
-  width: 100%;
-  margin: 0 auto;
-}
-.single_post_share_btns{
+//.post-entry.post-entry-type-standard .entry-content-header{
+//  display:none;
+//}
 
+#post_data_container{
+  padding: 0;
+  margin: 0;
+  .post_data {
+    width: 100%;
+    margin: 0 auto;
+    p{
+      margin: 0;
+      padding: 5px 0;
+      font-size: 14px;
+      i{
+        line-height: 2;
+        margin-left: 10px !important;
+      }
+    }
+  }
+}
+
+.rt-reading-time {
+  .rt-label.rt-prefix{
+    &:before{
+      content: "\e942";
+      font-family: mycon;
+      padding: 0 5px;
+    }
+  }
+}
+
+.single_post_share_btns{
   ul{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: flex-end;
-    align-items: center;
     align-content: center;
+    align-items: center;
     width: 100%;
     margin: 0 auto;
     li{

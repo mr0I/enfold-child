@@ -40,6 +40,18 @@ a:hover, a:focus, a:visited {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.ic-clock1:before {
+  content: "";
+}
+
+.ic-eye:before {
+  content: "";
+}
+
+.ic-link:before {
+  content: "";
+}
+
 .ic-spinner9:before {
   content: "";
 }
@@ -722,6 +734,9 @@ span.comment-container.minor-meta {
 
 article.post-entry {
   margin: 24px auto;
+}
+article.post-entry .big-preview.single-big {
+  padding: 0 36px !important;
 }
 article.post-entry .big-preview.single-big a {
   border-radius: 0;
@@ -2629,6 +2644,16 @@ ul.payment_methods .payment_box p {
   line-height: 1.6 !important;
 }
 
+.avia-image-container {
+  width: 100%;
+}
+.avia-image-container .avia-image-container-inner {
+  width: 100%;
+}
+.avia-image-container .avia-image-container-inner .avia_image {
+  width: 100%;
+}
+
 .floated_icons-r1, .floated_icons-r2, .floated_icons-r3, .floated_icons-r4 {
   direction: ltr;
   float: left;
@@ -3715,22 +3740,36 @@ footer .footer-social-btns i {
 
 /* Start Notif Banner */
 /* Start Post Attribs */
-.post_data {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  align-content: center;
+#post_data_container {
+  padding: 0;
+  margin: 0;
+}
+#post_data_container .post_data {
   width: 100%;
   margin: 0 auto;
+}
+#post_data_container .post_data p {
+  margin: 0;
+  padding: 5px 0;
+  font-size: 14px;
+}
+#post_data_container .post_data p i {
+  line-height: 2;
+  margin-left: 10px !important;
+}
+
+.rt-reading-time .rt-label.rt-prefix:before {
+  content: "";
+  font-family: mycon;
+  padding: 0 5px;
 }
 
 .single_post_share_btns ul {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: flex-end;
-  align-items: center;
   align-content: center;
+  align-items: center;
   width: 100%;
   margin: 0 auto;
 }

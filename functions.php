@@ -1,5 +1,4 @@
 <?php
-
 /*
 * Add your own functions here. You can also copy some of the theme functions into this file. 
 * Wordpress will use those functions instead of the original functions then.
@@ -36,7 +35,9 @@ function myaparat($atts) {
 add_shortcode( 'aparat', 'myaparat' );
 
 
-
+/**
+ * Show product tags
+ */
 add_shortcode('show_product_tags', 'product_tags');
 function product_tags($attr , $content){
 	$output = array();
@@ -72,6 +73,9 @@ function load_custom_plugin_translation_file( $mofile, $domain ) {
 add_filter( 'get_shortlink', function( $shortlink ) {return $shortlink;} );
 
 
+/**
+ * Show single post tags
+ */
 function avs_posts_tag_cb() {
 	global $post;
 	$the_tags = get_the_tags( $post->ID );
@@ -101,8 +105,8 @@ add_shortcode('avs_posts_tag', 'avs_posts_tag_cb');
 add_action('wp_logout','auto_redirect_external_after_logout');
 function auto_redirect_external_after_logout(){
 	?>
-	<script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-	<script type="text/javascript">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script type="text/javascript">
         const BottomToast = Swal.mixin({
             toast: true,
             position: 'bottom-start',
@@ -118,48 +122,21 @@ function auto_redirect_external_after_logout(){
             icon: 'success',
             title: 'با موفقیت از سایت خارج شدید.'
         });
-         window.location.replace('http://localhost/wordpress');
+        window.location.replace('http://localhost/wordpress');
         //window.location.replace(document.location.origin);
-	</script>
+    </script>
 	<?php
 	//wp_redirect( get_site_url() );
 	exit();
 }
 
 
-/* Pro Ranks Schedule */
-//wp_schedule_event( time(), '', 'uapDoRanksReset');//modify time
-//wp_schedule_event( time(), 'every_ten_minutes', 'uap_cron_job');//modify time
-
-
-//disable zxcvbn.min.js in wordpress
+/**
+ * disable zxcvbn.min.js in wordpress
+ */
 add_action('wp_print_scripts', 'remove_password_strength_meter');
 function remove_password_strength_meter() {
 	wp_dequeue_script('zxcvbn-async');
 	wp_deregister_script('zxcvbn-async');
 }
 
-
-function gt_get_post_view() {
-	$count = get_post_meta( get_the_ID(), 'post_views_count', true );
-	$count = $count != '' ? $count : 0;
-	return "$count بازدید ";
-}
-function gt_set_post_view() {
-	$key = 'post_views_count';
-	$post_id = get_the_ID();
-	$count = (int) get_post_meta( $post_id, $key, true );
-	$count++;
-	update_post_meta( $post_id, $key, $count );
-}
-function gt_posts_column_views( $columns ) {
-	$columns['post_views'] = 'تعداد بازدید';
-	return $columns;
-}
-function gt_posts_custom_column_views( $column ) {
-	if ( $column === 'post_views') {
-		echo gt_get_post_view();
-	}
-}
-add_filter( 'manage_posts_columns', 'gt_posts_column_views' );
-add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );

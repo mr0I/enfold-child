@@ -351,6 +351,7 @@ span.comment-container.minor-meta {
 article.post-entry {
   margin: 24px auto;
   .big-preview.single-big{
+    padding: 0 36px !important;
     a{
       border-radius: 0;
       img
@@ -2126,3 +2127,15 @@ ul.payment_methods .payment_box{
 #top .avia_cart_buttons .button{
   line-height: 1.6 !important;
 }
+
+// full size avia images (single posts)
+.avia-image-container{
+  width: 100%;
+  .avia-image-container-inner{
+    width: 100%;
+    .avia_image{
+      width: 100%;
+    }
+  }
+}
+// full size avia images (single posts)
