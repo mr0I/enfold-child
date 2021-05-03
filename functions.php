@@ -12,6 +12,7 @@ function load_scripts_styles() {
 	// Styles
 	wp_enqueue_style( 'child-theme-styles' , get_stylesheet_directory_uri() . '/css/main.css');
 	// Scripts
+	wp_enqueue_script('sweetAlert', get_stylesheet_directory_uri() .'/js/sweetalert2.all.min.js');
 	wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/js/custom-scripts.js', array('jquery'), $vn , true );
 	wp_localize_script( 'custom-scripts', 'SpaAjax', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),
@@ -88,7 +89,7 @@ function avs_posts_tag_cb() {
 			$output .= '<a href='.$taglink.'>'.$tag->name.' </a>';
 		}
 	}
-	return 'برچسب ها: ' . $output . '</span>';
+	return  $output . '</span>';
 }
 add_shortcode('avs_posts_tag', 'avs_posts_tag_cb');
 
@@ -198,24 +199,50 @@ add_shortcode('post_header_attribs', function (){
         </div> ';
 	}
 
-
-//		$after = '<div class="single_post_share_btns">
-//            <div class="w-100">
-//                <ul>
-//                    <li class="icons ln">
-//                        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url='.$postUrl.'" rel="nofollow" target="_blank"><i class="ic-linkedin"></i></a>
-//                    </li>
-	/*                    <li class="icons wa"><a href="https://wa.me/?text=<?php echo $postUrl; ?>" rel="nofollow" target="_blank"><i class="ic-whatsapp"></i></a></li>*/
-	/*                    <li class="icons tl"><a href="https://telegram.me/share/url?url=<?php echo $postUrl; ?>" rel="nofollow" target="_blank"><i class="ic-telegram"></i></a></li>*/
-	/*                    <li class="icons tw"><a href="https://twitter.com/share?url=<?php echo $postUrl; ?>" rel="nofollow" target="_blank"><i class="ic-twitter"></i></a></li>*/
-	/*                    <li class="icons fb"><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $postUrl; ?>" rel="nofollow" target="_blank"><i class="ic-facebook"></i></a></li>*/
-//                    <li class="icons link"><a href="#"><i class="ic-home"></i></a></li>
-//                </ul>
-//            </div>
-//        </div>';
-
 	return $html;
 });
+add_shortcode('post_footer_attribs', function (){
+	global $post;
+	$postUrl = wp_get_shortlink( $post->ID, 'post',  true );
+	$fullUrl = urlencode($postUrl);
+
+	if( is_single() ) {
+		$html = '<div class="single_post_share_btns">
+            <div class="w-100">
+                <ul>
+                    <li class="icons ln"> <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در لینکدین"> <i class="ic-linkedin"></i> </a> </li>
+                    <li class="icons wa"><a href="https://wa.me/?text='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در واتساپ"><i class="ic-whatsapp"></i></a></li>
+                    <li class="icons tl"><a href="https://telegram.me/share/url?url='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در تلگرام"><i class="ic-telegram"></i></a></li>
+                    <li class="icons tw"><a href="https://twitter.com/share?url='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در توییتر"><i class="ic-twitter"></i></a></li>
+                    <li class="icons fb"><a href="https://www.facebook.com/sharer/sharer.php?u='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در فیسبوک"><i class="ic-facebook"></i></a></li>
+                    <li class="icons link">
+                        <a href="#" onclick="copyToClip(event)" data-toggle="tooltip" data-placement="top" title="کپی لینک کوتاه" rel="tooltip"><i class="ic-link"></i> </a>
+                    </li>
+                </ul>
+                <input type="hidden" id="short_link" value="'.$postUrl.'">
+            </div>
+        </div>';
+	}
+
+	$the_tags = get_the_tags( $post->ID );
+	$output = '<span class="post_tag">';
+	foreach($the_tags as $tag) {
+		$taglink = get_tag_link($tag->term_id);
+		if(!next($the_tags)) {
+			$output .= '<a href='.$taglink.'>'.$tag->name.' </a>';
+		}else{
+			$output .= '<a href='.$taglink.'>'.$tag->name.' </a>';
+		}
+	}
+
+	$tags = $output . '</span>';
+	return $tags . $html;
+});
+
+
+
+
+
 
 
 

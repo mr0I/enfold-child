@@ -28,10 +28,16 @@
 jQuery(document).ready(function($){
 
     // Inits
-    $('[data-toggle="tooltip"]').tooltip({
-        delay: {"show": 300, "hide": 100}
+    const toolTips = $('[data-toggle="tooltip"]');
+    toolTips.tooltip({
+        delay: {"show": 300, "hide": 100},
+        trigger: "hover"
+    });
+    toolTips.click(function () {
+        $('[data-toggle="tooltip"]').tooltip("hide");
     });
     // Inits
+
 
     setInterval(function() {
         $('.dial-btn').find('i').addClass('is-animating');
@@ -90,6 +96,42 @@ jQuery(document).ready(function($){
 
 });
 
+
+/* Toasts */
+const swalWithBootstrapButtons = Swal.mixin({
+    customClass: {
+        confirmButton: 'btn btn-success',
+        cancelButton: 'btn btn-danger'
+    },
+    buttonsStyling: false
+});
+/* Toasts */
+
+// Copy to Clipboard
+function copyStringToClipboard (str) {
+    let el = document.createElement('textarea');
+    el.value = str;
+    el.setAttribute('readonly', '');
+    el.style = {position: 'absolute', left: '-9999px'};
+    document.body.appendChild(el);
+    el.select();
+    document.execCommand('copy');
+    document.body.removeChild(el);
+}
+function copyToClip(event) {
+    event.preventDefault();
+    let copyText = document.getElementById("short_link");
+    copyStringToClipboard(copyText.value);
+
+    swalWithBootstrapButtons.fire({
+        position: 'center',
+        icon: 'success',
+        text: 'لینک کوتاه کپی شد',
+        showCloseButton: false,
+        showConfirmButton: false,
+        timer: 2000
+    });
+}
 
 
 

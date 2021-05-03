@@ -6,6 +6,11 @@ h1,h2,h3,h4,h5,h6,p,span{
   line-height: 1.6;
 }
 
+blockquote {
+  border-color: $secondaryTextColor !important;
+  width: auto !important;
+}
+
 ::selection {
   background-color: $titleColor;
   color: #EEEEEE;
@@ -382,19 +387,7 @@ article.post-entry {
     line-height: 1.6;
   }
 }
-.post_tag{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  a{
-    border: 1px solid;
-    padding: 0 8px;
-    margin-top: 8px;
-    margin-left: 2px;
-  }
-}
+
 
 .entry-content p {
   font-size: 15px;
@@ -698,6 +691,7 @@ li.av-share-link a {
 }
 .blog-tags.minor-meta {
   width: 100% !important;
+  display: none;
 }
 .blog-tags.minor-meta a[rel='tag'] {
   padding: 0 4px !important;
@@ -1456,7 +1450,7 @@ form.cart .quantity{
 form.cart button[type='submit']{
   border-radius: 0 !important;
   padding: 12px 24px;
-  font-size: 13px !important;
+  font-size: 18px !important;
 }
 #top div .quantity input.plus, #top div .quantity input.minus {
   line-height: 40px !important;
@@ -2142,3 +2136,5 @@ ul.payment_methods .payment_box{
   }
 }
 // full size avia images (single posts)
+
+

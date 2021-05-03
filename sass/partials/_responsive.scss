@@ -80,8 +80,8 @@
       right: unset;
       top:unset;
       font-size: 22px;
-      vertical-align: sub;
-      margin: 0 5px;
+      vertical-align: text-bottom;
+      margin: 0;
     }
   }
   .cc-7doi.cc-1ada img{
@@ -610,6 +610,13 @@
   .woo-main-section-footer{
     margin-top: 20px;
   }
+
+  .single_post_share_btns{
+    ul{
+      justify-content: center;
+    }
+  }
+
 }
 
 @media screen and (max-width: 650px){

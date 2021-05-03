@@ -332,6 +332,11 @@ h1, h2, h3, h4, h5, h6, p, span {
   line-height: 1.6;
 }
 
+blockquote {
+  border-color: #616161 !important;
+  width: auto !important;
+}
+
 ::selection {
   background-color: #1c272b;
   color: #EEEEEE;
@@ -764,20 +769,6 @@ article.post-entry .big-preview.single-big a img {
   line-height: 1.6;
 }
 
-.post_tag {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-}
-.post_tag a {
-  border: 1px solid;
-  padding: 0 8px;
-  margin-top: 8px;
-  margin-left: 2px;
-}
-
 .entry-content p {
   font-size: 15px;
   line-height: 2;
@@ -1132,6 +1123,7 @@ li.av-share-link a {
 
 .blog-tags.minor-meta {
   width: 100% !important;
+  display: none;
 }
 
 .blog-tags.minor-meta a[rel=tag] {
@@ -1951,7 +1943,7 @@ form.cart .quantity {
 form.cart button[type=submit] {
   border-radius: 0 !important;
   padding: 12px 24px;
-  font-size: 13px !important;
+  font-size: 18px !important;
 }
 
 #top div .quantity input.plus, #top div .quantity input.minus {
@@ -3757,6 +3749,10 @@ footer .footer-social-btns i {
   border-color: #fff;
 }
 
+.container .av-content-small.units {
+  border-right: none;
+}
+
 #post_data_container {
   padding: 0;
   margin: 0 !important;
@@ -3810,35 +3806,37 @@ footer .footer-social-btns i {
 .single_post_share_btns ul li {
   list-style-type: none;
   padding: 0;
-  margin: auto 5px;
+  margin: auto 8px;
   border-radius: 50px;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
   text-align: center;
 }
 .single_post_share_btns ul li i {
-  color: #eee;
-  font-size: 16px;
+  color: #9e9e9e;
+  font-size: 18px;
   line-height: 36px;
 }
-.single_post_share_btns ul li.tl {
-  background-color: blue;
+.single_post_share_btns ul li i:hover {
+  font-weight: bold;
 }
-.single_post_share_btns ul li.tw {
-  background-color: cyan;
+
+.post_tag {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  margin: 150px 0 36px 0;
 }
-.single_post_share_btns ul li.fb {
-  background-color: seagreen;
+.post_tag a {
+  border: 1px solid transparent;
+  padding: 4px 12px;
+  margin: 6px;
+  color: #757575;
+  background-color: #EEEEEE;
+  border-radius: 0 !important;
 }
-.single_post_share_btns ul li.wa {
-  background-color: green;
-}
-.single_post_share_btns ul li.ln {
-  background-color: darkblue;
-}
-.single_post_share_btns ul li.link {
-  background-color: gray;
+.post_tag a:hover {
+  color: #757575;
 }
 
 /* Start Post Attribs */
@@ -4445,8 +4443,8 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
     right: unset;
     top: unset;
     font-size: 22px;
-    vertical-align: sub;
-    margin: 0 5px;
+    vertical-align: text-bottom;
+    margin: 0;
   }
 
   .cc-7doi.cc-1ada img {
@@ -5081,6 +5079,10 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
 
   .woo-main-section-footer {
     margin-top: 20px;
+  }
+
+  .single_post_share_btns ul {
+    justify-content: center;
   }
 }
 @media screen and (max-width: 650px) {
