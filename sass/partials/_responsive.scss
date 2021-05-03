@@ -723,6 +723,15 @@
 }
 
 @media screen and (max-width: 500px) {
+  #post_data_container{
+    .post_data {
+      .post_title{
+        a{
+          font-size: 18px;
+        }
+      }
+    }
+  }
   .woo-top-section{
     .product_title {
       text-align: center !important;

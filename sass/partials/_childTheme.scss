@@ -950,33 +950,60 @@ footer .footer-social-btns i{
 
 
 /* Start Post Attribs */
-//.post-entry.post-entry-type-standard .entry-content-header{
-//  display:none;
-//}
+.template-blog.template-single-blog{
+  .post-entry.post-entry-type-standard .entry-content-header{
+    display:none;
+  }
+}
+
+.content .entry-content-wrapper {
+  padding-right: 0 !important;
+}
+
+#top #main .sidebar {
+  border-left-width: 20px !important;
+  border-radius: 0;
+  border-color: #fff;
+}
 
 #post_data_container{
   padding: 0;
-  margin: 0;
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
   .post_data {
     width: 100%;
     margin: 0 auto;
-    p{
+    .post_title{
+      line-height: 1.6;
+      margin: 20px auto 0 auto;
+      a{
+        font-size: 24px;
+        width: 100%;
+      }
+    }
+    p.post_views_count{
       margin: 0;
-      padding: 5px 0;
+      padding: 0;
       font-size: 14px;
+      color: $secondaryTextColor;
       i{
         line-height: 2;
-        margin-left: 10px !important;
+        padding: 0 2px;
       }
     }
   }
 }
 
 .rt-reading-time {
+  margin-top: 8px;
+  color: $secondaryTextColor;
+  font-size: 14px;
   .rt-label.rt-prefix{
     &:before{
       content: "\e942";
       font-family: mycon;
+      vertical-align: text-bottom;
       padding: 0 5px;
     }
   }

@@ -140,3 +140,83 @@ function remove_password_strength_meter() {
 	wp_deregister_script('zxcvbn-async');
 }
 
+
+/**
+ * Add extra attributes to posts
+ */
+function gt_get_post_view() {
+	$count = get_post_meta( get_the_ID(), 'post_views_count', true );
+	$count = $count != '' ? $count : 0;
+	return "$count";
+}
+function gt_set_post_view() {
+	$key = 'post_views_count';
+	$post_id = get_the_ID();
+	$count = (int) get_post_meta( $post_id, $key, true );
+	$count++;
+	update_post_meta( $post_id, $key, $count );
+}
+function gt_posts_column_views( $columns ) {
+	$columns['post_views'] = 'تعداد بازدید';
+	return $columns;
+}
+function gt_posts_custom_column_views( $column ) {
+	if ( $column === 'post_views') {
+		echo gt_get_post_view();
+	}
+}
+add_filter( 'manage_posts_columns', 'gt_posts_column_views' );
+add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
+
+
+
+/**
+ * Add extra attributes to posts
+ */
+add_shortcode('post_header_attribs', function (){
+	global $post;
+	$postUrl = wp_get_shortlink( $post->ID, 'post',  true );
+	$postTitle = get_the_title($post->ID);
+
+	gt_set_post_view();
+	$pvc = gt_get_post_view();
+
+	if (is_single()){
+		$html = '
+        <div class="row container" id="post_data_container">
+            <div class="post_data">
+                    <p class="post_views_count"><i class="ic-eye mx-1 float-right"></i>تعداد بازدید: '.$pvc.' </p>
+                    <h1 class="post_title"><a href="'.$postUrl.'">'.$postTitle.'</a></h1>
+            </div>
+        </div> ';
+	}else{
+		$html = '
+        <div class="row container" id="post_data_container">
+            <div class="post_data">
+                    <h1 class="post_title"><a href="'.$postUrl.'">'.$postTitle.'</a></h1>
+            </div>
+        </div> ';
+	}
+
+
+//		$after = '<div class="single_post_share_btns">
+//            <div class="w-100">
+//                <ul>
+//                    <li class="icons ln">
+//                        <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url='.$postUrl.'" rel="nofollow" target="_blank"><i class="ic-linkedin"></i></a>
+//                    </li>
+	/*                    <li class="icons wa"><a href="https://wa.me/?text=<?php echo $postUrl; ?>" rel="nofollow" target="_blank"><i class="ic-whatsapp"></i></a></li>*/
+	/*                    <li class="icons tl"><a href="https://telegram.me/share/url?url=<?php echo $postUrl; ?>" rel="nofollow" target="_blank"><i class="ic-telegram"></i></a></li>*/
+	/*                    <li class="icons tw"><a href="https://twitter.com/share?url=<?php echo $postUrl; ?>" rel="nofollow" target="_blank"><i class="ic-twitter"></i></a></li>*/
+	/*                    <li class="icons fb"><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $postUrl; ?>" rel="nofollow" target="_blank"><i class="ic-facebook"></i></a></li>*/
+//                    <li class="icons link"><a href="#"><i class="ic-home"></i></a></li>
+//                </ul>
+//            </div>
+//        </div>';
+
+	return $html;
+});
+
+
+
+

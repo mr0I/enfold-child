@@ -361,7 +361,7 @@ ul#avia-menu li.current-menu-item > a i {
 }
 
 .avia-menu-text i {
-  vertical-align: text-bottom;
+  vertical-align: middle;
   font-size: 22px;
   margin: 0 -3px;
   padding: 0;
@@ -736,7 +736,9 @@ article.post-entry {
   margin: 24px auto;
 }
 article.post-entry .big-preview.single-big {
-  padding: 0 36px !important;
+  margin: 0 auto 10px auto !important;
+  padding: 0 !important;
+  width: 100%;
 }
 article.post-entry .big-preview.single-big a {
   border-radius: 0;
@@ -1121,6 +1123,7 @@ li.av-share-link a {
   line-height: 2.25;
   color: #424242;
   font-family: IranSans, Sans-serif, Arial !important;
+  margin: 0 !important;
 }
 
 .avia_textblock p span {
@@ -3740,27 +3743,58 @@ footer .footer-social-btns i {
 
 /* Start Notif Banner */
 /* Start Post Attribs */
+.template-blog.template-single-blog .post-entry.post-entry-type-standard .entry-content-header {
+  display: none;
+}
+
+.content .entry-content-wrapper {
+  padding-right: 0 !important;
+}
+
+#top #main .sidebar {
+  border-left-width: 20px !important;
+  border-radius: 0;
+  border-color: #fff;
+}
+
 #post_data_container {
   padding: 0;
-  margin: 0;
+  margin: 0 !important;
+  width: 100% !important;
+  max-width: 100% !important;
 }
 #post_data_container .post_data {
   width: 100%;
   margin: 0 auto;
 }
-#post_data_container .post_data p {
-  margin: 0;
-  padding: 5px 0;
-  font-size: 14px;
+#post_data_container .post_data .post_title {
+  line-height: 1.6;
+  margin: 20px auto 0 auto;
 }
-#post_data_container .post_data p i {
+#post_data_container .post_data .post_title a {
+  font-size: 24px;
+  width: 100%;
+}
+#post_data_container .post_data p.post_views_count {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #616161;
+}
+#post_data_container .post_data p.post_views_count i {
   line-height: 2;
-  margin-left: 10px !important;
+  padding: 0 2px;
 }
 
+.rt-reading-time {
+  margin-top: 8px;
+  color: #616161;
+  font-size: 14px;
+}
 .rt-reading-time .rt-label.rt-prefix:before {
   content: "";
   font-family: mycon;
+  vertical-align: text-bottom;
   padding: 0 5px;
 }
 
@@ -5172,6 +5206,10 @@ div.wpforms-container-full .wpforms-form label.wpforms-error {
   }
 }
 @media screen and (max-width: 500px) {
+  #post_data_container .post_data .post_title a {
+    font-size: 18px;
+  }
+
   .woo-top-section .product_title {
     text-align: center !important;
     font-size: 18px;
