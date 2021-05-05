@@ -273,11 +273,6 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                     <img src="<?php echo get_stylesheet_directory_uri().'/images/mellat_gateway.jpg' ; ?>" width="70" height="70" alt="درگاه پرداخت ملت" id="mellat_img">
                                 </figure>
                             </a>
-                            <!--                        <a href="https://www.zarinpal.com/trustPage/radshid.com" rel="nofollow" target="_blank">-->
-                            <!--                            <figure>-->
-                            <!--                                <img src="--><?php //echo get_stylesheet_directory_uri().'/images/zarinpal-badge.jpg' ; ?><!--" width="70" height="70" alt="زرین پال" id="zarin_img">-->
-                            <!--                            </figure>-->
-                            <!--                        </a>-->
                             <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=179501&amp;Code=FhjbxasmXXMZd5Y5vKZc">
                                 <figure>
                                     <img referrerpolicy="origin" src="<?php echo get_stylesheet_directory_uri().'/images/star1.jpg' ; ?>" width="70" height="70" alt="" style="cursor:pointer" id="FhjbxasmXXMZd5Y5vKZc">

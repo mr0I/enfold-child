@@ -16,6 +16,13 @@ blockquote {
   color: #EEEEEE;
 }
 
+
+.main_menu .menu ul {
+  top: 45px;
+}
+.av-main-nav li:hover .avia-menu-fx, .current-menu-item > a > .avia-menu-fx, .av-main-nav li:hover .current_page_item > a > .avia-menu-fx {
+  visibility: hidden;
+}
 .header_color .sub_menu>ul>li>a, .header_color .sub_menu>div>ul>li>a, .header_color .main_menu ul:first-child>li>a, #top .header_color .main_menu .menu ul .current_page_item>a, #top .header_color .main_menu .menu ul .current-menu-item>a, #top .header_color .sub_menu li ul a {
   color: $AccentColor !important;
   font-weight: normal;
@@ -57,7 +64,8 @@ ul#avia-menu li.current-menu-item>a i{
   border-top: none;
 }
 #header_main span.logo{
-  right: 55px !important;
+  right: 65px !important;
+  top: 10px;
 }
 #header_main .container, .main_menu ul:first-child>li a {
   height: 65px;
@@ -68,27 +76,32 @@ ul#avia-menu li.current-menu-item>a i{
 }
 #top .main_menu .menu li {
   margin: auto;
+  top: 8px;
 }
 #top .main_menu .menu li a {
-  font-size: 16px;
+  font-size: 14px;
 }
 #top .main_menu .sub-menu li a {
   font-size: 13px;
 }
 #top #wrap_all #header .av-menu-button>a {
   margin: 0 auto;
-  padding: 5px 12px;
-  line-height: 30px !important;
+  padding: 0 10px;
+  line-height: 36px !important;
 }
 #top .main_menu .menu li.av-menu-button-colored{
   position: absolute;
-  top: 5px;
+  top: 12px;
   bottom: unset;
-  background: $primaryColor;
-  border-radius: 5px;
+  background-color: $primaryColor;
+  border-radius: 3px;
   float: left;
   padding: 0;
-  height: 40px;
+  height: 36px;
+  @include myTransition(0.2s ease);
+  &:hover{
+    background-color: $primaryDarkColor;
+  }
 }
 #top .main_menu .menu li.av-menu-button-colored a{
   color: #EEEEEE;
@@ -98,29 +111,37 @@ ul#avia-menu li.current-menu-item>a i{
 }
 #top #wrap_all .header_color .av-menu-button-colored>a .avia-menu-text {
   color: #ffffff;
-  border: none;
   padding: 0;
   margin: 0;
   line-height: 1;
   background-color: transparent;
   border-color: transparent;
+  font-size: 13px;
 }
 #top #wrap_all .header_color .av-menu-button-colored > a:hover .avia-menu-text {
   color: #ffffff !important;
   opacity: 1 !important;
 }
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-8{
-  left: 30px;
+  left: 75px;
+  &:hover .avia-menu-text{
+    color: #ffffff !important;
+  }
   i{
     display: none;
   }
+
 }
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-7{
-  left: 120px;
-  margin-left: 40px;
+  left: 180px;
+  margin-left: 0;
+  &:hover .avia-menu-text{
+    color: #ffffff !important;
+  }
   i{
     display: none;
   }
+
 }
 #top .main_menu .menu li.av-menu-button-colored i{
   color: #EEEEEE !important;
@@ -130,10 +151,10 @@ ul#avia-menu li.current-menu-item>a i{
 }
 
 ul.menu-item.cart_dropdown {
-  top: 108px;
+  top: 115px;
   float: left;
   right: unset !important;
-  left: 390px;
+  left: 365px;
   border: none;
 }
 
@@ -157,7 +178,7 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 
 li#menu-item-search {
   float: left !important;
-  left: 325px;
+  left: 315px;
 }
 ul#avia-menu{
   margin-right:0;
@@ -730,7 +751,8 @@ h1.site_title {
 }
 
 .flex_column.av_one_full{
-  padding: 20px !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 ul.av-share-box-list{
@@ -1447,11 +1469,6 @@ form.cart{
 form.cart .quantity{
   margin: 0 !important;
 }
-form.cart button[type='submit']{
-  border-radius: 0 !important;
-  padding: 12px 24px;
-  font-size: 18px !important;
-}
 #top div .quantity input.plus, #top div .quantity input.minus {
   line-height: 40px !important;
   width: 35px !important;
@@ -1864,7 +1881,7 @@ span.news-time {
 }
 
 .widget_shopping_cart_content{
-  min-width: 425px;
+  min-width: 395px;
   z-index: 10;
 }
 

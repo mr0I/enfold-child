@@ -549,13 +549,13 @@ footer .footer-social-btns i{
 .single_add_to_cart_button{
   font-family: $textFont ;
   height: 45px;
-  font-size: 24px;
+  font-size: 13px;
   padding: 0 60px 0 30px !important;
   border: 0;
   outline: 0;
   color: white;
   background-color: $primaryDarkColor;
-  border-radius: 0;
+  border-radius: 3px !important;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3 );
   position: relative;
   overflow: hidden;
@@ -566,8 +566,10 @@ footer .footer-social-btns i{
 .single_add_to_cart_button i{
   position: absolute;
   right:12px;
-  top: 10px;
+  top: 0;
   font-size: 20px;
+  height: 45px;
+  line-height: 45px;
 }
 .single_add_to_cart_button svg{
   position: absolute;
@@ -657,8 +659,8 @@ footer .footer-social-btns i{
   }
   .header_phones{
     position: fixed;
-    left: 24px;
-    top: 0;
+    left: 65px;
+    top: 5px;
     padding: 5px;
     a{
       display: flex;
@@ -667,17 +669,18 @@ footer .footer-social-btns i{
       align-items: center;
       align-content: center;
       direction: ltr;
-      font-size: 14px;
+      font-size: 13px;
       margin: 4px auto;
-      user-select: none;
+      //user-select: none;
       color: $secondaryTextColor;
       span{
         padding: 0 4px;
       }
       i{
-        font-size: 18px;
-        color: $primaryColor;
-        vertical-align: sub;
+        font-size: 15px;
+        color: $secondaryTextColor;
+        vertical-align: text-bottom;
+        @include myTransition(0.2s ease);
       }
       .phoneNumber{
         min-width: 90px;
@@ -976,8 +979,8 @@ footer .footer-social-btns i{
     width: 100%;
     margin: 0 auto;
     .post_title{
-      line-height: 1.6;
-      margin: 20px auto 0 auto;
+      line-height: 1;
+      margin: 13px auto;
       a{
         font-size: 24px;
         width: 100%;
@@ -1046,8 +1049,8 @@ footer .footer-social-btns i{
   margin: 150px 0 36px 0;
   a{
     border: 1px solid transparent;
-    padding: 4px 12px;
-    margin: 6px;
+    padding: 5px 10px;
+    margin: 5px;
     color: #757575;
     background-color: #EEEEEE;
     border-radius: 0 !important;
