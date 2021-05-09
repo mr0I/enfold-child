@@ -162,11 +162,19 @@
   .entry-content-wrapper ul.avia-icon-list li {
     width: auto;
   }
+  #header_main {
+    height: 80px;
+  }
   #header_main .added_to_cart_notification{
     right: unset !important;
     left:0 !important;
     min-width:300px ;
     width:auto;
+  }
+  #header_main span.logo{
+    position: absolute !important;
+    right: 35% !important;
+    top: 0;
   }
   .footer-aboutUs p{
     width: 95%;
@@ -499,7 +507,7 @@
   }
   ul.menu-item.cart_dropdown {
     top: 50px !important;
-    left: 17%;
+    right: 13px !important;
     z-index: 1 !important;
   }
   li#menu-item-search {
@@ -759,9 +767,7 @@
   #custom-footer .fr-element img{
     width: 60px;
   }
-  ul.menu-item.cart_dropdown {
-    left: 25%;
-  }
+
   .tracker_tut_list .iconlist_content_wrap h4{
     font-size: 15px;
     font-weight: bold;

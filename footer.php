@@ -548,8 +548,7 @@ if (is_user_logged_in()){
 	$user_id = get_current_user_id();
 	$user = get_userdata($user_id);
 	$user_roles = $user->roles;
-	if ($user_roles[0] == 'author'){
-        // Append extra element after Agent login
+	if ($user_roles[0] == 'agent'){
         ?>
         <script type="text/javascript">
             jQuery(document).ready(function($) {
@@ -584,24 +583,24 @@ wp_footer();
 
 
 <!-- Start Crisp Init -->
-<script type="text/javascript" defer>
-    window.$crisp=[];
-    CRISP_RUNTIME_CONFIG = {
-        locale : 'fa'
-    };
-    window.CRISP_WEBSITE_ID="68e9f005-17da-481c-b8f2-ba184b388aa3";(function(){
-        d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();$crisp.push(["set", "session:data", [[["country", "IR"],["shipping_country", "IR"]]]]);
-</script>
+<!--<script type="text/javascript" defer>-->
+<!--    window.$crisp=[];-->
+<!--    CRISP_RUNTIME_CONFIG = {-->
+<!--        locale : 'fa'-->
+<!--    };-->
+<!--    window.CRISP_WEBSITE_ID="68e9f005-17da-481c-b8f2-ba184b388aa3";(function(){-->
+<!--        d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();$crisp.push(["set", "session:data", [[["country", "IR"],["shipping_country", "IR"]]]]);-->
+<!--</script>-->
 <!-- End Crisp Init -->
-<style type="text/css">
-    .crisp-client .cc-kv6t[data-full-view=true] .cc-1xry .cc-unoo {
-        bottom: 60px !important;
-        right: 10px !important;
-    }
-    .crisp-client .cc-kv6t{
-        /*z-index:100 !important;*/
-    }
-</style>
+<!--<style type="text/css">-->
+<!--    .crisp-client .cc-kv6t[data-full-view=true] .cc-1xry .cc-unoo {-->
+<!--        bottom: 60px !important;-->
+<!--        right: 10px !important;-->
+<!--    }-->
+<!--    .crisp-client .cc-kv6t{-->
+<!--        /*z-index:100 !important;*/-->
+<!--    }-->
+<!--</style>-->
 
 
 </body>

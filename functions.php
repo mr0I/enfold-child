@@ -54,7 +54,7 @@ function product_tags($attr , $content){
 		// Set the array in a coma separated string of product tags for example
 		$output = implode( ' ، ', $output );
 		// Display the coma separated string of the product tags
-		echo '<div class="woo-tags-section" style="line-height: 2;"> برچسب ها: ' . $output . '</div>';
+		echo '<div class="woo-tags-section" style="line-height: 2;"> <span class="font-weight-bold">برچسب ها: </span> ' . $output . '</div>';
 	}
 }
 
@@ -238,12 +238,6 @@ add_shortcode('post_footer_attribs', function (){
 	$tags = $output . '</span>';
 	return $tags . $html;
 });
-
-
-
-
-
-
 
 
 

@@ -18,7 +18,7 @@ blockquote {
 
 
 .main_menu .menu ul {
-  top: 45px;
+  top: 42px;
 }
 .av-main-nav li:hover .avia-menu-fx, .current-menu-item > a > .avia-menu-fx, .av-main-nav li:hover .current_page_item > a > .avia-menu-fx {
   visibility: hidden;
@@ -64,6 +64,7 @@ ul#avia-menu li.current-menu-item>a i{
   border-top: none;
 }
 #header_main span.logo{
+  position: absolute !important;
   right: 65px !important;
   top: 10px;
 }
@@ -154,7 +155,7 @@ ul.menu-item.cart_dropdown {
   top: 115px;
   float: left;
   right: unset !important;
-  left: 365px;
+  left: 375px;
   border: none;
 }
 
@@ -170,10 +171,6 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
   min-width:15px !important;
   width: auto !important;
   height: 15px !important;
-}
-
-.html_visible_cart .cart_dropdown {
-  right: 0 !important;
 }
 
 li#menu-item-search {
@@ -1957,6 +1954,13 @@ table.shop_table td[data-title="عملیات‌ها"]{
 }table.shop_table td[data-title="عملیات‌ها"] a{
    border-radius: 0 !important;
  }
+
+td.actions .coupon {
+  float: right;
+}
+.woocommerce-cart-form button , .cart-collaterals a{
+  border-radius: 3px !important;
+}
 // End Customize woocommerce tables
 
 
