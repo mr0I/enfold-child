@@ -644,8 +644,9 @@ footer .footer-social-btns i{
           font-size: 16px;
           color: $primaryColor;
           font-weight: bold;
-          span.phoneNumber{
+          .phoneNumber{
             font-family: $textFont;
+            color: $primaryColor;
           }
         }
         svg{
@@ -944,7 +945,7 @@ footer .footer-social-btns i{
       background-color: #eee;
     }
     i{
-      font-size: 15px;
+      font-size: 1em;
       vertical-align: middle;
     }
   }
@@ -1054,6 +1055,7 @@ footer .footer-social-btns i{
     color: #757575;
     background-color: #EEEEEE;
     border-radius: 0 !important;
+    font-size: 0.75em;
     &:hover{
       color: #757575;
     }

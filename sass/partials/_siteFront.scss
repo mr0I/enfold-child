@@ -33,7 +33,7 @@ blockquote {
 }
 
 ul#avia-menu {
-  margin-right: 65px;
+  margin-right: 20px;
 }
 ul#avia-menu li.current-menu-item > a{
   color: $primaryColor !important;
@@ -65,7 +65,7 @@ ul#avia-menu li.current-menu-item>a i{
 }
 #header_main span.logo{
   position: absolute !important;
-  right: 65px !important;
+  right: 90px !important;
   top: 10px;
 }
 #header_main .container, .main_menu ul:first-child>li a {
@@ -118,13 +118,14 @@ ul#avia-menu li.current-menu-item>a i{
   background-color: transparent;
   border-color: transparent;
   font-size: 13px;
+
 }
 #top #wrap_all .header_color .av-menu-button-colored > a:hover .avia-menu-text {
   color: #ffffff !important;
   opacity: 1 !important;
 }
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-8{
-  left: 75px;
+  left: 115px;
   &:hover .avia-menu-text{
     color: #ffffff !important;
   }
@@ -134,7 +135,7 @@ ul#avia-menu li.current-menu-item>a i{
 
 }
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-7{
-  left: 180px;
+  left: 220px;
   margin-left: 0;
   &:hover .avia-menu-text{
     color: #ffffff !important;
@@ -155,7 +156,7 @@ ul.menu-item.cart_dropdown {
   top: 115px;
   float: left;
   right: unset !important;
-  left: 375px;
+  left: 380px;
   border: none;
 }
 
@@ -175,11 +176,9 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 
 li#menu-item-search {
   float: left !important;
-  left: 315px;
+  left: 345px;
 }
-ul#avia-menu{
-  margin-right:0;
-}
+
 #top .main_menu .menu li.av-menu-button-colored:hover{
   position: absolute !important;
 }
@@ -304,9 +303,6 @@ nav.main_menu ul li a i{
   padding: 0 3px;
   display: none;
 }
-#top .woocommerce-tabs h2 {
-  font-size: 24px;
-}
 
 .woocommerce-Tabs-panel h2{
   padding: 10px;
@@ -372,7 +368,7 @@ span.comment-container.minor-meta {
   margin: auto 10px;
 }
 article.post-entry {
-  margin: 24px auto;
+  margin: 0 auto;
   .big-preview.single-big{
     margin: 0 auto 10px auto !important;
     padding: 0 !important;
@@ -1049,7 +1045,6 @@ td.product-name {
   list-style-type: circle;
 }
 .tab-editor-container ul.bullet-list li{
-  list-style-type: initial !important;
   line-height: 2.5;
   font-size: 13px;
   color: $primaryTextColor;
@@ -1384,9 +1379,12 @@ img.full-width-img{
     width: auto;
     height: auto;
     border-radius: 0 !important;
+    img{
+      border-radius: 0;
+    }
   }
   .iconic-woothumbs-images__image {
-    padding: 65px;
+    padding: 65px 100px 0 100px ;
   }
   .iconic-woothumbs-thumbnails-wrap.iconic-woothumbs-thumbnails-wrap--sliding.iconic-woothumbs-thumbnails-wrap--vertical{
     overflow: hidden;
@@ -1820,8 +1818,20 @@ button.wpforms-submit{
 .sidebar-content span{
   font-family: $textFont !important}
 
+#top .woocommerce-tabs h2 {
+  font-size: 24px;
+}
+
 #top div.product .woocommerce-tabs{
   padding: 0 !important;
+  ul{
+    list-style-type: circle;
+  }
+  ol ,ul{
+    li{
+      font-size: 1.125em;
+    }
+  }
 }
 
 .wishlist_table th ,.wishlist_table th {

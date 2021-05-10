@@ -77,9 +77,8 @@ jQuery(document).ready(function($){
 
     // Change Shop buttons text temporary
     $('.template-shop').find('.inner_product').find('.product_type_simple').html('ادامه');
-    $('.template-shop').find('.inner_product').find('.add_to_cart_button').html('<i class="ic-shopping-cart"></i>افزودن به سبد خرید');
-    $('.template-shop').find('.inner_product').find('.show_details_button').html('<i class="ic-list"></i>نمایش جزئیات');
-    $('.wpsp-cart-button').find('a.add_to_cart_button').html(' <i class="ic-chevron-left" style="vertical-align: middle;"></i> خرید');
+    $('.template-shop').find('.inner_product').find('.add_to_cart_button').html('افزودن به سبد خرید');
+    $('.template-shop').find('.inner_product').find('.show_details_button').html('نمایش جزئیات');
 
     // Customize woocommerce product desc
     $('.woocommerce-product-details__short-description').before("<p style='font-size: 15px;font-weight: bold;padding: 4px 0;margin: 0;'>ویژگی ها</p>");
