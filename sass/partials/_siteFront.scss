@@ -12,7 +12,7 @@ blockquote {
 }
 
 ::selection {
-  background-color: $titleColor;
+  background-color: $primaryColor;
   color: #EEEEEE;
 }
 
@@ -46,7 +46,7 @@ ul#avia-menu li.current-menu-item>a i{
 
 .avia-menu-text i{
   vertical-align: middle;
-  font-size: 22px;
+  font-size: 1.25em;
   margin: 0 -3px;
   padding: 0;
 }
@@ -80,10 +80,10 @@ ul#avia-menu li.current-menu-item>a i{
   top: 8px;
 }
 #top .main_menu .menu li a {
-  font-size: 14px;
+  font-size: 0.875em;
 }
 #top .main_menu .sub-menu li a {
-  font-size: 13px;
+  font-size: 0.875em;
 }
 #top #wrap_all #header .av-menu-button>a {
   margin: 0 auto;
@@ -117,7 +117,7 @@ ul#avia-menu li.current-menu-item>a i{
   line-height: 1;
   background-color: transparent;
   border-color: transparent;
-  font-size: 13px;
+  font-size: 0.875em;
 
 }
 #top #wrap_all .header_color .av-menu-button-colored > a:hover .avia-menu-text {
@@ -161,7 +161,7 @@ ul.menu-item.cart_dropdown {
 }
 
 ul.menu-item.cart_dropdown .cart_dropdown_link {
-  font-size: 24px !important;
+  font-size: 1.5em !important;
   color: $AccentColor;
   background-color: transparent;
 }
@@ -197,7 +197,7 @@ li#menu-item-search {
 button.mfp-close {
   color: #000000 !important;
   margin: 4px 10px;
-  font-size: 36px;
+  font-size: 2.25em;
 }
 .mfp-content figure {
   background-color: #fff;
@@ -233,7 +233,7 @@ ul.sort-param span.currently-selected {
   line-height: 40px;
   border-radius: 0;
   color: $secondaryTextColor !important;
-  font-size: 13px;
+  font-size: 0.875em;
 }
 ul.sort-param span.currently-selected > strong {
   color: $secondaryTextColor;
@@ -242,7 +242,7 @@ ul.sort-param li ul {
   top: 46px;
   background: whitesmoke !important;
   border-radius: 0;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .sort-param ul li {
   padding: 8px 0;
@@ -288,14 +288,14 @@ main.template-shop.content.av-content-small.alpha.units {
   border-radius: 0;
 }
 .widget_recent_entries ul li a {
-  font-size: 14px;
+  font-size: 0.875em;
   color: $secondaryTextColor;
 }
 .widget_recent_entries ul li a:hover {
   text-decoration: none;
 }
 nav.main_menu ul li a {
-  font-size: 12px;
+  font-size: 0.75em;
 }
 nav.main_menu ul li a i{
   /*-webkit-text-stroke: 1px $titleColor;*/
@@ -322,7 +322,7 @@ ul.menu li.current-menu-ancestor > a {
 }
 nav.pagination > a {
   border-radius: 0 !important;
-  font-size: 15px;
+  font-size: 1em;
   margin: auto 4px;
   color: #eee !important;
 }
@@ -331,7 +331,7 @@ nav.pagination > a:hover {
 }
 nav.pagination > span {
   border-radius: 0 !important;
-  font-size: 15px;
+  font-size: 1em;
   margin: auto 4px;
   color: #eee;
 }
@@ -395,7 +395,7 @@ article.post-entry {
     padding: 15px 30px !important;
   }
   h2,h3,h4{
-    font-size: 20px;
+    font-size: 1.25em;
     padding: 10px 0;
     font-weight: bold;
     line-height: 1.6;
@@ -404,7 +404,7 @@ article.post-entry {
 
 
 .entry-content p {
-  font-size: 15px;
+  font-size: 1em;
   line-height: 2;
   color: $primaryTextColor;
   text-align: justify;
@@ -416,7 +416,7 @@ span.pagination-meta {
   display: none;
 }
 .tab_titles {
-  font-size: 18px;
+  font-size: 1.125em;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -458,7 +458,7 @@ span.pagination-meta {
 // full-width comment fields
 //--------------------------------------*/
 .comment-form p label {
-  font-size: 13px !important;
+  font-size: 0.875em !important;
   right: 0 !important;
   padding: 10px !important;
 }
@@ -600,7 +600,7 @@ form p.form-row{
 }
 .tab_inner_content p{
   color: $secondaryTextColor !important;
-  font-size: 15px !important;
+  font-size: 1em !important;
 }
 span.hr-inner {
   border-color: #eeeeee !important;
@@ -692,7 +692,7 @@ li.av-share-link a {
   border-radius: 0;
 }
 .avia_textblock p {
-  font-size: 16px;
+  font-size: 1em;
   text-align: justify !important;
   line-height: 2.25;
   color: $primaryTextColor;
@@ -722,7 +722,7 @@ li.av-share-link a {
 }
 .slide-content span.blog-categories a {
   color: #ffffff !important;
-  font-size: 15px;
+  font-size: 1em;
 }
 .slide-content h3.slide-entry-title  {
   text-align: center;
@@ -740,7 +740,7 @@ li.av-share-link a {
 
 
 h1.site_title {
-  font-size: 30px ;
+  font-size:  1.875em;
 }
 
 .flex_column.av_one_full{
@@ -769,20 +769,20 @@ ul.av-share-box-list{
   background: none;
   color: $titleColor;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 2.25em;
   margin: 0 -40px;
 }
 
 span.copyright{
   width: 100%;
   text-align: center;
-  font-size: 15px;
+  font-size: 1em;
   margin: 6px 0;
 }
 
 .sub_menu_socket ul li{
   padding: 6px 10px !important;
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
 
@@ -829,7 +829,7 @@ span.copyright{
 }
 
 #scroll-top-link:before {
-  font-size: 2rem;
+  font-size: 2em;
 }
 #top .pagination .current, #top .pagination a, #top .fullsize .template-blog .pagination a {
   margin-right: 0;
@@ -848,7 +848,7 @@ form.woocommerce-cart-form td , form.woocommerce-cart-form th{
   padding: 0 10px ;
 }
 span.post-meta-infos {
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .avia-content-slider article a.slide-image{
   background-color: transparent !important;
@@ -856,7 +856,7 @@ span.post-meta-infos {
 
 h3.slide-entry-title a{
   color: #EEEEEE !important;
-  font-size: 20px;
+  font-size: 1.25em;
 }
 .slide-meta{
   color: #EEEEEE !important;
@@ -933,11 +933,11 @@ h3.slide-entry-title a{
 
 .wpsf-product-price span.woocommerce-Price-amount.amount {
   color: #EEEEEE;
-  font-size: 1.125rem;
+  font-size: 1.125em;
 }
 .wpsf-product-price span.woocommerce-Price-currencySymbol {
   color: #EEEEEE;
-  font-size: 1.125rem;
+  font-size: 1.125em;
 }
 
 #wps-slider-section .sp-wps-theme_three .wpsf-product .sp-wps-product-details {
@@ -950,7 +950,7 @@ h3.slide-entry-title a{
 }
 #wps-slider-section .wps-product-section .slick-next i{
   color: #ffffff !important;
-  font-size: 1.5rem !important;
+  font-size: 1.5em !important;
 }
 
 #wps-slider-section .wps-product-section .slick-prev {
@@ -959,7 +959,7 @@ h3.slide-entry-title a{
 }
 #wps-slider-section .wps-product-section .slick-prev i{
   color: #ffffff !important;
-  font-size: 1.5rem !important;
+  font-size: 1.5em !important;
 }
 
 #wps-slider-section .sp-wps-product-image-area {
@@ -967,7 +967,7 @@ h3.slide-entry-title a{
 }
 
 .av-special-heading-tag{
-  font-size: 20px !important;
+  font-size: 1.25em !important;
 }
 
 button#place_order{
@@ -1046,7 +1046,7 @@ td.product-name {
 }
 .tab-editor-container ul.bullet-list li{
   line-height: 2.5;
-  font-size: 13px;
+  font-size: 0.75em;
   color: $primaryTextColor;
 }
 
@@ -1056,7 +1056,7 @@ td.product-name {
 }
 
 ul.sub-menu a{
-  font-size: 13px;
+  font-size: 0.75em;
 }
 ul.sub-menu li.menu-item-has-children >a::after{
   content: "\e939";
@@ -1148,7 +1148,7 @@ img.full-width-img{
   align-content: center;
 }
 .laptop-container .grid-text{
-  font-size: 1.5rem;
+  font-size: 1.5em;
 }
 
 .grid-img img{
@@ -1174,7 +1174,7 @@ img.full-width-img{
 }
 
 .term-description p{
-  font-size: 15px;
+  font-size: 1em;
   line-height: 2;
   text-align: justify;
   color: $primaryTextColor;
@@ -1206,14 +1206,14 @@ img.full-width-img{
 }
 
 .woo-tabs .wc-tabs li span.ywtm_icon{
-  font-size: 1.25rem;
+  font-size: 1.25em;
   margin: auto 10px;
 }
 
 .woo-tabs .wc-tabs li a{
   padding: 8px 20px !important;
   border-radius: 0;
-  font-size: 13px !important;
+  font-size: 0.75em !important;
   color: $secondaryTextColor !important;
   border-bottom: 1px solid $backgroundColor !important;
 }
@@ -1222,7 +1222,7 @@ img.full-width-img{
 }
 .woo-tabs .wc-tabs li.active a{
   color: $primaryColor !important;
-  font-size: 13px !important;
+  font-size: 0.75em !important;
   border-bottom: 3px solid $primaryColor !important;
 }
 
@@ -1245,7 +1245,7 @@ img.full-width-img{
     text-align: justify;
     margin: 0;
     padding: 0;
-    font-size: 13px;
+    font-size: 0.75em;
     color: $primaryTextColor;
     line-height: 2;
   }
@@ -1254,7 +1254,7 @@ img.full-width-img{
     text-align: justify;
     margin: 0;
     padding: 0;
-    font-size: 13px;
+    font-size: 0.75em;
     color: $primaryTextColor;
     line-height: 2;
     &::before{
@@ -1284,14 +1284,14 @@ img.full-width-img{
 .wc-tabs li a{
   padding: 15px 24px !important;
   border-radius: 0;
-  font-size: 13px !important;
+  font-size: 0.75em !important;
 }
 .wc-tabs li.active{
   background-color: #ffffff !important;
 }
 .wc-tabs li.active a{
   color: $titleColor !important;
-  font-size: 15px !important;
+  font-size: 1em !important;
 }
 
 .av_textblock_section{
@@ -1304,7 +1304,7 @@ img.full-width-img{
   border-radius: 0 !important;
 }
 .av-alb-blogposts article .entry-content p{
-  font-size: 15px;
+  font-size: 1em;
 }
 
 
@@ -1344,11 +1344,11 @@ img.full-width-img{
   margin: 13px auto;
   p.price{
     span.woocommerce-Price-amount.amount{
-      font-size: 24px !important;
+      font-size: 1.5em !important;
       color: $primaryDarkColor;
     }
     span.woocommerce-Price-currencySymbol{
-      font-size: 20px !important;
+      font-size: 1.25em !important;
       color: $primaryDarkColor;
     }
     &::before{
@@ -1372,7 +1372,7 @@ img.full-width-img{
 }
 .woo-main-section {
   .product_title{
-    font-size: 20px;
+    font-size: 1.25em;
     margin-bottom: 15px;
   }
   .vc_single_image-wrapper {
@@ -1401,7 +1401,7 @@ img.full-width-img{
     margin-top: 20px;
     .product_meta{
       margin: 0;
-      font-size: 13px;
+      font-size: 0.75em;
       color: $secondaryTextColor;
       a{
         color: $primaryTextColor;
@@ -1494,7 +1494,7 @@ form.cart .quantity{
   display: none;
 }
 .vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_title div{
-  font-size: 13px !important;
+  font-size: 0.75em !important;
   font-weight: bold !important;
   font-family: $textFont !important;
   margin: 15px auto;
@@ -1511,13 +1511,13 @@ form.cart .quantity{
 }
 
 a.product-tag {
-  font-size: 13px;
+  font-size: 0.75em;
 }
 .woo-mobile{
   display: none;
   .product_meta{
     margin: 0;
-    font-size: 13px;
+    font-size: 0.75em;
     color: $secondaryTextColor;
     a{
       color: $primaryTextColor;
@@ -1533,7 +1533,7 @@ a.product-tag {
 }
 .yith-wcwl-add-button a{
   color: $secondaryTextColor;
-  font-size: 12px;
+  font-size: 0.75em;
   font-weight: bold;
   display: flex;
   flex-flow: row wrap;
@@ -1554,12 +1554,12 @@ a.product-tag {
 .yith-wcwl-wishlistaddedbrowser .feedback{
   width: 100%;
   text-align: center;
-  font-size: 12px !important;
+  font-size: 0.75em !important;
 }
 .yith-wcwl-wishlistaddedbrowser .feedback a{
   width: 100%;
   text-align: center;
-  font-size: 12px !important;
+  font-size: 0.75em !important;
 }
 
 #top .avia-post-nav {
@@ -1594,11 +1594,11 @@ a.product-tag {
   align-items: center;
 }
 .woo-docs-tab p{
-  font-size: 15px !important;
+  font-size: 1em !important;
 }
 
 .woocommerce-form input{
-  font-size: 15px !important;
+  font-size: 1em !important;
   padding: 10px !important;
 }
 
@@ -1659,7 +1659,7 @@ a.product-tag {
 p.stock{
   margin: 24px auto;
   font-weight: bold;
-  font-size: 15px !important;
+  font-size: 1em !important;
   user-select: none;
 }
 p.stock.in-stock {
@@ -1727,7 +1727,7 @@ input.submit{
   min-width: 55px;
   min-height: 55px;
   line-height: 55px;
-  font-size: 10px;
+  font-size: 0.625em;
   font-weight: bold;
   position: absolute !important;
   top: 0 !important;
@@ -1749,7 +1749,7 @@ input.submit{
   margin: 15px auto;
 }
 .single_download_container .file_title h4{
-  font-size: 15px;
+  font-size: 1em;
   color: $titleColor;
   font-weight: bold;
 }
@@ -1812,14 +1812,14 @@ ul.woocommerce-error {
 button.wpforms-submit{
   background-color: $primaryColor !important;
   color: #eee !important;
-  font-size: 15px !important;
+  font-size: 1em !important;
 }
 
 .sidebar-content span{
   font-family: $textFont !important}
 
 #top .woocommerce-tabs h2 {
-  font-size: 24px;
+  font-size: 1.5em;
 }
 
 #top div.product .woocommerce-tabs{
@@ -1893,14 +1893,14 @@ span.news-time {
 }
 
 .breadcrumb-trail {
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 2;
 }
 .breadcrumb .sep {
   width: auto;
 }
 .breadcrumb .sep i{
-  font-size: 18px;
+  font-size: 1.125em;
   vertical-align: middle;
   color: $secondaryTextColor;
   line-height: 1;
@@ -1979,7 +1979,7 @@ td.actions .coupon {
   height:100px;
 }
 .title_container .main-title  a{
-  font-size:17px;
+  font-size:1em;
   color: $titleColor !important;
 }
 
@@ -1995,7 +1995,7 @@ td.actions .coupon {
   color: #eee !important;
 }
 .title_container .breadcrumb span{
-  font-size: 13px;
+  font-size: 0.75em;
 }
 /* Breadcrumbs style*/
 
@@ -2061,17 +2061,17 @@ a.wc-backward {
 
 // Customize checkout
 #order_review, #order_review_heading {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 .col2-set .col-1 h3, .col2-set .col-2 h3 {
-  font-size: 20px;
+  font-size: 1.25em;
 }
 // Customize checkout
 
 
 // Customize recipt form
 #top #payment ul.payment_methods li {
-  font-size: 15px;
+  font-size: 1em;
   input{
     vertical-align: middle;
   }
@@ -2079,7 +2079,7 @@ a.wc-backward {
 ul.payment_methods .payment_box{
   width: 100% !important;
   p{
-    font-size: 13px;
+    font-size: 0.75em;
   }
 }
 // Customize recipt form
@@ -2111,7 +2111,7 @@ ul.payment_methods .payment_box{
   }
   p{
     line-height:2;
-    font-size:15px;
+    font-size:1em;
     margin:0;
     color: $secondaryTextColor;
   }
@@ -2127,7 +2127,7 @@ ul.payment_methods .payment_box{
     li{
       margin: auto 4px;
       list-style-type: none;
-      font-size: 15px;
+      font-size: 1em;
       color: $secondaryTextColor;
     }
   }
@@ -2139,7 +2139,7 @@ ul.payment_methods .payment_box{
 
 .av_ajax_search_entry span.av_ajax_search_image::before{
   margin-left: 0 !important;
-  font-size: 13px !important;
+  font-size: 0.875em !important;
 }
 
 .yrm-btn-wrapper{

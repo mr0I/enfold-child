@@ -191,8 +191,8 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
         </div>
         <div class="third-row">
             <div class="container-fluid">
-                <div class="row" style="width: 94%;margin: 0 auto 30px auto;">
-                    <div class="tr-element col-12 mt-3">
+                <div class="row" style="width: 94%;margin: 0 auto;">
+                    <div class="tr-element col-12">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12">
                                 <h6 class="threeWords">آدرس دفتر مرکزی</h6>
@@ -241,7 +241,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
         </div>
         <div class="second-row">
             <div class="container-fluid">
-                <div class="row" style="width: 94%;margin: 0 auto 30px auto;">
+                <div class="row" style="width: 94%;margin: 0 auto;border-bottom: 1px solid #263238">
                     <div class="sr-element col-md-4 col-sm-12">
                         <h6 class="fourWords">راهنمای خرید از رادشید</h6>
                         <ul style="display: flex;flex-flow: row wrap">
@@ -260,13 +260,13 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                             <li class="col-lg-6 col-md-6 col-sm-12"><a href="https://radshid.com/%d9%87%d9%85%da%a9%d8%a7%d8%b1%db%8c-%d8%a8%d8%a7-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">استخدام در رادشید</a></li>
                         </ul>
                     </div>
-                    <div class="sr-element col-md-4 col-sm-12">
-                        <h6 class="twoWords">درباره رادشید</h6>
-                        <div class="footer-aboutUs">
-                            <p>
-                                شرکت رادشید  با هدف برطرف نمودن نیاز شرکت های صنعتی در رابطه با استفاده از سیستم های نوین و مدیریت هوشمندسازی ناوگان حمل و نقل آغاز گردید.  اما پس از آن با توجه به دانش بنیان بودن ساختار شرکت و با تکیه به توانمندی نیروهای مجرب پا را فراتر نهاده و با توجه به تقاضاهای مطرح شده  از طرف مشتریان در صنعت های مختلف قابلیت های دستگاه های تولیدی خود را کم کم افزایش داده که این مهم با استفاده از  تکنولوژِی های روز دنیا و ایده های نو به حقیقت پیوست.
-                            </p>
-                        </div>
+                    <div class="sr-element col-md-4 col-sm-12" style="margin-top: 30px;">
+<!--                        <h6 class="twoWords">درباره رادشید</h6>-->
+<!--                        <div class="footer-aboutUs">-->
+<!--                            <p>-->
+<!--                                شرکت رادشید  با هدف برطرف نمودن نیاز شرکت های صنعتی در رابطه با استفاده از سیستم های نوین و مدیریت هوشمندسازی ناوگان حمل و نقل آغاز گردید.  اما پس از آن با توجه به دانش بنیان بودن ساختار شرکت و با تکیه به توانمندی نیروهای مجرب پا را فراتر نهاده و با توجه به تقاضاهای مطرح شده  از طرف مشتریان در صنعت های مختلف قابلیت های دستگاه های تولیدی خود را کم کم افزایش داده که این مهم با استفاده از  تکنولوژِی های روز دنیا و ایده های نو به حقیقت پیوست.-->
+<!--                            </p>-->
+<!--                        </div>-->
                         <div id="gateway">
                             <a>
                                 <figure>
@@ -279,19 +279,16 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                 </figure>
                             </a>
                         </div>
-
-<!--                        <form class="tnp-form" action="--><?php //echo get_site_url()."?na=s"; ?><!--" method="post" onsubmit="return newsletter_check(this)">-->
-<!--                            <input type="hidden" name="nr" value="widget-minimal">-->
-<!--                            <input class="tnp-email" type="email" required="" name="ne" value="" placeholder="Email">-->
-<!--                            <input class="tnp-submit" type="submit" value="Subscribe">-->
-<!--                        </form>-->
                     </div>
                 </div>
             </div>
         </div>
         <div class="fourth-row">
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-center my-3">
+            <div class="container-fluid mt-1">
+                <div class="fourth-row-container">
+                    <div class="copyrightText">
+                        <span>تمامی حقوق این سایت متعلق به شرکت مهندسی رادشید است.</span>
+                    </div>
                     <div class="social-icons">
                         <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="bottom" title="تلگرام" >
                             <i class="ic-telegram"></i>
@@ -312,7 +309,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
     <!-- custom code -->
     <div>
-        <a class="floated-shop" href="https://radshid.com/shop/" title="ورود به فروشگاه">
+        <a class="floated-shop" href="<?= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?>" title="ورود به فروشگاه">
             <svg id="i-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
                 <path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" />
             </svg>
@@ -358,7 +355,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
     <!-- floated icons -->
     <div class="floated_icons-r1">
-        <a href="https://radshid.com/shop" title="فروشگاه اینترنتی">
+        <a href="<?= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?>" title="فروشگاه اینترنتی">
             <img src="<?php echo get_stylesheet_directory_uri().'/images/shop.png' ; ?>" width="35" height="35" alt="فروشگاه اینترنتی">
             <span>فروشگاه اینترنتی رادشید</span>
         </a>
@@ -393,7 +390,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                 <i class="ic-instagram"></i>
                 <span>اینستاگرام</span>
             </a>
-            <a href="https://radshid.com/shop" title="ورود به فروشگاه">
+            <a href="<?= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?>" title="ورود به فروشگاه">
                 <i class="ic-shopping-cart"></i>
                 <span>فروشگاه</span>
             </a>
@@ -489,6 +486,16 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
 
             <!-- ####### END SOCKET CONTAINER ####### -->
+
+<!-- Sidebar Basket -->
+            <div class="sideBasket">
+                <div class="sideBasket_content">
+                    <span>produt 1</span>
+                </div>
+            </div>
+<!-- Sidebar Basket -->
+
+
         </footer>
 
 
