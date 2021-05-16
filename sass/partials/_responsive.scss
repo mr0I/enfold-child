@@ -12,12 +12,12 @@
     width: 70px;
   }
   #custom-footer .fr-element span{
-    font-size: 0.75em;
+    font-size: 12px;
   }
   #custom-footer .sr-element h6{
     margin: 8px auto;
     padding-top: 8px;
-    font-size: 0.875em;
+    font-size: 16px;
   }
   #custom-footer .fr-element p {
     margin: 8px auto;
@@ -26,22 +26,23 @@
     margin: 10px auto;
   }
   #custom-footer .sr-element p a{
-    font-size: 0.75em;
+    font-size: 11px;
   }
   #custom-footer .sr-element .footer-social{
     margin: 20px auto;
   }
   #custom-footer .sr-element .footer-social a{
     padding: 0;
-    font-size: 2.25em;
+    font-size: 36px;
   }
   #custom-footer .tr-element h6{
     margin: 8px auto;
-    font-size: 1em;
+    font-size: 15px;
   }
   #custom-footer .tr-element p {
-    font-size: 0.875em;
+    font-size: 14px;
   }
+
 }
 
 @media screen and (max-width: 860px) {
@@ -51,12 +52,18 @@
 }
 
 @media screen and (max-width: 768px) {
+  #custom-footer .sr-element ul li a{
+    font-size: 14px;
+  }
+  #top #wrap_all .header_color .av-menu-button-colored>a .avia-menu-text{
+font-size: 14px;
+  }
   #custom-footer .sr-element{
     margin-bottom: 0;
   }
 
   form.cart button[type='submit']{
-    font-size: 1.125em !important;
+    font-size: 18px !important;
     width: 100%;
     margin: 15px auto;
     i{
@@ -65,7 +72,7 @@
   }
 
   .avia_textblock p {
-    font-size: 1em;
+    font-size: 15px;
   }
   #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-8{
     i{
@@ -84,7 +91,7 @@
     width: 100%;
     height: 55px;
     z-index: 10;
-    font-size: 1em !important;
+    font-size: 15px !important;
     &::before{
       display: none;
     }
@@ -92,7 +99,7 @@
       position: relative;
       right: unset;
       top:unset;
-      font-size: 1.375em;
+      font-size: 22px;
       vertical-align: text-bottom;
       margin: 0;
     }
@@ -112,10 +119,10 @@
   }
 
   .single_download_container .file_title h4{
-    font-size: 0.75em;
+    font-size: 13px;
   }
   .single_download_container .button_download a{
-    font-size: 0.75em;
+    font-size: 13px;
   }
   .woo-top-section{
     padding: 20px 0;
@@ -129,7 +136,6 @@
       padding: 0;
     }
   }
-
   .woo-tabs{
     z-index: 1;
   }
@@ -210,11 +216,21 @@
 
   .fourth-row {
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
     .fourth-row-container{
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
+      .copyrightText{
+        span{
+          font-size:0.75em;
+        }
+      }
+      .social-icons{
+        margin: 8px auto;
+        width: 100%;
+        text-align: center;
+      }
     }
   }
 
@@ -223,7 +239,7 @@
   }
   .floated-shop i{
     line-height: 50px;
-    font-size: 1.5em;
+    font-size: 24px;
   }
   .dial-btn{
     display: block;
@@ -235,11 +251,11 @@
     min-width: auto;
   }
   .tab-content p span{
-    font-size: 1em;
+    font-size:15px;
     margin: auto 8px;
   }
   .tab-content p span strong{
-    font-size: 0.75em;
+    font-size: 11px;
   }
 
   .floated_icons-r1 a , .floated_icons-r2 a , .floated_icons-r3 a, .floated_icons-r4 a  {
@@ -248,7 +264,7 @@
 
   .floated_icons-r1 a span , .floated_icons-r2 a span , .floated_icons-r3 a span, .floated_icons-r4 a span {
     font-weight: normal;
-    font-size: 0.75em;
+    font-size: 11px;
     margin-left: 8px;
   }
 
@@ -279,13 +295,13 @@
     width: 60px;
   }
   #custom-footer .fr-element span{
-    font-size: 0.75em;
+    font-size: 13px;
   }
   #custom-footer .sr-element h6{
     text-align: center;
     margin: 10px auto;
     padding-top: 10px;
-    font-size: 1em;
+    font-size: 16px;
   }
   #custom-footer .fr-element p {
     margin: 8px auto;
@@ -294,7 +310,7 @@
     margin: 10px auto;
   }
   #custom-footer .sr-element p a{
-    font-size: 0.75em;
+    font-size: 13px;
   }
   #custom-footer .sr-element .footer-social{
     margin: 20px auto;
@@ -303,18 +319,21 @@
     padding: 10px;
   }
   #custom-footer .sr-element .footer-social a i{
-    font-size: 1.5em;
+    font-size: 24px;
   }
   #custom-footer .tr-element {
     text-align: center;
   }
   #custom-footer .tr-element h6{
     margin: 8px auto;
-    font-size: 1em;
+    font-size: 16px;
   }
   #custom-footer .tr-element p {
     margin: 15px auto;
-    font-size: 1em;
+    font-size: 14px;
+    span{
+      font-size: 14px;
+    }
   }
   #socket{
     bottom: 50px;
@@ -377,7 +396,7 @@
     margin: 0;
   }
   #top .comment_text {
-    font-size: 0.75em;
+    font-size: 11px;
   }
 
   div.product p.stock {
@@ -400,7 +419,7 @@
     border-radius: 0 !important;
     .product_title{
       text-align: center !important;
-      font-size: 1.25em;
+      font-size: 20px;
     }
     .product_meta{
       text-align: center;
@@ -414,11 +433,11 @@
     padding: 30px;
   }
   .vc_btn3.vc_btn3-size-md{
-    font-size: 0.75em !important;
+    font-size: 13px !important;
     padding: 10px 45px 10px 10px !important;
   }
   .woo-docs-tab p{
-    font-size: 0.75em !important;
+    font-size: 13px !important;
   }
 
   .wc-tabs li.active a{
@@ -449,7 +468,7 @@
   }
 
   h1.site_title {
-    font-size: 1.5em ;
+    font-size:24px ;
   }
   .responsive #top .main_color .active_tab_content {
     background-color: #ffffff;
@@ -476,18 +495,18 @@
     width: 100% !important;
   }
   span.copyright{
-    font-size: 0.75em !important;
+    font-size: 11px !important;
   }
   .sub_menu_socket ul li{
     padding: 4px 10px !important;
-    font-size: 0.625em;
+    font-size: 11px;
   }
   .tab_inner_content{
     transition: 0.5s ease;
   }
 
   .tab_inner_content p{
-    font-size: 0.75em !important;
+    font-size: 13px !important;
   }
   .tab_inner_content img{
     margin: 15px auto;
@@ -541,7 +560,7 @@
     top: 90px;
   }
   #custom-footer{
-    padding: 10px;
+    padding: 0;
   }
   .tr-element ul#support_unit li{
     width: 50%;
@@ -626,11 +645,11 @@
     width: auto;
   }
   #top #payment ul.payment_methods li {
-    font-size: 0.75em;
+    font-size: 13px;
   }
   ul.payment_methods .payment_box{
     p{
-      font-size: 0.75em;
+      font-size: 11px;
     }
   }
   .pagesClass .wpb_gmaps_widget{
@@ -646,11 +665,13 @@
     }
   }
 
+
+
 }
 
 @media screen and (max-width: 650px){
   .woo-docs-tab p{
-    font-size: 0.75em !important;
+    font-size: 11px !important;
   }
   #callnowbutton {
     width: 54px;
@@ -678,11 +699,11 @@
       width: 100%;
       .banner_title p{
         width: 100%;
-        font-size: 1.125em;
+        font-size: 18px;
       }
       .banner_desc p{
         width: 100%;
-        font-size: 0.75em;
+        font-size: 13px;
       }
       p{
         margin: 0 0 12px 0;
@@ -703,7 +724,7 @@
     .notif_close{
       padding: 10px;
       i{
-        font-size: 0.75em;
+        font-size: 13px;
       }
     }
   }
@@ -719,12 +740,11 @@
     width: 55px;
   }
   #custom-footer .fr-element span{
-    font-size: 0.75em;
+    font-size: 13px;
   }
   #custom-footer .sr-element h6{
     margin: 6px auto;
     padding-top: 6px;
-    font-size: 0.875em;
   }
   #custom-footer .fr-element p {
     line-height: 1.5;
@@ -734,7 +754,7 @@
     margin: 8px auto;
   }
   #custom-footer .sr-element p a{
-    font-size: 0.75em;
+    font-size: 11px;
   }
   #custom-footer .sr-element .footer-social{
     margin: 15px auto;
@@ -744,17 +764,17 @@
   }
   #custom-footer .tr-element h6{
     margin: 6px auto;
-    font-size: 0.875em;
+    font-size: 16px;
   }
   #custom-footer .tr-element h6 span{
-    font-size: 0.75em;
+    font-size: 11px;
   }
   #custom-footer .tr-element p {
     margin: 10px auto;
-    font-size: 0.875em;
+    font-size: 14px;
   }
   .title_container .breadcrumb span {
-    font-size: 0.75em;
+    font-size: 11px;
   }
 }
 
@@ -763,7 +783,7 @@
     .post_data {
       .post_title{
         a{
-          font-size: 1.125em;
+          font-size: 18px;
         }
       }
     }
@@ -775,20 +795,20 @@
     }
   }
   .template-shop .inner_product .button{
-    font-size:0.75em !important;
+    font-size:11px !important;
   }
   .template-shop .inner_product .button i{
-    font-size:1em;
+    font-size:16px;
   }
   #custom-footer .fr-element span{
-    font-size: 0.625em;
+    font-size: 10px;
   }
   #custom-footer .fr-element img{
     width: 60px;
   }
 
   .tracker_tut_list .iconlist_content_wrap h4{
-    font-size: 1em;
+    font-size: 15px;
     font-weight: bold;
   }
 
@@ -800,40 +820,38 @@
     font-weight: bold;
   }
   .woo-docs-tab p{
-    font-size: 0.625em !important;
+    font-size: 10px !important;
   }
   h1.site_title {
-    font-size: 1.125em ;
+    font-size: 18px ;
   }
 
   .single_download_container{
     flex-flow: row wrap;
   }
-
-
   .single_download_container {
     flex-flow: row wrap;
   }
   .single_download_container .file_title h4 {
-    font-size: 0.75em;
+    font-size: 11px;
   }
   .single_download_container .button_download {
     width: 100%;
   }
   .single_download_container .button_download a {
-    font-size: 0.625em;
+    font-size: 10px;
   }
 }
 
 @media screen and (max-width: 400px) {
   #custom-footer .fr-element span{
-    font-size: 0.5em;
+    font-size: 10px;
   }
   #custom-footer .fr-element img{
     width: 45px;
   }
   .woo-docs-tab p{
-    font-size: 0.5em !important;
+    font-size: 8px !important;
   }
 }
 
