@@ -9,6 +9,9 @@ h1,h2,h3,h4,h5,h6,p,span{
 blockquote {
   border-color: $secondaryTextColor !important;
   width: auto !important;
+  p{
+    font-size: 85%;
+  }
 }
 
 ::selection {
@@ -16,6 +19,7 @@ blockquote {
   color: #EEEEEE;
 }
 
+/* Header */
 .main_menu .menu ul {
   top: 42px;
 }
@@ -25,7 +29,7 @@ blockquote {
 .header_color .sub_menu>ul>li>a, .header_color .sub_menu>div>ul>li>a, .header_color .main_menu ul:first-child>li>a, #top .header_color .main_menu .menu ul .current_page_item>a, #top .header_color .main_menu .menu ul .current-menu-item>a, #top .header_color .sub_menu li ul a {
   color: $AccentColor !important;
   font-weight: normal;
-  font-size: 1em;
+  font-size: 100%;
 }
 .header_color .sub_menu>ul>li>a:hover, .header_color .sub_menu>div>ul>li>a:hover, .header_color .main_menu ul:first-child>li>a:hover, #top .header_color .main_menu .menu ul .current_page_item>a:hover, #top .header_color .main_menu .menu ul .current-menu-item>a:hover, #top .header_color .sub_menu li ul a:hover {
   color: $primaryColor !important;
@@ -45,13 +49,11 @@ ul#avia-menu li.current-menu-item>a i{
 
 .avia-menu-text i{
   vertical-align: middle;
-  font-size: 22px;
-  margin: 0 -3px;
+  font-size: 115%;
   padding: 0;
 }
 
-
-/* Navbar */
+// Navbar
 #header_main .container.av-logo-container {
   width: 100% !important;
 }
@@ -76,13 +78,13 @@ ul#avia-menu li.current-menu-item>a i{
 }
 #top .main_menu .menu li {
   margin: auto;
-  top: 8px;
-}
-#top .main_menu .menu li a {
-  font-size: 14px;
+  top: 6px;
+  a {
+    font-size: 115%;
+  }
 }
 #top .main_menu .sub-menu li a {
-  font-size: 13px;
+  font-size: 100%;
 }
 #top #wrap_all #header .av-menu-button>a {
   margin: 0 auto;
@@ -116,7 +118,7 @@ ul#avia-menu li.current-menu-item>a i{
   line-height: 1;
   background-color: transparent;
   border-color: transparent;
-  font-size: 13px;
+  font-size: 90%;
 
 }
 #top #wrap_all .header_color .av-menu-button-colored > a:hover .avia-menu-text {
@@ -131,10 +133,9 @@ ul#avia-menu li.current-menu-item>a i{
   i{
     display: none;
   }
-
 }
 #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-8{
-  left: 220px;
+  left: 225px;
   margin-left: 0;
   &:hover .avia-menu-text{
     color: #ffffff !important;
@@ -155,12 +156,12 @@ ul.menu-item.cart_dropdown {
   top: 115px;
   float: left;
   right: unset !important;
-  left: 380px;
+  left: 400px;
   border: none;
 }
 
 ul.menu-item.cart_dropdown .cart_dropdown_link {
-  font-size: 24px !important;
+  font-size: 165% !important;
   color: $AccentColor;
   background-color: transparent;
 }
@@ -175,7 +176,7 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 
 li#menu-item-search {
   float: left !important;
-  left: 345px;
+  left: 365px;
 }
 
 #top .main_menu .menu li.av-menu-button-colored:hover{
@@ -190,13 +191,12 @@ li#menu-item-search {
 .html_header_top.html_header_sticky #header {
   top: -1px;
 }
-/* Navbar */
-
+// Navbar
 
 button.mfp-close {
   color: #000000 !important;
   margin: 4px 10px;
-  font-size: 36px;
+  font-size: 100%;
 }
 .mfp-content figure {
   background-color: #fff;
@@ -232,7 +232,7 @@ ul.sort-param span.currently-selected {
   line-height: 40px;
   border-radius: 0;
   color: $secondaryTextColor !important;
-  font-size: 13px;
+  font-size: 115%;
 }
 ul.sort-param span.currently-selected > strong {
   color: $secondaryTextColor;
@@ -241,10 +241,11 @@ ul.sort-param li ul {
   top: 46px;
   background: whitesmoke !important;
   border-radius: 0;
-  font-size: 14px;
+  font-size: 85%;
 }
 .sort-param ul li {
-  padding: 8px 0;
+  padding: 5px 0;
+  font-size: 115%;
 }
 .sort-param ul li span.avia-bullet {
   border-color: $secondaryTextColor;
@@ -287,14 +288,14 @@ main.template-shop.content.av-content-small.alpha.units {
   border-radius: 0;
 }
 .widget_recent_entries ul li a {
-  font-size: 14px;
+  font-size: 85%;
   color: $secondaryTextColor;
 }
 .widget_recent_entries ul li a:hover {
   text-decoration: none;
 }
 nav.main_menu ul li a {
-  font-size: 12px;
+  font-size: 85%;
 }
 nav.main_menu ul li a i{
   /*-webkit-text-stroke: 1px $titleColor;*/
@@ -302,7 +303,10 @@ nav.main_menu ul li a i{
   padding: 0 3px;
   display: none;
 }
+/* Header */
 
+
+/* Woocommerce Pages */
 .woocommerce-Tabs-panel h2{
   padding: 10px;
   color: $primaryTextColor;
@@ -321,7 +325,7 @@ ul.menu li.current-menu-ancestor > a {
 }
 nav.pagination > a {
   border-radius: 0 !important;
-  font-size: 15px;
+  font-size: 85%;
   margin: auto 4px;
   color: #eee !important;
 }
@@ -330,7 +334,7 @@ nav.pagination > a:hover {
 }
 nav.pagination > span {
   border-radius: 0 !important;
-  font-size: 15px;
+  font-size: 100%;
   margin: auto 4px;
   color: #eee;
 }
@@ -394,17 +398,16 @@ article.post-entry {
     padding: 15px 30px !important;
   }
   h2,h3,h4{
-    font-size: 20px;
+    font-size: 115%;
     padding: 10px 0;
     font-weight: bold;
     line-height: 1.6;
   }
 }
 
-
 .entry-content p {
-  font-size: 15px;
-  line-height: 2;
+  font-size: 100%;
+  line-height: 2.5;
   color: $primaryTextColor;
   text-align: justify;
 }
@@ -415,7 +418,7 @@ span.pagination-meta {
   display: none;
 }
 .tab_titles {
-  font-size: 18px;
+  font-size: 100%;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
@@ -425,8 +428,13 @@ span.pagination-meta {
 .tab_titles .tab {
   border-radius: 0;
 }
-.tabcontainer .tab_titles .active_tab {
-  color: #eeeeee;
+.tabcontainer .tab_titles {
+  .tab{
+    font-size: 100%;
+  }
+  .active_tab {
+    color: #eeeeee;
+  }
 }
 #top .main_color .tabcontainer .tab:hover {
   color: $secondaryTextColor;
@@ -443,9 +451,7 @@ span.pagination-meta {
   border-radius: 0;
 }
 
-/*----------------------------------------
 // full-width comment fields
-//--------------------------------------*/
 #top #commentform label {
   position: relative;
   left: 0;
@@ -453,11 +459,9 @@ span.pagination-meta {
 #top #commentform input {
   width: 100%;
 }
-/*----------------------------------------
 // full-width comment fields
-//--------------------------------------*/
 .comment-form p label {
-  font-size: 13px !important;
+  font-size: 100% !important;
   right: 0 !important;
   padding: 10px !important;
 }
@@ -591,16 +595,29 @@ form p.form-row{
   color: $secondaryTextColor !important;
 }
 
-.tab_inner_content ul{
-  color: $secondaryTextColor !important;
+.js_active .tab{
+  font-size: 100%;
 }
-.tab_inner_content ul li span{
-  color: $secondaryTextColor !important;
+.tab_inner_content {
+  ul{
+    color: $secondaryTextColor !important;
+    li{
+      text-align: justify;
+      font-size: 100%;
+      span{
+        color: $secondaryTextColor !important;
+      }
+    }
+  }
+  p{
+    color: $secondaryTextColor !important;
+    font-size: 115% !important;
+    line-height: 2;
+    text-align: justify;
+  }
+
 }
-.tab_inner_content p{
-  color: $secondaryTextColor !important;
-  font-size: 15px !important;
-}
+
 span.hr-inner {
   border-color: #eeeeee !important;
 }
@@ -630,6 +647,8 @@ div .main_color .tabcontainer .active_tab_content, div .main_color .tabcontainer
 .main_color.av_default_container_wrap.container_wrap.fullsize{
   background-color: #ededed ;
 }
+/* Woocommerce Pages */
+
 .newsbox ul li a .news-thumb {
   background: transparent;
   border: none;
@@ -645,7 +664,6 @@ div .main_color .tabcontainer .active_tab_content, div .main_color .tabcontainer
 .news-thumb img{
   border: 1px solid $hoverColor !important;
 }
-
 
 .widget .tabcontainer .tab_titles .active_tab {
   color: $secondaryTextColor !important;
@@ -691,7 +709,7 @@ li.av-share-link a {
   border-radius: 0;
 }
 .avia_textblock p {
-  font-size: 16px;
+  font-size: 100%;
   text-align: justify !important;
   line-height: 2.25;
   color: $primaryTextColor;
@@ -721,7 +739,7 @@ li.av-share-link a {
 }
 .slide-content span.blog-categories a {
   color: #ffffff !important;
-  font-size: 15px;
+  font-size: 85%;
 }
 .slide-content h3.slide-entry-title  {
   text-align: center;
@@ -737,9 +755,8 @@ li.av-share-link a {
   padding: 15px;
 }
 
-
 h1.site_title {
-  font-size: 30px ;
+  font-size: 100% ;
 }
 
 .flex_column.av_one_full{
@@ -768,20 +785,20 @@ ul.av-share-box-list{
   background: none;
   color: $titleColor;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 100%;
   margin: 0 -40px;
 }
 
 span.copyright{
   width: 100%;
   text-align: center;
-  font-size: 15px;
+  font-size: 100%;
   margin: 6px 0;
 }
 
 .sub_menu_socket ul li{
   padding: 6px 10px !important;
-  font-size: 12px;
+  font-size: 80%;
 }
 
 
@@ -798,10 +815,10 @@ span.copyright{
   padding: 6px;
 }
 .inner_product_header_cell .woocommerce-Price-amount{
-  font-size: 1em !important;
+  font-size: 100% !important;
 }
 .inner_product_header_cell .woocommerce-Price-amount .woocommerce-Price-currencySymbol{
-  font-size: 1em !important;
+  font-size: 100% !important;
 }
 
 .inner_product .avia_cart_buttons{
@@ -828,7 +845,7 @@ span.copyright{
 }
 
 #scroll-top-link:before {
-  font-size: 2rem;
+  font-size: 200%;
 }
 #top .pagination .current, #top .pagination a, #top .fullsize .template-blog .pagination a {
   margin-right: 0;
@@ -847,7 +864,7 @@ form.woocommerce-cart-form td , form.woocommerce-cart-form th{
   padding: 0 10px ;
 }
 span.post-meta-infos {
-  font-size: 14px;
+  font-size: 100%;
 }
 .avia-content-slider article a.slide-image{
   background-color: transparent !important;
@@ -855,7 +872,7 @@ span.post-meta-infos {
 
 h3.slide-entry-title a{
   color: #EEEEEE !important;
-  font-size: 20px;
+  font-size: 85%;
 }
 .slide-meta{
   color: #EEEEEE !important;
@@ -864,11 +881,6 @@ h3.slide-entry-title a{
   color: #EEEEEE !important;
 }
 
-.comment_container img{
-  width: 50px !important;
-  height: auto !important;
-  border-radius: 0 !important;
-}
 
 .avia-data-table.avia_pricing_minimal td {
   color: #eee ;
@@ -932,11 +944,11 @@ h3.slide-entry-title a{
 
 .wpsf-product-price span.woocommerce-Price-amount.amount {
   color: #EEEEEE;
-  font-size: 1.125rem;
+  font-size: 100%;
 }
 .wpsf-product-price span.woocommerce-Price-currencySymbol {
   color: #EEEEEE;
-  font-size: 1.125rem;
+  font-size: 100%;
 }
 
 #wps-slider-section .sp-wps-theme_three .wpsf-product .sp-wps-product-details {
@@ -949,7 +961,7 @@ h3.slide-entry-title a{
 }
 #wps-slider-section .wps-product-section .slick-next i{
   color: #ffffff !important;
-  font-size: 1.5rem !important;
+  font-size: 100% !important;
 }
 
 #wps-slider-section .wps-product-section .slick-prev {
@@ -958,7 +970,7 @@ h3.slide-entry-title a{
 }
 #wps-slider-section .wps-product-section .slick-prev i{
   color: #ffffff !important;
-  font-size: 1.5rem !important;
+  font-size: 100% !important;
 }
 
 #wps-slider-section .sp-wps-product-image-area {
@@ -966,7 +978,7 @@ h3.slide-entry-title a{
 }
 
 .av-special-heading-tag{
-  font-size: 20px !important;
+  font-size: 100% !important;
 }
 
 button#place_order{
@@ -1040,13 +1052,21 @@ td.product-name {
 }
 
 
-.tab-editor-container ul.bullet-list {
-  list-style-type: circle;
-}
-.tab-editor-container ul.bullet-list li{
-  line-height: 2.5;
-  font-size: 13px;
-  color: $primaryTextColor;
+.tab-editor-container{
+  ul.bullet-list {
+    list-style-type: circle;
+    li{
+      line-height: 2.5;
+      font-size: 85%;
+      color: $primaryTextColor;
+    }
+  }
+  p{
+    font-size: 115%;
+  }
+  h2,h3{
+    font-size: 115%;
+  }
 }
 
 .tab-download-container .button_download {
@@ -1055,7 +1075,7 @@ td.product-name {
 }
 
 ul.sub-menu a{
-  font-size: 13px;
+  font-size: 85%;
 }
 ul.sub-menu li.menu-item-has-children >a::after{
   content: "\e939";
@@ -1147,7 +1167,7 @@ img.full-width-img{
   align-content: center;
 }
 .laptop-container .grid-text{
-  font-size: 1.5rem;
+  font-size: 100%;
 }
 
 .grid-img img{
@@ -1173,13 +1193,11 @@ img.full-width-img{
 }
 
 .term-description p{
-  font-size: 15px;
+  font-size: 100%;
   line-height: 2;
   text-align: justify;
   color: $primaryTextColor;
 }
-
-
 
 .woo-tabs .woocommerce-Tabs-panel{
   border: 2px solid #eee !important;
@@ -1189,7 +1207,7 @@ img.full-width-img{
   content: "\e925";
   font-family: mycon;
   vertical-align: middle;
-  font-size: 1.5em;
+  font-size: 100%;
   margin: auto 5px;
 }
 .woo-tabs .wc-tabs {
@@ -1205,14 +1223,14 @@ img.full-width-img{
 }
 
 .woo-tabs .wc-tabs li span.ywtm_icon{
-  font-size: 1.25rem;
+  font-size: 85%;
   margin: auto 10px;
 }
 
 .woo-tabs .wc-tabs li a{
   padding: 8px 20px !important;
   border-radius: 0;
-  font-size: 13px !important;
+  font-size: 85% !important;
   color: $secondaryTextColor !important;
   border-bottom: 1px solid $backgroundColor !important;
 }
@@ -1221,7 +1239,7 @@ img.full-width-img{
 }
 .woo-tabs .wc-tabs li.active a{
   color: $primaryColor !important;
-  font-size: 13px !important;
+  font-size: 85% !important;
   border-bottom: 3px solid $primaryColor !important;
 }
 
@@ -1244,7 +1262,7 @@ img.full-width-img{
     text-align: justify;
     margin: 0;
     padding: 0;
-    font-size: 13px;
+    font-size: 100%;
     color: $primaryTextColor;
     line-height: 2;
   }
@@ -1253,15 +1271,16 @@ img.full-width-img{
     text-align: justify;
     margin: 0;
     padding: 0;
-    font-size: 13px;
+    font-size: 100%;
     color: $primaryTextColor;
     line-height: 2;
     &::before{
       content: "\e93f";
       font-family: mycon;
-      font-size: 11px;
+      font-size: 100%;
       margin: 6px;
       vertical-align: middle;
+      color: $secondaryTextColor;
     }
   }
 }
@@ -1283,14 +1302,14 @@ img.full-width-img{
 .wc-tabs li a{
   padding: 15px 24px !important;
   border-radius: 0;
-  font-size: 13px !important;
+  font-size: 85% !important;
 }
 .wc-tabs li.active{
   background-color: #ffffff !important;
 }
 .wc-tabs li.active a{
   color: $titleColor !important;
-  font-size: 15px !important;
+  font-size: 85% !important;
 }
 
 .av_textblock_section{
@@ -1303,7 +1322,7 @@ img.full-width-img{
   border-radius: 0 !important;
 }
 .av-alb-blogposts article .entry-content p{
-  font-size: 15px;
+  font-size: 100%;
 }
 
 
@@ -1324,16 +1343,16 @@ img.full-width-img{
   border-color: #e0e0e0 !important;
 }
 .template-shop .inner_product .button{
-  font-size:15px !important;
+  font-size: 85% !important;
 }
 .template-shop .inner_product .button i{
-  font-size:18px;
+  font-size: 100%;
   vertical-align:middle;
   margin: 0 5px;
 }
 // for related products
 .template-shop .related .inner_product .button{
-  font-size:11px !important;
+  font-size: 85% !important;
 }
 
 .woo-gallery{
@@ -1343,11 +1362,11 @@ img.full-width-img{
   margin: 13px auto;
   p.price{
     span.woocommerce-Price-amount.amount{
-      font-size: 24px !important;
+      font-size: 100% !important;
       color: $primaryDarkColor;
     }
     span.woocommerce-Price-currencySymbol{
-      font-size: 20px !important;
+      font-size: 100% !important;
       color: $primaryDarkColor;
     }
     &::before{
@@ -1371,7 +1390,7 @@ img.full-width-img{
 }
 .woo-main-section {
   .product_title{
-    font-size: 20px;
+    font-size: 125%;
     margin-bottom: 15px;
   }
   .vc_single_image-wrapper {
@@ -1383,7 +1402,7 @@ img.full-width-img{
     }
   }
   .iconic-woothumbs-images__image {
-    padding: 65px 100px 0 100px ;
+    padding: 65px 150px 0 150px ;
   }
   .iconic-woothumbs-thumbnails-wrap.iconic-woothumbs-thumbnails-wrap--sliding.iconic-woothumbs-thumbnails-wrap--vertical{
     overflow: hidden;
@@ -1400,11 +1419,18 @@ img.full-width-img{
     margin-top: 20px;
     .product_meta{
       margin: 0;
-      font-size: 13px;
+      font-size: 100%;
       color: $secondaryTextColor;
       a{
         color: $primaryTextColor;
         font-weight: bold;
+      }
+    }
+
+    .wpb_single_image{
+      margin: 0 !important;
+      img{
+        border-radius: 0 !important;
       }
     }
 
@@ -1420,6 +1446,9 @@ img.full-width-img{
         margin: 8px auto;
         .wpb_single_image{
           margin: 0 !important;
+          img{
+            border-radius: 0 !important;
+          }
         }
         img{
           width:85px;
@@ -1493,7 +1522,7 @@ form.cart .quantity{
   display: none;
 }
 .vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_title div{
-  font-size: 13px !important;
+  font-size: 85% !important;
   font-weight: bold !important;
   font-family: $textFont !important;
   margin: 15px auto;
@@ -1510,13 +1539,13 @@ form.cart .quantity{
 }
 
 a.product-tag {
-  font-size: 13px;
+  font-size: 100%;
 }
 .woo-mobile{
   display: none;
   .product_meta{
     margin: 0;
-    font-size: 13px;
+    font-size: 85%;
     color: $secondaryTextColor;
     a{
       color: $primaryTextColor;
@@ -1532,7 +1561,7 @@ a.product-tag {
 }
 .yith-wcwl-add-button a{
   color: $secondaryTextColor;
-  font-size: 12px;
+  font-size: 85%;
   font-weight: bold;
   display: flex;
   flex-flow: row wrap;
@@ -1553,12 +1582,12 @@ a.product-tag {
 .yith-wcwl-wishlistaddedbrowser .feedback{
   width: 100%;
   text-align: center;
-  font-size: 12px !important;
+  font-size: 85% !important;
 }
 .yith-wcwl-wishlistaddedbrowser .feedback a{
   width: 100%;
   text-align: center;
-  font-size: 12px !important;
+  font-size: 85% !important;
 }
 
 #top .avia-post-nav {
@@ -1593,11 +1622,11 @@ a.product-tag {
   align-items: center;
 }
 .woo-docs-tab p{
-  font-size: 15px !important;
+  font-size: 100% !important;
 }
 
 .woocommerce-form input{
-  font-size: 15px !important;
+  font-size: 100% !important;
   padding: 10px !important;
 }
 
@@ -1658,7 +1687,7 @@ a.product-tag {
 p.stock{
   margin: 24px auto;
   font-weight: bold;
-  font-size: 15px !important;
+  font-size: 100% !important;
   user-select: none;
 }
 p.stock.in-stock {
@@ -1697,10 +1726,6 @@ span.woocommerce-Price-amount.amount {
   width: 100%;
 }
 
-.comment_container img {
-  border-radius: 50px !important;
-}
-
 .comment-count {
   border-radius: 100% !important;
 }
@@ -1726,7 +1751,7 @@ input.submit{
   min-width: 55px;
   min-height: 55px;
   line-height: 55px;
-  font-size: 10px;
+  font-size: 100%;
   font-weight: bold;
   position: absolute !important;
   top: 0 !important;
@@ -1748,7 +1773,7 @@ input.submit{
   margin: 15px auto;
 }
 .single_download_container .file_title h4{
-  font-size: 15px;
+  font-size: 100%;
   color: $titleColor;
   font-weight: bold;
 }
@@ -1811,24 +1836,31 @@ ul.woocommerce-error {
 button.wpforms-submit{
   background-color: $primaryColor !important;
   color: #eee !important;
-  font-size: 15px !important;
+  font-size: 85% !important;
 }
 
 .sidebar-content span{
   font-family: $textFont !important}
 
 #top .woocommerce-tabs h2 {
-  font-size: 24px;
+  font-size: 100%;
+}
+
+div.product .woocommerce-tabs ul.tabs li{
+  font-size: 125% !important;
 }
 
 #top div.product .woocommerce-tabs{
   padding: 0 !important;
   ul{
     list-style-type: circle;
+    border-right: none;
   }
   ol ,ul{
     li{
-      font-size: 1.125em;
+      font-size: 110%;
+      line-height: 2;
+      color: $secondaryTextColor;
     }
   }
 }
@@ -1892,14 +1924,14 @@ span.news-time {
 }
 
 .breadcrumb-trail {
-  font-size: 12px;
+  font-size: 115%;
   line-height: 2;
 }
 .breadcrumb .sep {
   width: auto;
 }
 .breadcrumb .sep i{
-  font-size: 18px;
+  font-size: 100%;
   vertical-align: middle;
   color: $secondaryTextColor;
   line-height: 1;
@@ -1978,7 +2010,7 @@ td.actions .coupon {
   height:100px;
 }
 .title_container .main-title  a{
-  font-size:17px;
+  font-size: 100%;
   color: $titleColor !important;
 }
 
@@ -1994,7 +2026,7 @@ td.actions .coupon {
   color: #eee !important;
 }
 .title_container .breadcrumb span{
-  font-size: 13px;
+  font-size: 100%;
 }
 /* Breadcrumbs style*/
 
@@ -2034,10 +2066,19 @@ a.wc-backward {
 
 
 // Hide Comments text
-.comment_container .minitext{
-  display:none;
+.comment_container {
+  .minitext{
+     display:none;
+   }
+  img {
+    width: 50px !important;
+    height: auto !important;
+    border-radius: 50px;
+  }
+  p{
+    font-size: 100%;
+  }
 }
-
 
 // products widget
 #top div ul.product_list_widget li a {
@@ -2060,17 +2101,17 @@ a.wc-backward {
 
 // Customize checkout
 #order_review, #order_review_heading {
-  font-size: 20px;
+  font-size: 100%;
 }
 .col2-set .col-1 h3, .col2-set .col-2 h3 {
-  font-size: 20px;
+  font-size: 100%;
 }
 // Customize checkout
 
 
 // Customize recipt form
 #top #payment ul.payment_methods li {
-  font-size: 15px;
+  font-size: 85%;
   input{
     vertical-align: middle;
   }
@@ -2078,7 +2119,7 @@ a.wc-backward {
 ul.payment_methods .payment_box{
   width: 100% !important;
   p{
-    font-size: 13px;
+    font-size: 100%;
   }
 }
 // Customize recipt form
@@ -2110,7 +2151,7 @@ ul.payment_methods .payment_box{
   }
   p{
     line-height:2;
-    font-size:15px;
+    font-size: 100%;
     margin:0;
     color: $secondaryTextColor;
   }
@@ -2126,7 +2167,7 @@ ul.payment_methods .payment_box{
     li{
       margin: auto 4px;
       list-style-type: none;
-      font-size: 15px;
+      font-size: 85%;
       color: $secondaryTextColor;
     }
   }
@@ -2138,7 +2179,7 @@ ul.payment_methods .payment_box{
 
 .av_ajax_search_entry span.av_ajax_search_image::before{
   margin-left: 0 !important;
-  font-size: 13px !important;
+  font-size: 85% !important;
 }
 
 .yrm-btn-wrapper{

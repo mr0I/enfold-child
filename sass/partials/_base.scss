@@ -33,9 +33,11 @@ $textFont : IranSans,Sans-serif,Arial;
 }
 /* Mixin-End */
 
-
-a:hover, a:focus, a:visited {
+a{
 	text-decoration: none !important;
+	&:hover{text-decoration: none !important;}
+	&:focus{text-decoration: none !important;}
+	&:visited{text-decoration: none !important;}
 }
 
 * {
@@ -46,7 +48,7 @@ a:hover, a:focus, a:visited {
 
 @font-face {
 	font-family: "IranSans";
-	src: local('IranSans') , url("../fonts/IRANSansWeb.woff") format("woff"), url("../fonts/IRANSansWeb.woff2") format("woff2");
+	src: local('IranSans') , url("../fonts/IRANSansXFaNum-Regular.woff") format("woff"), url("../fonts/IRANSansXFaNum-Regular.woff2") format("woff2");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;

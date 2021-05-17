@@ -37,7 +37,7 @@ add_shortcode( 'aparat', 'myaparat' );
 
 
 /**
- * Show product tags
+ * Show products tags
  */
 add_shortcode('show_product_tags', 'product_tags');
 function product_tags($attr , $content){
@@ -240,4 +240,11 @@ add_shortcode('post_footer_attribs', function (){
 });
 
 
+/**
+ * Add add_to_cart button for products pages
+ */
+add_shortcode('products_addToCart_btns', function (){
+    $btn = '<button class="class1">Buy</button>';
+    return $btn;
+});
 

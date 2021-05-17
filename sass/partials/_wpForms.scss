@@ -13,10 +13,16 @@ label.wpforms-field-label {
   color: $primaryTextColor;
 }
 
-div.wpforms-container-full .wpforms-form ul li {
-  padding: 5px !important;
-  color: $titleColor;
-  font-size: 15px;
+div.wpforms-container-full .wpforms-form {
+  ul li {
+    padding: 5px !important;
+    color: $titleColor;
+    font-size: 100%;
+  }
+  .wpforms-field-label{
+    font-size: 100% !important;
+    text-align: justify !important;
+  }
 }
 
 span.wpforms-required-label {
