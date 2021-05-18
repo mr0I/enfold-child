@@ -1105,6 +1105,24 @@ footer .footer-social-btns i{
 }
 /* Start Post Attribs */
 
+
+/* Start Product Row Btns */
+.addToCart_btns {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  a{
+    font-size: 85%;
+    padding: 8px 24px;
+    margin: 4px auto;
+  }
+
+
+}
+/* End Product Row Btns */
+
 .avia-layerslider{
   z-index: 0;
 }

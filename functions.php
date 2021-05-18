@@ -243,9 +243,92 @@ add_shortcode('post_footer_attribs', function (){
 /**
  * Add add_to_cart button for products pages
  */
-add_shortcode('products_addToCart_btns', function (){
-    $btn = '<button class="class1">Buy</button>';
-    return $btn;
+add_shortcode('products_row_btns', function ($atts, $content = null){
+	$pid = 0;
+	$type = '';
+    extract(shortcode_atts(array(
+		'pid' => 0,
+		'type' => ''
+	), $atts));
+
+	$X1_url = 'https://radshid.com/?p=10449';
+	$X5_url = 'https://radshid.com/?p=11720';
+	$Magnet_url = 'https://radshid.com/?p=13574';
+	$Sipaad_url = 'https://radshid.com/?p=14049';
+	$X0_url = 'https://radshid.com/?p=10216';
+	$PR1S_url = 'https://radshid.com/?p=15129';
+	$PR8_url = 'https://radshid.com/?p=10285';
+	$PR1_url = 'https://radshid.com/?p=12161';
+	$PR3_url = 'https://radshid.com/?p=10313';
+	switch ($type){
+        case 'car':
+	        $other_trackers_url = 'https://radshid.com/?p=12762';
+	        $OthersBtnText = 'مشاهده سایر ردیاب های خودرو';
+	        break;
+        case 'personal':
+	        $other_trackers_url = 'https://radshid.com/?p=12732';
+	        $OthersBtnText = 'مشاهده سایر ردیاب های شخصی';
+	        break;
+        case 'tablet':
+	        $other_trackers_url = 'https://radshid.com/?p=12783';
+	        $OthersBtnText = 'مشاهده سایر تبلت های صنعتی';
+	        break;
+        case 'pda':
+	        $other_trackers_url = 'https://radshid.com/?p=12775';
+	        $OthersBtnText = 'مشاهده سایر pda های صنعتی';
+	        break;
+        case 'laptop':
+	        $other_trackers_url = 'https://radshid.com/?p=12769';
+	        $OthersBtnText = 'مشاهده سایر لپ تاپ های صنعتی';
+	        break;
+        default:
+	        $other_trackers_url = '#';
+	        $OthersBtnText = '';
+	}
+	switch ($pid){
+        case 15129:
+	        $productUrl = $PR1S_url;
+	        break;
+        case 3733:
+	        $productUrl = $X1_url;
+	        break;
+        case 11720:
+	        $productUrl = $X5_url;
+	        break;
+        case 13574:
+	        $productUrl = $Magnet_url;
+	        break;
+        case 14049:
+	        $productUrl = $Sipaad_url;
+	        break;
+        case 10216:
+	        $productUrl = $X0_url;
+	        break;
+        case 10285:
+	        $productUrl = $PR8_url;
+	        break;
+        case 12161:
+	        $productUrl = $PR1_url;
+	        break;
+        case 10313:
+	        $productUrl = $PR3_url;
+	        break;
+        default:
+	        $productUrl = '#';
+    }
+
+    if ($pid != ''){
+	    $btns = '<div class="addToCart_btns">
+                <a href="'.$productUrl.'" class="btn btn-danger mx-1">خرید آنلاین</a>
+                <a href="'.$other_trackers_url.'" class="btn btn-danger mx-1">'.$OthersBtnText.'</a>
+            </div>';
+    }else{
+	    $btns = '<div class="addToCart_btns">
+                <a href="'.$other_trackers_url.'" class="btn btn-danger mx-1">'.$OthersBtnText.'</a>
+            </div>';
+    }
+
+	return $btns;
 });
 
 
