@@ -207,7 +207,7 @@ add_shortcode('post_footer_attribs', function (){
 	$fullUrl = urlencode($postUrl);
 
 	if( is_single() ) {
-		$html = '<div class="single_post_share_btns">
+		$html = '<div class="single_post_share_btns mb-5">
             <div class="w-100">
                 <ul>
                     <li class="icons ln"> <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در لینکدین"> <i class="ic-linkedin"></i> </a> </li>
@@ -248,3 +248,15 @@ add_shortcode('products_addToCart_btns', function (){
     return $btn;
 });
 
+
+// Redirect wp-login.php
+add_action('init', 'prevent_wp_login');
+function prevent_wp_login() {
+	global $pagenow;
+	$action = (isset($_GET['action'])) ? $_GET['action'] : '';
+	if( $pagenow == 'wp-login.php' && ( ! $action || ( $action && ! in_array($action, array('logout', 'lostpassword', 'rp', 'resetpass'))))) {
+		$page = get_bloginfo('url');
+		wp_redirect($page);
+		exit();
+	}
+}
