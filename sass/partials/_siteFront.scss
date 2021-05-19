@@ -611,7 +611,7 @@ form p.form-row{
   }
   p{
     color: $secondaryTextColor !important;
-    font-size: 115% !important;
+    font-size: 100% !important;
     line-height: 2;
     text-align: justify;
   }
@@ -2196,6 +2196,7 @@ ul.payment_methods .payment_box{
   line-height: 1.6 !important;
 }
 
+
 // full size avia images (single posts)
 .avia-image-container{
   width: 100%;
@@ -2209,3 +2210,20 @@ ul.payment_methods .payment_box{
 // full size avia images (single posts)
 
 
+// avia icons list
+ul.avia-icon-list{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom: 75px;
+  li{
+    width: 50%;
+  }
+}
+.tracker_tut_list ul.avia-icon-list{
+  display: block;
+  margin-bottom: 0;
+}
+// avia icons list
