@@ -588,27 +588,11 @@ wp_footer();
 ?>
 
 
-
-<!-- Start Crisp Init -->
-<!--<script type="text/javascript" defer>-->
-<!--    window.$crisp=[];-->
-<!--    CRISP_RUNTIME_CONFIG = {-->
-<!--        locale : 'fa'-->
-<!--    };-->
-<!--    window.CRISP_WEBSITE_ID="68e9f005-17da-481c-b8f2-ba184b388aa3";(function(){-->
-<!--        d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();$crisp.push(["set", "session:data", [[["country", "IR"],["shipping_country", "IR"]]]]);-->
-<!--</script>-->
-<!-- End Crisp Init -->
-<!--<style type="text/css">-->
-<!--    .crisp-client .cc-kv6t[data-full-view=true] .cc-1xry .cc-unoo {-->
-<!--        bottom: 60px !important;-->
-<!--        right: 10px !important;-->
-<!--    }-->
-<!--    .crisp-client .cc-kv6t{-->
-<!--        /*z-index:100 !important;*/-->
-<!--    }-->
-<!--</style>-->
-
+<!---start GOFTINO code--->
+<script type="text/javascript" defer>
+    !function(){var a=window,d=document;function g(){var g=d.createElement("script"),i="lXpDBP",s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.type="text/javascript",g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+</script>
+<!---end GOFTINO code--->
 
 </body>
 </html>

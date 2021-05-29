@@ -398,7 +398,7 @@ article.post-entry {
     padding: 15px 30px !important;
   }
   h2,h3,h4{
-    font-size: 115%;
+    font-size: 115% !important;
     padding: 10px 0;
     font-weight: bold;
     line-height: 1.6;
@@ -430,7 +430,7 @@ span.pagination-meta {
 }
 .tabcontainer .tab_titles {
   .tab{
-    font-size: 100%;
+    font-size: 85%;
   }
   .active_tab {
     color: #eeeeee;

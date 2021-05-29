@@ -103,35 +103,6 @@ add_shortcode('avs_posts_tag', 'avs_posts_tag_cb');
 //add_action( 'woocommerce_init', 'wc_remove_product_schema_product_archive' );
 
 
-add_action('wp_logout','auto_redirect_external_after_logout');
-function auto_redirect_external_after_logout(){
-	?>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script type="text/javascript">
-        const BottomToast = Swal.mixin({
-            toast: true,
-            position: 'bottom-start',
-            showConfirmButton: false,
-            timer: 2000,
-            timerProgressBar: true,
-            didOpen: (toast) => {
-                toast.addEventListener('mouseenter', Swal.stopTimer);
-                toast.addEventListener('mouseleave', Swal.resumeTimer)
-            }
-        });
-        BottomToast.fire({
-            icon: 'success',
-            title: 'با موفقیت از سایت خارج شدید.'
-        });
-        window.location.replace('http://localhost/wordpress');
-        //window.location.replace(document.location.origin);
-    </script>
-	<?php
-	//wp_redirect( get_site_url() );
-	exit();
-}
-
-
 /**
  * disable zxcvbn.min.js in wordpress
  */
@@ -168,8 +139,6 @@ function gt_posts_custom_column_views( $column ) {
 }
 add_filter( 'manage_posts_columns', 'gt_posts_column_views' );
 add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
-
-
 
 /**
  * Add extra attributes to posts
@@ -333,13 +302,13 @@ add_shortcode('products_row_btns', function ($atts, $content = null){
 
 
 // Redirect wp-login.php
-add_action('init', 'prevent_wp_login');
-function prevent_wp_login() {
-	global $pagenow;
-	$action = (isset($_GET['action'])) ? $_GET['action'] : '';
-	if( $pagenow == 'wp-login.php' && ( ! $action || ( $action && ! in_array($action, array('logout', 'lostpassword', 'rp', 'resetpass'))))) {
-		$page = get_bloginfo('url');
-		wp_redirect($page);
-		exit();
-	}
-}
+//add_action('init', 'prevent_wp_login');
+//function prevent_wp_login() {
+//	global $pagenow;
+//	$action = (isset($_GET['action'])) ? $_GET['action'] : '';
+//	if( $pagenow == 'wp-login.php' && ( ! $action || ( $action && ! in_array($action, array('logout', 'lostpassword', 'rp', 'resetpass'))))) {
+//		$page = get_bloginfo('url');
+//		wp_redirect($page);
+//		exit();
+//	}
+//}

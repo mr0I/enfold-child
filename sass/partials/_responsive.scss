@@ -52,6 +52,12 @@
 }
 
 @media screen and (max-width: 768px) {
+  .post-entry.post-entry-type-page{
+    h2,h3,h4{
+      font-size: 100% !important;
+    }
+  }
+
   #top div.product .woocommerce-tabs{
     ol ,ul{
       li{
@@ -76,7 +82,7 @@
     font-size: 85%;
   }
   #custom-footer .sr-element ul li a{
-    font-size: 85%;
+    font-size: 100%;
   }
   #top #wrap_all .header_color .av-menu-button-colored>a .avia-menu-text{
     font-size: 100%;
@@ -328,7 +334,7 @@
     text-align: center;
     margin: 10px auto;
     padding-top: 10px;
-    font-size: 100%;
+    font-size: 115%;
   }
   #custom-footer .fr-element p {
     margin: 8px auto;

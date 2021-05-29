@@ -22,7 +22,6 @@
                 $('.cc-7doi.cc-1ada').append('<img src="https://radshid.com/wp-content/uploads/2021/03/support_avatar2.jpg" width="70" height="70" alt="" id="crisp_avatar">');
             });
         }
-
     })
 })(jQuery);
 jQuery(document).ready(function($){

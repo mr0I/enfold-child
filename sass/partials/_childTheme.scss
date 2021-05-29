@@ -1118,6 +1118,12 @@ footer .footer-social-btns i{
     font-size: 85%;
     padding: 8px 24px;
     margin: 4px auto;
+    color: #eee;
+    border-radius: 3px !important;
+    &:hover{
+      padding: 8px 24px;
+      color: #eee;
+    }
   }
 }
 /* End Product Row Btns */
