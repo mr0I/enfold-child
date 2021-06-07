@@ -156,7 +156,6 @@ add_shortcode('post_header_attribs', function (){
         <div class="row container" id="post_data_container">
             <div class="post_data">
                     <p class="post_views_count"><i class="ic-eye mx-1 float-right"></i>تعداد بازدید: '.$pvc.' </p>
-                    <h1 class="post_title"><a href="'.$postUrl.'">'.$postTitle.'</a></h1>
             </div>
         </div> ';
 	}else{

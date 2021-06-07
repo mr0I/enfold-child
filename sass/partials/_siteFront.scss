@@ -154,9 +154,9 @@ ul#avia-menu li.current-menu-item>a i{
 
 ul.menu-item.cart_dropdown {
   top: 115px;
+  left: 425px;
   float: left;
   right: unset !important;
-  left: 400px;
   border: none;
 }
 
@@ -710,7 +710,7 @@ li.av-share-link a {
 }
 .avia_textblock p {
   font-size: 100%;
-  text-align: justify !important;
+  text-align: justify;
   line-height: 2.25;
   color: $primaryTextColor;
   font-family: $textFont !important;
@@ -1105,6 +1105,9 @@ ul.sub-menu li.menu-item-has-children >a::after{
 }
 .av-burger-menu-main.av-small-burger-icon{
   padding-right:0;
+}
+.html_visible_cart .av-burger-menu-main {
+  padding-left: 0;
 }
 
 label#recaptcha-anchor-label {
@@ -2086,14 +2089,12 @@ a.wc-backward {
 }#top div ul.product_list_widget li .star-rating ,#top div ul.product_list_widget li .woocommerce-Price-amount  {
    display:none;
  }
-#top div ul.product_list_widget li a img{
-  width: 65px !important;
-}
-
+//#top div ul.product_list_widget li a img{
+//  width: 60px !important;
+//}
 .inner_product_header .avia-arrow{
   z-index: 0 !important;
 }
-
 .html_header_top.html_header_sticky.html_bottom_nav_header #main {
   padding-top: 75px !important;
 }
