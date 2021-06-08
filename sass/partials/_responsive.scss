@@ -17,7 +17,7 @@
   #custom-footer .sr-element h6{
     margin: 8px auto;
     padding-top: 8px;
-    font-size: 115%;
+    font-size: 100%;
   }
   #custom-footer .fr-element p {
     margin: 8px auto;
@@ -52,6 +52,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  #box-widget-icon {
+    padding-top: 0 !important;
+  }
   .post-entry.post-entry-type-page{
     h2,h3,h4{
       font-size: 100% !important;
@@ -82,7 +85,7 @@
     font-size: 85%;
   }
   #custom-footer .sr-element ul li a{
-    font-size: 100%;
+    font-size: 85%;
   }
   #top #wrap_all .header_color .av-menu-button-colored>a .avia-menu-text{
     font-size: 100%;
@@ -362,7 +365,7 @@
   }
   #custom-footer .tr-element h6{
     margin: 8px auto;
-    font-size: 100%;
+    font-size: 85%;
   }
   #custom-footer .tr-element p {
     margin: 15px auto;
@@ -592,7 +595,7 @@
     right: 13px !important;
     z-index: 1 !important;
     .cart_dropdown_link {
-      font-size: 200% !important;
+      font-size: 165% !important;
     }
   }
   li#menu-item-search {
@@ -791,7 +794,7 @@
     width: 55px;
   }
   #custom-footer .fr-element span{
-    font-size: 100%;
+    font-size: 85%;
   }
   #custom-footer .sr-element h6{
     margin: 6px auto;
@@ -815,14 +818,14 @@
   }
   #custom-footer .tr-element h6{
     margin: 6px auto;
-    font-size: 115%;
+    font-size: 100%;
   }
   #custom-footer .tr-element h6 span{
-    font-size: 100%;
+    font-size: 85%;
   }
   #custom-footer .tr-element p {
     margin: 10px auto;
-    font-size: 100%;
+    font-size: 85%;
   }
   .title_container .breadcrumb span {
     font-size: 100%;
@@ -852,7 +855,7 @@
     font-size: 100%;
   }
   #custom-footer .fr-element span{
-    font-size: 100%;
+    font-size: 75%;
   }
   #custom-footer .fr-element img{
     width: 60px;
@@ -895,9 +898,6 @@
 }
 
 @media screen and (max-width: 400px) {
-  #custom-footer .fr-element span{
-    font-size: 85%;
-  }
   #custom-footer .fr-element img{
     width: 45px;
   }

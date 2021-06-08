@@ -29,7 +29,7 @@ blockquote {
 .header_color .sub_menu>ul>li>a, .header_color .sub_menu>div>ul>li>a, .header_color .main_menu ul:first-child>li>a, #top .header_color .main_menu .menu ul .current_page_item>a, #top .header_color .main_menu .menu ul .current-menu-item>a, #top .header_color .sub_menu li ul a {
   color: $AccentColor !important;
   font-weight: normal;
-  font-size: 100%;
+  font-size: 75%;
 }
 .header_color .sub_menu>ul>li>a:hover, .header_color .sub_menu>div>ul>li>a:hover, .header_color .main_menu ul:first-child>li>a:hover, #top .header_color .main_menu .menu ul .current_page_item>a:hover, #top .header_color .main_menu .menu ul .current-menu-item>a:hover, #top .header_color .sub_menu li ul a:hover {
   color: $primaryColor !important;
@@ -79,7 +79,7 @@ ul#avia-menu li.current-menu-item>a i{
   margin: auto;
   top: 6px;
   a {
-    font-size: 115%;
+    font-size: 85%;
   }
 }
 #top .main_menu .sub-menu li a {
@@ -152,7 +152,7 @@ ul#avia-menu li.current-menu-item>a i{
 }
 
 ul.menu-item.cart_dropdown {
-  top: 115px;
+  top: 113px;
   left: 425px;
   float: left;
   right: unset !important;
@@ -160,7 +160,7 @@ ul.menu-item.cart_dropdown {
 }
 
 ul.menu-item.cart_dropdown .cart_dropdown_link {
-  font-size: 165% !important;
+  font-size: 125% !important;
   color: $AccentColor;
   background-color: transparent;
 }
@@ -203,6 +203,12 @@ button.mfp-close {
 form#searchform input[type='text'] {
   background: whitesmoke !important;
   border-radius: 0 !important;
+  &::-webkit-input-placeholder{
+    font-family: $textFont;
+  }
+  &::-moz-placeholder{
+    font-family: $textFont;
+  }
 }
 form#searchform input#searchsubmit {
   border-radius: 0 !important;
@@ -1061,7 +1067,7 @@ td.product-name {
     }
   }
   p{
-    font-size: 115%;
+    font-size: 100%;
   }
   h2,h3{
     font-size: 115%;
@@ -1273,7 +1279,7 @@ img.full-width-img{
     text-align: justify;
     margin: 0;
     padding: 0;
-    font-size: 100%;
+    font-size: 85%;
     color: $primaryTextColor;
     line-height: 2;
     &::before{
@@ -1849,7 +1855,7 @@ button.wpforms-submit{
 }
 
 div.product .woocommerce-tabs ul.tabs li{
-  font-size: 125% !important;
+  font-size: 100% !important;
 }
 
 #top div.product .woocommerce-tabs{
@@ -1860,10 +1866,13 @@ div.product .woocommerce-tabs ul.tabs li{
   }
   ol ,ul{
     li{
-      font-size: 110%;
-      line-height: 2;
+      font-size: 100%;
+      line-height: 2.5;
       color: $secondaryTextColor;
     }
+  }
+  ul.tabs li.active a{
+    font-family: $textFont;
   }
 }
 
@@ -2227,3 +2236,15 @@ ul.avia-icon-list{
   margin-bottom: 0;
 }
 // avia icons list
+
+
+.woocommerce-mini-cart__buttons.buttons{
+  a{
+    font-family: $textFont;
+  }
+}
+
+// Goftino Chat
+#box-widget-icon {
+  padding-top: 18px !important;
+}
