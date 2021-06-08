@@ -117,6 +117,7 @@ const swalWithBootstrapButtons = Swal.mixin({
 });
 /* Toasts */
 
+
 // Copy to Clipboard
 function copyStringToClipboard (str) {
     let el = document.createElement('textarea');

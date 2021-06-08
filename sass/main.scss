@@ -1,8 +1,10 @@
-// sass --watch sass/main.scss:css/inline.css --style compressed
+// sass --watch sass/main.scss:css/main.css --style compressed
 
 @import "partials/base";
 @import "partials/siteFront";
 @import "partials/childTheme";
+@import "partials/wpForms";
+@import "partials/uap";
 @import "partials/responsive";
 
 
