@@ -1,5 +1,27 @@
 /* Add your CSS code here. */
-
+/* Variables-Start */
+$primaryColor: #f03434;
+$primaryDarkColor: #d91e18;
+$primaryHoverColor: #E57373;
+$AccentColor: #686868;
+$titleColor: #1c272b;
+$successMsgColor:#03c9a9;
+$primaryTextColor: #424242;
+$secondaryTextColor: #616161;
+$secondaryWhiteColor: #bdbdbd;
+$backgroundColor: #f5f5f5;
+$hoverColor: #bdbdbd;
+$telegramColor: #0088cc;
+$instaColor: #C13584;
+$aparatColor: #e61358;
+$errorColor: tomato;
+$tweeterColor: #1DA1F2;
+$linkedinColor: #0077B5;
+$whatsappColor: #128C7E;
+$facebookColor: #4267B2;
+$textFont : IranSans,Sans-serif,Arial;
+//$titleFont : IranSans,iranyekan,Samim,Sans-serif,Arial;
+/* Variables-End */
 .entry-content table.wp-list-table{
   background-color: #fff !important;
 }

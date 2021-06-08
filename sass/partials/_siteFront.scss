@@ -57,18 +57,17 @@ ul#avia-menu li.current-menu-item>a i{
 #header_main .container.av-logo-container {
   width: 100% !important;
 }
-#header_main .container.av-logo-container .inner-container{
-  background-color: #ffffff;
-  z-index: 1000;
-}
+
 #header_main_alternate {
   border-top: none;
 }
+
 #header_main span.logo{
   position: absolute !important;
   right: 90px !important;
   top: 10px;
 }
+
 #header_main .container, .main_menu ul:first-child>li a {
   height: 65px;
   line-height: 65px;

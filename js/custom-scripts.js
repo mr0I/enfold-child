@@ -22,6 +22,10 @@
                 $('.cc-7doi.cc-1ada').append('<img src="https://radshid.com/wp-content/uploads/2021/03/support_avatar2.jpg" width="70" height="70" alt="" id="crisp_avatar">');
             });
         }
+
+        // Start Goftino
+        !function(){var a=window,d=document;function g(){var g=d.createElement("script"),i="lXpDBP",s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.type="text/javascript",g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+
     })
 })(jQuery);
 jQuery(document).ready(function($){
@@ -139,6 +143,24 @@ function copyToClip(event) {
     });
 }
 
+
+var io = new IntersectionObserver(
+    entries => {
+        console.log(entries[0]);
+        if (entries[0].isIntersecting) {
+            var recaptchaScript = document.createElement('script');
+            recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?hl=en';
+            recaptchaScript.defer = true;
+            document.body.appendChild(recaptchaScript);
+        }
+    },
+    {
+        root: document.querySelector('.page-wrapper'),
+        rootMargin: "0px",
+        threshold: 1.0,
+    }
+);
+io.observe(initForm);
 
 
 

@@ -300,14 +300,19 @@ add_shortcode('products_row_btns', function ($atts, $content = null){
 });
 
 
-// Redirect wp-login.php
-//add_action('init', 'prevent_wp_login');
-//function prevent_wp_login() {
-//	global $pagenow;
-//	$action = (isset($_GET['action'])) ? $_GET['action'] : '';
-//	if( $pagenow == 'wp-login.php' && ( ! $action || ( $action && ! in_array($action, array('logout', 'lostpassword', 'rp', 'resetpass'))))) {
-//		$page = get_bloginfo('url');
-//		wp_redirect($page);
-//		exit();
-//	}
-//}
+/* Disable automatic generation of critical CSS when Optimize CSS Delivery is enabled */
+add_filter( 'do_rocket_critical_css_generation', '__return_false' );
+
+
+function add_defer_attribute($tag, $handle) {
+	switch ($handle) {
+		case 'google.recaptcha':
+			return str_replace(' src', ' defer="defer" src', $tag);
+			break;
+		case 'google.recaptcha.frontend':
+			return str_replace(' src', ' defer="defer" src', $tag);
+			break;
+	}
+	return $tag;
+}
+

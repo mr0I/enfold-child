@@ -104,6 +104,9 @@
   .avia_textblock p {
     font-size: 100%;
   }
+  #top .main_menu .menu li {
+    top: 0;
+  }
   #top .main_menu .menu li.av-menu-button-colored.menu-item-top-level-8{
     i{
       display: block;
@@ -585,9 +588,12 @@
     padding: 0 !important;
   }
   ul.menu-item.cart_dropdown {
-    top: 50px !important;
+    top: 42px !important;
     right: 13px !important;
     z-index: 1 !important;
+    .cart_dropdown_link {
+      font-size: 200% !important;
+    }
   }
   li#menu-item-search {
     left: 90px;
@@ -611,7 +617,14 @@
     visibility:hidden;
   }
   .responsive #top .logo {
-    width: auto !important;
+    position: static !important;
+    height: auto;
+    float: none;
+    padding: 0;
+    border: none;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
   }
   #custom-footer .sr-element h6 ,#custom-footer .tr-element h6 {
     &::after{
