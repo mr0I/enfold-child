@@ -382,19 +382,14 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
     </div>
     <div class="floated_icons_footer">
         <div class="fif-container">
-            <a href="https://t.me/Radshid_co" rel="nofollow" title="تلگرام رادشید" target="_blank">
-                <i class="ic-telegram"></i>
-                <span>تلگرام</span>
+            <a href="<?= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?>" title="ورود به فروشگاه">
+                <i class="ic-shopping-cart"></i>
+                <span>فروشگاه</span>
             </a>
             <a href="https://www.instagram.com/radshid_com/" title="اینستاگرام رادشید" rel="nofollow" target="_blank">
                 <i class="ic-instagram"></i>
                 <span>اینستاگرام</span>
             </a>
-            <a href="<?= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?>" title="ورود به فروشگاه">
-                <i class="ic-shopping-cart"></i>
-                <span>فروشگاه</span>
-            </a>
-
             <a href="https://sibapp.com/applications/%D8%B1%D8%AF%DB%8C%D8%A7%D8%A8-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D8%B1%D8%A7%D8%AF%D8%B4%DB%8C%D8%AF" title="برنامه ردیابی رادشید نسخه ios"
                rel="nofollow" target="_blank">
                 <img src="<?php echo get_stylesheet_directory_uri().'/images/sibapp.png' ; ?>" width="22" height="22" alt="دریافت نسخه ios از سیب اپ">
@@ -533,7 +528,6 @@ if(isset($avia_config['fullscreen_image']))
 	echo "<div class='bg_container' style='background-image:url(".$avia_config['fullscreen_image'].");'></div>";
 }
 ?>
-
 
 <a href='#top' title='<?php _e('Scroll to top','avia_framework'); ?>' id='scroll-top-link' <?php echo av_icon_string( 'scrolltop' ); ?>><span class="avia_hidden_link_text"><?php _e('Scroll to top','avia_framework'); ?></span></a>
 
