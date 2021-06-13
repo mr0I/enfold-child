@@ -103,7 +103,6 @@ jQuery(document).ready(function($){
         $(this).find('i').css('color', '#616161');
     })
 
-
 });
 
 
@@ -143,25 +142,6 @@ function copyToClip(event) {
         timer: 2000
     });
 }
-
-
-var io = new IntersectionObserver(
-    entries => {
-        console.log(entries[0]);
-        if (entries[0].isIntersecting) {
-            var recaptchaScript = document.createElement('script');
-            recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?hl=en';
-            recaptchaScript.defer = true;
-            document.body.appendChild(recaptchaScript);
-        }
-    },
-    {
-        root: document.querySelector('.page-wrapper'),
-        rootMargin: "0px",
-        threshold: 1.0,
-    }
-);
-io.observe(initForm);
 
 
 

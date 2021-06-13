@@ -482,13 +482,13 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
             <!-- ####### END SOCKET CONTAINER ####### -->
 
-<!-- Sidebar Basket -->
+            <!-- Sidebar Basket -->
             <div class="sideBasket">
                 <div class="sideBasket_content">
                     <span>produt 1</span>
                 </div>
             </div>
-<!-- Sidebar Basket -->
+            <!-- Sidebar Basket -->
 
 
         </footer>
