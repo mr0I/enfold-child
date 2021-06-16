@@ -890,10 +890,19 @@ footer .footer-social-btns i{
   display: none;
 }
 
+/* Start Bootstrap Tooltip */
 .tooltip {
   font-family: $textFont ;
   font-size: 100%;
 }
+.tooltip-inner{
+  background-color: rgba(0,0,0,0.85);
+}
+.bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
+  border-top-color:  rgba(0,0,0,0.85);
+}
+/* End Bootstrap Tooltip */
+
 
 /* Start Notif Banner */
 .notif_banner_container {
@@ -1135,6 +1144,72 @@ footer .footer-social-btns i{
 
 /* Start Demo Styles */
 .home_specs_grid{
-  width:50%;
+  width:50% !important;
+  margin:13px 0 !important;
 }
+.flex_cell{
+  border-radius:0 !important;
+}
+.avia-content-slider .slide-image, .avia-content-slider .slide-image img {
+  height: 200px;
+}
+article#melli_vector .iconbox_icon::before{
+  font-family: unset !important;
+  content: url('https://radshid.com/wp-content/uploads/2021/06/tolide_melii-1.jpg');
+}
+article#samaneh_vector .iconbox_icon::before{
+  font-family: unset !important;
+  content: url('https://radshid.com/wp-content/uploads/2021/06/samaneh_vector.jpg');
+}
+article#price_vector .iconbox_icon::before{
+  font-family: unset !important;
+  content: url('https://radshid.com/wp-content/uploads/2021/06/price_vector.jpg');
+}
+article#guarantee_vector .iconbox_icon::before{
+  font-family: unset !important;
+  content: url('https://radshid.com/wp-content/uploads/2021/06/gurantine_vector.jpg');
+}
+#tablet_vector span.av-icon-char::before{
+  font-family: unset !important;
+  content: url('https://radshid.com/wp-content/uploads/2021/06/tablet_vector.png');
+}
+#pda_vector span.av-icon-char::before{
+  font-family: unset !important;
+  content: url('https://radshid.com/wp-content/uploads/2021/06/pda_vector.png');
+}
+#laptop_vector span.av-icon-char::before{
+  font-family: unset !important;
+  content: url('https://radshid.com/wp-content/uploads/2021/06/laptop_vector.png');
+}
+.slide-content {
+  .slide-entry-excerpt{
+    text-align: justify !important;
+    font-size: 85%;
+    line-height: 2;
+  }
+  .slide-entry-title {
+    margin: 0;
+    a{
+      color: $titleColor !important;
+      font-size: 100%;
+    }
+  }
+}
+.home_titles{
+  padding: 0 !important;
+  margin: 0;
+  font-size: 175% !important;
+}
+.iconbox .iconbox_content p:last-child {
+  text-align: justify;
+  padding: 0 8px;
+}
+
 /* End Demo Styles */
+
+.farsi_num{
+  letter-spacing: 2px;
+}
+.eng_num{
+  font-family: $latinFont;
+}

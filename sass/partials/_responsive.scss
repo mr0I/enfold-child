@@ -52,6 +52,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .template-page #first_box{
+    margin-top: -125px;
+  }
+  .middle_banner{
+    min-height: 225px !important;
+  }
+  .home_specs_grid {
+    width: auto !important;
+  }
   #box-widget-icon {
     padding-top: 0 !important;
   }

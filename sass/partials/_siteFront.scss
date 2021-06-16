@@ -2292,8 +2292,12 @@ ul.avia-icon-list{
 }
 // avia icons list
 
+
 .woocommerce-mini-cart__buttons.buttons{
   a{
     font-family: $textFont;
   }
+}
+.wpsp-slider-section #sp-woo-product-slider-pro14780.wpsp-product-section .slick-slide{
+  margin-left: 0 !important;
 }

@@ -211,27 +211,27 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                             <div class="col-lg-4 col-md-4 col-sm-12">
                                 <h6 class="twoWords">واحد بازرگانی</h6>
                                 <ul style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
-                                    <li class="col-6">03132362894</li>
-                                    <li class="col-6">03132362947</li>
-                                    <li class="col-6">09124735787</li>
-                                    <li class="col-6">09124839402</li>
+                                    <li class="col-6 farsi_num">03132362894</li>
+                                    <li class="col-6 farsi_num">03132362947</li>
+                                    <li class="col-6 farsi_num">09124735787</li>
+                                    <li class="col-6 farsi_num">09124839402</li>
                                 </ul>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12">
                                 <h6 class="twoWords">واحد پشتیبانی</h6>
                                 <ul id="support_unit" style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
-                                    <li class="col-lg-4 col-md-4 col-sm-6">03195016151</li>
-                                    <li class="col-lg-4 col-md-4 col-sm-6">03132363078</li>
-                                    <li class="col-lg-4 col-md-4 col-sm-6">09018377198</li>
-                                    <li class="col-lg-4 col-md-4 col-sm-6">09018377021</li>
-                                    <li class="col-lg-4 col-md-4 col-sm-6">09018377021</li>
-                                    <li class="col-lg-4 col-md-4 col-sm-6">09901883981</li>
+                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num">03195016151</li>
+                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num">03132363078</li>
+                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num">09018377198</li>
+                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num">09018377021</li>
+                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num">09018377021</li>
+                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num">09901883981</li>
                                 </ul>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12">
                                 <h6 class="oneWord"> فکس </p></h6>
                                 <ul style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
-                                    <li class="col-12">03132362788 (داخلی 23)</li>
+                                    <li class="col-12"><span class="farsi_num">03132362788</span> (داخلی 23)</li>
                                 </ul>
                             </div>
                         </div>

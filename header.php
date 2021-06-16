@@ -98,21 +98,14 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
 
 
 <!-- Custom Code -->
-<div class="custom-header">
-    <div class="custom-header-container">
-        <ul>
-            <li><span>   واحد بازرگانی  <a href="tel:03132362894" class="phoneNumber">03132362894</a> </span></li>
-            <li><span>   واحد پشتیبانی  <a href="tel:03195016151" class="phoneNumber">03195016151</a> </span></li>
-        </ul>
-    </div>
-
-<!--    <div class="header_phones">-->
-<!--        <a><span><i class="ic-headset_mic"></i></span><span class="phoneNumber">03195016151</span><span class="unit_title"> واحد پشتیبانی</span></a>-->
-<!--        <a><span><i class="ic-old-phone"></i></span><span class="phoneNumber">03132362894</span><span class="unit_title"> واحد بازرگانی</span></a>-->
+<!--<div class="custom-header">-->
+<!--    <div class="custom-header-container">-->
+<!--        <ul>-->
+<!--            <li><span>   واحد بازرگانی  <a href="tel:03132362894" class="phoneNumber">03132362894</a> </span></li>-->
+<!--            <li><span>   واحد پشتیبانی  <a href="tel:03195016151" class="phoneNumber">03195016151</a> </span></li>-->
+<!--        </ul>-->
 <!--    </div>-->
-</div>
-
-
+<!--</div>-->
 
 <div class="progress" id="scroll-bar">
     <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>

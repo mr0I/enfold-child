@@ -96,7 +96,6 @@ jQuery(document).ready(function($){
     } , 4000);
 
 
-
     $('.header_phones').find('a').hover(function () {
         $(this).find('i').css('color', '#d91e18');
     } , function () {
