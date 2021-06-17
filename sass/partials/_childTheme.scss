@@ -384,7 +384,7 @@ footer .footer-social-btns i{
       span{
         color: $primaryTextColor;
         font-family: $textFont ;
-        font-size: 75%;
+        font-size: 65%;
         font-weight: bold;
       }
       i{
@@ -1204,7 +1204,30 @@ article#guarantee_vector .iconbox_icon::before{
   text-align: justify;
   padding: 0 8px;
 }
+#header_meta {
+  padding: 8px;
+  background-color: #1c272b !important;
+  .phone-info{
+    span{
+      font-size: 115%;
+      color: #EEEEEE !important;
+      font-weight: normal;
+    }
+  }
+  .sub_menu{
+    li.menu-item {
+      border-color: #EEEEEE !important;
+      a{
+        color: #EEEEEE !important;
+        font-size: 115%;
+      }
+    }
+  }
+}
 
+#main .container_wrap{
+  padding:45px 0;
+}
 /* End Demo Styles */
 
 .farsi_num{

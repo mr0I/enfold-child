@@ -52,8 +52,17 @@
 }
 
 @media screen and (max-width: 768px) {
-  .template-page #first_box{
-    margin-top: -125px;
+  #header_meta {
+    .phone-info{
+      display: none;
+    }
+  }
+
+  #main #full_slider_1{
+    margin-top:110px;
+  }
+  #first_box{
+    margin-top: 85px !important;
   }
   .middle_banner{
     min-height: 225px !important;
@@ -608,10 +617,10 @@
     }
   }
   li#menu-item-search {
-    left: 90px;
+    left: 95px;
   }
   .responsive #top #wrap_all .main_menu {
-    left: -75px !important;
+    left: -85px !important;
   }
   .title_container .breadcrumb {
     right: -4px !important;
@@ -913,6 +922,17 @@
   .woo-docs-tab p{
     font-size: 100% !important;
   }
+
+  .fourth-row {
+    .fourth-row-container{
+      .copyrightText{
+        span{
+          font-size: 75%;
+        }
+      }
+    }
+  }
+
 }
 
 @media screen and (max-width: 300px) {

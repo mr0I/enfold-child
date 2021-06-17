@@ -40,7 +40,8 @@ input[type=submit]{
 }
 
 ul#avia-menu {
-  margin-right: 20px;
+  //margin-right: 20px;
+  margin: auto !important;
 }
 ul#avia-menu li.current-menu-item > a{
   color: $primaryColor !important;
@@ -66,11 +67,11 @@ ul#avia-menu li.current-menu-item>a i{
   border-top: none;
 }
 
-#header_main span.logo{
-  position: absolute !important;
-  right: 90px !important;
-  top: 10px;
-}
+//#header_main span.logo{
+//  position: absolute !important;
+//  right: 90px !important;
+//  top: 10px;
+//}
 
 #header_main .container, .main_menu ul:first-child>li a {
   height: 65px;
@@ -156,15 +157,19 @@ ul#avia-menu li.current-menu-item>a i{
 }
 
 ul.menu-item.cart_dropdown {
-  top: 113px;
-  left: 425px;
+  top: 70px;
+  left: unset;
   float: left;
-  right: unset !important;
+  right: 10px !important;
   border: none;
 }
 
+.cart_dropdown .dropdown_widget{
+  left: unset !important;
+}
+
 ul.menu-item.cart_dropdown .cart_dropdown_link {
-  font-size: 125% !important;
+  font-size: 150% !important;
   color: $AccentColor;
   background-color: transparent;
 }
@@ -179,7 +184,7 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 
 li#menu-item-search {
   float: left !important;
-  left: 365px;
+  //left: unset;
 }
 
 #top .main_menu .menu li.av-menu-button-colored:hover{
@@ -188,9 +193,9 @@ li#menu-item-search {
 .avia-search-tooltip.avia-tt{
   left: -105px !important;
 }
-.html_header_top .av_bottom_nav_header #header_main_alternate .main_menu ul:first-child > li > a {
-  line-height: 45px !important;
-}
+//.html_header_top .av_bottom_nav_header #header_main_alternate .main_menu ul:first-child > li > a {
+//  line-height: 45px !important;
+//}
 .html_header_top.html_header_sticky #header {
   top: -1px;
 }
@@ -2259,7 +2264,6 @@ ul.payment_methods .payment_box{
 #top .avia_cart_buttons .button{
   line-height: 1.6 !important;
 }
-
 
 // full size avia images (single posts)
 .avia-image-container{

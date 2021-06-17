@@ -383,7 +383,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
     <div class="floated_icons_footer">
         <div class="fif-container">
             <a href="<?= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?>" title="ورود به فروشگاه">
-                <i class="ic-shopping-cart"></i>
+                <img src="<?php echo get_stylesheet_directory_uri().'/images/shop.png' ; ?>" width="22" height="22" alt="ورود به فروشگاه">
                 <span>فروشگاه</span>
             </a>
             <a href="https://www.instagram.com/radshid_com/" title="اینستاگرام رادشید" rel="nofollow" target="_blank">
@@ -541,8 +541,9 @@ if (is_user_logged_in()){
     ?>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
-            let my_account_elm = $('ul.menu.av-main-nav').find('li.menu-item.menu-item-top-level-9');
-            my_account_elm.find('span.avia-menu-text').html('<i class="ic-user1"></i>حساب کاربری');
+            let my_account_elm = $('ul#avia2-menu').find('li#menu-item-16014');
+            // let my_account_elm = $('ul.menu.av-main-nav').find('li.menu-item.menu-item-top-level-9');
+            my_account_elm.find('a').html('حساب کاربری');
         })
     </script>
     <?php
@@ -566,8 +567,8 @@ if (is_user_logged_in()){
             if(elm == null){
                 $('#avia-menu').remove('<li id="menu-item-999"</li>');
             }
-            let my_account_elm = $('ul.menu.av-main-nav').find('li.menu-item.menu-item-top-level-9');
-            my_account_elm.find('span.avia-menu-text').html('<i class="ic-user1"></i>ورود / ثبت نام');
+            let my_account_elm = $('ul#avia2-menu').find('li#menu-item-16014');
+            my_account_elm.find('a').html('ورود / ثبت نام');
         })
     </script>
 <?php
