@@ -19,8 +19,8 @@ blockquote {
   color: #EEEEEE;
 }
 
-input[type=submit]{
-  font-family: $textFont;
+input[type=submit] , input[type=text] {
+  font-family: $textFont !important;
 }
 
 /* Header */
@@ -1451,7 +1451,7 @@ img.full-width-img{
       color: $primaryDarkColor;
     }
     &::before{
-      content: "";
+      content: "قیمت: ";
       color: initial;
     }
   }
@@ -2157,9 +2157,6 @@ a.wc-backward {
 }#top div ul.product_list_widget li .star-rating ,#top div ul.product_list_widget li .woocommerce-Price-amount  {
    display:none;
  }
-//#top div ul.product_list_widget li a img{
-//  width: 60px !important;
-//}
 .inner_product_header .avia-arrow{
   z-index: 0 !important;
 }
@@ -2305,3 +2302,23 @@ ul.avia-icon-list{
 .wpsp-slider-section #sp-woo-product-slider-pro14780.wpsp-product-section .slick-slide{
   margin-left: 0 !important;
 }
+
+// Flipbook
+.flipbook-main-wrapper{
+  border-radius:0 !important;
+}
+.flipbook-bookLayer {
+  top:0 !important;
+  bottom:100px !important;
+}
+.flipbook-menuTop{
+  border-radius:0 !important;
+}
+// Flipbook
+
+
+// Hide in_stock from woocommece
+p.stock.in-stock{
+  display:none;
+}
+// Hide in_stock from woocommece

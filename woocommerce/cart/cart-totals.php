@@ -105,6 +105,9 @@ defined( 'ABSPATH' ) || exit;
 
 	<div class="wc-proceed-to-checkout">
 		<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>
+
+        <a href="<?= get_permalink( woocommerce_get_page_id( 'shop' ) ); ?>" class="button alt">
+            بازگشت به فروشگاه</a>
 	</div>
 
 	<?php do_action( 'woocommerce_after_cart_totals' ); ?>

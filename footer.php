@@ -579,9 +579,22 @@ if (is_user_logged_in()){
  * generally use this hook to reference JavaScript files.
  */
 
+
+
+
+
 wp_footer();
 ?>
 
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-59846784-2"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-59846784-2');
+</script>
 
 </body>
 </html>

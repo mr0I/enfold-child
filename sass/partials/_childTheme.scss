@@ -1225,8 +1225,12 @@ article#guarantee_vector .iconbox_icon::before{
   }
 }
 
-#main .container_wrap{
-  padding:45px 0;
+#top .title_container .container {
+  margin-top: 46px;
+}
+
+.avia-slideshow , .avia-slideshow-inner , li.av-single-slide{
+  border-radius:0 !important;
 }
 /* End Demo Styles */
 

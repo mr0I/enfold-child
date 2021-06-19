@@ -310,38 +310,80 @@ function add_defer_attribute($tag, $handle) {
 }
 
 
+
+
+
+/*
+Plugin Name: Remove Email Field
+Description: Removes the Email field from the comments form
+*/
+//add_filter('comment_form_default_fields', 'url_filtered');
+//function url_filtered($fields)
+//{
+//	if(isset($fields['email']))
+//		unset($fields['email']);
+//	return $fields;
+//}
+
 /* Start Recaptcha */
-function add_google_recaptcha($submit_field) {
-	$submit_field['submit_field'] = '<div class="g-recaptcha" data-sitekey="6LfZS6gZAAAAAC5BMOsbcNQYDqtQm6puHeUmjlid"></div><br>' . $submit_field['submit_field'];
-	return $submit_field;
-}
-if (!is_user_logged_in()) {
-	add_filter('comment_form_defaults','add_google_recaptcha');
-}
-function is_valid_captcha($captcha) {
-	$captcha_postdata = http_build_query(array(
-		'secret' => '6LfZS6gZAAAAAKtbN3kOXbdrjyZZcKUwt8ondcKE',
-		'response' => $captcha,
-		'remoteip' => $_SERVER['REMOTE_ADDR']));
-	$captcha_opts = array('http' => array(
-		'method'  => 'POST',
-		'header'  => 'Content-type: application/x-www-form-urlencoded',
-		'content' => $captcha_postdata));
-	$captcha_context  = stream_context_create($captcha_opts);
-	$captcha_response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify" , false , $captcha_context), true);
-	if ($captcha_response['success'])
-		return true;
-	else
-		return false;
-}
-function verify_google_recaptcha() {
-	$recaptcha = $_POST['g-recaptcha-response'];
-	if (empty($recaptcha))
-		wp_die( __("<b>خطا:</b>لطفا کد امنیتی را تایید کنید!<p><a href='javascript:history.back()'>« بازگشت</a></p>"));
-	else if (!is_valid_captcha($recaptcha))
-		wp_die( __("<b>Go away Spammer!</b>"));
-}
-if (!is_user_logged_in()) {
-	add_action('pre_comment_on_post', 'verify_google_recaptcha');
-}
+//function add_google_recaptcha($submit_field) {
+//	$submit_field['submit_field'] = '<div class="g-recaptcha" data-sitekey="6LfZS6gZAAAAAC5BMOsbcNQYDqtQm6puHeUmjlid"></div><br>' . $submit_field['submit_field'];
+//	return $submit_field;
+//}
+//if (!is_user_logged_in()) {
+//	add_filter('comment_form_defaults','add_google_recaptcha');
+//}
+//function is_valid_captcha($captcha) {
+//	$captcha_postdata = http_build_query(array(
+//		'secret' => '6LfZS6gZAAAAAKtbN3kOXbdrjyZZcKUwt8ondcKE',
+//		'response' => $captcha,
+//		'remoteip' => $_SERVER['REMOTE_ADDR']));
+//	$captcha_opts = array('http' => array(
+//		'method'  => 'POST',
+//		'header'  => 'Content-type: application/x-www-form-urlencoded',
+//		'content' => $captcha_postdata));
+//	$captcha_context  = stream_context_create($captcha_opts);
+//	$captcha_response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify" , false , $captcha_context), true);
+//	if ($captcha_response['success'])
+//		return true;
+//	else
+//		return false;
+//}
+//function verify_google_recaptcha() {
+//	$recaptcha = $_POST['g-recaptcha-response'];
+//	if (empty($recaptcha))
+//		wp_die( __("<b>خطا:</b>لطفا کد امنیتی را تایید کنید!<p><a href='javascript:history.back()'>« بازگشت</a></p>"));
+//	else if (!is_valid_captcha($recaptcha))
+//		wp_die( __("<b>Go away Spammer!</b>"));
+//}
+//if (!is_user_logged_in()) {
+//	add_action('pre_comment_on_post', 'verify_google_recaptcha');
+//}
 /* End Recaptcha */
+
+
+
+
+/*
+** Show message after comment
+*/
+add_action( 'set_comment_cookies', function( $comment, $user ) {
+	setcookie( 'ta_comment_wait_approval', '1' );
+}, 10, 2 );
+add_action( 'init', function() {
+	if( $_COOKIE['ta_comment_wait_approval'] === '1' ) {
+		setcookie( 'ta_comment_wait_approval', null, time() - 3600, '/' );
+		add_action( 'comment_form_before', function() {
+			echo '<script type="text/javascript"> const TopToast = Swal.mixin({toast: true, position: "bottom-start", showConfirmButton: false, timer: 3500, background: "#1c272b", timerProgressBar: true, didOpen: (toast) => {toast.addEventListener("mouseenter", Swal.stopTimer);toast.addEventListener("mouseleave", Swal.resumeTimer)}});TopToast.fire({ icon: "success", title: "نظر شما ثبت شد و پس از تایید نمایش داده می شود." });</script>';
+		});
+	}
+});
+add_filter( 'comment_post_redirect', function( $location, $comment ) {
+	$location = get_permalink( $comment->comment_post_ID ) . '#wait_approval';
+	return $location;
+}, 10, 2 );
+
+?>
+
+
+
