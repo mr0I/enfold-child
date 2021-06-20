@@ -310,9 +310,6 @@ function add_defer_attribute($tag, $handle) {
 }
 
 
-
-
-
 /*
 Plugin Name: Remove Email Field
 Description: Removes the Email field from the comments form
@@ -360,8 +357,6 @@ Description: Removes the Email field from the comments form
 //	add_action('pre_comment_on_post', 'verify_google_recaptcha');
 //}
 /* End Recaptcha */
-
-
 
 
 /*

@@ -88,7 +88,7 @@ ul#avia-menu li.current-menu-item>a i{
   }
 }
 #top .main_menu .sub-menu li a {
-  font-size: 75%;
+  font-size: 85%;
 }
 #top #wrap_all #header .av-menu-button>a {
   margin: 0 auto;
@@ -892,9 +892,8 @@ span.copyright{
   font-size: 80%;
 }
 
-
-.inner_product_header{
-  border-radius: 0;
+#top .inner_product_header{
+  border-radius: 0 !important;
 }
 .inner_product_header .inner_product_header_cell h2{
   text-align: center;
@@ -916,13 +915,10 @@ span.copyright{
   background-color: $primaryColor !important;
   z-index: 1;
 }
-
 // customize crsip icon
 .crisp-x94m06{
   background-color: $primaryDarkColor !important;
 }
-
-
 
 #scroll-top-link{
   width: 50px;
@@ -2304,15 +2300,12 @@ ul.avia-icon-list{
 }
 
 // Flipbook
-.flipbook-main-wrapper{
+.flipbook-main-wrapper, .flipbook-menuTop{
   border-radius:0 !important;
 }
 .flipbook-bookLayer {
   top:0 !important;
   bottom:100px !important;
-}
-.flipbook-menuTop{
-  border-radius:0 !important;
 }
 // Flipbook
 
