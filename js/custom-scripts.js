@@ -23,13 +23,12 @@
             });
         }
 
+        // Start Goftino
+        !function(){var a=window,d=document;function g(){var g=d.createElement("script"),i="lXpDBP",s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.type="text/javascript",g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+
     })
 })(jQuery);
 jQuery(document).ready(function($){
-
-    // Start Goftino
-    !function(){var a=window,d=document;function g(){var g=d.createElement("script"),i="lXpDBP",s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.type="text/javascript",g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
-
     // Inits
     const toolTips = $('[data-toggle="tooltip"]');
     toolTips.tooltip({
@@ -51,7 +50,7 @@ jQuery(document).ready(function($){
 
 
     // Add Material icons
-    $('.single_add_to_cart_button').html('<i class="ic-cart"></i>  افزودن به سبد خرید');
+    $('.single_add_to_cart_button').html('افزودن به سبد خرید');
     $('.cart_dropdown_link').find('span:first-child').html('<i class="ic-cart my-2"></i>');
 
 
@@ -100,10 +99,13 @@ jQuery(document).ready(function($){
         $(this).find('i').css('color', '#d91e18');
     } , function () {
         $(this).find('i').css('color', '#616161');
-    })
+    });
+
+
+    // Add Down Arrows to Home Slider
+    $('#full_slider_1').append(' <svg class="arrows" onclick="scroll_to_column_boxes()"> <path class="a1" d="M0 0 L30 32 L60 0"></path> <path class="a2" d="M0 20 L30 52 L60 20"></path> <path class="a3" d="M0 40 L30 72 L60 40"></path> </svg>');
 
 });
-
 
 /* Toasts */
 const swalWithBootstrapButtons = Swal.mixin({
@@ -114,7 +116,6 @@ const swalWithBootstrapButtons = Swal.mixin({
     buttonsStyling: false
 });
 /* Toasts */
-
 
 // Copy to Clipboard
 function copyStringToClipboard (str) {
@@ -141,7 +142,9 @@ function copyToClip(event) {
         timer: 2000
     });
 }
-
+function scroll_to_column_boxes() {
+    document.getElementById("first_box").scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
 
 
 

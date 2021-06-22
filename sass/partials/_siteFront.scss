@@ -24,9 +24,6 @@ input[type=submit] , input[type=text] {
 }
 
 /* Header */
-.main_menu .menu ul {
-  top: 42px;
-}
 .av-main-nav li:hover .avia-menu-fx, .current-menu-item > a > .avia-menu-fx, .av-main-nav li:hover .current_page_item > a > .avia-menu-fx {
   visibility: hidden;
 }
@@ -59,36 +56,45 @@ ul#avia-menu li.current-menu-item>a i{
 }
 
 // Navbar
-#header_main .container.av-logo-container {
-  width: 100% !important;
+.main_menu{
+  right: 24px !important;
+}
+#header_main {
+  .container.av-logo-container {
+    width: 100% !important;
+  }
+  span.logo{
+    position: absolute !important;
+    right: unset;
+    top: 0;
+    left: 20px;
+    img{
+      padding:8px !important;
+    }
+  }
+  .container, .main_menu ul:first-child>li a {
+    height: 65px;
+    line-height: 65px;
+  }
+
 }
 
 #header_main_alternate {
   border-top: none;
 }
 
-//#header_main span.logo{
-//  position: absolute !important;
-//  right: 90px !important;
-//  top: 10px;
-//}
-
-#header_main .container, .main_menu ul:first-child>li a {
-  height: 65px;
-  line-height: 65px;
-}
 #top .av_header_transparency .avia-menu-fx{
   display: none;
 }
 #top .main_menu .menu li {
   margin: auto;
-  top: 6px;
+  top: 13px;
   a {
-    font-size: 85%;
+    font-size: 90%;
   }
 }
 #top .main_menu .sub-menu li a {
-  font-size: 85%;
+  font-size: 90%;
 }
 #top #wrap_all #header .av-menu-button>a {
   margin: 0 auto;
@@ -157,10 +163,10 @@ ul#avia-menu li.current-menu-item>a i{
 }
 
 ul.menu-item.cart_dropdown {
-  top: 70px;
+  top: 50px;
   left: unset;
   float: left;
-  right: 10px !important;
+  right: 700px !important;
   border: none;
 }
 
@@ -169,7 +175,7 @@ ul.menu-item.cart_dropdown {
 }
 
 ul.menu-item.cart_dropdown .cart_dropdown_link {
-  font-size: 150% !important;
+  font-size: 135% !important;
   color: $AccentColor;
   background-color: transparent;
 }
@@ -193,9 +199,6 @@ li#menu-item-search {
 .avia-search-tooltip.avia-tt{
   left: -105px !important;
 }
-//.html_header_top .av_bottom_nav_header #header_main_alternate .main_menu ul:first-child > li > a {
-//  line-height: 45px !important;
-//}
 .html_header_top.html_header_sticky #header {
   top: -1px;
 }
@@ -994,9 +997,9 @@ h3.slide-entry-title a{
   right: 50px;
 }
 
-.avia-content-slider-inner{
-  min-height:500px;
-}
+//.avia-content-slider-inner{
+//  min-height:500px;
+//}
 
 .inner_product_header{
   min-height:150px !important;
@@ -2090,7 +2093,7 @@ td.actions .coupon {
 
 /* Breadcrumbs style*/
 .title_container {
-  height:100px;
+  height:auto;
 }
 .title_container .main-title  a{
   font-size: 100%;
@@ -2315,3 +2318,39 @@ p.stock.in-stock{
   display:none;
 }
 // Hide in_stock from woocommece
+
+
+// Pdf Catalogs
+.catalog-shelf{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  background: linear-gradient(to left , transparent , transparent), url('https://radshid.com/wp-content/uploads/2021/06/shelf_wood.png');
+  background-repeat: no-repeat;
+  background-attachment: unset;
+  background-position: bottom;
+  background-size: auto;
+}
+.catalog-shelf div[class^="real3dflipbook"]{
+  margin-bottom: 60px;
+}
+.catalog-shelf div[class^="real3dflipbook"] img{
+  width:125px;
+  height:auto;
+  box-shadow: 0 0 8px 4px #bdbdbd;
+}
+.catalog-links p{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.catalog-links p a{
+  width:20%;
+  font-size:85%;
+}
+// Pdf Catalogs

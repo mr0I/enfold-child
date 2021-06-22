@@ -52,6 +52,44 @@
 }
 
 @media screen and (max-width: 768px) {
+  // Start Demo Styles
+  .column_box{
+    padding:8px 16px !important;
+  }
+  .column_box p{
+    text-align: justify !important;
+    text-align-last: right;
+    font-size: 85%;
+  }
+  .column_box h4{
+    margin-top:0 !important;
+  }
+  #first_box{
+    margin-top: 85px !important;
+  }
+  .middle_banner{
+    min-height: 225px !important;
+  }
+  #full_slider_1{
+    .arrows {
+      display: none;
+    }
+  }
+  // End Demo Styles
+
+  .post-entry {
+    margin: 40px auto;
+  }
+  .catalog-shelf{
+    flex-flow: row wrap;
+    background:none;
+  }
+  .catalog-shelf div[class^="real3dflipbook"]{
+    margin-bottom: 24px;
+  }
+  .catalog-shelf div[class^="real3dflipbook"] img{
+    width:auto;
+  }
   .flipbook-bookLayer {
     top:50px !important;
     bottom:0 !important;
@@ -64,12 +102,6 @@
 
   #main #full_slider_1{
     margin-top:110px;
-  }
-  #first_box{
-    margin-top: 85px !important;
-  }
-  .middle_banner{
-    min-height: 225px !important;
   }
   .home_specs_grid {
     width: auto !important;
@@ -116,11 +148,12 @@
   }
 
   form.cart button[type='submit']{
-    font-size: 115% !important;
+    font-size: 100% !important;
     width: 100%;
     margin: 15px auto;
+    padding: 0 !important;
     i{
-      vertical-align: top;
+      vertical-align: sub;
       font-size: 115%;
     }
   }
@@ -440,8 +473,8 @@
 
   #top .title_container .container {
     padding-top: 100px !important;
+    margin-top: 45px !important;
   }
-
   .responsive #top #wrap_all #header{
     position: fixed !important;
   }

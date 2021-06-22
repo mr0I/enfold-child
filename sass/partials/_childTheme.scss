@@ -726,10 +726,6 @@ footer .footer-social-btns i{
 #social_icons a i.fa-telegram:hover{
   color: $telegramColor;
 }
-.alternate_color, .alternate_color .site-background, .alternate_color .first-quote, .alternate_color .related_image_wrap, .alternate_color .gravatar img .alternate_color .hr_content, .alternate_color .news-thumb, .alternate_color .post-format-icon, .alternate_color .ajax_controlls a, .alternate_color .tweet-text.avatar_no, .alternate_color .toggler, .alternate_color .toggler.activeTitle:hover, .alternate_color #js_sort_items, .alternate_color.inner-entry, .alternate_color .grid-entry-title, .alternate_color .related-format-icon, .grid-entry .alternate_color .avia-arrow, .alternate_color .avia-gallery-big, .alternate_color .avia-gallery-big, .alternate_color .avia-gallery img, .alternate_color .grid-content, .alternate_color .av-share-box ul, #top .alternate_color .av-related-style-full .related-format-icon, .alternate_color .related_posts.av-related-style-full a:hover, .alternate_color.avia-fullwidth-portfolio .pagination .current, .alternate_color.avia-fullwidth-portfolio .pagination a, .alternate_color .av-hotspot-fallback-tooltip-inner, .alternate_color .av-hotspot-fallback-tooltip-count {
-  margin-top: 35px;
-}
-
 .fourth-row{
   width: 92%;
   margin: auto;
@@ -1155,19 +1151,23 @@ footer .footer-social-btns i{
 }
 article#melli_vector .iconbox_icon::before{
   font-family: unset !important;
-  content: url('https://radshid.com/wp-content/uploads/2021/06/tolide_melii-1.jpg');
+  vertical-align: -35%;
+  content: url('https://radshid.com/wp-content/uploads/2021/06/tolidemelli_vector.jpg');
 }
 article#samaneh_vector .iconbox_icon::before{
   font-family: unset !important;
-  content: url('https://radshid.com/wp-content/uploads/2021/06/samaneh_vector.jpg');
+  vertical-align: -35%;
+  content: url('https://radshid.com/wp-content/uploads/2021/06/tech_vector.jpg');
 }
 article#price_vector .iconbox_icon::before{
   font-family: unset !important;
-  content: url('https://radshid.com/wp-content/uploads/2021/06/price_vector.jpg');
+  vertical-align: -35%;
+  content: url('https://radshid.com/wp-content/uploads/2021/06/consulting_vector.jpg');
 }
 article#guarantee_vector .iconbox_icon::before{
   font-family: unset !important;
-  content: url('https://radshid.com/wp-content/uploads/2021/06/gurantine_vector.jpg');
+  vertical-align: -35%;
+  content: url('https://radshid.com/wp-content/uploads/2021/06/gurantine_vector-2.jpg');
 }
 #tablet_vector span.av-icon-char::before{
   font-family: unset !important;
@@ -1226,11 +1226,71 @@ article#guarantee_vector .iconbox_icon::before{
 }
 
 #top .title_container .container {
-  margin-top: 46px !important;
+  margin-top: 0 !important;
 }
 
 .avia-slideshow , .avia-slideshow-inner , li.av-single-slide{
   border-radius:0 !important;
+}
+#full_slider_1{
+  position: relative;
+  .arrows {
+    width: 60px;
+    height: 72px;
+    position: absolute;
+    left: 50%;
+    margin-left: -30px;
+    bottom: 100px;
+    cursor: pointer;
+    z-index: 10;
+  }
+  .arrows path {
+    stroke: red;
+    fill: transparent;
+    stroke-width: 2px;
+    animation: arrow 2.5s infinite;
+    -webkit-animation: arrow 2.5s infinite;
+  }
+  .arrows path.a1 {
+    animation-delay:-1s;
+    -webkit-animation-delay:-1s; /* Safari 和 Chrome */
+  }
+  .arrows path.a2 {
+    animation-delay:-0.5s;
+    -webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+  }
+  .arrows path.a3 {
+    animation-delay:0s;
+    -webkit-animation-delay:0s; /* Safari 和 Chrome */
+  }
+}
+
+@keyframes arrow
+{
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+}
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+  0% {opacity:0}
+  40% {opacity:1}
+  80% {opacity:0}
+  100% {opacity:0}
+}
+// down arrows
+
+.customers_carousel{
+  width: 100%;
+}
+.avia-slideshow-arrows.avia-slideshow-controls{
+  width: 100% !important;
+  .prev-slide , .next-slide{
+    font-size: 2em !important;
+    top: 85px !important;
+    color: $secondaryTextColor !important;
+  }
 }
 /* End Demo Styles */
 
