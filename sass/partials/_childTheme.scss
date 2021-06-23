@@ -1224,16 +1224,12 @@ article#guarantee_vector .iconbox_icon::before{
     }
   }
 }
-
-#top .title_container .container {
-  margin-top: 0 !important;
-}
-
 .avia-slideshow , .avia-slideshow-inner , li.av-single-slide{
   border-radius:0 !important;
 }
 #full_slider_1{
   position: relative;
+  margin-top: 100px;
   .arrows {
     width: 60px;
     height: 72px;
@@ -1265,6 +1261,9 @@ article#guarantee_vector .iconbox_icon::before{
   }
 }
 
+#top .title_container .container {
+  margin-top: 0 !important;
+}
 @keyframes arrow
 {
   0% {opacity:0}
@@ -1289,7 +1288,7 @@ article#guarantee_vector .iconbox_icon::before{
   .prev-slide , .next-slide{
     font-size: 2em !important;
     top: 85px !important;
-    color: $secondaryTextColor !important;
+    color: $AccentColor !important;
   }
 }
 /* End Demo Styles */

@@ -284,7 +284,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
             </div>
         </div>
         <div class="fourth-row">
-            <div class="container-fluid mt-1">
+            <div class="mt-1">
                 <div class="fourth-row-container">
                     <div class="copyrightText" style="user-select: none;">
                         <span>تمامی حقوق این سایت متعلق به شرکت مهندسی رادشید است.</span>
@@ -543,7 +543,7 @@ if (is_user_logged_in()){
         jQuery(document).ready(function($) {
             let my_account_elm = $('ul#avia2-menu').find('li#menu-item-16014');
             // let my_account_elm = $('ul.menu.av-main-nav').find('li.menu-item.menu-item-top-level-9');
-            my_account_elm.find('a').html('حساب کاربری');
+            my_account_elm.find('a').html('<i class="ic-user align-text-top mx-1"></i>حساب کاربری');
         })
     </script>
     <?php
@@ -568,7 +568,7 @@ if (is_user_logged_in()){
                 $('#avia-menu').remove('<li id="menu-item-999"</li>');
             }
             let my_account_elm = $('ul#avia2-menu').find('li#menu-item-16014');
-            my_account_elm.find('a').html('ورود / ثبت نام');
+            my_account_elm.find('a').html('<i class="ic-user align-text-top mx-1"></i> ورود / ثبت نام');
         })
     </script>
 <?php

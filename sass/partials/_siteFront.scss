@@ -20,7 +20,7 @@ blockquote {
 }
 
 input[type=submit] , input[type=text] {
-  font-family: $textFont !important;
+  font-family: $textFont;
 }
 
 /* Header */
@@ -56,8 +56,8 @@ ul#avia-menu li.current-menu-item>a i{
 }
 
 // Navbar
-.main_menu{
-  right: 24px !important;
+#avia-menu{
+  right: 24px;
 }
 #header_main {
   .container.av-logo-container {
@@ -73,8 +73,8 @@ ul#avia-menu li.current-menu-item>a i{
     }
   }
   .container, .main_menu ul:first-child>li a {
-    height: 65px;
-    line-height: 65px;
+    height: 50px;
+    line-height: 50px;
   }
 
 }
@@ -88,13 +88,13 @@ ul#avia-menu li.current-menu-item>a i{
 }
 #top .main_menu .menu li {
   margin: auto;
-  top: 13px;
+  top: 15px;
   a {
     font-size: 90%;
   }
 }
 #top .main_menu .sub-menu li a {
-  font-size: 90%;
+  font-size: 75%;
 }
 #top #wrap_all #header .av-menu-button>a {
   margin: 0 auto;
@@ -162,6 +162,8 @@ ul#avia-menu li.current-menu-item>a i{
   display: inline-block;
 }
 
+
+// Cart Styles
 ul.menu-item.cart_dropdown {
   top: 50px;
   left: unset;
@@ -169,16 +171,19 @@ ul.menu-item.cart_dropdown {
   right: 700px !important;
   border: none;
 }
-
 .cart_dropdown .dropdown_widget{
   left: unset !important;
+  .avia-arrow{
+    display: none;
+  }
 }
-
 ul.menu-item.cart_dropdown .cart_dropdown_link {
   font-size: 135% !important;
   color: $AccentColor;
   background-color: transparent;
 }
+
+// Cart Styles
 
 #top .av-cart-counter {
   font-family: $textFont !important;
@@ -421,16 +426,16 @@ span.comment-container.minor-meta {
     line-height: 1.6;
   }
   h1{
-    font-size: 125%;
+    font-size: 175%;
     margin: 20px auto;
   }
   h2{
-    font-size: 115% !important;
+    font-size: 150% !important;
     padding: 0;
     margin-top: 20px;
   }
   h3,h4{
-    font-size: 100% !important;
+    font-size: 115% !important;
     padding: 0;
     margin-top: 20px;
   }
@@ -1162,7 +1167,7 @@ ul.sub-menu li.menu-item-has-children >a::after{
   content: "\e939";
   font-family: mycon;
   position: absolute;
-  left: 8px;
+  left: 0;
   top: 25%;
 }
 
@@ -2320,6 +2325,10 @@ p.stock.in-stock{
 // Hide in_stock from woocommece
 
 
+#top .flex_column_table{
+  margin-top:-100px !important;
+}
+
 // Pdf Catalogs
 .catalog-shelf{
   display: flex;
@@ -2335,22 +2344,36 @@ p.stock.in-stock{
   background-size: auto;
 }
 .catalog-shelf div[class^="real3dflipbook"]{
-  margin-bottom: 60px;
+  margin-bottom: 54px;
 }
 .catalog-shelf div[class^="real3dflipbook"] img{
   width:125px;
   height:auto;
   box-shadow: 0 0 8px 4px #bdbdbd;
 }
-.catalog-links p{
+.catalog-links-container{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: center;
-  align-items: center;
-  align-content: center;
+  margin-top: 24px;
+  .catalog-links{
+    text-align:center;
+    a{
+      font-size:75%;
+      color: #1c272b;
+      font-weight: bold;
+    }
+  }
 }
-.catalog-links p a{
-  width:20%;
-  font-size:85%;
+
+#catalog-links-mobile{
+  display: none;
+}
+
+#top #main .avia-section .template-page{
+  padding-bottom: 24px;
+}
+figcaption{
+  text-align:center;
 }
 // Pdf Catalogs

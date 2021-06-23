@@ -58,14 +58,14 @@
   }
   .column_box p{
     text-align: justify !important;
-    text-align-last: right;
-    font-size: 85%;
+    text-align-last: center;
+    font-size: 85% !important;
   }
   .column_box h4{
     margin-top:0 !important;
   }
   #first_box{
-    margin-top: 85px !important;
+    margin-top: 60px !important;
   }
   .middle_banner{
     min-height: 225px !important;
@@ -77,6 +77,9 @@
   }
   // End Demo Styles
 
+  .html_header_transparency #top .avia-builder-el-0 .container, .html_header_transparency #top .avia-builder-el-0 .slideshow_caption {
+    padding-top: 0 !important;
+  }
   .post-entry {
     margin: 40px auto;
   }
@@ -89,6 +92,17 @@
   }
   .catalog-shelf div[class^="real3dflipbook"] img{
     width:auto;
+  }
+  .catalog-links{
+    a{
+      font-size:100%;
+    }
+  }
+  #catalog-links-desktop{
+    display: none;
+  }
+  #catalog-links-mobile{
+    display: block;
   }
   .flipbook-bookLayer {
     top:50px !important;
@@ -275,6 +289,9 @@
     position: absolute !important;
     right: 35% !important;
     top: 0;
+    img{
+      padding: 0 !important;
+    }
   }
   .footer-aboutUs p{
     width: 95%;
@@ -902,6 +919,9 @@
       font-size: 100%;
     }
   }
+  .template-shop {
+    padding: 36px 0;
+  }
   .template-shop .inner_product .button{
     font-size: 80% !important;
   }
@@ -952,6 +972,9 @@
 }
 
 @media screen and (max-width: 400px) {
+  nav.sub_menu{
+    padding: 0 !important;
+  }
   #custom-footer .fr-element img{
     width: 45px;
   }

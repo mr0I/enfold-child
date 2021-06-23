@@ -128,6 +128,7 @@ function copyStringToClipboard (str) {
     document.execCommand('copy');
     document.body.removeChild(el);
 }
+
 function copyToClip(event) {
     event.preventDefault();
     let copyText = document.getElementById("short_link");
@@ -142,6 +143,7 @@ function copyToClip(event) {
         timer: 2000
     });
 }
+
 function scroll_to_column_boxes() {
     document.getElementById("first_box").scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
