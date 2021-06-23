@@ -1214,12 +1214,16 @@ article#guarantee_vector .iconbox_icon::before{
       font-weight: normal;
     }
   }
-  .sub_menu{
+  nav.sub_menu{
     li.menu-item {
       border-color: #EEEEEE !important;
       a{
         color: #EEEEEE !important;
         font-size: 115%;
+        i{
+          font-size: 150%;
+          vertical-align: middle !important;
+        }
       }
     }
   }

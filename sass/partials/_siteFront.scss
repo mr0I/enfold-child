@@ -165,7 +165,7 @@ ul#avia-menu li.current-menu-item>a i{
 
 // Cart Styles
 ul.menu-item.cart_dropdown {
-  top: 50px;
+  top: 45px;
   left: unset;
   float: left;
   right: 700px !important;
@@ -178,7 +178,7 @@ ul.menu-item.cart_dropdown {
   }
 }
 ul.menu-item.cart_dropdown .cart_dropdown_link {
-  font-size: 135% !important;
+  font-size: 100% !important;
   color: $AccentColor;
   background-color: transparent;
 }
@@ -981,30 +981,33 @@ h3.slide-entry-title a{
   color: #eee ;
 }
 
-.avia-table {
-  background-color: #ffffff !important;
-  border: 1px solid #EEEEEE;
-}
-.avia-table th{
-  border-radius: 0 !important;
-  vertical-align: middle;
-}
-.avia-table td{
-  background-color: $titleColor !important;
-  border-radius: 0 !important;
-  vertical-align: middle;
-  color: #eee !important;
-}
-.mfp-arrow-left {
-  left: 50px;
-}
-.mfp-arrow-right {
-  right: 50px;
-}
 
-//.avia-content-slider-inner{
-//  min-height:500px;
-//}
+// start specification table
+.tab_content table.avia-table , .woocommerce-Tabs-panel table.avia-table {
+  background-color: #ffffff !important;
+  border: 1px solid #ffffff;
+  td,th{
+    text-align: justify !important;
+    line-height: 2;
+    vertical-align: middle;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 0 !important;
+  }
+  th{
+    font-weight: normal;
+    background-color: #ffffff !important;
+    color: $titleColor !important;
+  }
+  td{
+    background-color: #ffffff !important;
+    color: $secondaryTextColor !important;
+    font-weight: normal !important;
+    font-size: 115% !important;
+    vertical-align: top;
+  }
+}
+// end specification table
+
 
 .inner_product_header{
   min-height:150px !important;
@@ -1947,7 +1950,7 @@ div.product .woocommerce-tabs ul.tabs li{
   ol ,ul{
     li{
       font-size: 100%;
-      line-height: 2.5;
+      line-height: 2;
       color: $secondaryTextColor;
     }
   }
