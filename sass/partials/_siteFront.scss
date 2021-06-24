@@ -24,6 +24,9 @@ input[type=submit] , input[type=text] {
 }
 
 /* Header */
+nav.sub_menu{
+  top: 2px !important;
+}
 .av-main-nav li:hover .avia-menu-fx, .current-menu-item > a > .avia-menu-fx, .av-main-nav li:hover .current_page_item > a > .avia-menu-fx {
   visibility: hidden;
 }
@@ -88,7 +91,7 @@ ul#avia-menu li.current-menu-item>a i{
 }
 #top .main_menu .menu li {
   margin: auto;
-  top: 15px;
+  top: 20px;
   a {
     font-size: 90%;
   }
@@ -165,7 +168,7 @@ ul#avia-menu li.current-menu-item>a i{
 
 // Cart Styles
 ul.menu-item.cart_dropdown {
-  top: 45px;
+  top: 50px;
   left: unset;
   float: left;
   right: 700px !important;
@@ -178,7 +181,7 @@ ul.menu-item.cart_dropdown {
   }
 }
 ul.menu-item.cart_dropdown .cart_dropdown_link {
-  font-size: 100% !important;
+  font-size: 135% !important;
   color: $AccentColor;
   background-color: transparent;
 }
@@ -451,7 +454,7 @@ span.comment-container.minor-meta {
     width: 100%;
     h1,h2,h3,h4{
       font-weight: bold;
-      line-height: 1.6;
+      line-height: 2;
     }
     h1{
       font-size: 125%;
@@ -565,6 +568,12 @@ span.pagination-meta {
   p{
     font-size: 100%;
   }
+}
+.sidebar_right .comment_container {
+  padding-left: 0 !important;
+}
+.woocommerce-review__published-date{
+  margin-right: 10px;
 }
 // comments
 
@@ -691,19 +700,20 @@ form p.form-row{
 .js_active .tab{
   font-size: 100%;
 }
+
 .tab_inner_content {
   ul{
-    color: $secondaryTextColor !important;
+    color: $primaryTextColor !important;
     li{
       text-align: justify;
       font-size: 100%;
       span{
-        color: $secondaryTextColor !important;
+        color: $primaryTextColor !important;
       }
     }
   }
   p{
-    color: $secondaryTextColor !important;
+    color: $primaryTextColor !important;
     font-size: 100% !important;
     line-height: 2;
     text-align: justify;
@@ -791,20 +801,10 @@ div .main_color .tabcontainer .active_tab_content, div .main_color .tabcontainer
   }
   .avia-button-wrap {
     margin: 13px auto !important;
-    //a {
-    //  background-color: $titleColor;
-    //  border-color: $titleColor !important;
-    //  border-radius: 0;
-    //  &:hover {
-    //    background-color: $titleColor ;
-    //    border-color: $titleColor !important;
-    //    border-radius: 0 ;
-    //  }
-    //}
   }
   p {
     font-size: 100%;
-    text-align: justify;
+    text-align: justify !important;
     line-height: 2.25;
     color: $primaryTextColor;
     font-family: $textFont !important;
@@ -813,6 +813,9 @@ div .main_color .tabcontainer .active_tab_content, div .main_color .tabcontainer
       font-family: $textFont !important;
       color: $primaryTextColor !important;
     }
+  }
+  h1,h2,h3,h4,h5,h6{
+    line-height: 2;
   }
 }
 
@@ -2328,9 +2331,10 @@ p.stock.in-stock{
 // Hide in_stock from woocommece
 
 
-#top .flex_column_table{
-  margin-top:-100px !important;
-}
+//#top .flex_column_table{
+//  margin-top:-100px !important;
+//}
+
 
 // Pdf Catalogs
 .catalog-shelf{
