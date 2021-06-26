@@ -13,7 +13,6 @@
         });
         /* Notif Banner */
 
-
         const crispElm =  document.getElementById('crisp-chatbox');
         if (typeof(crispElm) != 'undefined' && crispElm != null)
         {
@@ -25,7 +24,6 @@
 
         // Start Goftino
         !function(){var a=window,d=document;function g(){var g=d.createElement("script"),i="lXpDBP",s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.type="text/javascript",g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
-
     })
 })(jQuery);
 jQuery(document).ready(function($){
@@ -133,7 +131,8 @@ function copyToClip(event) {
     event.preventDefault();
     let copyText = document.getElementById("short_link");
     copyStringToClipboard(copyText.value);
-
+    let sound = document.getElementById("audio");
+    sound.play();
     swalWithBootstrapButtons.fire({
         position: 'center',
         icon: 'success',

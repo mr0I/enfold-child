@@ -491,6 +491,8 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
             <!-- Sidebar Basket -->
 
 
+            <audio id="audio" src="<?= get_stylesheet_uri().'/../assets/beep.wav'; ?>" ></audio>
+
         </footer>
 
 

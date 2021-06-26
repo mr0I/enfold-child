@@ -162,42 +162,93 @@ add_shortcode('post_header_attribs', function (){
 
 	return $html;
 });
+
 add_shortcode('post_footer_attribs', function (){
 	global $post;
 	$postUrl = wp_get_shortlink( $post->ID, 'post',  true );
 	$fullUrl = urlencode($postUrl);
 
 	if( is_single() ) {
-		$html = '<div class="single_post_share_btns mb-5">
-            <div class="w-100">
-                <ul>
+		//get the tags of the current post
+		$the_tags = get_the_tags( $post->ID );
+		$output = '<span class="post_tag">';
+		$tag_array = [];
+		foreach($the_tags as  $key2 => $tag) {
+			$taglink = get_tag_link($tag->term_id);
+			if(!next($the_tags)) {
+				$output .= '<a href='.$taglink.'>'.$tag->name.' </a>';
+			}else{
+				$output .= '<a href='.$taglink.'>'.$tag->name.' </a>';
+			}
+			$tag_array[ $key2 ] = $tag->slug;
+		}
+		//get the categories of the current post
+		$cats = get_the_category( $post->ID );
+		$cat_array = array();
+		foreach ( $cats as $key1 => $cat ) {
+			$cat_array[ $key1 ] = $cat->slug;
+		}
+		$related_posts = new WP_Query(
+			array(
+				'post_type' => 'post',
+				'post_status' => 'publish',
+				'tax_query' => array(
+					'relation' => 'OR',
+					array(
+						'taxonomy' => 'category',
+						'field' => 'slug',
+						'terms' => $cat_array
+					),
+					array(
+						'taxonomy' => 'post_tag',
+						'field' => 'slug',
+						'terms' => $tag_array
+					)
+				),
+				'posts_per_page' => 3,
+				'post__not_in' => array( $post->ID ),
+				'orderby' => array( 'title' => 'ASC', 'date' => 'DESC' )
+			)
+		);
+
+		$html = '<div class="single_post_share_btns">
+            <div class="single_post_share_btns_container">
+                <div class="share_link col-lg-8 col-md-8 col-sm-12" onclick="copyToClip(event)">
+                     <span><i class="ic-copy mx-2"></i>لینک به اشتراک گذاری</span>
+                    <span>'.$postUrl.'</span>
+                </div>
+                 <ul>
                     <li class="icons ln"> <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در لینکدین"> <i class="ic-linkedin"></i> </a> </li>
                     <li class="icons wa"><a href="https://wa.me/?text='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در واتساپ"><i class="ic-whatsapp"></i></a></li>
                     <li class="icons tl"><a href="https://telegram.me/share/url?url='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در تلگرام"><i class="ic-telegram"></i></a></li>
                     <li class="icons tw"><a href="https://twitter.com/share?url='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در توییتر"><i class="ic-twitter"></i></a></li>
                     <li class="icons fb"><a href="https://www.facebook.com/sharer/sharer.php?u='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در فیسبوک"><i class="ic-facebook"></i></a></li>
-                    <li class="icons link">
-                        <a href="#" onclick="copyToClip(event)" data-toggle="tooltip" data-placement="top" title="کپی لینک کوتاه" rel="tooltip"><i class="ic-link"></i> </a>
-                    </li>
                 </ul>
+               
                 <input type="hidden" id="short_link" value="'.$postUrl.'">
             </div>
         </div>';
-	}
 
-	$the_tags = get_the_tags( $post->ID );
-	$output = '<span class="post_tag">';
-	foreach($the_tags as $tag) {
-		$taglink = get_tag_link($tag->term_id);
-		if(!next($the_tags)) {
-			$output .= '<a href='.$taglink.'>'.$tag->name.' </a>';
-		}else{
-			$output .= '<a href='.$taglink.'>'.$tag->name.' </a>';
+		$rps = '<h4 class="related-posts-title">شاید از این مقالات هم خوشتان بیاید</h4><div class="card-group related-posts mb-5">';
+		if ( $related_posts->have_posts() ) {
+			while ( $related_posts->have_posts() ) {
+				$related_posts->the_post();
+				if ( has_post_thumbnail( $post->ID ) ) $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'small' );
+				$rps .= '<div class="card"><a href="'.get_the_permalink().'"><img class="card-img-top" src="'.$image[0].'" alt="Card image cap"></a>';
+				$rps .= '<div class="card-body"><a href="'.get_the_permalink().'"><h5 class="card-title">'.get_the_title().'</h5></a>';
+				$postContent = str_replace('"' , '' , wp_trim_words(get_post($post->ID)->post_excerpt , 30));
+				$rps .= '<p class="card-text">'.$postContent.'</p></div>';
+				$rps .= '<div class="card-footer"><small class="text-muted">'.do_shortcode('[rt_reading_time label="خواندن: " postfix="دقیقه" postfix_singular="دقیقه"]') .'</small></div>';
+				$rps .= '</div>';
+			}
+			$rps .= '</div>';
+			wp_reset_postdata();
 		}
 	}
 
+
 	$tags = $output . '</span>';
-	return $tags . $html;
+	return $tags . $html . $rps;
 });
 
 
@@ -207,12 +258,12 @@ add_shortcode('post_footer_attribs', function (){
 add_shortcode('products_row_btns', function ($atts, $content = null){
 	$pid = 0;
 	$type = '';
-    extract(shortcode_atts(array(
+	extract(shortcode_atts(array(
 		'pid' => 0,
 		'type' => ''
 	), $atts));
 
-	$X1_url = 'https://radshid.com/?p=10449';
+	$X1_url = 'https://radshid.com/shop';
 	$X5_url = 'https://radshid.com/?p=11720';
 	$Magnet_url = 'https://radshid.com/?p=13574';
 	$Sipaad_url = 'https://radshid.com/?p=14049';
@@ -222,72 +273,72 @@ add_shortcode('products_row_btns', function ($atts, $content = null){
 	$PR1_url = 'https://radshid.com/?p=12161';
 	$PR3_url = 'https://radshid.com/?p=10313';
 	switch ($type){
-        case 'car':
-	        $other_trackers_url = 'https://radshid.com/?p=12762';
-	        $OthersBtnText = 'مشاهده سایر ردیاب های خودرو';
-	        break;
-        case 'personal':
-	        $other_trackers_url = 'https://radshid.com/?p=12732';
-	        $OthersBtnText = 'مشاهده سایر ردیاب های شخصی';
-	        break;
-        case 'tablet':
-	        $other_trackers_url = 'https://radshid.com/?p=12783';
-	        $OthersBtnText = 'مشاهده سایر تبلت های صنعتی';
-	        break;
-        case 'pda':
-	        $other_trackers_url = 'https://radshid.com/?p=12775';
-	        $OthersBtnText = 'مشاهده سایر pda های صنعتی';
-	        break;
-        case 'laptop':
-	        $other_trackers_url = 'https://radshid.com/?p=12769';
-	        $OthersBtnText = 'مشاهده سایر لپ تاپ های صنعتی';
-	        break;
-        default:
-	        $other_trackers_url = '#';
-	        $OthersBtnText = '';
+		case 'car':
+			$other_trackers_url = 'https://radshid.com/?p=12762';
+			$OthersBtnText = 'مشاهده سایر ردیاب های خودرو';
+			break;
+		case 'personal':
+			$other_trackers_url = 'https://radshid.com/?p=12732';
+			$OthersBtnText = 'مشاهده سایر ردیاب های شخصی';
+			break;
+		case 'tablet':
+			$other_trackers_url = 'https://radshid.com/?p=12783';
+			$OthersBtnText = 'مشاهده سایر تبلت های صنعتی';
+			break;
+		case 'pda':
+			$other_trackers_url = 'https://radshid.com/?p=12775';
+			$OthersBtnText = 'مشاهده سایر pda های صنعتی';
+			break;
+		case 'laptop':
+			$other_trackers_url = 'https://radshid.com/?p=12769';
+			$OthersBtnText = 'مشاهده سایر لپ تاپ های صنعتی';
+			break;
+		default:
+			$other_trackers_url = '#';
+			$OthersBtnText = '';
 	}
 	switch ($pid){
-        case 15129:
-	        $productUrl = $PR1S_url;
-	        break;
-        case 3733:
-	        $productUrl = $X1_url;
-	        break;
-        case 11720:
-	        $productUrl = $X5_url;
-	        break;
-        case 13574:
-	        $productUrl = $Magnet_url;
-	        break;
-        case 14049:
-	        $productUrl = $Sipaad_url;
-	        break;
-        case 10216:
-	        $productUrl = $X0_url;
-	        break;
-        case 10285:
-	        $productUrl = $PR8_url;
-	        break;
-        case 12161:
-	        $productUrl = $PR1_url;
-	        break;
-        case 10313:
-	        $productUrl = $PR3_url;
-	        break;
-        default:
-	        $productUrl = '#';
-    }
+		case 15129:
+			$productUrl = $PR1S_url;
+			break;
+		case 3733:
+			$productUrl = $X1_url;
+			break;
+		case 11720:
+			$productUrl = $X5_url;
+			break;
+		case 13574:
+			$productUrl = $Magnet_url;
+			break;
+		case 14049:
+			$productUrl = $Sipaad_url;
+			break;
+		case 10216:
+			$productUrl = $X0_url;
+			break;
+		case 10285:
+			$productUrl = $PR8_url;
+			break;
+		case 12161:
+			$productUrl = $PR1_url;
+			break;
+		case 10313:
+			$productUrl = $PR3_url;
+			break;
+		default:
+			$productUrl = '#';
+	}
 
-    if ($pid != ''){
-	    $btns = '<div class="addToCart_btns">
+	if ($pid != ''){
+		$btns = '<div class="addToCart_btns">
                 <a href="'.$productUrl.'" class="btn btn-danger mx-1">خرید آنلاین</a>
                 <a href="'.$other_trackers_url.'" class="btn btn-danger mx-1">'.$OthersBtnText.'</a>
             </div>';
-    }else{
-	    $btns = '<div class="addToCart_btns">
+	}else{
+		$btns = '<div class="addToCart_btns">
                 <a href="'.$other_trackers_url.'" class="btn btn-danger mx-1">'.$OthersBtnText.'</a>
             </div>';
-    }
+	}
 
 	return $btns;
 });
@@ -377,6 +428,8 @@ add_filter( 'comment_post_redirect', function( $location, $comment ) {
 	$location = get_permalink( $comment->comment_post_ID ) . '#wait_approval';
 	return $location;
 }, 10, 2 );
+
+
 
 ?>
 

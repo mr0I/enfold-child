@@ -81,6 +81,7 @@ a{
 	-moz-osx-font-smoothing: grayscale;
 }
 
+
 .ic-support_agent:before {
 	content: "\e900";
 }
@@ -288,18 +289,15 @@ a{
 .ic-link:before {
 	content: "\e944";
 }
+.ic-car:before {
+	content: "\e945";
+}
 .ic-spinner9:before {
 	content: "\e982";
 }
 .ic-bin:before {
 	content: "\e9ac";
 }
-.ic-car:before {
-	content: "\e945";
-}
-.ic-automobile:before {
-	content: "\e945";
-}
-.ic-travel:before {
-	content: "\e945";
+.ic-copy:before {
+	content: "\e946";
 }

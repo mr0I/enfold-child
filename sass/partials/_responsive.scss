@@ -830,7 +830,10 @@
 
   .single_post_share_btns{
     ul{
-      justify-content: center;
+      justify-content: flex-start;
+    }
+    .share_link {
+      width: 100% !important;
     }
   }
 }
@@ -1033,6 +1036,13 @@
     }
   }
 
+  .single_post_share_btns{
+    .share_link {
+      span{
+        font-size: 75%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 300px) {

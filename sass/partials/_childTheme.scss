@@ -889,7 +889,7 @@ footer .footer-social-btns i{
 /* Start Bootstrap Tooltip */
 .tooltip {
   font-family: $textFont ;
-  font-size: 100%;
+  font-size: 85%;
 }
 .tooltip-inner{
   background-color: rgba(0,0,0,0.85);
@@ -1061,28 +1061,94 @@ footer .footer-social-btns i{
 }
 
 .single_post_share_btns{
-  ul{
+  margin-bottom: 100px;
+  .single_post_share_btns_container{
     display: flex;
+    justify-content: space-between;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-content: center;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    li{
-      list-style-type: none;
-      padding: 0;
-      margin: auto 8px;
-      border-radius: 50px;
-      text-align: center;
-      i{
-        color: #9e9e9e;
-        font-size: 115%;
-        line-height: 36px;
-        &:hover{
-          font-weight: bold;
+    ul{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: flex-start;
+      align-content: center;
+      align-items: center;
+      li{
+        list-style-type: none;
+        padding: 0;
+        margin: auto 8px;
+        border-radius: 50px;
+        text-align: center;
+        i{
+          color: #9e9e9e;
+          font-size: 100%;
+          line-height: 36px;
+          &:hover{
+            font-weight: bold;
+          }
         }
       }
+    }
+    .share_link {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      align-items: center;
+      align-content: center;
+      vertical-align: middle;
+      padding: 8px;
+      border: 1px solid #e0e0e0;
+      border-radius: 3px;
+      font-size: 80%;
+      margin: 8px 0;
+      cursor: pointer;
+      width: 50%;
+      span{
+        color: $secondaryTextColor;
+      }
+    }
+
+  }
+}
+
+
+.related-posts-title{
+  padding: 0 15px !important;
+  margin: 0;
+}
+.related-posts{
+  .card{
+    margin: 13px;
+    min-height: 325px;
+    border-radius: 0 !important;
+    a{
+      border-radius: 0 !important;
+      img{
+        border-radius: 0 !important;
+      }
+    }
+
+    .card-body{
+      padding: 0 5px;
+      .card-title{
+        font-size: 85%;
+        color: $titleColor;
+        margin: 5px auto;
+      }
+      .card-text{
+        font-size: 75%;
+        text-align: justify;
+        line-height: 2;
+        padding: 0 5px;
+        margin: 0;
+        color: $secondaryTextColor;
+      }
+    }
+    .card-footer{
+      padding: 0 5px;
+      background-color: transparent;
+    }
+    .card-bottom{
+      padding: 0 10px;
     }
   }
 }
@@ -1101,14 +1167,14 @@ footer .footer-social-btns i{
     color: #757575;
     background-color: #EEEEEE;
     border-radius: 0 !important;
-    font-size: 85%;
+    font-size: 75%;
     font-family: $textFont;
     &:hover{
       color: #757575;
     }
   }
 }
-/* Start Post Attribs */
+/* End Post Attribs */
 
 
 /* Start Product Row Btns */
