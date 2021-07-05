@@ -93,11 +93,18 @@ ul#avia-menu li.current-menu-item>a i{
   margin: auto;
   top: 20px;
   a {
-    font-size: 90%;
+    font-size: 85%;
   }
 }
-#top .main_menu .sub-menu li a {
-  font-size: 75%;
+#top .main_menu ul.sub-menu  {
+  min-width: 250px;
+  li{
+    margin: auto;
+    top: 0;
+    a{
+    font-size: 75%;
+    }
+  }
 }
 #top #wrap_all #header .av-menu-button>a {
   margin: 0 auto;

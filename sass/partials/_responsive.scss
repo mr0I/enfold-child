@@ -52,6 +52,11 @@
 }
 
 @media screen and (max-width: 768px) {
+  // Hide cities list in mobile size (Agencies Page)
+  .responsive .av-hotspot-fallback-tooltip {
+    display: none !important;
+  }
+
   .tab_content table.avia-table , .woocommerce-Tabs-panel table.avia-table {
     td,th{
       text-align: right !important;
