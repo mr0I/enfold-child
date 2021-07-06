@@ -428,10 +428,3 @@ add_filter( 'comment_post_redirect', function( $location, $comment ) {
 	$location = get_permalink( $comment->comment_post_ID ) . '#wait_approval';
 	return $location;
 }, 10, 2 );
-
-
-
-?>
-
-
-

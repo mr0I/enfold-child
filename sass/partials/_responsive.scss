@@ -44,14 +44,19 @@
   }
 
 }
-
 @media screen and (max-width: 860px) {
   #custom-footer #gateway img {
     width: 80px;
   }
 }
-
 @media screen and (max-width: 768px) {
+  span#nav-shop{
+    background: transparent;
+    color: $AccentColor;
+  }
+  .av-show-submenu span#nav-shop{
+    color: #EEEEEE;
+  }
   // Hide cities list in mobile size (Agencies Page)
   .responsive .av-hotspot-fallback-tooltip {
     display: none !important;
@@ -842,7 +847,6 @@
     }
   }
 }
-
 @media screen and (max-width: 650px){
   .woo-docs-tab p{
     font-size: 100% !important;
@@ -857,7 +861,6 @@
     height:auto;
   }
 }
-
 @media screen and (max-width: 600px) {
   // comment text width
   .rtl div #reviews #comments ol.commentlist li .comment-text {
@@ -951,7 +954,6 @@
     font-size: 100%;
   }
 }
-
 @media screen and (max-width: 500px) {
   #post_data_container{
     .post_data {
@@ -1019,7 +1021,6 @@
     font-size: 80%;
   }
 }
-
 @media screen and (max-width: 400px) {
   nav.sub_menu{
     padding: 0 !important;
@@ -1049,7 +1050,6 @@
     }
   }
 }
-
 @media screen and (max-width: 300px) {
 
   #custom-footer #gateway img#zarin_img {

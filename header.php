@@ -64,8 +64,7 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
 
     <!-- mobile setting -->
 	<?php
-
-	if( strpos($responsive, 'responsive') !== false ) { echo '<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">';  }
+	if( strpos($responsive, 'responsive') !== false ) { echo '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">';  }
 	?>
 
 

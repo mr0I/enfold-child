@@ -491,10 +491,29 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
             <!-- Sidebar Basket -->
 
 
+            <!-- Floated Action Button -->
+            <div class="position-absolute text-right floating-action-menu" style="bottom: 10px; right: 10px;">
+                <div class="action-menu">
+                    <div class="floating-action">
+                        <div class="badge badge-dark">Add Product</div>
+                        <a class="btn-floating btn-sm btn-secondary"><i class="fas fa-plus"></i></a>
+                    </div>
+                    <div class="floating-action">
+                        <div class="badge badge-dark">Save Order</div>
+                        <a class="btn-floating btn-sm btn-success"><i class="fas fa-save"></i></a>
+                    </div>
+                </div>
+                <div class="d-block action-button">
+                    <a class="btn-floating btn-primary" onclick="$(this).closest('div.floating-action-menu').toggleClass('active')">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Floated Action Button -->
+
+
             <audio id="audio" src="<?= get_stylesheet_uri().'/../assets/beep.wav'; ?>" ></audio>
-
         </footer>
-
 
 		<?php
 	} //end nosocket check - array( 'all', 'nofooterwidgets', 'page_in_footer_socket' )

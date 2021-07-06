@@ -172,13 +172,20 @@ ul#avia-menu li.current-menu-item>a i{
   display: inline-block;
 }
 
+span#nav-shop{
+  background: $primaryColor;
+  padding: 10px;
+  color: #eee;
+  border-radius: 3px;
+}
+
 
 // Cart Styles
 ul.menu-item.cart_dropdown {
   top: 50px;
   left: unset;
   float: left;
-  right: 700px !important;
+  right: 695px !important;
   border: none;
 }
 .cart_dropdown .dropdown_widget{
@@ -2391,3 +2398,4 @@ figcaption{
   text-align:center;
 }
 // Pdf Catalogs
+
