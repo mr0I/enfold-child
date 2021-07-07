@@ -309,6 +309,7 @@
 
   #top div.woocommerce-message , p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
     padding: 8px 20px;
+    margin-top: 30px;
     width: 100%;
   }
   .notif_banner_container{
@@ -726,11 +727,6 @@
   .responsive #top #wrap_all .main_menu {
     left: -60px !important;
   }
-  .title_container .breadcrumb {
-    right: -4px !important;
-    margin: 4px auto !important;
-    top: 90px;
-  }
   #custom-footer{
     padding: 0;
   }
@@ -950,9 +946,24 @@
     margin: 10px auto;
     font-size: 85%;
   }
-  .title_container .breadcrumb span {
-    font-size: 100%;
+  .title_container .breadcrumb {
+    right: -36px !important;
+    left: -36px !important;
+    top: 80px;
+    margin: 4px auto !important;
+    padding: 15px;
+    span{
+      font-size: 100%;
+      line-height: 2;
+    }
   }
+  .breadcrumb-trail {
+    font-size: 125%;
+  }
+  .breadcrumb .sep i{
+    font-weight:lighter;
+  }
+
 }
 @media screen and (max-width: 500px) {
   #post_data_container{

@@ -53,7 +53,7 @@ jQuery(document).ready(function($){
 
 
     // Change breadcrumb trails
-    $('.breadcrumb-trail').find('span.sep').html('<i class="ic-chevron-left"></i>');
+    $('.breadcrumb-trail').find('span.sep').html('<i class="ic-line-left"></i>');
     $('.trail-begin').find('span[itemprop="name"]').html('<span itemprop="name">صفحه اصلی</span>');
 
 
@@ -78,7 +78,7 @@ jQuery(document).ready(function($){
     // Change Shop buttons text temporary
     $('.template-shop').find('.inner_product').find('.product_type_simple').html('ادامه');
     $('.template-shop').find('.inner_product').find('.add_to_cart_button').html('افزودن به سبد خرید');
-    $('.template-shop').find('.inner_product').find('.show_details_button').html('نمایش جزئیات');
+    $('.template-shop').find('.inner_product').find('.show_details_button').html('اطلاعات بیشتر');
 
     // Customize woocommerce product desc
     $('.woocommerce-product-details__short-description').before("<p style='font-size: 15px;font-weight: bold;padding: 4px 0;margin: 0;'>ویژگی ها</p>");

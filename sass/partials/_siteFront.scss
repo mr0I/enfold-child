@@ -287,6 +287,7 @@ ul.sort-param li ul {
   font-size: 115%;
 }
 .sort-param ul li span.avia-bullet {
+  display: none;
   border-color: $secondaryTextColor;
 }
 ul.sort-param-sort li a {
@@ -308,10 +309,12 @@ ul.sort-param-sort li a {
 .main_color blockquote, .main_color .avia-bullet, .main_color .av-no-color.av-icon-style-border a.av-icon-char {
   border-color: $primaryColor;
 }
-#top .main_color .sort-param a:hover {
-  color: $titleColor;
+#top .main_color .sort-param a{
+  color: $secondaryTextColor;
+  &:hover{
+  color: $secondaryTextColor;
+  }
 }
-
 .main_color .avia_cart_buttons {
   border-radius: 0;
   opacity: 0.8;
@@ -2044,8 +2047,8 @@ span.news-time {
 .breadcrumb .sep i{
   font-size: 100%;
   vertical-align: middle;
-  color: $secondaryTextColor;
   line-height: 1;
+  margin: auto 4px;
 }
 
 
