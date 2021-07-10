@@ -306,18 +306,37 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
     </div>
     <!-- custom footer -->
 
-
     <!-- custom code -->
-    <div>
-        <a class="floated-shop" href="<?= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?>" title="ورود به فروشگاه">
-            <svg id="i-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                <path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" />
-            </svg>
-        </a>
-        <a class="dial-btn" href="tel:03132362894" title="تماس با واحد بازرگانی">
-            <i class="Phone"></i>
-        </a>
+<!--    <div>-->
+<!--        <a class="floated-shop" href="--><?//= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?><!--" title="ورود به فروشگاه">-->
+<!--            <svg id="i-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">-->
+<!--                <path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" />-->
+<!--            </svg>-->
+<!--        </a>-->
+<!--        <a class="dial-btn" href="tel:03132362894" title="تماس با واحد بازرگانی">-->
+<!--            <i class="Phone"></i>-->
+<!--        </a>-->
+<!--    </div>-->
+
+    <!-- Floated Action Button -->
+    <div class="fab-wrapper">
+        <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
+        <label class="fab" for="fabCheckbox">
+            <span class="fab-dots fab-dots-1"></span>
+            <span class="fab-dots fab-dots-2"></span>
+            <span class="fab-dots fab-dots-3"></span>
+        </label>
+        <div class="fab-wheel">
+            <a class="fab-action fab-action-1" href="tel:03132362894" title="تماس با واحد بازرگانی">
+                <i class="ic-headset_mic"></i>
+            </a>
+
+            <a class="fab-action fab-action-2" href="tel:03195016151" title="تماس با واحد پشتیبانی">
+                <i class="ic-phone1"></i>
+            </a>
+        </div>
     </div>
+    <!-- Floated Action Button -->
 
 
     <!-- Notification bar -->
@@ -489,27 +508,6 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                 </div>
             </div>
             <!-- Sidebar Basket -->
-
-
-            <!-- Floated Action Button -->
-            <div class="position-absolute text-right floating-action-menu" style="bottom: 10px; right: 10px;">
-                <div class="action-menu">
-                    <div class="floating-action">
-                        <div class="badge badge-dark">Add Product</div>
-                        <a class="btn-floating btn-sm btn-secondary"><i class="fas fa-plus"></i></a>
-                    </div>
-                    <div class="floating-action">
-                        <div class="badge badge-dark">Save Order</div>
-                        <a class="btn-floating btn-sm btn-success"><i class="fas fa-save"></i></a>
-                    </div>
-                </div>
-                <div class="d-block action-button">
-                    <a class="btn-floating btn-primary" onclick="$(this).closest('div.floating-action-menu').toggleClass('active')">
-                        <i class="fas fa-plus"></i>
-                    </a>
-                </div>
-            </div>
-            <!-- Floated Action Button -->
 
 
             <audio id="audio" src="<?= get_stylesheet_uri().'/../assets/beep.wav'; ?>" ></audio>

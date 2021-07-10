@@ -50,6 +50,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .fab-wrapper {
+    display: block;
+  }
   span#nav-shop{
     background: transparent;
     color: $AccentColor;
