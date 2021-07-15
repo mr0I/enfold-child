@@ -1281,6 +1281,7 @@ article#guarantee_vector .iconbox_icon::before{
     }
   }
   nav.sub_menu{
+    top: 2px !important;
     li.menu-item {
       border-color: #EEEEEE !important;
       a{
@@ -1372,17 +1373,18 @@ article#guarantee_vector .iconbox_icon::before{
 
 /* Floated Action Button */
 .fab-wrapper {
+  display: none;
   position: fixed;
   bottom: 50px;
   left: 70px;
-  display: none;
+  z-index: 99;
 }
 .fab-checkbox {
   display: none !important;
 }
 .fab {
   position: absolute;
-  bottom: 8px;
+  bottom: 0;
   right: 0;
   width: 4rem;
   height: 4rem;
@@ -1519,11 +1521,10 @@ article#guarantee_vector .iconbox_icon::before{
 
 .fab-wheel .fab-action-1 {
   right:8px;
-  top: -24px;
+  top: -30px;
 }
-
 .fab-wheel .fab-action-2 {
   right: 8px;
-  top: 35px;
+  top: 25px;
 }
 /* Floated Action Button */

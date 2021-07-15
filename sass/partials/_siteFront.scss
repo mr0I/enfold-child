@@ -52,6 +52,17 @@ ul#avia-menu li.current-menu-item>a i{
   -webkit-text-stroke: 1px $primaryColor;
 }
 
+ul#avia-menu>li.menu-item-has-children::after{
+  content: "\e921";
+  font-family: mycon;
+  position: absolute;
+  left: -5px;
+  top: 10px;
+  font-size: 50%;
+  color: $secondaryTextColor;
+}
+
+
 .avia-menu-text i{
   vertical-align: middle;
   font-size: 115%;
@@ -1186,12 +1197,14 @@ td.product-name {
 ul.sub-menu a{
   font-size: 85%;
 }
-ul.sub-menu li.menu-item-has-children >a::after{
+ul.sub-menu > li.menu-item-has-children >a::after{
   content: "\e939";
   font-family: mycon;
   position: absolute;
-  left: 0;
-  top: 25%;
+  left: 5px;
+  top: 10px;
+  font-size: 125%;
+  color: $secondaryTextColor;
 }
 
 #av-burger-menu-ul li a{

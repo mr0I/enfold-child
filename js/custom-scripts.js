@@ -13,14 +13,6 @@
         });
         /* Notif Banner */
 
-        const crispElm =  document.getElementById('crisp-chatbox');
-        if (typeof(crispElm) != 'undefined' && crispElm != null)
-        {
-            crispElm.addEventListener("click" , async (event) => {
-                $('.cc-1iv2').find('.cc-15mo').remove();
-                $('.cc-7doi.cc-1ada').append('<img src="https://radshid.com/wp-content/uploads/2021/03/support_avatar2.jpg" width="70" height="70" alt="" id="crisp_avatar">');
-            });
-        }
 
         // Start Goftino
         !function(){var a=window,d=document;function g(){var g=d.createElement("script"),i="lXpDBP",s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.type="text/javascript",g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
@@ -60,16 +52,6 @@ jQuery(document).ready(function($){
     // Full-Width shop page
     $('ul.products').removeClass('columns-3').addClass('col-12');
 
-    //Crisp Avatar
-    let check_crisp = setInterval(function () {
-        const crispElm =  document.getElementById('crisp-chatbox');
-        if (typeof(crispElm) != 'undefined' && crispElm != null)
-        {
-            $('.cc-1iv2').find('.cc-15mo').remove();
-            $('.cc-7doi.cc-1ada').append('<img src="https://radshid.com/wp-content/uploads/2021/03/support_avatar2.jpg" width="70" height="70" alt="" id="crisp_avatar">');
-            clearInterval(check_crisp);
-        }
-    } , 300);
 
     // Change Sipaad phone number
     $('#product-14049').find('.woo-price').find('strong').html('برای دریافت قیمت با شماره 03132362894 تماس بگیرید');
@@ -101,7 +83,7 @@ jQuery(document).ready(function($){
 
 
     // Add Down Arrows to Home Slider
-    $('#full_slider_1').append(' <svg class="arrows" onclick="scroll_to_column_boxes()"> <path class="a1" d="M0 0 L30 32 L60 0"></path> <path class="a2" d="M0 20 L30 52 L60 20"></path> <path class="a3" d="M0 40 L30 72 L60 40"></path> </svg>');
+    //$('#full_slider_1').append(' <svg class="arrows" onclick="scroll_to_column_boxes()"> <path class="a1" d="M0 0 L30 32 L60 0"></path> <path class="a2" d="M0 20 L30 52 L60 20"></path> <path class="a3" d="M0 40 L30 72 L60 40"></path> </svg>');
 
 });
 

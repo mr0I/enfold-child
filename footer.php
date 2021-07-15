@@ -211,21 +211,21 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                             <div class="col-lg-4 col-md-4 col-sm-12">
                                 <h6 class="twoWords">واحد بازرگانی</h6>
                                 <ul style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
-                                    <li class="col-6 farsi_num">03132362894</li>
-                                    <li class="col-6 farsi_num">03132362947</li>
-                                    <li class="col-6 farsi_num">09124735787</li>
-                                    <li class="col-6 farsi_num">09124839402</li>
+                                    <li class="col-6 farsi_num"><a href="tel:03132362894">03132362894</a></li>
+                                    <li class="col-6 farsi_num"><a href="tel:03132362947">03132362947</a></li>
+                                    <li class="col-6 farsi_num"><a href="tel:09124735787">09124735787</a></li>
+                                    <li class="col-6 farsi_num"><a href="tel:09124839402">09124839402</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12">
                                 <h6 class="twoWords">واحد پشتیبانی</h6>
                                 <ul id="support_unit" style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
-                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num">03195016151</li>
-                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num">03132363078</li>
-                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num">09018377198</li>
-                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num">09018377021</li>
-                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num">09018377021</li>
-                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num">09901883981</li>
+                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:03195016151">03195016151</a></li>
+                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:03132363078">03132363078</a></li>
+                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09018377198">09018377198</a></li>
+                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09018377021">09018377021</a></li>
+                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09018377021">09018377021</a></li>
+                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09901883981">09901883981</a></li>
                                 </ul>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12">
