@@ -461,12 +461,12 @@ span.comment-container.minor-meta {
     margin: 20px auto;
   }
   h2{
-    font-size: 150% !important;
+    font-size: 150% ;
     padding: 0;
     margin-top: 20px;
   }
   h3,h4{
-    font-size: 115% !important;
+    font-size: 115% ;
     padding: 0;
     margin-top: 20px;
   }
@@ -489,12 +489,12 @@ span.comment-container.minor-meta {
       margin: 20px auto;
     }
     h2{
-      font-size: 115% !important;
+      font-size: 115%;
       padding: 0;
       margin-top: 20px;
     }
     h3,h4{
-      font-size: 100% !important;
+      font-size: 100% ;
       padding: 0;
       margin-top: 20px;
     }
@@ -2360,58 +2360,4 @@ p.stock.in-stock{
 }
 // Hide in_stock from woocommece
 
-
-//#top .flex_column_table{
-//  margin-top:-100px !important;
-//}
-
-
-// Pdf Catalogs
-.catalog-shelf{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  position: relative;
-  background: linear-gradient(to left , transparent , transparent), url('https://radshid.com/wp-content/uploads/2021/06/shelf_wood.png');
-  background-repeat: no-repeat;
-  background-attachment: unset;
-  background-position: bottom;
-  background-size: auto;
-}
-.catalog-shelf div[class^="real3dflipbook"]{
-  margin-bottom: 54px;
-}
-.catalog-shelf div[class^="real3dflipbook"] img{
-  width:125px;
-  height:auto;
-  box-shadow: 0 0 8px 4px #bdbdbd;
-}
-.catalog-links-container{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  margin-top: 24px;
-  .catalog-links{
-    text-align:center;
-    a{
-      font-size:75%;
-      color: #1c272b;
-      font-weight: bold;
-    }
-  }
-}
-
-#catalog-links-mobile{
-  display: none;
-}
-
-#top #main .avia-section .template-page{
-  padding-bottom: 24px;
-}
-figcaption{
-  text-align:center;
-}
-// Pdf Catalogs
 

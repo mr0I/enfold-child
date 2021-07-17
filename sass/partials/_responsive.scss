@@ -140,32 +140,6 @@
   .post-entry {
     margin: 40px auto;
   }
-  .catalog-shelf{
-    flex-flow: row wrap;
-    background:none;
-  }
-  .catalog-shelf div[class^="real3dflipbook"]{
-    margin-bottom: 24px;
-  }
-  .catalog-shelf div[class^="real3dflipbook"] img{
-    width:auto;
-  }
-  .catalog-links{
-    a{
-      font-size:100%;
-    }
-  }
-  #catalog-links-desktop{
-    display: none;
-  }
-  #catalog-links-mobile{
-    display: block;
-  }
-  .flipbook-bookLayer {
-    top:50px !important;
-    bottom:0 !important;
-  }
-
 
   #main #full_slider_1{
     margin-top:110px;
