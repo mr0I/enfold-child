@@ -241,7 +241,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
         </div>
         <div class="second-row">
             <div class="container-fluid">
-                <div class="row" style="width: 94%;margin: 0 auto;border-bottom: 1px solid #263238">
+                <div class="row" style="width: 94%;margin: 0 auto;border-bottom: 1px solid #bdbdbd">
                     <div class="sr-element col-md-4 col-sm-12">
                         <h6 class="twoWords">با رادشید</h6>
                         <ul style="display: flex;flex-flow: row wrap">
@@ -373,12 +373,6 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
 
     <!-- floated icons -->
-    <div class="floated_icons-r1">
-        <a href="<?= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?>" title="فروشگاه اینترنتی">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/shop.png' ; ?>" width="35" height="35" alt="فروشگاه اینترنتی">
-            <span>فروشگاه اینترنتی رادشید</span>
-        </a>
-    </div>
     <div class="floated_icons-r2">
         <a rel="nofollow" href="https://cafebazaar.ir/app/com.radshid.radassistant" target="_blank" title="دریافت از کافه بازار">
             <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" width="35" height="35" alt="دریافت از کافه بازار">
@@ -513,6 +507,28 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
             <audio id="audio" src="<?= get_stylesheet_uri().'/../assets/beep.wav'; ?>" ></audio>
         </footer>
 
+
+        <link rel="manifest" href="/manifest.json">
+        <!-- Najva Push Notification -->
+        <script type="text/javascript">
+            (function(){
+                var now = new Date();
+                var version = now.getFullYear().toString() + "0" + now.getMonth() + "0" + now.getDate() +
+                    "0" + now.getHours();
+                var head = document.getElementsByTagName("head")[0];
+                var link = document.createElement("link");
+                link.rel = "stylesheet";
+                link.href = "https://app.najva.com/static/css/local-messaging.css" + "?v=" + version;
+                head.appendChild(link);
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.async = true;
+                script.src = "https://app.najva.com/static/js/scripts/radshid-website-25447-11035874-788d-4c32-865a-097de0b153e1.js" + "?v=" + version;
+                head.appendChild(script);
+            })()
+        </script>
+        <!-- END NAJVA PUSH NOTIFICATION -->
+
 		<?php
 	} //end nosocket check - array( 'all', 'nofooterwidgets', 'page_in_footer_socket' )
 
@@ -597,9 +613,6 @@ if (is_user_logged_in()){
  * tag of your theme, or you will break many plugins, which
  * generally use this hook to reference JavaScript files.
  */
-
-
-
 
 
 wp_footer();

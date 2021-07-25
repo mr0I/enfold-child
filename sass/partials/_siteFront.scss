@@ -931,12 +931,24 @@ span.copyright{
   font-size: 80%;
 }
 
-#top .inner_product_header{
-  border-radius: 0 !important;
-}
+
 .inner_product_header .inner_product_header_cell h2{
   text-align: center;
   margin: 12px auto;
+}
+.inner_product_header{
+  border-radius: 0 !important;
+  min-height:150px !important;
+  padding: 0 !important;
+  .price{
+    display: flex !important;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    del{
+      width: 100%;
+    }
+  }
 }
 
 .inner_product_header_cell{
@@ -1039,10 +1051,6 @@ h3.slide-entry-title a{
 }
 // end specification table
 
-
-.inner_product_header{
-  min-height:150px !important;
-}
 
 .a2a_kit{
   float: left;
@@ -1870,6 +1878,7 @@ input.submit{
 }
 
 .inner_product_header_table .onsale{
+  display: none;
   border-radius: 50%;
   background: $titleColor !important;
   min-width: 55px;
@@ -2135,6 +2144,7 @@ td.actions .coupon {
 /* Breadcrumbs style*/
 .title_container {
   height:auto;
+  background-color: $backgroundColor;
 }
 .title_container .main-title  a{
   font-size: 100%;

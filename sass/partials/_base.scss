@@ -1,5 +1,6 @@
 /* Variables-Start */
-$primaryColor: #f03434;
+$primaryColor: #235e8a;
+//$primaryColor: #f03434;
 $primaryDarkColor: #d91e18;
 $primaryHoverColor: #E57373;
 $AccentColor: #686868;
@@ -294,27 +295,18 @@ a{
 .ic-car:before {
 	content: "\e945";
 }
-.ic-spinner9:before {
-	content: "\e982";
-}
-.ic-bin:before {
-	content: "\e9ac";
-}
 .ic-copy:before {
 	content: "\e946";
 }
 .ic-spinner:before {
 	content: "\e947";
 }
-.ic-loading:before {
-	content: "\e947";
+.ic-spinner9:before {
+	content: "\e982";
 }
-.ic-loading-wheel:before {
-	content: "\e947";
+.ic-bin:before {
+	content: "\e9ac";
 }
-.ic-busy:before {
-	content: "\e947";
-}
-.ic-wait:before {
-	content: "\e947";
+.ic-map:before {
+	content: "\e948";
 }

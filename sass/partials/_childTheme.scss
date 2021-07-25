@@ -11,17 +11,14 @@
   z-index: 1;
   white-space: nowrap;
 }
-.floated_icons-r1 {
+.floated_icons-r2 {
   top: 40%;
 }
-.floated_icons-r2 {
+.floated_icons-r3 {
   top: calc(40% + 49px);
 }
-.floated_icons-r3 {
-  top: calc(40% + 98px);
-}
 .floated_icons-r4 {
-  top: calc(40% + 147px);
+  top: calc(40% + 98px);
 }
 
 .floated_icons-r1 a , .floated_icons-r2 a , .floated_icons-r3 a, .floated_icons-r4 a  {
@@ -111,7 +108,7 @@
   z-index: 0;
 }
 #custom-footer{
-  background-color: $titleColor;
+  background-color: #235e8a;
   padding: 2px;
   font-family: $textFont !important;
   margin-top: 0;
@@ -147,13 +144,13 @@
   text-align: right;
   font-weight: normal;
   padding: 5px;
-  border-bottom: 1.5px solid #263238;
+  border-bottom: 1.5px solid #bdbdbd;
   &::after{
     content: "";
     position: absolute;
     top: 42px;
     right: 15px;
-    border-bottom: 1px solid $primaryColor;
+    //border-bottom: 1px solid #bdbdbd;
     @include myTransition(0.3s ease-in-out);
   }
 }
@@ -216,13 +213,13 @@
   line-height: 2;
   font-weight: normal;
   padding: 5px;
-  border-bottom: 1.5px solid #263238;
+  border-bottom: 1.5px solid #bdbdbd;
   &::after{
     content: "";
     position: absolute;
     top: 42px;
     right: 15px;
-    border-bottom: 1px solid $primaryColor;
+    //border-bottom: 1px solid #bdbdbd;
     @include myTransition(0.3s ease-in-out);
   }
 }
@@ -1272,7 +1269,7 @@ article#guarantee_vector .iconbox_icon::before{
 }
 #header_meta {
   padding: 8px;
-  background-color: #1c272b !important;
+  background-color: #235e8a !important;
   .phone-info{
     span{
       font-size: 115%;
