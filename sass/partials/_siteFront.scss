@@ -39,8 +39,10 @@ nav.sub_menu{
   color: $primaryColor !important;
 }
 
+
+// Navbar
 ul#avia-menu {
-  //margin-right: 20px;
+  right: 40px;
   margin: auto !important;
 }
 ul#avia-menu li.current-menu-item > a{
@@ -53,12 +55,12 @@ ul#avia-menu li.current-menu-item>a i{
 }
 
 ul#avia-menu>li.menu-item-has-children::after{
-  content: "\e921";
+  content: "\e949";
   font-family: mycon;
   position: absolute;
   left: -5px;
   top: 10px;
-  font-size: 50%;
+  font-size: 115%;
   color: $secondaryTextColor;
 }
 
@@ -69,10 +71,6 @@ ul#avia-menu>li.menu-item-has-children::after{
   padding: 0;
 }
 
-// Navbar
-#avia-menu{
-  right: 24px;
-}
 #header_main {
   .container.av-logo-container {
     width: 100% !important;
@@ -103,17 +101,28 @@ ul#avia-menu>li.menu-item-has-children::after{
 #top .main_menu .menu li {
   margin: auto;
   top: 20px;
+  height: 70px;
   a {
     font-size: 85%;
   }
 }
 #top .main_menu ul.sub-menu  {
   min-width: 250px;
+  width: auto;
+  border-top: 3px solid $primaryColor !important;
+  top: 70px;
   li{
     margin: auto;
     top: 0;
+    height: auto !important;
     a{
-    font-size: 75%;
+      font-size: 85%;
+      height: auto !important;
+      @include myTransition(0.3s ease);
+      &:hover{
+        background-color: $primaryColor;
+        color: #EEEEEE !important;
+      }
     }
   }
 }
@@ -178,8 +187,6 @@ ul#avia-menu>li.menu-item-has-children::after{
 }
 #top .main_menu .menu li.av-menu-button-colored i{
   color: #EEEEEE !important;
-  /*-webkit-text-stroke: 1px #EEE !important;*/
-  /*-webkit-text-fill-color: transparent !important;*/
   display: inline-block;
 }
 
@@ -190,13 +197,12 @@ span#nav-shop{
   border-radius: 3px;
 }
 
-
 // Cart Styles
 ul.menu-item.cart_dropdown {
-  top: 50px;
+  top: 45px;
   left: unset;
   float: left;
-  right: 695px !important;
+  //right: unset !important;
   border: none;
 }
 .cart_dropdown .dropdown_widget{
@@ -223,7 +229,6 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 
 li#menu-item-search {
   float: left !important;
-  //left: unset;
 }
 
 #top .main_menu .menu li.av-menu-button-colored:hover{
@@ -323,7 +328,7 @@ ul.sort-param-sort li a {
 #top .main_color .sort-param a{
   color: $secondaryTextColor;
   &:hover{
-  color: $secondaryTextColor;
+    color: $secondaryTextColor;
   }
 }
 .main_color .avia_cart_buttons {

@@ -286,7 +286,7 @@
 
   #top div.woocommerce-message , p.woocommerce-notice.woocommerce-notice--success.woocommerce-thankyou-order-received {
     padding: 8px 20px;
-    margin-top: 30px;
+    margin-top: 80px;
     width: 100%;
   }
   .notif_banner_container{
@@ -695,14 +695,14 @@
     right: 13px !important;
     z-index: 1 !important;
     .cart_dropdown_link {
-      font-size: 165% !important;
+      font-size: 135% !important;
     }
   }
   li#menu-item-search {
     left: 95px;
   }
   .responsive #top #wrap_all .main_menu {
-    left: -60px !important;
+    left: -54px !important;
   }
   #custom-footer{
     padding: 0;
@@ -935,7 +935,7 @@
     }
   }
   .breadcrumb-trail {
-    font-size: 125%;
+    font-size: 100%;
   }
   .breadcrumb .sep i{
     font-weight:lighter;

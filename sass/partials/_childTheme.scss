@@ -137,7 +137,7 @@
   font-size: 100%;
   user-select: none;
 }
-#custom-footer .sr-element h6{
+#custom-footer .sr-element p.title{
   line-height: 2;
   font-size: 100%;
   color: #EEEEEE;
@@ -206,7 +206,7 @@
 #custom-footer .tr-element {
   margin-top: 10px;
 }
-#custom-footer .tr-element h6{
+#custom-footer .tr-element p.title{
   font-size: 100%;
   color: #EEEEEE;
   font-family: $textFont;
@@ -1373,7 +1373,7 @@ article#guarantee_vector .iconbox_icon::before{
   position: fixed;
   bottom: 50px;
   left: 70px;
-  z-index: 99;
+  z-index: 99999;
 }
 .fab-checkbox {
   display: none !important;

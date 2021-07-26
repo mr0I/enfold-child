@@ -195,7 +195,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                     <div class="tr-element col-12">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                <h6 class="threeWords">آدرس دفتر مرکزی</h6>
+                                <p class="threeWords title">آدرس دفتر مرکزی</p>
                                 <p>
                                 <span>اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33       ساعات کار:       8:30 الی 17</span>
                                 <br>
@@ -203,13 +203,13 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                 </p>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                <h6 class="twoWords">آدرس کارخانه</h6>
+                                <p class="twoWords title">آدرس کارخانه</p>
                                 <p><span>نجف آباد – شهرک صنعتی شماره 2 – خیابان ابوریحان – شرکت رادشید</span></p>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-4 col-md-4 col-sm-12">
-                                <h6 class="twoWords">واحد بازرگانی</h6>
+                                <p class="twoWords title">واحد بازرگانی</p>
                                 <ul style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
                                     <li class="col-6 farsi_num"><a href="tel:03132362894">03132362894</a></li>
                                     <li class="col-6 farsi_num"><a href="tel:03132362947">03132362947</a></li>
@@ -218,7 +218,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                 </ul>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12">
-                                <h6 class="twoWords">واحد پشتیبانی</h6>
+                                <p class="twoWords title">واحد پشتیبانی</p>
                                 <ul id="support_unit" style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
                                     <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:03195016151">03195016151</a></li>
                                     <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:03132363078">03132363078</a></li>
@@ -229,7 +229,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                 </ul>
                             </div>
                             <div class="col-lg-4 col-md-4 col-sm-12">
-                                <h6 class="oneWord"> فکس </p></h6>
+                                <p class="oneWord title"> فکس </p>
                                 <ul style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
                                     <li class="col-12"><span class="farsi_num">03132362788</span> (داخلی 23)</li>
                                 </ul>
@@ -243,7 +243,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
             <div class="container-fluid">
                 <div class="row" style="width: 94%;margin: 0 auto;border-bottom: 1px solid #bdbdbd">
                     <div class="sr-element col-md-4 col-sm-12">
-                        <h6 class="twoWords">با رادشید</h6>
+                        <p class="twoWords title">با رادشید</p>
                         <ul style="display: flex;flex-flow: row wrap">
                             <li class="col-6"><a href="https://radshid.com/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/">تماس با رادشید</a></li>
                             <li class="col-6"><a href="https://radshid.com/%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7/">درباره رادشید</a></li>
@@ -252,7 +252,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                         </ul>
                     </div>
                     <div class="sr-element col-md-4 col-sm-12">
-                        <h6 class="fourWords">راهنمای خرید از رادشید</h6>
+                        <p class="fourWords title">راهنمای خرید از رادشید</p>
                         <ul style="display: flex;flex-flow: row wrap">
                             <li class="col-6"><a href="https://radshid.com/%d9%86%d8%ad%d9%88%d9%87-%d8%ab%d8%a8%d8%aa-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4/">نحوه ثبت سفارش</a></li>
                             <li class="col-6"><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d9%be%d8%b1%d8%af%d8%a7%d8%ae%d8%aa/">شیوه های پرداخت</a></li>
