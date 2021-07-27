@@ -14,7 +14,7 @@
   #custom-footer .fr-element span{
     font-size: 100%;
   }
-  #custom-footer .sr-element h6{
+  #custom-footer .sr-element p.title{
     margin: 8px auto;
     padding-top: 8px;
     font-size: 100%;
@@ -436,7 +436,7 @@
   #custom-footer .fr-element span{
     font-size: 100%;
   }
-  #custom-footer .sr-element h6{
+  #custom-footer .sr-element p.title{
     text-align: center;
     margin: 10px auto;
     padding-top: 10px;
@@ -724,7 +724,7 @@
     display: flex !important;
     justify-content: center;
   }
-  #custom-footer .sr-element h6 ,#custom-footer .tr-element h6 {
+  #custom-footer .sr-element p.title ,#custom-footer .tr-element p.title {
     &::after{
       display: none;
     }
@@ -892,7 +892,7 @@
   #custom-footer .fr-element span{
     font-size: 85%;
   }
-  #custom-footer .sr-element h6{
+  #custom-footer .sr-element p.title{
     margin: 6px auto;
     padding-top: 6px;
   }
@@ -912,11 +912,11 @@
   #custom-footer .sr-element .footer-social a{
     padding: 8px;
   }
-  #custom-footer .tr-element h6{
+  #custom-footer .tr-element p.title{
     margin: 6px auto;
     font-size: 100%;
   }
-  #custom-footer .tr-element h6 span{
+  #custom-footer .tr-element p.title span{
     font-size: 85%;
   }
   #custom-footer .tr-element p {

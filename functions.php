@@ -360,18 +360,6 @@ function add_defer_attribute($tag, $handle) {
 }
 
 
-/*
-Plugin Name: Remove Email Field
-Description: Removes the Email field from the comments form
-*/
-//add_filter('comment_form_default_fields', 'url_filtered');
-//function url_filtered($fields)
-//{
-//	if(isset($fields['email']))
-//		unset($fields['email']);
-//	return $fields;
-//}
-
 /* Start Recaptcha */
 //function add_google_recaptcha($submit_field) {
 //	$submit_field['submit_field'] = '<div class="g-recaptcha" data-sitekey="6LfZS6gZAAAAAC5BMOsbcNQYDqtQm6puHeUmjlid"></div><br>' . $submit_field['submit_field'];

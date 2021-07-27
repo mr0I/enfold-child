@@ -15,7 +15,7 @@ blockquote {
 }
 
 ::selection {
-  background-color: $primaryColor;
+  background-color: $titleColor;
   color: #EEEEEE;
 }
 
@@ -111,6 +111,8 @@ ul#avia-menu>li.menu-item-has-children::after{
   width: auto;
   border-top: 3px solid $primaryColor !important;
   top: 70px;
+  max-height: 400px;
+  overflow-y: auto;
   li{
     margin: auto;
     top: 0;
