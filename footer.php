@@ -508,25 +508,25 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
         </footer>
 
 
-        <link rel="manifest" href="/manifest.json">
         <!-- Najva Push Notification -->
-        <script type="text/javascript">
-            (function(){
-                var now = new Date();
-                var version = now.getFullYear().toString() + "0" + now.getMonth() + "0" + now.getDate() +
-                    "0" + now.getHours();
-                var head = document.getElementsByTagName("head")[0];
-                var link = document.createElement("link");
-                link.rel = "stylesheet";
-                link.href = "https://app.najva.com/static/css/local-messaging.css" + "?v=" + version;
-                head.appendChild(link);
-                var script = document.createElement("script");
-                script.type = "text/javascript";
-                script.async = true;
-                script.src = "https://app.najva.com/static/js/scripts/radshid-website-25447-11035874-788d-4c32-865a-097de0b153e1.js" + "?v=" + version;
-                head.appendChild(script);
-            })()
-        </script>
+<!--        <link rel="manifest" href="/manifest.json">-->
+<!--        <script type="text/javascript">-->
+<!--            (function(){-->
+<!--                var now = new Date();-->
+<!--                var version = now.getFullYear().toString() + "0" + now.getMonth() + "0" + now.getDate() +-->
+<!--                    "0" + now.getHours();-->
+<!--                var head = document.getElementsByTagName("head")[0];-->
+<!--                var link = document.createElement("link");-->
+<!--                link.rel = "stylesheet";-->
+<!--                link.href = "https://app.najva.com/static/css/local-messaging.css" + "?v=" + version;-->
+<!--                head.appendChild(link);-->
+<!--                var script = document.createElement("script");-->
+<!--                script.type = "text/javascript";-->
+<!--                script.async = true;-->
+<!--                script.src = "https://app.najva.com/static/js/scripts/radshid-website-25447-11035874-788d-4c32-865a-097de0b153e1.js" + "?v=" + version;-->
+<!--                head.appendChild(script);-->
+<!--            })()-->
+<!--        </script>-->
         <!-- END NAJVA PUSH NOTIFICATION -->
 
 		<?php

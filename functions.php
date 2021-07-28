@@ -145,24 +145,23 @@ add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
  */
 add_shortcode('post_header_attribs', function (){
 	global $post;
-	$postUrl = wp_get_shortlink( $post->ID, 'post',  true );
-	$postTitle = get_the_title($post->ID);
+	$post_id = $post->ID;
 
 	gt_set_post_view();
-	$pvc = gt_get_post_view();
+	$pvc = gt_get_post_view($post_id);
 
 	if (is_single()){
+		$comments_count  = get_comments_number($post_id);
 		$html = '
         <div class="row container" id="post_data_container">
             <div class="post_data">
-                    <span class="post_views_count"><i class="ic-eye mx-1 float-right"></i>تعداد بازدید: '.$pvc.' </span>
+                <p class="post_views_count"><i class="ic-eye mx-1"></i><span>تعداد بازدید: '.$pvc.' </span></p>
+                <p class="post_comments_count"><i class="ic-bubble mx-1"></i><a href="#respond"><span>تعداد نظرات: '.$comments_count.'</span></a></p>
             </div>
         </div> ';
 	}
-
 	return $html;
 });
-
 
 add_shortcode('post_footer_attribs', function (){
 	global $post;

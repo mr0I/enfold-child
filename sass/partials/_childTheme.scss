@@ -1031,13 +1031,25 @@ footer .footer-social-btns i{
       }
     }
     .post_views_count{
-      margin: 0;
+      margin-top: 6px;
+      margin-bottom: 0;
       padding: 0;
-      font-size: 90%;
+      font-size: 85%;
       color: $secondaryTextColor;
+      display: flex;
+      align-items: center;
       i{
         line-height: 2;
         padding: 0 2px;
+      }
+    }
+    .post_comments_count {
+      margin: auto 3px;
+      font-size: 85%;
+      display: flex;
+      align-items: center;
+      a{
+      color: $secondaryTextColor;
       }
     }
   }
@@ -1064,7 +1076,7 @@ footer .footer-social-btns i{
 
 .related-posts{
   width: 96%;
-  margin: auto;
+  margin:8px auto;
   .card{
     margin: auto;
     min-height: 325px;
@@ -1105,9 +1117,9 @@ footer .footer-social-btns i{
 .post-footer-attribs{
   background-color: #ffffff;
   padding:8px;
-  margin-top: 50px;
+  margin: 100px auto;
   border: 1px solid #e0e0e0;
-  border-radius: 0;
+  border-radius: 0 !important;
   .pfa-title{
     margin: 0;
     i{
@@ -1136,7 +1148,6 @@ footer .footer-social-btns i{
       }
     }
   }
-
 }
 
 .single_post_share_btns{
@@ -1188,7 +1199,6 @@ footer .footer-social-btns i{
 
   }
 }
-
 /* End Post Attribs */
 
 
