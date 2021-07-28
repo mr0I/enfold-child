@@ -108,7 +108,7 @@
   z-index: 0;
 }
 #custom-footer{
-  background-color: #235e8a;
+  background-color: $primaryColor;
   padding: 2px;
   font-family: $textFont !important;
   margin-top: 0;
@@ -133,14 +133,14 @@
   margin:5px auto;
 }
 #custom-footer .fr-element span{
-  color: #bdbdbd;
+  color: #e0e0e0;
   font-size: 100%;
   user-select: none;
 }
 #custom-footer .sr-element p.title{
   line-height: 2;
   font-size: 100%;
-  color: #EEEEEE;
+  color: #ffffff;
   text-align: right;
   font-weight: normal;
   padding: 5px;
@@ -168,7 +168,7 @@
 
 }
 #custom-footer .sr-element ul li a{
-  color: $secondaryWhiteColor;
+  color: #e0e0e0;
   font-size: 85%;
 }
 #custom-footer .sr-element ul li a:hover{
@@ -208,12 +208,12 @@
 }
 #custom-footer .tr-element p.title{
   font-size: 100%;
-  color: #EEEEEE;
+  color: #ffffff;
   font-family: $textFont;
   line-height: 2;
   font-weight: normal;
   padding: 5px;
-  border-bottom: 1.5px solid #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
   &::after{
     content: "";
     position: absolute;
@@ -245,7 +245,7 @@
 }
 
 #custom-footer .tr-element ul li a{
-  color: $secondaryWhiteColor;
+  color: #e0e0e0;
 }
 #custom-footer .tr-element ul li, #custom-footer .tr-element p span {
   font-weight: normal;
@@ -254,7 +254,7 @@
   direction: ltr;
   padding: 4px 0;
   line-height: 2;
-  color: $secondaryWhiteColor;
+  color: #EEEEEE;
 }
 #custom-footer #gateway {
   display: flex;
@@ -735,7 +735,7 @@ footer .footer-social-btns i{
     padding: 8px;
     .copyrightText{
       span{
-        color: #9e9e9e;
+        color: #bdbdbd;
         line-height: 2;
         font-weight: lighter;
         font-size: 85%;
@@ -743,7 +743,7 @@ footer .footer-social-btns i{
     }
     .social-icons a {
       margin: auto 8px;
-      color: #9e9e9e;
+      color: #bdbdbd;
       @include myTransition(0.25s ease);
       &:hover{
         color: #EEEEEE;
@@ -1057,12 +1057,94 @@ footer .footer-social-btns i{
   }
 }
 
+.related-posts-title{
+  padding: 0 15px !important;
+  margin: 0;
+}
+
+.related-posts{
+  width: 96%;
+  margin: auto;
+  .card{
+    margin: auto;
+    min-height: 325px;
+    border-radius: 0 !important;
+    a{
+      border-radius: 0 !important;
+      img{
+        border-radius: 0 !important;
+      }
+    }
+
+    .card-body{
+      padding: 0 5px;
+      .card-title{
+        font-size: 85%;
+        color: $titleColor;
+        margin: 5px auto;
+      }
+      .card-text{
+        font-size: 75%;
+        text-align: justify;
+        line-height: 2;
+        padding: 0 5px;
+        margin: 0;
+        color: $secondaryTextColor;
+      }
+    }
+    .card-footer{
+      padding: 0 5px;
+      background-color: transparent;
+    }
+    .card-bottom{
+      padding: 0 10px;
+    }
+  }
+}
+
+.post-footer-attribs{
+  background-color: #ffffff;
+  padding:8px;
+  margin-top: 50px;
+  border: 1px solid #e0e0e0;
+  border-radius: 0;
+  .pfa-title{
+    margin: 0;
+    i{
+      color: $primaryColor;
+      vertical-align: middle;
+    }
+  }
+  .post_tag{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 20px;
+    a{
+      border: 1px solid transparent;
+      padding: 5px 10px;
+      margin: 5px;
+      color: #757575;
+      background-color: #EEEEEE;
+      border-radius: 0 !important;
+      font-size: 75%;
+      font-family: $textFont;
+      &:hover{
+        color: #757575;
+      }
+    }
+  }
+
+}
+
 .single_post_share_btns{
-  margin-bottom: 100px;
   .single_post_share_btns_container{
     display: flex;
-    justify-content: space-between;
     flex-flow: row wrap;
+    justify-content: flex-end;
+    margin-bottom: 20px;
     ul{
       display: flex;
       flex-flow: row wrap;
@@ -1107,70 +1189,6 @@ footer .footer-social-btns i{
   }
 }
 
-
-.related-posts-title{
-  padding: 0 15px !important;
-  margin: 0;
-}
-.related-posts{
-  .card{
-    margin: 13px;
-    min-height: 325px;
-    border-radius: 0 !important;
-    a{
-      border-radius: 0 !important;
-      img{
-        border-radius: 0 !important;
-      }
-    }
-
-    .card-body{
-      padding: 0 5px;
-      .card-title{
-        font-size: 85%;
-        color: $titleColor;
-        margin: 5px auto;
-      }
-      .card-text{
-        font-size: 75%;
-        text-align: justify;
-        line-height: 2;
-        padding: 0 5px;
-        margin: 0;
-        color: $secondaryTextColor;
-      }
-    }
-    .card-footer{
-      padding: 0 5px;
-      background-color: transparent;
-    }
-    .card-bottom{
-      padding: 0 10px;
-    }
-  }
-}
-
-.post_tag{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  margin: 100px 0 13px 0;
-  a{
-    border: 1px solid transparent;
-    padding: 5px 10px;
-    margin: 5px;
-    color: #757575;
-    background-color: #EEEEEE;
-    border-radius: 0 !important;
-    font-size: 75%;
-    font-family: $textFont;
-    &:hover{
-      color: #757575;
-    }
-  }
-}
 /* End Post Attribs */
 
 

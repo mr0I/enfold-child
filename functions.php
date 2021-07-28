@@ -163,6 +163,7 @@ add_shortcode('post_header_attribs', function (){
 	return $html;
 });
 
+
 add_shortcode('post_footer_attribs', function (){
 	global $post;
 	$postUrl = wp_get_shortlink( $post->ID, 'post',  true );
@@ -171,7 +172,7 @@ add_shortcode('post_footer_attribs', function (){
 	if( is_single() ) {
 		//get the tags of the current post
 		$the_tags = get_the_tags( $post->ID );
-		$output = '<span class="post_tag">';
+		$output = '<div class="post-footer-attribs"><p class="pfa-title"><i class="ic-tag mx-1"></i>برچسب ها</p><span class="post_tag">';
 		$tag_array = [];
 		foreach($the_tags as  $key2 => $tag) {
 			$taglink = get_tag_link($tag->term_id);
@@ -212,23 +213,21 @@ add_shortcode('post_footer_attribs', function (){
 		);
 
 		$html = '<div class="single_post_share_btns">
+			<p class="pfa-title"><i class="ic-share mx-1"></i>اشتراک گذاری</p>
             <div class="single_post_share_btns_container">
-                <div class="share_link col-lg-8 col-md-8 col-sm-12" onclick="copyToClip(event)">
-                     <span><i class="ic-copy mx-2"></i>لینک به اشتراک گذاری</span>
-                    <span>'.$postUrl.'</span>
-                </div>
                  <ul>
                     <li class="icons ln"> <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در لینکدین"> <i class="ic-linkedin"></i> </a> </li>
                     <li class="icons wa"><a href="https://wa.me/?text='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در واتساپ"><i class="ic-whatsapp"></i></a></li>
                     <li class="icons tl"><a href="https://telegram.me/share/url?url='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در تلگرام"><i class="ic-telegram"></i></a></li>
                     <li class="icons tw"><a href="https://twitter.com/share?url='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در توییتر"><i class="ic-twitter"></i></a></li>
                     <li class="icons fb"><a href="https://www.facebook.com/sharer/sharer.php?u='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در فیسبوک"><i class="ic-facebook"></i></a></li>
+                    <li class="icons copy"><a href="#" onclick="copyToClip(event)" data-toggle="tooltip" data-placement="top" title="کپی لینک کوتاه"><i class="ic-link"></i></a></li>
                 </ul>
                 <input type="hidden" id="short_link" value="'.$postUrl.'">
             </div>
         </div>';
 
-		$rps = '<h4 class="related-posts-title">شاید از این مقالات هم خوشتان بیاید</h4><div class="card-group related-posts mb-5">';
+		$rps = '<p class="pfa-title"><i class="ic-book-open mx-1"></i>شاید از این مقالات هم خوشتان بیاید</p><div class="card-group related-posts">';
 		if ( $related_posts->have_posts() ) {
 			while ( $related_posts->have_posts() ) {
 				$related_posts->the_post();
@@ -245,9 +244,8 @@ add_shortcode('post_footer_attribs', function (){
 		}
 	}
 
-
 	$tags = $output . '</span>';
-	return $tags . $html . $rps;
+	return $tags . $html .  $rps . '</div>';
 });
 
 

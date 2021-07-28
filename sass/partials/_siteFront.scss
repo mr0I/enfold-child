@@ -15,7 +15,7 @@ blockquote {
 }
 
 ::selection {
-  background-color: $titleColor;
+  background-color: #1c272b;
   color: #EEEEEE;
 }
 
@@ -38,7 +38,6 @@ nav.sub_menu{
 .header_color .sub_menu>ul>li>a:hover, .header_color .sub_menu>div>ul>li>a:hover, .header_color .main_menu ul:first-child>li>a:hover, #top .header_color .main_menu .menu ul .current_page_item>a:hover, #top .header_color .main_menu .menu ul .current-menu-item>a:hover, #top .header_color .sub_menu li ul a:hover {
   color: $primaryColor !important;
 }
-
 
 // Navbar
 ul#avia-menu {
