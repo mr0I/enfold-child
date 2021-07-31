@@ -41,7 +41,8 @@ nav.sub_menu{
 
 // Navbar
 ul#avia-menu {
-  right: 40px;
+  right: 36px;
+  top: 15px;
   margin: auto !important;
 }
 ul#avia-menu li.current-menu-item > a{
@@ -58,7 +59,7 @@ ul#avia-menu>li.menu-item-has-children::after{
   font-family: mycon;
   position: absolute;
   left: -5px;
-  top: 10px;
+  top: -3px;
   font-size: 115%;
   color: $secondaryTextColor;
 }
@@ -85,7 +86,7 @@ ul#avia-menu>li.menu-item-has-children::after{
   }
   .container, .main_menu ul:first-child>li a {
     height: 50px;
-    line-height: 50px;
+    line-height: 0;
   }
 
 }
@@ -100,7 +101,7 @@ ul#avia-menu>li.menu-item-has-children::after{
 #top .main_menu .menu li {
   margin: auto;
   top: 20px;
-  height: 70px;
+  height: auto;
   a {
     font-size: 85%;
   }
@@ -109,8 +110,8 @@ ul#avia-menu>li.menu-item-has-children::after{
   min-width: 250px;
   width: auto;
   border-top: 3px solid $primaryColor !important;
-  top: 70px;
-  max-height: 400px;
+  top: 36px;
+  max-height: 450px;
   overflow-y: auto;
   li{
     margin: auto;
@@ -200,10 +201,9 @@ span#nav-shop{
 
 // Cart Styles
 ul.menu-item.cart_dropdown {
-  top: 45px;
+  top: 50px;
   left: unset;
   float: left;
-  //right: unset !important;
   border: none;
 }
 .cart_dropdown .dropdown_widget{
@@ -236,7 +236,8 @@ li#menu-item-search {
   position: absolute !important;
 }
 .avia-search-tooltip.avia-tt{
-  left: -105px !important;
+  left: -105px;
+  top: 30px !important;
 }
 .html_header_top.html_header_sticky #header {
   top: -1px;

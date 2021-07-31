@@ -55,7 +55,7 @@
   }
   span#nav-shop{
     background: transparent;
-    color: $AccentColor;
+    color: inherit;
   }
   .av-show-submenu span#nav-shop{
     color: #EEEEEE;
@@ -498,7 +498,7 @@
     font-size: 100% !important;
   }
   .avia-search-tooltip.avia-tt{
-    left: 100px !important;
+    left: 100px;
   }
   .responsive #top #header_main > .container .main_menu .av-main-nav > li > a {
     padding: 0 0 0 15px !important;
@@ -703,6 +703,7 @@
   }
   .responsive #top #wrap_all .main_menu {
     left: -54px !important;
+    top: -15px;
   }
   #custom-footer{
     padding: 0;
