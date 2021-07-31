@@ -2383,3 +2383,16 @@ p.stock.in-stock{
 .woocommerce-cart-form input{
   font-family: 'iranyekan' !important;
 }
+
+
+// $('.template-shop').find('.inner_product').find('.add_to_cart_button').html('افزودن به سبد خرید');
+.template-shop {
+  .inner_product{
+    .add_to_cart_button , .button-mini-delimiter , .product_type_simple{
+      display: none;
+    }
+    .show_details_button{
+      width: 100% !important;
+    }
+  }
+}
