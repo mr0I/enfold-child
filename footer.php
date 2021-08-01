@@ -261,12 +261,6 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                         </ul>
                     </div>
                     <div class="sr-element col-md-4 col-sm-12" style="margin-top: 30px;">
-<!--                        <h6 class="twoWords">درباره رادشید</h6>-->
-<!--                        <div class="footer-aboutUs">-->
-<!--                            <p>-->
-<!--                                شرکت رادشید  با هدف برطرف نمودن نیاز شرکت های صنعتی در رابطه با استفاده از سیستم های نوین و مدیریت هوشمندسازی ناوگان حمل و نقل آغاز گردید.  اما پس از آن با توجه به دانش بنیان بودن ساختار شرکت و با تکیه به توانمندی نیروهای مجرب پا را فراتر نهاده و با توجه به تقاضاهای مطرح شده  از طرف مشتریان در صنعت های مختلف قابلیت های دستگاه های تولیدی خود را کم کم افزایش داده که این مهم با استفاده از  تکنولوژِی های روز دنیا و ایده های نو به حقیقت پیوست.-->
-<!--                            </p>-->
-<!--                        </div>-->
                         <div id="gateway">
                             <a>
                                 <figure>
@@ -374,21 +368,21 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
     <!-- floated icons -->
     <div class="floated_icons-r2">
-        <a rel="nofollow" href="https://cafebazaar.ir/app/com.radshid.radassistant" target="_blank" title="دریافت از کافه بازار">
+        <a rel="nofollow" href="http://rx4.ir/android" target="_blank" title="دریافت از کافه بازار">
             <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" width="35" height="35" alt="دریافت از کافه بازار">
             <span>برنامه ردیابی رادشید (اندروید)</span>
         </a>
     </div>
     <div class="floated_icons-r3">
         <a rel="nofollow" title="دریافت از سیب اپ"
-           href="https://sibapp.com/applications/%D8%B1%D8%AF%DB%8C%D8%A7%D8%A8-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D8%B1%D8%A7%D8%AF%D8%B4%DB%8C%D8%AF" target="_blank">
+           href="http://rx4.ir/ios" target="_blank">
             <img src="<?php echo get_stylesheet_directory_uri().'/images/sibapp.png' ; ?>" width="35" height="35" alt="دریافت از سیب اپ">
             <span>برنامه ردیابی رادشید (آی او اس)</span>
         </a>
     </div>
     <div class="floated_icons-r4">
         <a rel="nofollow" title="دریافت از اناردونی"
-           href="https://anardoni.com/ios/app/Y61iN7Xry" target="_blank">
+           href="http://rx4.ir/ios" target="_blank">
             <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" width="35" height="35" alt="دریافت نسخه ios از اناردونی">
             <span >برنامه ردیابی رادشید (آی او اس)</span>
         </a>
@@ -403,16 +397,16 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                 <i class="ic-instagram"></i>
                 <span>اینستاگرام</span>
             </a>
-            <a href="https://sibapp.com/applications/%D8%B1%D8%AF%DB%8C%D8%A7%D8%A8-%D8%AE%D9%88%D8%AF%D8%B1%D9%88-%D8%B1%D8%A7%D8%AF%D8%B4%DB%8C%D8%AF" title="برنامه ردیابی رادشید نسخه ios"
+            <a href="http://rx4.ir/ios" title="برنامه ردیابی رادشید نسخه ios"
                rel="nofollow" target="_blank">
                 <img src="<?php echo get_stylesheet_directory_uri().'/images/sibapp.png' ; ?>" width="22" height="22" alt="دریافت نسخه ios از سیب اپ">
                 <span>سیب اپ</span>
             </a>
-            <a href="https://anardoni.com/ios/app/Y61iN7Xry" rel="nofollow" target="_blank" title="برنامه ردیابی رادشید نسخه ios">
+            <a href="http://rx4.ir/ios" rel="nofollow" target="_blank" title="برنامه ردیابی رادشید نسخه ios">
                 <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" width="22" height="22" alt="دریافت نسخه ios از اناردونی">
                 <span>اناردونی</span>
             </a>
-            <a href="https://cafebazaar.ir/app/com.radshid.radassistant" target="_blank" rel="nofollow" title="برنامه ردیابی رادشید نسخه اندروید">
+            <a href="http://rx4.ir/android" target="_blank"  title="برنامه ردیابی رادشید نسخه اندروید">
                 <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" width="22" height="22" alt="دریافت از بازار">
                 <span>کافه بازار</span>
             </a>

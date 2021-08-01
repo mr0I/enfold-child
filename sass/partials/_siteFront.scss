@@ -205,7 +205,7 @@ ul.menu-item.cart_dropdown {
   left: unset;
   float: left;
   border: none;
-  right: 1135px;
+  //right: 1135px;
 }
 .cart_dropdown .dropdown_widget{
   left: unset !important;
@@ -965,6 +965,7 @@ span.copyright{
 }
 .inner_product_header_cell .woocommerce-Price-amount{
   font-size: 100% !important;
+  //display: none !important;
 }
 .inner_product_header_cell .woocommerce-Price-amount .woocommerce-Price-currencySymbol{
   font-size: 100% !important;
@@ -2385,7 +2386,6 @@ p.stock.in-stock{
 }
 
 
-// $('.template-shop').find('.inner_product').find('.add_to_cart_button').html('افزودن به سبد خرید');
 .template-shop {
   .inner_product{
     .add_to_cart_button , .button-mini-delimiter , .product_type_simple{
@@ -2396,3 +2396,13 @@ p.stock.in-stock{
     }
   }
 }
+
+
+/* start samaneh page styles */
+#samaneh-tabs{
+  margin-top: -135px;
+}
+#mobile_size_catalog{
+  display: none;
+}
+/* end samaneh page styles */
