@@ -224,7 +224,6 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                     <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:03132363078">03132363078</a></li>
                                     <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09018377198">09018377198</a></li>
                                     <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09018377021">09018377021</a></li>
-                                    <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09018377021">09018377021</a></li>
                                     <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09901883981">09901883981</a></li>
                                 </ul>
                             </div>
@@ -301,16 +300,6 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
     <!-- custom footer -->
 
     <!-- custom code -->
-<!--    <div>-->
-<!--        <a class="floated-shop" href="--><?//= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?><!--" title="ورود به فروشگاه">-->
-<!--            <svg id="i-bag" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">-->
-<!--                <path d="M5 9 L5 29 27 29 27 9 Z M10 9 C10 9 10 3 16 3 22 3 22 9 22 9" />-->
-<!--            </svg>-->
-<!--        </a>-->
-<!--        <a class="dial-btn" href="tel:03132362894" title="تماس با واحد بازرگانی">-->
-<!--            <i class="Phone"></i>-->
-<!--        </a>-->
-<!--    </div>-->
 
     <!-- Floated Action Button -->
     <div class="fab-wrapper">
@@ -621,6 +610,16 @@ wp_footer();
     gtag('js', new Date());
     gtag('config', 'UA-59846784-2');
 </script>
+
+<script>var cb = function() {
+        var l = document.createElement('link'); l.rel = 'stylesheet';
+        l.href = 'PATH_TO_COMBINED_CSS_FILE';
+        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+    };
+    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+        webkitRequestAnimationFrame || msRequestAnimationFrame;
+    if (raf) raf(cb);
+    else window.addEventListener('load', cb);</script>
 
 </body>
 </html>

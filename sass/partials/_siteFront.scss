@@ -41,7 +41,7 @@ nav.sub_menu{
 
 // Navbar
 ul#avia-menu {
-  right: 36px;
+  right: 55px;
   top: 15px;
   margin: auto !important;
 }
@@ -80,6 +80,7 @@ ul#avia-menu>li.menu-item-has-children::after{
     right: unset;
     top: 0;
     left: 20px;
+    z-index: 101;
     img{
       padding:8px !important;
     }
@@ -1502,7 +1503,7 @@ img.full-width-img{
     span.woocommerce-Price-amount.amount{
       color: $primaryDarkColor;
       bdi{
-      font-size: 100% !important;
+      font-size: 150% !important;
       }
     }
     span.woocommerce-Price-currencySymbol{
@@ -1643,8 +1644,6 @@ form.cart .quantity{
   line-height: 45px !important;
 }
 // product single
-
-
 
 .slick-slide img{
   border: none !important;
@@ -2380,15 +2379,13 @@ p.stock.in-stock{
 }
 // Hide in_stock from woocommece
 
-
-.woocommerce-cart-form input{
-  font-family: 'iranyekan' !important;
+.woocommerce-cart-form input , .input-text.qty.text{
+  font-family: $textFont !important;
 }
-
 
 .template-shop {
   .inner_product{
-    .add_to_cart_button , .button-mini-delimiter , .product_type_simple{
+    .add_to_cart_button , .button-mini-delimiter , .product_type_simple , .woocommerce-Price-amount.amount{
       display: none;
     }
     .show_details_button{
@@ -2397,12 +2394,23 @@ p.stock.in-stock{
   }
 }
 
-
-/* start samaneh page styles */
+/* samaneh page styles */
 #samaneh-tabs{
   margin-top: -135px;
 }
 #mobile_size_catalog{
   display: none;
 }
-/* end samaneh page styles */
+/* samaneh page styles */
+
+
+/* temporary full width articles  */
+#top .fullsize .template-blog .post .entry-content-wrapper {
+  max-width: 100% !important;
+}
+#top .fullsize .template-blog .post .entry-content-wrapper > * {
+  max-width: 100% !important;
+}
+/* temporary full width articles  */
+
+

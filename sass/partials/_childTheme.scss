@@ -1217,9 +1217,12 @@ footer .footer-social-btns i{
     margin: 4px auto;
     color: #eee;
     border-radius: 3px !important;
+    background-color: $primaryColor;
     &:hover{
       padding: 8px 24px;
       color: #eee;
+      background-color: $primaryColor !important;
+      border-color: transparent !important;
     }
   }
   #mobile_size_catalog{
