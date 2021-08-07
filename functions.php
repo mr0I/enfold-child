@@ -288,7 +288,7 @@ add_shortcode('products_row_btns', function ($atts, $content = null){
 	$X1_url = 'https://radshid.com/shop';
 	$X5_url = 'https://radshid.com/?p=11720';
 	$Magnet_url = 'https://radshid.com/?p=13574';
-	$Sipaad_url = 'https://radshid.com/?p=14049';
+	$Sipaad_url = 'https://sipaad.ir';
 	$X0_url = 'https://radshid.com/?p=10216';
 	$PR1S_url = 'https://radshid.com/?p=15129';
 	$PR8_url = 'https://radshid.com/?p=10285';
@@ -352,10 +352,17 @@ add_shortcode('products_row_btns', function ($atts, $content = null){
 	}
 
 	if ($pid != ''){
-		$btns = '<div class="addToCart_btns">
+		if (strpos($productUrl , 'sipaad')){
+			$btns = '<div class="addToCart_btns">
+                <a href="'.$productUrl.'" class="btn btn-danger mx-1" target="_blank" rel="noopener noreferrer">خرید آنلاین</a>
+                <a href="'.$other_trackers_url.'" class="btn btn-danger mx-1">'.$OthersBtnText.'</a>
+            </div>';
+		} else {
+			$btns = '<div class="addToCart_btns">
                 <a href="'.$productUrl.'" class="btn btn-danger mx-1">خرید آنلاین</a>
                 <a href="'.$other_trackers_url.'" class="btn btn-danger mx-1">'.$OthersBtnText.'</a>
             </div>';
+		}
 	}else{
 		$btns = '<div class="addToCart_btns">
                 <a href="'.$other_trackers_url.'" class="btn btn-danger mx-1">'.$OthersBtnText.'</a>
@@ -438,5 +445,3 @@ add_filter( 'comment_post_redirect', function( $location, $comment ) {
 	$location = get_permalink( $comment->comment_post_ID ) . '#wait_approval';
 	return $location;
 }, 10, 2 );
-
-
