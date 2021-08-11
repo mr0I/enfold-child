@@ -143,9 +143,9 @@ function copyToClip(event) {
     });
 }
 
-function scroll_to_column_boxes() {
-    document.getElementById("first_box").scrollIntoView({ behavior: 'smooth', block: 'start' });
-}
+// function scroll_to_column_boxes() {
+//     document.getElementById("first_box").scrollIntoView({ behavior: 'smooth', block: 'start' });
+// }
 
 
 

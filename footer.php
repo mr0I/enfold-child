@@ -376,29 +376,19 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
             <span >برنامه ردیابی رادشید (آی او اس)</span>
         </a>
     </div>
+
     <div class="floated_icons_footer">
         <div class="fif-container">
-            <a href="<?= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?>" title="ورود به فروشگاه">
-                <img src="<?php echo get_stylesheet_directory_uri().'/images/shop.png' ; ?>" width="22" height="22" alt="ورود به فروشگاه">
-                <span>فروشگاه</span>
+            <a href="https://radshid.com/my-account" title="ورود به سایت">
+                <i class="ic-user"></i><span>ورود/ثبت نام</span>
             </a>
-            <a href="https://www.instagram.com/radshid_com/" title="اینستاگرام رادشید" rel="nofollow" target="_blank">
-                <i class="ic-instagram"></i>
-                <span>اینستاگرام</span>
+            <a href="https://spa.radshid.com/" title="ورود به سایت" target="_blank">
+                <i class="ic-truck"></i><span>ورود به سامانه ردیابی</span>
             </a>
-            <a href="http://rx4.ir/ios" title="برنامه ردیابی رادشید نسخه ios"
-               rel="nofollow" target="_blank">
-                <img src="<?php echo get_stylesheet_directory_uri().'/images/sibapp.png' ; ?>" width="22" height="22" alt="دریافت نسخه ios از سیب اپ">
-                <span>سیب اپ</span>
+            <a href="<?= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?>" title="فروشگاه ردیاب">
+                <i class="ic-shopping-bag"></i><span>فروشگاه</span>
             </a>
-            <a href="http://rx4.ir/ios" rel="nofollow" target="_blank" title="برنامه ردیابی رادشید نسخه ios">
-                <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" width="22" height="22" alt="دریافت نسخه ios از اناردونی">
-                <span>اناردونی</span>
-            </a>
-            <a href="http://rx4.ir/android" target="_blank"  title="برنامه ردیابی رادشید نسخه اندروید">
-                <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" width="22" height="22" alt="دریافت از بازار">
-                <span>کافه بازار</span>
-            </a>
+
         </div>
     </div>
     <!-- floated icons -->
