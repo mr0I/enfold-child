@@ -601,15 +601,6 @@ wp_footer();
     gtag('config', 'UA-59846784-2');
 </script>
 
-<script>var cb = function() {
-        var l = document.createElement('link'); l.rel = 'stylesheet';
-        l.href = 'PATH_TO_COMBINED_CSS_FILE';
-        var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-    };
-    var raf = requestAnimationFrame [radshid_agencies cityname="چهارمحال بختیاری"]|| mozRequestAnimationFrame ||
-        webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(cb);
-    else window.addEventListener('load', cb);</script>
 
 </body>
 </html>

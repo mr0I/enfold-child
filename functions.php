@@ -23,17 +23,17 @@ function load_scripts_styles() {
 add_action( 'wp_enqueue_scripts', 'load_scripts_styles' , 99999999999);
 
 
-//add_filter( 'script_loader_tag', function ($tag, $handle, $src ){
-//	$defer = array(
-//		'sweetAlert',
-//		'custom-scripts'
-//	);
-//	if ( in_array( $handle, $defer ) ) {
-//		return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
-//	}
-//
-//	return $tag;
-//}, 10, 3 );
+add_filter( 'script_loader_tag', function ($tag, $handle, $src ){
+	$defer = array(
+		'sweetAlert',
+		'custom-scripts'
+	);
+	if ( in_array( $handle, $defer ) ) {
+		return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
+	}
+
+	return $tag;
+}, 10, 3 );
 
 //function mind_detect_enqueued_scripts() {
 //	global $wp_scripts;
