@@ -63,6 +63,9 @@
     #mobile_size_catalog{
       display: block;
     }
+    a{
+      font-size: 75%;
+    }
   }
   #samaneh-tabs{
     margin-top: 0;
@@ -917,7 +920,13 @@
   #custom-footer .sr-element p.title{
     margin: 6px auto;
     padding-top: 6px;
+    font-size: 85%;
   }
+  #custom-footer .tr-element p.title{
+    margin: 6px auto;
+    font-size: 85%;
+  }
+
   #custom-footer .fr-element p {
     line-height: 1.5;
     margin: 0 auto;
@@ -934,12 +943,11 @@
   #custom-footer .sr-element .footer-social a{
     padding: 8px;
   }
-  #custom-footer .tr-element p.title{
-    margin: 6px auto;
-    font-size: 100%;
+  #custom-footer .sr-element ul li a {
+    font-size: 75%;
   }
-  #custom-footer .tr-element p.title span{
-    font-size: 85%;
+  #custom-footer .tr-element ul li, #custom-footer .tr-element p span{
+    font-size:75%;
   }
   #custom-footer .tr-element p {
     margin: 10px auto;

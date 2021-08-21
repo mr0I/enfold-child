@@ -1217,6 +1217,8 @@ footer .footer-social-btns i{
     color: #eee;
     border-radius: 3px !important;
     background-color: $primaryColor;
+    white-space:unset !important;
+    line-height:2 !important;
     &:hover{
       padding: 8px 24px;
       color: #eee;
