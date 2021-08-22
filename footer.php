@@ -550,7 +550,6 @@ if (is_user_logged_in()){
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             let my_account_elm = $('ul#avia2-menu').find('li#menu-item-16014');
-            // let my_account_elm = $('ul.menu.av-main-nav').find('li.menu-item.menu-item-top-level-9');
             my_account_elm.find('a').html('<i class="ic-user align-text-top mx-1"></i>حساب کاربری');
         })
     </script>

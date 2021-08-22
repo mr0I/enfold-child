@@ -2414,3 +2414,35 @@ p.stock.in-stock{
 /* temporary full width articles  */
 
 
+/* Accordion Styles */
+.togglecontainer.av-elegant-toggle {
+  padding: 0 ;
+  border: 1px solid #e0e0e0;
+  border-radius: 0 !important;
+  .av_toggle_section .single_toggle{
+    border-radius: 0;
+    .toggle_wrap a{
+      color: $primaryColor !important;
+      font-weight: bold;
+    }
+  }
+  .av_toggle_section p.toggler{
+    padding:15px 50px;
+    background-color: $backgroundColor;
+    font-size:100%;
+    border: none;
+    border-radius: 0;
+    .toggle_icon{
+      width: 20px !important;
+      height: 20px !important;
+      right:20px !important;
+      left: auto !important;
+      margin-top: -8px !important;
+      color:$secondaryTextColor !important;
+      &:hover{
+        color:$secondaryTextColor !important;
+      }
+    }
+  }
+}
+/* Accordion Styles */
