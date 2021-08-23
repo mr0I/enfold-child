@@ -53,6 +53,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .has-margin-container{
+    padding: 0 24px !important;
+  }
   ul#avia-menu {
     right: 30px;
   }

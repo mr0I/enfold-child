@@ -1,100 +1,3 @@
-/* floated icons */
-.floated_icons-r1 , .floated_icons-r2 , .floated_icons-r3, .floated_icons-r4{
-  direction: ltr;
-  float: left;
-  position: fixed;
-  left: 0;
-  list-style-type: none;
-  display: flex;
-  flex-flow: column nowrap;
-  overflow: hidden;
-  z-index: 1;
-  white-space: nowrap;
-}
-.floated_icons-r2 {
-  top: 40%;
-}
-.floated_icons-r3 {
-  top: calc(40% + 49px);
-}
-.floated_icons-r4 {
-  top: calc(40% + 98px);
-}
-
-.floated_icons-r1 a , .floated_icons-r2 a , .floated_icons-r3 a, .floated_icons-r4 a  {
-  display: flex;
-  align-items: center;
-  flex-wrap: nowrap;
-  overflow: hidden;
-  margin: 0;
-  min-width: 40px;
-  width: auto;
-  height: 40px;
-  color: $primaryColor;
-  padding: 24px 0;
-  background-color: #EEEEEE;
-  text-decoration: none !important;
-}
-
-.floated_icons-r1 a , .floated_icons-r2 a, .floated_icons-r3 a  {
-  border-bottom: 1px solid $hoverColor;
-}
-
-.floated_icons-r1 a span , .floated_icons-r2 a span , .floated_icons-r3 a span, .floated_icons-r4 a span {
-  visibility: hidden;
-  overflow: hidden;
-  padding: 0;
-  width: 0;
-  white-space: nowrap;
-  font-weight: normal;
-  font-size: 75%;
-  margin-left: 10px;
-  text-align: right;
-  color: $secondaryTextColor !important;
-  font-family: $textFont !important;
-  direction: rtl;
-  @include myTransition(0.1s ease-in-out);
-}
-.floated_icons-r1 a:hover span ,.floated_icons-r2 a:hover span ,.floated_icons-r3 a:hover span ,.floated_icons-r4 a:hover span {
-  padding: 20px;
-  width: 200px;
-  visibility: visible;
-}
-
-.floated_icons-r1 img , .floated_icons-r2 img, .floated_icons-r3 img, .floated_icons-r4 img  {
-  width: 33px;
-  height: auto;
-  padding: 4px;
-  margin-left: 8px;
-  @include myTransition(0.1s ease);
-}
-
-.floated-shop {
-  position: fixed;
-  left: 20px;
-  bottom: 45px;
-  background: $primaryColor;
-  width: 60px;
-  height: 60px;
-  border-radius: 50px !important;
-  line-height: 60px;
-  text-align: center;
-  font-size: 100%;
-  z-index: 1000;
-  display: none;
-}
-.floated-shop i{
-  color: #ffffff;
-  line-height: 60px;
-  font-size: 100%;
-}
-.floated-shop svg{
-  color: #ffffff;
-  height: 95%;
-}
-/* floated icons */
-
-
 /* Footer */
 #socket{
   display: none;
@@ -752,24 +655,12 @@ footer .footer-social-btns i{
       }
       i{
         font-size: 115%;
+        &::before{
+          color: unset;
+        }
       }
     }
   }
-}
-
-.social-icons a {
-  margin: auto 8px;
-  color: $secondaryWhiteColor;
-  @include myTransition(0.25s ease);
-}
-.social-icons a:hover {
-  color: #EEEEEE;
-}
-.social-icons a:hover i{
-  font-weight: normal;
-}
-.social-icons a i{
-  font-size: 100%;
 }
 /* Custom Header */
 

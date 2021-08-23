@@ -283,14 +283,23 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                         <span>تمامی حقوق این سایت متعلق به شرکت مهندسی رادشید است.</span>
                     </div>
                     <div class="social-icons">
-                        <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="bottom" title="تلگرام" >
+                        <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="تلگرام" >
                             <i class="ic-telegram"></i>
                         </a>
-                        <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="bottom" title="اینستاگرام">
+                        <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="اینستاگرام">
                             <i class="ic-instagram"></i>
                         </a>
-                        <a href="https://www.aparat.com/radshid" id="aparat" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="bottom" title="آپارات">
+                        <a href="https://www.aparat.com/radshid" id="aparat" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="آپارات">
                             <i class="ic-aparat"></i>
+                        </a>
+                        <a href="http://rx4.ir/android" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="برنامه ردیابی رادشید (اندروید)">
+                            <i class="ic-android"></i>
+                        </a>
+                        <a href="http://rx4.ir/ios" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="برنامه ردیابی رادشید (ios)">
+                            <i class="ic-apple"></i>
+                        </a>
+                        <a href="tg://resolve?domain=radshid_bot" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="ربات تلگرام رادشید">
+                            <i class="ic-probot"></i>
                         </a>
                     </div>
                 </div>
@@ -356,26 +365,6 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
 
     <!-- floated icons -->
-    <div class="floated_icons-r2">
-        <a rel="nofollow" href="http://rx4.ir/android" target="_blank" title="دریافت از کافه بازار">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" width="35" height="35" alt="دریافت از کافه بازار">
-            <span>برنامه ردیابی رادشید (اندروید)</span>
-        </a>
-    </div>
-    <div class="floated_icons-r3">
-        <a rel="nofollow" title="دریافت از سیب اپ"
-           href="http://rx4.ir/ios" target="_blank">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/sibapp.png' ; ?>" width="35" height="35" alt="دریافت از سیب اپ">
-            <span>برنامه ردیابی رادشید (آی او اس)</span>
-        </a>
-    </div>
-    <div class="floated_icons-r4">
-        <a rel="nofollow" title="دریافت از اناردونی"
-           href="http://rx4.ir/ios" target="_blank">
-            <img src="<?php echo get_stylesheet_directory_uri().'/images/anaar.png' ; ?>" width="35" height="35" alt="دریافت نسخه ios از اناردونی">
-            <span >برنامه ردیابی رادشید (آی او اس)</span>
-        </a>
-    </div>
 
     <div class="floated_icons_footer">
         <div class="fif-container">
@@ -561,7 +550,7 @@ if (is_user_logged_in()){
         ?>
         <script type="text/javascript">
             jQuery(document).ready(function($) {
-                $('#avia-menu').append('<li id="menu-item-999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-top-level menu-item-top-level-1"><a href="<?php echo get_option('RADtools_setting_agencies_orders_list_link'); ?>" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><i class="fa fa-home"></i><?php echo __('Bulk Orders', 'radshid_lan'); ?></span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>');
+                //$('#avia-menu').append('<li id="menu-item-999" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-top-level menu-item-top-level-1"><a href="<?php echo get_option('RADtools_setting_agencies_orders_list_link'); ?>" itemprop="url"><span class="avia-bullet"></span><span class="avia-menu-text"><i class="fa fa-home"></i><?php echo __('Bulk Orders', 'radshid_lan'); ?></span><span class="avia-menu-fx"><span class="avia-arrow-wrap"><span class="avia-arrow"></span></span></span></a></li>');
             })
         </script>
         <?php
