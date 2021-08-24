@@ -799,6 +799,13 @@ div .main_color .tabcontainer .active_tab_content, div .main_color .tabcontainer
 .main_color.av_default_container_wrap.container_wrap.fullsize{
   background-color: #ededed ;
 }
+.woocommerce-billing-fields p.validate-required label::after{
+  content: "(الزامی)";
+  color: orangered;
+  margin: 0 5px;
+  vertical-align: middle;
+  font-size: 85%;
+}
 /* Woocommerce Pages */
 
 .newsbox ul li a .news-thumb {
