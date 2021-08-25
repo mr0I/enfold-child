@@ -298,7 +298,7 @@ a{
 .ic-copy:before {
 	content: "\e946";
 }
-.ic-spinner:before {
+.ic-spinner2:before {
 	content: "\e947";
 }
 .ic-map:before {
@@ -319,31 +319,48 @@ a{
 .ic-bubble:before {
 	content: "\e94d";
 }
+.ic-probot:before {
+	content: "\e94e";
+}
+.ic-android:before {
+	content: "\e94f";
+}
+.ic-apple:before {
+	content: "\e950";
+}
 .ic-spinner9:before {
 	content: "\e982";
 }
 .ic-bin:before {
 	content: "\e9ac";
 }
-.ic-probot:before {
-	content: "\e94e";
-	color: #00b0d8;
+.ic-spinner:before {
+	content: "\e951";
 }
-.ic-android:before {
-	content: "\e94f";
+.ic-loading:before {
+	content: "\e951";
 }
-.ic-brand:before {
-	content: "\e94f";
+.ic-loading-wheel:before {
+	content: "\e951";
 }
-.ic-os:before {
-	content: "\e94f";
+.ic-busy:before {
+	content: "\e951";
 }
-.ic-mobile:before {
-	content: "\e94f";
+.ic-wait:before {
+	content: "\e951";
 }
-.ic-apple:before {
-	content: "\e950";
+.ic-spinner1:before {
+	content: "\e952";
 }
-.ic-brand1:before {
-	content: "\e950";
+.ic-loading1:before {
+	content: "\e952";
+}
+.ic-loading-wheel1:before {
+	content: "\e952";
+}
+.ic-busy1:before {
+	content: "\e952";
+}
+.ic-wait1:before {
+	content: "\e952";
 }
