@@ -446,3 +446,12 @@ add_filter( 'comment_post_redirect', function( $location, $comment ) {
 	return $location;
 }, 10, 2 );
 
+
+/* Change bulk user roles  */
+$userids = [4];
+foreach ($userids as $userid){
+	$u = new WP_User( $userid);
+	$u->remove_role( 'author' );
+	$u->add_role( 'editor' );
+}
+

@@ -799,13 +799,13 @@ div .main_color .tabcontainer .active_tab_content, div .main_color .tabcontainer
 .main_color.av_default_container_wrap.container_wrap.fullsize{
   background-color: #ededed ;
 }
-.woocommerce-billing-fields p.validate-required label::after{
-  content: "(الزامی)";
-  color: orangered;
-  margin: 0 5px;
-  vertical-align: middle;
-  font-size: 85%;
-}
+//.woocommerce-billing-fields p.validate-required label::after{
+//  content: "(الزامی)";
+//  color: orangered;
+//  margin: 0 5px;
+//  vertical-align: middle;
+//  font-size: 85%;
+//}
 /* Woocommerce Pages */
 
 .newsbox ul li a .news-thumb {
@@ -1060,21 +1060,19 @@ h3.slide-entry-title a{
   td,th{
     text-align: justify !important;
     line-height: 2;
-    vertical-align: middle;
     border: 1px solid #e0e0e0 !important;
     border-radius: 0 !important;
+    color: $secondaryTextColor !important;
+    font-weight: normal!important;
+    background-color: #ffffff !important;
+    vertical-align: top;
   }
   th{
-    font-weight: normal;
-    background-color: #ffffff !important;
-    color: $titleColor !important;
+    color: #616161!important;
+    font-size: 101%!important;
   }
   td{
-    background-color: #ffffff !important;
-    color: $secondaryTextColor !important;
-    font-weight: normal !important;
     font-size: 115% !important;
-    vertical-align: top;
   }
 }
 // end specification table
@@ -2392,14 +2390,14 @@ p.stock.in-stock{
 }
 // Hide in_stock from woocommece
 
-.woocommerce-cart-form input , .input-text.qty.text{
+.woocommerce-cart-form input , .input-text.qty.text , input.input-text{
   font-family: $textFont !important;
 }
 
 .template-shop {
   .inner_product{
     .add_to_cart_button , .button-mini-delimiter , .product_type_simple , .woocommerce-Price-amount.amount{
-      display: none;
+      display: none !important;
     }
     .show_details_button{
       width: 100% !important;
@@ -2428,13 +2426,10 @@ p.stock.in-stock{
 
 
 /* Accordion Styles */
-.has-margin-container{
-  padding: 0 50px !important;
-}
-
 .togglecontainer.av-elegant-toggle {
-  padding: 0 ;
-  border: 1px solid #e0e0e0;
+  padding: 0;
+  margin: 0 64px;
+  border: none;
   border-radius: 0 !important;
   .av_toggle_section .single_toggle{
     border-radius: 0;
@@ -2450,7 +2445,8 @@ p.stock.in-stock{
   }
   .av_toggle_section p.toggler{
     padding:15px 50px;
-    background-color: $backgroundColor;
+    margin: 5px auto;
+    background-color: $backgroundColor !important;
     font-size:100%;
     border: none;
     border-radius: 0;
@@ -2466,5 +2462,27 @@ p.stock.in-stock{
       }
     }
   }
+  .toggle_content {
+    border: none;
+  }
 }
 /* Accordion Styles */
+
+
+/* start Extra Styles */
+.flex_column.av_one_full.flex_column_div{
+  padding:0 !important;
+}
+.withMargin{
+  padding: 0 65px;
+}
+label.optional-label::after{
+  content: "(اختیاری)";
+  color: $secondaryTextColor;
+  font-weight: lighter;
+  margin: 0 3px;
+}
+.uap-color-red{
+  display: none;
+}
+/* end Extra Styles */

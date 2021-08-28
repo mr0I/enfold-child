@@ -102,6 +102,7 @@ jQuery(document).ready(function($){
         $(this).find('i').css('color', '#616161');
     });
 
+    $('#uap_createuser').find('.optional').siblings('label').addClass('optional-label');
 
 });
 

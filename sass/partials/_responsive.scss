@@ -53,8 +53,12 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .has-margin-container{
-    padding: 0 24px !important;
+  .togglecontainer.av-elegant-toggle {
+    margin: 0 13px;
+  }
+  .withMargin {
+    padding: 0 24px;
+    font-size: 85%;
   }
   ul#avia-menu {
     right: 30px;
@@ -92,20 +96,7 @@
     td,th{
       text-align: right !important;
     }
-    th{
-      font-weight: normal;
-      background-color: #ffffff !important;
-      color: $titleColor !important;
-    }
-    td{
-      background-color: #ffffff !important;
-      color: $secondaryTextColor !important;
-      font-weight: normal !important;
-      font-size: 115% !important;
-      vertical-align: top;
-    }
   }
-
   // Start Demo Styles
   .column_box{
     padding:8px 16px !important;
