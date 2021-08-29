@@ -2094,8 +2094,6 @@ span.news-time {
   margin: auto 4px;
 }
 
-
-
 // Start Customize woocommerce tables
 table.shop_table th ,table.shop_table td {
   border: 1px solid $hoverColor;
@@ -2189,21 +2187,6 @@ td.actions .coupon {
 /* Breadcrumbs style*/
 
 
-// Crisp Avatar
-.cc-7doi.cc-1ada{
-  position: relative !important;
-}
-.cc-7doi.cc-1ada img{
-  position: absolute !important;
-  width: 70px !important;
-  height: 70px !important;
-  border-radius: 50px !important;
-  left: -5px !important;
-  top: -5px !important;
-}
-// Crisp Avatar
-
-
 // Hide theme share box
 .av-share-box {
   display: none;
@@ -2259,12 +2242,6 @@ ul.payment_methods .payment_box{
   }
 }
 // Customize recipt form
-
-
-// Temporary remove related posts
-.related_posts {
-  display:none;
-}
 
 
 #main, .avia-msie-8 .av_header_sticky_disabled#header {
@@ -2446,7 +2423,7 @@ p.stock.in-stock{
   .av_toggle_section p.toggler{
     padding:15px 50px;
     margin: 5px auto;
-    background-color: $backgroundColor !important;
+    background-color: #eeeeee !important;
     font-size:100%;
     border: none;
     border-radius: 0;
@@ -2467,6 +2444,19 @@ p.stock.in-stock{
   }
 }
 /* Accordion Styles */
+
+
+/* Related Posts Plugin */
+.centered-text-area .centered-text{
+  float:right !important;
+  .ctaText{
+    text-decoration: none !important;
+  }
+  .postTitle{
+    font-size: 100%;
+  }
+}
+/* Related Posts Plugin */
 
 
 /* start Extra Styles */

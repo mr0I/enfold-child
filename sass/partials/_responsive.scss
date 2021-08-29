@@ -53,6 +53,11 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .centered-text-area .centered-text{
+    .ctaText , .postTitle{
+      font-size: 85%;
+    }
+  }
   .togglecontainer.av-elegant-toggle {
     margin: 0 13px;
   }
@@ -813,8 +818,10 @@
   }
 
   .single_post_share_btns{
-    ul{
-      justify-content: flex-start;
+    ul {
+      li{
+        margin: 5px 15px !important;
+      }
     }
     .share_link {
       width: 100% !important;

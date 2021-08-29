@@ -188,7 +188,6 @@ add_shortcode('post_header_attribs', function (){
 	}
 	return $html;
 });
-
 add_shortcode('post_footer_attribs', function (){
 	global $post;
 	$postUrl = wp_get_shortlink( $post->ID, 'post',  true );
@@ -197,7 +196,7 @@ add_shortcode('post_footer_attribs', function (){
 	if( is_single() ) {
 		//get the tags of the current post
 		$the_tags = get_the_tags( $post->ID );
-		$output = '<div class="post-footer-attribs"><p class="pfa-title"><i class="ic-tag mx-1"></i>برچسب ها</p><span class="post_tag">';
+		$output = '<div class="post-footer-attribs"><p class="pfa-title">برچسب ها</p><span class="post_tag">';
 		$tag_array = [];
 		foreach($the_tags as  $key2 => $tag) {
 			$taglink = get_tag_link($tag->term_id);
@@ -238,7 +237,7 @@ add_shortcode('post_footer_attribs', function (){
 		);
 
 		$html = '<div class="single_post_share_btns">
-			<p class="pfa-title"><i class="ic-share mx-1"></i>اشتراک گذاری</p>
+			<p class="pfa-title">اشتراک گذاری</p>
             <div class="single_post_share_btns_container">
                  <ul>
                     <li class="icons ln"> <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url='.$fullUrl.'" rel="nofollow" target="_blank" data-toggle="tooltip" data-placement="top" title="اشتراک در لینکدین"> <i class="ic-linkedin"></i> </a> </li>
@@ -251,26 +250,10 @@ add_shortcode('post_footer_attribs', function (){
                 <input type="hidden" id="short_link" value="'.$postUrl.'">
             </div>
         </div>';
-
-		$rps = '<p class="pfa-title"><i class="ic-book-open mx-1"></i>شاید از این مقالات هم خوشتان بیاید</p><div class="card-group related-posts">';
-		if ( $related_posts->have_posts() ) {
-			while ( $related_posts->have_posts() ) {
-				$related_posts->the_post();
-				if ( has_post_thumbnail( $post->ID ) ) $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'small' );
-				$rps .= '<div class="card"><a href="'.get_the_permalink().'"><img class="card-img-top" src="'.$image[0].'" alt="Card image cap"></a>';
-				$rps .= '<div class="card-body"><a href="'.get_the_permalink().'"><h5 class="card-title">'.get_the_title().'</h5></a>';
-				$postContent = str_replace('"' , '' , wp_trim_words(get_post($post->ID)->post_excerpt , 30));
-				$rps .= '<p class="card-text">'.$postContent.'</p></div>';
-				$rps .= '<div class="card-footer"><small class="text-muted">'.do_shortcode('[rt_reading_time label="خواندن: " postfix="دقیقه" postfix_singular="دقیقه"]') .'</small></div>';
-				$rps .= '</div>';
-			}
-			$rps .= '</div>';
-			wp_reset_postdata();
-		}
 	}
 
 	$tags = $output . '</span>';
-	return $tags . $html .  $rps . '</div>';
+	return $tags . $html . '</div>';
 });
 
 

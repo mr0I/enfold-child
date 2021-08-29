@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
     // Inits
     const toolTips = $('[data-toggle="tooltip"]');
     toolTips.tooltip({
-        delay: {"show": 300, "hide": 100},
+        delay: {"show": 200, "hide": 100},
         trigger: "hover"
     });
     toolTips.click(function () {
