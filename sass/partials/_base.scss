@@ -10,16 +10,16 @@ $successMsgColor:#03c9a9;
 $primaryTextColor: #373c3e;
 $secondaryTextColor: #616161;
 $secondaryWhiteColor: #bdbdbd;
-$backgroundColor: #f5f5f5;
+$backgroundColor: #fafafa;
 $hoverColor: #bdbdbd;
-$telegramColor: #0088cc;
 $instaColor: #C13584;
 $aparatColor: #e61358;
 $errorColor: tomato;
-$tweeterColor: #1DA1F2;
-$linkedinColor: #0077B5;
-$whatsappColor: #128C7E;
-$facebookColor: #4267B2;
+$telegramColor: #2eabde;
+$tweeterColor: #34a1f2;
+$linkedinColor: #2868b2;
+$whatsappColor: #44c455;
+$facebookColor: #3b5998;
 $textFont : iranyekan,Sans-serif,Arial;
 $latinFont : Sans-serif,Arial;
 //$titleFont : iranyekan,iranyekan,Samim,Sans-serif,Arial;
@@ -83,6 +83,7 @@ a{
 	-moz-osx-font-smoothing: grayscale;
 }
 
+
 .ic-support_agent:before {
 	content: "\e900";
 }
@@ -131,7 +132,7 @@ a{
 .ic-instagram:before {
 	content: "\e90f";
 }
-.ic-telegram:before {
+.ic-telegram1:before {
 	content: "\e910";
 }
 .ic-pin:before {
@@ -326,39 +327,24 @@ a{
 .ic-apple:before {
 	content: "\e950";
 }
+.ic-spinner:before {
+	content: "\e951";
+}
+.ic-spinner1:before {
+	content: "\e952";
+}
 .ic-spinner9:before {
 	content: "\e982";
 }
 .ic-bin:before {
 	content: "\e9ac";
 }
-.ic-spinner:before {
-	content: "\e951";
+.ic-telegram:before {
+	content: "\e953";
 }
-.ic-loading:before {
-	content: "\e951";
+.ic-brand:before {
+	content: "\e953";
 }
-.ic-loading-wheel:before {
-	content: "\e951";
-}
-.ic-busy:before {
-	content: "\e951";
-}
-.ic-wait:before {
-	content: "\e951";
-}
-.ic-spinner1:before {
-	content: "\e952";
-}
-.ic-loading1:before {
-	content: "\e952";
-}
-.ic-loading-wheel1:before {
-	content: "\e952";
-}
-.ic-busy1:before {
-	content: "\e952";
-}
-.ic-wait1:before {
-	content: "\e952";
+.ic-social:before {
+	content: "\e953";
 }

@@ -67,6 +67,10 @@
   border-radius: 0 !important;
 }
 
+.uap-login-template-2 .uap-form-links div {
+  float: revert !important;
+}
+
 /* Uap Custom Fogot Pass CSS */
 
 /* Uap Custom Dashboard CSS */
@@ -291,6 +295,10 @@
   border-color: $primaryColor !important;
   text-align: center;
   font-family: $textFont !important;
+}
+
+.uap-form-line-fr input[type=password]{
+  padding-right:0 !important;
 }
 
 

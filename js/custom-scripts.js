@@ -96,14 +96,7 @@ jQuery(document).ready(function($){
     } , 4000);
 
 
-    $('.header_phones').find('a').hover(function () {
-        $(this).find('i').css('color', '#d91e18');
-    } , function () {
-        $(this).find('i').css('color', '#616161');
-    });
-
     $('#uap_createuser').find('.optional').siblings('label').addClass('optional-label');
-
 });
 
 /* Toasts */

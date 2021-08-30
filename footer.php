@@ -284,7 +284,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                     </div>
                     <div class="social-icons">
                         <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="تلگرام" >
-                            <i class="ic-telegram"></i>
+                            <i class="ic-telegram1"></i>
                         </a>
                         <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="اینستاگرام">
                             <i class="ic-instagram"></i>

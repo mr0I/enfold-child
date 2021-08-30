@@ -20,7 +20,11 @@ blockquote {
 }
 
 input[type=submit] , input[type=text] {
-  font-family: $textFont;
+  font-family: $textFont !important;
+}
+
+.container_wrap.container_wrap_first.main_color{
+  background-color: $backgroundColor;
 }
 
 /* Header */
@@ -529,7 +533,7 @@ span.comment-container.minor-meta {
   font-size: 100%;
   line-height: 2.5;
   color: $primaryTextColor;
-  text-align: justify;
+  text-align: right;
 }
 .entry-content .read-more-link{
   float: left;
@@ -796,9 +800,6 @@ div .main_color .tabcontainer .active_tab_content, div .main_color .tabcontainer
   color: $secondaryTextColor !important;
 }
 
-.main_color.av_default_container_wrap.container_wrap.fullsize{
-  background-color: #ededed ;
-}
 //.woocommerce-billing-fields p.validate-required label::after{
 //  content: "(الزامی)";
 //  color: orangered;
@@ -860,7 +861,6 @@ div .main_color .tabcontainer .active_tab_content, div .main_color .tabcontainer
   }
   p {
     font-size: 100%;
-    text-align: justify !important;
     line-height: 2.25;
     color: $primaryTextColor;
     font-family: $textFont !important;
@@ -2449,6 +2449,7 @@ p.stock.in-stock{
 /* Related Posts Plugin */
 .centered-text-area .centered-text{
   float:right !important;
+  margin-top: 24px;
   .ctaText{
     text-decoration: none !important;
   }

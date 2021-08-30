@@ -5,11 +5,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/main.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/mycon/mycon.eot" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/mycon/mycon.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/mycon/mycon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/mycon/mycon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/mycon/mycon.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/mycon/mycon.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/mycon/mycon.woff" beforeDir="false" afterPath="$PROJECT_DIR$/fonts/mycon/mycon.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/custom-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/custom-scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/partials/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/partials/_base.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/partials/_childTheme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/partials/_childTheme.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/partials/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/partials/_responsive.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/partials/_siteFront.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/partials/_siteFront.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/partials/_uap.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/partials/_uap.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="581" selection-start-line="581" selection-end-line="581" />
+            <state relative-caret-position="203">
+              <caret line="287" column="28" lean-forward="true" selection-start-line="287" selection-start-column="28" selection-end-line="287" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -31,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="311">
-              <caret line="239" column="33" selection-start-line="239" selection-start-column="33" selection-end-line="239" selection-end-column="33" />
+            <state relative-caret-position="179">
+              <caret line="244" column="219" selection-start-line="244" selection-start-column="219" selection-end-line="244" selection-end-column="219" />
               <folding>
                 <element signature="e#6#182#0#PHP" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#center#0;n#!!top" expanded="true" />
@@ -44,19 +51,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/partials/_childTheme.scss">
+        <entry file="file://$PROJECT_DIR$/sass/partials/_uap.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="780" column="1" selection-start-line="780" selection-start-column="1" selection-end-line="780" selection-end-column="1" />
+            <state relative-caret-position="418">
+              <caret line="306" column="24" selection-start-line="306" selection-start-column="24" selection-end-line="306" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sass/partials/_base.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sass/partials/_base.scss">
+        <entry file="file://$PROJECT_DIR$/sass/partials/_childTheme.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="305" column="21" lean-forward="true" selection-start-line="305" selection-start-column="21" selection-end-line="305" selection-end-column="21" />
+            <state relative-caret-position="203">
+              <caret line="290" column="33" lean-forward="true" selection-start-line="290" selection-start-column="33" selection-end-line="290" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -64,17 +80,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/partials/_siteFront.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="2449" selection-start-line="2449" selection-end-line="2457" selection-end-column="1" />
+            <state relative-caret-position="120">
+              <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/partials/_responsive.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="66" column="3" lean-forward="true" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
+            <state relative-caret-position="120">
+              <caret line="225" column="2" selection-start-line="225" selection-start-column="2" selection-end-line="225" selection-end-column="2" />
               <folding>
                 <element signature="e#38#965#0" />
                 <element signature="e#1003#1059#0" />
@@ -86,8 +102,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="2160">
+              <caret line="90" column="58" lean-forward="true" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="n#!!block;n#copyStringToClipboard#0" />
@@ -109,26 +125,10 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>floated_icons-r2</find>
-      <find>widget_shopping_cart_content</find>
-      <find>1110px</find>
-      <find>\e982</find>
-      <find>ic-spinner9</find>
-      <find>ic-spinner</find>
-      <find>gtag</find>
-      <find>اختیاری</find>
-      <find>table.avia-table</find>
-      <find>woocommerce-Tabs-panel</find>
-      <find>.woocommerce-Price-amount.amount</find>
-      <find>.togglecontainer.av-elegant-toggle</find>
-      <find>.woocommerce-Price-amount</find>
-      <find>اجباری</find>
       <find>post-footer-attribs</find>
       <find>$related_posts</find>
       <find>$hoverColor</find>
-      <find>related-posts</find>
       <find>p.toggler</find>
-      <find>pfa-title</find>
       <find>single_post_share_btns_container</find>
       <find>single_post</find>
       <find>single_post_share_btns</find>
@@ -137,8 +137,24 @@
       <find>.post-footer-attribs</find>
       <find>spinner</find>
       <find>.single_post_share_btns</find>
-      <find>postTitle</find>
       <find>ctaText</find>
+      <find>related-posts</find>
+      <find>postTitle</find>
+      <find>768</find>
+      <find>pfa-title</find>
+      <find>ededed</find>
+      <find>.entry-content p</find>
+      <find>.avia_textblock p</find>
+      <find>.avia_textblock</find>
+      <find>*[class*=&quot;uap-login-template-&quot;] .uap-form-line-fr input[type=password], *[class*=&quot;uap-login-template-&quot;] .uap-form-line-fr input[type=text]</find>
+      <find>50px !important</find>
+      <find>.uap-login-template-2</find>
+      <find>font</find>
+      <find>font-fami</find>
+      <find>ic-telegram</find>
+      <find>entry-content p</find>
+      <find>centered-text</find>
+      <find>.container_wrap</find>
     </findStrings>
     <replaceStrings>
       <replace>0.5px</replace>
@@ -174,9 +190,9 @@
     </replaceStrings>
     <dirStrings>
       <dir>C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\fonts</dir>
-      <dir>C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\sass\partials</dir>
       <dir>C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\css</dir>
       <dir>C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\woocommerce</dir>
+      <dir>C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\sass\partials</dir>
       <dir>C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child</dir>
       <dir>C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\sass</dir>
     </dirStrings>
@@ -209,7 +225,6 @@
         <option value="$PROJECT_DIR$/inc/funcs.php" />
         <option value="$PROJECT_DIR$/includes/loop-index.php" />
         <option value="$PROJECT_DIR$/css/base.css" />
-        <option value="$PROJECT_DIR$/sass/partials/_uap.scss" />
         <option value="$PROJECT_DIR$/sass/partials/_wpForms.scss" />
         <option value="$PROJECT_DIR$/single.php" />
         <option value="$PROJECT_DIR$/woocommerce/cart/cart-totals.php" />
@@ -218,18 +233,19 @@
         <option value="$PROJECT_DIR$/env.php" />
         <option value="$PROJECT_DIR$/woocommerce/checkout/form-checkout.php" />
         <option value="$PROJECT_DIR$/header.php" />
-        <option value="$PROJECT_DIR$/footer.php" />
-        <option value="$PROJECT_DIR$/sass/partials/_base.scss" />
-        <option value="$PROJECT_DIR$/sass/main.scss" />
-        <option value="$PROJECT_DIR$/functions.php" />
-        <option value="$PROJECT_DIR$/sass/partials/_childTheme.scss" />
-        <option value="$PROJECT_DIR$/js/custom-scripts.js" />
-        <option value="$PROJECT_DIR$/sass/partials/_siteFront.scss" />
         <option value="$PROJECT_DIR$/sass/partials/_responsive.scss" />
+        <option value="$PROJECT_DIR$/sass/main.scss" />
+        <option value="$PROJECT_DIR$/js/custom-scripts.js" />
+        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/footer.php" />
+        <option value="$PROJECT_DIR$/sass/partials/_childTheme.scss" />
+        <option value="$PROJECT_DIR$/sass/partials/_uap.scss" />
+        <option value="$PROJECT_DIR$/sass/partials/_siteFront.scss" />
+        <option value="$PROJECT_DIR$/sass/partials/_base.scss" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="260" />
     <option name="y" value="20" />
     <option name="width" value="1400" />
@@ -241,12 +257,18 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="enfold-child" type="b2602c69:ProjectViewProjectNode" />
               <item name="enfold-child" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="enfold-child" type="b2602c69:ProjectViewProjectNode" />
+              <item name="enfold-child" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="enfold-child" type="b2602c69:ProjectViewProjectNode" />
@@ -263,7 +285,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -277,16 +298,16 @@
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child" />
-      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\images" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\fonts\mycon" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\assets" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\fonts" />
       <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child" />
+      <recent name="C:\xampp\htdocs\wordpress\wp-content\themes\enfold-child\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -641,7 +662,8 @@
       <workItem from="1629963460489" duration="638000" />
       <workItem from="1630124746147" duration="223000" />
       <workItem from="1630125445172" duration="10104000" />
-      <workItem from="1630209790351" duration="9750000" />
+      <workItem from="1630209790351" duration="12416000" />
+      <workItem from="1630300683859" duration="10101000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1590862220655</created>
@@ -668,7 +690,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1336594000" />
+    <option name="totallyTimeSpent" value="1349361000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -680,10 +702,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16791044" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -696,7 +718,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.34019503" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.36511377" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.36511377" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -810,9 +832,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/inline.css" />
     <entry file="file://$PROJECT_DIR$/css/base.css" />
-    <entry file="file://$PROJECT_DIR$/sass/partials/_uap.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/images/shop.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -833,13 +852,6 @@
     <entry file="file://$PROJECT_DIR$/css/bootstrap.min.css" />
     <entry file="file://$PROJECT_DIR$/config-woocommerce/config.php" />
     <entry file="file://$PROJECT_DIR$/env.php" />
-    <entry file="file://$PROJECT_DIR$/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret column="68131" selection-start-column="68131" selection-end-column="68131" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/woocommerce/cart/cart-totals.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="535">
@@ -868,24 +880,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
+    <entry file="file://$PROJECT_DIR$/sass/partials/_responsive.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="581" selection-start-line="581" selection-end-line="581" />
+        <state relative-caret-position="120">
+          <caret line="225" column="2" selection-start-line="225" selection-start-column="2" selection-end-line="225" selection-end-column="2" />
+          <folding>
+            <element signature="e#38#965#0" />
+            <element signature="e#1003#1059#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+        <state relative-caret-position="192">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2160">
+          <caret line="90" column="58" lean-forward="true" selection-start-line="90" selection-start-column="58" selection-end-line="90" selection-end-column="58" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!block;n#copyStringToClipboard#0" />
+            <element signature="n#!!block;n#copyToClip#0" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="239" column="33" selection-start-line="239" selection-start-column="33" selection-end-line="239" selection-end-column="33" />
+        <state relative-caret-position="179">
+          <caret line="244" column="219" selection-start-line="244" selection-start-column="219" selection-end-line="244" selection-end-column="219" />
           <folding>
             <element signature="e#6#182#0#PHP" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#center#0;n#!!top" expanded="true" />
@@ -895,47 +923,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/partials/_childTheme.scss">
+    <entry file="file://$PROJECT_DIR$/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="780" column="1" selection-start-line="780" selection-start-column="1" selection-end-line="780" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state>
+          <caret column="1565" selection-start-column="1565" selection-end-column="1565" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#!!block;n#copyStringToClipboard#0" />
-            <element signature="n#!!block;n#copyToClip#0" />
+            <element signature="e#52079#52498#2" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/partials/_base.scss">
+    <entry file="file://$PROJECT_DIR$/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="305" column="21" lean-forward="true" selection-start-line="305" selection-start-column="21" selection-end-line="305" selection-end-column="21" />
+        <state relative-caret-position="203">
+          <caret line="287" column="28" lean-forward="true" selection-start-line="287" selection-start-column="28" selection-end-line="287" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/partials/_uap.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="306" column="24" selection-start-line="306" selection-start-column="24" selection-end-line="306" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/partials/_childTheme.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="290" column="33" lean-forward="true" selection-start-line="290" selection-start-column="33" selection-end-line="290" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/partials/_siteFront.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="2449" selection-start-line="2449" selection-end-line="2457" selection-end-column="1" />
+        <state relative-caret-position="120">
+          <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/partials/_responsive.scss">
+    <entry file="file://$PROJECT_DIR$/sass/partials/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="66" column="3" lean-forward="true" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="3" />
-          <folding>
-            <element signature="e#38#965#0" />
-            <element signature="e#1003#1059#0" />
-          </folding>
+        <state relative-caret-position="216">
+          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
         </state>
       </provider>
     </entry>
