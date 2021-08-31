@@ -301,6 +301,16 @@
   padding-right:0 !important;
 }
 
+.uap-pagination{
+  direction: ltr;
+}
+.uap-general-date-filter-wrap .button , .uap-change-password-form .button{
+  background: $primaryColor !important;
+  border-radius: 3px !important;
+  padding: 15px 30px !important;
+  width: auto !important;
+  margin: 15px auto !important;
+}
 
 /* Responsive */
 @media screen and (max-width: 400px) {

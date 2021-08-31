@@ -22,6 +22,9 @@ blockquote {
 input[type=submit] , input[type=text] {
   font-family: $textFont !important;
 }
+input.avia-font-entypo-fontello{
+  font-family: 'entypo-fontello' !important;
+}
 
 .container_wrap.container_wrap_first.main_color{
   background-color: $backgroundColor;

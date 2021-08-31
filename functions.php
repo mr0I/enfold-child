@@ -34,15 +34,6 @@ add_filter( 'script_loader_tag', function ($tag, $handle, $src ){
 
 	return $tag;
 }, 10, 3 );
-
-//function mind_detect_enqueued_scripts() {
-//	global $wp_scripts;
-//	echo "Handles: ";
-//	foreach( $wp_scripts->queue as $handle ) :
-//		echo $handle . ', ';
-//	endforeach;
-//}
-//add_action( 'wp_print_scripts', 'mind_detect_enqueued_scripts' );
 /* End Load Scripts */
 
 
