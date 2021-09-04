@@ -37,8 +37,6 @@ add_filter( 'script_loader_tag', function ($tag, $handle, $src ){
 /* End Load Scripts */
 
 
-
-
 function myaparat($atts) {
 	extract( shortcode_atts( array(
 		'id' => '',
@@ -419,6 +417,4 @@ add_filter( 'comment_post_redirect', function( $location, $comment ) {
 	$location = get_permalink( $comment->comment_post_ID ) . '#wait_approval';
 	return $location;
 }, 10, 2 );
-
-
 

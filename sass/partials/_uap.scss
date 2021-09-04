@@ -1,3 +1,32 @@
+/* Variables-Start */
+$primaryColor: #235e8a;
+$primaryDarkColor: #d91e18;
+$primaryHoverColor: #E57373;
+$AccentColor: #686868;
+$titleColor: #1c272b;
+$OrganizationalBlueColor: #2494a2;
+$OrganizationalGrayColor: #aeadad;
+$successMsgColor:#03c9a9;
+$primaryTextColor: #373c3e;
+$secondaryTextColor: #616161;
+$secondaryWhiteColor: #bdbdbd;
+$backgroundColor: #fafafa;
+$hoverColor: #bdbdbd;
+$instaColor: #C13584;
+$aparatColor: #e61358;
+$errorColor: tomato;
+$telegramColor: #2eabde;
+$tweeterColor: #34a1f2;
+$linkedinColor: #2868b2;
+$whatsappColor: #44c455;
+$facebookColor: #3b5998;
+$textFont : iranyekan,Sans-serif,Arial;
+$latinFont : Sans-serif,Arial;
+//$titleFont : iranyekan,iranyekan,Samim,Sans-serif,Arial;
+/* Variables-End */
+
+
+
 /* Uap Default CSS */
 .uap-ap-theme-2 .uap-ap-menu ul {float:right;}
 .uap-ap-theme-2 .uap-ap-menu .uap-ap-menu-tab-item {float:right;}
@@ -136,7 +165,7 @@
 
 .uap-reg-success-msg {
   position: absolute;
-  top: 5px;
+  top: 40px;
   font-size: 16px;
   background-color: $successMsgColor;
   width: 100%;

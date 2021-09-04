@@ -13,7 +13,6 @@
         });
         /* Notif Banner */
 
-
         // Start Goftino
         !function(){var a=window,d=document;function g(){var g=d.createElement("script"),i="lXpDBP",s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.type="text/javascript",g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
     })
@@ -29,7 +28,6 @@ jQuery(document).ready(function($){
         $('[data-toggle="tooltip"]').tooltip("hide");
     });
     // Inits
-
 
     setInterval(function() {
         $('.dial-btn').find('i').addClass('is-animating');
@@ -93,13 +91,13 @@ jQuery(document).ready(function($){
         if (uap_reg_success_msg.length == '1'){
             uap_reg_success_msg.fadeOut();
         }
-    } , 4000);
+    } , 3000);
 
 
-    $('#uap_createuser').find('.optional').siblings('label').addClass('optional-label');
+    $('#uap_createuser').find('.optional').siblings('label.uap-labels-register').addClass('optional-label');
 });
 
-/* Toasts */
+// Toasts
 const swalWithBootstrapButtons = Swal.mixin({
     customClass: {
         confirmButton: 'btn btn-success',
@@ -107,7 +105,6 @@ const swalWithBootstrapButtons = Swal.mixin({
     },
     buttonsStyling: false
 });
-/* Toasts */
 
 // Copy to Clipboard
 function copyStringToClipboard (str) {
@@ -120,7 +117,6 @@ function copyStringToClipboard (str) {
     document.execCommand('copy');
     document.body.removeChild(el);
 }
-
 function copyToClip(event) {
     event.preventDefault();
     let copyText = document.getElementById("short_link");
@@ -136,10 +132,4 @@ function copyToClip(event) {
         timer: 2000
     });
 }
-
-// function scroll_to_column_boxes() {
-//     document.getElementById("first_box").scrollIntoView({ behavior: 'smooth', block: 'start' });
-// }
-
-
 

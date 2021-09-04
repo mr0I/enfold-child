@@ -1,0 +1,480 @@
+/* Variables-Start */
+/* Variables-End */
+/* Uap Default CSS */
+.uap-ap-theme-2 .uap-ap-menu ul {
+  float: right;
+}
+
+.uap-ap-theme-2 .uap-ap-menu .uap-ap-menu-tab-item {
+  float: right;
+}
+
+.uap-ap-theme-2 .uap-ap-menu .uap-public-ap-menu-subtabs .uap-ap-menu-item a {
+  padding-right: 1px;
+}
+
+.uap-ap-theme-2 .uap-ap-menu .fa-uap {
+  padding-left: 5px;
+}
+
+.uap-ap-theme-2 .uap-ap-menu .uap-ap-submenu-item {
+  float: right;
+}
+
+.uap-user-page-top-wrapper .uap-middle-side {
+  float: right;
+  margin-right: 20px;
+}
+
+.uap-user-page-top-wrapper .uap-right-side {
+  float: left;
+}
+
+.uap-user-page-top-wrapper .uap-left-side {
+  float: right;
+}
+
+.uap-user-page-top-wrapper .uap-stats-label, .uap-user-page-top-wrapper .uap-stats-content, .uap-user-page-top-wrapper .uap-top-achievement .uap-stats-label {
+  font-family: iranyekan, Sans-serif, Arial !important;
+}
+
+.uap-special-label {
+  font-family: iranyekan, Sans-serif, Arial !important;
+}
+
+.uap-user-page-wrapper a, p, div, td, th, h1, h2, h3, h4, h5, h6, li, ul {
+  font-family: iranyekan, Sans-serif, Arial !important;
+}
+
+.uap-ap-theme-3 .uap-ap-menu {
+  border-radius: 0 !important;
+}
+
+.uap-ap-theme-3 .uap-ap-menu ul {
+  float: right;
+}
+
+.uap-ap-theme-3 .uap-ap-menu .uap-ap-menu-tab-item {
+  float: right;
+}
+
+.uap-ap-theme-3 .uap-ap-menu .uap-public-ap-menu-subtabs .uap-ap-menu-item a {
+  padding-right: 1px;
+}
+
+.uap-ap-theme-3 .uap-ap-menu .fa-uap {
+  padding-left: 5px;
+}
+
+.uap-ap-theme-3 .uap-ap-menu .uap-ap-submenu-item {
+  float: right;
+}
+
+.uap-user-page-content a {
+  color: #0c6ca9;
+  text-decoration: solid;
+}
+
+.uap-ap-theme-4 .uap-ap-menu .uap-ap-menu-tab-item {
+  float: right;
+}
+
+.uap-ap-theme-4 .uap-ap-menu .uap-ap-submenu-item {
+  float: right;
+}
+
+.uap-ap-theme-4 .uap-ap-menu .fa-uap {
+  padding-left: 10px !important;
+  padding-right: 0;
+}
+
+.uap-product-links-wrapper, .uap-product-links-search-bar-wrapper, .uap-product-links-items-header, .uap-product-links-items-wrapper, .uap-product-links-single-item {
+  float: right;
+  width: 100%;
+}
+
+.uap-product-links-category, .uap-product-links-count-wrapper {
+  float: right;
+}
+
+.uap-product-links-search-wrapper {
+  float: left;
+  width: 75%;
+}
+
+.uap-user-page-content input[type=submit], .uap-user-page-content input[type=text], .uap-user-page-content select {
+  text-align: right;
+}
+
+.uap-product-links-order-wrapper {
+  float: left;
+  left: 2%;
+}
+
+.uap-product-links-items-header div {
+  float: right;
+  text-align: center;
+}
+
+.uap-single-product-link-wrapper {
+  width: 25%;
+}
+
+.uap-single-product-image-wrapp, .uap-single-product-link-wrapper, .uap-single-product-name, .uap-single-product-price, .uap-single-product-rewards {
+  float: right;
+  text-align: right;
+}
+
+.uap-account-summary-month-title {
+  float: right;
+}
+
+.uap-col-xs-1, .uap-col-xs-10, .uap-col-xs-11, .uap-col-xs-12, .uap-col-xs-2, .uap-col-xs-3, .uap-col-xs-4, .uap-col-xs-5, .uap-col-xs-6, .uap-col-xs-7, .uap-col-xs-8, .uap-col-xs-9 {
+  float: right;
+}
+
+/* Uap Default CSS */
+/* Uap Custom Fogot Pass CSS */
+.uap_forgot_password_container {
+  background-color: #ffffff;
+  padding: 8px 15px;
+  box-shadow: 0 0 5px #bdbdbd;
+  border-radius: 0;
+  margin: 40px auto;
+}
+
+.uap-pass-form-wrap {
+  text-align: center;
+  width: 100%;
+  margin: 24px auto;
+}
+
+.uap-login-template-2 .uap-form-submit input {
+  background: none repeat scroll 0 0 #235e8a !important;
+  border-color: #235e8a !important;
+  border-radius: 0 !important;
+}
+
+.uap-login-template-2 .uap-form-links div {
+  float: revert !important;
+}
+
+/* Uap Custom Fogot Pass CSS */
+/* Uap Custom Dashboard CSS */
+.uap-ap-theme-3 .uap-ap-menu .uap-ap-menu-tab-item {
+  border-radius: 0;
+}
+
+.uap-ap-submenu-item:hover {
+  background-color: #373c3e;
+  border-radius: 0;
+  height: 100%;
+}
+
+.uap-public-ap-menu-subtabs {
+  border-radius: 0 !important;
+}
+
+.uap-ap-menu-item {
+  border-radius: 0 !important;
+}
+
+.uap-ap-menu {
+  border-radius: 0;
+}
+
+.uap-labels-register {
+  text-align: right !important;
+}
+
+.uap-content-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.uap-avatar-trigger .uap-upload-avatar {
+  border-color: #1c272b;
+  color: #1c272b;
+}
+
+.uap-avatar-trigger .uap-upload-avatar:hover {
+  background-color: #1c272b;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  text-align: right;
+  line-height: 20px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 100%;
+}
+
+.uap-tos-wrap {
+  text-align: right;
+}
+
+.uap-change-password-field-details {
+  margin: auto;
+  text-align: right;
+}
+
+.uap-account-table th, .uap-account-table td {
+  border-radius: 0;
+}
+
+.uap-product-links-items-header {
+  display: flex;
+}
+
+.uap-account-table {
+  background-color: #ffffff !important;
+}
+
+.uap-single-product-image-wrapp, .uap-single-product-name, .uap-single-product-price, .uap-single-product-link-wrapper, .uap-single-product-rewards {
+  border-radius: 0 !important;
+}
+
+.uap-reg-success-msg {
+  position: absolute;
+  top: 40px;
+  font-size: 16px;
+  background-color: #03c9a9;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  border-radius: 0 !important;
+  color: #eee;
+  font-weight: bold;
+}
+
+.uap_login_container {
+  background-color: #ffffff;
+  padding: 8px 15px;
+  box-shadow: 0 0 5px #bdbdbd;
+  border-radius: 0;
+  margin: 40px auto;
+}
+
+.uap-login-form-wrap {
+  text-align: center;
+  margin: 24px auto;
+  width: 100%;
+}
+
+.uap-login-template-2 .uap-form-line-fr {
+  text-align: right;
+}
+
+.uap-login-template-2 .uap-form-line-fr .uap-form-label-remember {
+  text-align: right;
+  padding: 0 4px;
+}
+
+#uap_login_form {
+  min-width: 80%;
+}
+
+.uap-login-error {
+  text-align: center;
+  color: #235e8a;
+}
+
+.uap-login-notice {
+  position: relative;
+  background-color: transparent;
+  color: #235e8a !important;
+}
+
+.uap-login-notice::before {
+  display: none;
+}
+
+.uap-wrapp-the-errors {
+  background: none;
+  border: none;
+}
+
+/* Uap Custom Dashboard CSS */
+/* Uap Custom Login CSS */
+.uap_login_container {
+  background-color: #ffffff;
+  padding: 8px 15px;
+  box-shadow: 0 0 5px #bdbdbd;
+  border-radius: 0;
+  margin: 40px auto;
+}
+
+.uap-login-form-wrap {
+  text-align: center;
+  margin: 24px auto;
+  width: 100%;
+}
+
+.uap-login-template-2 .uap-form-line-fr {
+  text-align: right;
+}
+
+.uap-login-template-2 .uap-form-line-fr .uap-form-label-remember {
+  text-align: right;
+  padding: 0 4px;
+}
+
+#uap_login_form {
+  min-width: 80%;
+}
+
+.uap-login-error {
+  text-align: center;
+  color: #235e8a;
+}
+
+.uap-login-notice {
+  position: relative;
+  background-color: transparent;
+  color: #235e8a !important;
+}
+
+.uap-login-notice::before {
+  display: none;
+}
+
+.uap-wrapp-the-errors {
+  background: none;
+  border: none;
+}
+
+/* Uap Custom Login CSS */
+/* Uap Custom Register CSS */
+.uap_register_container {
+  background-color: #ffffff;
+  padding: 8px 15px;
+  box-shadow: 0 0 5px #bdbdbd;
+  border-radius: 0;
+  margin: 40px auto;
+}
+
+.uap-register-form {
+  text-align: center;
+  margin: 24px auto;
+  min-width: 80%;
+}
+
+.uap-labels-register {
+  text-align: right !important;
+}
+
+#top .main_color .input-text, #top .main_color input[type=text], #top .main_color input[type=input], #top .main_color input[type=password], #top .main_color input[type=email], #top .main_color input[type=number], #top .main_color input[type=url], #top .main_color input[type=tel], #top .main_color input[type=search], #top .main_color textarea, #top .main_color select {
+  margin: 0;
+}
+
+.uap-register-notice {
+  text-align: right;
+}
+
+.uap-content-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.uap-avatar-trigger .uap-upload-avatar {
+  border-color: #d91e18;
+  color: #d91e18;
+}
+
+.uap-avatar-trigger .uap-upload-avatar:hover {
+  background-color: #d91e18;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  text-align: right;
+  line-height: 20px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 100%;
+}
+
+.uap-tos-wrap {
+  text-align: right;
+}
+
+#uap_submit_bttn {
+  border-radius: 0;
+  background-color: #235e8a !important;
+  border-color: #235e8a !important;
+  text-align: center;
+  font-family: iranyekan, Sans-serif, Arial !important;
+}
+
+.uap-form-line-fr input[type=password] {
+  padding-right: 0 !important;
+}
+
+.uap-pagination {
+  direction: ltr;
+}
+
+.uap-general-date-filter-wrap .button, .uap-change-password-form .button {
+  background: #235e8a !important;
+  border-radius: 3px !important;
+  padding: 15px 30px !important;
+  width: auto !important;
+  margin: 15px auto !important;
+}
+
+/* Responsive */
+@media screen and (max-width: 400px) {
+  .uap-register-form form {
+    width: 80%;
+  }
+
+  .uap-login-form-wrap form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .uap-register-form form {
+    width: 60%;
+  }
+
+  .uap-login-form-wrap form {
+    width: 60%;
+  }
+
+  #uap_login_form {
+    min-width: 100%;
+  }
+}
+/* Responsive */
+/* Uap Custom Register CSS */
+/* Affilate Levels Table */
+table.affilate_levels tr.topRow th, tr.topRow td {
+  background-color: #1c272b !important;
+  border: 1px solid #bdbdbd;
+  font-size: 15px;
+  border-radius: 0;
+  text-align: center;
+  font-weight: bold;
+  color: #eeeeee !important;
+}
+
+table.affilate_levels strong {
+  color: inherit !important;
+}
+
+table.affilate_levels tr th, tr td {
+  background-color: #ffffff !important;
+  border-radius: 0 !important;
+  text-align: center !important;
+  font-size: 13px !important;
+  font-weight: normal !important;
+  border: 1px solid #bdbdbd !important;
+  color: #373c3e !important;
+  vertical-align: middle;
+}
+
+/* Affilate Levels Table */
+/* Uap Custom Dashboard CSS */
+
+/*# sourceMappingURL=uap.css.map */
