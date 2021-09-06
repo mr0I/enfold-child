@@ -38,7 +38,7 @@ jQuery(document).ready(function($){
 
 
     // Add Material icons
-    $('.single_add_to_cart_button').html('افزودن به سبد خرید');
+    $('.single_add_to_cart_button').html('<i class="ic-cart" style="font-size: 150%"></i>  افزودن به سبد خرید');
     $('.cart_dropdown_link').find('span:first-child').html('<i class="ic-cart my-2"></i>');
 
 
