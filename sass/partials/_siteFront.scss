@@ -2479,3 +2479,28 @@ label.optional-label::after{
   border-radius: 3px !important;
 }
 /* end Extra Styles */
+
+
+
+/* shop sidebar Styles */
+aside.sidebar {
+  .inner_sidebar{
+    background-color: #fff;
+    box-shadow: 0 0 3px #bdbdbd;
+    padding: 24px;
+    border-radius: 0;
+    margin: 4px auto;
+  }
+  input[type=search]{
+    font-family: $textFont !important;
+  }
+  .price_slider_amount {
+    button[type=submit]{
+      border-radius: 3px;
+      width: 100%;
+    }
+  }
+}
+/* shop sidebar Styles */
+
+

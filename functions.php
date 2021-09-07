@@ -239,10 +239,17 @@ add_shortcode('post_footer_attribs', function (){
                 <input type="hidden" id="short_link" value="'.$postUrl.'">
             </div>
         </div>';
+
+		$opinion = '
+			<ul>
+				<li><i class="ic-bubble"></i><span>بله</span></li>
+				<li><i class="ic-share"></i><span>خیر</span></li>
+			</ul>
+		';
 	}
 
 	$tags = $output . '</span>';
-	return $tags . $html . '</div>';
+	return $tags . $html . $opinion . '</div>';
 });
 
 
