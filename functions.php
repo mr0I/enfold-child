@@ -7,6 +7,29 @@
 defined("ABSPATH") || exit();
 
 
+
+/* Define Tables */
+global $wpdb;
+require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+
+$opinion_articles_table = $wpdb->prefix . 'opinion_articles';
+$createTableQuery1 =
+	"
+		CREATE TABLE IF NOT EXISTS `{$opinion_articles_table}` (
+		  `id` int(11) NOT NULL AUTO_INCREMENT,
+		  `user_identity` int(22) NOT NULL,
+		  `status` enum('like','dislike','not_set') DEFAULT 'not_set',
+		  `date` datetime(6) DEFAULT NULL,
+		  PRIMARY KEY (`id`)
+		) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci
+		";
+
+dbDelta($createTableQuery1);
+flush_rewrite_rules();
+/* Define Tables */
+
+
+
 /* Start Load Scripts */
 function load_scripts_styles() {
 	$vn = wp_get_theme()->get( 'Version' );
