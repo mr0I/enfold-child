@@ -2437,6 +2437,10 @@ p.stock.in-stock{
       left: auto !important;
       margin-top: -8px !important;
       color:$secondaryTextColor !important;
+      border-color: $secondaryTextColor !important;
+      span{
+        border-color: $secondaryTextColor !important;
+      }
       &:hover{
         color:$secondaryTextColor !important;
       }

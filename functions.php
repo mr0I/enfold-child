@@ -4,7 +4,7 @@
 * Wordpress will use those functions instead of the original functions then.
 */
 
-defined("ABSPATH") || exit();
+defined("ABSPATH") || '/' . exit();
 
 
 
@@ -17,7 +17,8 @@ $createTableQuery1 =
 	"
 		CREATE TABLE IF NOT EXISTS `{$opinion_articles_table}` (
 		  `id` int(11) NOT NULL AUTO_INCREMENT,
-		  `user_identity` int(22) NOT NULL,
+		  `user_identity` varchar(55) NOT NULL,
+		  `post_id` int(11) NOT NULL,
 		  `status` enum('like','dislike','not_set') DEFAULT 'not_set',
 		  `date` datetime(6) DEFAULT NULL,
 		  PRIMARY KEY (`id`)
@@ -264,9 +265,9 @@ add_shortcode('post_footer_attribs', function (){
         </div>';
 
 		$opinion = '
-			<ul>
-				<li><i class="ic-bubble"></i><span>بله</span></li>
-				<li><i class="ic-share"></i><span>خیر</span></li>
+			<ul class="opinions-container">
+				<li class="opinions-item" data-pid=" '.$post->ID.' " data-val="yes"><i class="ic-bubble"></i><span>بله</span></li>
+				<li class="opinions-item" data-pid=" '.$post->ID.' " data-val="no"><i class="ic-share"></i><span>خیر</span></li>
 			</ul>
 		';
 	}
@@ -447,4 +448,5 @@ add_filter( 'comment_post_redirect', function( $location, $comment ) {
 	$location = get_permalink( $comment->comment_post_ID ) . '#wait_approval';
 	return $location;
 }, 10, 2 );
+
 

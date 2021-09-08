@@ -54,7 +54,7 @@
 }
 @media screen and (max-width: 768px) {
   .av_toggle_section p.toggler{
-    font-size:85%;
+    font-size:85% !important;
     .toggle_icon{
       width: 20px !important;
       height: 20px !important;
@@ -79,6 +79,9 @@
   }
   .togglecontainer.av-elegant-toggle {
     margin: 0 13px;
+    .toggle_content {
+      padding: 0;
+    }
   }
   .withMargin {
     padding: 0 24px;
@@ -91,6 +94,7 @@
     display:none;
   }
   .addToCart_btns {
+    margin: 13px auto;
     #mobile_size_catalog{
       display: block;
     }

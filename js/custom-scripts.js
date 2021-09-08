@@ -95,6 +95,37 @@ jQuery(document).ready(function($){
 
 
     $('#uap_createuser').find('.optional').siblings('label.uap-labels-register').addClass('optional-label');
+
+
+
+    /* Like-Dislike Posts */
+        $('.opinions-item').on('click' , async function () {
+            const status = $(this).data('val');
+            const post_id = $(this).data('pid');
+
+
+            await fetch(RadAjax.ajaxurl, {
+                method: 'POST',
+                credentials: 'same-origin',
+                headers: new Headers({'Content-Type': 'application/x-www-form-urlencoded'}),
+                body: new URLSearchParams({
+                    action: 'likeDislikePost',
+                    security : RadAjax.security,
+                    status: status,
+                    post_id: post_id
+                })
+            }).then((resp) => resp.json())
+                .then(function(res) {
+                    console.log('result' , JSON.stringify(res));
+                })
+                .catch(function(error) {
+                    console.log(JSON.stringify(error));
+                });
+
+        })
+    /* Like-Dislike Posts */
+
+
 });
 
 // Toasts
