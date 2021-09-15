@@ -6,7 +6,9 @@ $AccentColor: #686868;
 $titleColor: #1c272b;
 $OrganizationalBlueColor: #2494a2;
 $OrganizationalGrayColor: #aeadad;
-$successMsgColor:#03c9a9;
+$successMsgColor:#28a745;
+$successMsgDarkColor:#00b894;
+$errorMsgColor:#dc3545;
 $primaryTextColor: #373c3e;
 $secondaryTextColor: #616161;
 $secondaryWhiteColor: #bdbdbd;
@@ -333,18 +335,33 @@ a{
 .ic-spinner1:before {
 	content: "\e952";
 }
+.ic-telegram:before {
+	content: "\e953";
+}
 .ic-spinner9:before {
 	content: "\e982";
 }
 .ic-bin:before {
 	content: "\e9ac";
 }
-.ic-telegram:before {
-	content: "\e953";
+.ic-thumbs-down:before {
+	content: "\e954";
 }
-.ic-brand:before {
-	content: "\e953";
+.ic-thumbs-up:before {
+	content: "\e955";
 }
-.ic-social:before {
-	content: "\e953";
+.ic-spinner3:before {
+	content: "\e956";
+}
+.ic-loading:before {
+	content: "\e956";
+}
+.ic-loading-wheel:before {
+	content: "\e956";
+}
+.ic-busy:before {
+	content: "\e956";
+}
+.ic-wait:before {
+	content: "\e956";
 }

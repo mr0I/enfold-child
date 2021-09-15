@@ -56,8 +56,9 @@ jQuery(document).ready(function($){
     // $('#product-14049').find('.woo-price').find('strong').html('برای دریافت قیمت با شماره 03132362894 تماس بگیرید');
     // $('.template-shop').find('.post-14049').find('.price').find('strong').html('برای دریافت قیمت با شماره 03132362894 تماس بگیرید');
 
+
     /* Start Change Shop buttons text temporary */
-    $('.template-shop').find('li.type-product').find('.inner_product').find('.show_details_button').html('مشاهده قیمت ردیاب');
+    $('.template-shop').find('li.type-product').find('.inner_product').find('.show_details_button').css('direction', 'rtl').html('افزودن به سبد خرید<i class="ic-basket mx-2" style="font-size: 115%;font-weight: bold;vertical-align: bottom;"></i>');
     $('.template-shop').find('li.type-product.post-16949').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
     $('.template-shop').find('li.type-product.post-16940').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
     $('.template-shop').find('li.type-product.post-16939').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
@@ -99,34 +100,69 @@ jQuery(document).ready(function($){
 
 
     /* Like-Dislike Posts */
-        $('.opinions-item').on('click' , async function () {
-            const status = $(this).data('val');
-            const post_id = $(this).data('pid');
+    $('.opinions-item').on('click' , async function () {
+        const $this = $(this);
+        let status = $this.data('val');
+        const post_id = $this.data('pid');
+        const opinionsContainer = $('.opinions-container');
+        const opinionsContainerCover = $('.post-footer-attribs-cover');
+        const hasliked = $this.hasClass('like');
+        const hasdisliked = $this.hasClass('dislike');
 
 
-            await fetch(RadAjax.ajaxurl, {
-                method: 'POST',
-                credentials: 'same-origin',
-                headers: new Headers({'Content-Type': 'application/x-www-form-urlencoded'}),
-                body: new URLSearchParams({
-                    action: 'likeDislikePost',
-                    security : RadAjax.security,
-                    status: status,
-                    post_id: post_id
-                })
-            }).then((resp) => resp.json())
-                .then(function(res) {
-                    console.log('result' , JSON.stringify(res));
-                })
-                .catch(function(error) {
-                    console.log(JSON.stringify(error));
-                });
+        if ((status==='like' && hasliked) || (status==='dislike' && hasdisliked)){
+            status = 'not_set';
+        }
 
-        })
+        opinionsContainerCover.css('display', 'block');
+        await fetch(SpaAjax.ajaxurl, {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: new Headers({'Content-Type': 'application/x-www-form-urlencoded'}),
+            body: new URLSearchParams({
+                action: 'likeDislikePost',
+                security : SpaAjax.security,
+                status: status,
+                post_id: post_id
+            })
+        }).then((resp) => resp.json())
+            .then(function(res) {
+                //console.log('res:',res);
+                if (res.result==='Done') {
+                    BottomToast.fire({
+                        icon: 'success',
+                        background: '#28a745',
+                        title: 'نظر شما ثبت شد.'
+                    });
+                    if(res.status=='like'){
+                        $('.opinions-item').removeClass('like dislike');
+                        $this.addClass('like');
+                    } else if(res.status=='dislike'){
+                        $('.opinions-item').removeClass('like dislike');
+                        $this.addClass('dislike');
+                    } else {
+                        $('.opinions-item').removeClass('like dislike');
+                    }
+                    opinionsContainer.find('span.likes-count').html(res.likes);
+                    opinionsContainer.find('span.dislikes-count').html(res.dislikes);
+                } else {
+                    BottomToast.fire({
+                        icon: 'error',
+                        background: '#dc3545',
+                        title: 'خطا در انجام عملیات'
+                    });
+                }
+            })
+            .catch(function(error) {
+                console.log(JSON.stringify(error));
+            });
+        opinionsContainerCover.css('display', 'none');
+
+    })
     /* Like-Dislike Posts */
 
-
 });
+
 
 // Toasts
 const swalWithBootstrapButtons = Swal.mixin({
@@ -135,6 +171,18 @@ const swalWithBootstrapButtons = Swal.mixin({
         cancelButton: 'btn btn-danger'
     },
     buttonsStyling: false
+});
+const BottomToast = Swal.mixin({
+    toast: true,
+    position: 'bottom-start',
+    showConfirmButton: false,
+    timer: 1500,
+    background: '#eee',
+    timerProgressBar: true,
+    didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer);
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+    }
 });
 
 // Copy to Clipboard

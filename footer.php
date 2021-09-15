@@ -467,6 +467,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
 
             <audio id="audio" src="<?= get_stylesheet_uri().'/../assets/beep.wav'; ?>" ></audio>
+
         </footer>
 
 

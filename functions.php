@@ -206,6 +206,24 @@ add_shortcode('post_footer_attribs', function (){
 	$postUrl = wp_get_shortlink( $post->ID, 'post',  true );
 	$fullUrl = urlencode($postUrl);
 
+	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+		$ip = $_SERVER['HTTP_CLIENT_IP'];
+	} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+		$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+	} else {
+		$ip = $_SERVER['REMOTE_ADDR'];
+	}
+	$identity = (is_user_logged_in())? get_current_user_id() : $ip;
+
+	global $wpdb;
+	$opinion_articles_table = $wpdb->prefix . 'opinion_articles';
+	$post_like_status = $wpdb->get_results("SELECT status FROM $opinion_articles_table WHERE user_identity = '$identity' AND post_id = '$post->ID' ");
+	$like = ($post_like_status[0]->status=='like')? 'like' : '';
+	$dislike = ($post_like_status[0]->status=='dislike')? 'dislike' : '';
+	$posts_likes_count = $wpdb->get_var("SELECT COUNT('id') FROM $opinion_articles_table WHERE post_id='$post->ID' AND status='like' ");
+	$posts_dislikes_count = $wpdb->get_var("SELECT COUNT('id') FROM $opinion_articles_table WHERE post_id='$post->ID' AND status='dislike' ");
+
+
 	if( is_single() ) {
 		//get the tags of the current post
 		$the_tags = get_the_tags( $post->ID );
@@ -265,10 +283,14 @@ add_shortcode('post_footer_attribs', function (){
         </div>';
 
 		$opinion = '
-			<ul class="opinions-container">
-				<li class="opinions-item" data-pid=" '.$post->ID.' " data-val="yes"><i class="ic-bubble"></i><span>بله</span></li>
-				<li class="opinions-item" data-pid=" '.$post->ID.' " data-val="no"><i class="ic-share"></i><span>خیر</span></li>
-			</ul>
+			<p class="pfa-title">آیا این مطلب برای شما مفید بود؟</p>
+			<div class="row">
+				<ul class="opinions-container">
+					<li class="opinions-item '.$like.' " data-pid="'.$post->ID.'" data-val="like"><i class="ic-thumbs-up"></i><span class="likes-count">'.$posts_likes_count.'</span></li>
+					<li class="opinions-item '.$dislike.' " data-pid="'.$post->ID.'" data-val="dislike"><i class="ic-thumbs-down"></i><span class="dislikes-count">'.$posts_dislikes_count.'</span></li>
+				</ul>
+			</div>
+			<div class="post-footer-attribs-cover"> <i class="ic-spinner3 icon-spinner"></i> </div>
 		';
 	}
 
@@ -393,43 +415,6 @@ function add_defer_attribute($tag, $handle) {
 }
 
 
-/* Start Recaptcha */
-//function add_google_recaptcha($submit_field) {
-//	$submit_field['submit_field'] = '<div class="g-recaptcha" data-sitekey="6LfZS6gZAAAAAC5BMOsbcNQYDqtQm6puHeUmjlid"></div><br>' . $submit_field['submit_field'];
-//	return $submit_field;
-//}
-//if (!is_user_logged_in()) {
-//	add_filter('comment_form_defaults','add_google_recaptcha');
-//}
-//function is_valid_captcha($captcha) {
-//	$captcha_postdata = http_build_query(array(
-//		'secret' => '6LfZS6gZAAAAAKtbN3kOXbdrjyZZcKUwt8ondcKE',
-//		'response' => $captcha,
-//		'remoteip' => $_SERVER['REMOTE_ADDR']));
-//	$captcha_opts = array('http' => array(
-//		'method'  => 'POST',
-//		'header'  => 'Content-type: application/x-www-form-urlencoded',
-//		'content' => $captcha_postdata));
-//	$captcha_context  = stream_context_create($captcha_opts);
-//	$captcha_response = json_decode(file_get_contents("https://www.google.com/recaptcha/api/siteverify" , false , $captcha_context), true);
-//	if ($captcha_response['success'])
-//		return true;
-//	else
-//		return false;
-//}
-//function verify_google_recaptcha() {
-//	$recaptcha = $_POST['g-recaptcha-response'];
-//	if (empty($recaptcha))
-//		wp_die( __("<b>خطا:</b>لطفا کد امنیتی را تایید کنید!<p><a href='javascript:history.back()'>« بازگشت</a></p>"));
-//	else if (!is_valid_captcha($recaptcha))
-//		wp_die( __("<b>Go away Spammer!</b>"));
-//}
-//if (!is_user_logged_in()) {
-//	add_action('pre_comment_on_post', 'verify_google_recaptcha');
-//}
-/* End Recaptcha */
-
-
 /*
 ** Show message after comment
 */
@@ -450,3 +435,136 @@ add_filter( 'comment_post_redirect', function( $location, $comment ) {
 }, 10, 2 );
 
 
+
+
+/*
+ *  ========== Start Ajax Requests ==========
+ */
+function getCatPosts_callback(){
+
+	global $wpdb;
+	$posts_table = $wpdb->prefix . 'posts';
+	$postmeta_table = $wpdb->prefix . 'postmeta';
+	$users_table = $wpdb->prefix . 'users';
+	$term_relationships_table = $wpdb->prefix . 'term_relationships';
+	$term_taxonomy_table = $wpdb->prefix . 'term_taxonomy';
+	$terms_table = $wpdb->prefix . 'terms';
+
+
+	$limit = $_POST['limit']; // number of rows in page
+	$offset = $_POST['offset'];
+	$category_id = $_POST['category_id'];
+
+
+	$posts = $wpdb->get_results("SELECT p.ID,p.post_title AS title,p.post_excerpt AS excerpt, p.post_date AS date , p.post_name AS slug , pm2.meta_value AS image
+                                    ,p.comment_count , u.display_name AS author , tax.term_id AS cat_id
+                                FROM $posts_table p 
+                                INNER JOIN $postmeta_table pm ON (p.ID = pm.post_id AND pm.meta_key = '_thumbnail_id' AND p.post_status='publish' AND p.post_type='post')
+                                INNER JOIN $postmeta_table pm2 ON (pm.meta_value = pm2.post_id AND pm2.meta_key = '_wp_attached_file') 
+                                INNER JOIN $users_table u ON (p.post_author = u.ID)
+                                LEFT JOIN $term_relationships_table rel ON rel.object_id = p.ID
+                                LEFT JOIN $term_taxonomy_table tax ON tax.term_taxonomy_id = rel.term_taxonomy_id
+                                LEFT JOIN $terms_table t ON t.term_id = tax.term_id
+                                WHERE tax.term_id=$category_id
+                                ORDER BY post_date DESC LIMIT $offset,$limit ");
+
+
+	if (sizeof($posts) !== 0){
+		$result['result'] = 'Done';
+		$result['posts'] = $posts;
+		wp_send_json( $result );
+		exit();
+	}
+}
+add_action( 'wp_ajax_getCatPosts', 'getCatPosts_callback' );
+add_action( 'wp_ajax_nopriv_getCatPosts', 'getCatPosts_callback' );
+
+
+function likeDislikePost_callback(){
+	$postId = $_POST['post_id'];
+	$status = $_POST['status'];
+
+	if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+		$ip = $_SERVER['HTTP_CLIENT_IP'];
+	} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+		$ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+	} else {
+		$ip = $_SERVER['REMOTE_ADDR'];
+	}
+	$identity = (is_user_logged_in())? get_current_user_id() : $ip;
+
+
+	global $wpdb;
+	$opinion_articles_table = $wpdb->prefix . 'opinion_articles';
+
+	$opinion = $wpdb->get_var("SELECT COUNT('id') FROM $opinion_articles_table WHERE post_id='$postId' AND user_identity='$identity'");
+
+
+	if ($opinion=='0'){
+		$insert = $wpdb->insert( $opinion_articles_table , array(
+			'post_id' => absint($postId),
+			'user_identity' => sanitize_text_field($identity),
+			'status' => sanitize_text_field($status),
+			'date' => current_time( 'mysql' )
+		), array( '%d','%s','%s','%s'));
+
+		if ($insert){
+			$countLikes = countLikes($postId,$status);
+			$likes = $countLikes['likes'];
+			$dislikes = $countLikes['dislikes'];
+
+			$result['result'] = 'Done';
+			$result['status'] = $status;
+			$result['likes'] = $likes;
+			$result['dislikes'] = $dislikes;
+			wp_send_json( $result );
+			exit();
+		}
+	} else {
+		$update = $wpdb->update( $opinion_articles_table , array(
+			'status' => sanitize_text_field($status),
+			'date' => current_time( 'mysql' )
+		),
+			array('post_id' => absint($postId) ,'user_identity' => sanitize_text_field($identity) ) ,
+			array( '%s','%s'),
+			array( '%d','%s')
+		);
+
+		if ($update){
+			$countLikes = countLikes($postId,$status);
+			$likes = $countLikes['likes'];
+			$dislikes = $countLikes['dislikes'];
+
+			$result['result'] = 'Done';
+			$result['status'] = $status;
+			$result['likes'] = $likes;
+			$result['dislikes'] = $dislikes;
+			wp_send_json( $result );
+			exit();
+		}
+	}
+}
+add_action( 'wp_ajax_likeDislikePost', 'likeDislikePost_callback' );
+add_action( 'wp_ajax_nopriv_likeDislikePost', 'likeDislikePost_callback' );
+/* ========== End Ajax Requests ========== */
+
+
+
+
+
+/*
+ *  ========== Helper Functions ==========
+ */
+function countLikes($postId){
+	global $wpdb;
+	$opinion_articles_table = $wpdb->prefix . 'opinion_articles';
+
+	$posts_likes_count = $wpdb->get_var("SELECT COUNT('id') FROM $opinion_articles_table WHERE post_id='$postId' AND status='like' ");
+	$posts_dislikes_count = $wpdb->get_var("SELECT COUNT('id') FROM $opinion_articles_table WHERE post_id='$postId' AND status='dislike' ");
+
+	return([
+		'likes' => $posts_likes_count,
+		'dislikes' => $posts_dislikes_count
+	]);
+}
+/* ========== Helper Functions ========== */

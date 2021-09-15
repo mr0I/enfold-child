@@ -131,13 +131,13 @@ $date = new jDateTime(true, true, 'Asia/Tehran');
 
                 let load_more_posts_btn = $(this);
                 load_more_posts_btn.html('بارگیری بیشتر<i class="ic-spinner1 icon-spinner mx-1"></i>');
-                await fetch(RadAjax.ajaxurl, {
+                await fetch(SpaAjax.ajaxurl, {
                     method: 'POST',
                     credentials: 'same-origin',
                     headers: new Headers({'Content-Type': 'application/x-www-form-urlencoded'}),
                     body: new URLSearchParams({
                         action: 'getCatPosts',
-                        security : RadAjax.security,
+                        security : SpaAjax.security,
                         offset: offset,
                         limit: limit,
                         category_id: category_id
