@@ -176,7 +176,7 @@ const BottomToast = Swal.mixin({
     toast: true,
     position: 'bottom-start',
     showConfirmButton: false,
-    timer: 1500,
+    timer: 2000,
     background: '#eee',
     timerProgressBar: true,
     didOpen: (toast) => {
