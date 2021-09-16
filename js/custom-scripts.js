@@ -118,7 +118,10 @@ jQuery(document).ready(function($){
         await fetch(SpaAjax.ajaxurl, {
             method: 'POST',
             credentials: 'same-origin',
-            headers: new Headers({'Content-Type': 'application/x-www-form-urlencoded'}),
+            headers: new Headers({
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Cache-Control': 'no-cache'
+            }),
             body: new URLSearchParams({
                 action: 'likeDislikePost',
                 security : SpaAjax.security,
@@ -154,7 +157,7 @@ jQuery(document).ready(function($){
                 }
             })
             .catch(function(error) {
-                console.log(JSON.stringify(error));
+                console.warn(JSON.stringify(error));
             });
         opinionsContainerCover.css('display', 'none');
 

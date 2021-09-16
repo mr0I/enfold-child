@@ -2471,26 +2471,6 @@ p.stock.in-stock{
 /* Related Posts Plugin */
 
 
-/* start Extra Styles */
-.flex_column.av_one_full.flex_column_div{
-  padding:0 !important;
-}
-.withMargin{
-  padding: 0 65px;
-}
-label.optional-label::after{
-  content: "(اختیاری)";
-  color: $secondaryTextColor;
-  font-weight: lighter;
-  margin: 0 3px;
-}
-.avia-button.avia-size-medium {
-  border-radius: 3px !important;
-}
-/* end Extra Styles */
-
-
-
 /* shop sidebar Styles */
 aside.sidebar {
   .inner_sidebar{
@@ -2512,3 +2492,28 @@ aside.sidebar {
 }
 /* shop sidebar Styles */
 
+
+
+
+
+
+/* start Extra Styles */
+.flex_column.av_one_full.flex_column_div{
+  padding:0 !important;
+}
+.withMargin{
+  padding: 0 65px;
+}
+label.optional-label::after{
+  content: "(اختیاری)";
+  color: $secondaryTextColor;
+  font-weight: lighter;
+  margin: 0 3px;
+}
+.avia-button.avia-size-medium {
+  border-radius: 3px !important;
+}
+.post-entry img.size-full {
+  width: 100%;
+}
+/* end Extra Styles */

@@ -99,9 +99,15 @@ $date = new jDateTime(true, true, 'Asia/Tehran');
 					?>
                 </div>
                 <div class="text-center">
-                    <button class="btn load_more_posts" data-offset="<?= $offset ?>" data-limit="<?= $limit ?>">
-                        بارگیری بیشتر
-                    </button>
+                    <?php
+                    if ($total > $limit){
+                        ?>
+                        <button class="btn load_more_posts" data-offset="<?= $offset ?>" data-limit="<?= $limit ?>">
+                            بارگیری بیشتر
+                        </button>
+	                    <?php
+                    }
+                    ?>
                 </div>
             </main>
 			<?php
@@ -170,7 +176,7 @@ $date = new jDateTime(true, true, 'Asia/Tehran');
                         load_more_posts_btn.html('بارگیری بیشتر');
                     })
                     .catch(function(error) {
-                        console.log(JSON.stringify(error));
+                        console.warn(JSON.stringify(error));
                     });
             });
         });

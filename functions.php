@@ -216,6 +216,7 @@ add_shortcode('post_footer_attribs', function (){
 	$identity = (is_user_logged_in())? get_current_user_id() : $ip;
 
 	global $wpdb;
+	clean_post_cache($post->ID);
 	$opinion_articles_table = $wpdb->prefix . 'opinion_articles';
 	$post_like_status = $wpdb->get_results("SELECT status FROM $opinion_articles_table WHERE user_identity = '$identity' AND post_id = '$post->ID' ");
 	$like = ($post_like_status[0]->status=='like')? 'like' : '';
@@ -286,8 +287,8 @@ add_shortcode('post_footer_attribs', function (){
 			<p class="pfa-title">آیا این مطلب برای شما مفید بود؟</p>
 			<div class="row">
 				<ul class="opinions-container">
-					<li class="opinions-item '.$like.' " data-pid="'.$post->ID.'" data-val="like"><i class="ic-thumbs-up"></i><span class="likes-count">'.$posts_likes_count.'</span></li>
-					<li class="opinions-item '.$dislike.' " data-pid="'.$post->ID.'" data-val="dislike"><i class="ic-thumbs-down"></i><span class="dislikes-count">'.$posts_dislikes_count.'</span></li>
+					<li class="opinions-item '.$like.' " data-pid="'.$post->ID.'" data-val="like"><i class="ic-thumbs-up"></i><span class="likes-count">'.floatval($posts_likes_count).'</span></li>
+					<li class="opinions-item '.$dislike.' " data-pid="'.$post->ID.'" data-val="dislike"><i class="ic-thumbs-down"></i><span class="dislikes-count">'.floatval($posts_dislikes_count).'</span></li>
 				</ul>
 			</div>
 			<div class="post-footer-attribs-cover"> <i class="ic-spinner3 icon-spinner"></i> </div>
