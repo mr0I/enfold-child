@@ -97,73 +97,6 @@ jQuery(document).ready(function($){
 
     $('#uap_createuser').find('.optional').siblings('label.uap-labels-register').addClass('optional-label');
 
-
-
-    /* Like-Dislike Posts */
-    $('.opinions-item').on('click' , async function () {
-        const $this = $(this);
-        let status = $this.data('val');
-        const post_id = $this.data('pid');
-        const opinionsContainer = $('.opinions-container');
-        const opinionsContainerCover = $('.post-footer-attribs-cover');
-        const hasliked = $this.hasClass('like');
-        const hasdisliked = $this.hasClass('dislike');
-
-
-        if ((status==='like' && hasliked) || (status==='dislike' && hasdisliked)){
-            status = 'not_set';
-        }
-
-        opinionsContainerCover.css('display', 'block');
-        await fetch(SpaAjax.ajaxurl, {
-            method: 'POST',
-            credentials: 'same-origin',
-            headers: new Headers({
-                'Content-Type': 'application/x-www-form-urlencoded',
-                'Cache-Control': 'no-cache'
-            }),
-            body: new URLSearchParams({
-                action: 'likeDislikePost',
-                security : SpaAjax.security,
-                status: status,
-                post_id: post_id
-            })
-        }).then((resp) => resp.json())
-            .then(function(res) {
-                //console.log('res:',res);
-                if (res.result==='Done') {
-                    BottomToast.fire({
-                        icon: 'success',
-                        background: '#28a745',
-                        title: 'نظر شما ثبت شد.'
-                    });
-                    if(res.status=='like'){
-                        $('.opinions-item').removeClass('like dislike');
-                        $this.addClass('like');
-                    } else if(res.status=='dislike'){
-                        $('.opinions-item').removeClass('like dislike');
-                        $this.addClass('dislike');
-                    } else {
-                        $('.opinions-item').removeClass('like dislike');
-                    }
-                    opinionsContainer.find('span.likes-count').html(res.likes);
-                    opinionsContainer.find('span.dislikes-count').html(res.dislikes);
-                } else {
-                    BottomToast.fire({
-                        icon: 'error',
-                        background: '#dc3545',
-                        title: 'خطا در انجام عملیات'
-                    });
-                }
-            })
-            .catch(function(error) {
-                console.warn(JSON.stringify(error));
-            });
-        opinionsContainerCover.css('display', 'none');
-
-    })
-    /* Like-Dislike Posts */
-
 });
 
 
@@ -175,43 +108,5 @@ const swalWithBootstrapButtons = Swal.mixin({
     },
     buttonsStyling: false
 });
-const BottomToast = Swal.mixin({
-    toast: true,
-    position: 'bottom-start',
-    showConfirmButton: false,
-    timer: 2000,
-    background: '#eee',
-    timerProgressBar: true,
-    didOpen: (toast) => {
-        toast.addEventListener('mouseenter', Swal.stopTimer);
-        toast.addEventListener('mouseleave', Swal.resumeTimer)
-    }
-});
 
-// Copy to Clipboard
-function copyStringToClipboard (str) {
-    let el = document.createElement('textarea');
-    el.value = str;
-    el.setAttribute('readonly', '');
-    el.style = {position: 'absolute', left: '-9999px'};
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand('copy');
-    document.body.removeChild(el);
-}
-function copyToClip(event) {
-    event.preventDefault();
-    let copyText = document.getElementById("short_link");
-    copyStringToClipboard(copyText.value);
-    let sound = document.getElementById("audio");
-    sound.play();
-    swalWithBootstrapButtons.fire({
-        position: 'center',
-        icon: 'success',
-        text: 'لینک کوتاه کپی شد',
-        showCloseButton: false,
-        showConfirmButton: false,
-        timer: 2000
-    });
-}
 
