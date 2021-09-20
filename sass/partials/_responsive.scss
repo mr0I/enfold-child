@@ -53,6 +53,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  #uap_login_frm_btn{
+    display:block;
+  }
   .av_toggle_section p.toggler{
     font-size:85% !important;
     .toggle_icon{

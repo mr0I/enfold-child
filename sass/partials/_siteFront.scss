@@ -213,7 +213,7 @@ ul.menu-item.cart_dropdown {
   left: unset;
   float: left;
   border: none;
-  right: 1110px;
+  right: 1170px;
 }
 .cart_dropdown .dropdown_widget{
   left: unset !important;
@@ -422,9 +422,6 @@ nav.pagination > span {
 .pagination .current {
   color: #eee !important;
   background-color: $primaryDarkColor !important;
-}
-.flex_column.column-top-margin {
-  width: 100%;
 }
 
 .read-more-link a {
@@ -2511,5 +2508,8 @@ label.optional-label::after{
 }
 .post-entry img.size-full {
   width: 100%;
+}
+#uap_login_frm_btn{
+  display:none;
 }
 /* end Extra Styles */
