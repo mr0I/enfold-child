@@ -283,13 +283,13 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                         <span>تمامی حقوق این سایت متعلق به شرکت مهندسی رادشید است.</span>
                     </div>
                     <div class="social-icons">
-                        <a href="https://t.me/Radshid_co" id="telegram" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="تلگرام" >
+                        <a href="https://t.me/Radshid_co" id="telegram" target="_blank" data-toggle="tooltip" data-placement="top" title="تلگرام" >
                             <i class="ic-telegram1"></i>
                         </a>
-                        <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="اینستاگرام">
+                        <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" data-toggle="tooltip" data-placement="top" title="اینستاگرام">
                             <i class="ic-instagram"></i>
                         </a>
-                        <a href="https://www.aparat.com/radshid" id="aparat" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="آپارات">
+                        <a href="https://www.aparat.com/radshid" id="aparat" target="_blank" data-toggle="tooltip" data-placement="top" title="آپارات">
                             <i class="ic-aparat"></i>
                         </a>
                         <a href="http://rx4.ir/android" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="برنامه ردیابی رادشید (اندروید)">
@@ -348,11 +348,11 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                     <p><?php esc_attr_e(get_option('RADtools_setting_notifbanner_desc' , '')) ?></p>
                 </div>
                 <div class="banner_buttons">
-                    <a href="https://cafebazaar.ir/app/com.radshid.radassistant" id="banner_btn1" target="_blank" rel="nofollow">
+                    <a href="https://cafebazaar.ir/app/com.radshid.radassistant" id="banner_btn1" target="_blank">
                         <img src="<?php echo get_stylesheet_directory_uri().'/images/bazaar.png' ; ?>" alt="bazaar">
                         دریافت از کافه بازار
                     </a>
-                    <a href="https://myket.ir/app/com.radshid.radassistant" id="banner_btn2" target="_blank" rel="nofollow">
+                    <a href="https://myket.ir/app/com.radshid.radassistant" id="banner_btn2" target="_blank">
                         <img src="<?php echo get_stylesheet_directory_uri().'/images/myket.png' ; ?>" alt="bazaar">
                         دریافت از مایکت
                     </a>
