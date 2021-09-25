@@ -1,0 +1,64 @@
+.berocket_single_filter_widget.berocket_single_filter_widget_18207,
+.berocket_single_filter_widget.berocket_single_filter_widget_18217,
+.berocket_single_filter_widget.berocket_single_filter_widget_18215 {
+  background: #ffffff;
+  border-radius: 3px !important;
+  padding: 13px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 2px #bdbdbd;
+}
+
+.bapf_head {
+  background-color: rgba(125, 125, 125, 0.15);
+  border-radius: 0 !important;
+  margin: 20px auto;
+}
+.bapf_head h3 {
+  font-size: 100%;
+  margin: 0;
+  padding: 8px 8px;
+  color: #1c272b;
+}
+
+.bapf_body ul li label {
+  padding: 0 8px;
+  font-size: 85% !important;
+  color: #616161;
+  margin: 6px auto;
+  font-weight: lighter !important;
+}
+.bapf_body .braapf_unselect_all {
+  display: none;
+}
+.bapf_body .braapf_unselect i {
+  padding: 0 4px;
+}
+.bapf_body .berocket_aapf_widget_selected_filter {
+  font-size: 85%;
+  color: #1c272b;
+}
+
+.irs--flat .irs-bar {
+  border-radius: 0;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to {
+  font-size: 100% !important;
+  font-family: iranyekan, Sans-serif, Arial;
+}
+
+.bapf_sfilter.bapf_button_berocket .bapf_button {
+  background-color: #ececec !important;
+  width: 100%;
+  color: #616161 !important;
+  font-size: 85% !important;
+}
+.bapf_sfilter.bapf_button_berocket .bapf_button:hover {
+  background-color: #ececec !important;
+}
+
+.irs--flat .irs-max, .irs--flat .irs-min {
+  font-family: iranyekan, Sans-serif, Arial;
+}
+
+/*# sourceMappingURL=wooFilter.css.map */

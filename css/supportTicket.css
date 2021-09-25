@@ -1,0 +1,36 @@
+.wpast-wrap {
+  padding: 36px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #e0e0e0;
+  margin: 8px 0 8px 55px;
+}
+.wpast-wrap form#wpast-filter {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+}
+.wpast-wrap form#wpast-filter select {
+  margin: 0 4px;
+}
+.wpast-wrap form#wpast-filter .wpast-filter.wpast-btn {
+  border-radius: 0;
+}
+.wpast-wrap form#wpast-filter .wpast-alert p {
+  text-align: center;
+}
+
+.wpast-wrap select {
+  font-family: iranyekan, Sans-serif, Arial !important;
+}
+.wpast-wrap .wpast-submit {
+  width: 100%;
+  cursor: pointer;
+}
+.wpast-wrap .wpast-help-text {
+  margin: 13px auto;
+}
+
+/*# sourceMappingURL=supportTicket.css.map */

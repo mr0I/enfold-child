@@ -1,0 +1,84 @@
+$primaryColor: #235e8a;
+$primaryDarkColor: #d91e18;
+$primaryHoverColor: #E57373;
+$AccentColor: #686868;
+$titleColor: #1c272b;
+$OrganizationalBlueColor: #2494a2;
+$OrganizationalGrayColor: #aeadad;
+$successMsgColor:#03c9a9;
+$primaryTextColor: #373c3e;
+$secondaryTextColor: #616161;
+$secondaryWhiteColor: #bdbdbd;
+$backgroundColor: #fafafa;
+$hoverColor: #bdbdbd;
+$instaColor: #C13584;
+$aparatColor: #e61358;
+$errorColor: tomato;
+$telegramColor: #2eabde;
+$tweeterColor: #34a1f2;
+$linkedinColor: #2868b2;
+$whatsappColor: #44c455;
+$facebookColor: #3b5998;
+$textFont : iranyekan,Sans-serif,Arial;
+$latinFont : Sans-serif,Arial;
+
+
+.berocket_single_filter_widget.berocket_single_filter_widget_18207
+, .berocket_single_filter_widget.berocket_single_filter_widget_18217
+, .berocket_single_filter_widget.berocket_single_filter_widget_18215 {
+  background: #ffffff;
+  border-radius: 3px !important;
+  padding: 13px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 2px $hoverColor;
+}
+.bapf_head {
+  background-color: rgba(125,125,125,.15);
+  border-radius: 0 !important;
+  margin: 20px auto;
+  h3{
+    font-size: 100%;
+    margin: 0;
+    padding: 8px 8px;
+    color: $titleColor;
+  }
+}
+.bapf_body {
+  ul li label{
+    padding: 0 8px;
+    font-size: 85% !important;
+    color: $secondaryTextColor;
+    margin: 6px auto;
+    font-weight: lighter !important;
+  }
+  .braapf_unselect_all{
+    display:none;
+  }
+  .braapf_unselect i{
+    padding:0 4px;
+  }
+  .berocket_aapf_widget_selected_filter{
+    font-size: 85%;
+    color: $titleColor;
+  }
+}
+
+.irs--flat .irs-bar {
+  border-radius: 0;
+}
+.irs--flat .irs-from, .irs--flat .irs-single, .irs--flat .irs-to {
+  font-size: 100% !important;
+  font-family: $textFont;
+}
+.bapf_sfilter.bapf_button_berocket .bapf_button {
+  background-color: #ececec !important;
+  width: 100%;
+  color: $secondaryTextColor !important;
+  font-size: 85% !important;
+  &:hover{
+  background-color: #ececec !important;
+  }
+}
+.irs--flat .irs-max, .irs--flat .irs-min {
+  font-family: $textFont;
+}

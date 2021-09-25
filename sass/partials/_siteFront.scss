@@ -319,11 +319,11 @@ ul.sort-param li ul {
   top: 46px;
   background: whitesmoke !important;
   border-radius: 0;
-  font-size: 85%;
+  font-size: 100%;
 }
 .sort-param ul li {
   padding: 5px 0;
-  font-size: 115%;
+  font-size: 125%;
 }
 .sort-param ul li span.avia-bullet {
   display: none;
@@ -2471,10 +2471,10 @@ p.stock.in-stock{
 /* shop sidebar Styles */
 aside.sidebar {
   .inner_sidebar{
-    background-color: #fff;
-    box-shadow: 0 0 3px #bdbdbd;
-    padding: 24px;
+    box-shadow: 0 0 2px $hoverColor;
     border-radius: 0;
+    background-color: #ffffff;
+    padding: 0;
     margin: 4px auto;
   }
   input[type=search]{
@@ -2506,9 +2506,7 @@ label.optional-label::after{
 .avia-button.avia-size-medium {
   border-radius: 3px !important;
 }
-.post-entry img.size-full {
-  width: 100%;
-}
+
 #uap_login_frm_btn{
   display:none;
 }

@@ -1,0 +1,63 @@
+$primaryColor: #235e8a;
+$primaryDarkColor: #d91e18;
+$primaryHoverColor: #E57373;
+$AccentColor: #686868;
+$titleColor: #1c272b;
+$OrganizationalBlueColor: #2494a2;
+$OrganizationalGrayColor: #aeadad;
+$successMsgColor:#03c9a9;
+$primaryTextColor: #373c3e;
+$secondaryTextColor: #616161;
+$secondaryWhiteColor: #bdbdbd;
+$backgroundColor: #fafafa;
+$hoverColor: #bdbdbd;
+$instaColor: #C13584;
+$aparatColor: #e61358;
+$errorColor: tomato;
+$telegramColor: #2eabde;
+$tweeterColor: #34a1f2;
+$linkedinColor: #2868b2;
+$whatsappColor: #44c455;
+$facebookColor: #3b5998;
+$textFont : iranyekan,Sans-serif,Arial;
+$latinFont : Sans-serif,Arial;
+
+
+.wpast-wrap{
+//.wpast-wrap.wpast-all-tickets , .wpast-wrap.wpast-submit-ticket{
+  padding: 36px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 0 5px #e0e0e0;
+  margin: 8px 0 8px 55px;
+  form#wpast-filter{
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    select{
+      margin: 0 4px;
+    }
+    .wpast-filter.wpast-btn{
+      border-radius:0;
+    }
+    .wpast-alert{
+      p{
+        text-align:center;
+      }
+    }
+  }
+}
+.wpast-wrap{
+  select{
+    font-family: $textFont !important;
+  }
+  .wpast-submit{
+    width: 100%;
+    cursor: pointer;
+  }
+  .wpast-help-text{
+    margin: 13px auto;
+  }
+}
