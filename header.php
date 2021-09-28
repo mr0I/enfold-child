@@ -52,7 +52,17 @@ $rtl_support			= 'yes' == apply_filters( 'avf_rtl_column_support', 'yes' ) ? ' r
     <meta charset="<?php bloginfo( 'charset' ); ?>" />
     <meta name="enamad" content="419561"/>
 
-	<?php
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59846784-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-59846784-2');
+    </script>
+
+    <?php
 	/*
 	 * outputs a rel=follow or nofollow tag to circumvent google duplicate content for archives
 	 * located in framework/php/function-set-avia-frontend.php
