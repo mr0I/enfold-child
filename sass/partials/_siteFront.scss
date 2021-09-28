@@ -1543,6 +1543,7 @@ img.full-width-img{
 }
 .woo-desktop{
   border-radius: 0 !important;
+  padding: 13px;
 }
 .woo-main-section {
   .product_title{
@@ -1574,12 +1575,21 @@ img.full-width-img{
     padding: 0;
     margin-top: 20px;
     .product_meta{
-      margin: 0;
-      font-size: 100%;
-      color: $secondaryTextColor;
+      margin: 10px auto;
+      font-size: 85%;
+      font-weight: bold;
+      color: $titleColor;
       a{
         color: $primaryTextColor;
-        font-weight: bold;
+        font-size: 85%;
+        font-weight: lighter;
+      }
+      .sku_wrapper{
+        .sku{
+          color: $primaryTextColor;
+          font-size: 85%;
+          font-weight: lighter;
+        }
       }
     }
 
@@ -1697,13 +1707,23 @@ a.product-tag {
 }
 .woo-mobile{
   display: none;
+  padding: 13px;
   .product_meta{
-    margin: 0;
+    margin: 10px auto;
     font-size: 85%;
-    color: $secondaryTextColor;
+    font-weight: bold;
+    color: $titleColor;
     a{
       color: $primaryTextColor;
-      font-weight: bold;
+      font-size: 85%;
+      font-weight: lighter;
+    }
+    .sku_wrapper{
+      .sku{
+        color: $primaryTextColor;
+        font-size: 85%;
+        font-weight: lighter;
+      }
     }
   }
 }
@@ -2406,7 +2426,7 @@ p.stock.in-stock{
 
 /* Accordion Styles */
 .togglecontainer.av-elegant-toggle {
-  padding:36px 13px;
+  padding:0;
   margin: 0 36px;
   border: none;
   border-radius: 0 !important;

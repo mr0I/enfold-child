@@ -71,8 +71,8 @@
     }
   }
   .toggle_content {
-    padding: 4px;
-    font-size: 85%;
+    font-size: 85% !important;
+    text-align: justify !important;
   }
 
   .centered-text-area .centered-text{
@@ -83,7 +83,7 @@
   .togglecontainer.av-elegant-toggle {
     margin: 0 13px;
     .toggle_content {
-      padding: 0;
+      padding: 0 24px;
     }
   }
   .withMargin {
@@ -155,7 +155,7 @@
     .phone-info{
       padding: 4px;
       span{
-        font-size: 115%;
+        font-size: 100%;
         line-height: 1.5;
         letter-spacing: 1px;
       }
@@ -225,6 +225,7 @@
   .entry-content p{
     font-size: 85%;
     padding: 0 8px;
+    text-align: justify;
   }
   #menu-item-search [data-av_iconfont='entypo-fontello']:before {
     font-size: 85%;
@@ -252,6 +253,7 @@
 
   .avia_textblock p {
     font-size: 100%;
+    text-align: justify;
   }
   #top .main_menu .menu li {
     top: 0;
@@ -310,9 +312,6 @@
     padding: 20px 0;
     .product_title {
       text-align: center !important;
-    }
-    .product_meta{
-      text-align: center;
     }
     .woocommerce-product-rating{
       padding: 0;
@@ -594,10 +593,6 @@
       text-align: center !important;
       font-size: 100%;
     }
-    .product_meta{
-      text-align: center;
-    }
-
   }
   .woo-desktop{
     display: none;
