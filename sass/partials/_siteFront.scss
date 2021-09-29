@@ -2510,6 +2510,47 @@ aside.sidebar {
 /* shop sidebar Styles */
 
 
+/* Ninja Forms Styles */
+.nf-form-wrap.ninja-forms-form-wrap .nf-response-msg p{
+  text-align: center;
+  color: $successMsgColor;
+  font-weight: bold;
+}
+
+.nf-form-content button, .nf-form-content input[type=button], .nf-form-content input[type=submit] {
+  background-color: $primaryColor !important;
+  color: #EEEEEE !important;
+  width: 100% !important;
+  cursor: pointer;
+  &:hover{
+    background-color: $primaryColor !important;
+  }
+}
+.nf-field-element input[type=email] , .nf-field-element input[type=tel]{
+  text-align:left;
+}
+.nf-form-title h3{
+  font-size: 100% !important;
+  text-align: center;
+  color: $primaryTextColor !important;
+  padding: 15px !important;
+  font-weight: lighter !important;
+  line-height: 2 !important;
+}
+.nf-form-fields-required{
+  display:none;
+}
+.nf-error .nf-error-msg {
+  color: $errorMsgColor !important;
+  font-size: 75%;
+  padding: 4px 0;
+}
+.nf-error-msg.nf-error-field-errors{
+  text-align: center;
+}
+/* Ninja Forms Styles */
+
+
 /* start Extra Styles */
 .flex_column.av_one_full.flex_column_div{
   padding:0 !important;
@@ -2526,8 +2567,10 @@ label.optional-label::after{
 .avia-button.avia-size-medium {
   border-radius: 3px !important;
 }
-
 #uap_login_frm_btn{
   display:none;
+}
+#top #main .avia-section .template-page{
+  padding:0;
 }
 /* end Extra Styles */

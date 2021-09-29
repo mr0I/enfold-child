@@ -53,7 +53,23 @@
   }
 }
 @media screen and (max-width: 768px) {
-  #uap_login_frm_btn{
+  .title_container .breadcrumb {
+    right: -36px !important;
+    left: -36px !important;
+    top: 75px;
+    margin: 0;
+    padding: 15px;
+    span{
+      font-size: 100%;
+      line-height: 2;
+    }
+  }
+  .pda-background-images {
+    height: 175px;
+    padding: 0;
+  }
+
+    #uap_login_frm_btn{
     display:block;
   }
   .av_toggle_section p.toggler{
@@ -960,17 +976,7 @@
     margin: 10px auto;
     font-size: 85%;
   }
-  .title_container .breadcrumb {
-    right: -36px !important;
-    left: -36px !important;
-    top: 80px;
-    margin: 4px auto !important;
-    padding: 15px;
-    span{
-      font-size: 100%;
-      line-height: 2;
-    }
-  }
+
   .breadcrumb-trail {
     font-size: 100%;
   }
