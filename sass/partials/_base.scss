@@ -86,6 +86,7 @@ a{
 }
 
 
+
 .ic-support_agent:before {
 	content: "\e900";
 }
@@ -338,12 +339,6 @@ a{
 .ic-telegram:before {
 	content: "\e953";
 }
-.ic-spinner9:before {
-	content: "\e982";
-}
-.ic-bin:before {
-	content: "\e9ac";
-}
 .ic-thumbs-down:before {
 	content: "\e954";
 }
@@ -353,24 +348,15 @@ a{
 .ic-spinner3:before {
 	content: "\e956";
 }
-.ic-loading:before {
-	content: "\e956";
-}
-.ic-loading-wheel:before {
-	content: "\e956";
-}
-.ic-busy:before {
-	content: "\e956";
-}
-.ic-wait:before {
-	content: "\e956";
-}
 .ic-stop:before {
 	content: "\e957";
 }
-.ic-player:before {
-	content: "\e957";
+.ic-spinner9:before {
+	content: "\e982";
 }
-.ic-square:before {
-	content: "\e957";
+.ic-bin:before {
+	content: "\e9ac";
+}
+.ic-caret-left:before {
+	content: "\e958";
 }
