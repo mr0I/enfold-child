@@ -2573,4 +2573,24 @@ label.optional-label::after{
 #top #main .avia-section .template-page{
   padding:0;
 }
+#header_meta {
+  .phone-info{
+    padding: 4px;
+    span{
+      font-size: 100%;
+      line-height: 1.5;
+      letter-spacing: 1px;
+    }
+  }
+}
+.woocommerce {
+  table.shop_table_responsive {
+    td.product-remove{
+      i{
+        font-size: 150%;
+      }
+    }
+  }
+}
+
 /* end Extra Styles */
