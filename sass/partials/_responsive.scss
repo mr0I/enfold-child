@@ -657,7 +657,7 @@
   }
 
   div .main_color .tabcontainer .active_tab {
-    background-color: $titleColor !important;
+    background-color: $AccentColor !important;
     color: #EEEEEE !important;
   }
   .responsive .top_tab .tab.fullsize-tab {
@@ -684,8 +684,8 @@
   .tab_inner_content{
     transition: 0.5s ease;
     p{
-      font-size: 100% !important;
-      text-align: justify;
+      font-size: 85% !important;
+      text-align: justify !important;
     }
     li{
       font-size: 75%;

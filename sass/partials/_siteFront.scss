@@ -769,7 +769,6 @@ form p.form-row{
     color: $primaryTextColor !important;
     font-size: 100% !important;
     line-height: 2;
-    text-align: justify;
   }
 
 }
@@ -793,7 +792,7 @@ span.hr-inner {
   border-radius: 0 !important;
 }
 .tab.active_tab{
-  border-top: 4px solid $titleColor;
+  border-top: 4px solid $AccentColor;
 }
 div .main_color .tabcontainer .active_tab_content, div .main_color .tabcontainer .active_tab {
   background-color: #ffffff;
@@ -1072,6 +1071,17 @@ h3.slide-entry-title a{
   }
   td{
     font-size: 115% !important;
+  }
+}
+.tab_content table.avia-table{
+  tr{
+    td{
+      font-weight: bold !important;
+      font-size: 100% !important;
+    }
+    th{
+      overflow-x: auto;
+    }
   }
 }
 // end specification table
@@ -2575,7 +2585,7 @@ label.optional-label::after{
 }
 #header_meta {
   .phone-info{
-    padding: 4px;
+    padding: 4px 0;
     span{
       font-size: 100%;
       line-height: 1.5;

@@ -718,12 +718,6 @@ footer .footer-social-btns i{
   color: #ffffff;
 }
 
-.fab {
-  width: 50px;
-  height: 50px;
-  background: forestgreen;
-}
-
 .fab-options {
   list-style-type: none;
   margin: 0;
@@ -1224,12 +1218,11 @@ article#guarantee_vector .iconbox_icon::before{
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  background: #228b22;
+  background-color: $primaryColor;
   box-shadow: none;
   transition: all 0.3s ease;
   z-index: 1;
-  //border-bottom-right-radius: 6px;
-  border: 1px solid #228b22;
+  border: 1px solid $primaryColor;
 }
 
 .fab:before {
@@ -1250,8 +1243,8 @@ article#guarantee_vector .iconbox_icon::before{
   background-color: rgba(255, 255, 255, 0.2);
 }
 .fab:hover {
-  background: #228b22;
-  box-shadow: 0px 5px 20px 5px #228b22;
+  background-color: $primaryColor;
+  box-shadow: 0px 5px 20px 5px $primaryColor;
 }
 
 .fab-dots {
@@ -1329,7 +1322,7 @@ article#guarantee_vector .iconbox_icon::before{
 }
 .fab-action {
   position: absolute;
-  background: $primaryColor;
+  background-color: $primaryColor;
   width: 3rem;
   height: 3rem;
   border-radius: 50%;
@@ -1352,7 +1345,7 @@ article#guarantee_vector .iconbox_icon::before{
 }
 
 .fab-action:hover {
-  background-color: #228b22;
+  background-color: $primaryColor;
 }
 
 .fab-wheel .fab-action-1 {
