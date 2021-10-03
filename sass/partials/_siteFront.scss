@@ -2523,7 +2523,7 @@ aside.sidebar {
 /* Ninja Forms Styles */
 .nf-form-wrap.ninja-forms-form-wrap .nf-response-msg p{
   text-align: center;
-  color: $successMsgColor;
+  color: $successMsgColor !important;
   font-weight: bold;
 }
 
@@ -2582,16 +2582,6 @@ label.optional-label::after{
 }
 #top #main .avia-section .template-page{
   padding:0;
-}
-#header_meta {
-  .phone-info{
-    padding: 4px 0;
-    span{
-      font-size: 100%;
-      line-height: 1.5;
-      letter-spacing: 1px;
-    }
-  }
 }
 .woocommerce {
   table.shop_table_responsive {

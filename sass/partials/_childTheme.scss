@@ -1104,10 +1104,13 @@ article#guarantee_vector .iconbox_icon::before{
   padding: 8px;
   background-color: #235e8a !important;
   .phone-info{
+    padding: 4px 0;
     span{
-      font-size: 115%;
+      font-size: 100%;
       color: #EEEEEE !important;
       font-weight: normal;
+      line-height: 1.5;
+      letter-spacing: 1px;
     }
   }
   nav.sub_menu{
