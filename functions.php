@@ -293,6 +293,13 @@ add_filter( 'comment_post_redirect', function( $location, $comment ) {
 }, 10, 2 );
 
 
+/* Add Taxonomies for Pages */
+function add_taxonomies_to_pages() {
+	register_taxonomy_for_object_type( 'post_tag', 'page' );
+	register_taxonomy_for_object_type( 'category', 'page' );
+}
+add_action( 'init', 'add_taxonomies_to_pages' );
+
 
 
 /*
@@ -337,6 +344,7 @@ function getCatPosts_callback(){
 add_action( 'wp_ajax_getCatPosts', 'getCatPosts_callback' );
 add_action( 'wp_ajax_nopriv_getCatPosts', 'getCatPosts_callback' );
 /* ========== End Ajax Requests ========== */
+
 
 
 
