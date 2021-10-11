@@ -365,16 +365,16 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
 
     <!-- floated icons -->
-
     <div class="floated_icons_footer">
         <div class="fif-container">
-            <a href="https://radshid.com/my-account" title="ورود به سایت">
+            <a href="https://radshid.com/footer_login_register" title="ورود به سایت">
                 <i class="ic-user"></i><span>ورود/ثبت نام</span>
             </a>
-            <a href="<?= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?>" title="فروشگاه">
+            <a href="https://radshid.com/footer_shop" title="فروشگاه">
+<!--            <a href="--><?//= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?><!--" title="فروشگاه">-->
                 <i class="ic-shopping-bag"></i><span>لیست قیمت ردیاب</span>
             </a>
-            <a href="https://radshid.com/Product/shop-personal-tracker/%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d8%b4%d8%ae%d8%b5%db%8c-%d8%a8%d8%a7-%d9%82%d8%a7%d8%a8%d9%84%db%8c%d8%aa-%d9%85%da%a9%d8%a7%d9%84%d9%85%d9%87-%d8%af%d9%88-%d8%b7%d8%b1%d9%81%d9%87/" title="ردیاب مناسب شما" target="_blank">
+            <a href="https://radshid.com/footer_selected_tracker" title="ردیاب مناسب شما" target="_blank">
                 <i class="ic-pin"></i><span>ردیاب مناسب شما</span>
             </a>
         </div>
