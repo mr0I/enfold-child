@@ -799,13 +799,13 @@ div .main_color .tabcontainer .active_tab_content, div .main_color .tabcontainer
   color: $secondaryTextColor !important;
 }
 
-//.woocommerce-billing-fields p.validate-required label::after{
-//  content: "(الزامی)";
-//  color: orangered;
-//  margin: 0 5px;
-//  vertical-align: middle;
-//  font-size: 85%;
-//}
+.woocommerce-billing-fields p.validate-required label::after{
+  content: "(الزامی)";
+  color: $errorMsgColor;
+  margin: 0 5px;
+  vertical-align: middle;
+  font-size: 85%;
+}
 /* Woocommerce Pages */
 
 .newsbox ul li a .news-thumb {

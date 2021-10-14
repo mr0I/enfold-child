@@ -95,6 +95,15 @@ jQuery(document).ready(function($){
     } , 3000);
 
 
+    // fix phone error on checkput form (for fu....g digits plugin)
+    $('.digcon').find('input#username').on('input',function () {
+        console.log('sadasdasd');
+        let input_txt = $(this).val();
+
+        $('#billing_phone_field').find('input#billing_phone').val(input_txt);
+    });
+
+
     $('#uap_createuser').find('.optional').siblings('label.uap-labels-register').addClass('optional-label');
 
 });
