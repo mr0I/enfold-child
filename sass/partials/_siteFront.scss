@@ -213,7 +213,7 @@ ul.menu-item.cart_dropdown {
   left: unset;
   float: left;
   border: none;
-  right: 1170px;
+  right: 1200px;
 }
 .cart_dropdown .dropdown_widget{
   left: unset !important;
@@ -670,17 +670,17 @@ span.pagination-meta {
 
 #customer_login{
   width: 100%;
-  margin: 50px auto;
+  margin: auto;
 }
 #customer_login h2{
   text-align: center;
   color: $titleColor;
 }
 #customer_login .u-column1 {
-  margin-bottom: 25px;
+  margin-bottom: 60px;
 }
 #customer_login .u-column2 {
-  margin-top: -245px;
+  margin-top: 0;
 }
 
 #form_actions{
@@ -690,7 +690,7 @@ span.pagination-meta {
 
 .register p label {
   text-align: right;
-  padding: 4px 10px;
+  padding: 0 10px;
 }
 .register .input-text {
   border-radius: 0 !important;
@@ -805,6 +805,14 @@ div .main_color .tabcontainer .active_tab_content, div .main_color .tabcontainer
   margin: 0 5px;
   vertical-align: middle;
   font-size: 85%;
+}
+abbr.required{
+  text-decoration: none;
+  vertical-align: sub;
+  color: $errorMsgColor !important;
+}
+.woocommerce-form.woocommerce-form-register{
+  margin: 0 !important;
 }
 /* Woocommerce Pages */
 
@@ -2594,7 +2602,7 @@ label.optional-label::after{
 }
 #billing_account_password-description{
   font-size: 75%;
-  color: #235e8a;
+  color: $primaryColor;
 }
 .widgettitle{
   text-align:center;
@@ -2604,6 +2612,9 @@ label.optional-label::after{
   text-align:center;
 }
 #billing_phone_field{
-  display:none;
+ // display:none;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered{
+  line-height: 36px !important;
 }
 /* end Extra Styles */

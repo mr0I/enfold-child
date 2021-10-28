@@ -540,6 +540,8 @@ if (is_user_logged_in()){
         jQuery(document).ready(function($) {
             let my_account_elm = $('ul#avia2-menu').find('li#menu-item-16014');
             my_account_elm.find('a').html('<i class="ic-user align-text-top mx-1"></i>حساب کاربری');
+            let my_account_elm_onmobile = $('.fif-container').find('a[title="ورود به سایت"]');
+            my_account_elm_onmobile.html('<i class="ic-user align-text-top mx-1"></i><span>حساب کاربری</span>');
         })
     </script>
     <?php
@@ -565,6 +567,8 @@ if (is_user_logged_in()){
             }
             let my_account_elm = $('ul#avia2-menu').find('li#menu-item-16014');
             my_account_elm.find('a').html('<i class="ic-user align-text-top mx-1"></i> ورود / ثبت نام');
+            let my_account_elm_onmobile = $('.fif-container').find('a[title="ورود به سایت"]');
+            my_account_elm_onmobile.html('<i class="ic-user align-text-top mx-1"></i><span>ورود / ثبت نام</span>');
         })
     </script>
 <?php
