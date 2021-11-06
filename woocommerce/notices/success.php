@@ -30,7 +30,7 @@ if ( ! $notices ) {
 		<?php echo wc_kses_notice( $notice['notice'] ); ?>
         <?php
         if (strpos($notice['notice'] , 'به سبد خرید شما افزوده شد') !== false){
-	        ?><p class="m-0 text-center"><a class="open_cart" href="https://radshid.com/cart" target="_blank">مشاهده سبد خرید</a></p><?php
+	        ?><p class="m-0 text-center"><a class="open_cart" href="https://radshid.com/cart">مشاهده سبد خرید</a></p><?php
         }
         ?>
 	</div>

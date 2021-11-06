@@ -371,10 +371,9 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                 <i class="ic-user"></i><span>ورود/ثبت نام</span>
             </a>
             <a href="https://radshid.com/footer_shop" title="فروشگاه">
-<!--            <a href="--><?//= get_permalink( woocommerce_get_page_id( 'shop' ) ) ?><!--" title="فروشگاه">-->
                 <i class="ic-shopping-bag"></i><span>لیست قیمت ردیاب</span>
             </a>
-            <a href="https://radshid.com/footer_selected_tracker" title="ردیاب مناسب شما" target="_blank">
+            <a href="https://radshid.com/footer_selected_tracker" title="ردیاب مناسب شما">
                 <i class="ic-pin"></i><span>ردیاب مناسب شما</span>
             </a>
         </div>

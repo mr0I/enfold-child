@@ -237,7 +237,7 @@ add_shortcode('products_row_btns', function ($atts, $content = null){
 	if ($pid != ''){
 		if (strpos($productUrl , 'sipaad')){
 			$btns = '<div class="addToCart_btns">
-                <a href="'.$productUrl.'" class="btn btn-danger mx-1" target="_blank" rel="noopener noreferrer">خرید آنلاین</a>
+                <a href="'.$productUrl.'" class="btn btn-danger mx-1" rel="noopener noreferrer">خرید آنلاین</a>
                 <a href="'.$other_trackers_url.'" class="btn btn-danger mx-1">'.$OthersBtnText.'</a>
             </div>';
 		} else {
