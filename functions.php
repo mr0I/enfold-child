@@ -260,6 +260,7 @@ add_shortcode('products_row_btns', function ($atts, $content = null){
 add_filter( 'do_rocket_critical_css_generation', '__return_false' );
 
 
+/* defer google recaptcha */
 function add_defer_attribute($tag, $handle) {
 	switch ($handle) {
 		case 'google.recaptcha':
@@ -305,8 +306,9 @@ add_action( 'init', 'add_taxonomies_to_pages' );
 /*
  *  ========== Start Ajax Requests ==========
  */
-function getCatPosts_callback(){
 
+// show blog posts
+function getCatPosts_callback(){
 	global $wpdb;
 	$posts_table = $wpdb->prefix . 'posts';
 	$postmeta_table = $wpdb->prefix . 'postmeta';
