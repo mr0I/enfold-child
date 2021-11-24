@@ -53,6 +53,26 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .wpast-wrap{
+    padding: 0 !important;
+    margin: 0 !important;
+    .wpast-help-text{
+      padding: 0 !important;
+      .toggler{
+        padding: 8px !important;
+        font-weight: bold;
+        font-size: 100% !important;
+      }
+      .toggle_content{
+        padding: 13px;
+        ul,ol{
+          margin: 0 !important;
+          padding: 13px !important;
+        }
+      }
+    }
+  }
+
   .title_container .breadcrumb {
     right: -36px !important;
     left: -36px !important;
@@ -544,8 +564,15 @@
   .responsive #top #header_main > .container .main_menu .av-main-nav > li > a {
     padding: 0 0 0 15px !important;
   }
+  .u-columns form {
+    padding: 36px 5px !important;
+  }
   #customer_login .u-column2 {
     margin-top: 0;
+    padding: 0;
+  }
+  #customer_login .u-column1 {
+    padding: 0;
   }
   .woocommerce-MyAccount-navigation{
     width: 100% !important;

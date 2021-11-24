@@ -24,7 +24,6 @@ $latinFont : Sans-serif,Arial;
 
 
 .wpast-wrap{
-//.wpast-wrap.wpast-all-tickets , .wpast-wrap.wpast-submit-ticket{
   padding: 36px;
   background: #fff;
   border-radius: 6px;
@@ -48,8 +47,6 @@ $latinFont : Sans-serif,Arial;
       }
     }
   }
-}
-.wpast-wrap{
   select{
     font-family: $textFont !important;
   }
@@ -59,5 +56,28 @@ $latinFont : Sans-serif,Arial;
   }
   .wpast-help-text{
     margin: 13px auto;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .wpast-wrap{
+    padding: 0 !important;
+    margin: 0 !important;
+    .wpast-help-text{
+      padding: 0 !important;
+      .toggler{
+        padding: 8px !important;
+        font-weight: bold;
+        font-size: 100% !important;
+      }
+      .toggle_content{
+        padding: 13px;
+        ul,ol{
+          margin: 0 !important;
+          padding: 13px !important;
+        }
+      }
+    }
   }
 }

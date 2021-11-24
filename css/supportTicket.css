@@ -21,7 +21,6 @@
 .wpast-wrap form#wpast-filter .wpast-alert p {
   text-align: center;
 }
-
 .wpast-wrap select {
   font-family: iranyekan, Sans-serif, Arial !important;
 }
@@ -31,6 +30,28 @@
 }
 .wpast-wrap .wpast-help-text {
   margin: 13px auto;
+}
+
+@media screen and (max-width: 768px) {
+  .wpast-wrap {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .wpast-wrap .wpast-help-text {
+    padding: 0 !important;
+  }
+  .wpast-wrap .wpast-help-text .toggler {
+    padding: 8px !important;
+    font-weight: bold;
+    font-size: 100% !important;
+  }
+  .wpast-wrap .wpast-help-text .toggle_content {
+    padding: 13px;
+  }
+  .wpast-wrap .wpast-help-text .toggle_content ul, .wpast-wrap .wpast-help-text .toggle_content ol {
+    margin: 0 !important;
+    padding: 13px !important;
+  }
 }
 
 /*# sourceMappingURL=supportTicket.css.map */
