@@ -5,6 +5,10 @@
   box-shadow: 0 0 5px #e0e0e0;
   margin: 8px 0 8px 55px;
 }
+.wpast-wrap #wpast_header_text p {
+  font-size: 125% !important;
+  line-height: 2.5 !important;
+}
 .wpast-wrap form#wpast-filter {
   display: flex;
   flex-flow: row nowrap;
@@ -31,14 +35,25 @@
 .wpast-wrap .wpast-help-text {
   margin: 13px auto;
 }
+.wpast-wrap .wpast-help-text p {
+  font-size: 115% !important;
+}
 
 @media screen and (max-width: 768px) {
   .wpast-wrap {
     padding: 0 !important;
     margin: 0 !important;
   }
+  .wpast-wrap #wpast_header_text p {
+    font-size: 115% !important;
+    line-height: 2 !important;
+    text-align: justify !important;
+  }
   .wpast-wrap .wpast-help-text {
     padding: 0 !important;
+  }
+  .wpast-wrap .wpast-help-text p {
+    font-size: 100% !important;
   }
   .wpast-wrap .wpast-help-text .toggler {
     padding: 8px !important;
