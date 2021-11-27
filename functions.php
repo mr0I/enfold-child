@@ -47,7 +47,7 @@ function myaparat($atts) {
   ), $atts ) );
   $servertype = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http');
 
-  return "<center style='{$style}'><iframe src='".$servertype."://www.aparat.com/video/video/embed/videohash/{$id}/vt/frame' width='{$width}' height='{$height}' allowfullscreen='true' style='border:none!important'></iframe></center>";
+  return "<div><iframe src='".$servertype."://www.aparat.com/video/video/embed/videohash/{$id}/vt/frame' width='{$width}' height='{$height}' allowfullscreen='true' style='border:none!important'></iframe></div>";
 }
 add_shortcode( 'aparat', 'myaparat' );
 
@@ -157,104 +157,6 @@ add_filter( 'manage_posts_columns', 'gt_posts_column_views' );
 add_action( 'manage_posts_custom_column', 'gt_posts_custom_column_views' );
 
 
-/**
- * Add add_to_cart button for products pages
- */
-add_shortcode('products_row_btns', function ($atts, $content = null){
-  $pid = 0;
-  $type = '';
-  extract(shortcode_atts(array(
-	  'pid' => 0,
-	  'type' => ''
-  ), $atts));
-
-  $X1_url = 'https://radshid.com/shop/';
-  $X5_url = 'https://radshid.com/Product/shop-car-tracker/%d8%a8%d9%87%d8%aa%d8%b1%db%8c%d9%86-%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d8%ae%d9%88%d8%af%d8%b1%d9%88-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/';
-  $Magnet_url = 'https://radshid.com/Product/shop-car-tracker/%d8%ae%d8%b1%db%8c%d8%af-%d8%a7%db%8c%d9%86%d8%aa%d8%b1%d9%86%d8%aa%db%8c-%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d9%85%da%af%d9%86%d8%aa%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/';
-  $Sipaad_url = 'https://sipaad.ir';
-  $X0_url = 'https://radshid.com/Product/shop-car-tracker/%d8%ae%d8%b1%db%8c%d8%af-%d8%a7%db%8c%d9%86%d8%aa%d8%b1%d9%86%d8%aa%db%8c-%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d9%85%d9%88%d8%aa%d9%88%d8%b1%d8%b3%db%8c%da%a9%d9%84%d8%aa/';
-  $PR1S_url = 'https://radshid.com/Product/shop-personal-tracker/%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d8%b4%d8%ae%d8%b5%db%8c-%d8%a8%d8%a7-%d9%82%d8%a7%d8%a8%d9%84%db%8c%d8%aa-%d9%85%da%a9%d8%a7%d9%84%d9%85%d9%87-%d8%af%d9%88-%d8%b7%d8%b1%d9%81%d9%87/';
-  $PR8_url = 'https://radshid.com/Product/shop-car-tracker/%d8%ae%d8%b1%db%8c%d8%af-%d8%a7%db%8c%d9%86%d8%aa%d8%b1%d9%86%d8%aa%db%8c-%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d8%a2%d9%87%d9%86%d8%b1%d8%a8%d8%a7%db%8c%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/';
-  $PR1_url = 'https://radshid.com/%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d8%b4%d8%ae%d8%b5%db%8c-%d9%85%d8%af%d9%84-pr1/';
-  $PR3_url = 'https://radshid.com/Product/shop-personal-tracker/%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d9%be%d8%a7%d9%88%d8%b1%d8%a8%d8%a7%d9%86%da%a9%db%8c/';
-  switch ($type){
-	case 'car':
-	  $other_trackers_url = 'https://radshid.com/product-car-tracker/';
-	  $OthersBtnText = 'مشاهده سایر ردیاب های خودرو';
-	  break;
-	case 'personal':
-	  $other_trackers_url = 'https://radshid.com/product-personal-tracker/';
-	  $OthersBtnText = 'مشاهده سایر ردیاب های شخصی';
-	  break;
-	case 'tablet':
-	  $other_trackers_url = 'https://radshid.com/%d8%a7%d9%86%d9%88%d8%a7%d8%b9-%d8%aa%d8%a8%d9%84%d8%aa-%d9%87%d8%a7%db%8c-%d8%b5%d9%86%d8%b9%d8%aa%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/';
-	  $OthersBtnText = 'مشاهده سایر تبلت های صنعتی';
-	  break;
-	case 'pda':
-	  $other_trackers_url = 'https://radshid.com/%d8%a7%d9%86%d9%88%d8%a7%d8%b9-pda-%d9%87%d8%a7%db%8c-%d8%b5%d9%86%d8%b9%d8%aa%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/';
-	  $OthersBtnText = 'مشاهده سایر pda های صنعتی';
-	  break;
-	case 'laptop':
-	  $other_trackers_url = 'https://radshid.com/%d8%a7%d9%86%d9%88%d8%a7%d8%b9-%d9%84%d9%be-%d8%aa%d8%a7%d9%be-%d9%87%d8%a7%db%8c-%d8%b5%d9%86%d8%b9%d8%aa%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/';
-	  $OthersBtnText = 'مشاهده سایر لپ تاپ های صنعتی';
-	  break;
-	default:
-	  $other_trackers_url = '#';
-	  $OthersBtnText = '';
-  }
-  switch ($pid){
-	case 15129:
-	  $productUrl = $PR1S_url;
-	  break;
-	case 3733:
-	  $productUrl = $X1_url;
-	  break;
-	case 11720:
-	  $productUrl = $X5_url;
-	  break;
-	case 13574:
-	  $productUrl = $Magnet_url;
-	  break;
-	case 14049:
-	  $productUrl = $Sipaad_url;
-	  break;
-	case 10216:
-	  $productUrl = $X0_url;
-	  break;
-	case 10285:
-	  $productUrl = $PR8_url;
-	  break;
-	case 12161:
-	  $productUrl = $PR1_url;
-	  break;
-	case 10313:
-	  $productUrl = $PR3_url;
-	  break;
-	default:
-	  $productUrl = '#';
-  }
-
-  if ($pid != ''){
-	if (strpos($productUrl , 'sipaad')){
-	  $btns = '<div class="addToCart_btns">
-                <a href="'.$productUrl.'" class="btn btn-danger mx-1" rel="noopener noreferrer">خرید آنلاین</a>
-                <a href="'.$other_trackers_url.'" class="btn btn-danger mx-1">'.$OthersBtnText.'</a>
-            </div>';
-	} else {
-	  $btns = '<div class="addToCart_btns">
-                <a href="'.$productUrl.'" class="btn btn-danger mx-1">خرید آنلاین</a>
-                <a href="'.$other_trackers_url.'" class="btn btn-danger mx-1">'.$OthersBtnText.'</a>
-            </div>';
-	}
-  }else{
-	$btns = '<div class="addToCart_btns">
-                <a href="'.$other_trackers_url.'" class="btn btn-danger mx-1">'.$OthersBtnText.'</a>
-            </div>';
-  }
-
-  return $btns;
-});
-
 
 /* Disable automatic generation of critical CSS when Optimize CSS Delivery is enabled */
 add_filter( 'do_rocket_critical_css_generation', '__return_false' );
@@ -347,9 +249,6 @@ add_action( 'wp_ajax_getCatPosts', 'getCatPosts_callback' );
 add_action( 'wp_ajax_nopriv_getCatPosts', 'getCatPosts_callback' );
 /* ========== End Ajax Requests ========== */
 
-
-
-//var_dump(get_current_user_id());
 
 
 
