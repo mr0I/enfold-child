@@ -1,4 +1,3 @@
-/* Version 1.0.9 */
 (function($) {
     $(window).on("load", function() {
         /* Notif Banner */
@@ -28,13 +27,6 @@ jQuery(document).ready(function($){
         $('[data-toggle="tooltip"]').tooltip("hide");
     });
     // Inits
-
-    setInterval(function() {
-        $('.dial-btn').find('i').addClass('is-animating');
-        setTimeout(function() {
-            $('.dial-btn').find('i').removeClass('is-animating');
-        }, 2000);
-    }, 12000);
 
 
     // Add Material icons

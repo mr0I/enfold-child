@@ -204,11 +204,9 @@ function add_taxonomies_to_pages() {
 add_action( 'init', 'add_taxonomies_to_pages' );
 
 
-
 /*
  *  ========== Start Ajax Requests ==========
  */
-
 // show blog posts
 function getCatPosts_callback(){
   global $wpdb;
