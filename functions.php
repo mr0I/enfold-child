@@ -39,15 +39,13 @@ add_filter( 'script_loader_tag', function ($tag, $handle, $src ){
 
 
 function myaparat($atts) {
+  $id = '';
   extract( shortcode_atts( array(
-	  'id' => '',
-	  'width' => '100%',
-	  'height' => 450,
-	  'style' => 'margin: 10px;'
+	  'id' => ''
   ), $atts ) );
   $servertype = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off' ? 'https' : 'http');
 
-  return "<div><iframe src='".$servertype."://www.aparat.com/video/video/embed/videohash/{$id}/vt/frame' width='{$width}' height='{$height}' allowfullscreen='true' style='border:none!important'></iframe></div>";
+  return "<div><iframe src='".$servertype."://www.aparat.com/video/video/embed/videohash/{$id}/vt/frame' width='100%' height='450' allowfullscreen='true' style='border:none!important;margin: 10px;'></iframe></div>";
 }
 add_shortcode( 'aparat', 'myaparat' );
 
