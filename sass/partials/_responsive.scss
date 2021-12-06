@@ -53,8 +53,12 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .office_addr_container li.avia_start_animation{
-    min-height: auto;
+  .office_addr_container {
+    margin-bottom: -85px;
+    li.avia_start_animation{
+      min-height: auto;
+      margin: 0 auto 36px auto;
+    }
   }
   .wpast-wrap{
     padding: 0 !important;

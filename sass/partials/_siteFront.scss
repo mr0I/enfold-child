@@ -28,6 +28,9 @@ input.avia-font-entypo-fontello{
 
 .container_wrap.container_wrap_first.main_color{
   background-color: $backgroundColor;
+  .iconlist_content{
+    color: $primaryTextColor;
+  }
 }
 
 /* Header */
@@ -2344,12 +2347,14 @@ ul.payment_methods .payment_box{
 #top .avia_cart_buttons .button{
   line-height: 1.6 !important;
 }
-.office_addr_container li.avia_start_animation{
-  width: 100% !important;
-  min-height: 315px;
-  margin: 8px auto;
+.office_addr_container {
+  margin-bottom:-200px !important;
+  li.avia_start_animation{
+    width: 100% !important;
+    min-height: 315px;
+    margin: 8px auto;
+  }
 }
-
 // full size avia images (single posts)
 .avia-image-container{
   width: 100%;
