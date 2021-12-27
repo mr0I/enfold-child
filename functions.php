@@ -187,6 +187,8 @@ add_action( 'init', function() {
 	  echo '<script type="text/javascript"> const TopToast = Swal.mixin({toast: true, position: "bottom-start", showConfirmButton: false, timer: 3500, background: "#1c272b", timerProgressBar: true, didOpen: (toast) => {toast.addEventListener("mouseenter", Swal.stopTimer);toast.addEventListener("mouseleave", Swal.resumeTimer)}});TopToast.fire({ icon: "success", title: "نظر شما ثبت شد و پس از تایید نمایش داده می شود." });</script>';
 	});
   }
+
+  if ( ! session_id() ) session_start();
 });
 add_filter( 'comment_post_redirect', function( $location, $comment ) {
   $location = get_permalink( $comment->comment_post_ID ) . '#wait_approval';
@@ -244,10 +246,5 @@ function getCatPosts_callback(){
 add_action( 'wp_ajax_getCatPosts', 'getCatPosts_callback' );
 add_action( 'wp_ajax_nopriv_getCatPosts', 'getCatPosts_callback' );
 /* ========== End Ajax Requests ========== */
-
-
-
-
-
 
 
