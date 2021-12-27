@@ -190,7 +190,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
             </div>
         </div>
         <div class="third-row">
-            <div class="container-fluid">
+            <div class="container-fluid p-0">
                 <div class="row" style="width: 94%;margin: 0 auto;">
                     <div class="tr-element col-12">
                         <div class="row">
@@ -199,7 +199,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                 <p>
                                 <span>اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33       ساعات کار:       8:30 الی 17</span>
                                 <br>
-                                    <span> کد پستی: <span>8183877113</span></span>
+                                    <span> کد پستی: <span style="font-size: 100%">8183877113</span></span>
                                 </p>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-12">
@@ -253,10 +253,9 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                     <div class="sr-element col-md-4 col-sm-12">
                         <p class="fourWords title">راهنمای خرید از رادشید</p>
                         <ul style="display: flex;flex-flow: row wrap">
-                            <li class="col-4"><a href="https://radshid.com/%d9%86%d8%ad%d9%88%d9%87-%d8%ab%d8%a8%d8%aa-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4/">نحوه ثبت سفارش</a></li>
-<!--                            <li class="col-4"><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d9%be%d8%b1%d8%af%d8%a7%d8%ae%d8%aa/">شیوه های پرداخت</a></li>-->
-                            <li class="col-4"><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d8%a7%d8%b1%d8%b3%d8%a7%d9%84/">شیوه های ارسال</a></li>
-                            <li class="col-4"><a href="https://radshid.com/%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%be%d8%b3-%d8%a7%d8%b2-%d9%81%d8%b1%d9%88%d8%b4/">خدمات پس از فروش</a></li>
+                            <li><a href="https://radshid.com/%d9%86%d8%ad%d9%88%d9%87-%d8%ab%d8%a8%d8%aa-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4/">نحوه ثبت سفارش</a></li>
+                            <li><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d8%a7%d8%b1%d8%b3%d8%a7%d9%84/">شیوه های ارسال</a></li>
+                            <li><a href="https://radshid.com/%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%be%d8%b3-%d8%a7%d8%b2-%d9%81%d8%b1%d9%88%d8%b4/">خدمات پس از فروش</a></li>
                         </ul>
                     </div>
                     <div class="sr-element col-md-4 col-sm-12" style="margin-top: 30px;">

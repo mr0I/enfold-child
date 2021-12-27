@@ -72,7 +72,7 @@
 }
 #custom-footer .sr-element ul li a{
   color: #e0e0e0;
-  font-size: 85%;
+  font-size: 90%;
 }
 #custom-footer .sr-element ul li a:hover{
   color: #EEEEEE;
@@ -86,7 +86,7 @@
 }
 #custom-footer .sr-element .footer-social a{
   margin: 0 10px;
-  font-size: 85%;
+  font-size: 90%;
 }
 #custom-footer .sr-element .footer-social a i{
   @include myTransition(0.4s ease);
@@ -110,7 +110,7 @@
   margin-top: 10px;
 }
 #custom-footer .tr-element p.title{
-  font-size: 100%;
+  font-size: 115%;
   color: #ffffff;
   font-family: $textFont;
   line-height: 2;
@@ -152,7 +152,7 @@
 }
 #custom-footer .tr-element ul li, #custom-footer .tr-element p span {
   font-weight: normal;
-  font-size: 85%;
+  font-size: 90%;
   font-family: $textFont !important;
   direction: ltr;
   padding: 4px 0;
@@ -199,7 +199,7 @@ footer .footer-social-btns{
   padding: 15px;
 }
 footer .footer-social-btns a{
-  font-size: 85%;
+  font-size: 90%;
   color: $hoverColor;
   margin: 0 10px;
   @include myTransition(0.3s ease-in-out);
@@ -371,7 +371,6 @@ footer .footer-social-btns i{
   opacity: 0;
 }
 
-
 .footer-aboutUs p{
   width: 100%;
   text-align: justify;
@@ -496,7 +495,7 @@ footer .footer-social-btns i{
         color: #bdbdbd;
         line-height: 2;
         font-weight: lighter;
-        font-size: 85%;
+        font-size: 90%;
       }
     }
     .social-icons a {
@@ -580,7 +579,7 @@ footer .footer-social-btns i{
   opacity: 0;
   transition: all 0.3s ease;
   transform: scale(0);
-  transform-origin: 85% bottom;
+  transform-origin: 90% bottom;
 }
 
 .fab:hover+.fab-options,
@@ -627,7 +626,7 @@ footer .footer-social-btns i{
 /* Start Bootstrap Tooltip */
 .tooltip {
   font-family: $textFont;
-  font-size: 85%;
+  font-size: 90%;
 }
 /* End Bootstrap Tooltip */
 
@@ -771,7 +770,7 @@ footer .footer-social-btns i{
     .card-body{
       padding: 0 5px;
       .card-title{
-        font-size: 85%;
+        font-size: 90%;
         color: $titleColor;
         margin: 5px auto;
       }
@@ -806,7 +805,7 @@ footer .footer-social-btns i{
   align-content: center;
   margin: 24px auto;
   a{
-    font-size: 85%;
+    font-size: 90%;
     padding: 8px 24px;
     margin: 4px auto;
     color: #eee !important;
@@ -878,7 +877,7 @@ article#guarantee_vector .iconbox_icon::before{
 .slide-content {
   .slide-entry-excerpt{
     text-align: justify !important;
-    font-size: 85%;
+    font-size: 90%;
     line-height: 2;
   }
   .slide-entry-title {
@@ -899,12 +898,12 @@ article#guarantee_vector .iconbox_icon::before{
   padding: 0 8px;
 }
 #header_meta {
-  padding: 8px;
+  padding: 8px 0;
   background-color: #235e8a !important;
   .phone-info{
     padding: 4px 0;
     span{
-      font-size: 100%;
+      font-size: 125%;
       color: #EEEEEE !important;
       font-weight: normal;
       line-height: 1.5;
@@ -995,7 +994,7 @@ article#guarantee_vector .iconbox_icon::before{
 /* End Demo Styles */
 
 .farsi_num{
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 .eng_num{
   font-family: $latinFont;

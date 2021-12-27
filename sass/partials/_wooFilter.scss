@@ -7,7 +7,7 @@ $OrganizationalBlueColor: #2494a2;
 $OrganizationalGrayColor: #aeadad;
 $successMsgColor:#03c9a9;
 $primaryTextColor: #373c3e;
-$secondaryTextColor: #616161;
+$secondaryTextColor: #424242;
 $secondaryWhiteColor: #bdbdbd;
 $backgroundColor: #fafafa;
 $hoverColor: #bdbdbd;
@@ -46,7 +46,7 @@ $latinFont : Sans-serif,Arial;
 .bapf_body {
   ul li label{
     padding: 0 8px;
-    font-size: 85% !important;
+    font-size: 90% !important;
     color: $secondaryTextColor;
     margin: 6px auto;
     font-weight: lighter !important;
@@ -58,7 +58,7 @@ $latinFont : Sans-serif,Arial;
     padding:0 4px;
   }
   .berocket_aapf_widget_selected_filter{
-    font-size: 85%;
+    font-size: 90%;
     color: $titleColor;
   }
 }
@@ -74,7 +74,7 @@ $latinFont : Sans-serif,Arial;
   background-color: #ececec !important;
   width: 100%;
   color: $secondaryTextColor !important;
-  font-size: 85% !important;
+  font-size: 90% !important;
   &:hover{
   background-color: #ececec !important;
   }

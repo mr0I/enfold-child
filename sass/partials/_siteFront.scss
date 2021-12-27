@@ -10,7 +10,7 @@ blockquote {
   border-color: $secondaryTextColor !important;
   width: auto !important;
   p{
-    font-size: 85%;
+    font-size: 90%;
   }
 }
 
@@ -43,7 +43,7 @@ nav.sub_menu{
 .header_color .sub_menu>ul>li>a, .header_color .sub_menu>div>ul>li>a, .header_color .main_menu ul:first-child>li>a, #top .header_color .main_menu .menu ul .current_page_item>a, #top .header_color .main_menu .menu ul .current-menu-item>a, #top .header_color .sub_menu li ul a {
   color: $AccentColor !important;
   font-weight: normal;
-  font-size: 85%;
+  font-size: 90%;
 }
 .header_color .sub_menu>ul>li>a:hover, .header_color .sub_menu>div>ul>li>a:hover, .header_color .main_menu ul:first-child>li>a:hover, #top .header_color .main_menu .menu ul .current_page_item>a:hover, #top .header_color .main_menu .menu ul .current-menu-item>a:hover, #top .header_color .sub_menu li ul a:hover {
   color: $primaryColor !important;
@@ -114,7 +114,7 @@ ul#avia-menu>li.menu-item-has-children::after{
   top: 20px;
   height: auto;
   a {
-    font-size: 85%;
+    font-size: 90%;
   }
 }
 #top .main_menu ul.sub-menu  {
@@ -129,7 +129,7 @@ ul#avia-menu>li.menu-item-has-children::after{
     top: 0;
     height: auto !important;
     a{
-      font-size: 85%;
+      font-size: 90%;
       height: auto !important;
       @include myTransition(0.3s ease);
       &:hover{
@@ -372,14 +372,14 @@ main.template-shop.content.av-content-small.alpha.units {
   border-radius: 0;
 }
 .widget_recent_entries ul li a {
-  font-size: 85%;
+  font-size: 90%;
   color: $secondaryTextColor;
 }
 .widget_recent_entries ul li a:hover {
   text-decoration: none;
 }
 nav.main_menu ul li a {
-  font-size: 85%;
+  font-size: 90%;
 }
 nav.main_menu ul li a i{
   /*-webkit-text-stroke: 1px $titleColor;*/
@@ -409,7 +409,7 @@ ul.menu li.current-menu-ancestor > a {
 }
 nav.pagination > a {
   border-radius: 0 !important;
-  font-size: 85%;
+  font-size: 90%;
   margin: auto 4px;
   color: #eee !important;
 }
@@ -557,7 +557,7 @@ span.pagination-meta {
 }
 .tabcontainer .tab_titles {
   .tab{
-    font-size: 85%;
+    font-size: 90%;
   }
   .active_tab {
     color: #eeeeee;
@@ -807,7 +807,7 @@ div .main_color .tabcontainer .active_tab_content, div .main_color .tabcontainer
   color: $errorMsgColor;
   margin: 0 5px;
   vertical-align: middle;
-  font-size: 85%;
+  font-size: 90%;
 }
 abbr.required{
   text-decoration: none;
@@ -907,7 +907,7 @@ li.av-share-link a {
 }
 .slide-content span.blog-categories a {
   color: #ffffff !important;
-  font-size: 85%;
+  font-size: 90%;
 }
 .slide-content h3.slide-entry-title  {
   text-align: center;
@@ -1047,7 +1047,7 @@ span.post-meta-infos {
 
 h3.slide-entry-title a{
   color: #EEEEEE !important;
-  font-size: 85%;
+  font-size: 90%;
 }
 .slide-meta{
   color: #EEEEEE !important;
@@ -1077,7 +1077,7 @@ h3.slide-entry-title a{
     vertical-align: top;
   }
   th{
-    color: #616161!important;
+    color: $secondaryTextColor !important;
     font-size: 101%!important;
   }
   td{
@@ -1231,7 +1231,7 @@ td.product-name {
     list-style-type: circle;
     li{
       line-height: 2.5;
-      font-size: 85%;
+      font-size: 90%;
       color: $primaryTextColor;
     }
   }
@@ -1249,7 +1249,7 @@ td.product-name {
 }
 
 ul.sub-menu a{
-  font-size: 85%;
+  font-size: 90%;
 }
 ul.sub-menu > li.menu-item-has-children >a::after{
   content: "\e939";
@@ -1402,14 +1402,14 @@ img.full-width-img{
 }
 
 .woo-tabs .wc-tabs li span.ywtm_icon{
-  font-size: 85%;
+  font-size: 90%;
   margin: auto 10px;
 }
 
 .woo-tabs .wc-tabs li a{
   padding: 8px 20px !important;
   border-radius: 0;
-  font-size: 85% !important;
+  font-size: 90% !important;
   color: $secondaryTextColor !important;
   border-bottom: 1px solid $backgroundColor !important;
 }
@@ -1418,7 +1418,7 @@ img.full-width-img{
 }
 .woo-tabs .wc-tabs li.active a{
   color: $primaryColor !important;
-  font-size: 85% !important;
+  font-size: 90% !important;
   border-bottom: 3px solid $primaryColor !important;
 }
 
@@ -1450,7 +1450,7 @@ img.full-width-img{
     text-align: justify;
     margin: 0;
     padding: 0;
-    font-size: 85%;
+    font-size: 90%;
     color: $primaryTextColor;
     line-height: 2;
     //&::before{
@@ -1481,14 +1481,14 @@ img.full-width-img{
 .wc-tabs li a{
   padding: 15px 24px !important;
   border-radius: 0;
-  font-size: 85% !important;
+  font-size: 90% !important;
 }
 .wc-tabs li.active{
   background-color: #ffffff !important;
 }
 .wc-tabs li.active a{
   color: $titleColor !important;
-  font-size: 85% !important;
+  font-size: 90% !important;
 }
 
 .av-alb-blogposts article{
@@ -1518,7 +1518,7 @@ img.full-width-img{
   border-color: #e0e0e0 !important;
 }
 .template-shop .inner_product .button{
-  font-size: 85% !important;
+  font-size: 90% !important;
 }
 .template-shop .inner_product .button i{
   font-size: 100%;
@@ -1527,7 +1527,7 @@ img.full-width-img{
 }
 // for related products
 .template-shop .related .inner_product .button{
-  font-size: 85% !important;
+  font-size: 90% !important;
 }
 
 .woo-gallery{
@@ -1597,18 +1597,18 @@ img.full-width-img{
     margin-top: 20px;
     .product_meta{
       margin: 10px auto;
-      font-size: 85%;
+      font-size: 90%;
       font-weight: bold;
       color: $titleColor;
       a{
         color: $primaryTextColor;
-        font-size: 85%;
+        font-size: 90%;
         font-weight: lighter;
       }
       .sku_wrapper{
         .sku{
           color: $primaryTextColor;
-          font-size: 85%;
+          font-size: 90%;
           font-weight: lighter;
         }
       }
@@ -1707,7 +1707,7 @@ form.cart .quantity{
   display: none;
 }
 .vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_title div{
-  font-size: 85% !important;
+  font-size: 90% !important;
   font-weight: bold !important;
   font-family: $textFont !important;
   margin: 15px auto;
@@ -1731,18 +1731,18 @@ a.product-tag {
   padding: 13px;
   .product_meta{
     margin: 10px auto;
-    font-size: 85%;
+    font-size: 90%;
     font-weight: bold;
     color: $titleColor;
     a{
       color: $primaryTextColor;
-      font-size: 85%;
+      font-size: 90%;
       font-weight: lighter;
     }
     .sku_wrapper{
       .sku{
         color: $primaryTextColor;
-        font-size: 85%;
+        font-size: 90%;
         font-weight: lighter;
       }
     }
@@ -1756,7 +1756,7 @@ a.product-tag {
 }
 .yith-wcwl-add-button a{
   color: $secondaryTextColor;
-  font-size: 85%;
+  font-size: 90%;
   font-weight: bold;
   display: flex;
   flex-flow: row wrap;
@@ -1777,12 +1777,12 @@ a.product-tag {
 .yith-wcwl-wishlistaddedbrowser .feedback{
   width: 100%;
   text-align: center;
-  font-size: 85% !important;
+  font-size: 90% !important;
 }
 .yith-wcwl-wishlistaddedbrowser .feedback a{
   width: 100%;
   text-align: center;
-  font-size: 85% !important;
+  font-size: 90% !important;
 }
 
 #top .avia-post-nav {
@@ -2035,7 +2035,7 @@ ul.woocommerce-error {
 button.wpforms-submit{
   background-color: $primaryColor !important;
   color: #eee !important;
-  font-size: 85% !important;
+  font-size: 90% !important;
 }
 
 .sidebar-content span{
@@ -2270,7 +2270,7 @@ a.wc-backward {
 
 // Customize recipt form
 #top #payment ul.payment_methods li {
-  font-size: 85%;
+  font-size: 90%;
   input{
     vertical-align: middle;
   }
@@ -2320,7 +2320,7 @@ ul.payment_methods .payment_box{
     li{
       margin: auto 4px;
       list-style-type: none;
-      font-size: 85%;
+      font-size: 90%;
       color: $secondaryTextColor;
     }
   }
@@ -2332,7 +2332,7 @@ ul.payment_methods .payment_box{
 
 .av_ajax_search_entry span.av_ajax_search_image::before{
   margin-left: 0 !important;
-  font-size: 85% !important;
+  font-size: 90% !important;
 }
 
 .yrm-btn-wrapper{
