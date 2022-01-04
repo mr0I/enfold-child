@@ -2641,4 +2641,15 @@ div #reviews #comments ol.commentlist li .avatar{
   text-align:right;
   line-height:2;
 }
+
+.custom_av_one_fifth {
+  margin-right: 24px !important;
+  .iconbox_icon , iconbox_content_title{
+    text-align: center;
+  }
+  .iconbox_content_container ul li{
+    text-align: right !important;
+    font-size: 90%;
+  }
+}
 /* end Extra Styles */
