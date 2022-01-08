@@ -2347,14 +2347,6 @@ ul.payment_methods .payment_box{
 #top .avia_cart_buttons .button{
   line-height: 1.6 !important;
 }
-.office_addr_container {
-  margin-bottom:-200px !important;
-  li.avia_start_animation{
-    width: 100% !important;
-    min-height: 315px;
-    margin: 8px auto;
-  }
-}
 // full size avia images (single posts)
 .avia-image-container{
   width: 100%;
@@ -2377,7 +2369,7 @@ ul.avia-icon-list{
   align-content: center;
   margin-bottom: 75px;
   li{
-    width: 50%;
+    width: 100%;
   }
 }
 .tracker_tut_list ul.avia-icon-list{
