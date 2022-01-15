@@ -196,12 +196,19 @@ add_filter( 'comment_post_redirect', function( $location, $comment ) {
 }, 10, 2 );
 
 
-/* Add Taxonomies for Pages */
+/* Add Taxonomies For Pages */
 function add_taxonomies_to_pages() {
   register_taxonomy_for_object_type( 'post_tag', 'page' );
   register_taxonomy_for_object_type( 'category', 'page' );
 }
 add_action( 'init', 'add_taxonomies_to_pages' );
+
+
+/* Increase ppp_nonce_life For Public Post Preview Plugin */
+add_filter( 'ppp_nonce_life', 'my_nonce_life' );
+function my_nonce_life() {
+  return 60 * 60 * 24 * 15; // 15 days
+}
 
 
 
