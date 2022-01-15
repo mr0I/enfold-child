@@ -1241,6 +1241,9 @@ td.product-name {
   h2,h3{
     font-size: 115%;
   }
+  strong{
+    color: unset !important;
+  }
 }
 
 .tab-download-container .button_download {

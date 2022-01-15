@@ -211,7 +211,6 @@ function my_nonce_life() {
 }
 
 
-
 /*
  *  ========== Start Ajax Requests ==========
  */
