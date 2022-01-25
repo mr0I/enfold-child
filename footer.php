@@ -195,9 +195,12 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                     <div class="tr-element col-12">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-12">
-                                <p class="threeWords title">آدرس دفتر مرکزی</p>
+                                <p class="threeWords title"><?= __('Central Office Address' ,'radshid_lan') ?></p>
+                                <p class="threeWords title">
+                                  <?= (get_locale() === 'en_US') ? 'Central Office Address' : 'آدرس دفتر مرکزی'  ?>
+                                </p>
                                 <p>
-                                <span>اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33       ساعات کار:       8:30 الی 17</span>
+                                <span>اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33 - شرکت رادشید       ساعات کار:       8:30 الی 17</span>
                                 <br>
                                     <span> کد پستی: <span style="font-size: 100%">8183877113</span></span>
                                 </p>

@@ -53,6 +53,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  #employment_page_container .iconbox_content {
+    min-height: auto;
+  }
   .wpast-wrap{
     padding: 0 !important;
     margin: 0 !important;

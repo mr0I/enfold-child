@@ -12,7 +12,13 @@ defined("ABSPATH") || '/' . exit();
 function load_scripts_styles() {
   $vn = wp_get_theme()->get( 'Version' );
   // Styles
-  wp_enqueue_style( 'child-theme-styles' , get_stylesheet_directory_uri() . '/css/main.css');
+  if (get_locale() === 'en_US'){
+	wp_enqueue_style( 'child-theme-styles' , get_stylesheet_directory_uri() . '/css/style-ltr.css');
+  } elseif (get_locale() === 'fa_IR'){
+	wp_enqueue_style( 'child-theme-styles' , get_stylesheet_directory_uri() . '/css/main.css');
+  } else {
+	wp_enqueue_style( 'child-theme-styles' , get_stylesheet_directory_uri() . '/css/main.css');
+  }
   // Scripts
   wp_enqueue_script('sweetAlert', get_stylesheet_directory_uri() .'/js/sweetalert2.all.min.js');
   wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/js/custom-scripts.js', array('jquery','jquery-ui-core'), $vn , true );
