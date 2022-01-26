@@ -12,12 +12,16 @@
         });
         /* Notif Banner */
 
+
         // Start Goftino
-        !function(){var a=window,d=document;function g(){var g=d.createElement("script"),i="lXpDBP",s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.type="text/javascript",g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+        if (SpaAjax.isEN !== 'en'){
+            !function(){var a=window,d=document;function g(){var g=d.createElement("script"),i="lXpDBP",s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.type="text/javascript",g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+        }
     })
 })(jQuery);
 jQuery(document).ready(function($){
-    // Inits
+
+    // inits
     const toolTips = $('[data-toggle="tooltip"]');
     toolTips.tooltip({
         delay: {"show": 200, "hide": 100},
@@ -88,6 +92,14 @@ jQuery(document).ready(function($){
 
 
     $('#uap_createuser').find('.optional').siblings('label.uap-labels-register').addClass('optional-label');
+
+
+    // Change header phone info
+    if (SpaAjax.isEN === 'en') $('#header_meta').find('.phone-info').find('span').html('Business Unit: +98-03132362894 - Support Unit: +98-03195016151');
+    else $('#header_meta').find('.phone-info').find('span').html('بازرگانی : ۰۳۱۳۲۳۶۲۸۹۴ |  پشتیبانی : ۰۳۱۹۵۰۱۶۱۵۱');
+
+    $('i.ic-line-right').removeClass('ic-line-right').addClass('ic-line-left');
+    $('.trail-begin').find('span:nth-child(2)').text('dsadad');
 
 });
 

@@ -1,0 +1,46 @@
+* {
+    text-align: left;
+    font-family: Arial,Sans-serif !important;
+}
+
+#custom-footer p.title{
+    font-size: 150% !important;
+}
+#custom-footer ul>li{
+    font-size: 115% !important;
+}
+
+#header_main .main_menu{
+    left: 30px !important;
+}
+
+#header_main span.logo {
+    left: unset;
+    right: 24px;
+}
+
+ul.menu-item.cart_dropdown {
+    display: none;
+}
+
+input[type=submit]{
+    text-align: center;
+}
+
+.title_container .breadcrumb {
+    left: 4px !important;
+    right: unset !important;
+}
+
+@media screen and (max-width: 768px) {
+    #custom-footer ul{
+        justify-content: center;
+        margin: 8px auto;
+    }
+    #custom-footer p.title ,ul>li{
+        text-align: center;
+    }
+    .fourth-row {
+        padding-bottom: 0;
+    }
+}
