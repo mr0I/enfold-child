@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46a4c9ad-46f7-42c6-855f-a1c5041e3352" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/css/style-ltr.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style-ltr.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-ltr.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/custom-scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/custom-scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/partials/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/partials/_base.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-ui.min.js" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +18,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
+            <state relative-caret-position="414">
+              <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
               <folding>
                 <element signature="e#6#182#0#PHP" expanded="true" />
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
@@ -34,30 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="454" column="6" selection-start-line="454" selection-start-column="6" selection-end-line="454" selection-end-column="6" />
-              <folding>
-                <element signature="e#6570#6604#0#HTML" expanded="true" />
-                <element signature="e#6734#7530#0#HTML" />
-                <element signature="e#5087#5128#0#HTML" expanded="true" />
-                <element signature="e#5746#6656#0#HTML" />
-                <element signature="e#5901#5942#0#HTML" expanded="true" />
-                <element signature="e#6687#7597#0#HTML" />
-                <element signature="e#6842#6883#0#HTML" expanded="true" />
-                <element signature="e#13485#13511#0#HTML" expanded="true" />
-                <element signature="e#5185#15691#0#HTML" />
-                <element signature="e#7184#7218#0#HTML" expanded="true" />
-                <element signature="e#8017#8040#0#HTML" expanded="true" />
-                <element signature="e#8687#8757#0#HTML" expanded="true" />
-                <element signature="e#9476#9546#0#HTML" expanded="true" />
-                <element signature="e#10454#10524#0#HTML" expanded="true" />
-                <element signature="e#10936#11002#0#HTML" expanded="true" />
-                <element signature="e#11160#11201#0#HTML" expanded="true" />
-                <element signature="e#12117#12158#0#HTML" expanded="true" />
-                <element signature="e#12775#12800#0#HTML" expanded="true" />
-                <element signature="e#13536#13558#0#HTML" expanded="true" />
-                <element signature="e#13938#13964#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="84">
+              <caret line="437" column="32" selection-start-line="437" selection-start-column="32" selection-end-line="437" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -65,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/partials/_base.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-460">
-              <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+            <state relative-caret-position="23">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -92,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style-ltr.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+            <state relative-caret-position="-207">
+              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -101,11 +77,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+            <state relative-caret-position="552">
+              <caret line="97" column="3" lean-forward="true" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
               <folding>
                 <element signature="n#style#0;n#i#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#!!top" expanded="true" />
+                <element signature="e#20#26#0" expanded="true" />
+                <element signature="e#26#32#0" expanded="true" />
+                <element signature="e#65#71#0" expanded="true" />
+                <element signature="e#71#77#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -123,8 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>90%</find>
-      <find>ul.menu-item.cart_dropdown</find>
       <find>#top .main_menu</find>
       <find>hasCurrentStyle</find>
       <find>widget_media_image</find>
@@ -153,6 +131,8 @@
       <find>en_US</find>
       <find>floated_icons_footer</find>
       <find>security</find>
+      <find>trail-begin</find>
+      <find>menu-item</find>
     </findStrings>
     <replaceStrings>
       <replace>1px</replace>
@@ -306,7 +286,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -778,7 +758,8 @@
       <workItem from="1643027714068" duration="1125000" />
       <workItem from="1643029009061" duration="2265000" />
       <workItem from="1643089910949" duration="6381000" />
-      <workItem from="1643176985450" duration="16329000" />
+      <workItem from="1643176985450" duration="16755000" />
+      <workItem from="1643262550834" duration="8128000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1590862220655</created>
@@ -805,7 +786,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1664668000" />
+    <option name="totallyTimeSpent" value="1673222000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -832,7 +813,7 @@
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="9" visible="true" weight="0.3110368" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3110368" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="bottom" id="Terminal" order="12" weight="0.9665552" />
@@ -1120,65 +1101,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding>
-            <element signature="e#6#182#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/partials/_base.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-460">
-          <caret line="1" column="23" lean-forward="true" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/main.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="454" column="6" selection-start-line="454" selection-start-column="6" selection-end-line="454" selection-end-column="6" />
-          <folding>
-            <element signature="e#6570#6604#0#HTML" expanded="true" />
-            <element signature="e#6734#7530#0#HTML" />
-            <element signature="e#5087#5128#0#HTML" expanded="true" />
-            <element signature="e#5746#6656#0#HTML" />
-            <element signature="e#5901#5942#0#HTML" expanded="true" />
-            <element signature="e#6687#7597#0#HTML" />
-            <element signature="e#6842#6883#0#HTML" expanded="true" />
-            <element signature="e#13485#13511#0#HTML" expanded="true" />
-            <element signature="e#5185#15691#0#HTML" />
-            <element signature="e#7184#7218#0#HTML" expanded="true" />
-            <element signature="e#8017#8040#0#HTML" expanded="true" />
-            <element signature="e#8687#8757#0#HTML" expanded="true" />
-            <element signature="e#9476#9546#0#HTML" expanded="true" />
-            <element signature="e#10454#10524#0#HTML" expanded="true" />
-            <element signature="e#10936#11002#0#HTML" expanded="true" />
-            <element signature="e#11160#11201#0#HTML" expanded="true" />
-            <element signature="e#12117#12158#0#HTML" expanded="true" />
-            <element signature="e#12775#12800#0#HTML" expanded="true" />
-            <element signature="e#13536#13558#0#HTML" expanded="true" />
-            <element signature="e#13938#13964#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sass/partials/_siteFront.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="2654" column="18" selection-start-line="2654" selection-start-column="18" selection-end-line="2654" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -1189,20 +1115,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/sass/partials/_siteFront.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="2654" column="18" selection-start-line="2654" selection-start-column="18" selection-end-line="2654" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/partials/_base.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="437" column="32" selection-start-line="437" selection-start-column="32" selection-end-line="437" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="57" column="38" selection-start-line="57" selection-start-column="38" selection-end-line="57" selection-end-column="38" />
+          <folding>
+            <element signature="e#6#182#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/style-ltr.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
+        <state relative-caret-position="-207">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/custom-scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
+        <state relative-caret-position="552">
+          <caret line="97" column="3" lean-forward="true" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
           <folding>
             <element signature="n#style#0;n#i#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#!!top" expanded="true" />
+            <element signature="e#20#26#0" expanded="true" />
+            <element signature="e#26#32#0" expanded="true" />
+            <element signature="e#65#71#0" expanded="true" />
+            <element signature="e#71#77#0" expanded="true" />
           </folding>
         </state>
       </provider>
