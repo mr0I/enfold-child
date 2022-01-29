@@ -81,7 +81,7 @@ jQuery(document).ready(function($){
     /* Changes For Multi Language */
     // header phone info
     if (SpaAjax.isEN === 'en') {
-        $('#header_meta').find('.phone-info').find('span').html('<i class="ic-phone">&nbsp;&nbsp;+98-03132362894 | +98-03195016151&nbsp;&nbsp;</i>');
+        $('#header_meta').find('.phone-info').find('span').html('<i class="ic-phone">&nbsp;&nbsp;+983132362894 | +983195016151&nbsp;&nbsp;</i>');
     } else {
         $('#header_meta').find('.phone-info').find('span').html('بازرگانی : ۰۳۱۳۲۳۶۲۸۹۴ |  پشتیبانی : ۰۳۱۹۵۰۱۶۱۵۱');
     }

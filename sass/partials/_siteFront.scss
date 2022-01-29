@@ -501,9 +501,6 @@ span.comment-container.minor-meta {
     padding: 0;
     margin-top: 20px;
   }
-  ul{
-    margin: 0 13px;
-  }
 }
 .entry-content-wrapper {
   display: flex;
@@ -528,9 +525,6 @@ span.comment-container.minor-meta {
       font-size: 100% ;
       padding: 0;
       margin-top: 20px;
-    }
-    ul{
-      margin: 0 13px;
     }
   }
 }
@@ -2662,4 +2656,22 @@ div #reviews #comments ol.commentlist li .avatar{
 #employment_page_container .iconbox_content {
   min-height: 225px;
 }
+// employment page
+
+
+//  new slider styles //
+#main_page_slider ul.avia-slideshow-inner {
+  padding: 0 !important;
+  margin-top: 135px !important;
+}
+#main_page_slider ul.avia-slideshow-inner li {
+  border-radius: 0 !important;
+}
+
+#main_page_slider .avia-slideshow-arrows a:before {
+  border: none !important;
+  color: #e0e0e0;
+}
+//  new slider styles //
+
 /* end Extra Styles */
