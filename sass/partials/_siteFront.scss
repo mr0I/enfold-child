@@ -20,7 +20,7 @@ blockquote {
 }
 
 input[type=submit] , input[type=text] {
-  font-family: $textFont !important;
+  font-family: $textFont;
 }
 input.avia-font-entypo-fontello{
   font-family: 'entypo-fontello' !important;
@@ -245,7 +245,7 @@ ul.menu-item.cart_dropdown .cart_dropdown_link {
 // Cart Styles
 
 #top .av-cart-counter {
-  font-family: $textFont !important;
+  font-family: $textFont;
   border-radius: 0 6px 6px 6px;
   min-width:15px !important;
   width: auto !important;
@@ -856,8 +856,6 @@ abbr.required{
   background-color: #ffffff !important;
 }
 
-
-
 .avia_textblock {
   h3 a {
     text-decoration: none !important;
@@ -870,10 +868,10 @@ abbr.required{
     font-size: 100%;
     line-height: 2.25;
     color: $primaryTextColor;
-    font-family: $textFont !important;
+    font-family: $textFont;
     margin: 0 !important;
     span{
-      font-family: $textFont !important;
+      font-family: $textFont;
       color: $primaryTextColor !important;
     }
   }
@@ -1288,7 +1286,7 @@ ul.sub-menu > li.menu-item-has-children >a::after{
 }
 
 label#recaptcha-anchor-label {
-  font-family: $textFont !important;
+  font-family: $textFont;
 }
 
 img.full-width-img{
@@ -1710,7 +1708,7 @@ form.cart .quantity{
 .vc_custom_heading.vc_gitem-post-data.vc_gitem-post-data-source-post_title div{
   font-size: 90% !important;
   font-weight: bold !important;
-  font-family: $textFont !important;
+  font-family: $textFont;
   margin: 15px auto;
 }
 
@@ -1915,7 +1913,7 @@ p.stock.out-of-stock {
 }
 
 span.woocommerce-Price-amount.amount {
-  font-family: $textFont !important
+  font-family: $textFont
 }
 
 .button .wc-forward{
@@ -2040,7 +2038,7 @@ button.wpforms-submit{
 }
 
 .sidebar-content span{
-  font-family: $textFont !important}
+  font-family: $textFont}
 
 #top .woocommerce-tabs h2 {
   font-size: 100%;
@@ -2407,7 +2405,7 @@ p.stock.in-stock{
 // Hide in_stock from woocommece
 
 .woocommerce-cart-form input , .input-text.qty.text , input.input-text{
-  font-family: $textFont !important;
+  font-family: $textFont;
 }
 
 .template-shop {
@@ -2518,7 +2516,7 @@ aside.sidebar {
     margin: 4px auto;
   }
   input[type=search]{
-    font-family: $textFont !important;
+    font-family: $textFont;
   }
   .price_slider_amount {
     button[type=submit]{

@@ -35,15 +35,15 @@
 }
 
 .uap-user-page-top-wrapper .uap-stats-label, .uap-user-page-top-wrapper .uap-stats-content, .uap-user-page-top-wrapper .uap-top-achievement .uap-stats-label {
-  font-family: iranyekan, Sans-serif, Arial !important;
+  font-family: iranyekan, Sans-serif, Arial;
 }
 
 .uap-special-label {
-  font-family: iranyekan, Sans-serif, Arial !important;
+  font-family: iranyekan, Sans-serif, Arial;
 }
 
 .uap-user-page-wrapper a, p, div, td, th, h1, h2, h3, h4, h5, h6, li, ul {
-  font-family: iranyekan, Sans-serif, Arial !important;
+  font-family: iranyekan, Sans-serif, Arial;
 }
 
 .uap-ap-theme-3 .uap-ap-menu {
@@ -250,7 +250,7 @@
 
 .uap_login_container {
   background-color: #ffffff;
-  padding: 8px 15px;
+  padding: 8px;
   box-shadow: 0 0 5px #bdbdbd;
   border-radius: 0;
   margin: 40px auto;
@@ -404,7 +404,7 @@
   background-color: #235e8a !important;
   border-color: #235e8a !important;
   text-align: center;
-  font-family: iranyekan, Sans-serif, Arial !important;
+  font-family: iranyekan, Sans-serif, Arial;
 }
 
 .uap-form-line-fr input[type=password] {
@@ -423,31 +423,6 @@
   margin: 15px auto !important;
 }
 
-/* Responsive */
-@media screen and (max-width: 400px) {
-  .uap-register-form form {
-    width: 80%;
-  }
-
-  .uap-login-form-wrap form {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 300px) {
-  .uap-register-form form {
-    width: 60%;
-  }
-
-  .uap-login-form-wrap form {
-    width: 60%;
-  }
-
-  #uap_login_form {
-    min-width: 100%;
-  }
-}
-/* Responsive */
-/* Uap Custom Register CSS */
 /* Affilate Levels Table */
 table.affilate_levels tr.topRow th, tr.topRow td {
   background-color: #1c272b !important;
@@ -475,6 +450,31 @@ table.affilate_levels tr th, tr td {
 }
 
 /* Affilate Levels Table */
+/* Responsive */
+@media screen and (max-width: 400px) {
+  .uap-register-form form {
+    width: 80%;
+  }
+
+  .uap-login-form-wrap form {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 300px) {
+  .uap-register-form form {
+    width: 60%;
+  }
+
+  .uap-login-form-wrap form {
+    width: 60%;
+  }
+
+  #uap_login_form {
+    min-width: 100%;
+  }
+}
+/* Responsive */
+/* Uap Custom Register CSS */
 /* Uap Custom Dashboard CSS */
 
 /*# sourceMappingURL=uap.css.map */

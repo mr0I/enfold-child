@@ -45,12 +45,6 @@ a{
 	&:visited{text-decoration: none !important;}
 }
 
-* {
-	font-display: swap;
-	font-size: 16px;
-	font-family: $textFont;
-}
-
 @font-face {
 	font-family: "iranyekan";
 	src: local('iranyekan') , url("../fonts/iranyekan.woff") format("woff"), url("../fonts/iranyekan.eot") format("eot");
@@ -58,6 +52,7 @@ a{
 	font-style: normal;
 	font-display: swap;
 }
+
 
 @font-face {
 	font-family: 'mycon';
@@ -69,6 +64,12 @@ a{
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
+}
+
+* {
+  font-display: swap;
+  font-size: 16px;
+  font-family: $textFont;
 }
 
 [class^="ic-"], [class*=" ic-"] {

@@ -13,7 +13,7 @@
 #custom-footer{
   background-color: $primaryColor;
   padding: 2px;
-  font-family: $textFont !important;
+  font-family: $textFont;
   margin-top: 0;
 }
 #custom-footer .fr-element{
@@ -153,7 +153,7 @@
 #custom-footer .tr-element ul li, #custom-footer .tr-element p span {
   font-weight: normal;
   font-size: 90%;
-  font-family: $textFont !important;
+  font-family: $textFont;
   direction: ltr;
   padding: 4px 0;
   line-height: 2;

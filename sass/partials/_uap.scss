@@ -39,11 +39,11 @@ $latinFont : Sans-serif,Arial;
 .uap-user-page-top-wrapper .uap-right-side {float:left;}
 .uap-user-page-top-wrapper .uap-left-side {float:right;}
 .uap-user-page-top-wrapper .uap-stats-label, .uap-user-page-top-wrapper .uap-stats-content, .uap-user-page-top-wrapper .uap-top-achievement .uap-stats-label
-{font-family: $textFont !important;}
-.uap-special-label {font-family: $textFont !important;}
+{font-family: $textFont;}
+.uap-special-label {font-family: $textFont;}
 
 .uap-user-page-wrapper a,p,div,td,th,h1,h2,h3,h4,h5,h6,li,ul{
-  font-family: $textFont !important;
+  font-family: $textFont;
 }
 
 
@@ -323,7 +323,7 @@ $latinFont : Sans-serif,Arial;
   background-color: $primaryColor !important;
   border-color: $primaryColor !important;
   text-align: center;
-  font-family: $textFont !important;
+  font-family: $textFont;
 }
 
 .uap-form-line-fr input[type=password]{
