@@ -2,9 +2,13 @@ body{
   text-align: right;
 }
 
+.h1, h1 {
+  font-size: 1.75rem !important;
+}
 h1,h2,h3,h4,h5,h6,p,span{
   line-height: 1.6;
 }
+
 
 blockquote {
   border-color: $secondaryTextColor !important;
@@ -393,7 +397,6 @@ nav.main_menu ul li a i{
 /* Woocommerce Pages */
 .woocommerce-Tabs-panel h2{
   padding: 10px;
-  color: $primaryTextColor;
 }
 .woocommerce-Tabs-panel h3 span {
   color: $secondaryTextColor !important;
@@ -1381,6 +1384,12 @@ img.full-width-img{
   border: 2px solid #eee !important;
   border-radius: 0;
 }
+.woo-tabs {
+  h1,h2,h3,h4,h5,h6{
+    font-weight: bold;
+    color: $primaryColor !important;
+  }
+}
 .woo-tabs .wc-tabs .reviews_tab a:before{
   content: "\e925";
   font-family: mycon;
@@ -2038,11 +2047,9 @@ button.wpforms-submit{
 }
 
 .sidebar-content span{
-  font-family: $textFont}
-
-#top .woocommerce-tabs h2 {
-  font-size: 100%;
+  font-family: $textFont
 }
+
 
 div.product .woocommerce-tabs ul.tabs li{
   font-size: 100% !important;
