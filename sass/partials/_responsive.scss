@@ -53,6 +53,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .h1,h1 {
+    font-size: 1.25rem !important;
+  }
   #main_page_slider ul.avia-slideshow-inner{
     margin-top: 80px;
   }
