@@ -2,13 +2,9 @@ body{
   text-align: right;
 }
 
-.h1, h1 {
-  font-size: 1.75rem !important;
-}
 h1,h2,h3,h4,h5,h6,p,span{
-  line-height: 1.6;
+  line-height: 2;
 }
-
 
 blockquote {
   border-color: $secondaryTextColor !important;
@@ -1236,9 +1232,9 @@ td.product-name {
   p{
     font-size: 100%;
   }
-  h2,h3{
-    font-size: 115%;
-  }
+  //h2,h3{
+  //  font-size: 115%;
+  //}
 }
 
 .tab-editor-container strong , .main_color strong{
@@ -1388,6 +1384,24 @@ img.full-width-img{
   h1,h2,h3,h4,h5,h6{
     font-weight: bold;
     color: $primaryColor !important;
+  }
+  .h1, h1 {
+    font-size: 1.75rem !important;
+  }
+  .h2, h2 {
+    font-size: 1.5rem !important;
+  }
+  .h3, h3 {
+    font-size: 1.25rem !important;
+  }
+  .h4, h4 {
+    font-size: 1rem !important;
+  }
+  .h5, h5 {
+    font-size: 0.75rem !important;
+  }
+  .h6, h6 {
+    font-size: 0.65rem !important;
   }
 }
 .woo-tabs .wc-tabs .reviews_tab a:before{
@@ -1540,6 +1554,10 @@ img.full-width-img{
 
 .woo-gallery{
   direction: ltr;
+}
+// Hide Sipaad phone number
+#product-14049 .woo-price{
+  display:none;
 }
 .woo-price {
   margin: 13px auto;

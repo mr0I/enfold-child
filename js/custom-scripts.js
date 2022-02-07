@@ -39,8 +39,6 @@ jQuery(document).ready(function($){
     // Full-Width shop page
     $('ul.products').removeClass('columns-3').addClass('col-12');
 
-    // Change Sipaad phone number
-    $('#product-14049').find('.woo-price').css('display' , 'none');
 
     /* Start Change Shop buttons text temporary */
     $('.template-shop').find('li.type-product').find('.inner_product').find('.show_details_button').css('direction', 'rtl').html('افزودن به سبد خرید<i class="ic-basket mx-2" style="font-size: 115%;font-weight: bold;vertical-align: bottom;"></i>');
