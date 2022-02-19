@@ -464,9 +464,6 @@ span.comment-container.minor-meta {
       }
     }
   }
-  p > strong{
-    color: unset !important;
-  }
 }
 
 
@@ -1235,10 +1232,6 @@ td.product-name {
   //h2,h3{
   //  font-size: 115%;
   //}
-}
-
-.tab-editor-container strong , .main_color strong{
-  color:unset !important;
 }
 
 .tab-download-container .button_download {
@@ -2698,3 +2691,29 @@ div #reviews #comments ol.commentlist li .avatar{
 //  new slider styles //
 
 /* end Extra Styles */
+
+
+/* start ltr styles */
+.home-page-titles-en h1{
+  text-align: center;
+  border-bottom: 3px solid $primaryColor;
+  border-radius: 0 !important;
+  width: 30%;
+}
+.home-products-en{
+  padding: 0 75px;
+  .home-products-title>h2{
+    font-size:100% !important;
+  }
+}
+.home-customers-en{
+  padding-bottom: 100px;
+  p>strong{
+    color: $primaryColor !important;
+  }
+  img{
+    width:auto !important;
+    margin:auto;
+  }
+}
+/* end ltr styles */
