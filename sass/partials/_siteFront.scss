@@ -2688,8 +2688,38 @@ div #reviews #comments ol.commentlist li .avatar{
   border: none !important;
   color: #e0e0e0;
 }
-//  new slider styles //
+//  new slider styles
 
+// ninja forms styles
+.iconbox_content_title{
+  text-align: center;
+}
+
+.listradio-wrap .nf-field-element label:after {
+  background: #fff !important;
+  border: 2px solid #333 !important;
+}
+
+.listradio-wrap .nf-field-element label.nf-checked-label:before{
+  background-color: $primaryColor !important;
+}
+
+.listradio-wrap .nf-field-element label.nf-checked-label:after {
+  border-color: $primaryColor !important;
+  background: $primaryColor !important;
+}
+
+.nf-form-content input[type=checkbox].ninja-forms-field, .nf-form-content input[type=radio].ninja-forms-field{
+  display: none !important;
+}
+
+.checkbox-wrap .nf-field-element label:after, .checkbox-wrap .nf-field-label label:after, .listcheckbox-wrap .nf-field-element label:after, .listcheckbox-wrap .nf-field-label label:after {
+  background: #fff !important;
+}
+
+.checkbox-wrap .nf-field-element label.nf-checked-label:before, .checkbox-wrap .nf-field-label label.nf-checked-label:before, .listcheckbox-wrap .nf-field-element label.nf-checked-label:before, .listcheckbox-wrap .nf-field-label label.nf-checked-label:before {
+  color: $primaryColor !important;
+}
 /* end Extra Styles */
 
 
