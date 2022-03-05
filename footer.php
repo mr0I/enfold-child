@@ -220,31 +220,24 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
           <div class="first-row">
               <div class="container-fluid">
                   <div class="row m-0">
-                      <div class="fr-element col-lg-3 col-md-3 col-6">
+                      <div class="fr-element col-lg-4 col-md-4 col-12">
                           <figure>
                               <img src="<?php echo get_stylesheet_directory_uri(). '/images/express.png' ; ?>" width="60" height="60" alt="تحویل اکسپرس">
                               <p><span>تحویل اکسپرس</span></p>
                           </figure>
                       </div>
-                      <div class="fr-element col-lg-3 col-md-3 col-6">
-                          <figure>
-                              <img src="<?php echo get_stylesheet_directory_uri(). '/images/backup.png' ; ?>" width="60" height="60" alt="پشتیبانی 24 ساعته">
-                              <p><span>پشتیبانی و مشاوره رایگان</span></p>
-                          </figure>
-                      </div>
-                      <div class="fr-element col-lg-3 col-md-3 col-6">
-                          <figure>
-                              <img src="<?php echo get_stylesheet_directory_uri(). '/images/cash-in-place.png' ; ?>" width="60" height="60" alt="پرداخت در محل"
-                              >
-                              <p><span>پرداخت در محل</span></p>
-                          </figure>
-                      </div>
-                      <div class="fr-element col-lg-3 col-md-3 col-6">
+                      <div class="fr-element col-lg-4 col-md-4 col-12">
                           <figure>
                               <img src="<?php echo get_stylesheet_directory_uri(). '/images/guarantee.png' ; ?>" width="60" height="60"
                                    alt="1 سال گارانتی - 5 سال خدمات پس از فروش " >
                               <p><span>1 سال گارانتی</span></p>
                               <p><span> 5 سال خدمات پس از فروش </span></p>
+                          </figure>
+                      </div>
+                      <div class="fr-element col-lg-4 col-md-4 col-12">
+                          <figure>
+                              <img src="<?php echo get_stylesheet_directory_uri(). '/images/backup.png' ; ?>" width="60" height="60" alt="پشتیبانی 24 ساعته">
+                              <p><span>پشتیبانی و مشاوره رایگان</span></p>
                           </figure>
                       </div>
                   </div>
