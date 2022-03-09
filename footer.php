@@ -197,6 +197,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                               </figure>
                                           </a>
                                       </li>
+                                  </ul>
                               </div>
                           </div>
                       </div>
@@ -217,113 +218,62 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
   } else {
 	?>
       <div id="custom-footer">
-          <div class="first-row">
-              <div class="container-fluid">
-                  <div class="row m-0">
-                      <div class="fr-element col-lg-4 col-md-4 col-12">
-                          <figure>
-                              <img src="<?php echo get_stylesheet_directory_uri(). '/images/express.png' ; ?>" width="60" height="60" alt="تحویل اکسپرس">
-                              <p><span>تحویل اکسپرس</span></p>
-                          </figure>
-                      </div>
-                      <div class="fr-element col-lg-4 col-md-4 col-12">
-                          <figure>
-                              <img src="<?php echo get_stylesheet_directory_uri(). '/images/guarantee.png' ; ?>" width="60" height="60"
-                                   alt="1 سال گارانتی - 5 سال خدمات پس از فروش " >
-                              <p><span>1 سال گارانتی</span></p>
-                              <p><span> 5 سال خدمات پس از فروش </span></p>
-                          </figure>
-                      </div>
-                      <div class="fr-element col-lg-4 col-md-4 col-12">
-                          <figure>
-                              <img src="<?php echo get_stylesheet_directory_uri(). '/images/backup.png' ; ?>" width="60" height="60" alt="پشتیبانی 24 ساعته">
-                              <p><span>پشتیبانی و مشاوره رایگان</span></p>
-                          </figure>
-                      </div>
-                  </div>
-              </div>
-          </div>
           <div class="third-row">
               <div class="container-fluid p-0">
                   <div class="row" style="width: 94%;margin: 0 auto;">
                       <div class="tr-element col-12">
                           <div class="row">
-                              <div class="col-lg-6 col-md-6 col-sm-12">
-                                  <p class="threeWords title">آدرس دفتر مرکزی</p>
-                                  <p>
-                                      <span>اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33 - شرکت رادشید       ساعات کار:       8:30 الی 17</span>
-                                      <br>
-                                      <span> کد پستی: <span style="font-size: 100%">8183877113</span></span>
-                                  </p>
-                              </div>
-                              <div class="col-lg-6 col-md-6 col-sm-12">
-                                  <p class="twoWords title">آدرس کارخانه</p>
-                                  <p><span>نجف آباد – شهرک صنعتی شماره 2 – خیابان ابوریحان – شرکت رادشید</span></p>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col-lg-4 col-md-4 col-sm-12">
-                                  <p class="twoWords title">واحد بازرگانی</p>
-                                  <ul style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
-                                      <li class="col-6 farsi_num"><a href="tel:03132362894">03132362894</a></li>
-                                      <li class="col-6 farsi_num"><a href="tel:03132362947">03132362947</a></li>
-                                      <li class="col-6 farsi_num"><a href="tel:09124735787">09124735787</a></li>
-                                      <li class="col-6 farsi_num"><a href="tel:09124839402">09124839402</a></li>
+                              <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
+                                  <p class="threeWords title">محصولات</p>
+                                  <ul style="display: flex;flex-flow: row wrap">
+                                      <li class="col-12"><a href="https://radshid.com/product-car-tracker/">ردیاب خودرو</a></li>
+                                      <li class="col-12"><a href="https://radshid.com/product-personal-tracker/">ردیاب شخصی</a></li>
+                                      <li class="col-12"><a href="https://radshid.com/%d8%a7%d9%86%d9%88%d8%a7%d8%b9-%d8%aa%d8%a8%d9%84%d8%aa-%d9%87%d8%a7%db%8c-%d8%b5%d9%86%d8%b9%d8%aa%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">تبلت صنعتی</a></li>
+                                      <li class="col-12"><a href="https://radshid.com/%d8%a7%d9%86%d9%88%d8%a7%d8%b9-pda-%d9%87%d8%a7%db%8c-%d8%b5%d9%86%d8%b9%d8%aa%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">هندهلد</a></li>
+                                      <li class="col-12"><a href="https://radshid.com/%d9%86%d8%b1%d9%85-%d8%a7%d9%81%d8%b2%d8%a7%d8%b1-%d9%84%d8%a7%da%af%d8%b4%db%8c%d8%aa-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">نرم افزار لاگشیت</a></li>
+                                      <li class="col-12"><a href="https://radshid.com/%d8%b3%d8%a7%d9%85%d8%a7%d9%86%d9%87-%d8%b1%d8%af%db%8c%d8%a7%d8%a8%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">سامانه مدیریت ناوگان</a></li>
                                   </ul>
                               </div>
-                              <div class="col-lg-4 col-md-4 col-sm-12">
-                                  <p class="twoWords title">واحد پشتیبانی</p>
-                                  <ul id="support_unit" style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
-                                      <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:03195016151">03195016151</a></li>
-                                      <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:03132363078">03132363078</a></li>
-                                      <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09018377198">09018377198</a></li>
-                                      <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09018377021">09018377021</a></li>
-                                      <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09901883981">09901883981</a></li>
+                              <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
+                                  <p class="threeWords title">ارتباط با رادشید</p>
+                                  <ul style="display: flex;flex-flow: row wrap">
+                                      <li class="col-12"><a href="https://radshid.com/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/">تماس با رادشید</a></li>
+                                      <li class="col-12"><a href="https://radshid.com/%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7/">درباره رادشید</a></li>
+                                      <li class="col-12"><a href="https://radshid.com/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c-%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d8%ae%d9%88%d8%af%d8%b1%d9%88-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">دریافت نمایندگی</a></li>
+                                      <li class="col-12"><a href="https://radshid.com/%d9%87%d9%85%da%a9%d8%a7%d8%b1%db%8c-%d8%a8%d8%a7-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">استخدام در رادشید</a></li>
                                   </ul>
                               </div>
-                              <div class="col-lg-4 col-md-4 col-sm-12">
-                                  <p class="oneWord title"> فکس </p>
-                                  <ul style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">
-                                      <li class="col-12"><span class="farsi_num">03132362788</span> (داخلی 23)</li>
+                              <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
+                                  <p class="threeWords title">راهنمای خرید و پرداخت</p>
+                                  <ul style="display: flex;flex-flow: row wrap">
+                                      <li class="col-12"><a href="https://radshid.com/%d9%86%d8%ad%d9%88%d9%87-%d8%ab%d8%a8%d8%aa-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4/">نحوه ثبت سفارش</a></li>
+                                      <li class="col-12"><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d8%a7%d8%b1%d8%b3%d8%a7%d9%84/">شیوه های ارسال</a></li>
+                                      <li class="col-12"><a href="https://radshid.com/%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%be%d8%b3-%d8%a7%d8%b2-%d9%81%d8%b1%d9%88%d8%b4/">گارانتی و خدمات پس از فروش</a></li>
+                                      <li class="col-12"><a href="https://radshid.com/%d9%85%d8%b9%d8%b1%d9%81%db%8c-%d9%be%d8%b1%d9%88%da%98%d9%87-%d9%85%d9%84%db%8c-%d8%b3%db%8c%d9%be%d8%a7%d8%af-%d9%88-%d8%b3%d8%a7%d9%85%d8%a7%d9%86%d9%87-%d8%b3%db%8c%d9%be%d8%a7%d8%af/">نحوه خرید و ثبت نام سیپاد</a></li>
                                   </ul>
                               </div>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-          <div class="second-row">
-              <div class="container-fluid">
-                  <div class="row" style="width: 94%;margin: 0 auto;border-bottom: 1px solid #bdbdbd">
-                      <div class="sr-element col-md-4 col-sm-12">
-                          <p class="twoWords title">با رادشید</p>
-                          <ul style="display: flex;flex-flow: row wrap">
-                              <li class="col-6"><a href="https://radshid.com/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/">تماس با رادشید</a></li>
-                              <li class="col-6"><a href="https://radshid.com/%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7/">درباره رادشید</a></li>
-                              <li class="col-6"><a href="https://radshid.com/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/">دریافت نمایندگی</a></li>
-                              <li class="col-6"><a href="https://radshid.com/%d9%87%d9%85%da%a9%d8%a7%d8%b1%db%8c-%d8%a8%d8%a7-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">استخدام در رادشید</a></li>
-                          </ul>
-                      </div>
-                      <div class="sr-element col-md-4 col-sm-12">
-                          <p class="fourWords title">راهنمای خرید از رادشید</p>
-                          <ul style="display: flex;flex-flow: row wrap">
-                              <li><a href="https://radshid.com/%d9%86%d8%ad%d9%88%d9%87-%d8%ab%d8%a8%d8%aa-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4/">نحوه ثبت سفارش</a></li>
-                              <li><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d8%a7%d8%b1%d8%b3%d8%a7%d9%84/">شیوه های ارسال</a></li>
-                              <li><a href="https://radshid.com/%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%be%d8%b3-%d8%a7%d8%b2-%d9%81%d8%b1%d9%88%d8%b4/">خدمات پس از فروش</a></li>
-                          </ul>
-                      </div>
-                      <div class="sr-element col-md-4 col-sm-12" style="margin-top: 30px;">
-                          <div id="gateway">
-                              <a>
-                                  <figure>
-                                      <img src="<?php echo get_stylesheet_directory_uri().'/images/mellat_gateway.jpg' ; ?>" width="70" height="70" alt="درگاه پرداخت ملت" id="mellat_img">
-                                  </figure>
-                              </a>
-                              <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=179501&amp;Code=FhjbxasmXXMZd5Y5vKZc">
-                                  <figure>
-                                      <img referrerpolicy="origin" src="<?php echo get_stylesheet_directory_uri().'/images/star1.jpg' ; ?>" width="70" height="70" alt="" style="cursor:pointer" id="FhjbxasmXXMZd5Y5vKZc">
-                                  </figure>
-                              </a>
+                              <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
+<!--                                  <p class="threeWords title">راهنمای خرید و پرداخت</p>-->
+                                  <div class="img-square-wrapper col-lg-4 col-md-4 col-sm-12">
+                                      <iframe style="border: 0;" src="<?= $city->map ?>" width="500" height="250" frameborder="0" allowfullscreen="allowfullscreen"><span data-mce-type="bookmark" style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" class="mce_SELRES_start">﻿</span></iframe>
+                                  </div>
+                                  <ul style="display: flex;flex-flow: row wrap">
+                                      <li class="mx-1">
+                                          <a href="https://www.instagram.com/radshid_com/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="instagram">
+                                              <figure>
+                                                  <img src="<?= get_stylesheet_directory_uri().'/images/instagram.png' ; ?>" width="50" height="50" alt="Radshid Instagram">
+                                              </figure>
+                                          </a>
+                                      </li>
+                                      <li class="mx-1">
+                                          <a href="https://www.linkedin.com/company/radshid/mycompany/" target="_blank" data-toggle="tooltip" data-placement="bottom" title="linkdin">
+                                              <figure>
+                                                  <img src="<?= get_stylesheet_directory_uri().'/images/linkdin.png' ; ?>" width="35" height="35" alt="Radshid Instagram">
+                                              </figure>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </div>
                           </div>
                       </div>
                   </div>
@@ -335,30 +285,154 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                       <div class="copyrightText" style="user-select: none;">
                           <span>تمامی حقوق این سایت متعلق به شرکت مهندسی رادشید است.</span>
                       </div>
-                      <div class="social-icons">
-                          <a href="https://t.me/Radshid_co" id="telegram" target="_blank" data-toggle="tooltip" data-placement="top" title="تلگرام" >
-                              <i class="ic-telegram1"></i>
-                          </a>
-                          <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" data-toggle="tooltip" data-placement="top" title="اینستاگرام">
-                              <i class="ic-instagram"></i>
-                          </a>
-                          <a href="https://www.aparat.com/radshid" id="aparat" target="_blank" data-toggle="tooltip" data-placement="top" title="آپارات">
-                              <i class="ic-aparat"></i>
-                          </a>
-                          <a href="http://rx4.ir/android" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="برنامه ردیابی رادشید (اندروید)">
-                              <i class="ic-android"></i>
-                          </a>
-                          <a href="http://rx4.ir/ios" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="برنامه ردیابی رادشید (ios)">
-                              <i class="ic-apple"></i>
-                          </a>
-                          <a href="tg://resolve?domain=radshid_bot" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="ربات تلگرام رادشید">
-                              <i class="ic-probot"></i>
-                          </a>
-                      </div>
                   </div>
               </div>
           </div>
       </div>
+
+      <!--      <div id="custom-footer">-->
+<!--          <div class="first-row">-->
+<!--              <div class="container-fluid">-->
+<!--                  <div class="row m-0">-->
+<!--                      <div class="fr-element col-lg-4 col-md-4 col-12">-->
+<!--                          <figure>-->
+<!--                              <img src="--><?php //echo get_stylesheet_directory_uri(). '/images/express.png' ; ?><!--" width="60" height="60" alt="تحویل اکسپرس">-->
+<!--                              <p><span>تحویل اکسپرس</span></p>-->
+<!--                          </figure>-->
+<!--                      </div>-->
+<!--                      <div class="fr-element col-lg-4 col-md-4 col-12">-->
+<!--                          <figure>-->
+<!--                              <img src="--><?php //echo get_stylesheet_directory_uri(). '/images/guarantee.png' ; ?><!--" width="60" height="60"-->
+<!--                                   alt="1 سال گارانتی - 5 سال خدمات پس از فروش " >-->
+<!--                              <p><span>1 سال گارانتی</span></p>-->
+<!--                              <p><span> 5 سال خدمات پس از فروش </span></p>-->
+<!--                          </figure>-->
+<!--                      </div>-->
+<!--                      <div class="fr-element col-lg-4 col-md-4 col-12">-->
+<!--                          <figure>-->
+<!--                              <img src="--><?php //echo get_stylesheet_directory_uri(). '/images/backup.png' ; ?><!--" width="60" height="60" alt="پشتیبانی 24 ساعته">-->
+<!--                              <p><span>پشتیبانی و مشاوره رایگان</span></p>-->
+<!--                          </figure>-->
+<!--                      </div>-->
+<!--                  </div>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--          <div class="third-row">-->
+<!--              <div class="container-fluid p-0">-->
+<!--                  <div class="row" style="width: 94%;margin: 0 auto;">-->
+<!--                      <div class="tr-element col-12">-->
+<!--                          <div class="row">-->
+<!--                              <div class="col-lg-6 col-md-6 col-sm-12">-->
+<!--                                  <p class="threeWords title">آدرس دفتر مرکزی</p>-->
+<!--                                  <p>-->
+<!--                                      <span>اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33 - شرکت رادشید       ساعات کار:       8:30 الی 17</span>-->
+<!--                                      <br>-->
+<!--                                      <span> کد پستی: <span style="font-size: 100%">8183877113</span></span>-->
+<!--                                  </p>-->
+<!--                              </div>-->
+<!--                              <div class="col-lg-6 col-md-6 col-sm-12">-->
+<!--                                  <p class="twoWords title">آدرس کارخانه</p>-->
+<!--                                  <p><span>نجف آباد – شهرک صنعتی شماره 2 – خیابان ابوریحان – شرکت رادشید</span></p>-->
+<!--                              </div>-->
+<!--                          </div>-->
+<!--                          <div class="row">-->
+<!--                              <div class="col-lg-4 col-md-4 col-sm-12">-->
+<!--                                  <p class="twoWords title">واحد بازرگانی</p>-->
+<!--                                  <ul style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">-->
+<!--                                      <li class="col-6 farsi_num"><a href="tel:03132362894">03132362894</a></li>-->
+<!--                                      <li class="col-6 farsi_num"><a href="tel:03132362947">03132362947</a></li>-->
+<!--                                      <li class="col-6 farsi_num"><a href="tel:09124735787">09124735787</a></li>-->
+<!--                                      <li class="col-6 farsi_num"><a href="tel:09124839402">09124839402</a></li>-->
+<!--                                  </ul>-->
+<!--                              </div>-->
+<!--                              <div class="col-lg-4 col-md-4 col-sm-12">-->
+<!--                                  <p class="twoWords title">واحد پشتیبانی</p>-->
+<!--                                  <ul id="support_unit" style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">-->
+<!--                                      <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:03195016151">03195016151</a></li>-->
+<!--                                      <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:03132363078">03132363078</a></li>-->
+<!--                                      <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09018377198">09018377198</a></li>-->
+<!--                                      <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09018377021">09018377021</a></li>-->
+<!--                                      <li class="col-lg-4 col-md-4 col-sm-6 farsi_num"><a href="tel:09901883981">09901883981</a></li>-->
+<!--                                  </ul>-->
+<!--                              </div>-->
+<!--                              <div class="col-lg-4 col-md-4 col-sm-12">-->
+<!--                                  <p class="oneWord title"> فکس </p>-->
+<!--                                  <ul style="display: flex;flex-flow: row wrap;margin: 5px auto;padding: 0;">-->
+<!--                                      <li class="col-12"><span class="farsi_num">03132362788</span> (داخلی 23)</li>-->
+<!--                                  </ul>-->
+<!--                              </div>-->
+<!--                          </div>-->
+<!--                      </div>-->
+<!--                  </div>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--          <div class="second-row">-->
+<!--              <div class="container-fluid">-->
+<!--                  <div class="row" style="width: 94%;margin: 0 auto;border-bottom: 1px solid #bdbdbd">-->
+<!--                      <div class="sr-element col-md-4 col-sm-12">-->
+<!--                          <p class="twoWords title">با رادشید</p>-->
+<!--                          <ul style="display: flex;flex-flow: row wrap">-->
+<!--                              <li class="col-6"><a href="https://radshid.com/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/">تماس با رادشید</a></li>-->
+<!--                              <li class="col-6"><a href="https://radshid.com/%d8%af%d8%b1%d8%a8%d8%a7%d8%b1%d9%87-%d9%85%d8%a7/">درباره رادشید</a></li>-->
+<!--                              <li class="col-6"><a href="https://radshid.com/%d8%af%d8%b1%d8%ae%d9%88%d8%a7%d8%b3%d8%aa-%d9%86%d9%85%d8%a7%db%8c%d9%86%d8%af%da%af%db%8c/">دریافت نمایندگی</a></li>-->
+<!--                              <li class="col-6"><a href="https://radshid.com/%d9%87%d9%85%da%a9%d8%a7%d8%b1%db%8c-%d8%a8%d8%a7-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">استخدام در رادشید</a></li>-->
+<!--                          </ul>-->
+<!--                      </div>-->
+<!--                      <div class="sr-element col-md-4 col-sm-12">-->
+<!--                          <p class="fourWords title">راهنمای خرید از رادشید</p>-->
+<!--                          <ul style="display: flex;flex-flow: row wrap">-->
+<!--                              <li><a href="https://radshid.com/%d9%86%d8%ad%d9%88%d9%87-%d8%ab%d8%a8%d8%aa-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4/">نحوه ثبت سفارش</a></li>-->
+<!--                              <li><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d8%a7%d8%b1%d8%b3%d8%a7%d9%84/">شیوه های ارسال</a></li>-->
+<!--                              <li><a href="https://radshid.com/%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%be%d8%b3-%d8%a7%d8%b2-%d9%81%d8%b1%d9%88%d8%b4/">خدمات پس از فروش</a></li>-->
+<!--                          </ul>-->
+<!--                      </div>-->
+<!--                      <div class="sr-element col-md-4 col-sm-12" style="margin-top: 30px;">-->
+<!--                          <div id="gateway">-->
+<!--                              <a>-->
+<!--                                  <figure>-->
+<!--                                      <img src="--><?php //echo get_stylesheet_directory_uri().'/images/mellat_gateway.jpg' ; ?><!--" width="70" height="70" alt="درگاه پرداخت ملت" id="mellat_img">-->
+<!--                                  </figure>-->
+<!--                              </a>-->
+<!--                              <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=179501&amp;Code=FhjbxasmXXMZd5Y5vKZc">-->
+<!--                                  <figure>-->
+<!--                                      <img referrerpolicy="origin" src="--><?php //echo get_stylesheet_directory_uri().'/images/star1.jpg' ; ?><!--" width="70" height="70" alt="" style="cursor:pointer" id="FhjbxasmXXMZd5Y5vKZc">-->
+<!--                                  </figure>-->
+<!--                              </a>-->
+<!--                          </div>-->
+<!--                      </div>-->
+<!--                  </div>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--          <div class="fourth-row">-->
+<!--              <div class="mt-1">-->
+<!--                  <div class="fourth-row-container">-->
+<!--                      <div class="copyrightText" style="user-select: none;">-->
+<!--                          <span>تمامی حقوق این سایت متعلق به شرکت مهندسی رادشید است.</span>-->
+<!--                      </div>-->
+<!--                      <div class="social-icons">-->
+<!--                          <a href="https://t.me/Radshid_co" id="telegram" target="_blank" data-toggle="tooltip" data-placement="top" title="تلگرام" >-->
+<!--                              <i class="ic-telegram1"></i>-->
+<!--                          </a>-->
+<!--                          <a href="https://www.instagram.com/radshid_com/" id="insta" target="_blank" data-toggle="tooltip" data-placement="top" title="اینستاگرام">-->
+<!--                              <i class="ic-instagram"></i>-->
+<!--                          </a>-->
+<!--                          <a href="https://www.aparat.com/radshid" id="aparat" target="_blank" data-toggle="tooltip" data-placement="top" title="آپارات">-->
+<!--                              <i class="ic-aparat"></i>-->
+<!--                          </a>-->
+<!--                          <a href="http://rx4.ir/android" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="برنامه ردیابی رادشید (اندروید)">-->
+<!--                              <i class="ic-android"></i>-->
+<!--                          </a>-->
+<!--                          <a href="http://rx4.ir/ios" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="برنامه ردیابی رادشید (ios)">-->
+<!--                              <i class="ic-apple"></i>-->
+<!--                          </a>-->
+<!--                          <a href="tg://resolve?domain=radshid_bot" target="_blank" rel="nofollow" data-toggle="tooltip" data-placement="top" title="ربات تلگرام رادشید">-->
+<!--                              <i class="ic-probot"></i>-->
+<!--                          </a>-->
+<!--                      </div>-->
+<!--                  </div>-->
+<!--              </div>-->
+<!--          </div>-->
+<!--      </div>-->
 	<?php
   }
   ?>
