@@ -81,7 +81,7 @@ jQuery(document).ready(function($){
     if (SpaAjax.isEN === 'en') {
         $('#header_meta').find('.phone-info').find('span').html('<i class="ic-phone">&nbsp;&nbsp;+983132362894 | +983195016151&nbsp;&nbsp;</i>');
     } else {
-        $('#header_meta').find('.phone-info').find('span').html('بازرگانی : ۰۳۱۳۲۳۶۲۸۹۴ |  پشتیبانی : ۰۳۱۹۵۰۱۶۱۵۱');
+        $('#header_meta').find('.phone-info').find('span').html('<i class="ic-phone"></i> ۰۳۱۳۲۳۶۲۸۹۴');
     }
     // Change breadcrumb trails
     const breadcrumbTrail = $('.breadcrumb-trail');
