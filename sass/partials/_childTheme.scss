@@ -110,7 +110,7 @@
   margin-top: 10px;
 }
 #custom-footer .tr-element p.title{
-  font-size: 115%;
+  font-size: 125%;
   color: #ffffff;
   font-family: $textFont;
   line-height: 2;
@@ -152,10 +152,10 @@
 }
 #custom-footer .tr-element ul li, #custom-footer .tr-element p span {
   font-weight: normal;
-  font-size: 90%;
+  font-size: 100%;
   font-family: $textFont;
   direction: ltr;
-  padding: 4px 0;
+  padding: 6px 0;
   line-height: 2;
   color: #EEEEEE;
 }
@@ -179,6 +179,21 @@
   border-radius: 5px;
   box-shadow: 0 0 4px #757575;
   margin: 10px auto;
+}
+#custom-footer{
+  .iframe-wrapper{
+    margin-top: 65px;
+    text-align: center;
+  }
+  .apps-wrapper{
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
 #socket .sub_menu_socket {
