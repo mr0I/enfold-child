@@ -52,11 +52,18 @@
   }
 }
 @media screen and (max-width: 768px) {
-  #custom-footer .tr-element ul li{
-    width: 50%;
-  }
-  #custom-footer .iframe-wrapper{
-    margin-top: 0;
+  #custom-footer {
+    .tr-element ul li{
+      width: 50%;
+    }
+    .iframe-wrapper{
+      margin-top: 0;
+    }
+    .apps-wrapper{
+      img{
+        width: 75%;
+      }
+    }
   }
   .copyrightText{
     width: 50%;
