@@ -61,11 +61,12 @@
     }
     .apps-wrapper{
       img{
-        width: 75%;
+        width: 100% !important;
       }
     }
   }
   .copyrightText{
+    display: none;
     width: 50%;
     text-align: center;
   }

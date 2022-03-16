@@ -256,13 +256,25 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                   <p class="threeWords title">آدرس</p>
                                   <ul style="display: flex;flex-flow: row wrap">
                                       <li class="col-12">
-                                          اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33 - شرکت رادشید       ساعات کار:       8:30 الی 17
-                                          <br>
-                                          <p style="direction: rtl">شماره تماس: <a href="tel:03132362947">03132362947</a></p>
+                                          اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33 - شرکت رادشید ساعات کار: 8:30 الی 17 - شماره تماس: <a href="tel:03132362947" style="letter-spacing: 2px">03132362947</a>
                                       </li>
                                   </ul>
                                   <div class="iframe-wrapper col-12">
                                       <iframe height="150" style="border:0;" allowfullscreen="" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13435.95071878089!2d51.6508111!3d32.659772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa2c156a2c944159d!2z2YXYrNmF2YjYudmHINmF2YfZhtiv2LPbjCDYsdin2K_YtNuM2K8!5e0!3m2!1sen!2s!4v1647076473159!5m2!1sfa!2s"></iframe>
+                                  </div>
+                                  <div class="apps-wrapper">
+                                      <a target="_blank" class="" href="http://rx4.ir/android">
+                                          <img src="https://radshid.com/wp-content/uploads/2022/03/android-icon.png"
+                                               alt="دانلود برنامه ردیابی رادشید(اندروید)">
+                                      </a>
+                                      <a target="_blank" class="" href="http://rx4.ir/ios">
+                                          <img src="https://radshid.com/wp-content/uploads/2022/03/ios-icon.png"
+                                               alt="ورود به برنامه ردیابی رادشید(ios)">
+                                      </a>
+                                      <a target="_blank" class="" href="tg://resolve?domain=radshid_bot/">
+                                          <img src="https://radshid.com/wp-content/uploads/2022/03/telegrambot-icon.png"
+                                               alt="ورود به ربات تلگرام رادشید">
+                                      </a>
                                   </div>
                               </div>
                           </div>
@@ -276,21 +288,6 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                       <div class="copyrightText" style="user-select: none;">
                           <span>تمامی حقوق این سایت متعلق به شرکت مهندسی رادشید است.</span>
                       </div>
-                      <div class="apps-wrapper">
-                          <a target="_blank" class="" href="http://rx4.ir/android">
-                              <img src="https://radshid.com/wp-content/uploads/2022/03/android-icon.png"
-                                   alt="دانلود برنامه ردیابی رادشید(اندروید)">
-                          </a>
-                          <a target="_blank" class="" href="http://rx4.ir/ios">
-                              <img src="https://radshid.com/wp-content/uploads/2022/03/ios-icon.png"
-                                   alt="ورود به برنامه ردیابی رادشید(ios)">
-                          </a>
-                          <a target="_blank" class="" href="tg://resolve?domain=radshid_bot/">
-                              <img src="https://radshid.com/wp-content/uploads/2022/03/telegrambot-icon.png"
-                                   alt="ورود به ربات تلگرام رادشید">
-                          </a>
-                      </div>
-
                   </div>
               </div>
           </div>
