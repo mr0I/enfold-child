@@ -162,7 +162,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
           <div class="third-row">
               <div class="container-fluid p-0">
                   <div class="row" style="width: 94%;margin: 0 auto;">
-                      <div class="tr-element col-12">
+                      <div class="tr-element">
                           <div class="row">
                               <div class="col-lg-4 col-md-4 col-sm-12 mb-3">
                                   <p class="threeWords title">Products</p>
@@ -221,7 +221,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
           <div class="third-row">
               <div class="container-fluid p-0">
                   <div class="row" style="width: 94%;margin: 0 auto;">
-                      <div class="tr-element col-12">
+                      <div class="tr-element">
                           <div class="row">
                               <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
                                   <p class="threeWords title">محصولات</p>
