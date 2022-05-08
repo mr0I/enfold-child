@@ -62,7 +62,12 @@ jQuery(document).ready(function($){
     $('.template-shop').find('li.type-product.post-10307').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
     $('.template-shop').find('li.type-product.post-10304').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
     $('.template-shop').find('li.type-product.post-10299').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
+    // hide pr1 and x0+ price lables
+    $('#product-10428').find('.woo-price').css('display','inline-block').html('<strong class="text-danger">ناموجود</strong>');
+    $('#product-10216').find('.woo-price').css('display','inline-block').html('<strong class="text-danger">ناموجود</strong>');
     /* End Change Shop buttons text temporary */
+
+
 
 
     // fadeout UAP REG SUCCESS MSG

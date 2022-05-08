@@ -1548,10 +1548,6 @@ img.full-width-img{
 .woo-gallery{
   direction: ltr;
 }
-// Hide Sipaad phone number
-//#product-14049 .woo-price{
-//  display:none;
-//}
 .woo-price {
   margin: 13px auto;
   p.price{
@@ -2128,10 +2124,6 @@ span.news-time {
   float: left;
 }
 
-// Hide out of stock message
-.psfw-out-of-stock{
-  display: none !important;
-}
 
 .woocommerce-EditAccountForm span.password-input {
   width: 100%;
@@ -2750,3 +2742,30 @@ div #reviews #comments ol.commentlist li .avatar{
   }
 }
 /* end ltr styles */
+
+
+// Hide out of stock message
+.psfw-out-of-stock{
+  display: none !important;
+}
+
+/* start customize woo products labels */
+
+// hide sipaad phone number
+//#product-14049 .woo-price{
+//  display:none;
+//}
+
+// hide pr1 and x0+ price lables
+#product-10428 .woo-price , #product-10216 .woo-price{
+  display: none;
+  color: $primaryDarkColor;
+  &:before{
+    content: "\e902";
+    font-family: mycon;
+    padding: 0 4px;
+    vertical-align: middle;
+  }
+}
+
+/* end customize woo products labels */
