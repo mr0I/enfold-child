@@ -218,6 +218,13 @@ function my_nonce_life() {
   return 60 * 60 * 24 * 15; // 15 days
 }
 
+/* modify the breadcrumb’s output */
+add_filter( 'avia_breadcrumbs_trail', 'avia_breadcrumbs_trail_mod', 50, 2 );
+function avia_breadcrumbs_trail_mod( $trail, $args ) {
+  if ( is_single() ) unset($trail[1]);
+  return $trail;
+}
+
 
 /*
  *  ========== Start Ajax Requests ==========
