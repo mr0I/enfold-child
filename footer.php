@@ -256,7 +256,8 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                   <p class="threeWords title">آدرس</p>
                                   <ul style="display: flex;flex-flow: row wrap">
                                       <li class="col-12">
-                                          اصفهان – خیابان کاشانی – ابتدای خیابان صاحب روضات – نبش کوچه شماره 3 – پلاک 33 - شرکت رادشید ساعات کار: 8:30 الی 17 - شماره تماس: <a href="tel:03132362947" style="letter-spacing: 2px">03132362947</a>
+                                          اصفهان خیابان کاشانی، خیابان صاحب روضات ، بعد از بوستان روهام ، پشت ایستگاه بازیافت، پلاک 32 شرکت رادشید
+                                          کدپستی:8183873541
                                       </li>
                                   </ul>
                                   <div class="iframe-wrapper col-12">
