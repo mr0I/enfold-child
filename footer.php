@@ -256,7 +256,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                   <p class="threeWords title">آدرس</p>
                                   <ul style="display: flex;flex-flow: row wrap">
                                       <li class="col-12">
-                                          اصفهان خیابان کاشانی، خیابان صاحب روضات ، بعد از بوستان روهام ، پشت ایستگاه بازیافت، پلاک 32 شرکت رادشید
+                                          اصفهان خیابان کاشانی، خیابان صاحب روضات ، کوچه شماره 12، پلاک ۳۲ شرکت رادشید
                                           کدپستی:8183873541
                                       </li>
                                   </ul>
