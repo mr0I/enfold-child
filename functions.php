@@ -225,6 +225,17 @@ function avia_breadcrumbs_trail_mod( $trail, $args ) {
   return $trail;
 }
 
+/* customize wp-login page */
+add_action( 'login_enqueue_scripts', function (){
+    wp_enqueue_style ( 'wpl-styles', get_stylesheet_directory_uri()  . '/css/wpl-styles.css' );
+});
+add_filter( 'login_headerurl', function (){
+    return home_url();
+});
+add_filter( 'login_headertitle', function (){
+    return 'Radshid';
+});
+add_filter( 'login_display_language_dropdown', '__return_false' );
 
 /*
  *  ========== Start Ajax Requests ==========
