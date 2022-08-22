@@ -2769,3 +2769,32 @@ div #reviews #comments ol.commentlist li .avatar{
 }
 
 /* end customize woo products labels */
+
+/* start color table styles */
+.rad-colored-table{
+  font-family: $textFont;
+  .first-row > td{
+    background-color: $primaryColor !important;
+    span, strong{
+      color: #fff;
+    }
+  }
+  tr > td:first-child{
+    background-color: $primaryColor !important;
+    strong, b{
+      color: #fff !important;
+    }
+  }
+  //tr:first-child td:first-child{
+  //  border-top-right-radius: 15px !important;
+  //  border-top-color: transparent !important;
+  //  border-right-color: transparent !important;
+  //}
+  //tr:first-child td:nth-child(2){
+  //  border-top-left-radius: 15px !important;
+  //  border-top-color: transparent !important;
+  //  border-left-color: transparent !important;
+  //}
+}
+
+/* end color table styles */
