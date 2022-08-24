@@ -237,6 +237,14 @@ add_filter( 'login_headertitle', function (){
 });
 add_filter( 'login_display_language_dropdown', '__return_false' );
 
+
+/* disable featured image auto cropping */
+if (function_exists('add_theme_support')){
+  add_theme_support('post-thumbnails');
+  set_post_thumbnail_size(150, 150, true);
+  add_image_size('single_thumb', 1024, 1024, false);
+}
+
 /*
  *  ========== Start Ajax Requests ==========
  */
