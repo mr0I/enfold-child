@@ -1,7 +1,4 @@
 @media screen and (max-width: 1000px) {
-  //ul.menu-item.cart_dropdown {
-  //   right: 0;
-  // }
   #custom-footer .fr-element{
     padding: 4px;
   }
@@ -52,6 +49,12 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .template-blog.template-single-blog{
+    table{
+      width:100%;
+    }
+  }
+
   #custom-footer {
     .tr-element ul li{
       width: 50%;
@@ -299,7 +302,7 @@
     }
   }
   .entry-content p{
-    font-size: 90%;
+    font-size: 0.85rem;
     padding: 0 8px;
     text-align: justify;
   }
