@@ -323,11 +323,10 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
               <span class="fab-dots fab-dots-3"></span>
           </label>
           <div class="fab-wheel">
-              <a class="fab-action fab-action-1" href="tel:03132362894" title="تماس با واحد بازرگانی">
+              <a class="fab-action fab-action-1" href="tel:03132362947" title="تماس با واحد بازرگانی">
                   <i class="ic-headset_mic"></i>
               </a>
-
-              <a class="fab-action fab-action-2" href="tel:03195016151" title="تماس با واحد پشتیبانی">
+              <a class="fab-action fab-action-2" href="tel:03132362894" title="تماس با واحد پشتیبانی">
                   <i class="ic-phone1"></i>
               </a>
           </div>
