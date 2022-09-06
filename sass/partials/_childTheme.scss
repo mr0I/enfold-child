@@ -927,11 +927,13 @@ article#guarantee_vector .iconbox_icon::before{
   .phone-info{
     padding: 0;
     span{
-      font-size: 165%;
-      color: #EEEEEE !important;
+      font-size: 150%;
       font-weight: normal;
       line-height: 1;
       letter-spacing: 2px;
+      a{
+        color: #ffffff;
+      }
     }
   }
   nav.sub_menu{
