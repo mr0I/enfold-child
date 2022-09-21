@@ -183,28 +183,6 @@ function add_defer_attribute($tag, $handle) {
 }
 
 
-/*
-** Show message after comment
-*/
-add_action( 'set_comment_cookies', function( $comment, $user ) {
-  setcookie( 'ta_comment_wait_approval', '1' );
-}, 10, 2 );
-add_action( 'init', function() {
-  if( $_COOKIE['ta_comment_wait_approval'] === '1' ) {
-	setcookie( 'ta_comment_wait_approval', null, time() - 3600, '/' );
-	add_action( 'comment_form_before', function() {
-	  echo '<script type="text/javascript"> const TopToast = Swal.mixin({toast: true, position: "bottom-start", showConfirmButton: false, timer: 3500, background: "#1c272b", timerProgressBar: true, didOpen: (toast) => {toast.addEventListener("mouseenter", Swal.stopTimer);toast.addEventListener("mouseleave", Swal.resumeTimer)}});TopToast.fire({ icon: "success", title: "نظر شما ثبت شد و پس از تایید نمایش داده می شود." });</script>';
-	});
-  }
-
-  if ( ! session_id() ) session_start();
-});
-add_filter( 'comment_post_redirect', function( $location, $comment ) {
-  $location = get_permalink( $comment->comment_post_ID ) . '#wait_approval';
-  return $location;
-}, 10, 2 );
-
-
 /* Add Taxonomies For Pages */
 function add_taxonomies_to_pages() {
   register_taxonomy_for_object_type( 'post_tag', 'page' );
