@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="46a4c9ad-46f7-42c6-855f-a1c5041e3352" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/footer.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +13,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/functions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state>
               <caret line="196" column="25" selection-start-line="196" selection-start-column="25" selection-end-line="196" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
@@ -35,11 +35,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/footer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6974">
-              <caret line="317" column="31" selection-start-line="317" selection-start-column="31" selection-end-line="317" selection-end-column="31" />
+            <state relative-caret-position="444">
+              <caret line="251" column="3" lean-forward="true" selection-start-line="251" selection-start-column="3" selection-end-line="251" selection-end-column="3" />
+              <folding>
+                <element signature="e#4458#16388#0#PHP" />
+                <element signature="e#8422#16376#0#HTML" />
+                <element signature="e#16493#17280#0#PHP" />
+                <element signature="e#17361#18810#0#PHP" />
+                <element signature="e#18882#19561#0#PHP" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,7 +99,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.fourth-row-container</find>
       <find>tr-ele</find>
       <find>#custom-footer .tr-element ul li, #custom-footer .tr-element p span</find>
       <find>tr-element</find>
@@ -122,6 +128,7 @@
       <find>phone-info</find>
       <find>faq_personal_tracker</find>
       <find>session_start</find>
+      <find>container_wrap footer_color</find>
     </findStrings>
     <replaceStrings>
       <replace>#B71C1C</replace>
@@ -217,12 +224,12 @@
         <option value="$PROJECT_DIR$/sass/partials/_base.scss" />
         <option value="$PROJECT_DIR$/css/wpl-styles.css" />
         <option value="$PROJECT_DIR$/sass/partials/_responsive.scss" />
-        <option value="$PROJECT_DIR$/footer.php" />
         <option value="$PROJECT_DIR$/sass/partials/_siteFront.scss" />
         <option value="$PROJECT_DIR$/sass/main.scss" />
         <option value="$PROJECT_DIR$/sass/partials/_childTheme.scss" />
         <option value="$PROJECT_DIR$/js/custom-scripts.js" />
         <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/footer.php" />
       </list>
     </option>
   </component>
@@ -805,7 +812,8 @@
       <workItem from="1662437021148" duration="1875000" />
       <workItem from="1662548799952" duration="1199000" />
       <workItem from="1662795419170" duration="255000" />
-      <workItem from="1663733452143" duration="2832000" />
+      <workItem from="1663733452143" duration="2860000" />
+      <workItem from="1664178323966" duration="747000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1590862220655</created>
@@ -832,7 +840,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1770536000" />
+    <option name="totallyTimeSpent" value="1771311000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -845,9 +853,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19402985" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19616205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -1151,7 +1158,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/functions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
+        <state>
           <caret line="196" column="25" selection-start-line="196" selection-start-column="25" selection-end-line="196" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#0;n#!!top" expanded="true" />
@@ -1164,13 +1171,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="72407" selection-start-column="72407" selection-end-column="72407" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/footer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6974">
-          <caret line="317" column="31" selection-start-line="317" selection-start-column="31" selection-end-line="317" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -1199,6 +1199,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1936">
           <caret line="88" column="43" selection-start-line="88" selection-start-column="33" selection-end-line="88" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/footer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="251" column="3" lean-forward="true" selection-start-line="251" selection-start-column="3" selection-end-line="251" selection-end-column="3" />
+          <folding>
+            <element signature="e#4458#16388#0#PHP" />
+            <element signature="e#8422#16376#0#HTML" />
+            <element signature="e#16493#17280#0#PHP" />
+            <element signature="e#17361#18810#0#PHP" />
+            <element signature="e#18882#19561#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>

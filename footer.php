@@ -100,62 +100,7 @@ if( ! $blank && in_array( $footer_widget_setting, array( 'page_in_footer_socket'
  */
 if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 {
-  if( in_array( $footer_widget_setting, array( 'all', 'nosocket' ) ) )
-  {
-	//get columns
-	$columns = avia_get_option('footer_columns');
-	?>
-      <div class='container_wrap footer_color' id='footer'>
-
-          <div class='container'>
-
-			<?php
-			do_action('avia_before_footer_columns');
-
-			//create the footer columns by iterating
-
-			switch($columns)
-			{
-			  case 1: $class = ''; break;
-			  case 2: $class = 'av_one_half'; break;
-			  case 3: $class = 'av_one_third'; break;
-			  case 4: $class = 'av_one_fourth'; break;
-			  case 5: $class = 'av_one_fifth'; break;
-			  case 6: $class = 'av_one_sixth'; break;
-			  default: $class = ''; break;
-			}
-
-			$firstCol = "first el_before_{$class}";
-
-			//display the footer widget that was defined at appearenace->widgets in the wordpress backend
-			//if no widget is defined display a dummy widget, located at the bottom of includes/register-widget-area.php
-			for ($i = 1; $i <= $columns; $i++)
-			{
-			  $class2 = ""; // initialized to avoid php notices
-			  if($i != 1) $class2 = " el_after_{$class}  el_before_{$class}";
-			  echo "<div class='flex_column {$class} {$class2} {$firstCol}'>";
-			  if (function_exists('dynamic_sidebar') && dynamic_sidebar('Footer - column'.$i) ) : else : avia_dummy_widget($i); endif;
-			  echo "</div>";
-			  $firstCol = "";
-			}
-
-			do_action('avia_after_footer_columns');
-
-			?>
-
-          </div>
-
-
-          <!-- ####### END FOOTER CONTAINER ####### -->
-      </div>
-
-
-  <?php   } //endif   array( 'all', 'nosocket' ) ?>
-
-
-
-    <!-- custom footer -->
-  <?php
+  //custom footer
   if (get_locale() === 'en_US'){
 	?>
       <div id="custom-footer">
@@ -303,7 +248,6 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
               </div>
           </div>
       </div>
-
 	<?php
   }
   ?>
