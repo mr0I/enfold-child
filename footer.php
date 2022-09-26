@@ -218,11 +218,11 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                   </div>
 
                                   <div class="apps-wrapper">
-                                      <a target="_blank" class="" href="http://rx4.ir/android">
+                                      <a target="_blank" class="" href="https://rx4.ir/android">
                                           <img src="https://radshid.com/wp-content/uploads/2022/03/android-icon.png"
                                                alt="دانلود برنامه ردیابی رادشید(اندروید)">
                                       </a>
-                                      <a target="_blank" class="" href="http://rx4.ir/ios">
+                                      <a target="_blank" class="" href="https://rx4.ir/ios">
                                           <img src="https://radshid.com/wp-content/uploads/2022/03/ios-icon.png"
                                                alt="ورود به برنامه ردیابی رادشید(ios)">
                                       </a>
