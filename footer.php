@@ -192,7 +192,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                   <p class="threeWords title">راهنمای خرید و پرداخت</p>
                                   <ul style="display: flex;flex-flow: row wrap">
                                       <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d9%86%d8%ad%d9%88%d9%87-%d8%ab%d8%a8%d8%aa-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4/">نحوه ثبت سفارش</a></li>
-                                      <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d8%a7%d8%b1%d8%b3%d8%a7%d9%84/">شیوه های ارسال</a></li>
+                                      <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d8%a7%d8%b1%d8%b3%d8%a7%d9%84/">شیوه‌های ارسال</a></li>
                                       <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%be%d8%b3-%d8%a7%d8%b2-%d9%81%d8%b1%d9%88%d8%b4/">گارانتی و خدمات پس از فروش</a></li>
                                       <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d9%85%d8%b9%d8%b1%d9%81%db%8c-%d9%be%d8%b1%d9%88%da%98%d9%87-%d9%85%d9%84%db%8c-%d8%b3%db%8c%d9%be%d8%a7%d8%af-%d9%88-%d8%b3%d8%a7%d9%85%d8%a7%d9%86%d9%87-%d8%b3%db%8c%d9%be%d8%a7%d8%af/">نحوه خرید و ثبت نام سیپاد</a></li>
                                   </ul>
@@ -201,8 +201,8 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                   <p class="threeWords title">آدرس</p>
                                   <ul style="display: flex;flex-flow: row wrap">
                                       <li class="col-12">
-                                          اصفهان خیابان کاشانی، خیابان صاحب روضات ، کوچه شماره 12، پلاک ۳۲ شرکت رادشید
-                                          کدپستی:8183873541
+                                          اصفهان خیابان کاشانی، خیابان صاحب روضات، کوچه شماره 12، پلاک ۳۲ شرکت رادشید
+                                          کدپستی: 8183873541
                                       </li>
                                   </ul>
                                   <div class="my-2" style="display: flex;flex-flow: row wrap">
@@ -212,7 +212,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                       <div class="enamad d-flex justify-content-center align-items-center col-lg-4 col-sm-12">
                                           <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=179501&amp;Code=FhjbxasmXXMZd5Y5vKZc">
                                               <img src="<?= get_stylesheet_directory_uri().'/images/enemad.png' ; ?>"
-                                                   alt="نماد اعتماد الکترونیکی">
+                                                   alt="نماد اعتماد الکترونیک شرکت مهندسی رادشید">
                                           </a>
                                       </div>
                                   </div>
@@ -220,15 +220,15 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                   <div class="apps-wrapper">
                                       <a target="_blank" class="" href="https://rx4.ir/android">
                                           <img src="https://radshid.com/wp-content/uploads/2022/03/android-icon.png"
-                                               alt="دانلود برنامه ردیابی رادشید(اندروید)">
+                                               alt="دانلود اپلیکیشن ردیابی رادشید نسخه اندروید">
                                       </a>
                                       <a target="_blank" class="" href="https://rx4.ir/ios">
                                           <img src="https://radshid.com/wp-content/uploads/2022/03/ios-icon.png"
-                                               alt="ورود به برنامه ردیابی رادشید(ios)">
+                                               alt="ورود به برنامه ردیابی رادشید نسخه آی او اس">
                                       </a>
                                       <a target="_blank" class="" href="tg://resolve?domain=radshid_bot/">
                                           <img src="https://radshid.com/wp-content/uploads/2022/03/telegrambot-icon.png"
-                                               alt="ورود به ربات تلگرام رادشید">
+                                               alt="ورود به ربات ردیابی تلگرام رادشید">
                                       </a>
                                   </div>
 
