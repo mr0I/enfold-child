@@ -461,7 +461,7 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
 
 
 //display link to previous and next portfolio entry
-echo	$avia_post_nav;
+//echo $avia_post_nav;
 
 echo "<!-- end wrap_all --></div>";
 
