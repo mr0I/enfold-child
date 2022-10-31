@@ -211,8 +211,8 @@ if( ! $blank && $footer_widget_setting != 'nofooterarea' )
                                       </div>
                                       <div class="enamad d-flex justify-content-center align-items-center col-lg-4 col-sm-12">
                                           <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=179501&amp;Code=FhjbxasmXXMZd5Y5vKZc">
-                                              <img src="<?= get_stylesheet_directory_uri().'/images/enemad.png' ; ?>"
-                                                   alt="نماد اعتماد الکترونیک شرکت مهندسی رادشید">
+                                              <img referrerpolicy="origin" src="<?= get_stylesheet_directory_uri().'/images/enemad.png' ; ?>"
+                                                   alt="نماد اعتماد الکترونیک شرکت مهندسی رادشید" style="cursor:pointer" id="FhjbxasmXXMZd5Y5vKZc">
                                           </a>
                                       </div>
                                   </div>
