@@ -13,12 +13,12 @@ function load_scripts_styles() {
   $vn = wp_get_theme()->get( 'Version' );
   // Styles
   if (get_locale() === 'en_US'){
-	wp_enqueue_style( 'child-theme-styles' , get_stylesheet_directory_uri() . '/css/main.css' , array() , '8.4.6');
+	wp_enqueue_style( 'child-theme-styles' , get_stylesheet_directory_uri() . '/css/main.css' , array(), '8.4.6');
 	wp_enqueue_style( 'child-theme-styles-en' , get_stylesheet_directory_uri() . '/css/style-ltr.css');
   } elseif (get_locale() === 'fa_IR'){
-	wp_enqueue_style( 'child-theme-styles' , get_stylesheet_directory_uri() . '/css/main.css' , array() , '8.4.6');
+	wp_enqueue_style( 'child-theme-styles' , get_stylesheet_directory_uri() . '/css/main.css' , array(), '8.4.6');
   } else {
-	wp_enqueue_style( 'child-theme-styles' , get_stylesheet_directory_uri() . '/css/main.css' , array() , '8.4.6');
+	wp_enqueue_style( 'child-theme-styles' , get_stylesheet_directory_uri() . '/css/main.css' , array(), '8.4.6');
   }
   // Scripts
   wp_enqueue_script('sweetAlert', get_stylesheet_directory_uri() .'/js/sweetalert2.all.min.js');
@@ -228,43 +228,43 @@ if (function_exists('add_theme_support')){
  *  ========== Start Ajax Requests ==========
  */
 // show blog posts
-function getCatPosts_callback(){
-  global $wpdb;
-  $posts_table = $wpdb->prefix . 'posts';
-  $postmeta_table = $wpdb->prefix . 'postmeta';
-  $users_table = $wpdb->prefix . 'users';
-  $term_relationships_table = $wpdb->prefix . 'term_relationships';
-  $term_taxonomy_table = $wpdb->prefix . 'term_taxonomy';
-  $terms_table = $wpdb->prefix . 'terms';
-
-
-  $limit = $_POST['limit']; // number of rows in page
-  $offset = $_POST['offset'];
-  $category_id = $_POST['category_id'];
-
-
-  $posts = $wpdb->get_results("SELECT p.ID,p.post_title AS title,p.post_excerpt AS excerpt, p.post_date AS date , p.post_name AS slug , pm2.meta_value AS image
-                                    ,p.comment_count , u.display_name AS author , tax.term_id AS cat_id
-                                FROM $posts_table p 
-                                INNER JOIN $postmeta_table pm ON (p.ID = pm.post_id AND pm.meta_key = '_thumbnail_id' AND p.post_status='publish' AND p.post_type='post')
-                                INNER JOIN $postmeta_table pm2 ON (pm.meta_value = pm2.post_id AND pm2.meta_key = '_wp_attached_file') 
-                                INNER JOIN $users_table u ON (p.post_author = u.ID)
-                                LEFT JOIN $term_relationships_table rel ON rel.object_id = p.ID
-                                LEFT JOIN $term_taxonomy_table tax ON tax.term_taxonomy_id = rel.term_taxonomy_id
-                                LEFT JOIN $terms_table t ON t.term_id = tax.term_id
-                                WHERE tax.term_id=$category_id
-                                ORDER BY post_date DESC LIMIT $offset,$limit ");
-
-
-  if (sizeof($posts) !== 0){
-	$result['result'] = 'Done';
-	$result['posts'] = $posts;
-	wp_send_json( $result );
-	exit();
-  }
-}
-add_action( 'wp_ajax_getCatPosts', 'getCatPosts_callback' );
-add_action( 'wp_ajax_nopriv_getCatPosts', 'getCatPosts_callback' );
+//function getCatPosts_callback(){
+//  global $wpdb;
+//  $posts_table = $wpdb->prefix . 'posts';
+//  $postmeta_table = $wpdb->prefix . 'postmeta';
+//  $users_table = $wpdb->prefix . 'users';
+//  $term_relationships_table = $wpdb->prefix . 'term_relationships';
+//  $term_taxonomy_table = $wpdb->prefix . 'term_taxonomy';
+//  $terms_table = $wpdb->prefix . 'terms';
+//
+//
+//  $limit = $_POST['limit']; // number of rows in page
+//  $offset = $_POST['offset'];
+//  $category_id = $_POST['category_id'];
+//
+//
+//  $posts = $wpdb->get_results("SELECT p.ID,p.post_title AS title,p.post_excerpt AS excerpt, p.post_date AS date , p.post_name AS slug , pm2.meta_value AS image
+//                                    ,p.comment_count , u.display_name AS author , tax.term_id AS cat_id
+//                                FROM $posts_table p
+//                                INNER JOIN $postmeta_table pm ON (p.ID = pm.post_id AND pm.meta_key = '_thumbnail_id' AND p.post_status='publish' AND p.post_type='post')
+//                                INNER JOIN $postmeta_table pm2 ON (pm.meta_value = pm2.post_id AND pm2.meta_key = '_wp_attached_file')
+//                                INNER JOIN $users_table u ON (p.post_author = u.ID)
+//                                LEFT JOIN $term_relationships_table rel ON rel.object_id = p.ID
+//                                LEFT JOIN $term_taxonomy_table tax ON tax.term_taxonomy_id = rel.term_taxonomy_id
+//                                LEFT JOIN $terms_table t ON t.term_id = tax.term_id
+//                                WHERE tax.term_id=$category_id
+//                                ORDER BY post_date DESC LIMIT $offset,$limit ");
+//
+//
+//  if (sizeof($posts) !== 0){
+//	$result['result'] = 'Done';
+//	$result['posts'] = $posts;
+//	wp_send_json( $result );
+//	exit();
+//  }
+//}
+//add_action( 'wp_ajax_getCatPosts', 'getCatPosts_callback' );
+//add_action( 'wp_ajax_nopriv_getCatPosts', 'getCatPosts_callback' );
 /* ========== End Ajax Requests ========== */
 
 
