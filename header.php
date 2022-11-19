@@ -13,7 +13,7 @@ $avia_config['use_standard_lightbox'] = empty( $lightbox_option ) || ( 'lightbox
  * @since 4.2.6
  * @param string $use_standard_lightbox				'lightbox_active' | 'disabled'
  * @return string									'lightbox_active' | 'disabled'
- */
+ */ 
 $avia_config['use_standard_lightbox'] = apply_filters( 'avf_use_standard_lightbox', $avia_config['use_standard_lightbox'] );
 
 $style 					= $avia_config['box_class'];

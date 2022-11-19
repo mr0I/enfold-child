@@ -23,7 +23,7 @@ function load_scripts_styles() {
   // Scripts
   wp_enqueue_script('sweetAlert', get_stylesheet_directory_uri() .'/js/sweetalert2.all.min.js');
   wp_enqueue_script( 'custom-scripts', get_stylesheet_directory_uri() . '/js/custom-scripts.js',
-	  array('jquery','jquery-ui-core'), '1.2' , true );
+	  array('jquery','jquery-ui-core'), '1.3' , true );
   wp_localize_script( 'custom-scripts', 'SpaAjax', array(
 	  'ajaxurl' => admin_url( 'admin-ajax.php' ),
 	  'security' => wp_create_nonce( '(H+MbPeShVmYq3t6' ),
@@ -222,4 +222,10 @@ if (function_exists('add_theme_support')){
   add_theme_support('post-thumbnails');
   set_post_thumbnail_size(150, 150, true);
   add_image_size('single_thumb', 1024, 1024, false);
+}
+
+/* disable heart-beat featured */
+add_action( 'init', 'stop_heartbeat', 1 );
+function stop_heartbeat() {
+  wp_deregister_script('heartbeat');
 }
