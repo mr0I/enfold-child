@@ -1,14 +1,14 @@
-(function($) {
-    $(window).on("load", function() {
+(function ($) {
+    $(window).on("load", function () {
         /* Notif Banner */
-        if (! localStorage.getItem('notif_banner_closed')){
+        if (!localStorage.getItem('notif_banner_closed')) {
             setTimeout(function () {
-                $('.notif_banner_container').animate({bottom: 0} , 'slow');
-            } , 3000);
+                $('.notif_banner_container').animate({ bottom: 0 }, 'slow');
+            }, 3000);
         }
         $('.notif_close').click(function () {
-            $('.notif_banner_container').delay(300).animate({bottom: '-150px'} , 'fast').delay(3000).fadeOut().end();
-            localStorage.setItem('notif_banner_closed' , true);
+            $('.notif_banner_container').delay(300).animate({ bottom: '-150px' }, 'fast').delay(3000).fadeOut().end();
+            localStorage.setItem('notif_banner_closed', true);
         });
         /* Notif Banner */
 
@@ -18,12 +18,12 @@
         // }
     })
 })(jQuery);
-jQuery(document).ready(function($){
+jQuery(document).ready(function ($) {
 
     // inits
     const toolTips = $('[data-toggle="tooltip"]');
     toolTips.tooltip({
-        delay: {"show": 200, "hide": 100},
+        delay: { "show": 200, "hide": 100 },
         trigger: "hover"
     });
     toolTips.click(function () {
@@ -63,8 +63,8 @@ jQuery(document).ready(function($){
     $('.template-shop').find('li.type-product.post-10304').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
     $('.template-shop').find('li.type-product.post-10299').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
     // hide pr1 and x0+ price lables
-    $('#product-10428').find('.woo-price').css('display','inline-block').html('<strong class="text-danger">ناموجود</strong>');
-    $('#product-10216').find('.woo-price').css('display','inline-block').html('<strong class="text-danger">ناموجود</strong>');
+    $('#product-10428').find('.woo-price').css('display', 'inline-block').html('<strong class="text-danger">ناموجود</strong>');
+    $('#product-10216').find('.woo-price').css('display', 'inline-block').html('<strong class="text-danger">ناموجود</strong>');
     /* End Change Shop buttons text temporary */
 
 
@@ -73,10 +73,10 @@ jQuery(document).ready(function($){
     // fadeout UAP REG SUCCESS MSG
     const uap_reg_success_msg = $('.uap-reg-success-msg');
     setTimeout(function () {
-        if (uap_reg_success_msg.length == '1'){
+        if (uap_reg_success_msg.length == '1') {
             uap_reg_success_msg.fadeOut();
         }
-    } , 3000);
+    }, 3000);
 
     $('#uap_createuser').find('.optional').siblings('label.uap-labels-register').addClass('optional-label');
 
@@ -84,9 +84,9 @@ jQuery(document).ready(function($){
     /* Changes For Multi Language */
     // header phone info
     if (SpaAjax.isEN === 'en') {
-        $('#header_meta').find('.phone-info').find('span').html('<a href="tel:983132362894"><i class="ic-phone">&nbsp;&nbsp;+983132362894 | +983195016151&nbsp;&nbsp;</i></a>');
+        $('#header_meta').find('.phone-info').html('<a href="tel:983132362894"><i class="ic-phone">&nbsp;&nbsp;+983132362894 | +983195016151&nbsp;&nbsp;</i></a>');
     } else {
-        $('#header_meta').find('.phone-info').find('span').html('<a href="tel:03132362894"><i class="ic-phone"></i> ۰۳۱۳۲۳۶۲۸۹۴</a>');
+        $('#header_meta').find('.phone-info').html('<a href="tel:03132362894"><i class="ic-phone"></i>۰۳۱۳۲۳۶۲۸۹۴</a>');
     }
     // Change breadcrumb trails
     const breadcrumbTrail = $('.breadcrumb-trail');
