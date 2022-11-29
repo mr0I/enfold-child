@@ -98,6 +98,62 @@ jQuery(document).ready(function ($) {
         breadcrumbTrail.find('span.sep').html('<i class="ic-line-left"></i>');
     }
 
+
+    /* load more posts */
+    const dateOptions = {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    };
+
+    $('.load_more_posts').on('click', function () {
+        const offsetCounter = document.getElementById('offset_counter');
+        let offset = offsetCounter.value;
+        const limit = constants.limit_counter;
+        const total = constants.total_counter;
+        let load_more_posts_btn = $(this);
+        $(load_more_posts_btn).html('بارگیری بیشتر<i class="ic-spinner1 icon-spinner mx-1"></i>').attr('disabled', true);
+
+        fetch(RadAjax.ajaxurl, {
+            method: 'POST',
+            credentials: 'same-origin',
+            headers: new Headers({
+                'Content-Type': 'application/x-www-form-urlencoded'
+            }),
+            body: new URLSearchParams({
+                action: 'getPosts',
+                security: RadAjax.security,
+                offset: offset,
+                limit: limit
+            })
+        }).then(async response => {
+            const res = await response.json();
+            const posts = res.posts;
+            const posts_container = $('.posts-container');
+
+            $(load_more_posts_btn).html('بارگیری بیشتر').attr('disabled', false);
+            posts.forEach(post => {
+                posts_container.append(`
+                    <div class="card">
+                        <div class="col-lg-6 col-md-6 col-sm-12 card-img-top">
+                            <a href="${post.url}"> <figure>${post.image}</figure> </a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 card-body">
+                            <a href="${post.url}"><h2 class="card-title">${post.title}</h2></a>
+                            <p class="card-text">${(post.excerpt).substring(0, 300) + '---'}</p>
+                        </div>
+                         <div class="card-date d-none"><span>${new Date(post.date).toLocaleDateString('fa-IR', dateOptions)} </span></div>
+                    </div>
+                    `);
+            });
+
+            offsetCounter.value = Number(offset) + Number(limit);
+            if ((Number(total) - Number(offset)) <= Number(limit)) $(load_more_posts_btn).fadeOut();
+        }).catch(function (error) {
+            console.warn(JSON.stringify(error));
+        });
+    })
+
 });
 
 
