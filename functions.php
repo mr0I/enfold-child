@@ -7,6 +7,11 @@
 defined("ABSPATH") || '/' . exit();
 
 
+/**
+ * Hide Page Preview Errors
+ */
+error_reporting(0);
+
 
 /* Start Load Scripts */
 function load_scripts_styles()
