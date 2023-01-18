@@ -200,10 +200,10 @@ if (!$blank && $footer_widget_setting != 'nofooterarea') {
                                         </li>
                                     </ul>
                                     <div class="my-2" style="display: flex;flex-flow: row wrap">
-                                        <div class="iframe-wrapper col-lg-8 col-sm-12">
+                                        <!-- <div class="iframe-wrapper col-lg-8 col-sm-12">
                                             <iframe height="150" style="border:0;" allowfullscreen="" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d419.87585558958284!2d51.648433!3d32.659262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x783b695de580e1b2!2z2LTYsdqp2Kog2LHYp9iv2LTbjNiv!5e0!3m2!1sen!2sus!4v1655546366493!5m2!1sfa!2sus" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                        </div>
-                                        <div class="enamad d-flex justify-content-center align-items-center col-lg-4 col-sm-12">
+                                        </div> -->
+                                        <div class="enamad d-flex justify-content-center align-items-center col-12">
                                             <a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=179501&amp;Code=FhjbxasmXXMZd5Y5vKZc">
                                                 <img referrerpolicy="origin" src="<?= get_stylesheet_directory_uri() . '/images/enemad.png'; ?>" alt="نماد اعتماد الکترونیک شرکت مهندسی رادشید" style="cursor:pointer" id="FhjbxasmXXMZd5Y5vKZc">
                                             </a>
