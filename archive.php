@@ -38,9 +38,6 @@ $args = array(
 $results = new WP_Query($args);
 $posts = $results->posts;
 
-// wp_die('dasda' . $limit);
-// exit();
-
 global $wpdb;
 $postsTable = $wpdb->prefix . 'posts';
 $postsCount = $wpdb->get_var(
@@ -49,10 +46,6 @@ $postsCount = $wpdb->get_var(
         array('publish', 'post')
     )
 );
-
-// Shamsi Date
-include_once RAD_INCS . '/libs/jdatetime.class.php';
-$date = new jDateTime(true, true, 'Asia/Tehran');
 ?>
 
 <div class='container_wrap container_wrap_first main_color <?php avia_layout_class('main'); ?>'>
@@ -93,9 +86,6 @@ $date = new jDateTime(true, true, 'Asia/Tehran');
                             <p class="card-text">
                                 <?= mb_strimwidth($postExcerpt, 0, 300, '---') ?>
                             </p>
-                        </div>
-                        <div class="card-date">
-                            <span><?= $date->date("j F Y", strtotime($postDate)) ?></span>
                         </div>
                     </div>
                 <?php

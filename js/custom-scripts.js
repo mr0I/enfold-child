@@ -88,15 +88,16 @@ jQuery(document).ready(function ($) {
     } else {
         $('#header_meta').find('.phone-info').html('<a href="tel:03132362894"><i class="ic-phone"></i>۰۳۱۳۲۳۶۲۸۹۴</a>');
     }
+
     // Change breadcrumb trails
-    const breadcrumbTrail = $('.breadcrumb-trail');
-    if (SpaAjax.isEN === 'en') {
-        $('.breadcrumb').find('.trail-begin').find('span[itemprop="name"]').text('Home');
-        breadcrumbTrail.find('span.sep').html('<i class="ic-line-right"></i>');
-    } else {
-        $('.breadcrumb').find('.trail-begin').find('span[itemprop="name"]').text('صفحه اصلی');
-        breadcrumbTrail.find('span.sep').html('<i class="ic-line-left"></i>');
-    }
+    // const breadcrumbTrail = $('.breadcrumb-trail');
+    // if (SpaAjax.isEN === 'en') {
+    //     $('.breadcrumb').find('.trail-begin').find('span[itemprop="name"]').text('Home');
+    //     breadcrumbTrail.find('span.sep').html('<i class="ic-line-right"></i>');
+    // } else {
+    //     $('.breadcrumb').find('.trail-begin').find('span[itemprop="name"]').text('صفحه اصلی');
+    //     breadcrumbTrail.find('span.sep').html('<i class="ic-line-left"></i>');
+    // }
 
 
     /* load more posts */
@@ -142,7 +143,6 @@ jQuery(document).ready(function ($) {
                             <a href="${post.url}"><h2 class="card-title">${post.title}</h2></a>
                             <p class="card-text">${(post.excerpt).substring(0, 300) + '---'}</p>
                         </div>
-                         <div class="card-date d-none"><span>${new Date(post.date).toLocaleDateString('fa-IR', dateOptions)} </span></div>
                     </div>
                     `);
             });

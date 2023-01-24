@@ -244,49 +244,8 @@ add_filter('login_display_language_dropdown', '__return_false');
 
 
 /* disable featured image auto cropping */
-if (function_exists('add_theme_support')) {
-  add_theme_support('post-thumbnails');
-  set_post_thumbnail_size(150, 150, true);
-  add_image_size('single_thumb', 1024, 1024, false);
-}
-
-
-/**
- * blog template Ajax request
- */
-function getPosts_callback()
-{
-  $args = [
-    'posts_per_page' => intval($_POST['limit']),
-    'offset' => intval($_POST['offset']),
-    'orderby' => 'post_date',
-    'order' => 'DESC',
-    'post_type' => 'post',
-    'post_status' => 'publish'
-  ];
-  $results = new WP_Query($args);
-  $posts = $results->posts;
-
-  // generate posts dynamic data
-  $postsData = [];
-  foreach ($posts as $post) {
-    array_push($postsData, [
-      'image' => (get_the_post_thumbnail($post->ID) !== '')
-        ? get_the_post_thumbnail($post->ID, 'full')
-        : '<img src="' . RAD_ASSETS . 'images/Image_not_available.jpg" alt="مقاله بدون تصویر شاخص">',
-      'url' => get_permalink($post->ID),
-      'title' => $post->post_title,
-      'excerpt' => $post->post_excerpt,
-      'date' => $post->post_date
-    ]);
-  }
-
-  if (sizeof($posts) !== 0) {
-    $result['result'] = 'Done';
-    $result['posts'] = $postsData;
-    wp_send_json($result);
-    exit();
-  }
-}
-add_action('wp_ajax_getPosts', 'getPosts_callback');
-add_action('wp_ajax_nopriv_getPosts', 'getPosts_callback');
+// if (function_exists('add_theme_support')) {
+//   add_theme_support('post-thumbnails');
+//   set_post_thumbnail_size(150, 150, true);
+//   add_image_size('single_thumb', 1024, 1024, false);
+// }
