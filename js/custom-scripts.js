@@ -82,13 +82,6 @@ jQuery(document).ready(function ($) {
 
 
     /* Changes For Multi Language */
-    // header phone info
-    if (SpaAjax.isEN === 'en') {
-        $('#header_meta').find('.phone-info').html('<a href="tel:983132362894"><i class="ic-phone">&nbsp;&nbsp;+983132362894 | +983195016151&nbsp;&nbsp;</i></a>');
-    } else {
-        $('#header_meta').find('.phone-info').html('<a href="tel:03132362894"><i class="ic-phone"></i>۰۳۱۳۲۳۶۲۸۹۴</a>');
-    }
-
     // Change breadcrumb trails
     // const breadcrumbTrail = $('.breadcrumb-trail');
     // if (SpaAjax.isEN === 'en') {
