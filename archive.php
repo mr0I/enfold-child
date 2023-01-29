@@ -26,6 +26,10 @@ do_action('ava_after_main_title');
 /**
  * blog template
  */
+$category = get_queried_object();
+$postsCount = intval($category->count);
+$categoryId = intval($category->cat_ID);
+// wp_die(json_encode($category, JSON_PRETTY_PRINT));
 $limit = get_option('RADtools_setting_articles_perpage', 1);
 $args = array(
     'posts_per_page' => $limit,
@@ -33,19 +37,20 @@ $args = array(
     'orderby' => 'post_date',
     'order' => 'DESC',
     'post_type' => 'post',
-    'post_status' => 'publish'
+    'post_status' => 'publish',
+    'cat' => $categoryId,
 );
 $results = new WP_Query($args);
 $posts = $results->posts;
 
-global $wpdb;
-$postsTable = $wpdb->prefix . 'posts';
-$postsCount = $wpdb->get_var(
-    $wpdb->prepare(
-        "SELECT COUNT(*) FROM ${postsTable} WHERE post_status=%s AND post_type=%s",
-        array('publish', 'post')
-    )
-);
+// global $wpdb;
+// $postsTable = $wpdb->prefix . 'posts';
+// $postsCount = $wpdb->get_var(
+//     $wpdb->prepare(
+//         "SELECT COUNT(*) FROM ${postsTable} WHERE post_status=%s AND post_type=%s",
+//         array('publish', 'post')
+//     )
+// );
 ?>
 
 <div class='container_wrap container_wrap_first main_color <?php avia_layout_class('main'); ?>'>
@@ -110,7 +115,8 @@ $postsCount = $wpdb->get_var(
             'limit_counter' => $limit,
             'total_counter' => $postsCount,
             'site_url' => get_site_url(),
-            'category_id' => $category->term_id
+            // 'category_id' => 1
+            'category_id' => $categoryId
         ])
         ?>
         <input type="hidden" id="offset_counter" value="<?= $offset ?>">

@@ -105,6 +105,7 @@ jQuery(document).ready(function ($) {
         let offset = offsetCounter.value;
         const limit = constants.limit_counter;
         const total = constants.total_counter;
+        const categoryId = constants.category_id || 0;
         let load_more_posts_btn = $(this);
         $(load_more_posts_btn).html('بارگیری بیشتر<i class="ic-spinner1 icon-spinner mx-1"></i>').attr('disabled', true);
 
@@ -118,11 +119,13 @@ jQuery(document).ready(function ($) {
                 action: 'getPosts',
                 security: RadAjax.security,
                 offset: offset,
-                limit: limit
+                limit: limit,
+                category_id: categoryId,
             })
         }).then(async response => {
             const res = await response.json();
             const posts = res.posts;
+            console.log('posts', posts);
             const posts_container = $('.posts-container');
 
             $(load_more_posts_btn).html('بارگیری بیشتر').attr('disabled', false);
@@ -145,7 +148,8 @@ jQuery(document).ready(function ($) {
         }).catch(function (error) {
             console.warn(JSON.stringify(error));
         });
-    })
+    });
+    /* END load more posts */
 
 });
 
