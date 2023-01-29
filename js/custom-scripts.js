@@ -125,7 +125,6 @@ jQuery(document).ready(function ($) {
         }).then(async response => {
             const res = await response.json();
             const posts = res.posts;
-            console.log('posts', posts);
             const posts_container = $('.posts-container');
 
             $(load_more_posts_btn).html('بارگیری بیشتر').attr('disabled', false);
@@ -137,6 +136,14 @@ jQuery(document).ready(function ($) {
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-12 card-body">
                             <a href="${post.url}"><h2 class="card-title">${post.title}</h2></a>
+                            <p class="card-attrs w-100">
+                                <small class="text-muted">
+                                    <a href="${post.url}/#respond">
+                                    ${post.commentsCount}<i class="ic-bubble mx-1"></i>
+                                        دیدگاه
+                                    </a>
+                                </small>
+                            </p>
                             <p class="card-text">${(post.excerpt).substring(0, 300) + '---'}</p>
                         </div>
                     </div>

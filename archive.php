@@ -81,7 +81,7 @@ $posts = $results->posts;
                             </a>
                             <p class="card-attrs w-100">
                                 <small class="text-muted">
-                                    <a href="<?= $postUrl . '/#respond' ?>">
+                                    <a href="<?= $postUrl . '#respond' ?>">
                                         <?= $postCommentCount ?>
                                         <i class="ic-bubble mx-1"></i>
                                         دیدگاه
@@ -115,7 +115,6 @@ $posts = $results->posts;
             'limit_counter' => $limit,
             'total_counter' => $postsCount,
             'site_url' => get_site_url(),
-            // 'category_id' => 1
             'category_id' => $categoryId
         ])
         ?>
