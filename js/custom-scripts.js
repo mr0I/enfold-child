@@ -31,44 +31,13 @@ jQuery(document).ready(function ($) {
     });
     // inits
 
-
-    // Add Material icons
-    $('.single_add_to_cart_button').html('<i class="ic-cart" style="font-size: 150%"></i>  افزودن به سبد خرید');
-    $('.cart_dropdown_link').find('span:first-child').html('<i class="ic-cart my-2"></i>');
-
     // Full-Width shop page
     $('ul.products').removeClass('columns-3').addClass('col-12');
 
-
-    /* Start Change Shop buttons text temporary */
-    $('.template-shop').find('li.type-product').find('.inner_product').find('.show_details_button').css('direction', 'rtl').html('افزودن به سبد خرید<i class="ic-basket mx-2" style="font-size: 115%;font-weight: bold;vertical-align: bottom;"></i>');
-    $('.template-shop').find('li.type-product.post-16949').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16940').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16939').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16918').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16917').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16916').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16914').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16913').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16912').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16911').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16907').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16905').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16904').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16900').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16899').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16898').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-16897').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-10307').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-10304').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
-    $('.template-shop').find('li.type-product.post-10299').find('.inner_product').find('.show_details_button').html('مشاهده مشخصات فنی');
     // hide pr1 and x0+ price lables
     $('#product-10428').find('.woo-price').css('display', 'inline-block').html('<strong class="text-danger">ناموجود</strong>');
     $('#product-10216').find('.woo-price').css('display', 'inline-block').html('<strong class="text-danger">ناموجود</strong>');
     /* End Change Shop buttons text temporary */
-
-
-
 
     // fadeout UAP REG SUCCESS MSG
     const uap_reg_success_msg = $('.uap-reg-success-msg');
@@ -91,7 +60,6 @@ jQuery(document).ready(function ($) {
     //     $('.breadcrumb').find('.trail-begin').find('span[itemprop="name"]').text('صفحه اصلی');
     //     breadcrumbTrail.find('span.sep').html('<i class="ic-line-left"></i>');
     // }
-
 
     /* load more posts */
     const dateOptions = {

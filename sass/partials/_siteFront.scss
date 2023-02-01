@@ -2860,24 +2860,20 @@ input.input-text {
   font-family: $textFont;
 }
 
-.template-shop {
-  .inner_product {
+// .template-shop {
+//   .inner_product {
 
-    .add_to_cart_button,
-    .button-mini-delimiter,
-    .product_type_simple {
-      display: none !important;
-    }
+//     .add_to_cart_button,
+//     .button-mini-delimiter,
+//     .product_type_simple {
+//       display: none !important;
+//     }
 
-    .woocommerce-Price-amount.amount {
-      //display: none !important;
-    }
-
-    .show_details_button {
-      width: 100% !important;
-    }
-  }
-}
+//     .show_details_button {
+//       width: 100% !important;
+//     }
+//   }
+// }
 
 /* samaneh page styles */
 #samaneh-tabs {
