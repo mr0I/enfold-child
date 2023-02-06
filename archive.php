@@ -81,9 +81,9 @@ $posts = $results->posts;
                             </a>
                             <p class="card-attrs w-100">
                                 <small class="text-muted">
+
                                     <a href="<?= $postUrl . '#respond' ?>">
-                                        <?= $postCommentCount ?>
-                                        <i class="ic-bubble mx-1"></i>
+                                        <?= $postCommentCount ?><i class="ic-bubble mx-1"></i>
                                         دیدگاه
                                     </a>
                                 </small>
