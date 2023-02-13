@@ -163,14 +163,16 @@ if (!$blank && $footer_widget_setting != 'nofooterarea') {
                         <div class="tr-element">
                             <div class="row">
                                 <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
-                                    <p class="threeWords title">محصولات</p>
-                                    <ul style="display: flex;flex-flow: row wrap">
-                                        <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/product-car-tracker/">ردیاب خودرو</a></li>
-                                        <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/product-personal-tracker/">ردیاب شخصی</a></li>
-                                        <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d8%a7%d9%86%d9%88%d8%a7%d8%b9-%d8%aa%d8%a8%d9%84%d8%aa-%d9%87%d8%a7%db%8c-%d8%b5%d9%86%d8%b9%d8%aa%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">تبلت صنعتی</a></li>
-                                        <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d8%a7%d9%86%d9%88%d8%a7%d8%b9-pda-%d9%87%d8%a7%db%8c-%d8%b5%d9%86%d8%b9%d8%aa%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">هندهلد</a></li>
-                                        <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d9%86%d8%b1%d9%85-%d8%a7%d9%81%d8%b2%d8%a7%d8%b1-%d9%84%d8%a7%da%af%d8%b4%db%8c%d8%aa-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">نرم افزار لاگشیت</a></li>
-                                        <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d8%b3%d8%a7%d9%85%d8%a7%d9%86%d9%87-%d8%b1%d8%af%db%8c%d8%a7%d8%a8%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/">سامانه مدیریت ناوگان</a></li>
+                                    <p class="threeWords title">آدرس</p>
+                                    <ul id="addr_column">
+                                        <li>
+                                            اصفهان خیابان کاشانی، خیابان صاحب روضات، کوچه شماره 12، پلاک ۳۲ شرکت رادشید کدپستی: 8183873541
+                                            <p>
+                                                <a href="tel:0313544">
+                                                    <span>شماره تماس: 3544-031</span>
+                                                </a>
+                                            </p>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
@@ -188,17 +190,14 @@ if (!$blank && $footer_widget_setting != 'nofooterarea') {
                                         <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d9%86%d8%ad%d9%88%d9%87-%d8%ab%d8%a8%d8%aa-%d8%b3%d9%81%d8%a7%d8%b1%d8%b4/">نحوه ثبت سفارش</a></li>
                                         <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d8%b4%db%8c%d9%88%d9%87-%d9%87%d8%a7%db%8c-%d8%a7%d8%b1%d8%b3%d8%a7%d9%84/">شیوه‌های ارسال</a></li>
                                         <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%be%d8%b3-%d8%a7%d8%b2-%d9%81%d8%b1%d9%88%d8%b4/">گارانتی و خدمات پس از فروش</a></li>
-                                        <li class="col-lg-12 col-md-12 col-sm-6"><a href="https://radshid.com/%d9%85%d8%b9%d8%b1%d9%81%db%8c-%d9%be%d8%b1%d9%88%da%98%d9%87-%d9%85%d9%84%db%8c-%d8%b3%db%8c%d9%be%d8%a7%d8%af-%d9%88-%d8%b3%d8%a7%d9%85%d8%a7%d9%86%d9%87-%d8%b3%db%8c%d9%be%d8%a7%d8%af/">نحوه خرید و ثبت نام سیپاد</a></li>
+                                        <li class="col-lg-12 col-md-12 col-sm-6">
+                                            <a href="https://radshid.com/%d8%aa%d9%85%d8%a7%d8%b3-%d8%a8%d8%a7-%d9%85%d8%a7/wiki-radyab/">
+                                                سوالات کاربران در مورد ردیاب
+                                            </a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="col-lg-3 col-md-3 col-sm-12 mb-3">
-                                    <p class="threeWords title">آدرس</p>
-                                    <ul style="display: flex;flex-flow: row wrap">
-                                        <li class="col-12">
-                                            اصفهان خیابان کاشانی، خیابان صاحب روضات، کوچه شماره 12، پلاک ۳۲ شرکت رادشید
-                                            کدپستی: 8183873541
-                                        </li>
-                                    </ul>
                                     <div class="my-2" style="display: flex;flex-flow: row wrap">
                                         <!-- <div class="iframe-wrapper col-lg-8 col-sm-12">
                                             <iframe height="150" style="border:0;" allowfullscreen="" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d419.87585558958284!2d51.648433!3d32.659262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x783b695de580e1b2!2z2LTYsdqp2Kog2LHYp9iv2LTbjNiv!5e0!3m2!1sen!2sus!4v1655546366493!5m2!1sfa!2sus" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -221,7 +220,6 @@ if (!$blank && $footer_widget_setting != 'nofooterarea') {
                                             <img src="https://radshid.com/wp-content/uploads/2022/03/telegrambot-icon.png" alt="ورود به ربات ردیابی تلگرام رادشید">
                                         </a>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
