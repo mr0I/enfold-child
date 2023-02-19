@@ -241,3 +241,16 @@ add_filter('login_headertitle', function () {
   return 'Radshid';
 });
 add_filter('login_display_language_dropdown', '__return_false');
+
+
+// eliminate render blocking css
+function add_rel_preload($html, $handle, $href, $media)
+{
+  if (is_admin()) return $html;
+
+  $html = <<<EOT
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+EOT;
+  return $html;
+}
+add_filter('style_loader_tag', 'add_rel_preload', 10, 4);
