@@ -52,7 +52,7 @@ $rtl_support			= 'yes' == apply_filters('avf_rtl_column_support', 'yes') ? ' rtl
 <html <?php language_attributes(); ?> class="<?php echo "html_{$style} " . $responsive . " " . $preloader . " " . $av_lightbox . " " . $filterable_classes . " " . $av_classes_manually ?> ">
 
 <head>
-	<meta name="keywords" content="ردیاب رادشید">
+	<meta name="keywords" content="ردیاب خودرو">
 	<meta charset="<?php bloginfo('charset'); ?>" />
 	<meta name="enamad" content="419561" />
 
