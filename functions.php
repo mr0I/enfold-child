@@ -254,3 +254,14 @@ EOT;
   return $html;
 }
 add_filter('style_loader_tag', 'add_rel_preload', 10, 4);
+
+
+/** Disable auto update notification emails */
+add_filter('auto_core_update_send_email', function ($send, $type, $core_update, $result) {
+  if (!empty($type) && $type == 'success') {
+    return false;
+  }
+  return true;
+}, 10, 4);
+add_filter('auto_plugin_update_send_email', '__return_false');
+add_filter('auto_theme_update_send_email', '__return_false');
