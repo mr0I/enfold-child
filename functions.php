@@ -265,3 +265,9 @@ add_filter('auto_core_update_send_email', function ($send, $type, $core_update, 
 }, 10, 4);
 add_filter('auto_plugin_update_send_email', '__return_false');
 add_filter('auto_theme_update_send_email', '__return_false');
+
+
+/** Hide draft posts from search results */
+add_action('pre_get_posts', function ($query) {
+  $query->set('post_status', array('publish'));
+});
