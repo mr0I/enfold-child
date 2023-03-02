@@ -222,14 +222,6 @@ function my_nonce_life()
   return 60 * 60 * 24 * 15; // 15 days
 }
 
-/* modify the breadcrumb’s output */
-add_filter('avia_breadcrumbs_trail', 'avia_breadcrumbs_trail_mod', 50, 2);
-function avia_breadcrumbs_trail_mod($trail, $args)
-{
-  if (is_single()) unset($trail[1]);
-  return $trail;
-}
-
 /* customize wp-login page */
 add_action('login_enqueue_scripts', function () {
   wp_enqueue_style('wpl-styles', get_stylesheet_directory_uri()  . '/css/wpl-styles.css');
@@ -265,9 +257,3 @@ add_filter('auto_core_update_send_email', function ($send, $type, $core_update, 
 }, 10, 4);
 add_filter('auto_plugin_update_send_email', '__return_false');
 add_filter('auto_theme_update_send_email', '__return_false');
-
-
-/** Hide draft posts from search results */
-add_action('pre_get_posts', function ($query) {
-  $query->set('post_status', array('publish'));
-});
