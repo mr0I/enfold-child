@@ -250,18 +250,10 @@ if (!$blank && $footer_widget_setting != 'nofooterarea') {
         <div class="fab-wrapper">
             <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
             <label class="fab" for="fabCheckbox">
-                <span class="fab-dots fab-dots-1"></span>
-                <span class="fab-dots fab-dots-2"></span>
-                <span class="fab-dots fab-dots-3"></span>
-            </label>
-            <div class="fab-wheel">
-                <a class="fab-action fab-action-1" href="tel:03132362947" title="تماس با واحد بازرگانی">
-                    <i class="ic-headset_mic"></i>
-                </a>
-                <a class="fab-action fab-action-2" href="tel:03132362894" title="تماس با واحد پشتیبانی">
+                <a href="tel:0313544" class="direct-call">
                     <i class="ic-phone1"></i>
                 </a>
-            </div>
+            </label>
         </div>
     <?php
     }
@@ -313,8 +305,8 @@ if (!$blank && $footer_widget_setting != 'nofooterarea') {
                 <a href="https://radshid.com/shop" title="فروشگاه">
                     <i class="ic-shopping-bag"></i><span>لیست قیمت ردیاب</span>
                 </a>
-                <a href="https://radshid.com/Product/shop-car-tracker/%d8%ae%d8%b1%db%8c%d8%af-%d8%a7%db%8c%d9%86%d8%aa%d8%b1%d9%86%d8%aa%db%8c-%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d9%85%da%af%d9%86%d8%aa%db%8c-%d8%b1%d8%a7%d8%af%d8%b4%db%8c%d8%af/" title="ردیاب مناسب شما">
-                    <i class="ic-pin"></i><span>ردیاب مناسب شما</span>
+                <a href="https://radshid.com/gps-tracker-installation/">
+                    <i class="ic-book-open"></i><span>راهنمای کار با ردیاب</span>
                 </a>
             </div>
         </div>
@@ -520,6 +512,42 @@ if (is_user_logged_in()) {
 
 wp_footer();
 ?>
+
+<!-- Yektanet Script -->
+<script>
+    ! function(t, e, n) {
+        t.yektanetAnalyticsObject = n, t[n] = t[n] || function() {
+            t[n].q.push(arguments)
+        }, t[n].q = t[n].q || [];
+        var a = new Date,
+            r = a.getFullYear().toString() + "0" + a.getMonth() + "0" + a.getDate() + "0" + a.getHours(),
+            c = e.getElementsByTagName("script")[0],
+            s = e.createElement("script");
+        s.id = "ua-script-MK7fEt5t";
+        s.dataset.analyticsobject = n;
+        s.async = 1;
+        s.type = "text/javascript";
+        s.src = "https://cdn.yektanet.com/rg_woebegone/scripts_v3/MK7fEt5t/rg.complete.js?v=" + r, c.parentNode.insertBefore(s, c)
+    }(window, document, "yektanet");
+</script>
+<!---start GOFTINO code--->
+<script type="text/javascript">
+    ! function() {
+        var i = "lXpDBP",
+            a = window,
+            d = document;
+
+        function g() {
+            var g = d.createElement("script"),
+                s = "https://www.goftino.com/widget/" + i,
+                l = localStorage.getItem("goftino_" + i);
+            g.async = !0, g.src = l ? s + "?o=" + l : s;
+            d.getElementsByTagName("head")[0].appendChild(g);
+        }
+        "complete" === d.readyState ? g() : a.attachEvent ? a.attachEvent("onload", g) : a.addEventListener("load", g, !1);
+    }();
+</script>
+<!---end GOFTINO code--->
 
 </body>
 
