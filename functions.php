@@ -246,3 +246,14 @@ EOT;
   return $html;
 }
 add_filter('style_loader_tag', 'add_rel_preload', 10, 4);
+
+/** Redirect wp-login page */
+function redirectWpLogin()
+{
+  global $pagenow;
+  if ('wp-login.php' === $pagenow) {
+    wp_redirect(site_url('/my-account'));
+    exit;
+  }
+}
+add_action('init', 'redirectWpLogin');
