@@ -126,6 +126,11 @@ jQuery(document).ready(function ($) {
     });
     /* END load more posts */
 
+
+    // Add material icons
+    $('.single_add_to_cart_button').html('<i class="ic-basket font-weight-bold" style="font-size: 150%"></i>  افزودن به سبد خرید');
+    $('.cart_dropdown_link').find('span:first-child').html('<i class="ic-basket font-weight-bold my-2"></i>');
+
 });
 
 

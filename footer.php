@@ -94,6 +94,8 @@ if (!$blank && in_array($footer_widget_setting, array('page_in_footer_socket', '
  * Check if we should display a footer
  */
 if (!$blank && $footer_widget_setting != 'nofooterarea') {
+    $isMob = is_numeric(strpos(strtolower($_SERVER["HTTP_USER_AGENT"]), "mobile"));
+
     //custom footer
     if (get_locale() === 'en_US') {
 ?>
@@ -168,7 +170,7 @@ if (!$blank && $footer_widget_setting != 'nofooterarea') {
                                         <li>
                                             اصفهان خیابان کاشانی، خیابان صاحب روضات، کوچه شماره 12، پلاک ۳۲ شرکت رادشید کدپستی: 8183873541
                                             <p>
-                                                <a href="tel:0313544">
+                                                <a href="<?= ($isMob) ? 'tel:0313544' : '#' ?>">
                                                     <span>شماره تماس: 3544-031</span>
                                                 </a>
                                             </p>
@@ -250,7 +252,7 @@ if (!$blank && $footer_widget_setting != 'nofooterarea') {
         <div class="fab-wrapper">
             <input id="fabCheckbox" type="checkbox" class="fab-checkbox" />
             <label class="fab" for="fabCheckbox">
-                <a href="tel:0313544" class="direct-call">
+                <a href="<?= ($isMob) ? 'tel:0313544' : '#' ?>" class="direct-call">
                     <i class="ic-phone1"></i>
                 </a>
             </label>
