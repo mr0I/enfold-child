@@ -186,11 +186,6 @@ add_filter('manage_posts_columns', 'gt_posts_column_views');
 add_action('manage_posts_custom_column', 'gt_posts_custom_column_views');
 
 
-
-/* Disable automatic generation of critical CSS when Optimize CSS Delivery is enabled */
-add_filter('do_rocket_critical_css_generation', '__return_false');
-
-
 /* defer google recaptcha */
 function add_defer_attribute($tag, $handle)
 {
@@ -204,7 +199,6 @@ function add_defer_attribute($tag, $handle)
   }
   return $tag;
 }
-
 
 /* Add Taxonomies For Pages */
 function add_taxonomies_to_pages()
@@ -236,16 +230,16 @@ add_filter('login_display_language_dropdown', '__return_false');
 
 
 // eliminate render blocking css
-function add_rel_preload($html, $handle, $href, $media)
-{
-  if (is_admin()) return $html;
+// function add_rel_preload($html, $handle, $href, $media)
+// {
+//   if (is_admin()) return $html;
 
-  $html = <<<EOT
-<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
-EOT;
-  return $html;
-}
-add_filter('style_loader_tag', 'add_rel_preload', 10, 4);
+//   $html = <<<EOT
+// <link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'" id='$handle' href='$href' type='text/css' media='all' />
+// EOT;
+//   return $html;
+// }
+// add_filter('style_loader_tag', 'add_rel_preload', 10, 4);
 
 /** Redirect wp-login page */
 function redirectWpLogin()
@@ -257,3 +251,12 @@ function redirectWpLogin()
   }
 }
 add_action('init', 'redirectWpLogin');
+
+
+/** Remove trails from breadcrumb */
+add_filter('avia_breadcrumbs_trail', 'remove_category_from_breadcrumb', 50, 2);
+function remove_category_from_breadcrumb($trail, $args)
+{
+  if (is_single()) unset($trail[1]);
+  return $trail;
+}
