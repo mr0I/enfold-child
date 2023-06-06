@@ -266,7 +266,7 @@ ul.menu-item.cart_dropdown {
   left: unset;
   float: left;
   border: none;
-  right: 875px !important;
+  right: 985px !important;
 }
 
 .cart_dropdown .dropdown_widget {
@@ -3261,10 +3261,6 @@ div #reviews #comments ol.commentlist li .avatar {
 
 /* start customize woo products labels */
 
-// hide sipaad phone number
-//#product-14049 .woo-price{
-//  display:none;
-//}
 
 // hide pr1 and x0+ price lables
 #product-10428 .woo-price,
@@ -3333,3 +3329,9 @@ div #reviews #comments ol.commentlist li .avatar {
 }
 
 /* end articles styles */
+
+
+#avia2-menu h1 {
+  font-size: 1em;
+  color: #fff;
+}
