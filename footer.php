@@ -300,8 +300,8 @@ if (!$blank && $footer_widget_setting != 'nofooterarea') {
                 <a href="https://radshid.com/shop" title="فروشگاه">
                     <i class="ic-shopping-bag"></i><span>لیست قیمت ردیاب</span>
                 </a>
-                <a href="https://radshid.com/gps-tracker-installation/">
-                    <i class="ic-book-open"></i><span>راهنمای کار با ردیاب</span>
+                <a href="https://radshid.com/product/%d8%b1%d8%af%db%8c%d8%a7%d8%a8-%d8%b4%d8%ae%d8%b5%db%8c-%d8%a8%d8%a7-%d9%82%d8%a7%d8%a8%d9%84%db%8c%d8%aa-%d9%85%da%a9%d8%a7%d9%84%d9%85%d9%87-%d8%af%d9%88-%d8%b7%d8%b1%d9%81%d9%87/">
+                    <i class="ic-pin"></i><span>ردیاب کودک و سالمند</span>
                 </a>
             </div>
         </div>
