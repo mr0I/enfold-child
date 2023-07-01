@@ -56,8 +56,8 @@ $rtl_support			= 'yes' == apply_filters('avf_rtl_column_support', 'yes') ? ' rtl
 	<meta charset="<?php bloginfo('charset'); ?>" />
 	<meta name="enamad" content="419561" />
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-59846784-2"></script>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-XEYKD0E79V"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
 
@@ -65,8 +65,7 @@ $rtl_support			= 'yes' == apply_filters('avf_rtl_column_support', 'yes') ? ' rtl
 			dataLayer.push(arguments);
 		}
 		gtag('js', new Date());
-
-		gtag('config', 'UA-59846784-2');
+		gtag('config', 'G-XEYKD0E79V');
 	</script>
 
 	<!-- Google Tag Manager -->
