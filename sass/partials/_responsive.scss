@@ -456,13 +456,13 @@
   }
 
   .single_add_to_cart_button {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    // position: fixed;
+    // bottom: 0;
+    // left: 0;
     width: 100%;
     height: 55px;
-    z-index: 10;
-    font-size: 90% !important;
+    // z-index: 10;
+    // font-size: 90% !important;
 
     &::before {
       display: none;
