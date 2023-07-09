@@ -260,3 +260,17 @@ function remove_category_from_breadcrumb($trail, $args)
   if (is_single()) unset($trail[1]);
   return $trail;
 }
+
+/** Add alt tag to WordPress Gravatar images */
+function custom_gravatar_alt($gravatar)
+{
+  if (have_comments()) {
+    $alt = get_comment_author();
+  } else {
+    $alt = get_the_author_meta('display_name');
+  }
+  $gravatar = str_replace('alt=\'\'', 'alt=\'Avatar for ' . $alt . '\'', $gravatar);
+
+  return $gravatar;
+}
+add_filter('get_avatar', 'custom_gravatar_alt');
