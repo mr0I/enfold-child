@@ -22,9 +22,9 @@ function load_scripts_styles()
     wp_enqueue_style('child-theme-styles', get_stylesheet_directory_uri() . '/css/main.css', array(), '8.4.8');
     wp_enqueue_style('child-theme-styles-en', get_stylesheet_directory_uri() . '/css/style-ltr.css');
   } elseif (get_locale() === 'fa_IR') {
-    wp_enqueue_style('child-theme-styles', get_stylesheet_directory_uri() . '/css/main.css', array(), '8.4.13');
+    wp_enqueue_style('child-theme-styles', get_stylesheet_directory_uri() . '/css/main.css', array(), '8.4.14');
   } else {
-    wp_enqueue_style('child-theme-styles', get_stylesheet_directory_uri() . '/css/main.css', array(), '8.4.13');
+    wp_enqueue_style('child-theme-styles', get_stylesheet_directory_uri() . '/css/main.css', array(), '8.4.14');
   }
   // Scripts
   wp_enqueue_script('sweetAlert', get_stylesheet_directory_uri() . '/js/sweetalert2.all.min.js', array(), '1', true);
@@ -261,7 +261,10 @@ function remove_category_from_breadcrumb($trail, $args)
   return $trail;
 }
 
-/** Add alt tag to WordPress Gravatar images */
+/** Force disable gravatars */
+update_option('show_avatars', false);
+
+/** Add alt tag to wordPress gravatar images */
 function custom_gravatar_alt($gravatar)
 {
   if (have_comments()) {

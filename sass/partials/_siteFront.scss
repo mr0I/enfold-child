@@ -102,7 +102,7 @@ nav.sub_menu {
 // Navbar
 ul#avia-menu {
   right: 10px;
-  top: 15px;
+  top: 24px;
   margin: auto !important;
 }
 
@@ -120,7 +120,7 @@ ul#avia-menu>li.menu-item-has-children::after {
   font-family: mycon;
   position: absolute;
   left: -5px;
-  top: -3px;
+  top: -13px;
   font-size: 115%;
   color: $secondaryTextColor;
 }
@@ -191,6 +191,7 @@ ul#avia-menu>li.menu-item-has-children::after {
     a {
       font-size: 90%;
       height: auto !important;
+      padding: 16px;
       @include myTransition(0.3s ease);
 
       &:hover {
@@ -286,7 +287,7 @@ span#nav-shop {
 
 // Cart Styles
 ul.menu-item.cart_dropdown {
-  top: 50px;
+  top: 55px;
   left: unset;
   float: left;
   border: none;
